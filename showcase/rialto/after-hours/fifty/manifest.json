@@ -1,0 +1,13 @@
+{
+  "model": "qwen3.8:27b",
+  "revision": "aaee06c39dcf2437cde036998d960e1fc1494b8191be7cc9657d01e509097813",
+  "seed": 951,
+  "complete_days": 50,
+  "thinking": false,
+  "reset": "Every day is Tuesday. Physical props reset. Only Phil recalls selected prior events.",
+  "condition": "Hopeful breakfast invitation on day one. No scripted change of mood or mandatory ending.",
+  "source_sha256": {
+    "shoot.py": "78a05e7cbf6c28fb9ab6d6cd5753d10a5a2219824d535cf7da65341ed2e23673",
+    "fifty.py": "2752a47e14bc21fbb6577e67c085bdda61e5f61c42da56e66147140baf34a56a"
+  }
+}

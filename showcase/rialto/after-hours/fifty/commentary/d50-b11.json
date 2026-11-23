@@ -1,0 +1,11 @@
+{
+  "kind": "post-take cast commentary",
+  "turn": "d50-b11",
+  "speaker": "Phil",
+  "source": "d48-b12",
+  "comment": "I wanted to stop treating this like a forecast and just show up to fix the damn leg.",
+  "request_sha256": "82d1d0dbb7f43fbfaeefb83dd10c70fbd5144ece29d9855577e8fd06b8042473",
+  "response_text": "{\n  \"source\": \"d48-b12\",\n  \"comment\": \"I wanted to stop treating this like a forecast and just show up to fix the damn leg.\"\n}",
+  "model": "qwen3.8:27b",
+  "num_predict": 180
+}

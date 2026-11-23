@@ -1,0 +1,10 @@
+{
+  "hardware": "NVIDIA H100 80GB HBM3",
+  "created_utc": "2026-11-23T22:15:03.733Z",
+  "termination_accepted_utc": "2026-11-23T22:53:22.608562+00:00",
+  "deletion_verified_utc": "2026-11-23T22:53:23.489328+00:00",
+  "get_http": 404,
+  "listed": false,
+  "gpu_rate_usd_hour": 4.39,
+  "estimated_gpu_rental_usd": 2.8034
+}
