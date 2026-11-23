@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fifty Tuesdays · Rialto dialogue log</title>
+<style>
+*{box-sizing:border-box}body{background:#f2efe7;color:#242b26;margin:0;font-family:Georgia,Cambria,serif}main{max-width:1120px;margin:auto;padding:46px 5vw 70px}header{border-bottom:1px solid #989b8e;padding-bottom:24px}header p,h2,small,label,button,select,input,.eyeline{font-family:system-ui,sans-serif}header p,.eyeline,small{font-size:.77rem;color:#50594e;letter-spacing:.055em}h1{font-size:clamp(2.7rem,6.7vw,5.2rem);font-weight:normal;line-height:1.02;margin:12px 0;color:#283d35}header p{margin:0;text-transform:uppercase}nav{display:flex;gap:12px;flex-wrap:wrap;align-items:end;margin:25px 0}label{font-size:.82rem}select,input,button{background:#fcfbf7;color:#26392e;font-size:.92rem;padding:9px 11px;border:1px solid #979d8e;border-radius:3px;min-height:39px}select,input{display:block;margin-top:5px}button{cursor:pointer}button:disabled{opacity:.45}button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #ae502f}a{color:#415f4e}#status{margin:14px 0 32px}article{display:grid;grid-template-columns:minmax(120px,23%) auto;gap:30px;border-top:1px solid #c8c8b9;padding:19px 0 23px}article.memo{border-left:3px solid #ac5b39;padding-left:14px}h2{font-size:1.05rem;margin:3px 0 6px}.location{font:italic .98rem Georgia;color:#49574b}.speech{font-size:clamp(1.08rem,2.5vw,1.42rem);line-height:1.39;white-space:pre-line;margin:0 0 10px}.effect{font:italic 1rem/1.4 Georgia;margin:0;color:#59604f}.who{display:block;margin-top:8px;color:#59604f;letter-spacing:0}.empty{font-size:1.2rem}footer{margin-top:24px}footer a{font: .85rem system-ui}
+@media(max-width:600px){main{padding-top:26px}article{display:block}article .meta{margin-bottom:12px}input{max-width:78vw}nav{gap:9px}.who{margin-top:4px}}
+.trace{font: .86rem/1.55 system-ui,sans-serif;margin-top:15px;background:#e8e9df;border-left:2px solid #82907e;padding:11px 14px}.trace h3{font:600 .8rem system-ui,sans-serif;margin:0 0 6px}.trace details{margin-top:7px}.trace p{margin:3px 0}.trace summary{cursor:pointer}.trace ul{margin:5px 0;padding-left:20px}.trace a{color:#254936;text-underline-offset:2px}.toggle{display:flex;align-items:center;gap:6px;margin-bottom:10px}.toggle input{min-height:auto;accent-color:#405a47;margin:0}.who{line-height:1.45}
+</style>
+<main>
+<header><p>Agent Groundhog Day · Performance 951</p><h1>Fifty Tuesdays</h1><div>Phil’s pocket recordings and the conversations around him.</div></header>
+<nav aria-label="Dialogue filters">
+<label>Tuesday<select id="day"></select></label>
+<button id="prev" aria-label="Previous Tuesday">←</button><button id="next" aria-label="Next Tuesday">→</button>
+<label>Listen to<select id="filter"><option value="all">Everyone</option><option value="memo">Phil’s pocket recorder</option><option value="away">When Phil is absent</option><option value="Phil">Phil</option><option value="Rita">Rita</option><option value="Larry">Larry</option><option value="Alma">Alma</option><option value="Jo">Jo</option></select></label>
+<label>Find a line<input type="search" id="query" placeholder="Search the selected days"></label>
+<label class="toggle"><input type="checkbox" id="trace" checked> Show decision traces</label>
+</nav>
+<div id="status" aria-live="polite"></div><section id="lines" aria-label="Recorded performances"></section><footer><a href="voice-diary.md">Read Phil’s full diary</a></footer></main>
+<script id="record" type="application/json">/* PERFORMANCES */</script>
+<script>
+const days=JSON.parse(document.getElementById('record').textContent);
+const byId=id=>document.getElementById(id);
+const menu=byId('day'),filter=byId('filter'),search=byId('query');
+for(const day of days)menu.add(new Option('Tuesday '+day.day,String(day.day)));
+menu.add(new Option('All Tuesdays','all'));
+const params=new URLSearchParams(location.hash.slice(1));
+if([...menu.options].some(o=>o.value===params.get('day')))menu.value=params.get('day');
+if([...filter.options].some(o=>o.value===params.get('view')))filter.value=params.get('view');
+function element(tag,cls,words){const el=document.createElement(tag);el.className=cls;el.textContent=words;return el}
+const turns=new Map(),receivers=new Map();
+for(const day of days){for(const e of day.events){turns.set(e.id,{day:day.day,e});for(const id of [...e.seen,...e.earlier_turns_recalled]){if(!receivers.has(id))receivers.set(id,new Map());const map=receivers.get(id);if(!map.has(e.speaker))map.set(e.speaker,e.id)}}}
+function turnLink(id){
+ const {day,e}=turns.get(id);const a=element('a','','Tuesday '+day+' · '+e.time+' · '+e.speaker);
+ a.href='#'+new URLSearchParams({day,view:'all',turn:id});
+ a.onclick=ev=>{ev.preventDefault();menu.value=String(day);filter.value='all';search.value='';change();history.replaceState(null,'',a.href);document.getElementById(id)?.scrollIntoView({block:'center'})};return a
+}
+function references(box,title,ids){
+ if(!ids.length)return;
+ const details=element('details','',''),summary=element('summary','',title+' ('+ids.length+')'),list=element('ul','','');
+ details.addEventListener('toggle',()=>{if(!details.open||list.childElementCount)return;for(const id of ids){const li=element('li','','');li.append(turnLink(id),document.createTextNode(' — '+(turns.get(id).e.line||'(Silence.)')));list.append(li)}});
+ details.append(summary,list);box.append(details)
+}
+function traceBox(e){
+ const box=element('aside','trace','');box.append(element('h3','','Decision trace'));
+ const ids=e.seen,recall=e.earlier_turns_recalled,previous=ids.length?turns.get(ids.at(-1)).e:null;
+ if(previous)box.append(element('p','','Last witnessed turn: '+previous.speaker+' at '+previous.time+' — '+(previous.line||previous.effect)));
+ else if(e.speaker==='Phil'&&recall.length)box.append(element('p','','Last recalled turn: '+(turns.get(recall.at(-1)).e.line||turns.get(recall.at(-1)).e.effect)));
+ else box.append(element('p','',e.speaker+' begins this scene without an earlier turn from today.'));
+ box.append(element('p','','Selected action: '+e.effect));
+ if(e.commentary){const note=element('p','','After-scene recollection · '+e.speaker+' — '+e.commentary.line+' ');if(turns.has(e.commentary.source))note.append(document.createTextNode('Cited turn: '),turnLink(e.commentary.source));else note.append(document.createTextNode(e.commentary.source==='scene'?'(Cites the scene.)':'(Cites their own line.)'));box.append(note)}
+ const next=receivers.get(e.id);
+ if(next){const row=element('p','','Next turns that include this event: ');let i=0;for(const id of next.values()){if(i++)row.append(document.createTextNode(' · '));row.append(turnLink(id))}box.append(row)}
+ const setup=element('details','','');setup.append(element('summary','','Situation and '+Object.keys(e.choices).length+' available '+(Object.keys(e.choices).length===1?'action':'actions')),element('p','',e.cue));
+ const menuList=element('ul','','');for(const [key,text] of Object.entries(e.choices))menuList.append(element('li','',(key===e.choice?'Chosen — ':'')+text));setup.append(menuList);box.append(setup);
+ references(box,'What this character witnessed today',ids);references(box,'Earlier moments in this character’s memory',recall);
+ return box
+}
+function show(){
+ const view=filter.value, q=search.value.trim().toLowerCase(), selection=menu.value;
+ const fragment=document.createDocumentFragment();let count=0;
+ for(const day of days){
+  if(selection!=='all'&&day.day!==Number(selection))continue;
+  for(const e of day.events){
+   if(view==='memo'&&e.kind!=='voice memo')continue;
+   if(view==='away'&&e.witnesses.includes('Phil'))continue;
+   if(!['all','memo','away'].includes(view)&&e.speaker!==view)continue;
+   if(q&&!e.line.toLowerCase().includes(q))continue;
+   const card=element('article',e.kind==='voice memo'?'memo':'','');card.id=e.id;
+   const meta=element('div','meta','');meta.append(element('div','eyeline','TUESDAY '+day.day+'  /  '+e.time),element('h2','',e.speaker),element('div','location',e.place));
+   const copy=element('div','copy','');copy.append(element('p','speech',e.line||'(Silence.)'),element('p','effect',e.effect),element('small','who',e.kind==='voice memo'?'Private voice memo':'Heard by '+e.witnesses.join(', ')));
+   if(byId('trace').checked)copy.append(traceBox(e));
+   card.append(meta,copy);fragment.append(card);count++;
+  }
+ }
+ if(!count)fragment.append(element('p','empty','No matching lines.'));
+ byId('lines').replaceChildren(fragment);
+ byId('status').textContent=count+' recorded '+(count===1?'turn':'turns')+(selection==='all'?' across '+days.length+' Tuesdays':' on Tuesday '+selection);
+ byId('prev').disabled=selection==='all'||Number(selection)<=1;byId('next').disabled=selection==='all'||Number(selection)>=days.length;
+}
+function change(){history.replaceState(null,'','#'+new URLSearchParams({day:menu.value,view:filter.value}));show()}
+byId('trace').onchange=show;menu.onchange=change;filter.onchange=change;search.oninput=show;byId('prev').onclick=()=>{menu.value=String(Number(menu.value)-1);change()};byId('next').onclick=()=>{menu.value=String(Number(menu.value)+1);change()};show();
+const firstTurn=params.get('turn');
+if(firstTurn)requestAnimationFrame(()=>document.getElementById(firstTurn)?.scrollIntoView({block:'center'}));
+</script>
+</html>

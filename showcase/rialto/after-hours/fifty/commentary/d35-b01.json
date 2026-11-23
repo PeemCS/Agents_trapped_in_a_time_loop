@@ -1,0 +1,11 @@
+{
+  "kind": "post-take cast commentary",
+  "turn": "d35-b01",
+  "speaker": "Phil",
+  "source": "d34-b01",
+  "comment": "I wanted to make sure Jo didn't have to eat dry pancakes again.",
+  "request_sha256": "6c695e9c1962ccbfb39e2fa42d063927517cd5b73e01d93e968fc22b212e21dc",
+  "response_text": "{\n  \"source\": \"d34-b01\",\n  \"comment\": \"I wanted to make sure Jo didn't have to eat dry pancakes again.\"\n}",
+  "model": "qwen3.8:27b",
+  "num_predict": 180
+}

@@ -4,6 +4,8 @@ Four agents play out *Groundhog Day* in a snowy 3D town. The clock, streets, and
 
 The [showcase folder](showcase/) contains the short rehearsal cut, two standalone replay comparisons, and the Bruin run summary and lineage. Download the HTML files and open them in a browser to compare the local-policy runs.
 
+[Watch *Play It Again*](showcase/rialto/Play-It-Again.mp4), a three-minute film from the team’s Rialto town. Phil keeps promising his sister a Wednesday that never comes. Across town, Rita decides when a daughter will hear her mother’s voice. [See the six RunPod takes, captions and demo slides](showcase/rialto/).
+
 ## Run and watch locally
 
 Use Python 3.11 or newer. The standalone viewer includes its own renderer and works offline. A fixture is a repeatable scene used to check the world and renderer. The local mode uses independent utility policies with persistent Phil memory. Live mode uses Qwen3.5-9B and Muse Spark Contributor 1.3.

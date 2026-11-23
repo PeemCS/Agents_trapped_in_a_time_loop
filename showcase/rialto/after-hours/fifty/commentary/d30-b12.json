@@ -1,0 +1,11 @@
+{
+  "kind": "post-take cast commentary",
+  "turn": "d30-b12",
+  "speaker": "Jo",
+  "source": "scene",
+  "comment": "I wanted Phil to be there to help me move the couch.",
+  "request_sha256": "0162c239e9a39da7e27785457b4429839a70f24d16f051c8ecbc6e9d18a9e733",
+  "response_text": "{\n  \"source\": \"scene\",\n  \"comment\": \"I wanted Phil to be there to help me move the couch.\"\n}",
+  "model": "qwen3.8:27b",
+  "num_predict": 180
+}

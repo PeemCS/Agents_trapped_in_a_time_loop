@@ -1,0 +1,11 @@
+{
+  "kind": "post-take cast commentary",
+  "turn": "d50-b18",
+  "speaker": "Phil",
+  "source": "d49-b19",
+  "comment": "I wanted to let that hum finish so the silence didn't scream at me.",
+  "request_sha256": "eafe745bbb22bec64eacfd194bf59e683ffc894d63f03ac224f3329c1361c246",
+  "response_text": "{\n  \"source\": \"d49-b19\",\n  \"comment\": \"I wanted to let that hum finish so the silence didn't scream at me.\"\n}",
+  "model": "qwen3.8:27b",
+  "num_predict": 180
+}

@@ -1,0 +1,16 @@
+{
+  "condition": "before",
+  "seed": 1152,
+  "prior_turn_ids": [],
+  "response": {
+    "choice": "eat",
+    "line_to_cook": "Nah, keep it here; I’ll take this one right now.",
+    "stated_motive": "I want to taste the exact same sweetness that Jo promised me in her kitchen, proving that even a lopsided mess can be worth it if you’re hungry enough.",
+    "cites": "scene"
+  },
+  "action_effect": "Phil opens the syrup and eats the pancake at the counter.",
+  "model": "qwen3.8:27b",
+  "input_sha256": "b1ddaf47ea07616227e917f2d7a2bedde778975f41711c1466761a6917e62948",
+  "response_text": "{\n \"choice\": \"eat\",\n \"line_to_cook\": \"Nah, keep it here; I’ll take this one right now.\",\"stated_motive\": \"I want to taste the exact same sweetness that Jo promised me in her kitchen, proving that even a lopsided mess can be worth it if you’re hungry enough.\",\"cites\": \"scene\"\n}",
+  "num_predict": 260
+}
