@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.8:27b",
+  "revision": "aaee06c39dcf2437cde036998d960e1fc1494b8191be7cc9657d01e509097813",
+  "thinking": false,
+  "takes": [
+    901,
+    902,
+    903
+  ],
+  "days_per_take": 4,
+  "forks": [
+    "pocket_cart",
+    "leave_cart"
+  ],
+  "driver_sha256": "78a05e7cbf6c28fb9ab6d6cd5753d10a5a2219824d535cf7da65341ed2e23673"
+}
