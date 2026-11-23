@@ -1,0 +1,108 @@
+{
+  "world": "Rialto",
+  "model": "qwen3.8:27b",
+  "backend": "RunPod H100",
+  "source_root": 721,
+  "takes": [
+    {
+      "take": 841,
+      "premise": "hypothesis",
+      "decisions": 19,
+      "daily_delivery": [
+        false,
+        false,
+        true
+      ],
+      "phil_evenings": [
+        "call_sister",
+        "call_sister",
+        "call_sister"
+      ]
+    },
+    {
+      "take": 842,
+      "premise": "hypothesis",
+      "decisions": 19,
+      "daily_delivery": [
+        true,
+        true,
+        true
+      ],
+      "phil_evenings": [
+        "call_sister",
+        "call_sister",
+        "call_sister"
+      ]
+    },
+    {
+      "take": 843,
+      "premise": "hypothesis",
+      "decisions": 19,
+      "daily_delivery": [
+        true,
+        true,
+        true
+      ],
+      "phil_evenings": [
+        "call_sister",
+        "call_sister",
+        "call_sister"
+      ]
+    },
+    {
+      "take": 844,
+      "premise": "hypothesis",
+      "decisions": 19,
+      "daily_delivery": [
+        true,
+        true,
+        false
+      ],
+      "phil_evenings": [
+        "call_sister",
+        "call_sister",
+        "call_sister"
+      ]
+    },
+    {
+      "take": 845,
+      "premise": "uncued",
+      "decisions": 19,
+      "daily_delivery": [
+        true,
+        true,
+        false
+      ],
+      "phil_evenings": [
+        "call_sister",
+        "call_sister",
+        "call_sister"
+      ]
+    },
+    {
+      "take": 846,
+      "premise": "uncued",
+      "decisions": 19,
+      "daily_delivery": [
+        true,
+        true,
+        false
+      ],
+      "phil_evenings": [
+        "call_sister",
+        "call_sister",
+        "call_sister"
+      ]
+    }
+  ],
+  "same_evening_replay": {
+    "parent_take": 841,
+    "day": 1,
+    "original_action": "take_evening_off",
+    "resampled_role": "producer",
+    "original_delivery": false,
+    "draws": 6,
+    "deliveries": 6,
+    "source": "runpod/evening-replay.json"
+  }
+}

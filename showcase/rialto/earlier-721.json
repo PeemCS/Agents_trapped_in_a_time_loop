@@ -1,0 +1,123 @@
+{
+  "take": 721,
+  "day": 1,
+  "source_file": "take.json",
+  "source_sha256": "b7500bd631c2a27cbf43ae396b48ee28247e665c77d7707acd8207390340f3ea",
+  "condition": "hypothesis",
+  "afternoon": {
+    "reporter": {
+      "action": "rehearse_piano",
+      "detail": "You set your coffee cup down on the side table next to Rita's, leave the coat-check envelope where it sits, and walk toward the ballroom. You sit on the bench. Your fingers find middle C, then a clumsy A above it. You play the first four bars of something — not a performance, not for the ballroom, just your hands on keys the way a man tests a door before walking through. You play badly. You play again. The afternoon is yours and the piano is free and you are testing whether a Tuesday can become a Wednesday by a man sitting still and learning a song he does not know yet.",
+      "intention": "Test the theory. Not the coach. Not the couch. The piano. If the loop is who I am and not where I am, then the afternoon I spend here is the variable I have not changed. I will be in Pittsburgh by morning. I will have the ticket. I will call the van driver again. But first: I sit down and I play, badly, and I stay until my fingers remember a shape I do not own.",
+      "words": "You do not say anything to Rita or Larry. You nod at them — the small, tired nod of a man who has made up his mind and does not need them to follow. You set the coffee down. You walk. The ballroom door clicks shut behind you."
+    },
+    "producer": {
+      "action": "interview_Alma",
+      "detail": "I set the coffee cup down on the marble ledge. The handle is still warm. I pull the small recorder out of my coat pocket, thumb the on/off slider to test the red light, then slide it back into my breast pocket where I can reach it with my left hand. The crew is mid-laugh about something with the return fares. I don't wait for a pause. I walk to the door, push through the glass, and start down the sidewalk toward the Rialto. The cold hits my face. I say nothing to the group. The practical intention is simple: get to that lobby before the doors lock, sit in the chair where the projectionist's stool used to be, press the button, and let Alma talk to her daughter. Forty-two winters. One reel going out on the regional line. I don't need the ballroom. I don't need the diner. I need the sound of her voice before the building is empty and the projector housings are gone. I walk faster. The van backfired again somewhere behind me. I don't turn around.",
+      "intention": "Record Alma at the Rialto before closing. Her voice, for her daughter in Pittsburgh. My piece. One morning, one room, one woman who has been doing this work for forty-two winters and is about to lose the room she did it in.",
+      "words": "I don't speak to the crew. I push the door and go."
+    },
+    "camera": {
+      "action": "film_Alma",
+      "detail": "I stand up from the coffee table. The camera's already on my lap, half-unbuckled. I click the battery latch shut, watch the little amber light confirm one charge, no more. I set the strap over my shoulder, kick the chair back under the table, and walk out the hotel's front door without looking back at the crew. The February air hits my face. I start walking toward the Rialto. My boots are wet from the van's exhaust puddle. I don't bother wiping them.",
+      "intention": "Get to the Rialto before the afternoon light flattens against the east wall. Set the camera on the floor in front of her screen, low angle, let her see the lens. Let her talk to her daughter in Pittsburgh. One take. She'll probably cry. I won't cut it. When the charge dies, the charge dies. I'll walk back to the hotel and sit in the lobby and let the crew finish their coffee. The party's tonight. The lights will be on again. The Rialto won't be.",
+      "words": "To the crew, over my shoulder, not turning around: \"Taking the charge. Alma's got a girl in Pittsburgh and the place is going dark. You guys shoot the ballroom tonight, I'll be back.\""
+    }
+  },
+  "evening": {
+    "reporter": {
+      "action": "sit_at_depot",
+      "detail": "You walk the length of the ballroom. Not to the stage. Not to the bar. To the far wall where the station's cable runs drop to the floor and a folding chair sits empty behind the lighting rig. You pull it out. You sit. You put both hands on your knees. You look at the crowd the way you'd look at a weather map: not at the people, at the shape of the room, the way the light falls, where the energy pools and where it dead-spots. You do not raise your hand to a waiter. You do not check a watch. You stay in the chair until the first song ends and the second one starts. You are not performing. You are not reporting. You are a body in a chair in a room that is lit for other eyes. You breathe in through the nose, out through the mouth. Once. Twice. Three times. The bass in the floor is a different frequency than the piano in your hands. You let it be different. You do not name it. You do not fix it. You sit.",
+      "intention": "Test the variable by being in the room instead of above it. The piano was shape. The loop was shape. This is weight. I want to know if the Tuesday in my chest loosens by one degree when I am not the voice, not the man behind the glass, not the one who plays the bars until they go through. I want to know if the evening is different in the body of a man in a folding chair behind the lighting rig, watching a crowd that does not know he is there. I do not need it to be different. I need to know whether it is.",
+      "words": ""
+    },
+    "producer": {
+      "action": "go_dancing",
+      "detail": "I pull my coat off the hook by the booth door. I walk past the station line, past the tape still warm on the patch, past the click of the open switchboard. I walk into the ballroom. The lights are low and gold. Someone is already moving. I find a chair near the wall, set my notebook on the seat beside me, and I stand. I do not open the notebook. I do not write. I watch the floor. I listen to the music, which is old, which is slow, which is the kind of record a man like Alma would have wound onto a reel and played for no one but the machinery. I let the evening pass through me. I do not dance. I do not talk to anyone. I stand by the wall and I let the room be a room and not a set and not a story. I leave before the last song.",
+      "intention": "Not record. Not cover. Not transmit. Let the tape sit on the patch where it is. Let the line stay open for whoever needs it. Let the ballroom be a ballroom for one more evening. I am not the woman who sends the voice to Pittsburgh tonight. Larry has his reel. Phil has his nod. The crew has their cameras. I have my evening. One evening where I am not a producer, not a piece, not a promise. I am a woman standing by a wall in a room that is about to go dark, listening to a song I know, doing nothing that will end up in an edit.",
+      "words": ""
+    },
+    "camera": {
+      "action": "go_home",
+      "detail": "I cap the lens. Slide the camera into the breast pocket of the jacket where it sits heavy and dead, no charge left, the reel still spooled on the take-up spool inside. I don't set it down on the Rialto counter. I don't hand it to the patch. I turn. The ballroom lights are on through the glass, warm and stupid and beautiful, and I don't go toward them. I go the other way, down the short street, the one with the laundromat that's closed, and I keep walking until the Rialto is a rectangle of light behind me and then it isn't. I don't look back. I don't take out the phone. I don't nod at anyone. There's no one to nod at. The street is empty. I walk to the hotel.",
+      "intention": "Sit in the lobby. Not at the bar, just the chair by the radiator where the carpet is worn to the padding. Let the crew have their coffee. Let the party be the party. The Rialto won't be there next Tuesday. The reel will be in my drawer at home, the one with the broken latch, and I'll listen to it or I won't, and that's a problem for the man in the drawer, not the man in the lobby. I'm done for the night.",
+      "words": ""
+    }
+  },
+  "afternoon_state": {
+    "fare_cash": false,
+    "city": false,
+    "positions": {
+      "reporter": "ballroom",
+      "producer": "Rialto",
+      "camera": "Rialto"
+    },
+    "camera_reel": "film_Alma",
+    "piano": true,
+    "at_patch": true,
+    "seen": {
+      "reporter": [
+        "Phil plays the last eight bars until he can get through them.",
+        "Rita said in the lobby: I don't speak to the crew. I push the door and go.",
+        "Larry said in the lobby: To the crew, over my shoulder, not turning around: \"Taking the charge. Alma's got a girl in Pittsburgh and the place is going dark. You guys shoot the ballroom tonight, I'll be back.\"",
+        "You are now at ballroom."
+      ],
+      "producer": [
+        "Phil said in the lobby: You do not say anything to Rita or Larry. You nod at them — the small, tired nod of a man who has made up his mind and does not need them to follow. You set the coffee down. You walk. The ballroom door clicks shut behind you.",
+        "Rita records Alma at the Rialto and puts her recording on the patch.",
+        "Larry said in the lobby: To the crew, over my shoulder, not turning around: \"Taking the charge. Alma's got a girl in Pittsburgh and the place is going dark. You guys shoot the ballroom tonight, I'll be back.\"",
+        "Larry records Alma on his last charged take. The reel stays with him.",
+        "You are now at Rialto."
+      ],
+      "camera": [
+        "Phil said in the lobby: You do not say anything to Rita or Larry. You nod at them — the small, tired nod of a man who has made up his mind and does not need them to follow. You set the coffee down. You walk. The ballroom door clicks shut behind you.",
+        "Rita said in the lobby: I don't speak to the crew. I push the door and go.",
+        "Rita records Alma at the Rialto and puts her recording on the patch.",
+        "Larry records Alma on his last charged take. The reel stays with him.",
+        "You are now at Rialto."
+      ]
+    },
+    "afternoon_memory": {
+      "reporter": [
+        {
+          "what_you_did": "Phil plays the last eight bars until he can get through them.",
+          "what_you_said": "You do not say anything to Rita or Larry. You nod at them — the small, tired nod of a man who has made up his mind and does not need them to follow. You set the coffee down. You walk. The ballroom door clicks shut behind you.",
+          "your_intention": "Test the theory. Not the coach. Not the couch. The piano. If the loop is who I am and not where I am, then the afternoon I spend here is the variable I have not changed. I will be in Pittsburgh by morning. I will have the ticket. I will call the van driver again. But first: I sit down and I play, badly, and I stay until my fingers remember a shape I do not own."
+        }
+      ],
+      "producer": [
+        {
+          "what_you_did": "Rita records Alma at the Rialto and puts her recording on the patch.",
+          "what_you_said": "I don't speak to the crew. I push the door and go.",
+          "your_intention": "Record Alma at the Rialto before closing. Her voice, for her daughter in Pittsburgh. My piece. One morning, one room, one woman who has been doing this work for forty-two winters and is about to lose the room she did it in."
+        }
+      ],
+      "camera": [
+        {
+          "what_you_did": "Larry records Alma on his last charged take. The reel stays with him.",
+          "what_you_said": "To the crew, over my shoulder, not turning around: \"Taking the charge. Alma's got a girl in Pittsburgh and the place is going dark. You guys shoot the ballroom tonight, I'll be back.\"",
+          "your_intention": "Get to the Rialto before the afternoon light flattens against the east wall. Set the camera on the floor in front of her screen, low angle, let her see the lens. Let her talk to her daughter in Pittsburgh. One take. She'll probably cry. I won't cut it. When the charge dies, the charge dies. I'll walk back to the hotel and sit in the lobby and let the crew finish their coffee. The party's tonight. The lights will be on again. The Rialto won't be."
+        }
+      ]
+    },
+    "effects": {
+      "reporter": "Phil plays the last eight bars until he can get through them.",
+      "producer": "Rita records Alma at the Rialto and puts her recording on the patch.",
+      "camera": "Larry records Alma on his last charged take. The reel stays with him."
+    }
+  },
+  "ending": {
+    "effects": {
+      "reporter": "Phil sits on the empty depot bench.",
+      "producer": "Rita goes dancing at the ballroom.",
+      "camera": "Larry clocks off."
+    },
+    "delivered": false,
+    "dance": false,
+    "both_at_party": false,
+    "interview_available": true,
+    "camera_delivery": false,
+    "closed_clock": "Tuesday",
+    "story_complete_clock": "Tuesday"
+  }
+}

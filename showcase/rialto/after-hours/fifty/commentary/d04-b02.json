@@ -1,0 +1,11 @@
+{
+  "kind": "post-take cast commentary",
+  "turn": "d04-b02",
+  "speaker": "Phil",
+  "source": "d02-b02",
+  "comment": "I wanted to keep that breath because it was the only honest thing I had left before the static ate it.",
+  "request_sha256": "c1ae30f0820a21b5e21dc762a6b2cd671ef314618000c33c767468a6e3322a59",
+  "response_text": "{\n \"source\": \"d02-b02\",\n \"comment\": \"I wanted to keep that breath because it was the only honest thing I had left before the static ate it.\"\n}",
+  "model": "qwen3.8:27b",
+  "num_predict": 180
+}

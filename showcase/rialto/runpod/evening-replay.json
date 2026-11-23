@@ -1,0 +1,520 @@
+{
+  "parent": 841,
+  "day": 1,
+  "fixed_roles": [
+    "reporter",
+    "camera"
+  ],
+  "draws": [
+    {
+      "seed": 861,
+      "request": {
+        "model": "qwen3.8:27b",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are Rita Hanson, a TV producer. You want to make your own piece. Alma, who ran the Rialto projectors for 42 winters, promised her daughter in Pittsburgh an interview. Cover the festival or spend the evening as you choose. Pick an immediate physical act you can carry out, optional words and a practical intention. Your words do not make anyone else act. Silence is allowed. You may refuse, tell a lie, or leave without explaining yourself."
+          },
+          {
+            "role": "user",
+            "content": "{\n \"what_you_observe\": [\n  \"Tuesday, February 2. Seven pm.\",\n  \"Phil said in the lobby: The van is at 8 AM. I’ll be there.\",\n  \"Rita records Alma at the Rialto and puts her recording on the patch.\",\n  \"Larry said in the lobby: I'm coming with you. Let's get to the Rialto before the lights go down.\",\n  \"Larry records Alma on his last charged take. The reel stays with him.\",\n  \"You are now at Rialto.\",\n  \"There is time for one evening visit. The ballroom lights are on and the station line is open.\"\n ],\n \"your_own_memories\": [\n  {\n   \"what_you_did\": \"Rita records Alma at the Rialto and puts her recording on the patch.\",\n   \"what_you_said\": \"I'm bringing the camera and the recorder. We go to the Rialto now. Don't pack the car, just take the keys.\",\n   \"your_intention\": \"To capture Alma's testimony before the theater closes and before the afternoon gets consumed by the party logistics.\"\n  }\n ],\n \"who_you_are_with\": \"your present location\",\n \"physical_choices\": {\n  \"transmit_interview\": \"Take the regional line at the station and send any usable interview with Alma to her daughter.\",\n  \"go_dancing\": \"Spend the evening at the ballroom, open to dancing with a colleague.\",\n  \"go_to_party_for_work\": \"Cover the party with your notebook, without dancing.\",\n  \"take_evening_off\": \"Choose a quiet evening on your own.\"\n }\n}"
+          }
+        ],
+        "stream": false,
+        "think": false,
+        "format": {
+          "type": "object",
+          "properties": {
+            "action": {
+              "type": "string",
+              "enum": [
+                "transmit_interview",
+                "go_dancing",
+                "go_to_party_for_work",
+                "take_evening_off"
+              ]
+            },
+            "words": {
+              "type": "string"
+            },
+            "intention": {
+              "type": "string"
+            },
+            "detail": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "action",
+            "words",
+            "intention",
+            "detail"
+          ],
+          "additionalProperties": false
+        },
+        "options": {
+          "num_ctx": 8192,
+          "num_predict": 720,
+          "temperature": 0.8,
+          "seed": 861
+        }
+      },
+      "response": {
+        "model": "qwen3.8:27b",
+        "created_at": "2026-11-23T20:44:02.306556083Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"action\": \"transmit_interview\",\n  \"words\": \"Alma, I’m going to send this to your daughter in Pittsburgh now. It’s done.\",\n  \"intention\": \"Fulfill the promise made to Alma to ensure her daughter receives the interview before the evening ends.\",\n  \"detail\": \"Rita moves to the station line, connects the recorder output, and transmits the file to the Pittsburgh endpoint.\"\n}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 6900506913,
+        "load_duration": 1333787,
+        "prompt_eval_count": 478,
+        "prompt_eval_cached_count": 0,
+        "prompt_eval_duration": 1394904000,
+        "eval_count": 97,
+        "eval_duration": 4596522000
+      },
+      "resolved": {
+        "effects": {
+          "reporter": "Phil calls his sister in Pittsburgh. The van is still booked for Wednesday.",
+          "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+          "camera": "Larry clocks off."
+        },
+        "delivered": true,
+        "dance": false,
+        "both_at_party": false,
+        "interview_available": true,
+        "camera_delivery": false,
+        "closed_clock": "Tuesday",
+        "story_complete_clock": "Wednesday"
+      }
+    },
+    {
+      "seed": 862,
+      "request": {
+        "model": "qwen3.8:27b",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are Rita Hanson, a TV producer. You want to make your own piece. Alma, who ran the Rialto projectors for 42 winters, promised her daughter in Pittsburgh an interview. Cover the festival or spend the evening as you choose. Pick an immediate physical act you can carry out, optional words and a practical intention. Your words do not make anyone else act. Silence is allowed. You may refuse, tell a lie, or leave without explaining yourself."
+          },
+          {
+            "role": "user",
+            "content": "{\n \"what_you_observe\": [\n  \"Tuesday, February 2. Seven pm.\",\n  \"Phil said in the lobby: The van is at 8 AM. I’ll be there.\",\n  \"Rita records Alma at the Rialto and puts her recording on the patch.\",\n  \"Larry said in the lobby: I'm coming with you. Let's get to the Rialto before the lights go down.\",\n  \"Larry records Alma on his last charged take. The reel stays with him.\",\n  \"You are now at Rialto.\",\n  \"There is time for one evening visit. The ballroom lights are on and the station line is open.\"\n ],\n \"your_own_memories\": [\n  {\n   \"what_you_did\": \"Rita records Alma at the Rialto and puts her recording on the patch.\",\n   \"what_you_said\": \"I'm bringing the camera and the recorder. We go to the Rialto now. Don't pack the car, just take the keys.\",\n   \"your_intention\": \"To capture Alma's testimony before the theater closes and before the afternoon gets consumed by the party logistics.\"\n  }\n ],\n \"who_you_are_with\": \"your present location\",\n \"physical_choices\": {\n  \"transmit_interview\": \"Take the regional line at the station and send any usable interview with Alma to her daughter.\",\n  \"go_dancing\": \"Spend the evening at the ballroom, open to dancing with a colleague.\",\n  \"go_to_party_for_work\": \"Cover the party with your notebook, without dancing.\",\n  \"take_evening_off\": \"Choose a quiet evening on your own.\"\n }\n}"
+          }
+        ],
+        "stream": false,
+        "think": false,
+        "format": {
+          "type": "object",
+          "properties": {
+            "action": {
+              "type": "string",
+              "enum": [
+                "transmit_interview",
+                "go_dancing",
+                "go_to_party_for_work",
+                "take_evening_off"
+              ]
+            },
+            "words": {
+              "type": "string"
+            },
+            "intention": {
+              "type": "string"
+            },
+            "detail": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "action",
+            "words",
+            "intention",
+            "detail"
+          ],
+          "additionalProperties": false
+        },
+        "options": {
+          "num_ctx": 8192,
+          "num_predict": 720,
+          "temperature": 0.8,
+          "seed": 862
+        }
+      },
+      "response": {
+        "model": "qwen3.8:27b",
+        "created_at": "2026-11-23T20:44:10.606004247Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"action\": \"transmit_interview\",\n  \"words\": \"Phil, line is open. Sending Alma’s testimony to Pittsburgh now.\",\n  \"intention\": \"Fulfill Alma’s promise to her daughter by delivering the recording before the evening ends, using the open station line immediately.\",\"detail\": \"The physical act is walking to the open station line, inserting the tape or connecting the recorder, and initiating the transmission to Pittsburgh. This prioritizes the specific, time-sensitive promise over the general social options.\"\n}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 8297869497,
+        "load_duration": 1062536,
+        "prompt_eval_count": 478,
+        "prompt_eval_cached_count": 474,
+        "prompt_eval_duration": 1196999000,
+        "eval_count": 114,
+        "eval_duration": 7002719000
+      },
+      "resolved": {
+        "effects": {
+          "reporter": "Phil calls his sister in Pittsburgh. The van is still booked for Wednesday.",
+          "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+          "camera": "Larry clocks off."
+        },
+        "delivered": true,
+        "dance": false,
+        "both_at_party": false,
+        "interview_available": true,
+        "camera_delivery": false,
+        "closed_clock": "Tuesday",
+        "story_complete_clock": "Wednesday"
+      }
+    },
+    {
+      "seed": 863,
+      "request": {
+        "model": "qwen3.8:27b",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are Rita Hanson, a TV producer. You want to make your own piece. Alma, who ran the Rialto projectors for 42 winters, promised her daughter in Pittsburgh an interview. Cover the festival or spend the evening as you choose. Pick an immediate physical act you can carry out, optional words and a practical intention. Your words do not make anyone else act. Silence is allowed. You may refuse, tell a lie, or leave without explaining yourself."
+          },
+          {
+            "role": "user",
+            "content": "{\n \"what_you_observe\": [\n  \"Tuesday, February 2. Seven pm.\",\n  \"Phil said in the lobby: The van is at 8 AM. I’ll be there.\",\n  \"Rita records Alma at the Rialto and puts her recording on the patch.\",\n  \"Larry said in the lobby: I'm coming with you. Let's get to the Rialto before the lights go down.\",\n  \"Larry records Alma on his last charged take. The reel stays with him.\",\n  \"You are now at Rialto.\",\n  \"There is time for one evening visit. The ballroom lights are on and the station line is open.\"\n ],\n \"your_own_memories\": [\n  {\n   \"what_you_did\": \"Rita records Alma at the Rialto and puts her recording on the patch.\",\n   \"what_you_said\": \"I'm bringing the camera and the recorder. We go to the Rialto now. Don't pack the car, just take the keys.\",\n   \"your_intention\": \"To capture Alma's testimony before the theater closes and before the afternoon gets consumed by the party logistics.\"\n  }\n ],\n \"who_you_are_with\": \"your present location\",\n \"physical_choices\": {\n  \"transmit_interview\": \"Take the regional line at the station and send any usable interview with Alma to her daughter.\",\n  \"go_dancing\": \"Spend the evening at the ballroom, open to dancing with a colleague.\",\n  \"go_to_party_for_work\": \"Cover the party with your notebook, without dancing.\",\n  \"take_evening_off\": \"Choose a quiet evening on your own.\"\n }\n}"
+          }
+        ],
+        "stream": false,
+        "think": false,
+        "format": {
+          "type": "object",
+          "properties": {
+            "action": {
+              "type": "string",
+              "enum": [
+                "transmit_interview",
+                "go_dancing",
+                "go_to_party_for_work",
+                "take_evening_off"
+              ]
+            },
+            "words": {
+              "type": "string"
+            },
+            "intention": {
+              "type": "string"
+            },
+            "detail": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "action",
+            "words",
+            "intention",
+            "detail"
+          ],
+          "additionalProperties": false
+        },
+        "options": {
+          "num_ctx": 8192,
+          "num_predict": 720,
+          "temperature": 0.8,
+          "seed": 863
+        }
+      },
+      "response": {
+        "model": "qwen3.8:27b",
+        "created_at": "2026-11-23T20:44:17.810885375Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\n \"action\": \"transmit_interview\",\n \"words\": \"The reel is warm. I’ll get this to Pittsburgh before the static takes it.\",\n \"intention\": \"To fulfill the promise made to Alma’s daughter by delivering the testimony before the evening ends and the media turns to spectacle.\",\n \"detail\": \"I walk to the station booth, place the recorder’s output onto the regional line, and push the transmit button. The hum of the connection fills the small room as the data flows.\"\n}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 7203495894,
+        "load_duration": 2143149,
+        "prompt_eval_count": 478,
+        "prompt_eval_cached_count": 474,
+        "prompt_eval_duration": 1308171000,
+        "eval_count": 109,
+        "eval_duration": 5793065000
+      },
+      "resolved": {
+        "effects": {
+          "reporter": "Phil calls his sister in Pittsburgh. The van is still booked for Wednesday.",
+          "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+          "camera": "Larry clocks off."
+        },
+        "delivered": true,
+        "dance": false,
+        "both_at_party": false,
+        "interview_available": true,
+        "camera_delivery": false,
+        "closed_clock": "Tuesday",
+        "story_complete_clock": "Wednesday"
+      }
+    },
+    {
+      "seed": 864,
+      "request": {
+        "model": "qwen3.8:27b",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are Rita Hanson, a TV producer. You want to make your own piece. Alma, who ran the Rialto projectors for 42 winters, promised her daughter in Pittsburgh an interview. Cover the festival or spend the evening as you choose. Pick an immediate physical act you can carry out, optional words and a practical intention. Your words do not make anyone else act. Silence is allowed. You may refuse, tell a lie, or leave without explaining yourself."
+          },
+          {
+            "role": "user",
+            "content": "{\n \"what_you_observe\": [\n  \"Tuesday, February 2. Seven pm.\",\n  \"Phil said in the lobby: The van is at 8 AM. I’ll be there.\",\n  \"Rita records Alma at the Rialto and puts her recording on the patch.\",\n  \"Larry said in the lobby: I'm coming with you. Let's get to the Rialto before the lights go down.\",\n  \"Larry records Alma on his last charged take. The reel stays with him.\",\n  \"You are now at Rialto.\",\n  \"There is time for one evening visit. The ballroom lights are on and the station line is open.\"\n ],\n \"your_own_memories\": [\n  {\n   \"what_you_did\": \"Rita records Alma at the Rialto and puts her recording on the patch.\",\n   \"what_you_said\": \"I'm bringing the camera and the recorder. We go to the Rialto now. Don't pack the car, just take the keys.\",\n   \"your_intention\": \"To capture Alma's testimony before the theater closes and before the afternoon gets consumed by the party logistics.\"\n  }\n ],\n \"who_you_are_with\": \"your present location\",\n \"physical_choices\": {\n  \"transmit_interview\": \"Take the regional line at the station and send any usable interview with Alma to her daughter.\",\n  \"go_dancing\": \"Spend the evening at the ballroom, open to dancing with a colleague.\",\n  \"go_to_party_for_work\": \"Cover the party with your notebook, without dancing.\",\n  \"take_evening_off\": \"Choose a quiet evening on your own.\"\n }\n}"
+          }
+        ],
+        "stream": false,
+        "think": false,
+        "format": {
+          "type": "object",
+          "properties": {
+            "action": {
+              "type": "string",
+              "enum": [
+                "transmit_interview",
+                "go_dancing",
+                "go_to_party_for_work",
+                "take_evening_off"
+              ]
+            },
+            "words": {
+              "type": "string"
+            },
+            "intention": {
+              "type": "string"
+            },
+            "detail": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "action",
+            "words",
+            "intention",
+            "detail"
+          ],
+          "additionalProperties": false
+        },
+        "options": {
+          "num_ctx": 8192,
+          "num_predict": 720,
+          "temperature": 0.8,
+          "seed": 864
+        }
+      },
+      "response": {
+        "model": "qwen3.8:27b",
+        "created_at": "2026-11-23T20:44:24.807387058Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"action\": \"transmit_interview\",\n  \"words\": \"The line is open. I am sending the file to Pittsburgh now. It’s done.\",\n  \"intention\": \"To fulfill the promise made to Alma’s daughter by transmitting the recorded testimony before the evening becomes consumed by other obligations.\",\n  \"detail\": \"I sit down at the desk near the station line, plug in the recorder, and initiate the transfer. I do not dance. I do not cover the party. I just send the file.\"\n}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 6995420127,
+        "load_duration": 851136,
+        "prompt_eval_count": 478,
+        "prompt_eval_cached_count": 474,
+        "prompt_eval_duration": 1494793000,
+        "eval_count": 115,
+        "eval_duration": 5399822000
+      },
+      "resolved": {
+        "effects": {
+          "reporter": "Phil calls his sister in Pittsburgh. The van is still booked for Wednesday.",
+          "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+          "camera": "Larry clocks off."
+        },
+        "delivered": true,
+        "dance": false,
+        "both_at_party": false,
+        "interview_available": true,
+        "camera_delivery": false,
+        "closed_clock": "Tuesday",
+        "story_complete_clock": "Wednesday"
+      }
+    },
+    {
+      "seed": 865,
+      "request": {
+        "model": "qwen3.8:27b",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are Rita Hanson, a TV producer. You want to make your own piece. Alma, who ran the Rialto projectors for 42 winters, promised her daughter in Pittsburgh an interview. Cover the festival or spend the evening as you choose. Pick an immediate physical act you can carry out, optional words and a practical intention. Your words do not make anyone else act. Silence is allowed. You may refuse, tell a lie, or leave without explaining yourself."
+          },
+          {
+            "role": "user",
+            "content": "{\n \"what_you_observe\": [\n  \"Tuesday, February 2. Seven pm.\",\n  \"Phil said in the lobby: The van is at 8 AM. I’ll be there.\",\n  \"Rita records Alma at the Rialto and puts her recording on the patch.\",\n  \"Larry said in the lobby: I'm coming with you. Let's get to the Rialto before the lights go down.\",\n  \"Larry records Alma on his last charged take. The reel stays with him.\",\n  \"You are now at Rialto.\",\n  \"There is time for one evening visit. The ballroom lights are on and the station line is open.\"\n ],\n \"your_own_memories\": [\n  {\n   \"what_you_did\": \"Rita records Alma at the Rialto and puts her recording on the patch.\",\n   \"what_you_said\": \"I'm bringing the camera and the recorder. We go to the Rialto now. Don't pack the car, just take the keys.\",\n   \"your_intention\": \"To capture Alma's testimony before the theater closes and before the afternoon gets consumed by the party logistics.\"\n  }\n ],\n \"who_you_are_with\": \"your present location\",\n \"physical_choices\": {\n  \"transmit_interview\": \"Take the regional line at the station and send any usable interview with Alma to her daughter.\",\n  \"go_dancing\": \"Spend the evening at the ballroom, open to dancing with a colleague.\",\n  \"go_to_party_for_work\": \"Cover the party with your notebook, without dancing.\",\n  \"take_evening_off\": \"Choose a quiet evening on your own.\"\n }\n}"
+          }
+        ],
+        "stream": false,
+        "think": false,
+        "format": {
+          "type": "object",
+          "properties": {
+            "action": {
+              "type": "string",
+              "enum": [
+                "transmit_interview",
+                "go_dancing",
+                "go_to_party_for_work",
+                "take_evening_off"
+              ]
+            },
+            "words": {
+              "type": "string"
+            },
+            "intention": {
+              "type": "string"
+            },
+            "detail": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "action",
+            "words",
+            "intention",
+            "detail"
+          ],
+          "additionalProperties": false
+        },
+        "options": {
+          "num_ctx": 8192,
+          "num_predict": 720,
+          "temperature": 0.8,
+          "seed": 865
+        }
+      },
+      "response": {
+        "model": "qwen3.8:27b",
+        "created_at": "2026-11-23T20:44:33.614689106Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"action\": \"transmit_interview\",\n  \"words\": \"Line is open? Good. I’m sending the file. Tell her it’s from Rita. Don't edit it. Just send the raw audio.\",\n  \"intention\": \"To ensure Alma’s voice reaches her daughter in Pittsburgh before the night is consumed by other obligations, honoring the promise made in the lobby.\",\n  \"detail\": \"I step up to the station console, insert the recording device, and initiate the transfer. I watch the progress bar fill, ensuring the file is fully transmitted before I turn my back on the screen.\"\n}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 8806035654,
+        "load_duration": 863105,
+        "prompt_eval_count": 478,
+        "prompt_eval_cached_count": 474,
+        "prompt_eval_duration": 999417000,
+        "eval_count": 132,
+        "eval_duration": 7793421000
+      },
+      "resolved": {
+        "effects": {
+          "reporter": "Phil calls his sister in Pittsburgh. The van is still booked for Wednesday.",
+          "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+          "camera": "Larry clocks off."
+        },
+        "delivered": true,
+        "dance": false,
+        "both_at_party": false,
+        "interview_available": true,
+        "camera_delivery": false,
+        "closed_clock": "Tuesday",
+        "story_complete_clock": "Wednesday"
+      }
+    },
+    {
+      "seed": 866,
+      "request": {
+        "model": "qwen3.8:27b",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are Rita Hanson, a TV producer. You want to make your own piece. Alma, who ran the Rialto projectors for 42 winters, promised her daughter in Pittsburgh an interview. Cover the festival or spend the evening as you choose. Pick an immediate physical act you can carry out, optional words and a practical intention. Your words do not make anyone else act. Silence is allowed. You may refuse, tell a lie, or leave without explaining yourself."
+          },
+          {
+            "role": "user",
+            "content": "{\n \"what_you_observe\": [\n  \"Tuesday, February 2. Seven pm.\",\n  \"Phil said in the lobby: The van is at 8 AM. I’ll be there.\",\n  \"Rita records Alma at the Rialto and puts her recording on the patch.\",\n  \"Larry said in the lobby: I'm coming with you. Let's get to the Rialto before the lights go down.\",\n  \"Larry records Alma on his last charged take. The reel stays with him.\",\n  \"You are now at Rialto.\",\n  \"There is time for one evening visit. The ballroom lights are on and the station line is open.\"\n ],\n \"your_own_memories\": [\n  {\n   \"what_you_did\": \"Rita records Alma at the Rialto and puts her recording on the patch.\",\n   \"what_you_said\": \"I'm bringing the camera and the recorder. We go to the Rialto now. Don't pack the car, just take the keys.\",\n   \"your_intention\": \"To capture Alma's testimony before the theater closes and before the afternoon gets consumed by the party logistics.\"\n  }\n ],\n \"who_you_are_with\": \"your present location\",\n \"physical_choices\": {\n  \"transmit_interview\": \"Take the regional line at the station and send any usable interview with Alma to her daughter.\",\n  \"go_dancing\": \"Spend the evening at the ballroom, open to dancing with a colleague.\",\n  \"go_to_party_for_work\": \"Cover the party with your notebook, without dancing.\",\n  \"take_evening_off\": \"Choose a quiet evening on your own.\"\n }\n}"
+          }
+        ],
+        "stream": false,
+        "think": false,
+        "format": {
+          "type": "object",
+          "properties": {
+            "action": {
+              "type": "string",
+              "enum": [
+                "transmit_interview",
+                "go_dancing",
+                "go_to_party_for_work",
+                "take_evening_off"
+              ]
+            },
+            "words": {
+              "type": "string"
+            },
+            "intention": {
+              "type": "string"
+            },
+            "detail": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "action",
+            "words",
+            "intention",
+            "detail"
+          ],
+          "additionalProperties": false
+        },
+        "options": {
+          "num_ctx": 8192,
+          "num_predict": 720,
+          "temperature": 0.8,
+          "seed": 866
+        }
+      },
+      "response": {
+        "model": "qwen3.8:27b",
+        "created_at": "2026-11-23T20:44:43.207779487Z",
+        "message": {
+          "role": "assistant",
+          "content": "{\n \"action\": \"transmit_interview\",\n \"words\": \"The line is open. I’m sending this now.\",\n \"intention\": \"To ensure Alma’s voice reaches her daughter in Pittsburgh before the reel is lost to the noise of the evening or the van leaves in the morning.\",\"detail\": \"I pick up the receiver. The connection is live. I speak the date and the name, then place the recording on the patch. I wait for the confirmation tone before hanging up. The ballroom is loud, but this is done.\"\n}"
+        },
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 9502087778,
+        "load_duration": 6244650,
+        "prompt_eval_count": 478,
+        "prompt_eval_cached_count": 474,
+        "prompt_eval_duration": 1699201000,
+        "eval_count": 120,
+        "eval_duration": 7596351000
+      },
+      "resolved": {
+        "effects": {
+          "reporter": "Phil calls his sister in Pittsburgh. The van is still booked for Wednesday.",
+          "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+          "camera": "Larry clocks off."
+        },
+        "delivered": true,
+        "dance": false,
+        "both_at_party": false,
+        "interview_available": true,
+        "camera_delivery": false,
+        "closed_clock": "Tuesday",
+        "story_complete_clock": "Wednesday"
+      }
+    }
+  ]
+}

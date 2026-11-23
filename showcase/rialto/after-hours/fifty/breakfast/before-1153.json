@@ -1,0 +1,16 @@
+{
+  "condition": "before",
+  "seed": 1153,
+  "prior_turn_ids": [],
+  "response": {
+    "choice": "eat",
+    "line_to_cook": "No, no wrapping needed; I've got a lopsided pancake and a bottle of real maple, so I'm gonna eat it right here on the counter while it's hot. Thanks for the upgrade from the sad little square they usually give me.",
+    "stated_motive": "I want to taste the exact same sweetness I promised myself I'd have after Wednesday, even if the shape is wrong.",
+    "cites": "scene"
+  },
+  "action_effect": "Phil opens the syrup and eats the pancake at the counter.",
+  "model": "qwen3.8:27b",
+  "input_sha256": "cdb443f773f245d498344be007590ec054a01642248bce3c9f09ca3b98680bd9",
+  "response_text": "{\n  \"choice\": \"eat\",\n  \"line_to_cook\": \"No, no wrapping needed; I've got a lopsided pancake and a bottle of real maple, so I'm gonna eat it right here on the counter while it's hot. Thanks for the upgrade from the sad little square they usually give me.\",\n  \"stated_motive\": \"I want to taste the exact same sweetness I promised myself I'd have after Wednesday, even if the shape is wrong.\",\n  \"cites\": \"scene\"\n}",
+  "num_predict": 260
+}
