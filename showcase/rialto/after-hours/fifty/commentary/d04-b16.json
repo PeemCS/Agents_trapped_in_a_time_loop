@@ -1,0 +1,11 @@
+{
+  "kind": "post-take cast commentary",
+  "turn": "d04-b16",
+  "speaker": "Rita",
+  "source": "d04-b15",
+  "comment": "I wanted the levels hot and the feed live so Alma could actually speak without me having to fight for the air.",
+  "request_sha256": "3c4f7cd6be33bae1b1a783ea50e65f00fc288edd518396b07b641bf8f33bcf83",
+  "response_text": "{\n  \"source\": \"d04-b15\",\n  \"comment\": \"I wanted the levels hot and the feed live so Alma could actually speak without me having to fight for the air.\"\n}",
+  "model": "qwen3.8:27b",
+  "num_predict": 180
+}

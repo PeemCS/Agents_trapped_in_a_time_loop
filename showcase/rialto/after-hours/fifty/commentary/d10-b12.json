@@ -1,0 +1,11 @@
+{
+  "kind": "post-take cast commentary",
+  "turn": "d10-b12",
+  "speaker": "Jo",
+  "source": "d10-b11",
+  "comment": "I wanted to prove I could handle the heavy lifting alone without waiting for his vague promises.",
+  "request_sha256": "6277afb609977c8df11dc8a5600ed48ecd7faa278b51848db5d50469900c2532",
+  "response_text": "{\n  \"source\": \"d10-b11\",\n  \"comment\": \"I wanted to prove I could handle the heavy lifting alone without waiting for his vague promises.\"\n}",
+  "model": "qwen3.8:27b",
+  "num_predict": 180
+}

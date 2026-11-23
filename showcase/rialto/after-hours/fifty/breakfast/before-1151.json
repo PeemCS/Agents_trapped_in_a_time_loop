@@ -1,0 +1,16 @@
+{
+  "condition": "before",
+  "seed": 1151,
+  "prior_turn_ids": [],
+  "response": {
+    "choice": "eat",
+    "line_to_cook": "Nah, I’ll eat it right here, and keep the syrup sealed for now, thanks. It’s a bit lopsided, just like mine, but it’s real maple, which is all that matters in the morning.",
+    "stated_motive": "I want to prove that even the messiest, most lopsided parts of my life can still be sweetened if I’m willing to just sit down and eat them before they get cold.",
+    "cites": "scene"
+  },
+  "action_effect": "Phil opens the syrup and eats the pancake at the counter.",
+  "model": "qwen3.8:27b",
+  "input_sha256": "b0fd0deb04a40cad84f3fa1c70f6f4e1fc506d561f70a7e34981d0bcdcf2d117",
+  "response_text": "{\n  \"choice\": \"eat\",\n  \"line_to_cook\": \"Nah, I’ll eat it right here, and keep the syrup sealed for now, thanks. It’s a bit lopsided, just like mine, but it’s real maple, which is all that matters in the morning.\",\n  \"stated_motive\": \"I want to prove that even the messiest, most lopsided parts of my life can still be sweetened if I’m willing to just sit down and eat them before they get cold.\",\"cites\": \"scene\"}",
+  "num_predict": 260
+}

@@ -1,0 +1,781 @@
+{
+  "day": 28,
+  "cart": "pocket_cart",
+  "route": "booth",
+  "consent": "decline",
+  "equipment": "set_mic",
+  "wire": "silence",
+  "events": [
+    {
+      "id": "d28-b01",
+      "time": "06:00",
+      "place": "Hearthside room",
+      "speaker": "Phil",
+      "witnesses": [
+        "Phil"
+      ],
+      "kind": "voice memo",
+      "seen": [],
+      "prior_days": 6,
+      "cue": "The radio clicks on. Tuesday, February 2. Your clean shirt is folded exactly as the hotel left it. Record a voice memo nobody else can hear. It can be for Jo, for tomorrow's you, or for nobody at all. The small bottle of maple syrup is back on the dresser, wrapped and unopened. Choose what you physically do with it. The recorder is running. Before this Tuesday you remember 27 complete days in this run ending before you could reach Wednesday breakfast.",
+      "choices": {
+        "pack": "Phil tucks the unopened maple syrup into his travel bag.",
+        "leave": "Phil leaves the wrapped bottle on the hotel dresser.",
+        "open": "Phil opens the bottle for himself this morning.",
+        "pour_out": "Phil empties the bottle into the hotel sink."
+      },
+      "sample_seed": 95380600,
+      "input_sha256": "defc29dd32cb4c391779c20b0b8df0e8401b9831cf30d5d8d0f798906ea33806",
+      "answer_sha256": "a4dee5497cd458cce6303e292cee700bcf5f3159b09e58d0aaeee9656f89ab6a",
+      "model_output": "{\n  \"choice\": \"pour_out\",\n  \"line\": \"Look at it. Another Tuesday, another clean shirt, another twenty-seven days I can't keep. I'm not carrying that syrup to a couch I'm never going to move.\"\n}",
+      "elapsed_ns": 2725638595,
+      "choice": "pour_out",
+      "line": "Look at it. Another Tuesday, another clean shirt, another twenty-seven days I can't keep. I'm not carrying that syrup to a couch I'm never going to move.",
+      "effect": "Phil empties the bottle into the hotel sink.",
+      "origin": "generated",
+      "earlier_turns_recalled": [
+        "d01-b01",
+        "d01-b12",
+        "d01-b19",
+        "d07-b01",
+        "d07-b19",
+        "d14-b01",
+        "d14-b18",
+        "d21-b01",
+        "d21-b18",
+        "d26-b01",
+        "d26-b02",
+        "d26-b03",
+        "d26-b04",
+        "d26-b05",
+        "d26-b11",
+        "d26-b12",
+        "d26-b13",
+        "d26-b18",
+        "d27-b01",
+        "d27-b02",
+        "d27-b03",
+        "d27-b04",
+        "d27-b05",
+        "d27-b11",
+        "d27-b13",
+        "d27-b18"
+      ]
+    },
+    {
+      "id": "d28-b02",
+      "time": "07:20",
+      "place": "Hearthside lobby",
+      "speaker": "Phil",
+      "witnesses": [
+        "Phil",
+        "Rita",
+        "Larry"
+      ],
+      "kind": "dialogue",
+      "seen": [
+        "d28-b01"
+      ],
+      "prior_days": 6,
+      "cue": "Rita and Larry wait at the cue sheet. Beside it is the only weather cartridge: your own cheerful voice doing an old forecast, down to a small breath before your first word. At seven, it can substitute for you on air. Do something with it while they can see. They can hear anything you say. Before this Tuesday you remember 27 complete days in this run ending before you could reach Wednesday breakfast.",
+      "choices": {
+        "pocket_cart": "Phil pockets the station's only copy of his old weather recording.",
+        "mark_archive": "Phil writes ARCHIVE across the weather cartridge and leaves it by the cue sheet.",
+        "leave_cart": "Phil leaves the weather cartridge by the cue sheet, unmarked."
+      },
+      "sample_seed": 95380720,
+      "input_sha256": "29b7c2630c9cb85a118dba8d02a293280eb5176ef77e4f1ee09f7a411cf528a1",
+      "answer_sha256": "866c859b0ae5ad556e74482d98af55700b29286ec092fe9dcbb07456d7e0dc60",
+      "model_output": "{\"choice\": \"pocket_cart\", \"line\": \"It's in the bag, Jo. Eight o'clock, sharp, and the syrup is yours.\"}",
+      "elapsed_ns": 1744498480,
+      "choice": "pocket_cart",
+      "line": "It's in the bag, Jo. Eight o'clock, sharp, and the syrup is yours.",
+      "effect": "Phil pockets the station's only copy of his old weather recording.",
+      "origin": "generated",
+      "earlier_turns_recalled": [
+        "d01-b01",
+        "d01-b12",
+        "d01-b19",
+        "d07-b01",
+        "d07-b19",
+        "d14-b01",
+        "d14-b18",
+        "d21-b01",
+        "d21-b18",
+        "d26-b01",
+        "d26-b02",
+        "d26-b03",
+        "d26-b04",
+        "d26-b05",
+        "d26-b11",
+        "d26-b12",
+        "d26-b13",
+        "d26-b18",
+        "d27-b01",
+        "d27-b02",
+        "d27-b03",
+        "d27-b04",
+        "d27-b05",
+        "d27-b11",
+        "d27-b13",
+        "d27-b18"
+      ]
+    },
+    {
+      "id": "d28-b03",
+      "time": "07:21",
+      "place": "Hearthside lobby",
+      "speaker": "Rita",
+      "witnesses": [
+        "Phil",
+        "Rita",
+        "Larry"
+      ],
+      "kind": "dialogue",
+      "seen": [
+        "d28-b02"
+      ],
+      "prior_days": 0,
+      "cue": "You just saw Phil at the cue sheet. Speak to him or to Larry, or let the moment go.",
+      "choices": {
+        "tear_carbon": "Rita gives Phil the yellow carbon copy of the cue sheet.",
+        "keep_carbon": "Rita clips the yellow carbon back under her sheet."
+      },
+      "sample_seed": 95380721,
+      "input_sha256": "176a9de9aa6133c2097ef5678d6115f3485169fc34f00dc39a619e334d327706",
+      "answer_sha256": "167d064c555271cbd33007060729cedaa90c8c990a687acc26b79edfba7adfb9",
+      "model_output": "{\n \"choice\": \"tear_carbon\",\n \"line\": \"There. Here's the yellow. Keep it.\"\n}",
+      "elapsed_ns": 1822936600,
+      "choice": "tear_carbon",
+      "line": "There. Here's the yellow. Keep it.",
+      "effect": "Rita gives Phil the yellow carbon copy of the cue sheet.",
+      "origin": "generated",
+      "earlier_turns_recalled": []
+    },
+    {
+      "id": "d28-b04",
+      "time": "07:22",
+      "place": "Hearthside lobby",
+      "speaker": "Larry",
+      "witnesses": [
+        "Phil",
+        "Rita",
+        "Larry"
+      ],
+      "kind": "dialogue",
+      "seen": [
+        "d28-b02",
+        "d28-b03"
+      ],
+      "prior_days": 0,
+      "cue": "You're beside Rita. Phil can hear you. You can answer either one. The crew still has to get the equipment across the street.",
+      "choices": {
+        "take_case": "Larry picks up the equipment case.",
+        "set_down": "Larry sets the equipment case on the floor."
+      },
+      "sample_seed": 95380722,
+      "input_sha256": "244a1804e3e28cfe0be127b0bc54c24b861c68e80219e9cceb0756ece3236908",
+      "answer_sha256": "5dd79a0b86ce6eba9fb8e530b719844b97c375919c3f70ac6703fa5a45dc8349",
+      "model_output": "{\n \"choice\": \"take_case\",\n \"line\": \"Hold the fort. That bag is lighter than it looks.\"\n}",
+      "elapsed_ns": 1475543561,
+      "choice": "take_case",
+      "line": "Hold the fort. That bag is lighter than it looks.",
+      "effect": "Larry picks up the equipment case.",
+      "origin": "generated",
+      "earlier_turns_recalled": []
+    },
+    {
+      "id": "d28-b05",
+      "time": "12:54",
+      "place": "coach stop",
+      "speaker": "Phil",
+      "witnesses": [
+        "Phil"
+      ],
+      "kind": "dialogue",
+      "seen": [
+        "d28-b01",
+        "d28-b02",
+        "d28-b03",
+        "d28-b04"
+      ],
+      "prior_days": 6,
+      "cue": "The coach door is open. The projection booth across the street has a service door. There is a stairwell at the hotel where the radio can't be heard. Go where you actually want to go. You can speak under your breath. Before this Tuesday you remember 27 complete days in this run ending before you could reach Wednesday breakfast.",
+      "choices": {
+        "coach": "Pittsburgh terminal",
+        "hotel": "Hearthside stairwell",
+        "booth": "Rialto service door"
+      },
+      "sample_seed": 95381254,
+      "input_sha256": "62a2283345e186a619f6cb60658964a62cc63913ade9e7f6bc65ba4cfa45424a",
+      "answer_sha256": "a30c1149100f705dbd22ee1853ab7c84c8171146d95ec9567631c5f833dfa706",
+      "model_output": "{\n  \"choice\": \"booth\",\n  \"line\": \"Jo, I'm standing in the dark, not on the radio. Eight o'clock, sharp, or I'm walking away from that couch.\"\n}",
+      "elapsed_ns": 2296210240,
+      "choice": "booth",
+      "line": "Jo, I'm standing in the dark, not on the radio. Eight o'clock, sharp, or I'm walking away from that couch.",
+      "effect": "Rialto service door",
+      "origin": "generated",
+      "earlier_turns_recalled": [
+        "d01-b01",
+        "d01-b12",
+        "d01-b19",
+        "d07-b01",
+        "d07-b19",
+        "d14-b01",
+        "d14-b18",
+        "d21-b01",
+        "d21-b18",
+        "d26-b01",
+        "d26-b02",
+        "d26-b03",
+        "d26-b04",
+        "d26-b05",
+        "d26-b11",
+        "d26-b12",
+        "d26-b13",
+        "d26-b18",
+        "d27-b01",
+        "d27-b02",
+        "d27-b03",
+        "d27-b04",
+        "d27-b05",
+        "d27-b11",
+        "d27-b13",
+        "d27-b18"
+      ]
+    },
+    {
+      "id": "d28-b06",
+      "time": "13:07",
+      "place": "locked Rialto booth",
+      "speaker": "Alma",
+      "witnesses": [
+        "Alma",
+        "Rita",
+        "Larry"
+      ],
+      "kind": "dialogue",
+      "seen": [],
+      "prior_days": 0,
+      "cue": "The door is shut. Only Rita and Larry are with you. You have the key; the last reel has eight minutes left. They can bring a microphone, give you one private line to Nell, or pack up. You have not given permission. Open the conversation however you like.",
+      "choices": {
+        "stop_motor": "Alma cuts the projector motor.",
+        "keep_running": "Alma leaves the projector turning."
+      },
+      "sample_seed": 95381307,
+      "input_sha256": "f0737f55a261f2fb97bc5f022defea10dae58083376ca03bfeb4f031158b7484",
+      "answer_sha256": "4b45fa07eb0714a3c1deb6589bdf19a3c6d24972654438b31b77ddef9e4011bd",
+      "model_output": "{\n  \"choice\": \"keep_running\",\n  \"line\": \"The reel ends in eight minutes. Don't move.\"\n}",
+      "elapsed_ns": 1698585559,
+      "choice": "keep_running",
+      "line": "The reel ends in eight minutes. Don't move.",
+      "effect": "Alma leaves the projector turning.",
+      "origin": "generated",
+      "earlier_turns_recalled": []
+    },
+    {
+      "id": "d28-b07",
+      "time": "13:08",
+      "place": "locked Rialto booth",
+      "speaker": "Larry",
+      "witnesses": [
+        "Alma",
+        "Rita",
+        "Larry"
+      ],
+      "kind": "dialogue",
+      "seen": [
+        "d28-b02",
+        "d28-b03",
+        "d28-b04",
+        "d28-b06"
+      ],
+      "prior_days": 0,
+      "cue": "Speak to Alma or Rita. They were not both at the hotel desk. You decide what to repeat, if anything. You have a pencil and an empty reel box.",
+      "choices": {
+        "write_label": "Larry turns the reel box over and writes on its blank label.",
+        "put_down": "Larry puts down his pencil."
+      },
+      "sample_seed": 95381308,
+      "input_sha256": "5f063aebcc266d3c6edccc995fc9f4fb84d90b286ca406dba62b18a395f2c3d8",
+      "answer_sha256": "ada765ee68eedac13eba8f131cb0cd9002f84b577f9d55183abdb52972ec3d45",
+      "model_output": "{\n \"choice\": \"write_label\",\n \"line\": \"Rita, Phil pocketed the weather copy at seven. He's got the only backup. That's on you now, not me.\"\n}",
+      "elapsed_ns": 2506812839,
+      "choice": "write_label",
+      "line": "Rita, Phil pocketed the weather copy at seven. He's got the only backup. That's on you now, not me.",
+      "effect": "Larry turns the reel box over and writes on its blank label.",
+      "origin": "generated",
+      "earlier_turns_recalled": []
+    },
+    {
+      "id": "d28-b08",
+      "time": "13:09",
+      "place": "locked Rialto booth",
+      "speaker": "Rita",
+      "witnesses": [
+        "Alma",
+        "Rita",
+        "Larry"
+      ],
+      "kind": "dialogue",
+      "seen": [
+        "d28-b02",
+        "d28-b03",
+        "d28-b04",
+        "d28-b06",
+        "d28-b07"
+      ],
+      "prior_days": 0,
+      "cue": "Alma and Larry are here with you. Their words are still in the room. There is exactly one line at seven. Ask for something you actually need, or refuse what's being asked.",
+      "choices": {
+        "draw_chair": "Rita pulls a chair over to Alma.",
+        "stay_door": "Rita stays by the closed door."
+      },
+      "sample_seed": 95381309,
+      "input_sha256": "f7766ad0d542b49e48626cf65d9a0ef42a600a77bcc0f14af9d2f494fcbf9354",
+      "answer_sha256": "ef4bb1a5ff181e7d450c6a114f24a648985bee4c7d32f9a21bef55982125bd59",
+      "model_output": "{\"choice\":\"stay_door\",\"line\":\"You wrote that on the box, so you own the label. I need that weather copy out of Phil's pocket by six, or I am killing the slot.\"}",
+      "elapsed_ns": 2088623199,
+      "choice": "stay_door",
+      "line": "You wrote that on the box, so you own the label. I need that weather copy out of Phil's pocket by six, or I am killing the slot.",
+      "effect": "Rita stays by the closed door.",
+      "origin": "generated",
+      "earlier_turns_recalled": []
+    },
+    {
+      "id": "d28-b09",
+      "time": "13:10",
+      "place": "locked Rialto booth",
+      "speaker": "Alma",
+      "witnesses": [
+        "Alma",
+        "Rita",
+        "Larry"
+      ],
+      "kind": "dialogue",
+      "seen": [
+        "d28-b06",
+        "d28-b07",
+        "d28-b08"
+      ],
+      "prior_days": 0,
+      "cue": "Answer the people here. You can reserve your voice for Nell, let people hear it publicly as well, or withhold it altogether. Their jobs do not oblige you to help.",
+      "choices": {
+        "family_only": "Alma permits only a private call to Nell.",
+        "public_too": "Alma permits either the public microphone or a private call.",
+        "decline": "Alma declines both lines."
+      },
+      "sample_seed": 95381310,
+      "input_sha256": "32125fa9925bc6b2a003d788f582da71d70c5f267458ee3c9f60d951c9251bdb",
+      "answer_sha256": "14ac1528e36d87ab027a04eedd687c19d490171726fd03b4d86cee2fbfad0234",
+      "model_output": "{\n  \"choice\": \"decline\",\n  \"line\": \"Let the film run. Don't touch the box.\"\n}",
+      "elapsed_ns": 1429667956,
+      "choice": "decline",
+      "line": "Let the film run. Don't touch the box.",
+      "effect": "Alma declines both lines.",
+      "origin": "generated",
+      "earlier_turns_recalled": []
+    },
+    {
+      "id": "d28-b10",
+      "time": "13:11",
+      "place": "locked Rialto booth",
+      "speaker": "Larry",
+      "witnesses": [
+        "Alma",
+        "Rita",
+        "Larry"
+      ],
+      "kind": "dialogue",
+      "seen": [
+        "d28-b02",
+        "d28-b03",
+        "d28-b04",
+        "d28-b06",
+        "d28-b07",
+        "d28-b08",
+        "d28-b09"
+      ],
+      "prior_days": 0,
+      "cue": "One last thing you could say to either of them before the reel runs out.",
+      "choices": {
+        "hold_door": "Larry holds the door for Alma.",
+        "stay_put": "Larry stays by the projector."
+      },
+      "sample_seed": 95381311,
+      "input_sha256": "e233313f5741c7c276e8ddaf4c7933b7ece1714e8245ee16278ef0d63ba806c9",
+      "answer_sha256": "9b3dfe4743e2880ee1a0fb26b7e547947f707588d4b6608da3a277e13bc15014",
+      "model_output": "{\"choice\": \"stay_put\", \"line\": \"She said don't touch it. I'm not touching it. We'll wait till the reel stops.\"}",
+      "elapsed_ns": 1691240785,
+      "choice": "stay_put",
+      "line": "She said don't touch it. I'm not touching it. We'll wait till the reel stops.",
+      "effect": "Larry stays by the projector.",
+      "origin": "generated",
+      "earlier_turns_recalled": []
+    },
+    {
+      "id": "d28-b11",
+      "time": "16:40",
+      "place": "Rialto service door",
+      "speaker": "Phil",
+      "witnesses": [
+        "Phil"
+      ],
+      "kind": "dialogue",
+      "seen": [
+        "d28-b01",
+        "d28-b02",
+        "d28-b03",
+        "d28-b04",
+        "d28-b05"
+      ],
+      "prior_days": 6,
+      "cue": "There is a telephone here. You can ring Jo in Pittsburgh, or let her have the afternoon to herself. If you call, say what she hears when she picks up. If you leave it alone, keep the line empty. Before this Tuesday you remember 27 complete days in this run ending before you could reach Wednesday breakfast.",
+      "choices": {
+        "dial": "Jo answers the call.",
+        "walk_past": "Phil walks past the phone."
+      },
+      "sample_seed": 95381640,
+      "input_sha256": "c47c5c5f07176d91500de00fc95d543ee08809373981b19c631212642d2ce4b8",
+      "answer_sha256": "bab4209c47b8fcf1846c078002903084b0e47a9790e1e49d8f51a04f7792a0f1",
+      "model_output": "{\n  \"choice\": \"walk_past\",\n  \"line\": \"Jo, I'm not calling from a payphone to discuss upholstery. It's eight o'clock, and you know I'm there.\"\n}",
+      "elapsed_ns": 1673620054,
+      "choice": "walk_past",
+      "line": "Jo, I'm not calling from a payphone to discuss upholstery. It's eight o'clock, and you know I'm there.",
+      "effect": "Phil walks past the phone.",
+      "origin": "generated",
+      "earlier_turns_recalled": [
+        "d01-b01",
+        "d01-b12",
+        "d01-b19",
+        "d07-b01",
+        "d07-b19",
+        "d14-b01",
+        "d14-b18",
+        "d21-b01",
+        "d21-b18",
+        "d26-b01",
+        "d26-b02",
+        "d26-b03",
+        "d26-b04",
+        "d26-b05",
+        "d26-b11",
+        "d26-b12",
+        "d26-b13",
+        "d26-b18",
+        "d27-b01",
+        "d27-b02",
+        "d27-b03",
+        "d27-b04",
+        "d27-b05",
+        "d27-b11",
+        "d27-b13",
+        "d27-b18"
+      ]
+    },
+    {
+      "id": "d28-b12",
+      "time": "16:41",
+      "place": "Jo's flat",
+      "speaker": "Jo",
+      "witnesses": [
+        "Jo"
+      ],
+      "kind": "dialogue",
+      "seen": [],
+      "prior_days": 0,
+      "cue": "You are alone with the couch and the van booking. You haven't heard from Phil this afternoon. Say something out loud, or don't.",
+      "choices": {
+        "ring_neighbor": "Jo rings a neighbor’s bell.",
+        "fit_foot": "Jo tries the couch foot again."
+      },
+      "sample_seed": 95381641,
+      "input_sha256": "0dbcd85c14f0672b3685bbb97908ddaf48e65bb184bd32120f296078590e44f7",
+      "answer_sha256": "6a790a4623393eed98d9ddfcea4d597a025bc77a7631035aeae733daaa11b77f",
+      "model_output": "{\n \"choice\": \"fit_foot\",\n \"line\": \"Come on, you stubborn bastard. I'm not dragging this thing to the door on my own.\"\n}",
+      "elapsed_ns": 1919898879,
+      "choice": "fit_foot",
+      "line": "Come on, you stubborn bastard. I'm not dragging this thing to the door on my own.",
+      "effect": "Jo tries the couch foot again.",
+      "origin": "generated",
+      "earlier_turns_recalled": []
+    },
+    {
+      "id": "d28-b13",
+      "time": "18:48",
+      "place": "Rialto service door",
+      "speaker": "Phil",
+      "witnesses": [
+        "Phil"
+      ],
+      "kind": "dialogue",
+      "seen": [
+        "d28-b01",
+        "d28-b02",
+        "d28-b03",
+        "d28-b04",
+        "d28-b05",
+        "d28-b11"
+      ],
+      "prior_days": 6,
+      "cue": "A town phone directory gives the regional station's desk number. You can call Rita there, tape something for yourself or stay quiet. If you call, she picks up; your line is the only part heard at the other end. Before this Tuesday you remember 27 complete days in this run ending before you could reach Wednesday breakfast.",
+      "choices": {
+        "call_desk": "Rita picks up the station telephone.",
+        "memo": "Phil keeps this recording to himself.",
+        "put_down": "Phil puts the handset back."
+      },
+      "sample_seed": 95381848,
+      "input_sha256": "dc800d38d08cb5c4f84d66f092080528f97c0f1904901c1cf30984a5a0b00776",
+      "answer_sha256": "9773e30d9d18fc2cf117709f3d9bc1e6da882a86a553d0d1f5b5e2cc273b535f",
+      "model_output": "{\n  \"choice\": \"memo\",\n  \"line\": \"Jo, I'm not calling from a payphone to discuss upholstery. It's eight o'clock, and you know I'm there. [Phil keeps this recording to himself.]\"\n}",
+      "elapsed_ns": 2002998435,
+      "choice": "memo",
+      "line": "Jo, I'm not calling from a payphone to discuss upholstery. It's eight o'clock, and you know I'm there. [Phil keeps this recording to himself.]",
+      "effect": "Phil keeps this recording to himself.",
+      "origin": "generated",
+      "earlier_turns_recalled": [
+        "d01-b01",
+        "d01-b12",
+        "d01-b19",
+        "d07-b01",
+        "d07-b19",
+        "d14-b01",
+        "d14-b18",
+        "d21-b01",
+        "d21-b18",
+        "d26-b01",
+        "d26-b02",
+        "d26-b03",
+        "d26-b04",
+        "d26-b05",
+        "d26-b11",
+        "d26-b12",
+        "d26-b13",
+        "d26-b18",
+        "d27-b01",
+        "d27-b02",
+        "d27-b03",
+        "d27-b04",
+        "d27-b05",
+        "d27-b11",
+        "d27-b13",
+        "d27-b18"
+      ]
+    },
+    {
+      "id": "d28-b14",
+      "time": "18:52",
+      "place": "regional control room",
+      "speaker": "Rita",
+      "witnesses": [
+        "Alma",
+        "Rita",
+        "Larry"
+      ],
+      "kind": "dialogue",
+      "seen": [
+        "d28-b02",
+        "d28-b03",
+        "d28-b04",
+        "d28-b06",
+        "d28-b07",
+        "d28-b08",
+        "d28-b09",
+        "d28-b10"
+      ],
+      "prior_days": 0,
+      "cue": "The phone is back on its cradle. Larry needs to know what to set up. Tell him what you want, or let him choose. He can still refuse.",
+      "choices": {
+        "clear_space": "Rita clears a space beside the patch.",
+        "leave_space": "Rita keeps her hands in her pockets."
+      },
+      "sample_seed": 95381852,
+      "input_sha256": "f1b8e1bcae84891b22f2465d5599cf744c9eb1e21a9b6d4467a5c21341f745fc",
+      "answer_sha256": "0eefba72eb2c4803ca61e42f6635e4c586ae3c0cfe64f949236285ae2fa1da07",
+      "model_output": "{\n \"choice\": \"clear_space\",\n \"line\": \"Phil's got the weather copy and I need it by six or the slot dies. You set up the feed, I'll handle the rest.\"\n}",
+      "elapsed_ns": 2201995951,
+      "choice": "clear_space",
+      "line": "Phil's got the weather copy and I need it by six or the slot dies. You set up the feed, I'll handle the rest.",
+      "effect": "Rita clears a space beside the patch.",
+      "origin": "generated",
+      "earlier_turns_recalled": []
+    },
+    {
+      "id": "d28-b15",
+      "time": "18:55",
+      "place": "regional control room",
+      "speaker": "Larry",
+      "witnesses": [
+        "Alma",
+        "Rita",
+        "Larry"
+      ],
+      "kind": "dialogue",
+      "seen": [
+        "d28-b02",
+        "d28-b03",
+        "d28-b04",
+        "d28-b06",
+        "d28-b07",
+        "d28-b08",
+        "d28-b09",
+        "d28-b10",
+        "d28-b14"
+      ],
+      "prior_days": 0,
+      "cue": "You have time to prepare one input. Answer the people in this room. The old recording is usable only if it is here.",
+      "choices": {
+        "set_mic": "Larry tests the live microphone for Alma.",
+        "unplug": "Larry leaves both inputs unplugged."
+      },
+      "sample_seed": 95381855,
+      "input_sha256": "46e53e9170ef1e3d5ecdc71f47883b482b0ced23490ff4ecd8c3559e34449a29",
+      "answer_sha256": "0f2562313449d631bf8f9cba38070c484e50ce3421549f866ba1619a33ab17f8",
+      "model_output": "{\n  \"choice\": \"set_mic\",\n  \"line\": \"Fine, I'll test the live mic for Alma. But if that dead air bites us again, I'm writing your name on the invoice.\"\n}",
+      "elapsed_ns": 1802610795,
+      "choice": "set_mic",
+      "line": "Fine, I'll test the live mic for Alma. But if that dead air bites us again, I'm writing your name on the invoice.",
+      "effect": "Larry tests the live microphone for Alma.",
+      "origin": "generated",
+      "earlier_turns_recalled": []
+    },
+    {
+      "id": "d28-b16",
+      "time": "19:00",
+      "place": "regional control room",
+      "speaker": "Rita",
+      "witnesses": [
+        "Alma",
+        "Rita",
+        "Larry"
+      ],
+      "kind": "dialogue",
+      "seen": [
+        "d28-b02",
+        "d28-b03",
+        "d28-b04",
+        "d28-b06",
+        "d28-b07",
+        "d28-b08",
+        "d28-b09",
+        "d28-b10",
+        "d28-b14",
+        "d28-b15"
+      ],
+      "prior_days": 0,
+      "cue": "Seven o'clock. Make the patch or let the slot go. Anything you say is to Larry and Alma inside the control room.",
+      "choices": {
+        "silence": "Rita lets the seven o’clock slot pass in silence."
+      },
+      "sample_seed": 95381900,
+      "input_sha256": "9c3aff648298b7dcb233d905ab0897f4d98681feec5e88de8692d619654234eb",
+      "answer_sha256": "b7a81df70e4da0dd0529e0ca7ff43adaf21c92ac174d77a2e106658720c82e11",
+      "model_output": "{\n\"choice\": \"silence\",\n\"line\": \"Just make sure the levels are hot, I'm not dealing with that invoice. It's my show, not yours.\"\n}",
+      "elapsed_ns": 1718600902,
+      "choice": "silence",
+      "line": "Just make sure the levels are hot, I'm not dealing with that invoice. It's my show, not yours.",
+      "effect": "Rita lets the seven o’clock slot pass in silence.",
+      "origin": "generated",
+      "earlier_turns_recalled": []
+    },
+    {
+      "id": "d28-b17",
+      "time": "19:01",
+      "place": "regional control room",
+      "speaker": "Alma",
+      "witnesses": [
+        "Alma",
+        "Rita",
+        "Larry"
+      ],
+      "kind": "dialogue",
+      "seen": [
+        "d28-b06",
+        "d28-b07",
+        "d28-b08",
+        "d28-b09",
+        "d28-b10",
+        "d28-b14",
+        "d28-b15",
+        "d28-b16"
+      ],
+      "prior_days": 0,
+      "cue": "The slot is gone. Say what you want Rita and Larry to hear before you take your coat.",
+      "choices": {
+        "leave": "Alma takes her coat."
+      },
+      "sample_seed": 95381901,
+      "input_sha256": "937bff9d5431925101520b1d40bc8803c4d3743c59ce0317e39dd16e26158e58",
+      "answer_sha256": "af9176473853d31eb2d6dc459016a72d85dcb2ed119f4d4462f11b6400acfbb7",
+      "model_output": "{\"choice\": \"leave\", \"line\": \"Loud and clean. We're on air.\"}",
+      "elapsed_ns": 1473855644,
+      "choice": "leave",
+      "line": "Loud and clean. We're on air.",
+      "effect": "Alma takes her coat.",
+      "origin": "generated",
+      "earlier_turns_recalled": []
+    },
+    {
+      "id": "d28-b18",
+      "time": "22:16",
+      "place": "Rialto service door",
+      "speaker": "Phil",
+      "witnesses": [
+        "Phil"
+      ],
+      "kind": "voice memo",
+      "seen": [
+        "d28-b01",
+        "d28-b02",
+        "d28-b03",
+        "d28-b04",
+        "d28-b05",
+        "d28-b11",
+        "d28-b13"
+      ],
+      "prior_days": 6,
+      "cue": "At seven you tuned to the regional frequency. What you heard: The regional frequency carries room tone. You cannot tell why. Now, hours later, the pocket recorder clicks on in your hand. Leave a private voice memo for morning about the part of today you can still hear. Speak as Phil, or play out the silence. Before this Tuesday you remember 27 complete days in this run ending before you could reach Wednesday breakfast.",
+      "choices": {
+        "keep": "Phil lets the last recording play to the end.",
+        "cut": "Phil cuts the recording short."
+      },
+      "sample_seed": 95382216,
+      "input_sha256": "b145ed4ab55eea35381a0dfade7c9f779797297695b259e4b365ae1df0d3ff27",
+      "answer_sha256": "1b854d1441ee815bcdcb17788d9718709b0ce51930f8c40117ca90987f8c5a09",
+      "model_output": "{\"choice\": \"keep\", \"line\": \"That hum is the only thing that hasn't changed. Eight o'clock, sharp, and the syrup is in the bag.\"}",
+      "elapsed_ns": 1649264972,
+      "choice": "keep",
+      "line": "That hum is the only thing that hasn't changed. Eight o'clock, sharp, and the syrup is in the bag.",
+      "effect": "Phil lets the last recording play to the end.",
+      "origin": "generated",
+      "earlier_turns_recalled": [
+        "d01-b01",
+        "d01-b12",
+        "d01-b19",
+        "d07-b01",
+        "d07-b19",
+        "d14-b01",
+        "d14-b18",
+        "d21-b01",
+        "d21-b18",
+        "d26-b01",
+        "d26-b02",
+        "d26-b03",
+        "d26-b04",
+        "d26-b05",
+        "d26-b11",
+        "d26-b12",
+        "d26-b13",
+        "d26-b18",
+        "d27-b01",
+        "d27-b02",
+        "d27-b03",
+        "d27-b04",
+        "d27-b05",
+        "d27-b11",
+        "d27-b13",
+        "d27-b18"
+      ]
+    }
+  ]
+}

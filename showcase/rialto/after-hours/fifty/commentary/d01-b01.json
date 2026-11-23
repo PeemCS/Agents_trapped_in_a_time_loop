@@ -1,0 +1,11 @@
+{
+  "kind": "post-take cast commentary",
+  "turn": "d01-b01",
+  "speaker": "Phil",
+  "source": "scene",
+  "comment": "I wanted to secure the one small, tangible promise of a future that actually exists for me.",
+  "request_sha256": "8711a2041ae5e3ca51ef26e6202973170cf709f45c49f4aca7452c47cd7ce849",
+  "response_text": "{\n  \"source\": \"scene\",\n  \"comment\": \"I wanted to secure the one small, tangible promise of a future that actually exists for me.\"\n}",
+  "model": "qwen3.8:27b",
+  "num_predict": 180
+}
