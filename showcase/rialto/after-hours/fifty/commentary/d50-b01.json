@@ -1,0 +1,11 @@
+{
+  "kind": "post-take cast commentary",
+  "turn": "d50-b01",
+  "speaker": "Phil",
+  "source": "d49-b01",
+  "comment": "I wanted to prove I could keep a promise without the static eating it.",
+  "request_sha256": "24a87d84c387a2b0f48d70e4005e05f3054ae0c0d343046ec2e27ca4c2b21147",
+  "response_text": "{\n  \"source\": \"d49-b01\",\n  \"comment\": \"I wanted to prove I could keep a promise without the static eating it.\"\n}",
+  "model": "qwen3.8:27b",
+  "num_predict": 180
+}

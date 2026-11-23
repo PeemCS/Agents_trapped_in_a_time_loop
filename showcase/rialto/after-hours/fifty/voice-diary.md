@@ -631,3 +631,273 @@ Phil tucks the unopened maple syrup into his travel bag.
 Phil lets the last recording play to the end.
 
 [All dialogue and actions from Tuesday 35](day-35.json)
+
+<a id="day-36"></a>
+
+## Tuesday 36
+
+**06:00 · Hearthside room**
+
+> It's in the bag, Jo. Eight o'clock, sharp. Don't let that foot ruin the pancakes again.
+
+Phil tucks the unopened maple syrup into his travel bag.
+
+**22:16 · Pittsburgh terminal**
+
+> Cut it. Eight o'clock, sharp.
+
+Phil cuts the recording short.
+
+[All dialogue and actions from Tuesday 36](day-36.json)
+
+<a id="day-37"></a>
+
+## Tuesday 37
+
+**06:00 · Hearthside room**
+
+> Jo, it’s in the bag. Eight o'clock, sharp. Don’t let that foot ruin the pancakes again.
+
+Phil tucks the unopened maple syrup into his travel bag.
+
+**22:16 · Pittsburgh terminal**
+
+> Cut it. Eight o'clock, sharp.
+
+Phil cuts the recording short.
+
+[All dialogue and actions from Tuesday 37](day-37.json)
+
+<a id="day-38"></a>
+
+## Tuesday 38
+
+**06:00 · Hearthside room**
+
+> It's in the bag, Jo. Eight o'clock, sharp. Don’t let that foot ruin the pancakes again.
+
+Phil tucks the unopened maple syrup into his travel bag.
+
+**22:16 · Pittsburgh terminal**
+
+> Eight o'clock, sharp. Cut it.
+
+Phil cuts the recording short.
+
+[All dialogue and actions from Tuesday 38](day-38.json)
+
+<a id="day-39"></a>
+
+## Tuesday 39
+
+**06:00 · Hearthside room**
+
+> It’s in the bag. Eight o'clock, sharp. Don’t let that foot ruin the pancakes again.
+
+Phil tucks the unopened maple syrup into his travel bag.
+
+**22:16 · Rialto service door**
+
+> Cut it. Eight o'clock, sharp.
+
+Phil cuts the recording short.
+
+[All dialogue and actions from Tuesday 39](day-39.json)
+
+<a id="day-40"></a>
+
+## Tuesday 40
+
+**06:00 · Hearthside room**
+
+> It’s in the bag. Eight o'clock, sharp. Don’t let that foot ruin the pancakes again.
+
+Phil tucks the unopened maple syrup into his travel bag.
+
+**22:16 · Hearthside stairwell**
+
+> Cut it. Eight o'clock, sharp.
+
+Phil cuts the recording short.
+
+[All dialogue and actions from Tuesday 40](day-40.json)
+
+<a id="day-41"></a>
+
+## Tuesday 41
+
+**06:00 · Hearthside room**
+
+> It’s in the bag, Jo. Eight o'clock, sharp. Don’t let that foot ruin the pancakes again.
+
+Phil tucks the unopened maple syrup into his travel bag.
+
+**22:16 · Rialto service door**
+
+> Cut it. Eight o'clock, sharp.
+
+Phil cuts the recording short.
+
+[All dialogue and actions from Tuesday 41](day-41.json)
+
+<a id="day-42"></a>
+
+## Tuesday 42
+
+**06:00 · Hearthside room**
+
+> It’s in the bag. Eight o'clock, sharp.
+
+Phil tucks the unopened maple syrup into his travel bag.
+
+**22:16 · Hearthside stairwell**
+
+> Cut it. Eight o'clock, sharp.
+
+Phil cuts the recording short.
+
+[All dialogue and actions from Tuesday 42](day-42.json)
+
+<a id="day-43"></a>
+
+## Tuesday 43
+
+**06:00 · Hearthside room**
+
+> It’s in the bag. Eight o'clock, sharp. Don’t let that foot ruin the pancakes again.
+
+Phil tucks the unopened maple syrup into his travel bag.
+
+**22:16 · Rialto service door**
+
+> Eight o'clock, sharp. Don't let that foot ruin the pancakes again.
+
+Phil cuts the recording short.
+
+[All dialogue and actions from Tuesday 43](day-43.json)
+
+<a id="day-44"></a>
+
+## Tuesday 44
+
+**06:00 · Hearthside room**
+
+> It’s in the bag. Eight o'clock, sharp. Don’t let that foot ruin the pancakes again.
+
+Phil tucks the unopened maple syrup into his travel bag.
+
+**22:16 · Rialto service door**
+
+> Cut it. Eight o'clock, sharp.
+
+Phil cuts the recording short.
+
+[All dialogue and actions from Tuesday 44](day-44.json)
+
+<a id="day-45"></a>
+
+## Tuesday 45
+
+**06:00 · Hearthside room**
+
+> It’s in the bag. Eight o'clock, sharp. Don’t let that foot ruin the pancakes again.
+
+Phil tucks the unopened maple syrup into his travel bag.
+
+**22:16 · Rialto service door**
+
+> Cut it. Eight o'clock, sharp.
+
+Phil cuts the recording short.
+
+[All dialogue and actions from Tuesday 45](day-45.json)
+
+<a id="day-46"></a>
+
+## Tuesday 46
+
+**06:00 · Hearthside room**
+
+> It’s in the bag. Eight o'clock, sharp.
+
+Phil tucks the unopened maple syrup into his travel bag.
+
+**22:16 · Pittsburgh terminal**
+
+> Eight o'clock, sharp.
+
+Phil cuts the recording short.
+
+[All dialogue and actions from Tuesday 46](day-46.json)
+
+<a id="day-47"></a>
+
+## Tuesday 47
+
+**06:00 · Hearthside room**
+
+> It’s in the bag. Eight o'clock, sharp.
+
+Phil tucks the unopened maple syrup into his travel bag.
+
+**22:16 · Pittsburgh terminal**
+
+> That intake of breath? That’s the only honest thing left on the tape. Eight o'clock, sharp, and I’m not letting the static eat this one.
+
+Phil lets the last recording play to the end.
+
+[All dialogue and actions from Tuesday 47](day-47.json)
+
+<a id="day-48"></a>
+
+## Tuesday 48
+
+**06:00 · Hearthside room**
+
+> It’s in the bag. Eight o’clock, sharp.
+
+Phil tucks the unopened maple syrup into his travel bag.
+
+**22:16 · Hearthside stairwell**
+
+> Cut it. Eight o'clock, sharp.
+
+Phil cuts the recording short.
+
+[All dialogue and actions from Tuesday 48](day-48.json)
+
+<a id="day-49"></a>
+
+## Tuesday 49
+
+**06:00 · Hearthside room**
+
+> It’s in the bag. Eight o'clock, sharp.
+
+Phil tucks the unopened maple syrup into his travel bag.
+
+**22:16 · Rialto service door**
+
+> That hum is the only thing that hasn't changed. Eight o'clock, sharp, and the syrup is in the bag.
+
+Phil lets the last recording play to the end.
+
+[All dialogue and actions from Tuesday 49](day-49.json)
+
+<a id="day-50"></a>
+
+## Tuesday 50
+
+**06:00 · Hearthside room**
+
+> It’s in the bag. Eight o'clock, sharp.
+
+Phil tucks the unopened maple syrup into his travel bag.
+
+**22:16 · Rialto service door**
+
+> Cut it. Eight o'clock, sharp.
+
+Phil cuts the recording short.
+
+[All dialogue and actions from Tuesday 50](day-50.json)

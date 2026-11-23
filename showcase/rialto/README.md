@@ -1,6 +1,8 @@
 # Play It Again
 
-[Watch the three-minute trailer](Play-It-Again.mp4) · [Captions](Play-It-Again.srt) · [All six takes](results.json) · [Timecoded edit sources](cut.json) · [Five-slide demo deck](https://chatgpt.com/space/page_79a5cf2403b4819198a7c8bba5b9093c)
+[Watch the three-minute trailer](Play-It-Again.mp4) · [Captions](Play-It-Again.srt) · [All six takes](results.json) · [Timecoded edit sources](cut.json) · [Demo deck](https://chatgpt.com/space/page_79a5cf2403b4819198a7c8bba5b9093c)
+
+Follow the later fifty-Tuesday performance in [the dialogue log and decision traces](after-hours/README.md). The new [paper cut](after-hours/story-selects.md) follows Phil and his sister Jo.
 
 Phil’s sister needs him in Pittsburgh on Wednesday morning. She has a van booked and a couch to move. Phil reaches the payphone three nights in a row and keeps promising to be there. Across town, Alma has worked the Rialto projectors for 42 winters. She wants her daughter in Pittsburgh to hear her voice before the cinema closes. Rita has both a recording and a way to send it. On the first night she says, “I’m going to sit in the dark for a while.”
 
