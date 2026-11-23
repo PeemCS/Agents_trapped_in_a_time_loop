@@ -1,0 +1,42 @@
+{
+  "days": 35,
+  "performed_turns": 636,
+  "private_recordings": 70,
+  "distinct_verbatim_recordings": 51,
+  "bottle": {
+    "leave": 8,
+    "open": 1,
+    "pack": 25,
+    "pour_out": 1
+  },
+  "routes": {
+    "booth": 23,
+    "coach": 7,
+    "hotel": 5
+  },
+  "phone": {
+    "dial": 11,
+    "walk_past": 24
+  },
+  "station": {
+    "public": 3,
+    "silence": 18,
+    "weather": 14
+  },
+  "days_syrup_went_down_the_sink": [
+    28
+  ],
+  "calls_to_jo": [
+    1,
+    10,
+    16,
+    17,
+    18,
+    19,
+    24,
+    25,
+    26,
+    34,
+    35
+  ]
+}

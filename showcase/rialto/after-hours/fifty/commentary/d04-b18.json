@@ -1,0 +1,11 @@
+{
+  "kind": "post-take cast commentary",
+  "turn": "d04-b18",
+  "speaker": "Phil",
+  "source": "d03-b18",
+  "comment": "I wanted to stop the noise before it swallowed the only real thing I had left.",
+  "request_sha256": "b74f09f67e341ab127c94b981281ce5582050cb4c2118b88fe85ab6ac05e0b94",
+  "response_text": "{\n  \"source\": \"d03-b18\",\n  \"comment\": \"I wanted to stop the noise before it swallowed the only real thing I had left.\"\n}",
+  "model": "qwen3.8:27b",
+  "num_predict": 180
+}

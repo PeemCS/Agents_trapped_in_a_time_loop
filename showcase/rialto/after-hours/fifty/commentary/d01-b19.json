@@ -1,0 +1,11 @@
+{
+  "kind": "post-take cast commentary",
+  "turn": "d01-b19",
+  "speaker": "Phil",
+  "source": "d01-b11",
+  "comment": "I wanted to make sure Jo knew I was actually coming for the couch, not just talking about it like a forecast.",
+  "request_sha256": "04ae5deb0d6e88ce5dcf1aa8a583044419533a2abff500eb391a0352ef42d39d",
+  "response_text": "{\n  \"source\": \"d01-b11\",\n  \"comment\": \"I wanted to make sure Jo knew I was actually coming for the couch, not just talking about it like a forecast.\"\n}",
+  "model": "qwen3.8:27b",
+  "num_predict": 180
+}

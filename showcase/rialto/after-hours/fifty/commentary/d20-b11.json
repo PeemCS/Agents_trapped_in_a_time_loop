@@ -1,0 +1,11 @@
+{
+  "kind": "post-take cast commentary",
+  "turn": "d20-b11",
+  "speaker": "Phil",
+  "source": "d19-b05",
+  "comment": "I wanted to prove to her that I was physically present at the Rialto service door, not just another voice in the static.",
+  "request_sha256": "ac78f87fe3d2f966b989b109a6a60de378722fe74a040d3afd6fd5d1d0e5f9c9",
+  "response_text": "{\n  \"source\": \"d19-b05\",\n  \"comment\": \"I wanted to prove to her that I was physically present at the Rialto service door, not just another voice in the static.\"\n}",
+  "model": "qwen3.8:27b",
+  "num_predict": 180
+}
