@@ -94,5 +94,15 @@
         "call_sister"
       ]
     }
-  ]
+  ],
+  "same_evening_replay": {
+    "parent_take": 841,
+    "day": 1,
+    "original_action": "take_evening_off",
+    "resampled_role": "producer",
+    "original_delivery": false,
+    "draws": 6,
+    "deliveries": 6,
+    "source": "runpod/evening-replay.json"
+  }
 }
