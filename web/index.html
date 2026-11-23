@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>LOOPDAY</title>
+  <link rel="stylesheet" href="/viewer.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead">
+      <a id="home" href="#film" class="wordmark" aria-label="LOOPDAY film">LOOPDAY</a>
+      <nav id="views" class="views" aria-label="Replay views">
+        <button id="film-view" type="button" aria-pressed="true">Film</button>
+        <button id="ledger-view" type="button" aria-pressed="false">Decision ledger</button>
+        <button id="compare-view" type="button" aria-pressed="false">Compare loops</button>
+      </nav>
+      <div id="run-mode" class="run-mode">Loading replay</div>
+    </header>
+
+    <section id="player" class="player" aria-labelledby="scene-title">
+      <div id="scene" class="screen">
+        <canvas id="stage" width="1280" height="720" aria-label="Animated winter town"></canvas>
+        <span id="accessible-caption" class="sr-only" aria-live="polite"></span>
+        <div id="cover" class="cover">
+          <div class="cover-copy">
+            <h1 id="scene-title">LOOPDAY</h1>
+            <p id="cover-caption"></p>
+            <button type="button" id="watch" class="watch" disabled>Watch film</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="transport" class="transport" hidden>
+        <div class="transport-main">
+          <button type="button" id="play" aria-label="Play">Play</button>
+          <input id="timeline" type="range" aria-label="Film timeline" min="0" max="0" value="0">
+          <span id="clock" class="timecode">0:00 / 0:00</span>
+        </div>
+        <div class="transport-detail">
+          <div class="scene-info" id="scene-info" aria-live="off"></div>
+          <div class="transport-actions">
+            <label><span class="sr-only">Playback speed</span>
+              <select id="speed" aria-label="Playback speed"><option value="0.75">0.75×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select>
+            </label>
+            <button type="button" id="sound" aria-pressed="false">Sound off</button>
+            <button type="button" id="voices" aria-pressed="false" title="On-device dialogue for browser playback" hidden>Voices off</button>
+            <button type="button" id="fullscreen" hidden>Fullscreen</button>
+            <button type="button" id="capture" hidden>Save clip</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="film-info" class="film-info" hidden>
+        <div id="film-metadata"></div>
+        <button type="button" id="inspect-shot">Inspect this shot</button>
+      </div>
+      <p id="feedback" role="status" class="feedback" hidden></p>
+    </section>
+
+    <section id="audit" class="audit" aria-label="Decision ledger" hidden>
+      <div class="audit-heading">
+        <div><h1>Decision ledger</h1><p>Follow a character’s choice through the town and into its consequences.</p></div>
+        <button type="button" id="back-to-film">Back to film</button>
+      </div>
+      <div class="audit-grid">
+        <aside aria-label="Replay events" class="event-panel">
+          <div class="filters">
+            <label id="filter-source-label" hidden><span>Run</span><select id="filter-source"></select></label>
+            <label><span>Loop</span><select id="filter-loop"><option value="">All loops</option></select></label>
+            <label><span>Character</span><select id="filter-actor"><option value="">All characters</option></select></label>
+            <label><span>Events</span><select id="filter-kind"><option value="">All events</option><option value="decision">Decisions</option><option value="world">World events</option><option value="evidence">Evidence</option><option value="change">Changed behavior</option></select></label>
+          </div>
+          <div id="events" class="events"></div>
+        </aside>
+        <article class="details" id="details" aria-labelledby="detail-title"></article>
+      </div>
+    </section>
+
+    <section id="comparison" class="comparison" aria-label="Compare loops" hidden>
+      <div class="audit-heading">
+        <div><h1>Compare loops</h1><p>Align two days by the town clock and inspect the events behind their differences.</p></div>
+      </div>
+      <div class="compare-control">
+        <label><span>First replay</span><select id="compare-a"></select></label>
+        <label><span>Second replay</span><select id="compare-b"></select></label>
+        <label class="compare-clock"><span id="compare-time">06:00</span><input type="range" id="compare-tick" aria-label="Time of day" min="0" max="0" value="0"></label>
+        <button type="button" id="replay-pair">Replay both</button>
+      </div>
+      <div id="compare-note" class="compare-note" hidden></div>
+      <div id="compare-changes" class="compare-changes" hidden></div>
+      <div id="compare-columns" class="compare-columns"></div>
+    </section>
+    <section id="follow-pane" class="follow-pane" aria-label="Run witness" hidden>
+      <div class="audit-heading">
+        <div><h1>Run witness</h1><p id="follow-status" role="status">Waiting for the first committed event.</p></div>
+        <a id="follow-replay" class="follow-link" href="/replay.html" hidden>Open replay</a>
+      </div>
+      <div id="follow-content" class="follow-grid" hidden>
+        <article class="follow-stage">
+          <canvas id="follow-stage" width="960" height="540" aria-label="Latest recorded 3D scene"></canvas>
+          <div id="follow-detail"></div>
+        </article>
+        <aside class="event-panel" aria-label="Committed events">
+          <div class="follow-event-heading"><h2>Committed events</h2><button id="follow-latest" type="button">Latest</button></div>
+          <div id="follow-events" class="events"></div>
+        </aside>
+      </div>
+      <p id="follow-connection" class="feedback" role="status" hidden></p>
+    </section>
+    <p id="error" role="alert" class="error" hidden></p>
+  </main>
+  <script type="module" src="/viewer.js"></script>
+</body>
+</html>

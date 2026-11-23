@@ -1,0 +1,8 @@
+name: loopday
+schedule: "@daily"
+default_connections:
+  duckdb: loopday
+variables:
+  dataset:
+    type: string
+    default: runs/.bruin-inputs
