@@ -1,0 +1,4 @@
+transformers==5.24.0
+accelerate==1.16.0
+bitsandbytes==0.50.2
+peft==0.22.0

@@ -1,0 +1,226 @@
+<section id="museum-camera-angles">
+  <div class="viz-row" role="group" aria-label="Camera angle">
+    <button class="btn" type="button" data-shot="overhead" aria-pressed="true">Overhead</button>
+    <button class="btn" type="button" data-shot="wide" aria-pressed="false">Eye-level wide</button>
+    <button class="btn" type="button" data-shot="close" aria-pressed="false">Vote close-up</button>
+  </div>
+  <canvas role="img" aria-label="Three museum robots gather around a shipping crate."></canvas>
+  <p class="text-small text-muted" aria-live="polite">Overhead · Show where everyone is.</p>
+</section>
+<style>
+  #museum-camera-angles {
+    display: grid;
+    gap: calc(var(--font-size-base) * .65);
+  }
+  #museum-camera-angles canvas {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 1;
+  }
+</style>
+<script>
+(() => {
+  const root = document.getElementById('museum-camera-angles');
+  const stage = root.querySelector('canvas');
+  const ctx = stage.getContext('2d');
+  const caption = root.querySelector('p');
+  const buttons = [...root.querySelectorAll('[data-shot]')];
+  const shots = {
+    overhead: { eye: [7.3, 10.8, 11.8], aim: [0, 0.65, 0], lens: 1.03,
+      caption: 'Overhead · Show where everyone is.' },
+    wide: { eye: [3.35, 2.45, 9.4], aim: [0, 1.15, -0.6], lens: 1.12,
+      caption: 'Eye-level wide · Put the robots and the contested crate in one frame.' },
+    close: { eye: [2.78, 1.63, 3.95], aim: [1.55, 1.25, -0.22], lens: 1.47,
+      caption: 'Vote close-up · Frame the Archivist and the crate as the vote light changes.' }
+  };
+  let current = 'overhead';
+  const group = [];
+  const eyes = [];
+  const subtract = (a, b) => a.map((value, index) => value - b[index]);
+  const dot = (a, b) => a.reduce((sum, value, index) => sum + value * b[index], 0);
+  const cross = ([ax, ay, az], [bx, by, bz]) => [ay * bz - az * by, az * bx - ax * bz, ax * by - ay * bx];
+  const unit = vector => vector.map(value => value / Math.hypot(...vector));
+  const mean = points => points[0].map((_, index) => points.reduce((sum, point) => sum + point[index], 0) / points.length);
+  function face(points, material, shade = 0) {
+    group.push({ points, material, shade, center: mean(points) });
+  }
+  function box(x, y, z, w, h, d, material) {
+    const l = x - w / 2, r = x + w / 2, b = y - h / 2, t = y + h / 2;
+    const n = z + d / 2, f = z - d / 2;
+    face([[l,t,f],[l,t,n],[r,t,n],[r,t,f]], material, 12);
+    face([[l,b,n],[r,b,n],[r,t,n],[l,t,n]], material, 0);
+    face([[r,b,n],[r,b,f],[r,t,f],[r,t,n]], material, -20);
+    face([[l,b,f],[l,b,n],[l,t,n],[l,t,f]], material, -12);
+    face([[r,b,f],[l,b,f],[l,t,f],[r,t,f]], material, -24);
+  }
+  function robot(x, z, suit, accent) {
+    box(x - .22, .18, z, .28, .36, .47, 'trim');
+    box(x + .22, .18, z, .28, .36, .47, 'trim');
+    box(x, .70, z, .74, .77, .48, suit);
+    box(x - .51, .73, z + .02, .22, .65, .28, suit);
+    box(x + .51, .73, z + .02, .22, .65, .28, suit);
+    box(x, 1.16, z, .24, .20, .25, 'trim');
+    box(x, 1.50, z, .70, .48, .51, suit);
+    box(x, 1.53, z + .26, .56, .27, .04, 'visor');
+    for (const offset of [-.13, .13]) {
+      const eye = x + offset;
+      eyes.push({ material: accent, points: [
+        [eye-.036,1.501,z+.282],[eye+.036,1.501,z+.282],
+        [eye+.036,1.579,z+.282],[eye-.036,1.579,z+.282]
+      ] });
+    }
+    box(x, 1.81, z + .02, .054, .16, .06, 'trim');
+    box(x, 1.90, z + .02, .12, .09, .10, accent);
+    box(x, .83, z + .249, .18, .05, .024, accent);
+  }
+  box(0, 1.65, -4.03, 12.0, 3.30, .20, 'wall');
+  box(-6, 1.65, -.12, .18, 3.30, 7.72, 'wall');
+  box(0, .18, -3.90, 11.8, .33, .16, 'trim');
+  box(-5.88, .18, -.09, .16, .33, 7.52, 'trim');
+  const walls = group.splice(0);
+  for (const x of [-4.7, 0, 4.7]) box(x, 2.95, -3.9, .42, .14, .17, 'lamp');
+  box(-3.35, 2.03, -3.83, 2.30, 1.58, .13, 'archive');
+  box(-3.35, 2.03, -3.75, 2.10, 1.37, .08, 'visor');
+  box(-3.82, 2.23, -3.699, .74, .71, .016, 'archivist');
+  box(-2.96, 1.83, -3.692, .70, .66, .016, 'lamp');
+  box(3.1, .49, -3.18, 1.95, .95, .74, 'trim');
+  box(3.1, .99, -3.18, 2.02, .14, .84, 'wall');
+  box(3.1, 1.22, -3.18, .88, .34, .55, 'archive');
+  box(3.1, 1.25, -2.894, .35, .095, .022, 'lamp');
+  robot(-2.70, -.58, 'curator', 'lamp');
+  robot(2.17, -.29, 'archivist', 'signal');
+  robot(-.35, 2.64, 'guard', 'lamp');
+  box(0, .39, .30, 1.77, .77, 1.16, 'crate');
+  box(0, .80, .30, 1.88, .14, 1.24, 'archive');
+  for (const x of [-.64, .64]) {
+    box(x, .425, .894, .12, .76, .035, 'trim');
+    box(x, .878, .30, .12, .028, 1.24, 'trim');
+  }
+  box(0, .44, .902, .34, .18, .044, 'visor');
+  box(0, .44, .932, .14, .055, .024, 'signal');
+
+  const palette = {
+    wall: ['--muted', '--foreground', 13], trim: ['--muted', '--foreground', 41],
+    floor: ['--background', '--foreground', 13], curator: ['--background', '--yellow', 66],
+    guard: ['--background', '--purple', 71], archivist: ['--background', '--blue', 72],
+    crate: ['--background', '--orange', 59], archive: ['--background', '--orange', 80],
+    lamp: ['--background', '--yellow', 84], signal: ['--background', '--green', 89],
+    visor: ['--background', '--foreground', 29]
+  };
+  const render = () => {
+    const shot = shots[current];
+    const width = stage.clientWidth;
+    if (!width || !ctx) return;
+    const height = width / 2;
+    const ratio = Math.min(window.devicePixelRatio || 1, 2);
+    stage.width = Math.round(width * ratio);
+    stage.height = Math.round(height * ratio);
+    ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+    const theme = getComputedStyle(root);
+    const token = key => theme.getPropertyValue(key).trim() || theme.color;
+    const mix = (base, tint, amount) => `color-mix(in srgb, ${base}, ${tint} ${amount}%)`;
+    const toned = (name, shade = 0) => {
+      const [base, tint, amount] = palette[name];
+      const color = mix(token(base), token(tint), amount);
+      return shade ? mix(color, token(shade >= 0 ? '--background' : '--foreground'), Math.abs(shade)) : color;
+    };
+    const forward = unit(subtract(shot.aim, shot.eye));
+    const right = unit(cross(forward, [0, 1, 0]));
+    const up = cross(right, forward);
+    const focal = height * shot.lens;
+    const depth = point => dot(subtract(point, shot.eye), forward);
+    const project = point => {
+      const vector = subtract(point, shot.eye);
+      const distance = dot(vector, forward);
+      return [width / 2 + dot(vector, right) * focal / distance, height / 2 - dot(vector, up) * focal / distance];
+    };
+    function path(points, closed = true) {
+      const [first, ...rest] = points.map(project);
+      ctx.beginPath();
+      ctx.moveTo(...first);
+      for (const vertex of rest) ctx.lineTo(...vertex);
+      if (closed) ctx.closePath();
+    }
+    function clip(points) {
+      const clipped = [];
+      for (let i = 0; i < points.length; i++) {
+        const start = points[i], end = points[(i + 1) % points.length];
+        const a = depth(start), b = depth(end);
+        if (a >= .18) clipped.push(start);
+        if ((a >= .18) !== (b >= .18)) {
+          const t = (.18 - a) / (b - a);
+          clipped.push(start.map((value, j) => value + (end[j] - value) * t));
+        }
+      }
+      return clipped;
+    }
+    function drawFace(points, color) {
+      const visible = clip(points);
+      if (visible.length < 3) return;
+      path(visible);
+      ctx.fillStyle = color;
+      ctx.fill();
+    }
+    const floor = [[-6,0,-4],[6,0,-4],[6,0,4],[-6,0,4]];
+    ctx.fillStyle = mix(token('--background'), token('--muted'), 51);
+    ctx.fillRect(0, 0, width, height);
+    drawFace(floor, toned('floor'));
+    ctx.lineWidth = .55;
+    ctx.strokeStyle = mix(token('--background'), token('--foreground'), 27);
+    const line = ([a, b]) => {
+      const visible = clip([a, b]);
+      if (visible.length < 2) return;
+      path(visible, false);
+      ctx.stroke();
+    };
+    for (let x = -6; x <= 6; x++) line([[x, 0, -4], [x, 0, 4]]);
+    for (let z = -4; z <= 4; z++) line([[-6, 0, z], [6, 0, z]]);
+    function disc(x, z, width, depth, color) {
+      const points = Array.from({ length: 24 }, (_, i) => {
+        const angle = i * Math.PI / 12;
+        return [x + Math.cos(angle) * width, 0, z + Math.sin(angle) * depth];
+      });
+      drawFace(points, color);
+    }
+    if (current !== 'overhead') {
+      for (const scale of [1, .9, .8, .7, .6]) {
+        disc(0, .32, 2.11 * scale, 1.62 * scale, mix(token('--yellow'), 'transparent', 96));
+      }
+    }
+    const shadow = mix(token('--foreground'), 'transparent', 78);
+    for (const [x, z, w, d] of [[-2.7,-.58,.61,.45],[2.17,-.29,.61,.45],[-.35,2.64,.61,.45],[0,.3,1.05,.74]]) {
+      disc(x, z, w, d, shadow);
+    }
+    for (const collection of [walls, group]) {
+      collection.filter(({ points, center }) => {
+        const [a, b, c] = points;
+        return dot(cross(subtract(b, a), subtract(c, a)), subtract(shot.eye, center)) > 0;
+      }).sort((a, b) => depth(b.center) - depth(a.center))
+        .forEach(({ points, material, shade, center }) => {
+          const cast = current === 'close' ? Math.round(Math.max(0, 10 - 6 * Math.abs(center[0] - 1.9))) : 0;
+          drawFace(points, toned(material, shade + cast));
+        });
+    }
+    for (const { points, material } of eyes) {
+      if (shot.eye[2] > points[0][2]) drawFace(points, toned(material));
+    }
+  };
+  function select(shot) {
+    if (!Object.hasOwn(shots, shot)) return;
+    current = shot;
+    for (const button of buttons) button.setAttribute('aria-pressed', String(button.dataset.shot === shot));
+    caption.textContent = shots[shot].caption;
+    stage.setAttribute('aria-label', shots[shot].caption + ' Three museum robots and a shipping crate in the same 3D room.');
+    render();
+  }
+  for (const button of buttons) button.addEventListener('click', () => {
+    select(button.dataset.shot);
+    window.openai?.setWidgetState?.({ modelContent: { shot: current } })?.catch(() => {});
+  });
+  window.addEventListener('openai:set_globals', event => {
+    select(event.detail?.globals?.widgetState?.modelContent?.shot || current);
+  });
+  new ResizeObserver(render).observe(stage);
+  select(window.openai?.widgetState?.modelContent?.shot || current);
+})();
+</script>
