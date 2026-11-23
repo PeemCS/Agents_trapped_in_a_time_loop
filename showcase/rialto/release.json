@@ -1,0 +1,35 @@
+{
+  "title": "Play It Again",
+  "town": "Rialto",
+  "files": {
+    "Play-It-Again.mp4": {
+      "bytes": 14828606,
+      "sha256": "d716c8cf4056b58e68ae1309a0775ada79fb2ad2bb43deb29fe5ceb611c40437"
+    },
+    "Play-It-Again.srt": {
+      "bytes": 4019,
+      "sha256": "490812572ce82ec7482339e82f93e24f7d1a6b35a55010657d18fcc24b8be7da"
+    }
+  },
+  "duration_seconds": 180,
+  "width": 1280,
+  "height": 720,
+  "video_codec": "H.264",
+  "fps": 24,
+  "decoded_frames": 4320,
+  "audio_codec": null,
+  "caption_cues": 55,
+  "compute": {
+    "hardware": "One RunPod H100 SXM 80GB",
+    "created_utc": "2026-11-23T20:32:28.897Z",
+    "termination_accepted_utc": "2026-11-23T20:53:37.428481+00:00",
+    "absence_verified_utc": "2026-11-23T20:53:40.687328+00:00",
+    "provider_get_http": 404,
+    "present_in_provider_list": false,
+    "hourly_gpu_rate_usd": 4.39,
+    "estimated_gpu_cost_usd": 1.5469,
+    "metered_intervals_available": 0,
+    "posted_amount_usd_at_check": 0,
+    "billing_note": "The provider's posted meter can lag. The estimate covers GPU rental through termination."
+  }
+}
