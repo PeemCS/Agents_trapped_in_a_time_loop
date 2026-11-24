@@ -53,8 +53,9 @@ def band_request(url: str, actor: Identity, *, method: str, payload: dict | None
             input="\n".join(config) + "\n", text=True, capture_output=True, check=False, timeout=6,
         )
         body, _, status = response.stdout.rpartition("\n")
-        if response.returncode or status != "200":
-            raise BandError("Band did not confirm the operation.")
+        if response.returncode or not re.fullmatch(r"2[0-9]{2}", status):
+            code = status if re.fullmatch(r"[1-5][0-9]{2}", status) else "unavailable"
+            raise BandError(f"Band did not confirm the operation (HTTP {code}).")
         result = json.loads(body)
         if not isinstance(result, dict):
             raise BandError("Band returned an unexpected response.")
@@ -121,13 +122,19 @@ class BandTransport:
     def _matched(self, inbox: object, receipt: str, sender: Identity, recipient: Identity, content: str) -> bool:
         if not isinstance(inbox, list):
             return False
+        marker = "[LOOPDAY "
+        _, _, expected_line = content.partition(marker)
         for message in inbox:
             if not isinstance(message, dict) or message.get("id") != receipt:
                 continue
             metadata = message.get("metadata")
             mentions = metadata.get("mentions", []) if isinstance(metadata, dict) else []
-            return (message.get("sender_id") == sender.id and message.get("chat_room_id") == self.room_id
-                    and message.get("message_type") == "text" and message.get("content") == content
+            actual = message.get("content")
+            _, separator, actual_line = actual.partition(marker) if isinstance(actual, str) else ("", "", "")
+            # The inbox endpoint is scoped to this room. BAND may omit the room ID in each entry.
+            return (message.get("sender_id") == sender.id and message.get("chat_room_id", self.room_id) == self.room_id
+                    and message.get("message_type") == "text" and bool(separator and expected_line)
+                    and actual_line == expected_line
                     and isinstance(mentions, list)
                     and any(isinstance(item, dict) and item.get("id") == recipient.id for item in mentions))
         return False

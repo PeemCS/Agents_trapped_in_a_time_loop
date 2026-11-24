@@ -42,6 +42,18 @@ def _commits(earlier: list, later: list) -> bool:
     return len(later) >= len(earlier) and all(a == b for a, b in zip(earlier, later))
 
 
+def phil_snapshot(world: dict, events: list) -> dict:
+    decision = next((event for event in reversed(events)
+                     if event.get("actor") == "phil" and event.get("type") == "decision"), {})
+    phase = next((event["phase"] for event in reversed(events)
+                  if event.get("actor") == "phil" and isinstance(event.get("phase"), str)), None)
+    recognition = next((event for event in reversed(events)
+                        if event.get("type") == "deja_vu" and event.get("loop") == world.get("loop")), {})
+    return {"phase": phase, "mood": world.get("mood"), "arousal": world.get("arousal"),
+            "deja_vu": recognition.get("value"), "recognizes_reset": bool(world.get("first_realization")),
+            "decision": {key: decision[key] for key in ("id", "loop", "time", "action", "text") if key in decision}}
+
+
 class FollowSource:
     """Coherent snapshots of one run directory. Watches two explicit files."""
 
@@ -71,6 +83,7 @@ class FollowSource:
             artifact = {**final, "meta": {"mode": mode, "complete": bool(meta.get("complete")),
                                         "ending": meta.get("ending"), "ending_reason": meta.get("ending_reason")}}
             return {"status": status, "mode": mode, "committed": len(latest),
+                    "phil": phil_snapshot(committed, latest),
                     "bundle": build_bundle(artifact, seconds=self.seconds)}
         if not events:
             return {"status": "waiting", "mode": running_mode, "committed": 0, "bundle": None}
@@ -79,6 +92,7 @@ class FollowSource:
             "cast": CAST, "locations": PLACES, "events": events,
         }
         return {"status": "in_progress", "mode": running_mode, "committed": len(events),
+                "phil": phil_snapshot(committed, events),
                 "bundle": build_bundle(partial, seconds=self.seconds)}
 
     def response(self) -> tuple[str, bytes]:

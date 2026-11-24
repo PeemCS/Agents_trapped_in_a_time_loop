@@ -90,15 +90,19 @@ def launch(args: argparse.Namespace) -> int:
         attempted = True
         print(invoke("new", "-s", session, "--gpu", "L4", timeout=180).stdout.strip(), flush=True)
         print(invoke("upload", "-s", session, str(bundle), "/content/loopday-job.zip").stdout.strip(), flush=True)
+        startup_result = ""
         for retry in range(3):
             try:
                 started = invoke("exec", "-s", session, "--timeout", "35", "-f", str(starter), checking=False, timeout=70)
                 if started.returncode == 0:
                     print(started.stdout.strip(), flush=True)
                     break
+                startup_result = started.stdout.strip()
             except subprocess.TimeoutExpired:
-                pass
+                startup_result = "Colab exec timed out."
             if retry == 2:
+                if startup_result:
+                    (args.out / "startup.log").write_text(startup_result + "\n", encoding="utf-8")
                 raise RuntimeError("Colab could not acknowledge the detached worker.")
             sleep(8)
 

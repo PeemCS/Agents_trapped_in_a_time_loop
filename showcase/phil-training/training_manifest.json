@@ -1,0 +1,67 @@
+{
+  "beta": 0.1,
+  "data_sha256": "a4f7db286bc8153920d0b1ca400b18ca15d2ad1095de6b26acd6cf2705f6a34f",
+  "environments": [
+    "world_rollout"
+  ],
+  "evaluation": {
+    "adapter_valid_action_rate": 1.0,
+    "base_preference_accuracy": 0.43478260869565216,
+    "base_valid_action_rate": 1.0,
+    "deployable": true,
+    "held_out_pairs": 46,
+    "held_out_preference_accuracy": 0.9782608695652174,
+    "improved_share": 0.9565217391304348,
+    "mean_preference_log_odds_gain": 33.66818622920824
+  },
+  "held_out_groups": [
+    "seed:106",
+    "seed:108",
+    "seed:110",
+    "seed:12",
+    "seed:15",
+    "seed:18"
+  ],
+  "held_out_pairs": 46,
+  "max_steps": 20,
+  "model": "Qwen/Qwen3.5-9B",
+  "model_revision": "cc5442c03a5c0bff0bd4c6888d9a40029c637733",
+  "precision": "nf4-bf16",
+  "prompt_version": "loopday-action-v3",
+  "train_groups": [
+    "seed:101",
+    "seed:102",
+    "seed:103",
+    "seed:104",
+    "seed:105",
+    "seed:107",
+    "seed:109",
+    "seed:11",
+    "seed:111",
+    "seed:112",
+    "seed:13",
+    "seed:14",
+    "seed:16",
+    "seed:17",
+    "seed:19",
+    "seed:20",
+    "seed:21",
+    "seed:22"
+  ],
+  "train_pairs": 127,
+  "trained": true,
+  "training_seed": 193,
+  "training_source": "world_rollout",
+  "weights_sha256": "8375bb66884585e0a8ab8291a0ef7c5b1e4734b001b0fa1a275415445a16df1c",
+  "pre_parser_fix_evaluation": {
+    "adapter_valid_action_rate": 0.0,
+    "base_preference_accuracy": 0.43478260869565216,
+    "base_valid_action_rate": 0.0,
+    "deployable": false,
+    "held_out_pairs": 46,
+    "held_out_preference_accuracy": 0.9782608695652174,
+    "improved_share": 0.9565217391304348,
+    "mean_preference_log_odds_gain": 33.66818622920824
+  },
+  "generation_recheck_cases": 4
+}

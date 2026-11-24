@@ -1,0 +1,13 @@
+{
+  "source": "world_rollout",
+  "pairs": 173,
+  "groups": 24,
+  "checkpoints": 216,
+  "rollout_sha256": "360eb6daf3c3c91010b2e977b16d0013b5093666bfee0622463c6c5926f0594b",
+  "qualified_index_sha256": [
+    "6d5e5b99520f3e38b09df5d506e65e98343202f5e10cea3e46777caa5bfaf0e6",
+    "bf995046719501d30d44896f3615f88cce38fb5ac510e2c8c0f2b976c3db88e5"
+  ],
+  "preferences_sha256": "a4f7db286bc8153920d0b1ca400b18ca15d2ad1095de6b26acd6cf2705f6a34f",
+  "base_model_revision": "cc5442c03a5c0bff0bd4c6888d9a40029c637733"
+}

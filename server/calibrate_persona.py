@@ -10,19 +10,21 @@ from statistics import fmean
 import time
 
 from .model import MODEL_ID, QwenModel, trim_eos
-from .persona import hooks_for, text_decoder_layers
-from .persona_prompts import CHOICES, FIT_SCENES, LAYER_SCENES, TRAITS, choice_messages, fit_messages
+from .persona import MAX_COEFFICIENT, PersonaBank, hooks_for, text_decoder_layers
+from .persona_prompts import (CHOICES, FIT_SCENES, LAYER_SCENES, LONGING_POSITIVE_TRANSFER, LONGING_TRANSFER_V2,
+                              TRAITS, choice_messages, fit_messages)
 
 
 COEFFICIENTS = (1.0, 2.0, 4.0, 8.0)
+MAX_LAYER_CANDIDATES = 3
 
 
 def mean_tensor(torch, rows):
     return torch.stack(rows).float().mean(dim=0)
 
 
-def fit_layer(torch, fit, checks, layers) -> tuple[int, object, float, float, float]:
-    """Fit on contrastive responses. Choose the layer on independent scenes."""
+def fit_layers(torch, fit, checks, layers) -> list[tuple[int, object, float, float, float]]:
+    """Rank contrastive directions by their separation on independent scenes."""
     proposals = []
     for layer in layers:
         positive = [row[layer] for polarity, row in fit if polarity]
@@ -43,8 +45,9 @@ def fit_layer(torch, fit, checks, layers) -> tuple[int, object, float, float, fl
             proposals.append((separation, -layer, direction, center, scale))
     if not proposals:
         raise RuntimeError("No finite persona direction was available.")
-    separation, negative_layer, direction, center, scale = max(proposals, key=lambda row: row[:2])
-    return -negative_layer, direction, center, scale, separation
+    proposals.sort(key=lambda row: row[:2], reverse=True)
+    return [(-negative_layer, direction, center, scale, separation)
+            for separation, negative_layer, direction, center, scale in proposals]
 
 
 def contrastive(model, trait: str, scenes: tuple, layers: list[int], seed: int, cap: int) -> list:
@@ -106,13 +109,21 @@ def passes(reference: dict, stronger: dict, weaker: dict, *, min_gain: float) ->
 def axis_artifact(model, trait: str, layers: list[int], seed: int, cap: int) -> dict:
     fit = contrastive(model, trait, FIT_SCENES, layers, seed, cap)
     checks = contrastive(model, trait, LAYER_SCENES, layers, seed + len(FIT_SCENES), cap)
-    layer, direction, center, scale, separation = fit_layer(model.torch, fit, checks, layers)
-    calibration = probe(model, CHOICES[trait][:3], layer, direction,
-                        (0.0,) + tuple(sign * value for value in COEFFICIENTS for sign in (1, -1)))
-    chosen = next((value for value in COEFFICIENTS if passes(
-        calibration[0], calibration[value], calibration[-value], min_gain=0.015,
-    )), 0.0)
-    evaluation = probe(model, CHOICES[trait][3:], layer, direction,
+    candidates = fit_layers(model.torch, fit, checks, layers)[:MAX_LAYER_CANDIDATES]
+    strengths = (0.0,) + tuple(sign * value for value in COEFFICIENTS for sign in (1, -1))
+    calibrations = []
+    for candidate in candidates:
+        layer, direction, _, _, separation = candidate
+        calibration = probe(model, CHOICES[trait][:3], layer, direction, strengths)
+        strength = next((value for value in COEFFICIENTS if separation >= 0.20 and passes(
+            calibration[0], calibration[value], calibration[-value], min_gain=0.015,
+        )), 0.0)
+        calibrations.append((candidate, strength, calibration))
+    eligible = [row for row in calibrations if row[1]]
+    selected, chosen, calibration = min(eligible, key=lambda row: row[1]) if eligible else calibrations[0]
+    layer, direction, center, scale, separation = selected
+    holdout = LONGING_TRANSFER_V2 if trait == "longing" else CHOICES[trait][3:]
+    evaluation = probe(model, holdout, layer, direction,
                        (0.0, chosen, -chosen) if chosen else (0.0,))
     validated = bool(chosen and separation >= 0.20 and passes(
         evaluation[0], evaluation[chosen], evaluation[-chosen], min_gain=0.01,
@@ -122,7 +133,42 @@ def axis_artifact(model, trait: str, layers: list[int], seed: int, cap: int) -> 
         "center": center, "scale": scale, "validated": validated,
         "layer_validation_gap_z": separation, "calibration": calibration,
         "held_out": evaluation, "calibration_coefficient": chosen,
+        "layer_calibration": [{"layer": row[0][0], "separation_z": row[0][4], "coefficient": row[1]}
+                              for row in calibrations],
     }
+
+
+def validate_positive_longing(model: QwenModel, path: Path) -> dict:
+    """Test one fixed candidate and permit only the tested sign if it transfers."""
+    model.layers, width = text_decoder_layers(model.model, model.torch)
+    bank = PersonaBank.read(path, model=MODEL_ID, revision=model.revision, depth=len(model.layers),
+                            width=width, precision=model.precision, adapter=model.adapter)
+    artifact = json.loads(path.read_text())
+    axis = artifact["axes"]["longing"]
+    strength = axis["calibration_coefficient"]
+    if (artifact.get("probe_suite") != "town-choices-v2" or type(strength) not in (int, float)
+            or not 0 < strength <= MAX_COEFFICIENT):
+        raise ValueError("Positive transfer requires a fixed longing candidate from the v2 calibration.")
+    direction = model.torch.tensor(bank.axes["longing"].values, device=model.model.device, dtype=model.torch.float32)
+    with model.torch.inference_mode():
+        results = probe(model, LONGING_POSITIVE_TRANSFER, axis["layer"], direction, (0.0, strength))
+    reference, positive = results[0.0], results[strength]
+    gain = positive["positive_share"] - reference["positive_share"]
+    improved = sum(after > before for before, after in zip(reference["per_case"], positive["per_case"]))
+    passed = bool(gain >= 0.01 and improved >= 4
+                  and positive["label_mass"] >= max(0.20, reference["label_mass"] - 0.08))
+    axis.update(positive_only=True, validated=passed, coefficient=strength if passed else 0.0,
+                positive_transfer={"baseline": reference, "steered": positive, "gain": gain,
+                                   "improved_cases": improved, "required_gain": 0.01, "required_cases": 4})
+    artifact["probe_suite"] = "town-choices-v3-positive-transfer"
+    return artifact
+
+
+def save_bank(path: Path, artifact: dict) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("x") as output:
+        json.dump(artifact, output, allow_nan=False, separators=(",", ":"))
+        output.write("\n")
 
 
 def main() -> int:
@@ -134,14 +180,25 @@ def main() -> int:
     parser.add_argument("--revision", help="Exact Hugging Face model commit.")
     parser.add_argument("--quantize-4bit", action="store_true")
     parser.add_argument("--adapter", type=Path)
-    parser.add_argument("--calibrate", action="store_true", help="Start CUDA work after displaying the plan.")
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--calibrate", action="store_true", help="Start CUDA work after displaying the plan.")
+    mode.add_argument("--validate-positive-longing", type=Path, metavar="V2_BANK",
+                      help="Evaluate a fixed longing candidate on the independent positive-transfer scenes.")
     args = parser.parse_args()
     if not 16 <= args.max_response_tokens <= 128 or not 0 <= args.seed < 2**31 - 64:
         parser.error("Use max-response-tokens 16–128 and a non-negative 31-bit seed.")
     if len(set(args.traits)) != len(args.traits) or args.output.exists():
         parser.error("Traits must be distinct and the output path must be new.")
+    if args.validate_positive_longing:
+        model = QwenModel(revision=args.revision, quantize=args.quantize_4bit, adapter=args.adapter)
+        bank = validate_positive_longing(model, args.validate_positive_longing)
+        save_bank(args.output, bank)
+        axis = bank["axes"]["longing"]
+        print(json.dumps({"validated": axis["validated"], "coefficient": axis["coefficient"],
+                          **axis["positive_transfer"]}), flush=True)
+        return 0
     contrastive_count = 2 * (len(FIT_SCENES) + len(LAYER_SCENES)) * len(args.traits)
-    probe_count = (1 + 2 * len(COEFFICIENTS) + 3) * 6 * len(args.traits)
+    probe_count = (MAX_LAYER_CANDIDATES * (1 + 2 * len(COEFFICIENTS)) + 3) * 6 * len(args.traits)
     print(json.dumps({
         "traits": args.traits, "generation_calls": contrastive_count,
         "max_generated_tokens": contrastive_count * args.max_response_tokens,
@@ -164,12 +221,9 @@ def main() -> int:
     payload = {
         "schema_version": 1, "model": MODEL_ID, "revision": model.revision, "precision": model.precision,
         "adapter": model.adapter, "seed": args.seed, "layers_tested": layers, "axes": axes,
-        "elapsed_seconds": round(time.monotonic() - started, 2), "probe_suite": "town-choices-v1",
+        "elapsed_seconds": round(time.monotonic() - started, 2), "probe_suite": "town-choices-v2",
     }
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    with args.output.open("x") as output:
-        json.dump(payload, output, allow_nan=False, separators=(",", ":"))
-        output.write("\n")
+    save_bank(args.output, payload)
     return 0
 
 

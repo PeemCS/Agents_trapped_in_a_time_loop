@@ -4,14 +4,15 @@ import tempfile
 import threading
 from types import SimpleNamespace
 from unittest import TestCase, skipIf
-from unittest.mock import Mock
+from unittest.mock import Mock, patch
 
 try:
     import torch
 except ImportError:
     torch = None
 
-from server.calibrate_persona import fit_layer, passes
+from server.calibrate_persona import axis_artifact, fit_layers, passes
+from server.persona_prompts import CHOICES, LONGING_TRANSFER_V2
 from server.model import Generation, QwenModel, RequestError, split_thinking
 from server.persona import PersonaBank, hooks_for
 from server.train_dpo import log_probability
@@ -22,6 +23,29 @@ MESSAGE = {"messages": [{"role": "user", "content": "What changed?"}]}
 
 
 class GenerationTests(TestCase):
+    def test_longing_can_use_a_lower_ranked_layer_that_transfers_to_new_scenes(self):
+        direction = Mock()
+        direction.tolist.return_value = [1.0]
+        candidates = [(19, direction, 0.0, 1.0, 0.9), (24, direction, 0.0, 1.0, 0.5)]
+        checked = []
+
+        def probe(model, cases, layer, vector, coefficients):
+            checked.append((cases, layer))
+            return {strength: {"positive_share": 0.5 + (0.025 * strength if layer == 24 else 0),
+                               "label_mass": 0.8,
+                               "per_case": [0.5 + (0.025 * strength if layer == 24 else 0)] * 3}
+                    for strength in coefficients}
+
+        with (
+            patch("server.calibrate_persona.contrastive"),
+            patch("server.calibrate_persona.fit_layers", return_value=candidates),
+            patch("server.calibrate_persona.probe", side_effect=probe),
+        ):
+            bank = axis_artifact(SimpleNamespace(torch=None), "longing", [19, 24], 7, 72)
+        self.assertEqual(checked, [(CHOICES["longing"][:3], 19), (CHOICES["longing"][:3], 24),
+                                   (LONGING_TRANSFER_V2, 24)])
+        self.assertEqual((bank["layer"], bank["coefficient"], bank["validated"]), (24, 1.0, True))
+
     def test_generation_defaults_and_strict_limits(self):
         spec = Generation.parse(MESSAGE)
         self.assertEqual(spec.tokens, 180)
@@ -59,6 +83,12 @@ class GenerationTests(TestCase):
                 bank.choose({"longing": 2.001})
             with self.assertRaisesRegex(ValueError, "revision"):
                 PersonaBank.read(path, **{**args, "revision": "b" * 40})
+            payload["axes"]["longing"]["positive_only"] = True
+            path.write_text(json.dumps(payload))
+            bank = PersonaBank.read(path, **args)
+            self.assertEqual(bank.choose({"longing": 2.0}), {"longing": 2.0})
+            with self.assertRaisesRegex(ValueError, "outside"):
+                bank.choose({"longing": -2.0})
             payload["axes"]["longing"]["validated"] = False
             path.write_text(json.dumps(payload))
             with self.assertRaisesRegex(ValueError, "calibrated"):
@@ -103,7 +133,7 @@ class TorchTests(TestCase):
                (False, {0: torch.tensor([0.0, -2.0]), 1: torch.tensor([-8.0, 0.0])})]
         checks = [(True, {0: torch.tensor([0.0, 1.0]), 1: torch.tensor([-1.0, 0.0])}),
                   (False, {0: torch.tensor([0.0, -1.0]), 1: torch.tensor([1.0, 0.0])})]
-        layer, direction, center, scale, separation = fit_layer(torch, fit, checks, [0, 1])
+        layer, direction, center, scale, separation = fit_layers(torch, fit, checks, [0, 1])[0]
         self.assertEqual(layer, 0)
         self.assertEqual(direction.tolist(), [0.0, 1.0])
         self.assertEqual((center, scale, separation), (0.0, 2.0, 1.0))

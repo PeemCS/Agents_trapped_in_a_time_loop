@@ -256,7 +256,12 @@ class FilmTests(unittest.TestCase):
             temporary.replace(checkpoint)
             resumed = fetch_from_handler(handler, "/follow.json", {"If-None-Match": etag})
             self.assertEqual(resumed["code"], 200)
-            self.assertGreater(json.loads(resumed["body"])["committed"], body["committed"])
+            resumed_snapshot = json.loads(resumed["body"])
+            self.assertGreater(resumed_snapshot["committed"], body["committed"])
+            self.assertEqual(resumed_snapshot["phil"]["mood"], second["mood"])
+            decision = next(event for event in reversed(second["events"])
+                            if event.get("actor") == "phil" and event["type"] == "decision")
+            self.assertEqual(resumed_snapshot["phil"]["decision"]["text"], decision["text"])
             # A previous partial artifact must not replace a newer committed prefix.
             stale = {"meta": {"mode": "fixture", "complete": False}, "events": first["events"]}
             run.write_text(json.dumps(stale), encoding="utf-8")

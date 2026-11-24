@@ -45,8 +45,10 @@ class Choice:
             return None
         if not isinstance(item, dict) or item.get("action") not in actions:
             return None
-        fields = ("reason", "line", "prediction", "hypothesis", "predicted")
-        if any(not isinstance(item.get(key, ""), str) for key in fields):
+        optional = ("line", "prediction", "hypothesis", "predicted")
+        fields = {key: "" if item.get(key) is None else item[key] for key in optional}
+        fields["reason"] = item.get("reason", "")
+        if any(not isinstance(value, str) for value in fields.values()):
             return None
         support = item.get("support", [])
         if not isinstance(support, list) or any(not isinstance(value, str) for value in support):
@@ -54,7 +56,7 @@ class Choice:
         return cls(
             action=item["action"],
             support=tuple(dict.fromkeys(support[:4])),
-            **{field: item.get(field, "").strip()[:380] for field in fields},
+            **{field: value.strip()[:380] for field, value in fields.items()},
         )
 
 
@@ -571,8 +573,11 @@ class Simulation:
             raw = self.director.choose(actor, obs)
             choice = Choice.read(raw, obs["actions"])
         if choice is None:
+            failure = getattr(self.director, "decision_metadata", lambda: {})()
+            failure_kind = (failure.get("failure_kind", "invalid_action")
+                            if isinstance(failure, dict) else "invalid_action")
             self.log("rejected", "The proposed action failed validation.", actor=actor,
-                     location=self.positions[actor])
+                     location=self.positions[actor], failure_kind=failure_kind)
             return Choice("wait", "The world waited after rejecting the action."), mode, None, obs, {}
         line = " ".join((choice.reason, choice.line, choice.prediction, choice.hypothesis)).casefold()
         if any(phrase in line for phrase in _GUARDED_PHRASES):

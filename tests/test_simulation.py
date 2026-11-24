@@ -7,10 +7,15 @@ from unittest.mock import patch
 from loopday.memory import Memory
 from loopday.providers import LiveDirector, ModelError
 from loopday.run import passed_canary
-from loopday.simulation import FixtureDirector, Simulation
+from loopday.simulation import Choice, FixtureDirector, Simulation
 
 
 class SimulationTests(TestCase):
+    def test_qwen_null_optional_prediction_preserves_the_legal_action(self):
+        response = json.dumps({"action": "wait", "reason": "The alarm just sounded.", "prediction": None})
+        self.assertEqual(Choice.read(response, ["wait"]), Choice("wait", "The alarm just sounded."))
+        self.assertIsNone(Choice.read(response, ["inspect_pencil"]))
+
     def simulate(self, *, memory=True):
         result = Simulation(FixtureDirector(), keep_memory=memory)
         result.run(2)

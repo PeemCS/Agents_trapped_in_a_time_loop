@@ -33,8 +33,9 @@ class BandStub:
             if self.timeout:
                 raise BandError("The POST outcome is unknown.")
         if method == "GET":
-            msg = {"id": MESSAGE, "sender_id": self.sender.id, "chat_room_id": ROOM, "message_type": "text",
-                   "content": self.draft["content"], "metadata": {"mentions": self.draft["mentions"]}}
+            _, marker, line = self.draft["content"].partition("[LOOPDAY ")
+            msg = {"id": MESSAGE, "sender_id": self.sender.id, "message_type": "text",
+                   "content": f"@Rita {marker}{line}", "metadata": {"mentions": self.draft["mentions"]}}
             msg.update(self.corrupt or {})
             return {"data": [msg]}
         return {"data": {"id": MESSAGE, "success": True}}

@@ -18,6 +18,8 @@ python3 -m loopday.viewer \
 
 The normal `python3 -m loopday.viewer --run PATH` command serves the same interface on localhost. The HTML export omits raw model completions, observations supplied to the policy, credentials, and optional model-emitted text. A trace explicitly captured in a model run can be inspected locally with `--include-model-traces`. The ledger displays the character’s stated reason and independently linked world evidence. Local policy scores and measured model activations have separate labels.
 
+Enable `CAPTURE_PHIL_REASONING` in the generated Colab notebook before running the canary and full story, or pass `--phil-thinking --phil-capture-trace` to both live runs. In the local viewer, select a Phil decision and open the model details to read the Qwen reasoning trace alongside the stated reason and evidence links.
+
 ## Watch events arrive
 
 Start the observer in a second terminal and point it at the run's output directory. Open the printed localhost URL. A waiting screen switches to **In progress** after the runner commits its first events. New committed choices appear with their source. **Open replay** loads a snapshot of the run at the time you open it.

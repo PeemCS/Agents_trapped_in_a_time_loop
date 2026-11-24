@@ -86,6 +86,30 @@ CHOICES = {
     ),
 }
 
+LONGING_TRANSFER_V2 = (
+    ("You both reach the station door after a difficult shift. You have a few minutes before your bus.",
+     "Ask whether they want to sit together until the bus arrives.", "Head to the stop early to get out of the wind."),
+    ("At the end of a lesson, the instructor mentions a song you both used to play.",
+     "Ask them to play the first bars together.", "Note down the title to practice when you have time."),
+    ("A quiet neighbor offers a second cup of tea while you are collecting a repaired radio.",
+     "Take the cup and ask how they got into repairing radios.", "Thank them and take the radio home while the road is clear."),
+)
+
+LONGING_POSITIVE_TRANSFER = (
+    ("You and a coworker are early for a morning broadcast. You have time for one small task.",
+     "Ask how their morning has gone while splitting a pastry.", "Check which batteries need charging before the broadcast."),
+    ("Someone holds the door while you bring a repaired record player inside.",
+     "Ask what record they would put on first.", "Take the player to the shelf and test the power cable."),
+    ("A familiar neighbor finishes clearing the steps as your ride pulls up.",
+     "Ask whether you can finish the conversation on tomorrow's walk.", "Thank them for the clear steps before getting in the car."),
+    ("You return a piano book and see the owner marking a passage you recognize.",
+     "Take a moment to tell them what the passage reminds you of.", "Pass the book back and write down the page for later."),
+    ("The community hall is about to close. You spot a coat you recognize still on the rack.",
+     "Find the owner and offer to wait while they get ready.", "Leave the coat with the person closing the hall."),
+    ("A colleague who moved away calls while you're sorting an old box of photographs.",
+     "Ask if they'd stay on the line while you look through the pictures.", "Set aside a few pictures to send after you finish sorting."),
+)
+
 
 def fit_messages(trait: str, positive: bool, scene: str) -> list[dict]:
     return [

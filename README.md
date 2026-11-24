@@ -6,6 +6,8 @@ The [showcase folder](showcase/) contains the short rehearsal cut, two standalon
 
 [Watch *Play It Again*](showcase/rialto/Play-It-Again.mp4), a three-minute film from the team’s Rialto town. Phil keeps promising his sister a Wednesday that never comes. Across town, Rita decides when a daughter will hear her mother’s voice. [See the six RunPod takes, captions and demo slides](showcase/rialto/).
 
+[Talk deck PDF](showcase/presentation/Loopday-Talk-Deck.pdf) · [Editable PowerPoint](showcase/presentation/Loopday-Talk-Deck.pptx) · [20-loop live run](showcase/live-run/) · [Phil’s trained adapter and dataset](showcase/phil-training/) · [Trailer reference photos](showcase/rialto/reference-frames/)
+
 ## Run and watch locally
 
 Use Python 3.11 or newer. The standalone viewer includes its own renderer and works offline. A fixture is a repeatable scene used to check the world and renderer. The local mode uses independent utility policies with persistent Phil memory. Live mode uses Qwen3.5-9B and Muse Spark Contributor 1.3.
