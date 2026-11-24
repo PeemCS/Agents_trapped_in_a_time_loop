@@ -1,0 +1,110 @@
+{
+  "S00-E": {
+    "original_title": "Earlier alarm angle",
+    "use": "S00-E-ALT"
+  },
+  "S01-B1": {
+    "note": "Use the same still for both piano beats. Play the eight-bar movement with the hands inside this fixed composition.",
+    "original_title": "Earlier piano starting pose",
+    "use": "S01-B2-ALT"
+  },
+  "S01-B2": {
+    "original_title": "Earlier final-chord pose",
+    "use": "S01-B2-ALT"
+  },
+  "S01-C1": {
+    "original_title": "Earlier seated-depot layout",
+    "use": "S01-C1-ALT"
+  },
+  "S01-D1": {
+    "original_title": "Earlier raised-gaze layout",
+    "use": "S01-D1-MATCH"
+  },
+  "S02-B2": {
+    "original_title": "Earlier coach entrance frame",
+    "use": "S02-B2-ALT"
+  },
+  "S02-C1": {
+    "original_title": "Earlier forward road angle",
+    "use": "S02-C1-SIDE"
+  },
+  "S02-D1": {
+    "local_file": "photos/S02-D-CLEAN.jpg",
+    "note": "Hold this still throughout the phone call.",
+    "original_title": "Earlier payphone approach",
+    "use": "S02-D-CLEAN"
+  },
+  "S02-D2": {
+    "local_file": "photos/S02-D-CLEAN.jpg",
+    "note": "Hold the same still from S02-D1 through the end of the call.",
+    "original_title": "Earlier connected-call frame",
+    "use": "S02-D-CLEAN"
+  },
+  "S03-B": {
+    "local_file": "photos/S03-B-LABEL.jpg",
+    "original_title": "Unlettered envelope reference",
+    "use": "S03-B-LABEL"
+  },
+  "S03-C": {
+    "original_title": "Earlier pocket sequence",
+    "use": "S03-C-ALT"
+  },
+  "S04-B1": {
+    "original_title": "Earlier curtain pose",
+    "use": "S04-B1-ALT"
+  },
+  "S04-B2": {
+    "local_studies": {
+      "S04-B2-REPAIRED": "photos/S04-B2-REPAIRED.jpg"
+    },
+    "original_title": "Earlier cast study",
+    "use": "S04-B2-SHADE"
+  },
+  "S04-C": {
+    "local_studies": {
+      "S04-C-REPAIRED": "photos/S04-C-REPAIRED.jpg"
+    },
+    "original_title": "Earlier dusk blocking",
+    "use": "S04-C-SHADE"
+  },
+  "S04-D2": {
+    "original_title": "Earlier booth casting study",
+    "use": "S04-D2-LARRY"
+  },
+  "S05-A": {
+    "original_title": "Earlier wheel setup",
+    "use": "S05-A-WHEEL"
+  },
+  "S05-B": {
+    "original_title": "Earlier hand-marking study",
+    "use": "S05-B-ALT"
+  },
+  "S05-C1": {
+    "original_title": "Earlier wait setup",
+    "use": "S05-WAIT-START"
+  },
+  "S05-C2": {
+    "original_title": "Earlier pen-return angle",
+    "use": "S05-WAIT-RETURN"
+  },
+  "S05-D1": {
+    "original_title": "Earlier departure frame",
+    "use": "S05-D1-ALT"
+  },
+  "S05-D3": {
+    "original_title": "Tracking midpoint reference",
+    "use": "S05-THRESHOLD"
+  },
+  "S05-E": {
+    "original_title": "Earlier hotel desk angle",
+    "use": "S05-E-ALT"
+  },
+  "S06-B2": {
+    "original_title": "Earlier ballroom staging",
+    "use": "S06-B2-ALT"
+  },
+  "S06-C2": {
+    "original_title": "Earlier warm alarm angle",
+    "use": "S06-C2-ALT"
+  }
+}

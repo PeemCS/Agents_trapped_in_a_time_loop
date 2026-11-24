@@ -1,0 +1,121 @@
+[
+  {
+    "id": "bed",
+    "title": "The radio beside Phil",
+    "file": "film-references/bed.jpg",
+    "source": "https://s1.staticld.com/2015/02/02/reloj.jpg",
+    "url": "https://www.libertaddigital.com/cultura/cine/2015-02-02/dia-de-la-marmota-atrapado-en-el-tiempo-1947869/",
+    "credit": "Groundhog Day (1993) · Columbia Pictures · film reference",
+    "note": "The close quilt and dark wood recede to a small table. Keep the radio a real object in a room when our view moves to Phil’s eyes.",
+    "scenes": [
+      "S00",
+      "S02",
+      "S04",
+      "S06"
+    ]
+  },
+  {
+    "id": "lobby",
+    "title": "Two planes in the inn",
+    "file": "film-references/lobby.jpg",
+    "source": "https://i.ytimg.com/vi/DeTcHJQIzCs/hq1.jpg",
+    "url": "https://www.youtube.com/watch?v=DeTcHJQIzCs",
+    "credit": "Groundhog Day (1993) · Columbia Pictures · film reference",
+    "note": "Phil’s lowered gaze and a second person framed against the dark wood make the lobby feel inhabited beyond him.",
+    "scenes": [
+      "S03",
+      "S04"
+    ]
+  },
+  {
+    "id": "crew",
+    "title": "Rita on assignment",
+    "file": "film-references/crew.jpg",
+    "source": "https://i.ytimg.com/vi/86jI-u2zp7s/hq2.jpg",
+    "url": "https://www.youtube.com/watch?v=86jI-u2zp7s",
+    "credit": "Groundhog Day (1993) · Columbia Pictures · film reference",
+    "note": "Rita’s face reads clearly against a soft crowd. Give our producer the same clear eyeline while her hand asks for thirty seconds.",
+    "scenes": [
+      "S00",
+      "S03",
+      "S04"
+    ]
+  },
+  {
+    "id": "crew-camera",
+    "title": "Rita and the camera",
+    "file": "film-references/crew-camera.jpg",
+    "source": "https://i.ytimg.com/vi/qj62SO0Uyfw/hq1.jpg",
+    "url": "https://www.youtube.com/watch?v=qj62SO0Uyfw",
+    "credit": "Groundhog Day (1993) · Columbia Pictures · film reference",
+    "note": "The profile and ENG camera establish who is working. Leave space between Rita and the rig so her thirty-second signal reads.",
+    "scenes": [
+      "S00",
+      "S04"
+    ]
+  },
+  {
+    "id": "ned-wide",
+    "title": "Ned stops Phil",
+    "file": "film-references/ned-wide.jpg",
+    "source": "https://i.ytimg.com/vi/XqSYC_vwhDg/hq3.jpg",
+    "url": "https://www.youtube.com/watch?v=XqSYC_vwhDg",
+    "credit": "Groundhog Day (1993) · Columbia Pictures · film reference",
+    "note": "Phil at frame left, Ned facing him on the right. Leave the space between their coats legible.",
+    "scenes": [
+      "S00",
+      "S05"
+    ]
+  },
+  {
+    "id": "ned-close",
+    "title": "Ned looks for recognition",
+    "file": "film-references/ned-close.jpg",
+    "source": "https://i.ytimg.com/vi/86jI-u2zp7s/hq1.jpg",
+    "url": "https://www.youtube.com/watch?v=86jI-u2zp7s",
+    "credit": "Groundhog Day (1993) · Columbia Pictures · film reference",
+    "note": "Read Ned’s forward pitch under the brim. The change comes when Phil gives him time to finish.",
+    "scenes": [
+      "S00",
+      "S05"
+    ]
+  },
+  {
+    "id": "rita",
+    "title": "Rita listens",
+    "file": "film-references/rita.jpg",
+    "source": "https://i.ytimg.com/vi/uw63_YyNsF4/hq1.jpg",
+    "url": "https://www.youtube.com/watch?v=uw63_YyNsF4",
+    "credit": "Groundhog Day (1993) · Columbia Pictures · film reference",
+    "note": "Hold her three-quarter listening eyeline long enough for the answer to register.",
+    "scenes": [
+      "S05",
+      "S06"
+    ]
+  },
+  {
+    "id": "banquet",
+    "title": "Rita hears Phil play",
+    "file": "film-references/banquet.jpg",
+    "source": "https://i-viaplay-com.akamaized.net/viaplay-prod/455/580/1509367681-4e8a7da4d55191a174106bb5c6a9fa39b3816e23_FI.jpg?height=900&width=1600",
+    "url": "https://viaplay.fi/store/paivani-murmelina-1993",
+    "credit": "Groundhog Day (1993) · Columbia Pictures · distributor still, Snap/Rex/Shutterstock",
+    "note": "Phil plays at foreground right, Rita watches from center-left. In our ballroom the crowd gives way to the chair she pulls up herself.",
+    "scenes": [
+      "S01",
+      "S06"
+    ]
+  },
+  {
+    "id": "morning",
+    "title": "The next morning together",
+    "file": "film-references/morning.jpg",
+    "source": "https://i.ytimg.com/vi/msGvO7yQRgE/hq3.jpg",
+    "url": "https://www.youtube.com/watch?v=msGvO7yQRgE",
+    "credit": "Groundhog Day (1993) · Columbia Pictures · film reference",
+    "note": "The bed holds two lives. Keep Rita offscreen for her first words so we discover the change from inside Phil’s point of view.",
+    "scenes": [
+      "S06"
+    ]
+  }
+]
