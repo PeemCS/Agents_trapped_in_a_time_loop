@@ -1,4 +1,4 @@
-# Phil on Colab
+# Model server and training
 
 Run the service from the repository root on Python 3.11 or newer with an NVIDIA CUDA runtime. The default loads the text portion of Qwen3.5-9B in BF16 or FP16 and checks for 22 GiB of available GPU memory. For a smaller GPU, add `--quantize-4bit` and install `bitsandbytes`. The 4-bit server checks for 11 GiB. Take the measured latency from the authenticated canary before choosing a candidate count for a full run. [Qwen3.5 Transformers integration](https://huggingface.co/docs/transformers/model_doc/qwen3_5) · [NF4 hardware requirements](https://huggingface.co/docs/bitsandbytes/installation)
 
@@ -12,7 +12,7 @@ python -m pip install -U peft
 python -m server.app --quantize-4bit
 ```
 
-Supply a high-entropy `PHIL_TOKEN` through Colab secrets in the process environment. The service binds to Colab loopback. Its public readiness endpoint `/health` reports the model name. The inference endpoint `/generate` requires the token. Use an authorized HTTPS connection to reach the service from another machine. To reproduce a run, pin the full Hugging Face revision with `--revision` and retain the logged precision. The service rejects incomplete text-weight loads.
+Set a high-entropy `PHIL_TOKEN` in the GPU process environment. The service binds to loopback by default. Its public readiness endpoint `/health` reports the model name. The inference endpoint `/generate` requires the token. Use an authorized HTTPS connection to reach the service from another machine. To reproduce a run, pin the full Hugging Face revision with `--revision` and retain the logged precision. The service rejects incomplete text-weight loads.
 
 ## Inference and evidence
 
@@ -47,8 +47,8 @@ python -m server.train_dpo runs/preferences.jsonl --output runs/phil-lora --quan
 python -m server.train_dpo runs/preferences.jsonl --output runs/phil-lora --quantize-4bit --train
 ```
 
-The outcome ranker learns a structured action score where an executed action gives a training signal. A live deployment requires strong enough held-out prediction, support for all the candidates being compared, and live training provenance. For a local experiment, use `python -m loopday.rollout_eval runs/rollouts/rollouts.jsonl`. The evaluator measures matched legal action forks on held-out seeds and reports fixture, uniform, and oracle baselines. Use `--verified-index` to include complete checkpoints qualified by Bruin. Use `--external-check runs/rollout-eval/ranker.json` with fresh rollout seeds to retest a frozen ranker. Both paths produce local-rollout evidence.
+The outcome ranker learns a structured action score where an executed action gives a training signal. A live deployment requires strong enough held-out prediction, support for all the candidates being compared, and live training provenance. For a local experiment, use `python -m loopday.rollout_eval runs/rollouts/rollouts.jsonl`. The evaluator measures matched legal action forks on held-out seeds and reports fixture, uniform, and oracle baselines. Use `--verified-index` to include complete checkpoints qualified by an external evidence audit. Use `--external-check runs/rollout-eval/ranker.json` with fresh rollout seeds to retest a frozen ranker. Both paths produce local-rollout evidence.
 
-DPO uses chosen and rejected completions from actually executed, distinct Qwen actions at the same checkpoint and observation. Each comparison carries the IDs of its outcome evidence. It requires at least 12 train and 8 test comparisons, each split containing at least two seed groups. The trainer filters to the exact base model and current prompt version, with thinking and steering disabled. It works on bounded text sequences and checks for 36 GiB available in 16-bit mode or 15 GiB with `--quantize-4bit`. [Direct Preference Optimization](https://arxiv.org/abs/2305.18290)
+DPO uses chosen and rejected completions for distinct actions executed at the same checkpoint and observation. Each pair carries references to its outcome evidence and a source label for the collection method. The published adapter uses simulator-derived pairs. It requires at least 12 train and 8 test comparisons, each split containing at least two seed groups. The trainer filters to the exact base model and current prompt version, with thinking and steering disabled. It works on bounded text sequences and checks for 36 GiB available in 16-bit mode or 15 GiB with `--quantize-4bit`. [Direct Preference Optimization](https://arxiv.org/abs/2305.18290)
 
 The trainer saves a local LoRA and evaluates completion preferences and valid action generation against base Qwen on the held-out seeds. Serving via `--adapter runs/phil-lora` requires a passing manifest, matched revision and precision, and the measured weights checksum. Re-run the authorized all-agent canary after changing the model, persona bank, or adapter.

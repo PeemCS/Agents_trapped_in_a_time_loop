@@ -1,34 +1,28 @@
-# LOOPDAY rehearsal results
+# LOOPDAY results and limitations
 
-Four characters act in a 36-tick town. Morning anchors specify the clock, a greeting, and the ceremony. The road and opportunity rules constrain movement throughout the day. The renderer selects and animates recorded events. The ledger links each edited shot to its source, and the checkpoint witness can show new committed events during a run.
+LOOPDAY evaluates memory use and decision-making in a 36-tick town. The results below separate rule-based local policies, models evaluated on simulator-derived preferences, and full model-driven trajectories.
 
-## What to show
+## Local-policy experiments
 
-1. Play the 16-second portrait cut to establish the loop. Both cuts use original geometry, score, effects, and dialogue.
-2. Open `runs/showcase/compare-memory.html`, select **Compare loops**, and play both at 06:30. An experiment log records Phil’s prediction, the broken pencil, and the next morning’s inspection. Both branches begin the comparison at the same world checkpoint.
-3. Open the 06:30 action in each branch. With the test result available, Phil avoids the puddle. With that one result withheld, Phil steps into it. The intact local policy run reaches February 3 through community recognition. The other branch is still on February 2 at the end of its horizon.
-4. Open `runs/showcase/compare-endings.html` for the same town with different policy draws. Follow each ending to a choice made by one of the characters. The February 3 epilogues are the simulator’s consequences of those choices.
-
-## Measured results
-
-| Check | Result |
+| Experiment | Result |
 | --- | --- |
-| Same town, different local policy draws | Across 40 draws, 24 endings through community recognition and 16 where Rita chose to stay. Policy seeds 0 and 7 reproduce those endings with world seed 7. |
-| Paired memory test | Hiding the verified pencil result changes the next route at the same checkpoint. Across five tested policy seeds, this remains true with exploration disabled. |
-| Shifted lesson | Four policies attend each of nine shifted lesson times after seeing a town notice. When the lesson conflicts with a child rescue, all four infer the departure deadline and choose to help. |
-| Bruin pipeline | Eight assets and all seven checks passed against the final data. Bruin qualified 4,344 rollouts across 216 checkpoints and materialized 173 matched-action preference pairs and four verified experiment records. |
-| Local outcome ranker | On the first 27 held-out checkpoints, it tied the fixture at a mean expected return of 1.671. On 108 checkpoints from 12 entirely new seeds, the frozen ranker scored 1.250 versus 1.187 for the fixture. The effect measures a first action under specified local continuations. |
-| Stress and recovery | The audit passed 160 world and policy combinations. Sixteen mid-episode resumes matched uninterrupted ledgers. The seven sampled schedules without the rescue conflict reached piano practice in all 140 runs. The conflicting schedule reached it in 2 of 20. |
+| Matched memory ablation | Removing the verified pencil result from policy input changed the next route at the shared dawn checkpoint. Five tested local-policy seeds showed the same switch with exploration disabled. |
+| Shifted lesson | Four policies attended each of nine shifted lesson times after learning the schedule from a notice. When a rescue conflicted with the last departure for the lesson, all four helped the child. |
+| Ending variation | Forty policy draws at world seed 7 produced 24 community-recognition endings and 16 endings where Rita stayed. Policy seeds 0 and 7 reproduce those endings. |
+| Rollout qualification | The SQL audit qualified 4,344 rollouts across 216 checkpoints and produced 173 matched-action preference pairs and four verified experiment records. An injected illegal action caused qualification to fail. |
+| First-action ranker | On the initial 27 held-out checkpoints, both ranker and fixture averaged 1.671. On 108 checkpoints from 12 fresh seeds, the frozen ranker averaged 1.250 and the fixture averaged 1.187. |
+| Stress and recovery | The audit passed 160 world and policy combinations. Sixteen mid-episode resumes matched uninterrupted ledgers. Seven sampled schedules without the rescue conflict reached piano practice in all 140 runs. The conflicting schedule reached it in 2 of 20. |
 
-A separate Bruin run injected an action outside the legal list. The qualification check rejected the row and blocked preference materialization. The `runs/showcase/bruin-summary.json` and `bruin-lineage.json` files contain the validated counts and dependency chain.
+The [local policy notes](local-agent-policies.md) describe the authored decision rules and the per-seed schedule tests. The [analysis protocol](analysis-and-training.md) explains the continuation policies, return metric, and seed split.
 
-The local policy scores actions with authored goals and can adjust them using retained evidence and observed rewards. The policy ranker fits those observed rollout outcomes. The training dataset labels those outcomes `world_rollout`. A separate bounded runner can sample real Qwen candidates at a single checkpoint and execute them with fixed local continuation policies. Its data path was tested with a stand-in backend. Qwen CUDA, activated persona calibration and DPO weight updates still need live execution.
+## Model evidence
 
-## Archive choices and research
+- **Preference learning.** A LoRA adapter trained for 20 steps on 127 simulator-derived preference pairs. It ranked 45 of 46 held-out pairs correctly, compared with 20 for the base model. The held-out pairs came from six town seeds. These labels reflect the simulator's reward and continuation policy. The [training manifest](../showcase/phil-training/training_manifest.json) records the exact base revision, split, precision, and checksums.
+- **20-loop continuation.** The live cast reached the configured cap on February 2. Phil waited when a late-night invitation was available. A separate reconstruction supplied an authored invitation and sampled Rita's response. She declined. [Run and fork](../showcase/live-run/)
+- **Rialto performances.** In a separate town scenario, Phil called his sister on all 18 sampled evenings and Rita transmitted the interview on 13. In six resamples of one evening, with the other actors' choices fixed, Rita transmitted in all six. She had taken the night off in the original. [Takes, source traces, and replay](../showcase/rialto/)
 
-- **World and memory.** The archive supplied the four-character setup, timed town, repeated openings, semantic replay, Phil-only persistent memory, relationship gates, model diagnostics, and training idea. The implementation uses auditable text and world-state comparisons. It preserves evidence IDs through memory retrieval and gossip. The two dawn branches follow exact checkpoint matching so a comparison can isolate the missing clue. [Generative Agents](https://arxiv.org/abs/2304.03442), [DiscoveryWorld](https://arxiv.org/abs/2406.06769), [WorldTest](https://proceedings.mlr.press/v306/warrier26a.html)
-- **Models.** The archive selected Qwen3.5-9B for Phil and an earlier Muse contributor model via a gateway. This version uses the requested Muse Spark Contributor 1.3 directly. The Colab bundle can run Qwen and the simulator together. The model-facing alias condition and phrase audit test for expressed familiarity with the film when live generations are available. [Qwen model card](https://huggingface.co/Qwen/Qwen3.5-9B), [Meta Model API](https://dev.meta.ai/docs/quickstart)
-- **Interpretation.** The ledger keeps action, stated reason, observed events and optional Qwen measurements visible. The activation monitor compares a calibrated direction against held-out behavior. The system labels model-emitted trace text as one model output. [Persona Vectors](https://arxiv.org/abs/2507.21509), [Reasoning Models Don't Always Say What They Think](https://www.anthropic.com/research/reasoning-models-dont-say-think)
-- **Sponsors.** Bruin imports the world evidence and qualifies the offline training rows. BAND has a tested adapter for addressed dialogue, recipient inbox read-back, and a receipt the recipient sees. A sponsor room and agent keys are needed for the live handoff. The presentation plan is ready to assemble in AdaL. [Sponsor instructions](sponsor-setup.md)
+## Scope of the evidence
 
-The event’s build rule governs the submission. These artifacts document the pre-event rehearsal. [Event rules](https://luma.com/stxaoop0)
+The matched memory test isolates the effect of an available clue at one choice point. Later choices may compound that change. Ending frequencies describe the sampled configuration and its authored goal and relationship rules. The first-action ranker is evaluated with specified local continuations, and preference accuracy measures the ordering of held-out action completions. End-to-end improvement from the adapter would require matched runs with and without it.
+
+The ledger records stated reasons alongside independent world evidence. Optional model-emitted traces and activation probes are measurements with separate provenance. The [experiment protocol](loopday-setup-and-experiments.md) describes how to vary model-facing aliases and world facts when testing for familiarity with the scenario.

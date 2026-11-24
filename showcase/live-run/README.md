@@ -1,19 +1,32 @@
-# 20-loop live run
+# 20-loop model run
 
-[run.json](run.json) is a publication export of the Qwen and Muse cast’s 20-loop continuation. It retains story events, model labels, allowed actions, stated reasons, and receipt-to-event references. The run stopped at its configured cap while the town was still on February 2. In loop 17, Rita’s nightly trust reached 0.65. Phil had the option to invite her, and chose to wait.
+[run.json](run.json) is the publication export of a 20-loop model-driven trajectory. It includes story events, model labels, allowed actions, stated reasons, and receipt-to-event references. The run reached its configured cap on February 2. In loop 17, Rita’s nightly trust reached 0.65. Phil could invite her to stay and chose to wait.
 
-[invitation-fork.json](invitation-fork.json) records a separate reconstruction of the final loop-17 exchange. The branch supplies a human-authored invitation, then lets Rita’s live Muse model decide. Rita declined.
+[invitation-fork.json](invitation-fork.json) reconstructs the final loop-17 exchange from archived state. The branch supplies a human-authored invitation and samples Rita's response from the same supporting-cast model. Rita declined. The reconstruction covers that exchange and its ending checks.
 
-To watch the exported live run:
+To watch the archived trajectory from the repository root, run:
 
-```bash
+```sh
 python3 -m loopday.viewer --run showcase/live-run/run.json
 ```
 
-[memory-audit](memory-audit/) contains the test query, archived memory records and SQL used to reproduce Phil’s ordered top eight in DuckDB. The result is a replay of the scoring rule using a test query on archived memory. Run it with a local `loopday` DuckDB connection from the repo root:
+## Verify memory retrieval
 
-```bash
-bruin query -c loopday -q "$(cat showcase/live-run/memory-audit/memory-score.sql)"
+The [memory audit](memory-audit/) contains the archived records, a test query, and SQL that replays the scoring rule. The query combines token overlap, memory strength, recency, mood match, and location match, then orders the top eight records by priority and score.
+
+With the optional `duckdb` Python package installed, run this check from the repository root.
+
+```sh
+python3 - <<'PY'
+import json
+from pathlib import Path
+
+import duckdb
+
+audit = Path("showcase/live-run/memory-audit")
+rows = duckdb.sql((audit / "memory-score.sql").read_text()).project("event_id").fetchall()
+selected = [event_id for (event_id,) in rows]
+assert selected == json.loads((audit / "expected.json").read_text()), selected
+print(selected)
+PY
 ```
-
-The returned event IDs should match [expected.json](memory-audit/expected.json).
