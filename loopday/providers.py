@@ -23,6 +23,7 @@ META_URL = "https://api.meta.ai/v1/chat/completions"
 MUSE_MODEL = "muse-spark-1.3-contributor"
 PHIL_MODEL = "Qwen/Qwen3.5-9B"
 PROMPT_VERSION = "loopday-action-v3"
+NPC_PROMPT_VERSION = "loopday-npc-action-v4"
 MAX_MUSE_CACHE = 4096
 PHIL_RUNTIME_FIELDS = {"model_revision", "precision", "adapter", "persona_bank"}
 
@@ -44,6 +45,17 @@ Treat the evidence you remember as your own experience. Leave explanations open
 until a valid action or observation helps you test one. Your dispositions can
 change with experience. If distressed, choose harmless withdrawal, humor, or rest.
 """.strip()
+
+NPC_RULES = {
+    "rita": "You prize evidence and a usable segment. Under pressure you can be controlling and dismissive. "
+            "Treat unsupported claims as tentative. If someone asks you to risk the shoot on a hunch, "
+            "stick to the rundown, ask for evidence, or choose another task. Change your mind when you witness a result.",
+    "larry": "You are territorial about your footage and get impatient when someone wastes your setup. "
+             "You can decline distractions, keep filming something better, or point out a practical cost. "
+             "Help when there is a concrete reason to put the camera down.",
+    "ned": "You mistake friendliness for buying interest and change the subject back to insurance too quickly. "
+           "You can push an awkward pitch, leave if someone brushes you off, or put a sale aside when you witness a real need.",
+}
 
 
 class ModelError(RuntimeError):
@@ -69,6 +81,8 @@ def decision_messages(actor: str, observation: dict, *, alias_names: bool = Fals
     rules = DECISION_RULES
     if actor == "phil":
         rules += "\n\n" + PHIL_RULES
+    elif actor in NPC_RULES:
+        rules += "\n\nFollow your own goal. Agree or disagree based on what you know and what the choice costs you. " + NPC_RULES[actor]
     if alias_names:
         from .provenance import alias_observation, alias_prompt_text
 
@@ -96,6 +110,7 @@ def request_json(url: str, token: str, payload: dict) -> dict:
         raise ModelError("Missing or malformed provider credential.")
     url = provider_endpoint(url)
     host = urlsplit(url).hostname
+    timeout = 40 if host == "api.meta.ai" else 90
     try:
         content = json.dumps(payload, allow_nan=False)
     except (TypeError, ValueError) as error:
@@ -115,10 +130,10 @@ def request_json(url: str, token: str, payload: dict) -> dict:
         reply = subprocess.run(
             [
                 "curl", "--disable", "--silent", "--show-error", "--globoff", "--proto", "=https",
-                "--connect-timeout", "12", "--max-time", "90", "--max-filesize", "1500000", "--limit-rate", "128K",
+                "--connect-timeout", "12", "--max-time", str(timeout), "--max-filesize", "1500000", "--limit-rate", "128K",
                 "--write-out", "\n%{http_code}", "--config", "-",
             ],
-            input=config, text=True, capture_output=True, check=False, timeout=95,
+            input=config, text=True, capture_output=True, check=False, timeout=timeout + 5,
         )
     except FileNotFoundError as error:
         raise ModelError("curl is required for live inference.") from error
@@ -362,24 +377,36 @@ class LiveDirector:
         if cached:
             self.cache_hits += 1
         else:
-            result = self.call(META_URL, self.settings["MODEL_API_KEY"], payload)
-            try:
-                answer = result["choices"][0]["message"]["content"]
-            except (KeyError, IndexError, TypeError) as error:
-                raise ModelError("Muse did not return an answer.") from error
-            if not isinstance(answer, str) or not 0 < len(answer) <= 8192:
-                raise ModelError("Muse returned an empty or oversized answer.")
-            if result.get("model") not in (None, MUSE_MODEL):
-                raise ModelError("Muse returned a different model than requested.")
-            entry = {"model": MUSE_MODEL, "answer": answer, "tokens": {},
+            tokens = {}
+            for budget in (payload["max_completion_tokens"], 720):
+                try:
+                    result = self.call(META_URL, self.settings["MODEL_API_KEY"], {**payload, "max_completion_tokens": budget})
+                except ModelError as error:
+                    if str(error) not in {"Provider connection failed (curl 28).", "The provider request timed out."}:
+                        raise
+                    self._decision_metadata = {"failure_kind": "provider_timeout"}
+                    return ""
+                if result.get("model") not in (None, MUSE_MODEL):
+                    raise ModelError("Muse returned a different model than requested.")
+                raw_usage = result.get("usage")
+                if isinstance(raw_usage, dict):
+                    for field in ("prompt_tokens", "completion_tokens"):
+                        value = raw_usage.get(field)
+                        if type(value) is int and 0 <= value <= 1_000_000:
+                            tokens[field] = tokens.get(field, 0) + value
+                            self.usage[f"muse_{field}"] += value
+                try:
+                    choice = result["choices"][0]
+                    answer = choice["message"]["content"]
+                except (KeyError, IndexError, TypeError) as error:
+                    raise ModelError("Muse did not return an answer.") from error
+                if isinstance(answer, str) and answer.strip() and choice.get("finish_reason") != "length":
+                    break
+            if not isinstance(answer, str) or not 0 < len(answer.strip()) <= 8192:
+                # The simulator can repair a missing choice and record a rejected action if repair fails.
+                answer = ""
+            entry = {"model": MUSE_MODEL, "answer": answer, "tokens": tokens,
                      "model_reported": result.get("model") == MUSE_MODEL}
-            raw_usage = result.get("usage")
-            if isinstance(raw_usage, dict):
-                for field in ("prompt_tokens", "completion_tokens"):
-                    value = raw_usage.get(field)
-                    if type(value) is int and 0 <= value <= 1_000_000:
-                        entry["tokens"][field] = value
-                        self.usage[f"muse_{field}"] += value
             try:
                 decoded = json.loads(answer)
             except ValueError:
@@ -400,7 +427,7 @@ class LiveDirector:
                         raise ModelError("The persistent Muse cache could not be updated.") from error
         self._decision_metadata = {"provider": "meta", "model": entry["model"],
                                    "model_reported": entry.get("model_reported") is True,
-                                   "cache_hit": cached, "prompt_version": PROMPT_VERSION,
+                                   "cache_hit": cached, "prompt_version": NPC_PROMPT_VERSION,
                                    "alias_names": self.alias_names,
                                    "tokens": entry.get("tokens", {})}
         return entry["answer"]
@@ -447,7 +474,8 @@ class LiveDirector:
         self.usage["phil_generated_tokens"] += count
         metadata = {
             "provider": "colab", "model": PHIL_MODEL,
-            "execution": "in_process" if self.phil_backend is not None else "https",
+            "execution": (getattr(self.phil_backend, "execution", "in_process")
+                          if self.phil_backend is not None else "https"),
             "adapter": str(result.get("adapter", "base"))[:100], "prompt_version": PROMPT_VERSION,
             "alias_names": self.alias_names,
             "thinking_enabled": options.thinking, "generation_seed": options.seed,

@@ -118,17 +118,36 @@ else:
 from google.colab import userdata
 
 RUN_CANARY = False
+CAPTURE_PHIL_REASONING = False
+BAND_CONFIG = None  # Optional path to an uploaded BAND room configuration JSON.
+PHIL_ADAPTER = None  # Optional path to a validated LoRA directory.
+PHIL_PERSONA_BANK = None  # Optional path to a matching persona bank.
+PHIL_STEER = None  # Optional path to a JSON object mapping traits to strengths.
 env = os.environ.copy()
 runtime = ['--live', '--phil-in-process', '--phil-revision', QWEN_REVISION, '--alias-names']
 if QUANTIZE:
     runtime.append('--phil-4bit')
+if CAPTURE_PHIL_REASONING:
+    runtime.extend(['--phil-thinking', '--phil-capture-trace'])
+if PHIL_ADAPTER:
+    runtime.extend(['--phil-adapter', PHIL_ADAPTER])
+if PHIL_PERSONA_BANK:
+    runtime.extend(['--phil-persona-bank', PHIL_PERSONA_BANK, '--phil-monitor'])
+if PHIL_STEER:
+    runtime.extend(['--phil-steer', PHIL_STEER])
 
 def run_story(extra):
-    env['MODEL_API_KEY'] = userdata.get('MODEL_API_KEY')
-    try:
-        subprocess.run([sys.executable, '-m', 'loopday.run', *runtime, *extra], env=env, check=True)
-    finally:
-        env.pop('MODEL_API_KEY', None)
+    import json
+
+    run_env = {**env, 'MODEL_API_KEY': userdata.get('MODEL_API_KEY')}
+    band = []
+    if BAND_CONFIG:
+        config = json.loads(Path(BAND_CONFIG).read_text())
+        for actor in config['actors']:
+            key = f'BAND_{actor.upper()}_API_KEY'
+            run_env[key] = userdata.get(key)
+        band = ['--band-config', BAND_CONFIG]
+    subprocess.run([sys.executable, '-m', 'loopday.run', *runtime, *band, *extra], env=run_env, check=True)
 
 if RUN_CANARY:
     run_story(['--loops', '1', '--ticks', '5', '--max-calls', '24', '--no-persistent-cache', '--out', 'runs/live-canary'])

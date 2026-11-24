@@ -4,7 +4,9 @@ Four agents play out *Groundhog Day* in a snowy 3D town. The clock, streets, and
 
 The [showcase folder](showcase/) contains the short rehearsal cut, two standalone replay comparisons, and the Bruin run summary and lineage. Download the HTML files and open them in a browser to compare the local-policy runs.
 
-[Watch *Play It Again*](showcase/rialto/Play-It-Again.mp4), a three-minute film from the team’s Rialto town. Phil keeps promising his sister a Wednesday that never comes. Across town, Rita decides when a daughter will hear her mother’s voice. [See the six RunPod takes, captions and demo slides](showcase/rialto/).
+[Watch *Play It Again*](showcase/rialto/Play-It-Again.mp4), a silent three-minute film from the team’s Rialto town. Phil keeps promising his sister a Wednesday that never comes. Across town, Rita decides when a daughter will hear her mother’s voice. [See the six RunPod takes, captions and demo slides](showcase/rialto/).
+
+[Talk deck PDF](showcase/presentation/Loopday-Talk-Deck.pdf) · [Editable PowerPoint](showcase/presentation/Loopday-Talk-Deck.pptx) · [20-loop live run](showcase/live-run/) · [Phil’s trained adapter and dataset](showcase/phil-training/) · [Trailer reference photos](showcase/rialto/reference-frames/)
 
 ## Run and watch locally
 

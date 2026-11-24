@@ -605,8 +605,8 @@ class ReplayViewer {
       inspector.append(line);
     }
     if (metadata.model_trace) {
-      inspector.append(node("h3", "Model-emitted text"));
-      inspector.append(node("p", "This text is a provider output. Use linked events to verify what happened in the world."));
+      inspector.append(node("h3", "Qwen reasoning trace"));
+      inspector.append(node("p", "Qwen generated this text before choosing an action. The linked world events show what the simulator observed."));
       inspector.append(node("pre", metadata.model_trace));
     }
     if (inspector.children.length > 1) container.append(inspector);
@@ -806,6 +806,7 @@ class FollowViewer {
     }
     byId("follow-content").hidden = false;
     byId("follow-replay").hidden = false;
+    this.showPhil(snapshot.phil);
     if (!this.renderer) this.renderer = new FilmRenderer(byId("follow-stage"), snapshot.bundle.art);
     const previous = this.bundle?.run.events.length || 0;
     this.bundle = snapshot.bundle;
@@ -836,6 +837,22 @@ class FollowViewer {
     const preferred = this.suggested(events, previous);
     if (this.active == null || (this.following && preferred !== this.active)) this.display(preferred);
     else this.rendered.get(this.active)?.setAttribute("aria-current", "true");
+  }
+
+  showPhil(state) {
+    const panel = byId("follow-phil");
+    panel.hidden = !state?.decision?.id;
+    if (panel.hidden) return;
+    const number = value => Number.isFinite(value) ? value.toFixed(2) : "—";
+    const { decision } = state;
+    panel.replaceChildren(
+      node("h2", "Phil’s current state"),
+      node("p", `Simulated mood ${number(state.mood)} · Arousal ${number(state.arousal)} · ${readable(state.phase || "unknown")}`),
+      node("p", `Latest déjà vu ${number(state.deja_vu)} · Reset ${state.recognizes_reset ? "verified" : "unverified"}`),
+      node("h2", "Phil’s latest stated reason"),
+      node("p", `Loop ${decision.loop} · ${decision.time} · ${readable(decision.action)} · ${decision.id}`, "event-id"),
+      node("p", decision.text),
+    );
   }
 
   suggested(events, previous = Math.max(0, events.length - 10)) {

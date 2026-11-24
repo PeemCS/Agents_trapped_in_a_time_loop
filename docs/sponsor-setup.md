@@ -10,6 +10,21 @@ Use the DuckDB pipeline to show what happened between the two mornings. `core.ex
 
 Bring the two memory-fork artifacts and an action-rollout dataset. The [README](../README.md) has the pipeline and export commands. Open the lineage from `raw.local_rollouts` to `train.qualified_rollouts` to `train.local_preferences`. For one row, show the starting checkpoint, the two legal actions, and their recorded returns. Keep fixture and `world_rollout` rows labeled when showing the lineage. They exercise the pipeline and the local policy evaluation.
 
+Query `core.agent_loop_diagnostics` by actor, run, and loop to see recalled and cited evidence, rejected decisions, cache hits, and reported tokens. Missing usage stays `NULL`. Decision-level token counts cover the recorded model response, while `raw.run_metadata` carries total provider calls and usage for the run. Use matched checkpoints to compare memory on and off, or to compare persona settings with the same memory and model revision.
+
+`train.checkpoint_diagnostics` compares the baseline action with the best evaluated action from each qualified checkpoint. Group the return gaps by `opportunity`, `location`, and `tick` to find situations worth sampling again. The baseline in `world_rollout` data is the fixture policy. A live Qwen performance claim needs checkpoints evaluated against Qwen choices.
+
+To build a focused training set, export every qualified evidence ID for the selected checkpoints. Passing that CSV to `loopday.world_preferences --verified-index` preserves the matched trials for all legal actions. Run `server.train_dpo` without `--train` to check the seed split before allocating a GPU.
+
+```sql
+select rollout.evidence_id
+from train.qualified_rollouts as rollout
+join train.checkpoint_diagnostics as diagnosis using (checkpoint)
+where diagnosis.opportunity = 'piano_studio_between_lessons'
+  and diagnosis.baseline_return_gap >= 0.15
+order by rollout.evidence_id
+```
+
 ## BAND carries addressed dialogue
 
 Create a private rehearsal room and two or more remote agents. Add the configured identities to the room. Four identities let Phil, Rita, Larry, and Ned post under their own names. The bounded canary below uses Ned’s exchange with Rita at 11:30 in world time. Copy each agent’s ID and handle to `runs/band-config.json`. [BAND Quickstart](https://docs.band.ai/quickstart)

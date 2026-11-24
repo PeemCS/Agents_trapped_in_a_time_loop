@@ -111,6 +111,31 @@ class ProviderTests(TestCase):
         again.choose("phil", OBSERVATION)
         self.assertEqual(again.decision_metadata()["execution"], "in_process")
 
+    def test_muse_retries_token_exhaustion_and_counts_both_attempts(self):
+        director = LiveDirector(SETTINGS, max_calls=2)
+        first = {"model": MUSE_MODEL, "usage": {"completion_tokens": 240},
+                 "choices": [{"finish_reason": "length", "message": {"content": ""}}]}
+        second = {"model": MUSE_MODEL, "usage": {"completion_tokens": 260},
+                  "choices": [{"finish_reason": "stop", "message": {"content": '{"action":"wait"}'}}]}
+        with patch("loopday.providers.request_json", side_effect=[first, second]) as request:
+            self.assertEqual(director.choose("rita", OBSERVATION), '{"action":"wait"}')
+        self.assertEqual([call.args[2]["max_completion_tokens"] for call in request.call_args_list], [240, 720])
+        self.assertEqual(director.calls, 2)
+        self.assertEqual(director.decision_metadata()["tokens"], {"completion_tokens": 500})
+
+    def test_empty_muse_reply_is_left_for_simulator_action_repair(self):
+        director = LiveDirector(SETTINGS, max_calls=2)
+        response = {"model": MUSE_MODEL, "choices": [{"message": {"content": ""}}]}
+        with patch("loopday.providers.request_json", return_value=response):
+            self.assertEqual(director.choose("ned", OBSERVATION), "")
+        self.assertEqual(director.calls, 2)
+
+    def test_muse_timeout_is_marked_for_action_repair(self):
+        director = LiveDirector(SETTINGS, max_calls=1)
+        with patch("loopday.providers.request_json", side_effect=ModelError("Provider connection failed (curl 28).")):
+            self.assertEqual(director.choose("ned", OBSERVATION), "")
+        self.assertEqual(director.decision_metadata()["failure_kind"], "provider_timeout")
+
     def test_candidate_batch_reserves_once_and_keeps_raw_legal_choices(self):
         answers = ['{ "action":"move:inn", "reason":"Go." }', '{"action":"move:inn"}',
                    '{"action":"nothing"}', '{"action":"wait"}']

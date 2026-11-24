@@ -35,6 +35,7 @@ class PersonaAxis:
     center: float
     scale: float
     validated: bool
+    positive_only: bool = False
 
 
 @dataclass(frozen=True)
@@ -76,11 +77,13 @@ class PersonaBank:
                 ))
                 magnitude = math.hypot(*values)
                 validated = axis.get("validated")
+                positive_only = axis.get("positive_only", False)
                 if (not 0.99 <= magnitude <= 1.01 or not 1e-8 <= scale
                         or not 0 <= coefficient <= MAX_COEFFICIENT or type(validated) is not bool
+                        or type(positive_only) is not bool
                         or not validated and coefficient != 0):
                     raise ValueError("A persona axis is not normalized, bounded, or calibrated.")
-                axes[name] = PersonaAxis(layer, values, coefficient, center, scale, validated)
+                axes[name] = PersonaAxis(layer, values, coefficient, center, scale, validated, positive_only)
         except (OSError, KeyError, TypeError, json.JSONDecodeError) as error:
             raise ValueError("Cannot load the persona bank.") from error
         return cls(model, revision, precision, adapter, axes, hashlib.sha256(raw).hexdigest()[:16])
@@ -98,7 +101,7 @@ class PersonaBank:
             value = scalar(value)
             if axis is None:
                 raise ValueError("Requested persona axis is unavailable.")
-            if value and (not axis.validated or abs(value) > axis.coefficient):
+            if value and (not axis.validated or abs(value) > axis.coefficient or (axis.positive_only and value < 0)):
                 raise ValueError("Requested steering is outside the calibrated envelope.")
             if value:
                 chosen[name] = value

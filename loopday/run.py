@@ -13,7 +13,8 @@ from .audit import ArtifactError, audit_run
 from .band import BandTransport
 from .learning import OutcomeRanker, TrainingError
 from .metrics import summarize_days
-from .providers import LiveDirector, MUSE_MODEL, ModelError, PHIL_MODEL, PROMPT_VERSION, PhilOptions, load_settings
+from .providers import (LiveDirector, MUSE_MODEL, NPC_PROMPT_VERSION, ModelError, PHIL_MODEL, PROMPT_VERSION,
+                        PhilOptions, load_settings)
 from .provenance import signal_report
 from .run_storage import CallJournal, RunStorageError, exclusive_run, read_json, write_json, write_text
 from .simulation import FixtureDirector, Simulation
@@ -41,10 +42,11 @@ def passed_canary(path: Path) -> bool:
         live = [event for event in events if event["type"] == "decision" and event.get("mode") == "live"]
         for actor in CAST:
             expected_model, expected_provider = (PHIL_MODEL, "colab") if actor == "phil" else (MUSE_MODEL, "meta")
+            prompt_version = PROMPT_VERSION if actor == "phil" else NPC_PROMPT_VERSION
             if not any(event["actor"] == actor and event.get("action") in event.get("available_actions", [])
                        and event.get("model_metadata", {}).get("model") == expected_model
                        and event.get("model_metadata", {}).get("provider") == expected_provider
-                       and event.get("model_metadata", {}).get("prompt_version") == PROMPT_VERSION for event in live):
+                       and event.get("model_metadata", {}).get("prompt_version") == prompt_version for event in live):
                 return False
         return True
     except (OSError, ValueError, KeyError, TypeError, AttributeError):

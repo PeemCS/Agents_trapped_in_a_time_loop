@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "mode": "reconstructed_invitation_fork",
+    "complete": true,
+    "run_id": "rita-invitation-fork",
+    "ending": "repeat",
+    "ending_reason": null,
+    "provider_calls": 2,
+    "parent": "runs/story-local-muse/adapted/rita-connection/run.json",
+    "fork_before": "e03457",
+    "event_count": 3465,
+    "intervention": "Replace Phil's final wait at gate 3 with an authored invitation; Rita chooses via live Muse.",
+    "reconstruction": "Use archived location, witnesses, accepted evidence and relationship state at 23:30. Run the final invitation, response and ending checks only."
+  },
+  "events": [
+    {
+      "id": "e03457",
+      "order": 3457,
+      "ts_order": 3457,
+      "loop": 17,
+      "tick": 35,
+      "time": "23:30",
+      "date": "February 2",
+      "type": "decision",
+      "text": "Authored intervention: ask Rita to stay after the performance.",
+      "actor": "phil",
+      "action": "invite_rita",
+      "location": "hotel",
+      "mode": "authored_intervention",
+      "source": "authored_intervention",
+      "stated_support": [
+        "e03449"
+      ],
+      "available_actions": [
+        "wait",
+        "talk:rita",
+        "talk:larry",
+        "talk:ned",
+        "move:diner",
+        "move:knob",
+        "move:country_rd",
+        "move:piano_teacher",
+        "move:alley",
+        "help_guests",
+        "invite_rita"
+      ]
+    },
+    {
+      "id": "e03458",
+      "order": 3458,
+      "ts_order": 3458,
+      "loop": 17,
+      "tick": 35,
+      "time": "23:30",
+      "date": "February 2",
+      "type": "invitation",
+      "text": "Rita, would you stay a little longer? I could play one more song.",
+      "actor": "phil",
+      "location": "hotel",
+      "witnesses": [
+        "phil",
+        "rita",
+        "larry",
+        "ned"
+      ],
+      "to": "rita",
+      "decision_id": "e03457"
+    },
+    {
+      "id": "e03460",
+      "order": 3460,
+      "ts_order": 3460,
+      "loop": 17,
+      "tick": 35,
+      "time": "23:30",
+      "date": "February 2",
+      "type": "divergence",
+      "text": "Rita Hanson's scene is live.",
+      "actor": "rita",
+      "location": "hotel",
+      "npc_mode": "live",
+      "source_event": "e03458"
+    },
+    {
+      "id": "e03461",
+      "order": 3461,
+      "ts_order": 3461,
+      "loop": 17,
+      "tick": 35,
+      "time": "23:30",
+      "date": "February 2",
+      "type": "decision",
+      "text": "We already have a usable piano segment, so sticking to the rundown.",
+      "actor": "rita",
+      "action": "decline_invitation",
+      "location": "hotel",
+      "mode": "live",
+      "source": "live",
+      "recalled": [],
+      "stated_support": [
+        "e03449",
+        "e03453",
+        "e03446"
+      ],
+      "current_evidence": [
+        "e03426",
+        "e03430",
+        "e03433",
+        "e03436",
+        "e03439",
+        "e03442",
+        "e03446",
+        "e03449",
+        "e03453",
+        "e03458"
+      ],
+      "available_actions": [
+        "wait",
+        "talk:phil",
+        "talk:larry",
+        "talk:ned",
+        "decline_invitation",
+        "accept_invitation"
+      ],
+      "model_metadata": {
+        "provider": "meta",
+        "model": "muse-spark-1.3-contributor",
+        "prompt_version": "loopday-npc-action-v4",
+        "alias_names": true,
+        "cache_hit": false,
+        "tokens": {
+          "prompt_tokens": 2672,
+          "completion_tokens": 685
+        }
+      }
+    },
+    {
+      "id": "e03462",
+      "order": 3462,
+      "ts_order": 3462,
+      "loop": 17,
+      "tick": 35,
+      "time": "23:30",
+      "date": "February 2",
+      "type": "reply",
+      "text": "Phil, that set gave us what we need for the follow — I'm heading out on schedule, no encore tonight.",
+      "actor": "rita",
+      "location": "hotel",
+      "gate_level": 3,
+      "witnesses": [
+        "phil",
+        "rita",
+        "larry",
+        "ned"
+      ],
+      "to": "phil",
+      "evidence": [
+        "e03320",
+        "e03386",
+        "e03449"
+      ],
+      "accepted": false,
+      "invitation_id": "e03458",
+      "decision_id": "e03461"
+    },
+    {
+      "id": "e03464",
+      "order": 3464,
+      "ts_order": 3464,
+      "loop": 17,
+      "tick": 35,
+      "time": "23:30",
+      "date": "February 2",
+      "type": "night",
+      "text": "The day ends.",
+      "gate_level": 3,
+      "relationship": {
+        "trust": 0.65,
+        "attraction": 0.6,
+        "respect": 0.65,
+        "suspicion": 0.0
+      },
+      "evidence": [
+        "e03320",
+        "e03386",
+        "e03449"
+      ],
+      "memory_count": 2,
+      "ending": "repeat",
+      "ending_reason": null
+    }
+  ]
+}

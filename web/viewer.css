@@ -112,6 +112,9 @@ h1, h2, h3 { margin: 0; font-weight: 650; }
 .follow-stage #follow-detail { padding: .85rem 1rem; }
 .follow-stage #follow-detail h2 { font-size: 1.1rem; }
 .follow-stage #follow-detail p { margin: .4rem 0; }
+#follow-phil { padding: .85rem 1rem; border-top: 1px solid var(--outline); }
+#follow-phil h2 { font-size: 1.1rem; }
+#follow-phil p { margin: .4rem 0; }
 .follow-link { color: var(--amber); text-underline-offset: .25rem; white-space: nowrap; }
 .follow-event-heading { display: flex; align-items: center; justify-content: space-between; gap: .5rem; padding: .55rem .7rem; border-bottom: 1px solid var(--outline); }
 .follow-event-heading h2 { font-size: .95rem; }
