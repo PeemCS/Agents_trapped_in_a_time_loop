@@ -2,7 +2,7 @@
 
 The 3D film reads the same event sequence as the decision ledger. The edit favors recorded actions linked to an experiment or ending, with repeating camera setups for visual comparisons. Each shot retains its source event ID, and **Inspect this shot** opens that event. **Compare loops** aligns recorded towns and decisions by their in-world time. A two-run export puts the last loop from each run side by side, and **Replay both** animates both outcomes from the same camera phase.
 
-For the hackathon presentation, run the film first. Pause after the second puddle shot and open the linked ledger. In the memory comparison, start at 06:30 on loop two to show the changed action with the same opening and the same physical reset result. In the ending comparison, follow Rita’s reply and the later ending decision. The final February 3 shot uses the recorded ending.
+Start the memory comparison at 06:30 on loop two to see the changed route after the same physical reset. Open the linked ledger from either puddle shot to inspect its cause. In the ending comparison, follow Rita’s reply to the recorded ending. The final February 3 shot uses that event.
 
 ## Create the cut
 
@@ -18,7 +18,7 @@ python3 -m loopday.viewer \
 
 The normal `python3 -m loopday.viewer --run PATH` command serves the same interface on localhost. The HTML export omits raw model completions, observations supplied to the policy, credentials, and optional model-emitted text. A trace explicitly captured in a model run can be inspected locally with `--include-model-traces`. The ledger displays the character’s stated reason and independently linked world evidence. Local policy scores and measured model activations have separate labels.
 
-Enable `CAPTURE_PHIL_REASONING` in the generated Colab notebook before running the canary and full story, or pass `--phil-thinking --phil-capture-trace` to both live runs. In the local viewer, select a Phil decision and open the model details to read the Qwen reasoning trace alongside the stated reason and evidence links.
+Enable `CAPTURE_PHIL_REASONING` in the generated GPU notebook before running the canary and full story, or pass `--phil-thinking --phil-capture-trace` to both live runs. In the local viewer, select a Phil decision and open the model details to read the Qwen reasoning trace alongside the stated reason and evidence links.
 
 ## Watch events arrive
 

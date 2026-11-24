@@ -6,9 +6,9 @@ Phil bought maple syrup for the first pancake his sister makes after they move t
 
 ## What happened
 
-We ran one Phil for 50 consecutive Tuesdays in Rialto on a RunPod H100. The 908 performed turns include 100 private recordings. He packed the syrup 40 times, left it wrapped eight times, opened it for himself once, and poured it out once. He called Jo on 22 afternoons and walked past the working phone on 28. The log contains 61 distinct recording texts across 100 memos, including stretches when he repeats an earlier recording word for word. [Verified counts](fifty/outcomes.json)
+We ran one Phil for 50 consecutive Tuesdays in Rialto on an H100 GPU. The 908 performed turns include 100 private recordings. He packed the syrup 40 times, left it wrapped eight times, opened it for himself once, and poured it out once. He called Jo on 22 afternoons and walked past the working phone on 28. The log contains 61 distinct recording texts across 100 memos, including stretches when he repeats an earlier recording word for word. [Verified counts](fifty/outcomes.json)
 
-On Tuesday 28 he empties the bottle into the sink. By night he is telling the recorder the syrup is in his bag. I’d end the trailer there. The run continued. On Tuesday 50 he packs the bottle, calls Jo, and she tells him she’s making pancakes on the blue griddle. He still cares. His evening recording is down to a few words: “Cut it. Eight o'clock, sharp.” [The low point](fifty/day-28.json) · [The fiftieth Tuesday](fifty/day-50.json)
+On Tuesday 28 he empties the bottle into the sink. By night he is telling the recorder the syrup is in his bag. On Tuesday 50 he packs the bottle, calls Jo, and she tells him she’s making pancakes on the blue griddle. He still cares. His evening recording is down to a few words: “Cut it. Eight o'clock, sharp.” [The low point](fifty/day-28.json) · [The fiftieth Tuesday](fifty/day-50.json)
 
 In four paired auditions we offered the same hotel pancake before and after the long run. All eight Phils stayed to eat it. Their dialogue and stated motives differed. The comparison supports keeping the sink scene as a moment of despair, without claiming the invitation permanently lost its meaning. [The eight performances and their stated motives](fifty/breakfast/README.md)
 

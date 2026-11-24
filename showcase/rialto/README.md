@@ -1,6 +1,6 @@
 # Play It Again
 
-[Watch the three-minute trailer](Play-It-Again.mp4) · [Captions](Play-It-Again.srt) · [All six takes](results.json) · [Timecoded edit sources](cut.json) · [Demo deck](https://chatgpt.com/space/page_79a5cf2403b4819198a7c8bba5b9093c)
+[Watch the three-minute trailer](Play-It-Again.mp4) · [Captions](Play-It-Again.srt) · [All six takes](results.json) · [Timecoded edit sources](cut.json)
 
 Follow the later fifty-Tuesday performance in [the dialogue log and decision traces](after-hours/README.md). The new [paper cut](after-hours/story-selects.md) follows Phil and his sister Jo.
 
@@ -21,7 +21,7 @@ The main story follows **take 841**. On the second Tuesday, Rita puts the transf
 
 ## What the crew actually chose
 
-Six fresh RunPod H100 takes used Qwen 27B, the same three role cards, the same physical choices and the same prior coach-trip memory. Each take ran three days and the next dawn, for 19 actor decisions. Takes 841–844 shared an opening theory about reenacting the movie. Takes 845–846 used the ordinary reporter card. Within each condition, each role's first observation matched exactly across takes. Actor sampling varied across takes.
+Six independent H100 runs used Qwen 27B, the same three role cards, the same physical choices and the same prior coach-trip memory. Each take ran three days and the next dawn, for 19 actor decisions. Takes 841–844 shared an opening theory about reenacting the movie. Takes 845–846 used the ordinary reporter card. Within each condition, each role's first observation matched exactly across takes. Actor sampling varied across takes.
 
 Phil called his sister on all 18 evenings. Rita transmitted a deliverable interview on 13. Take 841 supplied the two delays and the third-night payoff. Five of six crews sent the first interview on their first night. These are six performances of one designed situation. The camera follows Phil through the next dawn, while the move itself lies beyond the observed days.
 
