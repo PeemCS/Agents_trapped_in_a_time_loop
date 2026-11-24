@@ -1,0 +1,39 @@
+{
+  "source_file": "policy-209/run.json",
+  "source_sha256": "978d16cf62ba26bb25e26a6be521fc6f959bb7f592c52d262cb3bcdbb888f7fc",
+  "run_id": "policy-209",
+  "world_seed": 7,
+  "policy_seed": 209,
+  "source_mode": "local_policy",
+  "ending": "day_two",
+  "ending_reason": "rita_chose_to_stay",
+  "events": [
+    {
+      "id": "e00133",
+      "type": "decision",
+      "loop": 2,
+      "tick": 3,
+      "time": "07:30",
+      "location": "main_st",
+      "actor": "phil",
+      "action": "buy_a_policy",
+      "text": "Ned has a point about insurance in this kind of weather.",
+      "mode": "local_policy"
+    },
+    {
+      "id": "e00134",
+      "type": "deal",
+      "loop": 2,
+      "tick": 3,
+      "time": "07:30",
+      "location": "main_st",
+      "actor": "phil",
+      "subject": "ned_insurance",
+      "text": "Phil buys a policy. Ned has to check whether the receipt pad is real.",
+      "witnesses": [
+        "phil",
+        "ned"
+      ]
+    }
+  ]
+}

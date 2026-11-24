@@ -1,0 +1,9 @@
+name: town.air_refs
+type: duckdb.seed
+description: The evidence references attached to each resolved seven o'clock bulletin.
+parameters:
+  path: air_refs.csv
+custom_checks:
+  - name: one reference per ordered slot
+    query: SELECT count(*) FROM (SELECT world, bulletin_id, ordinal FROM town.air_refs GROUP BY ALL HAVING count(*) <> 1)
+    value: 0

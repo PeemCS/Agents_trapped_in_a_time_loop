@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">
+  <defs>
+    <marker id="arrCyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrAmber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#fbbf24"/>
+    </marker>
+    <marker id="arrMint" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#34d399"/>
+    </marker>
+  </defs>
+
+  <rect width="1440" height="900" fill="#090e16"/>
+
+  <!-- Header -->
+  <rect x="24" y="18" width="1392" height="72" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="44" y="48" fill="#f8fafc" font-size="22" font-weight="700" letter-spacing="1.2">S06 · VI. ESCAPE — STATION SWITCHER → BALLROOM TWO-SHOT → WEDNESDAY POV (01:34–01:48)</text>
+  <text x="44" y="74" fill="#94a3b8" font-size="13">SYNCED TO STATION-M · BALL-M · S00-D/E (regional-station.svg · ballroom.svg · S06-A → B1/B2 → C1/C2)</text>
+  <rect x="1158" y="34" width="239" height="38" rx="6" fill="#2b1e08" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="1277" y="58" fill="#fde68a" font-size="12" font-weight="700" text-anchor="middle">35mm 3RD → WARM 14mm POV</text>
+
+  <!-- PANEL A1: REGIONAL STATION CONTROL ROOM (TOP LEFT) -->
+  <rect x="24" y="106" width="690" height="362" rx="10" fill="#0d1522" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="44" y="134" fill="#34d399" font-size="14" font-weight="700">A1. REGIONAL STATION CONTROL ROOM (STATION-M · S06-A · PHIL ABSENT)</text>
+
+  <rect x="64" y="162" width="584" height="270" fill="#182426" stroke="#94a3b8" stroke-width="4"/>
+  <!-- North Control Glass -->
+  <line x1="154" y1="162" x2="328" y2="162" stroke="#bae6fd" stroke-width="9"/>
+  <text x="241" y="152" fill="#bae6fd" font-size="10" font-weight="700" text-anchor="middle">CONTROL GLASS + RETURN MONITOR BEYOND</text>
+  <!-- Broadcast Console (Source deck L · Switcher Center · 2 Analog VU Meters R) -->
+  <rect x="196" y="206" width="336" height="66" fill="#422006" stroke="#fbbf24" stroke-width="2"/>
+  <text x="252" y="242" fill="#fde68a" font-size="10" font-weight="700" text-anchor="middle">SOURCE DECK</text>
+  <line x1="308" y1="206" x2="308" y2="272" stroke="#92400e" stroke-width="2"/>
+  <text x="364" y="242" fill="#fbbf24" font-size="10" font-weight="700" text-anchor="middle">SWITCHER</text>
+  <line x1="420" y1="206" x2="420" y2="272" stroke="#92400e" stroke-width="2"/>
+  <text x="476" y="242" fill="#34d399" font-size="10" font-weight="700" text-anchor="middle">2× VU METERS</text>
+  <!-- Patch rack SE -->
+  <rect x="518" y="318" width="106" height="62" fill="#334155" stroke="#64748b" stroke-width="2"/>
+  <text x="571" y="352" fill="#cbd5e1" font-size="10" text-anchor="middle">PATCH RACK</text>
+  <!-- Rita facing North -->
+  <circle cx="352" cy="312" r="16" fill="#065f46" stroke="#34d399" stroke-width="3"/>
+  <text x="352" y="316" fill="#ecfdf5" font-size="11" font-weight="700" text-anchor="middle">R</text>
+  <text x="380" y="316" fill="#34d399" font-size="10" font-weight="700">RITA (GREEN COAT · OWNS SWITCH)</text>
+
+  <!-- C1 Camera Over Rita's Left Shoulder -->
+  <path d="M 164,378 L 222,202 L 516,258 Z" fill="#34d399" fill-opacity="0.14" stroke="#34d399" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <line x1="164" y1="378" x2="352" y2="262" stroke="#34d399" stroke-width="2.5" marker-end="url(#arrMint)"/>
+  <circle cx="164" cy="378" r="12" fill="#090e16" stroke="#34d399" stroke-width="3"/>
+  <text x="164" y="382" fill="#34d399" font-size="10" font-weight="700" text-anchor="middle">C1</text>
+  <text x="164" y="408" fill="#34d399" font-size="10" font-weight="700" text-anchor="middle">35mm OVER LEFT SHOULDER</text>
+
+  <!-- PANEL A2: BALLROOM EVENING TWO-SHOT (BOTTOM LEFT) -->
+  <rect x="24" y="484" width="690" height="392" rx="10" fill="#0d1522" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="44" y="512" fill="#fbbf24" font-size="14" font-weight="700">A2. BALLROOM EVENING REVERSE (BALL-M · C2 SE→NW · S06-B1/B2)</text>
+
+  <rect x="64" y="544" width="584" height="284" fill="#1b1815" stroke="#b45309" stroke-width="4"/>
+  <!-- North frosted windows + Walnut Upright -->
+  <line x1="128" y1="544" x2="222" y2="544" stroke="#bae6fd" stroke-width="8"/>
+  <line x1="466" y1="544" x2="560" y2="544" stroke="#bae6fd" stroke-width="8"/>
+  <rect x="274" y="552" width="144" height="42" fill="#451a03" stroke="#d97706" stroke-width="2"/>
+  <rect x="280" y="584" width="132" height="12" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5"/>
+  <text x="346" y="574" fill="#fde68a" font-size="10" font-weight="700" text-anchor="middle">WALNUT UPRIGHT</text>
+
+  <!-- Phil at Bench (SCREEN-RIGHT from C2!) -->
+  <rect x="308" y="620" width="76" height="22" rx="3" fill="#78350f" stroke="#d97706" stroke-width="1.5"/>
+  <circle cx="346" cy="630" r="14" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+  <text x="346" y="634" fill="#7dd3fc" font-size="10" font-weight="700" text-anchor="middle">P</text>
+  <text x="346" y="662" fill="#7dd3fc" font-size="10" font-weight="700" text-anchor="middle">PHIL (COAT ON · SCREEN-R)</text>
+
+  <!-- Bentwood Chair & Rita's Entrance from West Hall (SCREEN-LEFT!) -->
+  <line x1="64" y1="654" x2="64" y2="722" stroke="#090e16" stroke-width="9"/>
+  <text x="116" y="742" fill="#34d399" font-size="10" font-weight="700" text-anchor="middle">WEST ENTRANCE</text>
+  <path d="M 66,688 L 166,688 Q 214,688 232,656 L 252,642" fill="none" stroke="#34d399" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#arrMint)"/>
+  <rect x="246" y="622" width="32" height="30" rx="4" fill="#334155" stroke="#94a3b8" stroke-width="1.5"/>
+  <circle cx="262" cy="636" r="14" fill="#065f46" stroke="#34d399" stroke-width="3"/>
+  <text x="262" y="640" fill="#ecfdf5" font-size="10" font-weight="700" text-anchor="middle">R</text>
+  <text x="210" y="608" fill="#34d399" font-size="10" font-weight="700" text-anchor="middle">RITA (SCREEN-LEFT)</text>
+
+  <!-- C2 Camera SE looking NW (35mm locked!) -->
+  <path d="M 588,786 L 210,618 L 414,552 Z" fill="#fbbf24" fill-opacity="0.14" stroke="#fbbf24" stroke-width="1.8" stroke-dasharray="6 4"/>
+  <line x1="588" y1="786" x2="334" y2="626" stroke="#fbbf24" stroke-width="2.5" marker-end="url(#arrAmber)"/>
+  <circle cx="588" cy="786" r="13" fill="#090e16" stroke="#fbbf24" stroke-width="3"/>
+  <text x="588" y="790" fill="#fde68a" font-size="10" font-weight="700" text-anchor="middle">C2</text>
+  <text x="536" y="814" fill="#fde68a" font-size="10" font-weight="700" text-anchor="middle">C2 · LOCKED 35mm SE→NW</text>
+  <text x="346" y="852" fill="#94a3b8" font-size="10" text-anchor="middle">Warm tungsten brass sconces on East wall · Piano keys visible BETWEEN Phil &amp; Rita</text>
+
+  <!-- PANEL B: 21:9 CLIMAX FRAME MAPS (TOP RIGHT) -->
+  <rect x="734" y="106" width="682" height="482" rx="10" fill="#0d1522" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="754" y="134" fill="#fbbf24" font-size="14" font-weight="700">B. 21:9 CLIMAX FRAME MAPS (WIRE → BALLROOM → WARM WEDNESDAY)</text>
+
+  <!-- 1. S06-A Regional Switcher -->
+  <text x="754" y="160" fill="#34d399" font-size="11" font-weight="700">1. S06-A · "I'M PUTTING IT ON THE WIRE." (35mm OVER RITA'S LEFT SHOULDER)</text>
+  <rect x="754" y="168" width="642" height="92" rx="6" fill="#0b1320" stroke="#34d399" stroke-width="1.8"/>
+  <text x="836" y="216" fill="#34d399" font-size="10" font-weight="700" text-anchor="middle">RITA SHOULDER (L)</text>
+  <text x="1054" y="206" fill="#fde68a" font-size="11" font-weight="700" text-anchor="middle">SOURCE DECK (L) · HAND ON SWITCHER (CENTER)</text>
+  <text x="1054" y="226" fill="#94a3b8" font-size="10" text-anchor="middle">Return monitor beyond console · Single warm practical</text>
+  <rect x="1264" y="182" width="116" height="62" rx="4" fill="#1e293b" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="1322" y="210" fill="#fbbf24" font-size="10" font-weight="700" text-anchor="middle">2× VU METERS</text>
+  <text x="1322" y="226" fill="#fde68a" font-size="9" text-anchor="middle">(NEEDLE LARGE!)</text>
+
+  <!-- 2. S06-B1 -> S06-B2 Ballroom Piano -->
+  <text x="754" y="282" fill="#fbbf24" font-size="11" font-weight="700">2. S06-B1 → S06-B2 · "SAVE THOSE FOR THE MORNING." (LOCKED 35mm SE→NW)</text>
+  <rect x="754" y="290" width="642" height="110" rx="6" fill="#1c150c" stroke="#fbbf24" stroke-width="2"/>
+  <rect x="774" y="306" width="166" height="78" rx="4" fill="#064e3b" stroke="#34d399" stroke-width="1.5"/>
+  <text x="857" y="338" fill="#34d399" font-size="11" font-weight="700" text-anchor="middle">RITA (SCREEN-LEFT)</text>
+  <text x="857" y="356" fill="#d1fae5" font-size="9" text-anchor="middle">B1: pulls bentwood chair</text>
+  <text x="857" y="370" fill="#d1fae5" font-size="9" text-anchor="middle">B2: sits beside Phil</text>
+  <rect x="962" y="334" width="194" height="24" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5"/>
+  <text x="1059" y="324" fill="#fde68a" font-size="10" font-weight="700" text-anchor="middle">PIANO KEYS BETWEEN THEM</text>
+  <text x="1059" y="376" fill="#94a3b8" font-size="9" text-anchor="middle">Parquet floor · 2 windows behind</text>
+  <rect x="1178" y="306" width="200" height="78" rx="4" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="1278" y="338" fill="#7dd3fc" font-size="11" font-weight="700" text-anchor="middle">PHIL (SCREEN-RIGHT)</text>
+  <text x="1278" y="356" fill="#e2e8f0" font-size="9" text-anchor="middle">Charcoal coat ON</text>
+  <text x="1278" y="370" fill="#e2e8f0" font-size="9" text-anchor="middle">Left hand sustains note</text>
+
+  <!-- 3. S06-C1 -> S06-C2 Warm Wednesday POV Return -->
+  <text x="754" y="422" fill="#f59e0b" font-size="11" font-weight="700">3. S06-C1 (0°) → S06-C2 (95° RIGHT) · WARM WEDNESDAY RETURN (FIXED 14mm POV)</text>
+  <rect x="754" y="430" width="642" height="146" rx="6" fill="#231a0d" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="768" y="444" width="302" height="118" rx="4" fill="#2b2010" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="919" y="468" fill="#fde68a" font-size="11" font-weight="700" text-anchor="middle">S06-C1 · 0° AHEAD (EXACT S00-D MATCH)</text>
+  <text x="919" y="490" fill="#fef3c7" font-size="10" text-anchor="middle">WARM GOLDEN SUN THROUGH BAY 1 (L)</text>
+  <text x="919" y="510" fill="#e2e8f0" font-size="9" text-anchor="middle">Same 3 arches, floral wallpaper, quilt &amp; hands</text>
+  <text x="919" y="530" fill="#34d399" font-size="9" font-weight="700" text-anchor="middle">(Approved READY in photo-qa.json!)</text>
+  <text x="919" y="548" fill="#94a3b8" font-size="9" text-anchor="middle">Rita's voice OFF-SCREEN: "You owe me two bars."</text>
+
+  <rect x="1084" y="444" width="298" height="118" rx="4" fill="#2b2010" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="1233" y="468" fill="#fde68a" font-size="11" font-weight="700" text-anchor="middle">S06-C2 · 95° RIGHT (EXACT S00-E MATCH)</text>
+  <text x="1233" y="490" fill="#fef3c7" font-size="10" text-anchor="middle">WARM SUNLIGHT ON RC-6025 '6 00'</text>
+  <text x="1233" y="510" fill="#e2e8f0" font-size="9" text-anchor="middle">Bay 3 edge left · full lamp shade · pink roses</text>
+  <text x="1233" y="530" fill="#7dd3fc" font-size="9" text-anchor="middle">Same fixed 14mm · NO head/ear/shoulder</text>
+  <text x="1233" y="548" fill="#fbbf24" font-size="9" font-weight="700" text-anchor="middle">DJ confirms WEDNESDAY → dissolve to live demo</text>
+
+  <!-- PANEL C: LOCKS & FORBIDDEN ERRORS (BOTTOM RIGHT) -->
+  <rect x="734" y="604" width="682" height="272" rx="10" fill="#0d1522" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="754" y="632" fill="#f8fafc" font-size="14" font-weight="700">C. ASTRA PHOTO-GEN SPATIAL LOCKS &amp; FORBIDDEN ERRORS</text>
+  <line x1="754" y1="644" x2="1396" y2="644" stroke="#1e293b" stroke-width="1.5"/>
+
+  <rect x="754" y="658" width="312" height="200" rx="8" fill="#0a241d" stroke="#10b981" stroke-width="1.5"/>
+  <text x="770" y="682" fill="#34d399" font-size="12" font-weight="700">MUST PRESERVE (LOCKED)</text>
+  <text x="770" y="704" fill="#e2e8f0" font-size="11">1. S06-A locks to STATION-M:</text>
+  <text x="770" y="720" fill="#94a3b8" font-size="10">   VU meter needle large enough to read;</text>
+  <text x="770" y="734" fill="#94a3b8" font-size="10">   Rita in green coat, PHIL ABSENT.</text>
+  <text x="770" y="756" fill="#e2e8f0" font-size="11">2. S06-B1 &amp; B2 share EXACT C2 angle</text>
+  <text x="770" y="772" fill="#94a3b8" font-size="10">   from BALL-M: Rita LEFT, Phil RIGHT,</text>
+  <text x="770" y="786" fill="#94a3b8" font-size="10">   scuffed parquet, bentwood chair.</text>
+  <text x="770" y="808" fill="#e2e8f0" font-size="11">3. S06-C1/C2 match S00-D/E pixel</text>
+  <text x="770" y="824" fill="#94a3b8" font-size="10">   geometry — ONLY light turns warm gold.</text>
+  <text x="770" y="846" fill="#34d399" font-size="10" font-weight="700">4. Cold Tuesday → Warm Wednesday arc.</text>
+
+  <rect x="1084" y="658" width="312" height="200" rx="8" fill="#2a1215" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="1100" y="682" fill="#f87171" font-size="12" font-weight="700">FORBIDDEN ERRORS</text>
+  <text x="1100" y="704" fill="#fecaca" font-size="11">✗ NO merging Rialto booth &amp; Regional</text>
+  <text x="1100" y="720" fill="#fca5a5" font-size="10">   Station (separate rooms: S04 vs S06).</text>
+  <text x="1100" y="742" fill="#fecaca" font-size="11">✗ NO Rita entering from screen-right</text>
+  <text x="1100" y="758" fill="#fca5a5" font-size="10">   in Ballroom (West door = SCREEN-LEFT).</text>
+  <text x="1100" y="780" fill="#fecaca" font-size="11">✗ NO hiding piano keys between bodies.</text>
+  <text x="1100" y="802" fill="#fecaca" font-size="11">✗ NO Rita visible in neutral S06-C1</text>
+  <text x="1100" y="818" fill="#fca5a5" font-size="10">   forward wake (keep exact S00-D match).</text>
+  <text x="1100" y="840" fill="#fecaca" font-size="11">✗ NO LCD digits in S06-C2 split-flap.</text>
+</svg>

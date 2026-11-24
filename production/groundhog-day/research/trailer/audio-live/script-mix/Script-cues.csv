@@ -1,0 +1,32 @@
+Cue,In (seconds),Out (seconds),Character,Performance type,Audio source,Line
+1,0.3,1.854,Rita,Spoken in scene,Selected cast take,Thirty more seconds?
+2,3.33,5.287,Ned,Spoken in scene,Selected cast take,Phil? I’ve got a policy that—
+3,7.78,10.611,DJ,Radio broadcast,Scripted radio announcer,"Rise and shine, campers! Tuesday, February second!"
+4,11.6,13.559,Phil,"Recorded character thought, excerpt",User-supplied Fish Audio take,I’m stuck in a loop.
+5,15.24,18.787,Phil,Reading of stated intention,Selected cast take,Test the theory. Not the coach. Not the couch. The piano.
+6,33.03,37.776,Phil,Spoken in scene,Selected cast take,It’s Phil. I’m in Pittsburgh. The van is confirmed for eight A.M. I’ll be there.
+7,39.0,40.054,DJ,Radio broadcast,Scripted radio announcer,"Tuesday, February second."
+8,40.15,41.545,Phil,Draft interior voice-over,Selected cast take,I was there. She heard me.
+9,42.05,45.558,Phil,Spoken in scene,Selected cast take,"Rita, Larry—see you at the party. I’m heading to Pittsburgh."
+10,52.32,53.484,Rita,Spoken in scene,Selected cast take,"Morning, Phil."
+11,53.85,54.73,Phil,Spoken in scene,Selected cast take,About last—
+12,55.45,56.416,Phil,Spoken in scene,Selected cast take,Snow till noon.
+13,62.36,67.89,Phil,"Recorded character thought, excerpt",Selected cast take,The curtains are closed. I’ve spent the afternoon in bed. Again.
+14,76.13,77.537,Ned,Spoken in scene,Selected cast take,It covers the whole year.
+15,77.6,78.148,Phil,Spoken in scene,Selected cast take,I’ll take it.
+16,88.84,89.8,Rita,Spoken in scene,Selected cast take,You sold one?
+17,90.04,92.21,Ned,Spoken in scene,Selected cast take,To Phil. I forgot my pen.
+18,92.72,93.81,Ned,Spoken in scene,Selected cast take,He waited.
+19,94.16,95.803,Rita,Spoken in scene,Selected cast take,I’m putting it on the wire.
+20,99.18,100.94,Phil,Spoken in scene,Selected cast take,There are two more bars.
+21,101.02,102.761,Rita,Spoken in scene,Selected cast take,Save those for the morning.
+22,105.04,106.88,Rita,Spoken in scene,Selected cast take,You owe me two bars.
+23,106.95,107.664,DJ,Radio broadcast,Scripted radio announcer,Wednesday.
+24,108.06,113.226,Presenter,Presenter guide,Existing live-demo guide,Here’s one evening we actually ran. Rita went to dance. Phil had practiced all afternoon.
+25,114.06,118.716,Presenter,Presenter guide,Existing live-demo guide,"He meant to test the piano. When he had to choose where to spend the evening, he sat at the depot."
+26,122.06,128.515,Presenter,Presenter guide,Existing live-demo guide,"Only Phil and Ned witnessed the sale. Ned telling Rita he waited, and what she remembers on Wednesday, are our next scenes."
+27,130.06,138.42,Presenter,Presenter guide,Existing live-demo guide,"The town records who was there. On another take, Ned could tell Rita what he saw. The Band adapter can check that a message reached its intended recipient."
+28,142.06,150.15,Presenter,Presenter guide,Existing live-demo guide,"Bruin checks the recorded events in order. A trip can go in the edit when we can trace the arrival, the time spent in Pittsburgh, and the next wake at the inn."
+29,155.06,161.723,Presenter,Presenter guide,Existing live-demo guide,"As the writer, I can try an evening the actors passed up. Here they dance. Both of these calendar rules still say Tuesday."
+30,164.06,170.445,Presenter,Presenter guide,Existing live-demo guide,"Give Rita the regional line instead. Alma’s daughter hears the interview. Under this delivery rule, the morning changes."
+31,172.06,179.735,Presenter,Presenter guide,Existing live-demo guide,"We wrote a man who can remember and a town that keeps going without him. Now we can give Ned someone to tell, and find out what Rita does with it."

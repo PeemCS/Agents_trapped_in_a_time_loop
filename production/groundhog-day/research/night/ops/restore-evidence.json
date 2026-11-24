@@ -1,0 +1,16 @@
+{
+  "accepted_responses_at_crash": 17,
+  "injected_after_accepting_slot": 7,
+  "committed_slots_at_crash": 6,
+  "recovered_ids": [
+    "d02-t02-reporter",
+    "d02-t02-producer"
+  ],
+  "recovered_slots": 24,
+  "actor_decisions_verified": 72,
+  "max_calls_per_distinct_archived_request": 1,
+  "all_requests": 47,
+  "resulting_trajectory_equals_original": true,
+  "concurrent_writer_blocked": true,
+  "scope": "Provider responses came from the retained 27B take. A local injected write failure and a competing lock acquisition were real. No live provider calls were made."
+}

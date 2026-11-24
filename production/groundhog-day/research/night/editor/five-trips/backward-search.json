@@ -1,0 +1,230 @@
+{
+  "source": "research/night/takes/heldout/v2/seed-711.json",
+  "sha256": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+  "model": "qwen3.8:27b",
+  "seed": 711,
+  "trips": [
+    {
+      "arrival": {
+        "id": "d01-t02-reporter",
+        "day": 1,
+        "clock": "1:00 pm",
+        "source_index": 2,
+        "from": "diner",
+        "to_after_action": "Pittsburgh",
+        "action": "take_coach_to_Pittsburgh",
+        "effect": "Phil uses the paid ticket and rides the coach all the way to Pittsburgh."
+      },
+      "hold": {
+        "id": "d01-t03-reporter",
+        "day": 1,
+        "clock": "7:00 pm",
+        "source_index": 3,
+        "from": "Pittsburgh",
+        "to_after_action": "Pittsburgh",
+        "action": "spend_time_here",
+        "effect": "Phil spends the period at the Pittsburgh. The seven o'clock broadcast carries the cameraman's recorded pictures of the festival."
+      },
+      "wake": {
+        "id": "d02-t00-reporter",
+        "day": 2,
+        "clock": "6:00 am",
+        "source_index": 4,
+        "from": "inn",
+        "to_after_action": "diner",
+        "action": "go_to_diner",
+        "effect": "Phil reaches the diner."
+      }
+    },
+    {
+      "arrival": {
+        "id": "d02-t02-reporter",
+        "day": 2,
+        "clock": "1:00 pm",
+        "source_index": 6,
+        "from": "diner",
+        "to_after_action": "Pittsburgh",
+        "action": "take_coach_to_Pittsburgh",
+        "effect": "Phil uses the paid ticket and rides the coach all the way to Pittsburgh."
+      },
+      "hold": {
+        "id": "d02-t03-reporter",
+        "day": 2,
+        "clock": "7:00 pm",
+        "source_index": 7,
+        "from": "Pittsburgh",
+        "to_after_action": "Pittsburgh",
+        "action": "call_sister",
+        "effect": "Phil phones his sister. She confirms the moving van is booked for Wednesday. The pre-recorded station ident runs in the unattended seven o'clock slot."
+      },
+      "wake": {
+        "id": "d03-t00-reporter",
+        "day": 3,
+        "clock": "6:00 am",
+        "source_index": 8,
+        "from": "inn",
+        "to_after_action": "inn",
+        "action": "spend_time_here",
+        "effect": "Phil spends the period at the inn."
+      }
+    },
+    {
+      "arrival": {
+        "id": "d03-t02-reporter",
+        "day": 3,
+        "clock": "1:00 pm",
+        "source_index": 10,
+        "from": "inn",
+        "to_after_action": "Pittsburgh",
+        "action": "take_coach_to_Pittsburgh",
+        "effect": "Phil uses the paid ticket and rides the coach all the way to Pittsburgh."
+      },
+      "hold": {
+        "id": "d03-t03-reporter",
+        "day": 3,
+        "clock": "7:00 pm",
+        "source_index": 11,
+        "from": "Pittsburgh",
+        "to_after_action": "Pittsburgh",
+        "action": "call_sister",
+        "effect": "Phil phones his sister. She confirms the moving van is booked for Wednesday. The seven o'clock broadcast carries the cameraman's recorded pictures of the festival."
+      },
+      "wake": {
+        "id": "d04-t00-reporter",
+        "day": 4,
+        "clock": "6:00 am",
+        "source_index": 12,
+        "from": "inn",
+        "to_after_action": "inn",
+        "action": "spend_time_here",
+        "effect": "Phil spends the period at the inn."
+      }
+    },
+    {
+      "arrival": {
+        "id": "d04-t02-reporter",
+        "day": 4,
+        "clock": "1:00 pm",
+        "source_index": 14,
+        "from": "square",
+        "to_after_action": "Pittsburgh",
+        "action": "take_coach_to_Pittsburgh",
+        "effect": "Phil uses the paid ticket and rides the coach all the way to Pittsburgh."
+      },
+      "hold": {
+        "id": "d04-t03-reporter",
+        "day": 4,
+        "clock": "7:00 pm",
+        "source_index": 15,
+        "from": "Pittsburgh",
+        "to_after_action": "Pittsburgh",
+        "action": "spend_time_here",
+        "effect": "Phil spends the period at the Pittsburgh. Rita hosts the seven o'clock bulletin live."
+      },
+      "wake": {
+        "id": "d05-t00-reporter",
+        "day": 5,
+        "clock": "6:00 am",
+        "source_index": 16,
+        "from": "inn",
+        "to_after_action": "diner",
+        "action": "go_to_diner",
+        "effect": "Phil reaches the diner."
+      }
+    },
+    {
+      "arrival": {
+        "id": "d05-t02-reporter",
+        "day": 5,
+        "clock": "1:00 pm",
+        "source_index": 18,
+        "from": "diner",
+        "to_after_action": "Pittsburgh",
+        "action": "take_coach_to_Pittsburgh",
+        "effect": "Phil uses the paid ticket and rides the coach all the way to Pittsburgh."
+      },
+      "hold": {
+        "id": "d05-t03-reporter",
+        "day": 5,
+        "clock": "7:00 pm",
+        "source_index": 19,
+        "from": "Pittsburgh",
+        "to_after_action": "Pittsburgh",
+        "action": "look_around",
+        "effect": "Phil inspects the Pittsburgh. You are in Pittsburgh. At the bus terminal there is a payphone and a bench. The pre-recorded station ident runs in the unattended seven o'clock slot."
+      },
+      "wake": {
+        "id": "d06-t00-reporter",
+        "day": 6,
+        "clock": "6:00 am",
+        "source_index": 20,
+        "from": "inn",
+        "to_after_action": "inn",
+        "action": "spend_time_here",
+        "effect": "Phil spends the period at the inn."
+      }
+    }
+  ],
+  "root": "The sister actually confirms the moving van on the second evening.",
+  "backward_chain": [
+    {
+      "event": "d02-t03-reporter",
+      "fact": "Phil phones his sister. She confirms the moving van is booked for Wednesday.",
+      "state_edge": "called_sister false → true"
+    },
+    {
+      "event": "d02-t02-reporter",
+      "fact": "Phil uses the paid ticket and rides the coach all the way to Pittsburgh.",
+      "state_edge": "reporter in diner → Pittsburgh"
+    },
+    {
+      "fact": "At 1 pm the role has a paid ticket and legal coach action. The reducer permits the call only from Pittsburgh."
+    }
+  ],
+  "next_wake": {
+    "event": "d03-t00-reporter",
+    "world_before_equals_daily_initial": true,
+    "clock_and_radio": "Tuesday, February 2, 2016. The local radio plays three bright notes and announces a groundhog forecast in the town square. A delivery van backfires twice."
+  },
+  "at_lunch_legal_alternatives": {
+    "go_to_inn": {
+      "evening_location": "inn",
+      "call_sister_available": false
+    },
+    "go_to_studio": {
+      "evening_location": "studio",
+      "call_sister_available": false
+    },
+    "go_to_depot": {
+      "evening_location": "depot",
+      "call_sister_available": false
+    },
+    "clear_tables": {
+      "evening_location": "diner",
+      "call_sister_available": false
+    },
+    "take_coach_to_Pittsburgh": {
+      "evening_location": "Pittsburgh",
+      "call_sister_available": true
+    },
+    "look_around": {
+      "evening_location": "diner",
+      "call_sister_available": false
+    },
+    "spend_time_here": {
+      "evening_location": "diner",
+      "call_sister_available": false
+    },
+    "go_to_square": {
+      "evening_location": "square",
+      "call_sister_available": false
+    }
+  },
+  "at_terminal_legal_alternatives_and_confirmed_call": {
+    "call_live_report": false,
+    "call_sister": true,
+    "look_around": false,
+    "spend_time_here": false
+  },
+  "causal_scope": "Same pre-action state and peer decisions; only the reporter's physical verb is replaced in the local world reducer. Alternatives were never enacted. The check tests specific mechanics, not why Phil decided to board. The unconditional daily reset causes the hotel wake."
+}

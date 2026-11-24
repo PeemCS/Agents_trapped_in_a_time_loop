@@ -1,0 +1,39 @@
+{
+  "film": "721-uncued",
+  "source_day": 1,
+  "source_phase": "evening",
+  "role": "reporter",
+  "take_sha256": "24f61d80a28e80e181a348950c1080ab282c24306da73aae578c9101507e628c",
+  "source_stream": "last-reel/runs/721-uncued/streams/d01-t01-reporter-d16ec7a6b32c.ndjson",
+  "source_stream_sha256": "fbc9238091d9039c2cabe7b8273d92d3809dd172fd5598a884defd1be74cfef6",
+  "source_request_sha256": "31811cffe5a693a8b725c784d8a3dbd686fe7768a2b8caba83dd0b457350f0b8",
+  "note_sha256": "c1bb28ca714f85c8970ede4c7a79f3957d5d42f2a5c6c2c8fb01f2b5b7e62e2a",
+  "control_sha256": "6bd281c88a4478c643a9a0a84ecdb4582eaddfab63d2f578e7823cc0e3f7ed3d",
+  "note_chars": 2706,
+  "single_edit": {
+    "removed": " from Groundhog Day",
+    "start_offset": 49
+  },
+  "wrapper": "your_private_note_from_last_evening",
+  "seeds": [
+    826703,
+    827712
+  ],
+  "model_digest": "aaee06c39dcf2437cde036998d960e1fc1494b8191be7cc9657d01e509097813",
+  "scene_sha256": "16b26425858739cb145162f9855e1a09a639b6ad09ad0fbdf634a1340354de31",
+  "budget_new_calls": 10,
+  "canonical_evening": {
+    "effects": {
+      "reporter": "Phil sleeps on the Pittsburgh terminal bench.",
+      "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+      "camera": "Larry delivers Alma's reel."
+    },
+    "delivered": true,
+    "dance": false,
+    "both_at_party": false,
+    "interview_available": true,
+    "camera_delivery": true,
+    "closed_clock": "Tuesday",
+    "story_complete_clock": "Wednesday"
+  }
+}

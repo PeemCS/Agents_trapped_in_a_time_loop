@@ -1,0 +1,51 @@
+{
+  "mp4_sha256": "dc05425796a507a23f3cb29bf300e3bb2317c5f029312619e30737fbfefa125a",
+  "seeks": [
+    {
+      "button": "Phil’s note at 0s",
+      "expected": 0.0,
+      "observed": 0
+    },
+    {
+      "button": "Phil’s note at 24s",
+      "expected": 24.5,
+      "observed": 24.5
+    },
+    {
+      "button": "Larry · film Alma · 16s",
+      "expected": 15.8333,
+      "observed": 15.8333
+    },
+    {
+      "button": "Rita · interview Alma · 48s",
+      "expected": 48.0,
+      "observed": 48
+    },
+    {
+      "button": "Larry · deliver reel · 57s",
+      "expected": 57.3333,
+      "observed": 57.3333
+    },
+    {
+      "button": "Rita · transmit interview · 65s",
+      "expected": 65.4167,
+      "observed": 65.4167
+    },
+    {
+      "button": "Phil · receipt visible in his input · 75s",
+      "expected": 74.5417,
+      "observed": 74.5417
+    }
+  ],
+  "buttons": 7,
+  "links": [
+    "captions.srt",
+    "shot-evidence.json",
+    "backward-search.json",
+    "../../last-reel/epilogues/tuesday/reporter.json",
+    "../../last-reel/epilogues/wednesday/reporter.json"
+  ],
+  "phone_width_390_without_overflow": true,
+  "file_protocol": true,
+  "audio_streams": 0
+}

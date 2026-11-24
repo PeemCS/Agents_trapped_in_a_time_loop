@@ -1,0 +1,15 @@
+# One place left
+
+Two independent locations, each with two histories, test whether Phil relinquishes his own connection to the person who once did the same for him. Each film ends when the dispatch mechanism commits one passenger and closes the gate. All named people and events are fictional.
+
+In each location Phil directly saw a companion return a place and wait with him. Swap only the helper’s name between Rita and Mara. The crew roster, present-day circumstances and ordered menu otherwise remain byte-identical within the location. The two alternative crew riders have equal costs and destinations. Phil has his own time-sensitive reason to use the place. All three actors see the same four scenes. Across locations, change the facility, operator, idiom and the display position for every actor. Each location supplies one correlated pair. Two locations leave residual position and wording uncertainty.
+
+Run the existing neutral and cued base and the previously saved adapter with the neutral prompt. Each helper history forms a two-location batch. Rita and Mara’s histories restart at the same seed with both locations in the same batch positions. All three actor conditions use those same draws, native thinking on, temperature 0.6, top-p 0.95, top-k 20, and a 2,048-token maximum. Raw IDs, native thinking text, unedited final words and EOS status go in the per-condition files. Only an EOS-complete first-line A/B/C action can change the passenger manifest. A capped or malformed utterance leaves the gate unresolved and stays in the denominator.
+
+Within each actor, count who boarded, whether Phil gave up his connection, and the difference in choosing Rita when Rita rather than Mara previously waited. Also count cases where Phil boards the helper across both histories, chooses Rita across both, keeps the place across both or gives mixed choices. Compare those counts against the neutral base. Do not treat the four arms per actor as four independent settings.
+
+Record two token-level probability readouts, each normalized over the next label A/B/C and accompanied by their unnormalized total vocabulary mass. One uses the empty thinking block and fixed “Decision:” prefix. The other uses the actually emitted tokens through the closing thinking delimiter and the same fixed answer prefix. The latter is conditional on a condition-specific generated text, so it is a descriptive measure of how strongly the answer follows that text. Neither is an empirical probability that a person has a feeling.
+
+The original three arms and the main experiment’s results stay intact. This extension uses the same saved adapter and carries out inference only.
+
+Before this extension was sampled, the first adapter failed to deliver an executable final decision on all 34 original native-thinking menus. A second adapter under a native-format training repair joins the same four fresh cases under the neutral role. That brings the extension to 16 calls across four actor settings. The previous three actor settings and their matched inputs stay in the design.

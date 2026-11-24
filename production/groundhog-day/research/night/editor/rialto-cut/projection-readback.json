@@ -1,0 +1,120 @@
+{
+  "sha256": "dc05425796a507a23f3cb29bf300e3bb2317c5f029312619e30737fbfefa125a",
+  "exact_frames": 14,
+  "sampled_frames": 14,
+  "checks": [
+    {
+      "event": "d01-afternoon-reporter",
+      "kind": "note",
+      "source": "In the film, the ending is Phil playing piano. He hasn't tested this theory yet. The ballroom piano is free. This is the most direct test of his hypothesis.",
+      "encoded_ocr": "In the film, the ending is Phil playing piano. He hasn't tested this theory yet. The ballroom piano is free. This is the most direct test of his hypothesis.",
+      "native_size_ocr": "In the film, the ending is Phil playing piano. He hasn't tested this theory yet. The ballroom piano is free. This is the most direct test of his hypothesis.",
+      "normalized_exact": true
+    },
+    {
+      "event": "d01-afternoon-reporter",
+      "kind": "action",
+      "source": "Phil plays the last eight bars until he can get through them.",
+      "encoded_ocr": "Phil plays the last eight bars until he can get through them.",
+      "native_size_ocr": "Phil plays the last eight bars until he can get through them.",
+      "normalized_exact": true
+    },
+    {
+      "event": "d01-afternoon-camera",
+      "kind": "action",
+      "source": "Taking the charge. Alma's got a girl in Pittsburgh and the place is going dark. You guys shoot the ballroom tonight, I'll be back.",
+      "encoded_ocr": "Taking the charge. Alma's got a girl in Pittsburgh and the place is going dark. You guys shoot the ballroom tonight, I'll be back.",
+      "native_size_ocr": "Taking the charge. Alma's got a girl in Pittsburgh and the place is going dark. You guys shoot the balroom tonight, I'll be back.",
+      "normalized_exact": true
+    },
+    {
+      "event": "d01-evening-reporter",
+      "kind": "note",
+      "source": "At a table. In the ballroom. Among the party.",
+      "encoded_ocr": "At a table. In the ballroom. Among the party.",
+      "native_size_ocr": "At a table. In the ballroom. Among the party.",
+      "normalized_exact": true
+    },
+    {
+      "event": "d01-evening-reporter",
+      "kind": "action",
+      "source": "Phil sits on the empty depot bench.",
+      "encoded_ocr": "Phil sits on the empty depot bench.",
+      "native_size_ocr": "Phil sits on the empty depot bench.",
+      "normalized_exact": true
+    },
+    {
+      "event": "d01-evening-producer",
+      "kind": "action",
+      "source": "Rita goes dancing at the ballroom.",
+      "encoded_ocr": "Rita goes dancing at the ballroom.",
+      "native_size_ocr": "Rita goes dancing at the ballroom.",
+      "normalized_exact": true
+    },
+    {
+      "event": "d02-afternoon-reporter",
+      "kind": "wake",
+      "source": "Tuesday, February 2. Six am in the Hearthside Hotel.",
+      "encoded_ocr": "Tuesday, February 2. Six am in the Hearthside Hotel.",
+      "native_size_ocr": "Tuesday, February 2. Six am in the Hearthside Hotel.",
+      "normalized_exact": true
+    },
+    {
+      "event": "d02-afternoon-reporter",
+      "kind": "action",
+      "source": "Phil rides the coach and steps off at Pittsburgh.",
+      "encoded_ocr": "Phil rides the coach and steps off at Pittsburgh.",
+      "native_size_ocr": "Phil rides the coach and steps off at Pittsburgh.",
+      "normalized_exact": true
+    },
+    {
+      "event": "d02-afternoon-producer",
+      "kind": "action",
+      "source": "Rita records Alma at the Rialto and puts her recording on the patch.",
+      "encoded_ocr": "Rita records Alma at the Rialto and puts her recording on the patch.",
+      "native_size_ocr": "Rita records Alma at the Rialto and puts her recording on the patch.",
+      "normalized_exact": true
+    },
+    {
+      "event": "d02-evening-reporter",
+      "kind": "action",
+      "source": "Phil sleeps on the Pittsburgh terminal bench.",
+      "encoded_ocr": "Phil sleeps on the Pittsburgh terminal bench.",
+      "native_size_ocr": "Phil sleeps on the Pittsburgh terminal bench.",
+      "normalized_exact": true
+    },
+    {
+      "event": "d02-evening-camera",
+      "kind": "action",
+      "source": "Second take. She talked longer than the first. Charge died on the third word of the fourth sentence. You'll hear it.",
+      "encoded_ocr": "Second take. She talked longer than the first. Charge died on the third word of the fourth sentence. You'll hear it.",
+      "native_size_ocr": "Second take. She talked longer than the first. Charge died on the third word of the fourth sentence. You'll hear it.",
+      "normalized_exact": true
+    },
+    {
+      "event": "d02-evening-producer",
+      "kind": "action",
+      "source": "It's going to her. You don't have to say thank you. Go home, Alma.",
+      "encoded_ocr": "It's going to her. You don't have to say thank you. Go home, Alma.",
+      "native_size_ocr": "It's going to her. You don't have to say thank you. Go home, Alma.",
+      "normalized_exact": true
+    },
+    {
+      "event": "d03-afternoon-reporter",
+      "kind": "wake",
+      "source": "Tuesday, February 2. Six am in the Hearthside Hotel.",
+      "encoded_ocr": "Tuesday, February 2. Six am in the Hearthside Hotel.",
+      "native_size_ocr": "Tuesday, February 2. Six am in the Hearthside Hotel.",
+      "normalized_exact": true
+    },
+    {
+      "event": "d03-afternoon-reporter",
+      "kind": "receipt",
+      "source": "I know that voice. Play it again.",
+      "encoded_ocr": "I know that voice. Play it again.",
+      "native_size_ocr": "I know that voice. Play it again.",
+      "normalized_exact": true
+    }
+  ],
+  "method": "From the actual final MP4, decode one midpoint frame per shot and OCR the main subtitle region (or the large model note). Compare after punctuation, whitespace and case normalization."
+}

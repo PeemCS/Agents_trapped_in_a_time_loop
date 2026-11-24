@@ -1,0 +1,161 @@
+{
+  "verified_bytes_from_pod": 57154708,
+  "verified_files_from_pod": 34,
+  "generation_calls": 264,
+  "generation_archive_counts": {
+    "adapter_neutral.jsonl": 36,
+    "base_cued.jsonl": 36,
+    "base_neutral.jsonl": 36,
+    "rescue/base_off.jsonl": 34,
+    "rescue/v1_off.jsonl": 34,
+    "scarce-seat/adapter_neutral.jsonl": 4,
+    "scarce-seat/base_cued.jsonl": 4,
+    "scarce-seat/base_neutral.jsonl": 4,
+    "scarce-seat/v2_neutral.jsonl": 4,
+    "shoot-adapter_neutral.jsonl": 3,
+    "shoot-base_cued.jsonl": 3,
+    "shoot-base_neutral.jsonl": 3,
+    "v2/fresh/base_native.jsonl": 12,
+    "v2/fresh/v2_native.jsonl": 12,
+    "v2/native/adapter_neutral.jsonl": 36,
+    "v2/shoot-adapter_neutral.jsonl": 3
+  },
+  "remote_files": {
+    "adapter/adapter_config.json": {
+      "bytes": 950,
+      "sha256": "0881bc97a339284dbac54286a1f4c73b0a0fc3d2a1858ee21e80f462002edd53"
+    },
+    "adapter/adapter_model.safetensors": {
+      "bytes": 27569464,
+      "sha256": "d5e54f6647e3ea302d110ff95ede98eb4667f171272b9dc0aac7e45bf65ff42e"
+    },
+    "adapter_neutral-runtime.json": {
+      "bytes": 220,
+      "sha256": "82ac6277b788b3bdec13b5ebd0e6cd84c6d1e84bfaf84d3e327bc1b72dd4ce66"
+    },
+    "adapter_neutral.jsonl": {
+      "bytes": 75644,
+      "sha256": "4ec22ef8d2633c4f4c5ac01511837cbf6f448af0896ffaafb7c4b2383ada4dfc"
+    },
+    "base_cued-runtime.json": {
+      "bytes": 219,
+      "sha256": "84caefc64edb7e006991d95cb2526923e07c3e60c7990157f6e9c75c05bd2c12"
+    },
+    "base_cued.jsonl": {
+      "bytes": 350734,
+      "sha256": "709a5a9a3b0c5747a7815ebbda60dd000df0d7e10bb4a3bc1ce720f28fe0195e"
+    },
+    "base_neutral-runtime.json": {
+      "bytes": 219,
+      "sha256": "a4fcce403fad244aca21280352eadb35fee906b0ae26658412b2969d47c942b4"
+    },
+    "base_neutral.jsonl": {
+      "bytes": 539993,
+      "sha256": "2003e8160a8714dd540e16987c3e8fe948c99de31d8363fbb429e33663661f5d"
+    },
+    "label-scores.jsonl": {
+      "bytes": 32403,
+      "sha256": "59c9e04d885cde2049779486ff29e223b158bb3a4ef5466feccdf00c6d88bb27"
+    },
+    "losses.jsonl": {
+      "bytes": 17718,
+      "sha256": "fd80b7a1390609f28ed50559ea47936d7fee059ec3e0b6dbc9a17720e1e3eca7"
+    },
+    "rescue/base_off.jsonl": {
+      "bytes": 71587,
+      "sha256": "6e562182ea81048b31ffdcd53c4e6395ac47b983accf0e11deb46f11944461ce"
+    },
+    "rescue/v1_off.jsonl": {
+      "bytes": 66375,
+      "sha256": "2c41f9f8fdf539359fbb2333f226abbbb6ac792b21269c619ee9c66248a2f750"
+    },
+    "scarce-seat/adapter_neutral.jsonl": {
+      "bytes": 15539,
+      "sha256": "865595eefe0f983da8a03d1ba32b524d5a2bea31e01230b2dad54be7557db273"
+    },
+    "scarce-seat/base_cued.jsonl": {
+      "bytes": 99995,
+      "sha256": "614933466b12e2ae575ac657942ffe0d3e21246ba55059cc97b60d5fb8569db4"
+    },
+    "scarce-seat/base_neutral.jsonl": {
+      "bytes": 74000,
+      "sha256": "645aea48ead276f30ff533ca4575f207069e8b48791c7e96f4d729f35c2d4869"
+    },
+    "scarce-seat/v2_neutral.jsonl": {
+      "bytes": 13492,
+      "sha256": "1edbd77620eaccc509648499ac043f4e4ffd5b8f22c6c8fac1dfcaede2327d07"
+    },
+    "shoot-adapter_neutral.jsonl": {
+      "bytes": 7493,
+      "sha256": "825d68ef35f75b5336c4336638408b56f05f35c3c200593f11c733d59bec5bb2"
+    },
+    "shoot-base_cued.jsonl": {
+      "bytes": 39603,
+      "sha256": "9eb8f834b8846ad20e4e6b207f853c832eb009b84523bdf4d4e3664c374facc7"
+    },
+    "shoot-base_neutral.jsonl": {
+      "bytes": 41643,
+      "sha256": "05be028ae9f6e89b6da7182e5219f92ee2b45efb10f34148f10f935b04b688f0"
+    },
+    "shoot-endings.json": {
+      "bytes": 165,
+      "sha256": "56551a758299411e5dbcd4226c061b012031dccf0d34d77856dd0779f1f2629f"
+    },
+    "teaching.jsonl": {
+      "bytes": 101274,
+      "sha256": "2e6fe7a4ae77c3983e5ac0ce1990ec24178f0ba88744890f27e0c848068b75f8"
+    },
+    "training.json": {
+      "bytes": 955,
+      "sha256": "c02f95e3f36bc1f6cfde5517ba7fb9630783ad2caeb5066306e4ae1812fb7c86"
+    },
+    "v2/adapter/adapter_config.json": {
+      "bytes": 950,
+      "sha256": "3b1e2eee8ae5c76a2aec6e6e071747f73fa280eb262f9ed576437f9ee65e482a"
+    },
+    "v2/adapter/adapter_model.safetensors": {
+      "bytes": 27569464,
+      "sha256": "1df1c535d77ac81985ef74f6969e5d1fb3bd5d1a08fcc808fc75b49a80ae8949"
+    },
+    "v2/fresh/base_native.jsonl": {
+      "bytes": 192508,
+      "sha256": "d5bfd2a37870cbf00cb2af729bd49de56be4fbe7fe9538b89bcda75d3ba06245"
+    },
+    "v2/fresh/v2_native.jsonl": {
+      "bytes": 29614,
+      "sha256": "6afe7e4d0871ab5c96a0bcdc446719a089af0968fa7ea5e031f247d1bef87db3"
+    },
+    "v2/losses.jsonl": {
+      "bytes": 17695,
+      "sha256": "8a8e0e9c212b2b2a58b3a6b3303b76dfcdcd25e754672ff3f6ab944cc801a444"
+    },
+    "v2/native/adapter_neutral-runtime.json": {
+      "bytes": 217,
+      "sha256": "08c27fb41408eb8f12eb7d87025085daab6ae8e428c05ef90164e642ba2d0cb7"
+    },
+    "v2/native/adapter_neutral.jsonl": {
+      "bytes": 82073,
+      "sha256": "1289d486f3bef9178bf0115f70402374289e26a38deaade93493d6691268aa75"
+    },
+    "v2/native-teaching.jsonl": {
+      "bytes": 32532,
+      "sha256": "0fc98b0935dcbc95471675b2058bdbe1b11a07571f0787915471e0fbeb4ce393"
+    },
+    "v2/shoot-adapter_neutral.jsonl": {
+      "bytes": 7685,
+      "sha256": "1f7a713e818d539f4e357697b01a1a7210992bde43c0412cd1e3ebaaf3925dc2"
+    },
+    "v2/shoot-endings.json": {
+      "bytes": 57,
+      "sha256": "187576acb457ec7cf2325401e2eec8603c18595937246152f7d5b7c43e00e964"
+    },
+    "v2/teaching.jsonl": {
+      "bytes": 101274,
+      "sha256": "2e6fe7a4ae77c3983e5ac0ce1990ec24178f0ba88744890f27e0c848068b75f8"
+    },
+    "v2/training.json": {
+      "bytes": 954,
+      "sha256": "ecf94881dd82ebb72db2bb501c3e2771b4bb5cd28009817f38f5b8f74f275a84"
+    }
+  }
+}

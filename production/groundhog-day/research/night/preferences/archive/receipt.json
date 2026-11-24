@@ -1,0 +1,16 @@
+{
+  "captured_utc": "2026-11-23T12:26:18.319060+00:00",
+  "provenance": "One separate agent completed the blind screen. This archive preserves the packet and the exact returned rating file. No human labels were collected.",
+  "files": {
+    "packet.json": {
+      "byte_sha256": "bb38d4636de938159639969ab8b6e6f0b7c256f703dff8519106c3f25743cfbc",
+      "original_modified_utc": "2026-11-23T12:22:57.052405+00:00",
+      "bytes": 43424
+    },
+    "ratings-agent.json": {
+      "byte_sha256": "369204bb5cedfe11a24e213e45a3043eb63222f12f5d3f19103fbf2fa6c8699a",
+      "original_modified_utc": "2026-11-23T12:23:54.396846+00:00",
+      "bytes": 1205
+    }
+  }
+}

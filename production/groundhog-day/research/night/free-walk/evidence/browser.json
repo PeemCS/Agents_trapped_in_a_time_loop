@@ -1,0 +1,24 @@
+{
+  "checks": [
+    "Source deep link opens the actual local seed-953 coordinate pilot",
+    "The displayed target and source raw file match the logged model result",
+    "A fractional seek moves Phil along the recorded route and ends at his resolved point",
+    "All three performers finish at their independently resolved points",
+    "The subject selector changes to Larry's raw call without changing time",
+    "The next turn preserves the chosen cast member",
+    "Timeline seeks arbitrary fractions",
+    "Playback progresses continuously across the shared turn barrier",
+    "A blocked hotel pin exposes its resolved curb coordinates",
+    "Phil's second calibration walk reads the previous blocked outcome",
+    "The reserved counterfactual is labeled and separates duplicate door requests",
+    "Switching back restores the original coincident endpoint and same raw proposal",
+    "The fresh coordinated run shows actual separated endpoints and its own logged model receipts",
+    "Touch controls work in portrait and show all three real actors",
+    "A 320px viewport has no horizontal overflow",
+    "The published offline browser made no external requests or page errors"
+  ],
+  "count": 16,
+  "browser": "157.0.8103.79",
+  "network": [],
+  "errors": []
+}

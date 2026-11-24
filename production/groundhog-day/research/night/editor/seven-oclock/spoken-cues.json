@@ -1,0 +1,69 @@
+{
+  "source_sha256": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+  "spoken_cues": [
+    {
+      "actor": "Phil",
+      "text": "Rita, I'm grabbing some coffee and a bagel at the diner. Be ready to roll in about forty minutes.",
+      "start_s": 0.42,
+      "end_s": 7.3443,
+      "event_id": "d01-t00-reporter",
+      "track": "local dialogue"
+    },
+    {
+      "actor": "Phil",
+      "text": "I'm heading out to catch the one o'clock coach. See you later, everyone.",
+      "start_s": 8.42,
+      "end_s": 13.9454,
+      "event_id": "d01-t02-reporter",
+      "track": "local dialogue"
+    },
+    {
+      "actor": "Phil",
+      "text": "Well, I'm settled in for the night.",
+      "start_s": 15.045,
+      "end_s": 17.7258,
+      "event_id": "d01-t03-reporter",
+      "track": "local dialogue"
+    },
+    {
+      "actor": "Phil",
+      "text": "Rita, I'm heading to the diner to grab a coffee and set up the switcher. Let's get that 7 AM bulletin live.",
+      "start_s": 24.045,
+      "end_s": 32.0215,
+      "event_id": "d02-t00-reporter",
+      "track": "local dialogue"
+    },
+    {
+      "actor": "Larry",
+      "text": "I'm rolling on the festival now to secure the B-roll before the ceremony ends. Covering for me on the switcher, Rita?",
+      "start_s": 33.1075,
+      "end_s": 40.1928,
+      "event_id": "d02-t02-camera",
+      "track": "local dialogue"
+    },
+    {
+      "actor": "Phil",
+      "text": "Hey, it's Phil. I'm at the terminal now. Let's confirm the van is booked for 8 AM tomorrow? I'll be ready to roll.",
+      "start_s": 41.295,
+      "end_s": 50.3354,
+      "event_id": "d02-t03-reporter",
+      "track": "local dialogue"
+    },
+    {
+      "actor": "Rita",
+      "text": "Larry, are you live? Put me on air.",
+      "start_s": 51.42,
+      "end_s": 53.8388,
+      "event_id": "d03-t03-producer",
+      "track": "local dialogue"
+    },
+    {
+      "actor": "Rita",
+      "event_id": "d06-t03-producer",
+      "text": "Good evening, folks. This is Rita on the scene in western Pennsylvania. We are on the air and ready for the forecast.",
+      "start_s": 75.4,
+      "end_s": 82.24191666666667,
+      "track": "on-air program"
+    }
+  ]
+}

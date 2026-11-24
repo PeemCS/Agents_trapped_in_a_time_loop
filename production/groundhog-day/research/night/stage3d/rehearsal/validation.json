@@ -1,0 +1,22 @@
+{
+  "validity": "Validation Result with no explicit variants set\nSuccess!",
+  "rendered_with": "Apple usdrecord / Hydra, USDZ input, 800px camera, reimported",
+  "video": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 800,
+        "height": 450,
+        "r_frame_rate": "24/1",
+        "nb_frames": "576"
+      }
+    ],
+    "format": {
+      "duration": "24.000000"
+    }
+  },
+  "usd_sha256": "dc7c9a86353646e2dfb7e7eb1a9bf1c4d900390e416de8fb368609d5d285595c",
+  "render_wall_s": 12.3
+}

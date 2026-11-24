@@ -1,0 +1,44 @@
+{
+  "source_sha256": "9695d76c0cf799ac32810b53e3da5c26814e227ba6d710e675f0d5c4c798646d",
+  "mp4_sha256": "654b6d4f50f8d8a8bae4e554d65bd6b4e013b8c7fe61a6831aee58ded2ec394c",
+  "edl_sha256": "f569e987516dfa65f55f13add1b5e314905105a82734e437fa4767a3331798d7",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 960,
+        "height": 540,
+        "nb_frames": "996"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "nb_frames": "3892"
+      }
+    ],
+    "format": {
+      "duration": "83.000000",
+      "size": "5171583"
+    }
+  },
+  "shots": 14,
+  "caption_cues": 7,
+  "frames": 996,
+  "three_stems_match": true,
+  "source_and_captions_verified": true,
+  "full_decode": true,
+  "integrated_lufs": -16.1,
+  "true_peak_dbfs": -1.4,
+  "voices": {
+    "Phil": "Eddy (English (US))",
+    "Larry": "Daniel (English (UK))",
+    "Rita": "Samantha"
+  },
+  "estimated_s": 82,
+  "measured_s": "83.000000",
+  "video_location": "Temporary local render. The sample EDL is retained for rebuild."
+}

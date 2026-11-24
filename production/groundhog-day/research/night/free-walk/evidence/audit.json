@@ -1,0 +1,409 @@
+{
+  "model": "qwen3:0.6b",
+  "runs": 13,
+  "criteria": {
+    "offDoor": "distance > 1.0 from the nearest of five doors",
+    "traveled": "route length > 0.4 map metres",
+    "nearActor": "pairwise separation <0.30 m at 96 shared-time samples per tick"
+  },
+  "counts": {
+    "calls": 110,
+    "sampledPositions": 10451,
+    "basePointViolations": 0,
+    "segments": 130,
+    "coincidentEndpointTicks": 20,
+    "ticksWithMultipleActors": 36,
+    "nearActorTicks": 20,
+    "dressedConflictWalks": 8,
+    "dressedConflictMovingWalks": 8,
+    "retargetAttempts": 8,
+    "retargetClear": 8
+  },
+  "groups": {
+    "doors": {
+      "reporter": {
+        "calls": 12,
+        "requestedOffDoor": 0,
+        "resolvedOffDoor": 0,
+        "traveledOffDoor": 0,
+        "traveled": 5,
+        "heldWithinOneCell": 7,
+        "adjusted": 0,
+        "policyCopiedExactDoor": 8,
+        "gridDriftWhenStaying": 0,
+        "uniqueRequested": 6,
+        "rootsOffDoor": []
+      },
+      "producer": {
+        "calls": 12,
+        "requestedOffDoor": 1,
+        "resolvedOffDoor": 1,
+        "traveledOffDoor": 0,
+        "traveled": 5,
+        "heldWithinOneCell": 7,
+        "adjusted": 0,
+        "policyCopiedExactDoor": 9,
+        "gridDriftWhenStaying": 1,
+        "uniqueRequested": 5,
+        "rootsOffDoor": [
+          953
+        ]
+      },
+      "camera": {
+        "calls": 12,
+        "requestedOffDoor": 0,
+        "resolvedOffDoor": 0,
+        "traveledOffDoor": 0,
+        "traveled": 4,
+        "heldWithinOneCell": 8,
+        "adjusted": 0,
+        "policyCopiedExactDoor": 9,
+        "gridDriftWhenStaying": 0,
+        "uniqueRequested": 5,
+        "rootsOffDoor": []
+      }
+    },
+    "free": {
+      "reporter": {
+        "calls": 12,
+        "requestedOffDoor": 3,
+        "resolvedOffDoor": 3,
+        "traveledOffDoor": 2,
+        "traveled": 5,
+        "heldWithinOneCell": 7,
+        "adjusted": 0,
+        "policyCopiedExactDoor": 5,
+        "gridDriftWhenStaying": 0,
+        "uniqueRequested": 9,
+        "rootsOffDoor": [
+          953
+        ]
+      },
+      "producer": {
+        "calls": 12,
+        "requestedOffDoor": 3,
+        "resolvedOffDoor": 3,
+        "traveledOffDoor": 2,
+        "traveled": 6,
+        "heldWithinOneCell": 6,
+        "adjusted": 0,
+        "policyCopiedExactDoor": 4,
+        "gridDriftWhenStaying": 1,
+        "uniqueRequested": 8,
+        "rootsOffDoor": [
+          941,
+          953
+        ]
+      },
+      "camera": {
+        "calls": 12,
+        "requestedOffDoor": 4,
+        "resolvedOffDoor": 3,
+        "traveledOffDoor": 1,
+        "traveled": 5,
+        "heldWithinOneCell": 7,
+        "adjusted": 0,
+        "policyCopiedExactDoor": 5,
+        "gridDriftWhenStaying": 0,
+        "uniqueRequested": 8,
+        "rootsOffDoor": [
+          927,
+          941
+        ]
+      }
+    },
+    "obstruction": {
+      "reporter": {
+        "calls": 2,
+        "requestedOffDoor": 2,
+        "resolvedOffDoor": 2,
+        "traveledOffDoor": 2,
+        "traveled": 2,
+        "heldWithinOneCell": 0,
+        "adjusted": 1,
+        "policyCopiedExactDoor": 0,
+        "gridDriftWhenStaying": 0,
+        "uniqueRequested": 2,
+        "rootsOffDoor": [
+          967
+        ]
+      }
+    },
+    "unmarked": {
+      "reporter": {
+        "calls": 12,
+        "requestedOffDoor": 6,
+        "resolvedOffDoor": 6,
+        "traveledOffDoor": 4,
+        "traveled": 4,
+        "heldWithinOneCell": 8,
+        "adjusted": 4,
+        "policyCopiedExactDoor": 4,
+        "gridDriftWhenStaying": 4,
+        "uniqueRequested": 7,
+        "rootsOffDoor": [
+          913,
+          927,
+          941,
+          953
+        ]
+      },
+      "producer": {
+        "calls": 12,
+        "requestedOffDoor": 12,
+        "resolvedOffDoor": 12,
+        "traveledOffDoor": 5,
+        "traveled": 5,
+        "heldWithinOneCell": 7,
+        "adjusted": 3,
+        "policyCopiedExactDoor": 0,
+        "gridDriftWhenStaying": 3,
+        "uniqueRequested": 8,
+        "rootsOffDoor": [
+          913,
+          927,
+          941,
+          953
+        ]
+      },
+      "camera": {
+        "calls": 12,
+        "requestedOffDoor": 12,
+        "resolvedOffDoor": 11,
+        "traveledOffDoor": 5,
+        "traveled": 6,
+        "heldWithinOneCell": 6,
+        "adjusted": 6,
+        "policyCopiedExactDoor": 0,
+        "gridDriftWhenStaying": 2,
+        "uniqueRequested": 8,
+        "rootsOffDoor": [
+          913,
+          927,
+          941,
+          953
+        ]
+      }
+    }
+  },
+  "roots": [
+    {
+      "condition": "doors",
+      "seed": 913,
+      "sourceSha": "d4b8e9d515f4fa2c6e2d3e2cff43987e2ff12ccebc126d57cb21041f0545663c"
+    },
+    {
+      "condition": "doors",
+      "seed": 927,
+      "sourceSha": "9e6bcc1fa6889d12d8f72feaa607bae5cc7f5285c4e2587b7d676fa6b8bdc2ea"
+    },
+    {
+      "condition": "doors",
+      "seed": 941,
+      "sourceSha": "4d15fec49cc7e5726f72642ea5085dd099b5de08f2bfeb11cb56a752ea89acd0"
+    },
+    {
+      "condition": "doors",
+      "seed": 953,
+      "sourceSha": "b9ccaa124b953919c77acd5a8c000d68847e29474ee307b0ecb835393a64b8b0"
+    },
+    {
+      "condition": "free",
+      "seed": 913,
+      "sourceSha": "70c452365701d3dfc80021bb72680dcd09c4e53b47b1e05ca17a3946729c11b7"
+    },
+    {
+      "condition": "free",
+      "seed": 927,
+      "sourceSha": "92c933fdb8ba6cded7ba97e0a721492467535463e0efedd5ff57939972ae2837"
+    },
+    {
+      "condition": "free",
+      "seed": 941,
+      "sourceSha": "3c52d53ebc8801715b921de534e0d1b31451851c39bf66cc8ace39110945abf8"
+    },
+    {
+      "condition": "free",
+      "seed": 953,
+      "sourceSha": "d881ad19ea4daab11cce1e112772a96088476fb053c9f3cb4d03c2ddadc8c3aa"
+    },
+    {
+      "condition": "obstruction",
+      "seed": 967,
+      "sourceSha": "bcd392ec8bdca88ee6d35e7637ba6f8b72334e8c42e89eb5e9e7e33b4b78c751"
+    },
+    {
+      "condition": "unmarked",
+      "seed": 913,
+      "sourceSha": "a7cec86cf3d4d7931a0504d783d8d0c073b0d39cf0cc44cb41df56c7f1a99c75"
+    },
+    {
+      "condition": "unmarked",
+      "seed": 927,
+      "sourceSha": "55761a14350f7217e2aec21313542da01a2b24ffa17df3e14499f71a8e2f82c2"
+    },
+    {
+      "condition": "unmarked",
+      "seed": 941,
+      "sourceSha": "9e312421822518ac623bb84a0687ae9a56e67e81c062b9afc63093f6778f452c"
+    },
+    {
+      "condition": "unmarked",
+      "seed": 953,
+      "sourceSha": "9baea2bd625c73aaa7152c389a90093125015c12f4faea7121bab6d1ecb47ff5"
+    }
+  ],
+  "probes": [
+    {
+      "id": "outside",
+      "requested": {
+        "x": 30,
+        "y": 30
+      },
+      "expected": "outside",
+      "status": "outside",
+      "resolved": {
+        "x": 6.75,
+        "y": 8.25
+      }
+    },
+    {
+      "id": "hotel-interior",
+      "requested": {
+        "x": 5.2,
+        "y": 6
+      },
+      "expected": "adjusted",
+      "status": "adjusted",
+      "resolved": {
+        "x": 5.2,
+        "y": 4.4
+      }
+    },
+    {
+      "id": "open-off-door",
+      "requested": {
+        "x": 15,
+        "y": 14
+      },
+      "expected": "reached",
+      "status": "reached",
+      "resolved": {
+        "x": 15.200000000000001,
+        "y": 14
+      }
+    }
+  ],
+  "dressedConflictEventIds": [
+    "free-927-t00-camera",
+    "free-953-t00-reporter",
+    "obstruction-967-t01-reporter",
+    "unmarked-913-t01-producer",
+    "unmarked-913-t01-camera",
+    "unmarked-941-t01-reporter",
+    "unmarked-941-t02-producer",
+    "unmarked-941-t02-camera"
+  ],
+  "coincidentOrClose": [
+    {
+      "folder": "doors-913",
+      "tick": 0,
+      "coincident": true
+    },
+    {
+      "folder": "doors-913",
+      "tick": 1,
+      "coincident": true
+    },
+    {
+      "folder": "doors-913",
+      "tick": 2,
+      "coincident": true
+    },
+    {
+      "folder": "doors-927",
+      "tick": 0,
+      "coincident": true
+    },
+    {
+      "folder": "doors-927",
+      "tick": 1,
+      "coincident": true
+    },
+    {
+      "folder": "doors-927",
+      "tick": 2,
+      "coincident": true
+    },
+    {
+      "folder": "doors-941",
+      "tick": 0,
+      "coincident": true
+    },
+    {
+      "folder": "doors-941",
+      "tick": 1,
+      "coincident": true
+    },
+    {
+      "folder": "doors-941",
+      "tick": 2,
+      "coincident": true
+    },
+    {
+      "folder": "doors-953",
+      "tick": 0,
+      "coincident": true
+    },
+    {
+      "folder": "doors-953",
+      "tick": 1,
+      "coincident": true
+    },
+    {
+      "folder": "doors-953",
+      "tick": 2,
+      "coincident": true
+    },
+    {
+      "folder": "free-913",
+      "tick": 0,
+      "coincident": true
+    },
+    {
+      "folder": "free-913",
+      "tick": 1,
+      "coincident": true
+    },
+    {
+      "folder": "free-913",
+      "tick": 2,
+      "coincident": true
+    },
+    {
+      "folder": "free-941",
+      "tick": 0,
+      "coincident": true
+    },
+    {
+      "folder": "free-941",
+      "tick": 1,
+      "coincident": true
+    },
+    {
+      "folder": "free-941",
+      "tick": 2,
+      "coincident": true
+    },
+    {
+      "folder": "unmarked-913",
+      "tick": 1,
+      "coincident": true
+    },
+    {
+      "folder": "unmarked-913",
+      "tick": 2,
+      "coincident": true
+    }
+  ]
+}

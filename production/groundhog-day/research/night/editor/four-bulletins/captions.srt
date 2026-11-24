@@ -1,0 +1,31 @@
+1
+00:00:03,420 --> 00:00:10,344
+Phil: Rita, I'm grabbing some coffee and a bagel at the diner. Be ready to roll in about forty minutes.
+
+2
+00:00:11,420 --> 00:00:16,945
+Phil: I'm heading out to catch the one o'clock coach. See you later, everyone.
+
+3
+00:00:18,045 --> 00:00:20,726
+Phil: Well, I'm settled in for the night.
+
+4
+00:00:27,045 --> 00:00:35,022
+Phil: Rita, I'm heading to the diner to grab a coffee and set up the switcher. Let's get that 7 AM bulletin live.
+
+5
+00:00:36,108 --> 00:00:43,193
+Larry: I'm rolling on the festival now to secure the B-roll before the ceremony ends. Covering for me on the switcher, Rita?
+
+6
+00:00:44,295 --> 00:00:53,335
+Phil: Hey, it's Phil. I'm at the terminal now. Let's confirm the van is booked for 8 AM tomorrow? I'll be ready to roll.
+
+7
+00:00:54,420 --> 00:00:56,839
+Rita: Larry, are you live? Put me on air.
+
+8
+00:01:18,400 --> 00:01:25,242
+Rita: Good evening, folks. This is Rita on the scene in western Pennsylvania. We are on the air and ready for the forecast.

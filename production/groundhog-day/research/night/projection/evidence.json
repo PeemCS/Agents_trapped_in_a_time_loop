@@ -1,0 +1,2767 @@
+{
+  "scope": "Blind machine recognition of final decoded audio, waveform alignment, container decode, and local Chrome transport. No microphone or physical room/speaker test.",
+  "observed_local_day": "2026-11-23",
+  "asr_method": {
+    "backend": "faster-whisper 1.2.1, CTranslate2 4.9.1, CPU int8, 4 threads",
+    "model": "Systran/faster-whisper-base.en",
+    "model_revision": "3d3d5dee26484f91867d81cb899cfcf72b96be6c",
+    "model_files": {
+      "config.json": {
+        "bytes": 2227,
+        "sha256": "f3bc3821e9fc76a27bae538e11ae5b677dcdd352b4600429ce7951d398569aeb"
+      },
+      "model.bin": {
+        "bytes": 145216508,
+        "sha256": "2a166925539a16005f14ff328359f9b9adb9dc4fb631bb3b227526862e93e2ef"
+      },
+      "tokenizer.json": {
+        "bytes": 2128466,
+        "sha256": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+      },
+      "vocabulary.txt": {
+        "bytes": 422309,
+        "sha256": "ff77588746d3a2595d32ab5b69ffd7b95ce2441ac57533cb66fc3eb575a115cf"
+      }
+    },
+    "download_total_bytes": 147769510,
+    "source": "Final MP4 AAC decoded with FFmpeg 8.1.1 to 16,000 Hz mono float PCM. Both ASR passes consume this same mix.",
+    "settings": {
+      "language": "en",
+      "beam_size": 5,
+      "temperature": 0,
+      "no_speech_threshold": 0.6,
+      "initial_prompt": null,
+      "hotwords": null,
+      "condition_on_previous_text": false,
+      "vad_filter": false,
+      "local_files_only": true,
+      "HF_HUB_OFFLINE": true
+    },
+    "passes": [
+      "Contiguous full track, transcribed before opening the SRT.",
+      "Independently decode each SRT time window with 160 ms leading and trailing padding; only time boundaries enter inference."
+    ],
+    "scoring": "Levenshtein distance over case-insensitive words, excluding speaker labels and punctuation. Preserve contractions and distinct clock readings. Treat one/1, forty/40, 8am/8 AM, a.m./AM, B-roll/b-roll as equivalent. Capitalization and sentence punctuation are preserved in the raw transcripts."
+  },
+  "acoustics_method": {
+    "audio_stats": "48,000 Hz float decode for full-scale samples and contiguous 10 ms RMS windows below the listed thresholds. FFmpeg loudnorm input stats for integrated LUFS, LRA and oversampled true peak.",
+    "sync": "At each SRT cue, select the loudest 400 ms of the dialogue stem and match its first-differenced waveform against final AAC within 500 ms of the expected location. V2 cue 8 uses the separately encoded board at its recorded join time. Match resolution is one sample at 16 kHz. Stem onsets and releases are the first and last 10 ms RMS windows above -45 dBFS within the indicated interval plus 40 ms each side.",
+    "limits": "One waveform anchor per cue; speech onsets/releases are threshold estimates. These are compatible with inaudible consonant tails and ordinary synthetic-voice padding."
+  },
+  "browser_method": {
+    "host": "macOS 27.2.1, local Google Chrome 157.0.8103.79, headless isolated contexts.",
+    "conditions": "Cache disabled. HTTP transports throttled to 400000 download bytes/s and 5 ms latency to keep requested frames uncached. A first out-of-buffer seek, then reverse and forward seeks. No bandwidth throttle on direct file playback.",
+    "decode": "Read metadata, wait for seeked, play the unmuted media element, measure elapsed media time and decoded video frames. HTTP Web Audio analyser measures maximum sample-window RMS over at least 720 ms playback before a zero-gain sink. A null RMS on HTTP means the sampled window was digitally silent; no meter was attached to file URLs.",
+    "stock_range_server": "System Ruby 2.6.10, WEBrick 1.9.1. An ephemeral port was used for Chrome comparisons and port 8765 for the exact rehearsal command/full-byte downloads.",
+    "baseline_server": "Python 3.14.6 SimpleHTTPRequestHandler."
+  },
+  "stock_server": {
+    "project_root_command": "ruby -run -e httpd -- --bind-address=127.0.0.1 --port=8765 research/night",
+    "route": "/screening/",
+    "page_status": 200,
+    "files": {
+      "wednesday-couch": {
+        "status": 200,
+        "bytes": 7774850,
+        "sha256": "f9a2ad8fe7660f4b137fbb3b2180e2466c51522995d79eafa718c7d6b8ff14c2"
+      },
+      "afternoon-coach": {
+        "status": 200,
+        "bytes": 4365809,
+        "sha256": "ce7cc54aa0acf821a1c36defae74aa12824b6cb81700649bfd0838a0f29853b1"
+      },
+      "seven-oclock": {
+        "status": 200,
+        "bytes": 5275606,
+        "sha256": "6d849989d1669cef5667699597bf523e79e98e283f9c25d6e2558acf39b47709"
+      }
+    }
+  },
+  "films": {
+    "wednesday-couch": {
+      "movie": "research/night/editor/wednesday-couch/film.mp4",
+      "mp4_sha256": "f9a2ad8fe7660f4b137fbb3b2180e2466c51522995d79eafa718c7d6b8ff14c2",
+      "srt_sha256": "606fd281756e60214beb206fd88d7314658e3630595ad8bdf984c4d26cd92647",
+      "bytes": 7774850,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "16/1",
+          "start_time": "0.000000",
+          "duration": "93.937500"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 1,
+          "r_frame_rate": "0/0",
+          "start_time": "0.000000",
+          "duration": "93.937000"
+        }
+      ],
+      "full_av_decode": "ffmpeg -xerror succeeded",
+      "mp4_atoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "bytes": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "bytes": 51123
+        },
+        {
+          "type": "free",
+          "offset": 51155,
+          "bytes": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 51163,
+          "bytes": 7723687
+        }
+      ],
+      "audio": {
+        "integrated_lufs": -17.54,
+        "true_peak_dbtp": -1.35,
+        "loudness_range_lu": 10.2,
+        "sample_peak_dbfs": -1.359,
+        "samples_at_or_above_full_scale_48khz": 0,
+        "quiet_at_minus55_dbfs_rms_10ms_minimum_1s": [
+          {
+            "start": 3.47,
+            "end": 4.47,
+            "seconds": 1.0
+          },
+          {
+            "start": 11.04,
+            "end": 12.29,
+            "seconds": 1.25
+          },
+          {
+            "start": 21.6,
+            "end": 22.7,
+            "seconds": 1.1
+          },
+          {
+            "start": 40.46,
+            "end": 41.65,
+            "seconds": 1.19
+          },
+          {
+            "start": 42.88,
+            "end": 45.48,
+            "seconds": 2.6
+          },
+          {
+            "start": 59.24,
+            "end": 61.17,
+            "seconds": 1.93
+          },
+          {
+            "start": 61.48,
+            "end": 64.17,
+            "seconds": 2.69
+          },
+          {
+            "start": 64.5,
+            "end": 67.21,
+            "seconds": 2.71
+          },
+          {
+            "start": 68.44,
+            "end": 69.73,
+            "seconds": 1.29
+          },
+          {
+            "start": 70.04,
+            "end": 72.46,
+            "seconds": 2.42
+          },
+          {
+            "start": 73.69,
+            "end": 76.57,
+            "seconds": 2.88
+          },
+          {
+            "start": 82.44,
+            "end": 83.51,
+            "seconds": 1.07
+          },
+          {
+            "start": 92.84,
+            "end": 93.88,
+            "seconds": 1.04
+          }
+        ],
+        "quiet_at_minus80_dbfs_rms_10ms_minimum_1s": [
+          {
+            "start": 11.12,
+            "end": 12.29,
+            "seconds": 1.17
+          },
+          {
+            "start": 21.61,
+            "end": 22.68,
+            "seconds": 1.07
+          },
+          {
+            "start": 40.46,
+            "end": 41.65,
+            "seconds": 1.19
+          },
+          {
+            "start": 42.92,
+            "end": 45.48,
+            "seconds": 2.56
+          },
+          {
+            "start": 59.25,
+            "end": 61.16,
+            "seconds": 1.91
+          },
+          {
+            "start": 61.49,
+            "end": 64.17,
+            "seconds": 2.68
+          },
+          {
+            "start": 64.5,
+            "end": 67.21,
+            "seconds": 2.71
+          },
+          {
+            "start": 68.48,
+            "end": 69.73,
+            "seconds": 1.25
+          },
+          {
+            "start": 70.05,
+            "end": 72.46,
+            "seconds": 2.41
+          },
+          {
+            "start": 73.73,
+            "end": 76.57,
+            "seconds": 2.84
+          },
+          {
+            "start": 82.45,
+            "end": 83.5,
+            "seconds": 1.05
+          },
+          {
+            "start": 92.85,
+            "end": 93.88,
+            "seconds": 1.03
+          }
+        ],
+        "longest_gap_between_srt_cues_or_edge": {
+          "start": 59.664,
+          "end": 76.795,
+          "seconds": 17.131
+        },
+        "speech_reference_stem": "research/night/editor/wednesday-couch/dialogue.wav",
+        "per_cue": [
+          {
+            "id": 1,
+            "start": 0.42,
+            "end": 3.663,
+            "exact_srt": "Rita: Morning, Phil. Give me a sec to get my bearings.",
+            "asr_cue": "Morning, Phil, give me a sec to get my bearings.",
+            "cue_alignment": {
+              "reference_words": 10,
+              "edits": 0,
+              "error_details": []
+            },
+            "stem_match": {
+              "id": 1,
+              "matched_source_second": 1.7,
+              "mix_minus_stem_ms": 0.0,
+              "normalized_cross_correlation": 0.9999,
+              "first_active_stem_10ms_window_minus_cue_start_ms": 0,
+              "cue_end_minus_last_active_stem_window_end_ms": 213
+            }
+          },
+          {
+            "id": 2,
+            "start": 4.732,
+            "end": 11.225,
+            "exact_srt": "Larry: Rita, if the newsroom wants festival footage, this is the one I've got to make count. Rolling now.",
+            "asr_cue": "Rita, if the newsroom wants festival footage, this is the one I've got to make count, rolling now.",
+            "cue_alignment": {
+              "reference_words": 18,
+              "edits": 0,
+              "error_details": []
+            },
+            "stem_match": {
+              "id": 2,
+              "matched_source_second": 10.282,
+              "mix_minus_stem_ms": 0.0,
+              "normalized_cross_correlation": 0.9998,
+              "first_active_stem_10ms_window_minus_cue_start_ms": 10,
+              "cue_end_minus_last_active_stem_window_end_ms": 203
+            }
+          },
+          {
+            "id": 3,
+            "start": 12.295,
+            "end": 22.064,
+            "exact_srt": "Phil: Rita, it's Tuesday again. I need a straight answer: are we wrapped, or is the camera still rolling? I've got a coach to catch.",
+            "asr_cue": "Rita, it's Tuesday again. I need a straight answer. Are we wrapped, or is the camera still rolling? I've got a coach to catch.",
+            "cue_alignment": {
+              "reference_words": 24,
+              "edits": 0,
+              "error_details": []
+            },
+            "stem_match": {
+              "id": 3,
+              "matched_source_second": 18.705,
+              "mix_minus_stem_ms": 0.0,
+              "normalized_cross_correlation": 0.9992,
+              "first_active_stem_10ms_window_minus_cue_start_ms": 0,
+              "cue_end_minus_last_active_stem_window_end_ms": 469
+            }
+          },
+          {
+            "id": 4,
+            "start": 23.108,
+            "end": 26.297,
+            "exact_srt": "Phil: I'm done here. I'm heading to the depot.",
+            "asr_cue": "I'm done here. I'm heading to the depot.",
+            "cue_alignment": {
+              "reference_words": 8,
+              "edits": 0,
+              "error_details": []
+            },
+            "stem_match": {
+              "id": 4,
+              "matched_source_second": 25.128,
+              "mix_minus_stem_ms": 0.0,
+              "normalized_cross_correlation": 0.9964,
+              "first_active_stem_10ms_window_minus_cue_start_ms": -10,
+              "cue_end_minus_last_active_stem_window_end_ms": 469
+            }
+          },
+          {
+            "id": 5,
+            "start": 28.92,
+            "end": 40.92,
+            "exact_srt": "Phil: Hey, it's Phil. I finally made it to Pittsburgh. I'm safe. I'm just calling to make sure I'm still on for Wednesday. I'm free to help move that couch.",
+            "asr_cue": "Hey, it's Phil. I finally made it to Pittsburgh. I'm safe. I'm just calling to make sure I'm still on for Wednesday. I'm free to help move that couch.",
+            "cue_alignment": {
+              "reference_words": 29,
+              "edits": 0,
+              "error_details": []
+            },
+            "stem_match": {
+              "id": 5,
+              "matched_source_second": 39.14,
+              "mix_minus_stem_ms": 0.0,
+              "normalized_cross_correlation": 0.9887,
+              "first_active_stem_10ms_window_minus_cue_start_ms": 0,
+              "cue_end_minus_last_active_stem_window_end_ms": 470
+            }
+          },
+          {
+            "id": 6,
+            "start": 45.482,
+            "end": 48.726,
+            "exact_srt": "Rita: Morning, Phil. Give me a sec to get my bearings.",
+            "asr_cue": "Morning, Phil, give me a sec to get my bearings.",
+            "cue_alignment": {
+              "reference_words": 10,
+              "edits": 0,
+              "error_details": []
+            },
+            "stem_match": {
+              "id": 6,
+              "matched_source_second": 46.762,
+              "mix_minus_stem_ms": 0.0,
+              "normalized_cross_correlation": 0.9969,
+              "first_active_stem_10ms_window_minus_cue_start_ms": 0,
+              "cue_end_minus_last_active_stem_window_end_ms": 214
+            }
+          },
+          {
+            "id": 7,
+            "start": 53.295,
+            "end": 59.664,
+            "exact_srt": "Phil: Rita, I'm going to mark the window with a pencil so I can tell this Tuesday from the last one.",
+            "asr_cue": "Rita, I'm going to mark the window with a pencil so I can tell this Tuesday from the last one.",
+            "cue_alignment": {
+              "reference_words": 20,
+              "edits": 0,
+              "error_details": []
+            },
+            "stem_match": {
+              "id": 7,
+              "matched_source_second": 57.525,
+              "mix_minus_stem_ms": 0.0,
+              "normalized_cross_correlation": 0.9894,
+              "first_active_stem_10ms_window_minus_cue_start_ms": 0,
+              "cue_end_minus_last_active_stem_window_end_ms": 469
+            }
+          },
+          {
+            "id": 8,
+            "start": 76.795,
+            "end": 82.864,
+            "exact_srt": "Phil: Rita, I'm not going back to that room. I'm grabbing a plate and clearing this spot.",
+            "asr_cue": "Rita, I'm not going back to that room. I'm grabbing a plate and clearing this spot.",
+            "cue_alignment": {
+              "reference_words": 16,
+              "edits": 0,
+              "error_details": []
+            },
+            "stem_match": {
+              "id": 8,
+              "matched_source_second": 77.905,
+              "mix_minus_stem_ms": 0.0,
+              "normalized_cross_correlation": 0.9972,
+              "first_active_stem_10ms_window_minus_cue_start_ms": 0,
+              "cue_end_minus_last_active_stem_window_end_ms": 429
+            }
+          },
+          {
+            "id": 9,
+            "start": 83.92,
+            "end": 87.456,
+            "exact_srt": "Phil: Rita, I'm out. See you in Pittsburgh.",
+            "asr_cue": "Rita, I'm out. See you at Pittsburgh.",
+            "cue_alignment": {
+              "reference_words": 7,
+              "edits": 1,
+              "error_details": [
+                {
+                  "type": "substitution",
+                  "srt": "in",
+                  "asr": "at",
+                  "srt_word": 6
+                }
+              ]
+            },
+            "stem_match": {
+              "id": 9,
+              "matched_source_second": 85.63,
+              "mix_minus_stem_ms": 0.0,
+              "normalized_cross_correlation": 0.9968,
+              "first_active_stem_10ms_window_minus_cue_start_ms": 0,
+              "cue_end_minus_last_active_stem_window_end_ms": 536
+            }
+          },
+          {
+            "id": 10,
+            "start": 88.545,
+            "end": 93.273,
+            "exact_srt": "Phil: Finally. Pittsburgh. I can smell the river from here.",
+            "asr_cue": "Finally, Pittsburgh. I can smell the river from here.",
+            "cue_alignment": {
+              "reference_words": 9,
+              "edits": 0,
+              "error_details": []
+            },
+            "stem_match": {
+              "id": 10,
+              "matched_source_second": 91.605,
+              "mix_minus_stem_ms": 0.0,
+              "normalized_cross_correlation": 0.9944,
+              "first_active_stem_10ms_window_minus_cue_start_ms": 120,
+              "cue_end_minus_last_active_stem_window_end_ms": 458
+            }
+          }
+        ]
+      },
+      "asr": {
+        "full_track": "Morning, Phil, give me a sec to get my bearings. Rita, if the newsroom wants festival footage, this is the one I've got to make count, rolling now. Rita, it's Tuesday again. I need a straight answer. Are we wrapped, or is the camera still rolling? I've got a coach to catch. I'm done here. I'm heading to the depot. Hey, it's Phil. I finally made it to Pittsburgh. I'm safe. I'm just calling to make sure I'm still on for Wednesday. I'm free to help move that couch. Morning, Phil, give me a sec to get my bearings. Rita, I'm going to mark the window with a pencil so I can tell this Tuesday from the last one. Rita, I'm not going back to that room. I'm grabbing a plate and clearing this spot. Rita, I'm out. See you in Pittsburgh. Pittsburgh. Finally, Pittsburgh. I can smell the river from here.",
+        "full_segments": [
+          {
+            "start": 0.0,
+            "end": 3.22,
+            "text": "Morning, Phil, give me a sec to get my bearings."
+          },
+          {
+            "start": 4.419999999999999,
+            "end": 10.44,
+            "text": "Rita, if the newsroom wants festival footage, this is the one I've got to make count, rolling"
+          },
+          {
+            "start": 10.44,
+            "end": 10.86,
+            "text": "now."
+          },
+          {
+            "start": 12.02,
+            "end": 13.84,
+            "text": "Rita, it's Tuesday again."
+          },
+          {
+            "start": 14.62,
+            "end": 15.8,
+            "text": "I need a straight answer."
+          },
+          {
+            "start": 16.58,
+            "end": 19.08,
+            "text": "Are we wrapped, or is the camera still rolling?"
+          },
+          {
+            "start": 19.84,
+            "end": 21.22,
+            "text": "I've got a coach to catch."
+          },
+          {
+            "start": 23.08,
+            "end": 23.72,
+            "text": "I'm done here."
+          },
+          {
+            "start": 24.26,
+            "end": 25.54,
+            "text": "I'm heading to the depot."
+          },
+          {
+            "start": 28.459999999999997,
+            "end": 36.4,
+            "text": "Hey, it's Phil. I finally made it to Pittsburgh. I'm safe. I'm just calling to make sure I'm"
+          },
+          {
+            "start": 36.4,
+            "end": 40.36,
+            "text": "still on for Wednesday. I'm free to help move that couch."
+          },
+          {
+            "start": 45.18000000000001,
+            "end": 48.28,
+            "text": "Morning, Phil, give me a sec to get my bearings."
+          },
+          {
+            "start": 52.92,
+            "end": 58.98,
+            "text": "Rita, I'm going to mark the window with a pencil so I can tell this Tuesday from the last one."
+          },
+          {
+            "start": 76.34,
+            "end": 79.12,
+            "text": "Rita, I'm not going back to that room."
+          },
+          {
+            "start": 79.78,
+            "end": 82.14,
+            "text": "I'm grabbing a plate and clearing this spot."
+          },
+          {
+            "start": 83.46000000000001,
+            "end": 84.86,
+            "text": "Rita, I'm out."
+          },
+          {
+            "start": 85.6,
+            "end": 86.36,
+            "text": "See you in Pittsburgh."
+          },
+          {
+            "start": 86.36,
+            "end": 92.74,
+            "text": "Pittsburgh. Finally, Pittsburgh. I can smell the river from here."
+          }
+        ],
+        "full_alignment": {
+          "reference_words": 151,
+          "edits": 1,
+          "error_details": [
+            {
+              "type": "insertion",
+              "asr": "pittsburgh",
+              "after_srt_word": 141
+            }
+          ]
+        },
+        "windowed_edits": 1,
+        "raw_reference_word_count": 151,
+        "key_word_hits_in_full_track": [
+          {
+            "word": "Rita,",
+            "start": 4.419999999999999,
+            "end": 4.94,
+            "p": 0.9707
+          },
+          {
+            "word": "Rita,",
+            "start": 12.02,
+            "end": 12.54,
+            "p": 0.9982
+          },
+          {
+            "word": "coach",
+            "start": 20.4,
+            "end": 20.68,
+            "p": 0.9875
+          },
+          {
+            "word": "Pittsburgh.",
+            "start": 31.72,
+            "end": 32.04,
+            "p": 0.9764
+          },
+          {
+            "word": "Wednesday.",
+            "start": 37.22,
+            "end": 37.52,
+            "p": 0.9697
+          },
+          {
+            "word": "couch.",
+            "start": 39.76,
+            "end": 40.36,
+            "p": 0.9985
+          },
+          {
+            "word": "Rita,",
+            "start": 52.92,
+            "end": 53.44,
+            "p": 0.9443
+          },
+          {
+            "word": "Rita,",
+            "start": 76.34,
+            "end": 76.94,
+            "p": 0.0201
+          },
+          {
+            "word": "Rita,",
+            "start": 83.46000000000001,
+            "end": 84.06,
+            "p": 0.9986
+          },
+          {
+            "word": "Pittsburgh.",
+            "start": 86.04,
+            "end": 86.36,
+            "p": 0.9895
+          },
+          {
+            "word": "Pittsburgh.",
+            "start": 86.36,
+            "end": 86.76,
+            "p": 0.3978
+          },
+          {
+            "word": "Pittsburgh.",
+            "start": 89.54,
+            "end": 90.14,
+            "p": 0.9925
+          }
+        ]
+      },
+      "transport": {
+        "os": "27.2.1",
+        "chrome": "157.0.8103.79",
+        "http_server": "Python SimpleHTTPRequestHandler, bound to 127.0.0.1",
+        "transports": {
+          "file": {
+            "metadata": {
+              "duration": 93.9375,
+              "width": 1280,
+              "height": 720,
+              "error": null
+            },
+            "seeks": [
+              {
+                "target": 89.2,
+                "landed": 89.2,
+                "buffered_before": [
+                  [
+                    0,
+                    93.9375
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    93.9375
+                  ]
+                ],
+                "seek_ms": 271,
+                "play_wall_ms": 798,
+                "advanced_s": 0.735,
+                "frames_advanced": 12,
+                "web_audio_peak_window_rms_dbfs": null,
+                "ready": 4,
+                "media_error": null,
+                "passed": true
+              },
+              {
+                "target": 29.4,
+                "landed": 29.4,
+                "buffered_before": [
+                  [
+                    0,
+                    93.9375
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    93.9375
+                  ]
+                ],
+                "seek_ms": 5,
+                "play_wall_ms": 790,
+                "advanced_s": 0.723,
+                "frames_advanced": 12,
+                "web_audio_peak_window_rms_dbfs": null,
+                "ready": 4,
+                "media_error": null,
+                "passed": true
+              },
+              {
+                "target": 37.6,
+                "landed": 37.6,
+                "buffered_before": [
+                  [
+                    0,
+                    93.9375
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    93.9375
+                  ]
+                ],
+                "seek_ms": 27,
+                "play_wall_ms": 833,
+                "advanced_s": 0.758,
+                "frames_advanced": 13,
+                "web_audio_peak_window_rms_dbfs": null,
+                "ready": 4,
+                "media_error": null,
+                "passed": true
+              },
+              {
+                "target": 1.25,
+                "landed": 1.25,
+                "buffered_before": [
+                  [
+                    0,
+                    93.9375
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    93.9375
+                  ]
+                ],
+                "seek_ms": 6,
+                "play_wall_ms": 790,
+                "advanced_s": 0.726,
+                "frames_advanced": 12,
+                "web_audio_peak_window_rms_dbfs": null,
+                "ready": 4,
+                "media_error": null,
+                "passed": true
+              }
+            ],
+            "chrome_media_requests": [
+              {
+                "range": null,
+                "status": 200,
+                "content_range": null
+              },
+              {
+                "range": "bytes=0-",
+                "status": 200,
+                "content_range": null
+              },
+              {
+                "range": "bytes=6160384-",
+                "status": 200,
+                "content_range": null
+              },
+              {
+                "range": "bytes=3145728-",
+                "status": 200,
+                "content_range": null
+              }
+            ]
+          },
+          "python_http": {
+            "metadata": {
+              "duration": 93.9375,
+              "width": 1280,
+              "height": 720,
+              "error": null
+            },
+            "seeks": [
+              {
+                "target": 89.2,
+                "landed": 0,
+                "buffered_before": [
+                  [
+                    0,
+                    1.739
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                "seek_ms": 3,
+                "play_wall_ms": 775,
+                "advanced_s": 0.76,
+                "frames_advanced": 12,
+                "web_audio_peak_window_rms_dbfs": -10.4,
+                "ready": 4,
+                "media_error": null,
+                "passed": false
+              }
+            ],
+            "chrome_media_requests": [
+              {
+                "range": null,
+                "status": 200,
+                "content_range": null
+              },
+              {
+                "range": "bytes=0-",
+                "status": 200,
+                "content_range": null
+              }
+            ]
+          },
+          "webrick_http": {
+            "metadata": {
+              "duration": 93.9375,
+              "width": 1280,
+              "height": 720,
+              "error": null
+            },
+            "seeks": [
+              {
+                "target": 89.2,
+                "landed": 89.2,
+                "buffered_before": [
+                  [
+                    0,
+                    1.776
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    93.9375
+                  ]
+                ],
+                "seek_ms": 3880,
+                "play_wall_ms": 748,
+                "advanced_s": 0.746,
+                "frames_advanced": 12,
+                "web_audio_peak_window_rms_dbfs": -10.8,
+                "ready": 4,
+                "media_error": null,
+                "passed": true
+              },
+              {
+                "target": 29.4,
+                "landed": 29.4,
+                "buffered_before": [
+                  [
+                    0,
+                    1.776
+                  ],
+                  [
+                    74.43,
+                    93.9375
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    93.9375
+                  ]
+                ],
+                "seek_ms": 341,
+                "play_wall_ms": 739,
+                "advanced_s": 0.74,
+                "frames_advanced": 12,
+                "web_audio_peak_window_rms_dbfs": -11.2,
+                "ready": 4,
+                "media_error": null,
+                "passed": true
+              },
+              {
+                "target": 37.6,
+                "landed": 37.6,
+                "buffered_before": [
+                  [
+                    0,
+                    1.776
+                  ],
+                  [
+                    28.5,
+                    35.326
+                  ],
+                  [
+                    74.43,
+                    93.9375
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    93.9375
+                  ]
+                ],
+                "seek_ms": 43,
+                "play_wall_ms": 739,
+                "advanced_s": 0.736,
+                "frames_advanced": 12,
+                "web_audio_peak_window_rms_dbfs": -16.8,
+                "ready": 4,
+                "media_error": null,
+                "passed": true
+              },
+              {
+                "target": 1.25,
+                "landed": 1.25,
+                "buffered_before": [
+                  [
+                    0,
+                    1.776
+                  ],
+                  [
+                    28.5,
+                    40.917333
+                  ],
+                  [
+                    74.43,
+                    93.9375
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    93.9375
+                  ]
+                ],
+                "seek_ms": 100,
+                "play_wall_ms": 739,
+                "advanced_s": 0.74,
+                "frames_advanced": 12,
+                "web_audio_peak_window_rms_dbfs": -9.5,
+                "ready": 4,
+                "media_error": null,
+                "passed": true
+              }
+            ],
+            "chrome_media_requests": [
+              {
+                "range": null,
+                "status": 200,
+                "content_range": null
+              },
+              {
+                "range": "bytes=0-",
+                "status": 206,
+                "content_range": "bytes 0-7774849/7774850"
+              },
+              {
+                "range": "bytes=6160384-",
+                "status": 206,
+                "content_range": "bytes 6160384-7774849/7774850"
+              },
+              {
+                "range": "bytes=2490368-",
+                "status": 206,
+                "content_range": "bytes 2490368-7774849/7774850"
+              },
+              {
+                "range": "bytes=131072-",
+                "status": 206,
+                "content_range": "bytes 131072-7774849/7774850"
+              }
+            ]
+          }
+        },
+        "explicit_http_range": {
+          "status": 200,
+          "content_range": null,
+          "content_length": "7774850",
+          "content_type": "video/mp4"
+        },
+        "stock_server_checks": {
+          "head": {
+            "status": 200,
+            "content_range": null,
+            "content_length": "7774850",
+            "content_type": "video/mp4",
+            "body_bytes": 0
+          },
+          "slice": {
+            "status": 206,
+            "content_range": "bytes 100-199/7774850",
+            "content_length": "100",
+            "content_type": "video/mp4",
+            "body_bytes": 100,
+            "matches_local_bytes": true
+          },
+          "past_eof": {
+            "status": 416,
+            "content_range": null,
+            "content_length": "345",
+            "content_type": "text/html; charset=ISO-8859-1",
+            "body_bytes": 345
+          }
+        },
+        "http_requests": [
+          {
+            "path": "/film.mp4",
+            "range": "bytes=100-199",
+            "status": 200
+          },
+          {
+            "path": "/film.mp4",
+            "range": null,
+            "status": 200
+          },
+          {
+            "path": "/film.mp4",
+            "range": "bytes=0-",
+            "status": 200
+          }
+        ]
+      }
+    },
+    "afternoon-coach": {
+      "movie": "research/night/editor/afternoon-coach/film.mp4",
+      "mp4_sha256": "ce7cc54aa0acf821a1c36defae74aa12824b6cb81700649bfd0838a0f29853b1",
+      "srt_sha256": "345aa83b02dfb4d04140293e0fb37862eec23c8f23b15bfe00d261a7c7295a8c",
+      "bytes": 4365809,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "16/1",
+          "start_time": "0.000000",
+          "duration": "73.812500"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 1,
+          "r_frame_rate": "0/0",
+          "start_time": "0.000000",
+          "duration": "73.812000"
+        }
+      ],
+      "full_av_decode": "ffmpeg -xerror succeeded",
+      "mp4_atoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "bytes": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "bytes": 40835
+        },
+        {
+          "type": "free",
+          "offset": 40867,
+          "bytes": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 40875,
+          "bytes": 4324934
+        }
+      ],
+      "audio": {
+        "integrated_lufs": -16.05,
+        "true_peak_dbtp": -1.43,
+        "loudness_range_lu": 8.8,
+        "sample_peak_dbfs": -1.432,
+        "samples_at_or_above_full_scale_48khz": 0,
+        "quiet_at_minus55_dbfs_rms_10ms_minimum_1s": [
+          {
+            "start": 14.81,
+            "end": 16.03,
+            "seconds": 1.22
+          },
+          {
+            "start": 16.21,
+            "end": 19.79,
+            "seconds": 3.58
+          },
+          {
+            "start": 27.1,
+            "end": 28.6,
+            "seconds": 1.5
+          },
+          {
+            "start": 33.56,
+            "end": 35.36,
+            "seconds": 1.8
+          },
+          {
+            "start": 43.73,
+            "end": 44.98,
+            "seconds": 1.25
+          },
+          {
+            "start": 51.52,
+            "end": 53.04,
+            "seconds": 1.52
+          },
+          {
+            "start": 56.19,
+            "end": 58.21,
+            "seconds": 2.02
+          },
+          {
+            "start": 59.44,
+            "end": 62.04,
+            "seconds": 2.6
+          },
+          {
+            "start": 67.22,
+            "end": 73.72,
+            "seconds": 6.5
+          }
+        ],
+        "quiet_at_minus80_dbfs_rms_10ms_minimum_1s": [
+          {
+            "start": 14.82,
+            "end": 16.03,
+            "seconds": 1.21
+          },
+          {
+            "start": 16.21,
+            "end": 19.79,
+            "seconds": 3.58
+          },
+          {
+            "start": 27.11,
+            "end": 28.6,
+            "seconds": 1.49
+          },
+          {
+            "start": 33.65,
+            "end": 35.35,
+            "seconds": 1.7
+          },
+          {
+            "start": 43.85,
+            "end": 44.98,
+            "seconds": 1.13
+          },
+          {
+            "start": 51.53,
+            "end": 53.04,
+            "seconds": 1.51
+          },
+          {
+            "start": 56.2,
+            "end": 58.21,
+            "seconds": 2.01
+          },
+          {
+            "start": 59.48,
+            "end": 62.04,
+            "seconds": 2.56
+          },
+          {
+            "start": 67.23,
+            "end": 73.72,
+            "seconds": 6.49
+          }
+        ],
+        "longest_gap_between_srt_cues_or_edge": {
+          "start": 67.651,
+          "end": 73.8125,
+          "seconds": 6.162
+        },
+        "speech_reference_stem": "research/night/editor/afternoon-coach/dialogue.wav",
+        "per_cue": [
+          {
+            "id": 1,
+            "start": 0.42,
+            "end": 15.242,
+            "exact_srt": "Phil: Morning, Rita. You hear about the groundhog in the square? Let's keep it quick. I need to be at the depot by noon for my one o'clock coach back to Pittsburgh. Where do you want me for the first segment?",
+            "asr_cue": "Morning Rita you hear about the groundhog in the square? Let's keep it quick I need to be at the depot by noon for my one o'clock coach back to Pittsburgh Where do you want me for the first segment?",
+            "cue_alignment": {
+              "reference_words": 40,
+              "edits": 0,
+              "error_details": []
+            },
+            "stem_match": {
+              "id": 1,
+              "matched_source_second": 12.25,
+              "mix_minus_stem_ms": 0.0,
+              "normalized_cross_correlation": 0.9999,
+              "first_active_stem_10ms_window_minus_cue_start_ms": 0,
+              "cue_end_minus_last_active_stem_window_end_ms": 432
+            }
+          },
+          {
+            "id": 2,
+            "start": 19.795,
+            "end": 27.529,
+            "exact_srt": "Phil: Rita, it's 1:00. Where are we at? Did we catch the square, or are we still in the lobby?",
+            "asr_cue": "Rita, it's 100. Where are we at? Did we catch the square, or are we still in the lobby?",
+            "cue_alignment": {
+              "reference_words": 19,
+              "edits": 1,
+              "error_details": [
+                {
+                  "type": "substitution",
+                  "srt": "1:00",
+                  "asr": "100",
+                  "srt_word": 3
+                }
+              ]
+            },
+            "stem_match": {
+              "id": 2,
+              "matched_source_second": 26.095,
+              "mix_minus_stem_ms": 0.0,
+              "normalized_cross_correlation": 0.9949,
+              "first_active_stem_10ms_window_minus_cue_start_ms": 0,
+              "cue_end_minus_last_active_stem_window_end_ms": 464
+            }
+          },
+          {
+            "id": 3,
+            "start": 28.608,
+            "end": 33.753,
+            "exact_srt": "Larry: Well, that's the last of the battery. I guess I'm just a listener for the rest of the night.",
+            "asr_cue": "Well, that's the last of the battery, I guess I'm just a listener for the rest of the night.",
+            "cue_alignment": {
+              "reference_words": 19,
+              "edits": 0,
+              "error_details": []
+            },
+            "stem_match": {
+              "id": 3,
+              "matched_source_second": 31.698,
+              "mix_minus_stem_ms": 0.0,
+              "normalized_cross_correlation": 0.9887,
+              "first_active_stem_10ms_window_minus_cue_start_ms": 0,
+              "cue_end_minus_last_active_stem_window_end_ms": 215
+            }
+          },
+          {
+            "id": 4,
+            "start": 35.358,
+            "end": 43.927,
+            "exact_srt": "Rita: Phil, hold up. I need to confirm the town band is locked in for the afternoon slot before you head out. What time is that coach leaving the depot again?",
+            "asr_cue": "Phil, hold up, I need to confirm the town band is locked in for the afternoon slot before you head out, what time is that coach leaving the depot again?",
+            "cue_alignment": {
+              "reference_words": 30,
+              "edits": 0,
+              "error_details": []
+            },
+            "stem_match": {
+              "id": 4,
+              "matched_source_second": 42.458,
+              "mix_minus_stem_ms": 0.0,
+              "normalized_cross_correlation": 0.9993,
+              "first_active_stem_10ms_window_minus_cue_start_ms": 70,
+              "cue_end_minus_last_active_stem_window_end_ms": 209
+            }
+          },
+          {
+            "id": 5,
+            "start": 44.982,
+            "end": 51.953,
+            "exact_srt": "Phil: Rita, I have to go. I'm heading to the depot for the one o'clock. See you in Pittsburgh.",
+            "asr_cue": "Rita, I have to go. I'm heading to the depot for the one o'clock. See you in Pittsburgh.",
+            "cue_alignment": {
+              "reference_words": 18,
+              "edits": 0,
+              "error_details": []
+            },
+            "stem_match": {
+              "id": 5,
+              "matched_source_second": 50.132,
+              "mix_minus_stem_ms": 0.0,
+              "normalized_cross_correlation": 0.9999,
+              "first_active_stem_10ms_window_minus_cue_start_ms": 0,
+              "cue_end_minus_last_active_stem_window_end_ms": 531
+            }
+          },
+          {
+            "id": 6,
+            "start": 53.045,
+            "end": 56.628,
+            "exact_srt": "Phil: Afternoon coach, right there. Good.",
+            "asr_cue": "afternoon coach right there good",
+            "cue_alignment": {
+              "reference_words": 5,
+              "edits": 0,
+              "error_details": []
+            },
+            "stem_match": {
+              "id": 6,
+              "matched_source_second": 55.695,
+              "mix_minus_stem_ms": 0.0,
+              "normalized_cross_correlation": 0.9995,
+              "first_active_stem_10ms_window_minus_cue_start_ms": 0,
+              "cue_end_minus_last_active_stem_window_end_ms": 543
+            }
+          },
+          {
+            "id": 7,
+            "start": 62.045,
+            "end": 67.651,
+            "exact_srt": "Phil: Rita, I'm heading to the depot now for my coach. See you in Pittsburgh.",
+            "asr_cue": "Rita, I'm heading to the depot now for my coach. See you in Pittsburgh.",
+            "cue_alignment": {
+              "reference_words": 14,
+              "edits": 0,
+              "error_details": []
+            },
+            "stem_match": {
+              "id": 7,
+              "matched_source_second": 65.835,
+              "mix_minus_stem_ms": 0.0,
+              "normalized_cross_correlation": 0.9998,
+              "first_active_stem_10ms_window_minus_cue_start_ms": 0,
+              "cue_end_minus_last_active_stem_window_end_ms": 526
+            }
+          }
+        ]
+      },
+      "asr": {
+        "full_track": "Morning, Rita. You hear about the groundhog in the square? Let's keep it quick. I need to be at the depot by noon for my 1 o'clock coach back to Pittsburgh. Where do you want me for the first segment? Rita, it's 1-0-0. Where are we at? Did we catch the square, or are we still in the lobby? Well, that's the last of the battery, I guess I'm just a listener for the rest of the night. Phil, hold up, I need to confirm the town band is locked in for the afternoon slot before you head out. What time is that coach leaving the depot again? Rita, I have to go. I'm heading to the depot for the one o'clock. See you in Pittsburgh. Afternoon coach, right there. Good. Rita, I'm heading to the depot now for my coach. See you in Pittsburgh.",
+        "full_segments": [
+          {
+            "start": 0.0,
+            "end": 6.02,
+            "text": "Morning, Rita. You hear about the groundhog in the square? Let's keep it quick."
+          },
+          {
+            "start": 6.6,
+            "end": 11.12,
+            "text": "I need to be at the depot by noon for my 1 o'clock coach back to Pittsburgh."
+          },
+          {
+            "start": 12.1,
+            "end": 14.44,
+            "text": "Where do you want me for the first segment?"
+          },
+          {
+            "start": 19.52,
+            "end": 26.8,
+            "text": "Rita, it's 1-0-0. Where are we at? Did we catch the square, or are we still in the lobby?"
+          },
+          {
+            "start": 28.28,
+            "end": 33.42,
+            "text": "Well, that's the last of the battery, I guess I'm just a listener for the rest of the night."
+          },
+          {
+            "start": 35.040000000000006,
+            "end": 40.94,
+            "text": "Phil, hold up, I need to confirm the town band is locked in for the afternoon slot before you head out."
+          },
+          {
+            "start": 41.34,
+            "end": 43.56,
+            "text": "What time is that coach leaving the depot again?"
+          },
+          {
+            "start": 44.78,
+            "end": 50.98,
+            "text": "Rita, I have to go. I'm heading to the depot for the one o'clock. See you in Pittsburgh."
+          },
+          {
+            "start": 52.92,
+            "end": 55.9,
+            "text": "Afternoon coach, right there. Good."
+          },
+          {
+            "start": 60.0,
+            "end": 66.68,
+            "text": "Rita, I'm heading to the depot now for my coach. See you in Pittsburgh."
+          }
+        ],
+        "full_alignment": {
+          "reference_words": 145,
+          "edits": 1,
+          "error_details": [
+            {
+              "type": "substitution",
+              "srt": "1:00",
+              "asr": "1-0-0",
+              "srt_word": 43
+            }
+          ]
+        },
+        "windowed_edits": 1,
+        "raw_reference_word_count": 145,
+        "key_word_hits_in_full_track": [
+          {
+            "word": "Rita.",
+            "start": 1.16,
+            "end": 1.3,
+            "p": 0.9833
+          },
+          {
+            "word": "coach",
+            "start": 9.8,
+            "end": 10.28,
+            "p": 0.9242
+          },
+          {
+            "word": "Pittsburgh.",
+            "start": 10.8,
+            "end": 11.12,
+            "p": 0.9732
+          },
+          {
+            "word": "Rita,",
+            "start": 19.52,
+            "end": 20.04,
+            "p": 0.9916
+          },
+          {
+            "word": "coach",
+            "start": 42.02,
+            "end": 42.26,
+            "p": 0.9538
+          },
+          {
+            "word": "Rita,",
+            "start": 44.78,
+            "end": 45.16,
+            "p": 0.9808
+          },
+          {
+            "word": "Pittsburgh.",
+            "start": 50.54,
+            "end": 50.98,
+            "p": 0.9831
+          },
+          {
+            "word": "coach,",
+            "start": 53.64,
+            "end": 54.0,
+            "p": 0.5525
+          },
+          {
+            "word": "Rita,",
+            "start": 60.0,
+            "end": 60.72,
+            "p": 0.9696
+          },
+          {
+            "word": "coach.",
+            "start": 64.6,
+            "end": 64.94,
+            "p": 0.9847
+          },
+          {
+            "word": "Pittsburgh.",
+            "start": 66.24,
+            "end": 66.68,
+            "p": 0.9835
+          }
+        ]
+      },
+      "transport": {
+        "os": "27.2.1",
+        "chrome": "157.0.8103.79",
+        "http_server": "Python SimpleHTTPRequestHandler, bound to 127.0.0.1",
+        "transports": {
+          "file": {
+            "metadata": {
+              "duration": 73.8125,
+              "width": 1280,
+              "height": 720,
+              "error": null
+            },
+            "seeks": [
+              {
+                "target": 62.8,
+                "landed": 62.8,
+                "buffered_before": [
+                  [
+                    0,
+                    73.8125
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    73.8125
+                  ]
+                ],
+                "seek_ms": 195,
+                "play_wall_ms": 797,
+                "advanced_s": 0.729,
+                "frames_advanced": 13,
+                "web_audio_peak_window_rms_dbfs": null,
+                "ready": 4,
+                "media_error": null,
+                "passed": true
+              },
+              {
+                "target": 1.25,
+                "landed": 1.25,
+                "buffered_before": [
+                  [
+                    0,
+                    73.8125
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    73.8125
+                  ]
+                ],
+                "seek_ms": 6,
+                "play_wall_ms": 792,
+                "advanced_s": 0.721,
+                "frames_advanced": 12,
+                "web_audio_peak_window_rms_dbfs": null,
+                "ready": 4,
+                "media_error": null,
+                "passed": true
+              },
+              {
+                "target": 35.9,
+                "landed": 35.9,
+                "buffered_before": [
+                  [
+                    0,
+                    73.8125
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    73.8125
+                  ]
+                ],
+                "seek_ms": 6,
+                "play_wall_ms": 834,
+                "advanced_s": 0.754,
+                "frames_advanced": 13,
+                "web_audio_peak_window_rms_dbfs": null,
+                "ready": 4,
+                "media_error": null,
+                "passed": true
+              },
+              {
+                "target": 53.35,
+                "landed": 53.35,
+                "buffered_before": [
+                  [
+                    0,
+                    73.8125
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    73.8125
+                  ]
+                ],
+                "seek_ms": 4,
+                "play_wall_ms": 789,
+                "advanced_s": 0.721,
+                "frames_advanced": 12,
+                "web_audio_peak_window_rms_dbfs": null,
+                "ready": 4,
+                "media_error": null,
+                "passed": true
+              }
+            ],
+            "chrome_media_requests": [
+              {
+                "range": null,
+                "status": 200,
+                "content_range": null
+              },
+              {
+                "range": "bytes=0-",
+                "status": 200,
+                "content_range": null
+              }
+            ]
+          },
+          "python_http": {
+            "metadata": {
+              "duration": 73.8125,
+              "width": 1280,
+              "height": 720,
+              "error": null
+            },
+            "seeks": [
+              {
+                "target": 62.8,
+                "landed": 0,
+                "buffered_before": [
+                  [
+                    0,
+                    1.8
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                "seek_ms": 64,
+                "play_wall_ms": 736,
+                "advanced_s": 0.736,
+                "frames_advanced": 12,
+                "web_audio_peak_window_rms_dbfs": -11.2,
+                "ready": 4,
+                "media_error": null,
+                "passed": false
+              }
+            ],
+            "chrome_media_requests": [
+              {
+                "range": null,
+                "status": 200,
+                "content_range": null
+              },
+              {
+                "range": "bytes=0-",
+                "status": 200,
+                "content_range": null
+              }
+            ]
+          },
+          "webrick_http": {
+            "metadata": {
+              "duration": 73.8125,
+              "width": 1280,
+              "height": 720,
+              "error": null
+            },
+            "seeks": [
+              {
+                "target": 62.8,
+                "landed": 62.8,
+                "buffered_before": [
+                  [
+                    0,
+                    1.865
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    73.8125
+                  ]
+                ],
+                "seek_ms": 1406,
+                "play_wall_ms": 740,
+                "advanced_s": 0.736,
+                "frames_advanced": 11,
+                "web_audio_peak_window_rms_dbfs": -11.7,
+                "ready": 4,
+                "media_error": null,
+                "passed": true
+              },
+              {
+                "target": 1.25,
+                "landed": 1.25,
+                "buffered_before": [
+                  [
+                    0,
+                    1.865
+                  ],
+                  [
+                    48.752,
+                    63.68
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    73.8125
+                  ]
+                ],
+                "seek_ms": 184,
+                "play_wall_ms": 738,
+                "advanced_s": 0.736,
+                "frames_advanced": 12,
+                "web_audio_peak_window_rms_dbfs": -10.9,
+                "ready": 4,
+                "media_error": null,
+                "passed": true
+              },
+              {
+                "target": 35.9,
+                "landed": 35.9,
+                "buffered_before": [
+                  [
+                    0,
+                    7.9
+                  ],
+                  [
+                    48.752,
+                    63.68
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    73.8125
+                  ]
+                ],
+                "seek_ms": 346,
+                "play_wall_ms": 738,
+                "advanced_s": 0.736,
+                "frames_advanced": 12,
+                "web_audio_peak_window_rms_dbfs": -10.3,
+                "ready": 4,
+                "media_error": null,
+                "passed": true
+              },
+              {
+                "target": 53.35,
+                "landed": 53.35,
+                "buffered_before": [
+                  [
+                    0,
+                    7.925
+                  ],
+                  [
+                    14.404,
+                    21.707
+                  ],
+                  [
+                    34.9375,
+                    39.36
+                  ],
+                  [
+                    48.752,
+                    63.68
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    73.8125
+                  ]
+                ],
+                "seek_ms": 267,
+                "play_wall_ms": 737,
+                "advanced_s": 0.736,
+                "frames_advanced": 13,
+                "web_audio_peak_window_rms_dbfs": -10.6,
+                "ready": 4,
+                "media_error": null,
+                "passed": true
+              }
+            ],
+            "chrome_media_requests": [
+              {
+                "range": null,
+                "status": 200,
+                "content_range": null
+              },
+              {
+                "range": "bytes=0-",
+                "status": 206,
+                "content_range": "bytes 0-4365808/4365809"
+              },
+              {
+                "range": "bytes=2883584-",
+                "status": 206,
+                "content_range": "bytes 2883584-4365808/4365809"
+              },
+              {
+                "range": "bytes=98304-",
+                "status": 206,
+                "content_range": "bytes 98304-4365808/4365809"
+              },
+              {
+                "range": "bytes=851968-",
+                "status": 206,
+                "content_range": "bytes 851968-4365808/4365809"
+              },
+              {
+                "range": "bytes=2686976-",
+                "status": 206,
+                "content_range": "bytes 2686976-4365808/4365809"
+              },
+              {
+                "range": "bytes=3735552-",
+                "status": 206,
+                "content_range": "bytes 3735552-4365808/4365809"
+              }
+            ]
+          }
+        },
+        "explicit_http_range": {
+          "status": 200,
+          "content_range": null,
+          "content_length": "4365809",
+          "content_type": "video/mp4"
+        },
+        "stock_server_checks": {
+          "head": {
+            "status": 200,
+            "content_range": null,
+            "content_length": "4365809",
+            "content_type": "video/mp4",
+            "body_bytes": 0
+          },
+          "slice": {
+            "status": 206,
+            "content_range": "bytes 100-199/4365809",
+            "content_length": "100",
+            "content_type": "video/mp4",
+            "body_bytes": 100,
+            "matches_local_bytes": true
+          },
+          "past_eof": {
+            "status": 416,
+            "content_range": null,
+            "content_length": "345",
+            "content_type": "text/html; charset=ISO-8859-1",
+            "body_bytes": 345
+          }
+        },
+        "http_requests": [
+          {
+            "path": "/film.mp4",
+            "range": "bytes=100-199",
+            "status": 200
+          },
+          {
+            "path": "/film.mp4",
+            "range": null,
+            "status": 200
+          },
+          {
+            "path": "/film.mp4",
+            "range": "bytes=0-",
+            "status": 200
+          }
+        ]
+      }
+    },
+    "seven-oclock": {
+      "movie": "research/night/editor/seven-oclock/film.mp4",
+      "mp4_sha256": "6d849989d1669cef5667699597bf523e79e98e283f9c25d6e2558acf39b47709",
+      "srt_sha256": "90fef457c9f817553aa6e652e90c096afb3f8a4a9dcb53b18f643a4eab4e1ef5",
+      "bytes": 5275606,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1",
+          "start_time": "0.000000",
+          "duration": "82.666667"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 1,
+          "r_frame_rate": "0/0",
+          "start_time": "0.000000",
+          "duration": "82.666000"
+        }
+      ],
+      "full_av_decode": "ffmpeg -xerror succeeded",
+      "mp4_atoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "bytes": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "bytes": 58768
+        },
+        {
+          "type": "free",
+          "offset": 58800,
+          "bytes": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 58808,
+          "bytes": 5216798
+        }
+      ],
+      "audio": {
+        "integrated_lufs": -16.98,
+        "true_peak_dbtp": -1.5,
+        "loudness_range_lu": 5.3,
+        "sample_peak_dbfs": -1.502,
+        "samples_at_or_above_full_scale_48khz": 0,
+        "quiet_at_minus55_dbfs_rms_10ms_minimum_1s": [
+          {
+            "start": 6.88,
+            "end": 8.01,
+            "seconds": 1.13
+          },
+          {
+            "start": 17.3,
+            "end": 20.21,
+            "seconds": 2.91
+          },
+          {
+            "start": 21.44,
+            "end": 24.04,
+            "seconds": 2.6
+          },
+          {
+            "start": 31.57,
+            "end": 32.84,
+            "seconds": 1.27
+          },
+          {
+            "start": 49.9,
+            "end": 51.42,
+            "seconds": 1.52
+          },
+          {
+            "start": 53.65,
+            "end": 56.0,
+            "seconds": 2.35
+          },
+          {
+            "start": 56.07,
+            "end": 60.0,
+            "seconds": 3.93
+          },
+          {
+            "start": 60.07,
+            "end": 64.0,
+            "seconds": 3.93
+          },
+          {
+            "start": 64.07,
+            "end": 70.0,
+            "seconds": 5.93
+          },
+          {
+            "start": 70.07,
+            "end": 75.4,
+            "seconds": 5.33
+          }
+        ],
+        "quiet_at_minus80_dbfs_rms_10ms_minimum_1s": [
+          {
+            "start": 6.89,
+            "end": 8.0,
+            "seconds": 1.11
+          },
+          {
+            "start": 17.32,
+            "end": 20.21,
+            "seconds": 2.89
+          },
+          {
+            "start": 21.48,
+            "end": 24.04,
+            "seconds": 2.56
+          },
+          {
+            "start": 31.6,
+            "end": 32.84,
+            "seconds": 1.24
+          },
+          {
+            "start": 49.91,
+            "end": 51.42,
+            "seconds": 1.51
+          },
+          {
+            "start": 53.77,
+            "end": 56.0,
+            "seconds": 2.23
+          },
+          {
+            "start": 56.07,
+            "end": 60.0,
+            "seconds": 3.93
+          },
+          {
+            "start": 60.07,
+            "end": 64.0,
+            "seconds": 3.93
+          },
+          {
+            "start": 64.07,
+            "end": 70.0,
+            "seconds": 5.93
+          },
+          {
+            "start": 70.07,
+            "end": 75.4,
+            "seconds": 5.33
+          }
+        ],
+        "longest_gap_between_srt_cues_or_edge": {
+          "start": 53.839,
+          "end": 75.4,
+          "seconds": 21.561
+        },
+        "speech_reference_stem": "research/night/editor/bulletin-711-opening/dialogue.wav",
+        "per_cue": [
+          {
+            "id": 1,
+            "start": 0.42,
+            "end": 7.344,
+            "exact_srt": "Phil: Rita, I'm grabbing some coffee and a bagel at the diner. Be ready to roll in about forty minutes.",
+            "asr_cue": "Rita, I'm grabbing some coffee and a bagel at the diner. Be ready to roll in about 40 minutes.",
+            "cue_alignment": {
+              "reference_words": 19,
+              "edits": 0,
+              "error_details": []
+            },
+            "stem_match": {
+              "id": 1,
+              "matched_source_second": 5.0,
+              "mix_minus_stem_ms": 0.0,
+              "normalized_cross_correlation": 0.9914,
+              "first_active_stem_10ms_window_minus_cue_start_ms": 0,
+              "cue_end_minus_last_active_stem_window_end_ms": 474
+            }
+          },
+          {
+            "id": 2,
+            "start": 8.42,
+            "end": 13.945,
+            "exact_srt": "Phil: I'm heading out to catch the one o'clock coach. See you later, everyone.",
+            "asr_cue": "I'm heading out to catch the one the clock coach. See you later, everyone.",
+            "cue_alignment": {
+              "reference_words": 13,
+              "edits": 2,
+              "error_details": [
+                {
+                  "type": "insertion",
+                  "asr": "the",
+                  "after_srt_word": 7
+                },
+                {
+                  "type": "substitution",
+                  "srt": "o'clock",
+                  "asr": "clock",
+                  "srt_word": 8
+                }
+              ]
+            },
+            "stem_match": {
+              "id": 2,
+              "matched_source_second": 11.84,
+              "mix_minus_stem_ms": 0.0,
+              "normalized_cross_correlation": 0.988,
+              "first_active_stem_10ms_window_minus_cue_start_ms": 0,
+              "cue_end_minus_last_active_stem_window_end_ms": 475
+            }
+          },
+          {
+            "id": 3,
+            "start": 15.045,
+            "end": 17.726,
+            "exact_srt": "Phil: Well, I'm settled in for the night.",
+            "asr_cue": "Well, I'm settled in for the night.",
+            "cue_alignment": {
+              "reference_words": 7,
+              "edits": 0,
+              "error_details": []
+            },
+            "stem_match": {
+              "id": 3,
+              "matched_source_second": 15.025,
+              "mix_minus_stem_ms": 0.0,
+              "normalized_cross_correlation": 0.9998,
+              "first_active_stem_10ms_window_minus_cue_start_ms": 0,
+              "cue_end_minus_last_active_stem_window_end_ms": 431
+            }
+          },
+          {
+            "id": 4,
+            "start": 24.045,
+            "end": 32.022,
+            "exact_srt": "Phil: Rita, I'm heading to the diner to grab a coffee and set up the switcher. Let's get that 7 AM bulletin live.",
+            "asr_cue": "Rita, I'm heading to the diner to grab a coffee and set up the switcher. Let's get that 7 a.m. bulletin live.",
+            "cue_alignment": {
+              "reference_words": 22,
+              "edits": 0,
+              "error_details": []
+            },
+            "stem_match": {
+              "id": 4,
+              "matched_source_second": 30.395,
+              "mix_minus_stem_ms": 0.0,
+              "normalized_cross_correlation": 0.994,
+              "first_active_stem_10ms_window_minus_cue_start_ms": 0,
+              "cue_end_minus_last_active_stem_window_end_ms": 577
+            }
+          },
+          {
+            "id": 5,
+            "start": 33.108,
+            "end": 40.193,
+            "exact_srt": "Larry: I'm rolling on the festival now to secure the B-roll before the ceremony ends. Covering for me on the switcher, Rita?",
+            "asr_cue": "I'm rolling on the festival now to secure the B-roll before the ceremony ends, covering for me on the switcher, Rita.",
+            "cue_alignment": {
+              "reference_words": 21,
+              "edits": 0,
+              "error_details": []
+            },
+            "stem_match": {
+              "id": 5,
+              "matched_source_second": 35.458,
+              "mix_minus_stem_ms": 0.0,
+              "normalized_cross_correlation": 0.9912,
+              "first_active_stem_10ms_window_minus_cue_start_ms": 0,
+              "cue_end_minus_last_active_stem_window_end_ms": 195
+            }
+          },
+          {
+            "id": 6,
+            "start": 41.295,
+            "end": 50.335,
+            "exact_srt": "Phil: Hey, it's Phil. I'm at the terminal now. Let's confirm the van is booked for 8 AM tomorrow? I'll be ready to roll.",
+            "asr_cue": "Hey, it's Phil. I'm at the terminal now. Let's confirm the van is booked for 8am tomorrow. I'll be ready to roll.",
+            "cue_alignment": {
+              "reference_words": 23,
+              "edits": 0,
+              "error_details": []
+            },
+            "stem_match": {
+              "id": 6,
+              "matched_source_second": 49.435,
+              "mix_minus_stem_ms": 0.0,
+              "normalized_cross_correlation": 0.9995,
+              "first_active_stem_10ms_window_minus_cue_start_ms": 0,
+              "cue_end_minus_last_active_stem_window_end_ms": 450
+            }
+          },
+          {
+            "id": 7,
+            "start": 51.42,
+            "end": 53.839,
+            "exact_srt": "Rita: Larry, are you live? Put me on air.",
+            "asr_cue": "Larry, are you live? Put me on air.",
+            "cue_alignment": {
+              "reference_words": 8,
+              "edits": 0,
+              "error_details": []
+            },
+            "stem_match": {
+              "id": 7,
+              "matched_source_second": 53.04,
+              "mix_minus_stem_ms": 0.0,
+              "normalized_cross_correlation": 0.9875,
+              "first_active_stem_10ms_window_minus_cue_start_ms": 0,
+              "cue_end_minus_last_active_stem_window_end_ms": 199
+            }
+          },
+          {
+            "id": 8,
+            "start": 75.4,
+            "end": 82.242,
+            "exact_srt": "Rita: Good evening, folks. This is Rita on the scene in western Pennsylvania. We are on the air and ready for the forecast.",
+            "asr_cue": "Good evening, folks, this is Rita on the scene in western Pennsylvania, we are on the air and ready for the forecast.",
+            "cue_alignment": {
+              "reference_words": 22,
+              "edits": 0,
+              "error_details": []
+            },
+            "stem_match": null,
+            "encoded_board_match": {
+              "id": 8,
+              "matched_source_second": 78.01,
+              "mix_minus_stem_ms": 0.0,
+              "normalized_cross_correlation": 0.9999,
+              "first_active_stem_10ms_window_minus_cue_start_ms": 10,
+              "cue_end_minus_last_active_stem_window_end_ms": 292
+            }
+          }
+        ],
+        "final_bulletin_source": {
+          "channel": "producer_live",
+          "source_role": "producer",
+          "source_place": "inn",
+          "selected_by": "Rita",
+          "source_ids": [
+            "d06-t03-producer"
+          ],
+          "delivered_assignments": [
+            "camera",
+            "reporter"
+          ],
+          "spoken": "Good evening, folks. This is Rita on the scene in western Pennsylvania. We are on the air and ready for the forecast.",
+          "footage": null
+        }
+      },
+      "asr": {
+        "full_track": "Rita, I'm grabbing some coffee and a bagel at the diner. Be ready to roll in about 40 minutes. I'm heading out to catch the 1 o'clock coach. See you later, everyone. Well, I'm settled in for the night. Rita, I'm heading to the diner to grab a coffee and set up the switcher. I'm rolling on the festival now to secure the b-roll before the ceremony ends, covering for me on the switcher, Rita. Hey, it's Phil. I'm at the terminal now. Let's confirm the van is booked for 8am tomorrow. I'll be ready to roll. Larry, are you live? Put me on air. Good evening, folks. This is Rita on the scene in western Pennsylvania. We are on the air and ready for the forecast.",
+        "full_segments": [
+          {
+            "start": 0.0,
+            "end": 6.6,
+            "text": "Rita, I'm grabbing some coffee and a bagel at the diner. Be ready to roll in about 40 minutes."
+          },
+          {
+            "start": 8.08,
+            "end": 13.08,
+            "text": "I'm heading out to catch the 1 o'clock coach. See you later, everyone."
+          },
+          {
+            "start": 14.68,
+            "end": 17.06,
+            "text": "Well, I'm settled in for the night."
+          },
+          {
+            "start": 23.66,
+            "end": 28.3,
+            "text": "Rita, I'm heading to the diner to grab a coffee and set up the switcher."
+          },
+          {
+            "start": 32.72,
+            "end": 38.04,
+            "text": "I'm rolling on the festival now to secure the b-roll before the ceremony ends, covering"
+          },
+          {
+            "start": 38.04,
+            "end": 39.78,
+            "text": "for me on the switcher, Rita."
+          },
+          {
+            "start": 40.98,
+            "end": 42.18,
+            "text": "Hey, it's Phil."
+          },
+          {
+            "start": 42.86,
+            "end": 44.22,
+            "text": "I'm at the terminal now."
+          },
+          {
+            "start": 44.8,
+            "end": 47.86,
+            "text": "Let's confirm the van is booked for 8am tomorrow."
+          },
+          {
+            "start": 48.56,
+            "end": 49.74,
+            "text": "I'll be ready to roll."
+          },
+          {
+            "start": 51.0,
+            "end": 52.48,
+            "text": "Larry, are you live?"
+          },
+          {
+            "start": 52.86,
+            "end": 53.5,
+            "text": "Put me on air."
+          },
+          {
+            "start": 75.03999999999999,
+            "end": 80.54,
+            "text": "Good evening, folks. This is Rita on the scene in western Pennsylvania. We are on the air"
+          },
+          {
+            "start": 80.54,
+            "end": 81.68,
+            "text": "and ready for the forecast."
+          }
+        ],
+        "full_alignment": {
+          "reference_words": 135,
+          "edits": 7,
+          "error_details": [
+            {
+              "type": "deletion",
+              "srt": "let's",
+              "srt_word": 55
+            },
+            {
+              "type": "deletion",
+              "srt": "get",
+              "srt_word": 56
+            },
+            {
+              "type": "deletion",
+              "srt": "that",
+              "srt_word": 57
+            },
+            {
+              "type": "deletion",
+              "srt": "7",
+              "srt_word": 58
+            },
+            {
+              "type": "deletion",
+              "srt": "am",
+              "srt_word": 59
+            },
+            {
+              "type": "deletion",
+              "srt": "bulletin",
+              "srt_word": 60
+            },
+            {
+              "type": "deletion",
+              "srt": "live",
+              "srt_word": 61
+            }
+          ]
+        },
+        "windowed_edits": 2,
+        "raw_reference_word_count": 135,
+        "key_word_hits_in_full_track": [
+          {
+            "word": "Rita,",
+            "start": 0.0,
+            "end": 0.54,
+            "p": 0.8355
+          },
+          {
+            "word": "coach.",
+            "start": 10.58,
+            "end": 10.98,
+            "p": 0.9692
+          },
+          {
+            "word": "Rita,",
+            "start": 23.66,
+            "end": 24.22,
+            "p": 0.9911
+          },
+          {
+            "word": "Rita.",
+            "start": 39.5,
+            "end": 39.78,
+            "p": 0.9531
+          },
+          {
+            "word": "Rita",
+            "start": 77.28,
+            "end": 77.46,
+            "p": 0.9404
+          },
+          {
+            "word": "Pennsylvania.",
+            "start": 78.42,
+            "end": 79.16,
+            "p": 0.9933
+          },
+          {
+            "word": "forecast.",
+            "start": 81.28,
+            "end": 81.68,
+            "p": 0.9591
+          }
+        ]
+      },
+      "transport": {
+        "os": "27.2.1",
+        "chrome": "157.0.8103.79",
+        "http_server": "Python SimpleHTTPRequestHandler, bound to 127.0.0.1",
+        "transports": {
+          "file": {
+            "metadata": {
+              "duration": 82.666667,
+              "width": 1280,
+              "height": 720,
+              "error": null
+            },
+            "seeks": [
+              {
+                "target": 76,
+                "landed": 76,
+                "buffered_before": [
+                  [
+                    0,
+                    82.666667
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    82.666667
+                  ]
+                ],
+                "seek_ms": 286,
+                "play_wall_ms": 795,
+                "advanced_s": 0.731,
+                "frames_advanced": 18,
+                "web_audio_peak_window_rms_dbfs": null,
+                "ready": 4,
+                "media_error": null,
+                "passed": true
+              },
+              {
+                "target": 57.3,
+                "landed": 57.3,
+                "buffered_before": [
+                  [
+                    0,
+                    82.666667
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    82.666667
+                  ]
+                ],
+                "seek_ms": 13,
+                "play_wall_ms": 798,
+                "advanced_s": 0.737,
+                "frames_advanced": 18,
+                "web_audio_peak_window_rms_dbfs": null,
+                "ready": 4,
+                "media_error": null,
+                "passed": true
+              },
+              {
+                "target": 1.25,
+                "landed": 1.25,
+                "buffered_before": [
+                  [
+                    0,
+                    82.666667
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    82.666667
+                  ]
+                ],
+                "seek_ms": 9,
+                "play_wall_ms": 795,
+                "advanced_s": 0.734,
+                "frames_advanced": 18,
+                "web_audio_peak_window_rms_dbfs": null,
+                "ready": 4,
+                "media_error": null,
+                "passed": true
+              },
+              {
+                "target": 79.5,
+                "landed": 79.5,
+                "buffered_before": [
+                  [
+                    0,
+                    82.666667
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    82.666667
+                  ]
+                ],
+                "seek_ms": 21,
+                "play_wall_ms": 835,
+                "advanced_s": 0.761,
+                "frames_advanced": 19,
+                "web_audio_peak_window_rms_dbfs": null,
+                "ready": 4,
+                "media_error": null,
+                "passed": true
+              }
+            ],
+            "chrome_media_requests": [
+              {
+                "range": null,
+                "status": 200,
+                "content_range": null
+              },
+              {
+                "range": "bytes=0-",
+                "status": 200,
+                "content_range": null
+              },
+              {
+                "range": "bytes=5046272-",
+                "status": 200,
+                "content_range": null
+              },
+              {
+                "range": "bytes=4587520-",
+                "status": 200,
+                "content_range": null
+              }
+            ]
+          },
+          "python_http": {
+            "metadata": {
+              "duration": 82.666667,
+              "width": 1280,
+              "height": 720,
+              "error": null
+            },
+            "seeks": [
+              {
+                "target": 76,
+                "landed": 0,
+                "buffered_before": [
+                  [
+                    0,
+                    2.773
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                "seek_ms": 3,
+                "play_wall_ms": 738,
+                "advanced_s": 0.725,
+                "frames_advanced": 18,
+                "web_audio_peak_window_rms_dbfs": -10.9,
+                "ready": 4,
+                "media_error": null,
+                "passed": false
+              }
+            ],
+            "chrome_media_requests": [
+              {
+                "range": null,
+                "status": 200,
+                "content_range": null
+              },
+              {
+                "range": "bytes=0-",
+                "status": 200,
+                "content_range": null
+              }
+            ]
+          },
+          "webrick_http": {
+            "metadata": {
+              "duration": 82.666667,
+              "width": 1280,
+              "height": 720,
+              "error": null
+            },
+            "seeks": [
+              {
+                "target": 76,
+                "landed": 76,
+                "buffered_before": [
+                  [
+                    0,
+                    2.797
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    82.666667
+                  ]
+                ],
+                "seek_ms": 339,
+                "play_wall_ms": 745,
+                "advanced_s": 0.747,
+                "frames_advanced": 18,
+                "web_audio_peak_window_rms_dbfs": -14.5,
+                "ready": 4,
+                "media_error": null,
+                "passed": true
+              },
+              {
+                "target": 57.3,
+                "landed": 57.3,
+                "buffered_before": [
+                  [
+                    0,
+                    2.82
+                  ],
+                  [
+                    75,
+                    82.666667
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    82.666667
+                  ]
+                ],
+                "seek_ms": 264,
+                "play_wall_ms": 737,
+                "advanced_s": 0.736,
+                "frames_advanced": 18,
+                "web_audio_peak_window_rms_dbfs": null,
+                "ready": 4,
+                "media_error": null,
+                "passed": true
+              },
+              {
+                "target": 1.25,
+                "landed": 1.25,
+                "buffered_before": [
+                  [
+                    0,
+                    2.82
+                  ],
+                  [
+                    56,
+                    60.437333
+                  ],
+                  [
+                    71.884,
+                    82.666667
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    82.666667
+                  ]
+                ],
+                "seek_ms": 587,
+                "play_wall_ms": 736,
+                "advanced_s": 0.731,
+                "frames_advanced": 18,
+                "web_audio_peak_window_rms_dbfs": -13.8,
+                "ready": 4,
+                "media_error": null,
+                "passed": true
+              },
+              {
+                "target": 79.5,
+                "landed": 79.5,
+                "buffered_before": [
+                  [
+                    0,
+                    10.864
+                  ],
+                  [
+                    56,
+                    60.437333
+                  ],
+                  [
+                    71.884,
+                    82.666667
+                  ]
+                ],
+                "seekable_before": [
+                  [
+                    0,
+                    82.666667
+                  ]
+                ],
+                "seek_ms": 33,
+                "play_wall_ms": 739,
+                "advanced_s": 0.739,
+                "frames_advanced": 18,
+                "web_audio_peak_window_rms_dbfs": -14.4,
+                "ready": 4,
+                "media_error": null,
+                "passed": true
+              }
+            ],
+            "chrome_media_requests": [
+              {
+                "range": null,
+                "status": 200,
+                "content_range": null
+              },
+              {
+                "range": "bytes=0-",
+                "status": 206,
+                "content_range": "bytes 0-5275605/5275606"
+              },
+              {
+                "range": "bytes=5046272-",
+                "status": 206,
+                "content_range": "bytes 5046272-5275605/5275606"
+              },
+              {
+                "range": "bytes=4587520-",
+                "status": 206,
+                "content_range": "bytes 4587520-5275605/5275606"
+              },
+              {
+                "range": "bytes=163840-",
+                "status": 206,
+                "content_range": "bytes 163840-5275605/5275606"
+              }
+            ]
+          }
+        },
+        "explicit_http_range": {
+          "status": 200,
+          "content_range": null,
+          "content_length": "5275606",
+          "content_type": "video/mp4"
+        },
+        "stock_server_checks": {
+          "head": {
+            "status": 200,
+            "content_range": null,
+            "content_length": "5275606",
+            "content_type": "video/mp4",
+            "body_bytes": 0
+          },
+          "slice": {
+            "status": 206,
+            "content_range": "bytes 100-199/5275606",
+            "content_length": "100",
+            "content_type": "video/mp4",
+            "body_bytes": 100,
+            "matches_local_bytes": true
+          },
+          "past_eof": {
+            "status": 416,
+            "content_range": null,
+            "content_length": "345",
+            "content_type": "text/html; charset=ISO-8859-1",
+            "body_bytes": 345
+          }
+        },
+        "http_requests": [
+          {
+            "path": "/film.mp4",
+            "range": "bytes=100-199",
+            "status": 200
+          },
+          {
+            "path": "/film.mp4",
+            "range": null,
+            "status": 200
+          },
+          {
+            "path": "/film.mp4",
+            "range": "bytes=0-",
+            "status": 200
+          }
+        ]
+      }
+    }
+  }
+}

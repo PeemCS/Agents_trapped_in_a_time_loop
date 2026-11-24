@@ -1,0 +1,4185 @@
+{
+  "assumption": {
+    "background": 0.1,
+    "miss_when_sufficient": 0.1,
+    "independent_prior_per_rule": 0.5,
+    "logs": "natural for loss, base 2 for information"
+  },
+  "rules": {
+    "coach": "Completed coach trip to Pittsburgh",
+    "phone": "Made the phone call",
+    "rehearsal": "Rehearsed the eight bars",
+    "dance": "Completed a mutually agreed dance",
+    "driver": "Helped the stranded driver",
+    "personal_recording": "Personally recorded Alma",
+    "station_ack": "Saw a station-issued acknowledgement of receipt",
+    "recipient_known_at_start": "Already had the daughter's acknowledgement at the preceding dawn",
+    "public_piano": "Played the piano at the ballroom that evening"
+  },
+  "paths": {
+    "721-hypothesis": {
+      "source_sha256": "b7500bd631c2a27cbf43ae396b48ee28247e665c77d7707acd8207390340f3ea",
+      "wakes": [
+        {
+          "day_just_ended": 0,
+          "source": "last-reel/runs/721-hypothesis/take.json#days[0].afternoon.reporter.messages[user]",
+          "phil_user_message_sha256": "b408c709c27141f9ab4e5d1822fada1a0e4e9eca1e038e8ffcd30f3c323b89de",
+          "date": "Tuesday, February 2, 2016",
+          "advanced": false,
+          "afternoon_witness": "Phil uses the paid ticket and rides the coach all the way to Pittsburgh..",
+          "evening_witness": "You reached your sister from the terminal payphone. She confirmed the van booking for Wednesday.",
+          "recipient_confirmation_at_wake": "not_visible",
+          "recipient_confirmation_quote": null,
+          "another_delivery_on_this_specific_day": "unknown",
+          "exposure": {
+            "coach": "observed",
+            "phone": "observed",
+            "rehearsal": "unknown",
+            "dance": "unknown",
+            "driver": "unknown",
+            "personal_recording": "unknown",
+            "station_ack": "unknown",
+            "recipient_known_at_start": "unknown",
+            "public_piano": "unknown"
+          }
+        },
+        {
+          "day_just_ended": 1,
+          "source": "last-reel/runs/721-hypothesis/take.json#days[1].afternoon.reporter.messages[user]",
+          "phil_user_message_sha256": "c796d3953db5d3e296c9466edce0d06e34c19f974b71458819f2e477dff3d3a7",
+          "date": "Tuesday, February 2, 2016",
+          "advanced": false,
+          "afternoon_witness": "Phil plays the last eight bars until he can get through them.",
+          "evening_witness": "Phil sits on the empty depot bench.",
+          "recipient_confirmation_at_wake": "not_visible",
+          "recipient_confirmation_quote": null,
+          "another_delivery_on_this_specific_day": "unknown",
+          "exposure": {
+            "coach": "no_recorded_attempt",
+            "phone": "no_recorded_attempt",
+            "rehearsal": "observed",
+            "dance": "no_recorded_attempt",
+            "driver": "no_recorded_attempt",
+            "personal_recording": "no_recorded_attempt",
+            "station_ack": "unknown",
+            "recipient_known_at_start": "no_recorded_attempt",
+            "public_piano": "no_recorded_attempt"
+          }
+        },
+        {
+          "day_just_ended": 2,
+          "source": "last-reel/runs/721-hypothesis/take.json#days[2].afternoon.reporter.messages[user]",
+          "phil_user_message_sha256": "3467dd6d8b716ad27c039a3e05d9d85fbb260eb37d6a44136c468926669a3acc",
+          "date": "Tuesday, February 2, 2016",
+          "advanced": false,
+          "afternoon_witness": "Phil rides the coach and steps off at Pittsburgh.",
+          "evening_witness": "Phil sleeps on the Pittsburgh terminal bench.",
+          "recipient_confirmation_at_wake": "first_visible",
+          "recipient_confirmation_quote": "An envelope has arrived from Pittsburgh. Alma's daughter sent a receipt for a recorded interview. The line copied her reply: 'I know that voice. Play it again.'",
+          "another_delivery_on_this_specific_day": "unknown",
+          "exposure": {
+            "coach": "observed",
+            "phone": "no_recorded_attempt",
+            "rehearsal": "no_recorded_attempt",
+            "dance": "no_recorded_attempt",
+            "driver": "no_recorded_attempt",
+            "personal_recording": "no_recorded_attempt",
+            "station_ack": "unknown",
+            "recipient_known_at_start": "no_recorded_attempt",
+            "public_piano": "no_recorded_attempt"
+          }
+        },
+        {
+          "day_just_ended": 3,
+          "source": "last-reel/runs/721-hypothesis/take.json#last_alarm.messages[user]",
+          "phil_user_message_sha256": "3c3ad6078191d8dc7f8b2def8012773a7cb9cc37ffc5c9c62d3ebeb75d565dc7",
+          "date": "Tuesday, February 2, 2016",
+          "advanced": false,
+          "afternoon_witness": "Phil rides the coach and steps off at Pittsburgh.",
+          "evening_witness": "Phil calls his sister in Pittsburgh. The van is still booked for Wednesday.",
+          "recipient_confirmation_at_wake": "already_seen",
+          "recipient_confirmation_quote": "An envelope has arrived from Pittsburgh. Alma's daughter sent a receipt for a recorded interview. The line copied her reply: 'I know that voice. Play it again.'",
+          "another_delivery_on_this_specific_day": "unknown",
+          "exposure": {
+            "coach": "observed",
+            "phone": "observed",
+            "rehearsal": "no_recorded_attempt",
+            "dance": "no_recorded_attempt",
+            "driver": "no_recorded_attempt",
+            "personal_recording": "no_recorded_attempt",
+            "station_ack": "unknown",
+            "recipient_known_at_start": "observed",
+            "public_piano": "no_recorded_attempt"
+          }
+        }
+      ],
+      "rule_beliefs": {
+        "coach": {
+          "observed_triggers": 3,
+          "trigger_then_reset": 3,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 1,
+          "unknown": 0,
+          "scored_wakes": 4,
+          "loss_sufficiency_nats": 7.0131157946399645,
+          "loss_background_nats": 0.4214420626313051,
+          "loss_prequential_mixture_nats": 1.1132184410574717,
+          "bayes_factor": 0.0013717421124828518,
+          "posterior": 0.001369863013698629,
+          "updates": [
+            {
+              "day": 0,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 2,
+              "known_trigger": true,
+              "advance_probability_before": 0.18,
+              "advanced": false,
+              "posterior_after": 0.012195121951219506
+            },
+            {
+              "day": 3,
+              "known_trigger": true,
+              "advance_probability_before": 0.10975609756097561,
+              "advanced": false,
+              "posterior_after": 0.001369863013698629
+            }
+          ],
+          "source_only_posterior": 0.09999999999999998,
+          "rialto_only_from_fresh_prior": 0.012195121951219506,
+          "one_affirmative_exposure_only_posterior": 0.09999999999999998,
+          "expected_bits_for_one_new_observed_trigger": 0.0034642957078658276,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.000145772594752187,
+            "b=0.05,err=0.10": 0.0011649919906800634,
+            "b=0.05,err=0.20": 0.009244547161635124,
+            "b=0.10,err=0.05": 0.00017143836790673805,
+            "b=0.10,err=0.10": 0.001369863013698629,
+            "b=0.10,err=0.20": 0.010854816824966071,
+            "b=0.25,err=0.05": 0.00029620853080568804,
+            "b=0.25,err=0.10": 0.002364765001477976,
+            "b=0.25,err=0.20": 0.018610061064262853
+          }
+        },
+        "phone": {
+          "observed_triggers": 2,
+          "trigger_then_reset": 2,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 2,
+          "unknown": 0,
+          "scored_wakes": 4,
+          "loss_sufficiency_nats": 4.8158912173037445,
+          "loss_background_nats": 0.4214420626313051,
+          "loss_prequential_mixture_nats": 1.102319150599436,
+          "bayes_factor": 0.012345679012345675,
+          "posterior": 0.012195121951219506,
+          "updates": [
+            {
+              "day": 0,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 3,
+              "known_trigger": true,
+              "advance_probability_before": 0.18,
+              "advanced": false,
+              "posterior_after": 0.012195121951219506
+            }
+          ],
+          "source_only_posterior": 0.09999999999999998,
+          "rialto_only_from_fresh_prior": 0.09999999999999998,
+          "one_affirmative_exposure_only_posterior": 0.09999999999999998,
+          "expected_bits_for_one_new_observed_trigger": 0.030184242599265,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.0027624309392265244,
+            "b=0.05,err=0.10": 0.010958904109589036,
+            "b=0.05,err=0.20": 0.04244031830238725,
+            "b=0.10,err=0.05": 0.0030769230769230834,
+            "b=0.10,err=0.10": 0.012195121951219506,
+            "b=0.10,err=0.20": 0.04705882352941174,
+            "b=0.25,err=0.05": 0.004424778761061955,
+            "b=0.25,err=0.10": 0.017467248908296932,
+            "b=0.25,err=0.20": 0.0663900414937759
+          }
+        },
+        "rehearsal": {
+          "observed_triggers": 1,
+          "trigger_then_reset": 1,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 2,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 2.5133061243096986,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.9038682118755978,
+          "bayes_factor": 0.11111111111111109,
+          "posterior": 0.09999999999999998,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.09999999999999998,
+          "one_affirmative_exposure_only_posterior": 0.09999999999999998,
+          "expected_bits_for_one_new_observed_trigger": 0.21108145213899854,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.050000000000000044,
+            "b=0.05,err=0.10": 0.09523809523809522,
+            "b=0.05,err=0.20": 0.17391304347826084,
+            "b=0.10,err=0.05": 0.052631578947368474,
+            "b=0.10,err=0.10": 0.09999999999999998,
+            "b=0.10,err=0.20": 0.1818181818181818,
+            "b=0.25,err=0.05": 0.06250000000000006,
+            "b=0.25,err=0.10": 0.11764705882352937,
+            "b=0.25,err=0.20": 0.21052631578947364
+          }
+        },
+        "dance": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 3,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 0.31608154697347884,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.31608154697347884,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        },
+        "driver": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 3,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 0.31608154697347884,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.31608154697347884,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        },
+        "personal_recording": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 3,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 0.31608154697347884,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.31608154697347884,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        },
+        "station_ack": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 0,
+          "unknown": 4,
+          "scored_wakes": 0,
+          "loss_sufficiency_nats": 0.0,
+          "loss_background_nats": 0.0,
+          "loss_prequential_mixture_nats": 0.0,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        },
+        "recipient_known_at_start": {
+          "observed_triggers": 1,
+          "trigger_then_reset": 1,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 2,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 2.5133061243096986,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.9038682118755978,
+          "bayes_factor": 0.11111111111111109,
+          "posterior": 0.09999999999999998,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.09999999999999998,
+          "one_affirmative_exposure_only_posterior": 0.09999999999999998,
+          "expected_bits_for_one_new_observed_trigger": 0.21108145213899854,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.050000000000000044,
+            "b=0.05,err=0.10": 0.09523809523809523,
+            "b=0.05,err=0.20": 0.17391304347826084,
+            "b=0.10,err=0.05": 0.052631578947368474,
+            "b=0.10,err=0.10": 0.09999999999999998,
+            "b=0.10,err=0.20": 0.18181818181818177,
+            "b=0.25,err=0.05": 0.06250000000000006,
+            "b=0.25,err=0.10": 0.11764705882352937,
+            "b=0.25,err=0.20": 0.21052631578947364
+          }
+        },
+        "public_piano": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 3,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 0.31608154697347884,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.31608154697347884,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        }
+      },
+      "candidate_probes": [
+        {
+          "proposed_action": "help_driver",
+          "tested_rule": "driver",
+          "posterior_before": 0.5,
+          "information_bits_if_enacted_and_witnessed": 0.5310044064107189,
+          "information_bits_if_enactment_and_witnessing_probability_is_half": 0.26550220320535944
+        },
+        {
+          "proposed_action": "record_Alma",
+          "tested_rule": "personal_recording",
+          "posterior_before": 0.5,
+          "information_bits_if_enacted_and_witnessed": 0.5310044064107189,
+          "information_bits_if_enactment_and_witnessing_probability_is_half": 0.26550220320535944
+        },
+        {
+          "proposed_action": "rehearse_piano",
+          "tested_rule": "rehearsal",
+          "posterior_before": 0.09999999999999998,
+          "information_bits_if_enacted_and_witnessed": 0.21108145213899854,
+          "information_bits_if_enactment_and_witnessing_probability_is_half": 0.10554072606949927
+        },
+        {
+          "proposed_action": "ask_Rita_to_dance",
+          "tested_rule": "dance",
+          "posterior_before": 0.5,
+          "information_bits_if_enacted_and_witnessed": 0.5310044064107189,
+          "information_bits_if_enactment_and_witnessing_probability_is_half": 0.26550220320535944
+        }
+      ],
+      "dated_receipt_assumption_sensitivity": {
+        "assumption": "Only if the first visible receipt timestamps the preceding day",
+        "first_visible_after_days": [
+          2
+        ],
+        "retrospective_sufficiency_evidence": {
+          "observed_triggers": 1,
+          "trigger_then_reset": 1,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 0,
+          "unknown": 0,
+          "scored_wakes": 1,
+          "loss_sufficiency_nats": 2.302585092994046,
+          "loss_background_nats": 0.10536051565782628,
+          "loss_prequential_mixture_nats": 0.6931471805599453,
+          "bayes_factor": 0.11111111111111109,
+          "posterior": 0.09999999999999998,
+          "updates": [
+            {
+              "day": 2,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            }
+          ]
+        },
+        "excluded_from_primary_forecasts": true
+      }
+    },
+    "721-library": {
+      "source_sha256": "19f8b6adc09939de232998eeb9de31fc207f289f2e513f8f33f76f2b4c0181ae",
+      "wakes": [
+        {
+          "day_just_ended": 0,
+          "source": "last-reel/runs/721-library/take.json#days[0].afternoon.reporter.messages[user]",
+          "phil_user_message_sha256": "703bd8ca66cae3a14fa28cefb4d3bd520640bf53bb5e320144b21a347779fdf7",
+          "date": "Tuesday, February 2, 2016",
+          "advanced": false,
+          "afternoon_witness": "Phil uses the paid ticket and rides the coach all the way to Pittsburgh..",
+          "evening_witness": "You reached your sister from the terminal payphone. She confirmed the van booking for Wednesday.",
+          "recipient_confirmation_at_wake": "not_visible",
+          "recipient_confirmation_quote": null,
+          "another_delivery_on_this_specific_day": "unknown",
+          "exposure": {
+            "coach": "observed",
+            "phone": "observed",
+            "rehearsal": "unknown",
+            "dance": "unknown",
+            "driver": "unknown",
+            "personal_recording": "unknown",
+            "station_ack": "unknown",
+            "recipient_known_at_start": "unknown",
+            "public_piano": "unknown"
+          }
+        },
+        {
+          "day_just_ended": 1,
+          "source": "last-reel/runs/721-library/take.json#days[1].afternoon.reporter.messages[user]",
+          "phil_user_message_sha256": "2ecad960039000e50f98206ccc071cbb481dcdcc4fe989ad98fb960873e9f9f7",
+          "date": "Tuesday, February 2, 2016",
+          "advanced": false,
+          "afternoon_witness": "Phil rides the coach and steps off at Pittsburgh.",
+          "evening_witness": "Phil calls his sister in Pittsburgh. The van is still booked for Wednesday.",
+          "recipient_confirmation_at_wake": "first_visible",
+          "recipient_confirmation_quote": "An envelope has arrived from Pittsburgh. Alma's daughter sent a receipt for a recorded interview. The line copied her reply: 'I know that voice. Play it again.'",
+          "another_delivery_on_this_specific_day": "unknown",
+          "exposure": {
+            "coach": "observed",
+            "phone": "observed",
+            "rehearsal": "no_recorded_attempt",
+            "dance": "no_recorded_attempt",
+            "driver": "no_recorded_attempt",
+            "personal_recording": "no_recorded_attempt",
+            "station_ack": "unknown",
+            "recipient_known_at_start": "no_recorded_attempt",
+            "public_piano": "no_recorded_attempt"
+          }
+        },
+        {
+          "day_just_ended": 2,
+          "source": "last-reel/runs/721-library/take.json#days[2].afternoon.reporter.messages[user]",
+          "phil_user_message_sha256": "ade99388db3ee87958dd7a6e042a734532b7f5c53ed088ce41691d91b9ca9eaf",
+          "date": "Tuesday, February 2, 2016",
+          "advanced": false,
+          "afternoon_witness": "Phil rides the coach and steps off at Pittsburgh.",
+          "evening_witness": "Phil sleeps on the Pittsburgh terminal bench.",
+          "recipient_confirmation_at_wake": "already_seen",
+          "recipient_confirmation_quote": "An envelope has arrived from Pittsburgh. Alma's daughter sent a receipt for a recorded interview. The line copied her reply: 'I know that voice. Play it again.'",
+          "another_delivery_on_this_specific_day": "unknown",
+          "exposure": {
+            "coach": "observed",
+            "phone": "no_recorded_attempt",
+            "rehearsal": "no_recorded_attempt",
+            "dance": "no_recorded_attempt",
+            "driver": "no_recorded_attempt",
+            "personal_recording": "no_recorded_attempt",
+            "station_ack": "unknown",
+            "recipient_known_at_start": "observed",
+            "public_piano": "no_recorded_attempt"
+          }
+        },
+        {
+          "day_just_ended": 3,
+          "source": "last-reel/runs/721-library/take.json#last_alarm.messages[user]",
+          "phil_user_message_sha256": "6320d8c8605866ea29f703c9050f015859dc7840e43705d9fe95464fa5dbeac4",
+          "date": "Tuesday, February 2, 2016",
+          "advanced": false,
+          "afternoon_witness": "Phil rides the coach and steps off at Pittsburgh.",
+          "evening_witness": "Phil sleeps on the Pittsburgh terminal bench.",
+          "recipient_confirmation_at_wake": "already_seen",
+          "recipient_confirmation_quote": "An envelope has arrived from Pittsburgh. Alma's daughter sent a receipt for a recorded interview. The line copied her reply: 'I know that voice. Play it again.'",
+          "another_delivery_on_this_specific_day": "unknown",
+          "exposure": {
+            "coach": "observed",
+            "phone": "no_recorded_attempt",
+            "rehearsal": "no_recorded_attempt",
+            "dance": "no_recorded_attempt",
+            "driver": "no_recorded_attempt",
+            "personal_recording": "no_recorded_attempt",
+            "station_ack": "unknown",
+            "recipient_known_at_start": "observed",
+            "public_piano": "no_recorded_attempt"
+          }
+        }
+      ],
+      "rule_beliefs": {
+        "coach": {
+          "observed_triggers": 4,
+          "trigger_then_reset": 4,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 0,
+          "unknown": 0,
+          "scored_wakes": 4,
+          "loss_sufficiency_nats": 9.210340371976184,
+          "loss_background_nats": 0.4214420626313051,
+          "loss_prequential_mixture_nats": 1.114436839015081,
+          "bayes_factor": 0.00015241579027587248,
+          "posterior": 0.00015239256324291357,
+          "updates": [
+            {
+              "day": 0,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 1,
+              "known_trigger": true,
+              "advance_probability_before": 0.18,
+              "advanced": false,
+              "posterior_after": 0.012195121951219506
+            },
+            {
+              "day": 2,
+              "known_trigger": true,
+              "advance_probability_before": 0.10975609756097561,
+              "advanced": false,
+              "posterior_after": 0.001369863013698629
+            },
+            {
+              "day": 3,
+              "known_trigger": true,
+              "advance_probability_before": 0.1010958904109589,
+              "advanced": false,
+              "posterior_after": 0.00015239256324291357
+            }
+          ],
+          "source_only_posterior": 0.09999999999999998,
+          "rialto_only_from_fresh_prior": 0.001369863013698629,
+          "one_affirmative_exposure_only_posterior": 0.09999999999999998,
+          "expected_bits_for_one_new_observed_trigger": 0.00038633931318943215,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 7.673301514709748e-06,
+            "b=0.05,err=0.10": 0.0001227586947681778,
+            "b=0.05,err=0.20": 0.0019605290365071935,
+            "b=0.10,err=0.05": 9.525896148680224e-06,
+            "b=0.10,err=0.10": 0.00015239256324291357,
+            "b=0.10,err=0.20": 0.0024327200851452005,
+            "b=0.25,err=0.05": 1.9752696243037246e-05,
+            "b=0.25,err=0.10": 0.00031594952706305135,
+            "b=0.25,err=0.20": 0.005031347654330688
+          }
+        },
+        "phone": {
+          "observed_triggers": 2,
+          "trigger_then_reset": 2,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 2,
+          "unknown": 0,
+          "scored_wakes": 4,
+          "loss_sufficiency_nats": 4.815891217303744,
+          "loss_background_nats": 0.4214420626313051,
+          "loss_prequential_mixture_nats": 1.102319150599436,
+          "bayes_factor": 0.012345679012345685,
+          "posterior": 0.012195121951219506,
+          "updates": [
+            {
+              "day": 0,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 1,
+              "known_trigger": true,
+              "advance_probability_before": 0.18,
+              "advanced": false,
+              "posterior_after": 0.012195121951219506
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.012195121951219506
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.012195121951219506
+            }
+          ],
+          "source_only_posterior": 0.09999999999999998,
+          "rialto_only_from_fresh_prior": 0.09999999999999998,
+          "one_affirmative_exposure_only_posterior": 0.09999999999999998,
+          "expected_bits_for_one_new_observed_trigger": 0.030184242599265,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.0027624309392265244,
+            "b=0.05,err=0.10": 0.010958904109589038,
+            "b=0.05,err=0.20": 0.04244031830238725,
+            "b=0.10,err=0.05": 0.0030769230769230834,
+            "b=0.10,err=0.10": 0.012195121951219506,
+            "b=0.10,err=0.20": 0.04705882352941174,
+            "b=0.25,err=0.05": 0.004424778761061955,
+            "b=0.25,err=0.10": 0.017467248908296932,
+            "b=0.25,err=0.20": 0.0663900414937759
+          }
+        },
+        "rehearsal": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 3,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 0.31608154697347884,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.31608154697347884,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        },
+        "dance": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 3,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 0.31608154697347884,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.31608154697347884,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        },
+        "driver": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 3,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 0.31608154697347884,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.31608154697347884,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        },
+        "personal_recording": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 3,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 0.31608154697347884,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.31608154697347884,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        },
+        "station_ack": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 0,
+          "unknown": 4,
+          "scored_wakes": 0,
+          "loss_sufficiency_nats": 0.0,
+          "loss_background_nats": 0.0,
+          "loss_prequential_mixture_nats": 0.0,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        },
+        "recipient_known_at_start": {
+          "observed_triggers": 2,
+          "trigger_then_reset": 2,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 1,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 4.710530701645919,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.9969586349416097,
+          "bayes_factor": 0.012345679012345663,
+          "posterior": 0.012195121951219506,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 3,
+              "known_trigger": true,
+              "advance_probability_before": 0.18,
+              "advanced": false,
+              "posterior_after": 0.012195121951219506
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.012195121951219506,
+          "one_affirmative_exposure_only_posterior": 0.09999999999999998,
+          "expected_bits_for_one_new_observed_trigger": 0.030184242599265,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.0027624309392265244,
+            "b=0.05,err=0.10": 0.010958904109589038,
+            "b=0.05,err=0.20": 0.04244031830238725,
+            "b=0.10,err=0.05": 0.0030769230769230834,
+            "b=0.10,err=0.10": 0.012195121951219506,
+            "b=0.10,err=0.20": 0.04705882352941174,
+            "b=0.25,err=0.05": 0.004424778761061955,
+            "b=0.25,err=0.10": 0.017467248908296932,
+            "b=0.25,err=0.20": 0.0663900414937759
+          }
+        },
+        "public_piano": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 3,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 0.31608154697347884,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.31608154697347884,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        }
+      },
+      "candidate_probes": [
+        {
+          "proposed_action": "help_driver",
+          "tested_rule": "driver",
+          "posterior_before": 0.5,
+          "information_bits_if_enacted_and_witnessed": 0.5310044064107189,
+          "information_bits_if_enactment_and_witnessing_probability_is_half": 0.26550220320535944
+        },
+        {
+          "proposed_action": "record_Alma",
+          "tested_rule": "personal_recording",
+          "posterior_before": 0.5,
+          "information_bits_if_enacted_and_witnessed": 0.5310044064107189,
+          "information_bits_if_enactment_and_witnessing_probability_is_half": 0.26550220320535944
+        },
+        {
+          "proposed_action": "rehearse_piano",
+          "tested_rule": "rehearsal",
+          "posterior_before": 0.5,
+          "information_bits_if_enacted_and_witnessed": 0.5310044064107189,
+          "information_bits_if_enactment_and_witnessing_probability_is_half": 0.26550220320535944
+        },
+        {
+          "proposed_action": "ask_Rita_to_dance",
+          "tested_rule": "dance",
+          "posterior_before": 0.5,
+          "information_bits_if_enacted_and_witnessed": 0.5310044064107189,
+          "information_bits_if_enactment_and_witnessing_probability_is_half": 0.26550220320535944
+        }
+      ],
+      "dated_receipt_assumption_sensitivity": {
+        "assumption": "Only if the first visible receipt timestamps the preceding day",
+        "first_visible_after_days": [
+          1
+        ],
+        "retrospective_sufficiency_evidence": {
+          "observed_triggers": 1,
+          "trigger_then_reset": 1,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 0,
+          "unknown": 0,
+          "scored_wakes": 1,
+          "loss_sufficiency_nats": 2.302585092994046,
+          "loss_background_nats": 0.10536051565782628,
+          "loss_prequential_mixture_nats": 0.6931471805599453,
+          "bayes_factor": 0.11111111111111109,
+          "posterior": 0.09999999999999998,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            }
+          ]
+        },
+        "excluded_from_primary_forecasts": true
+      }
+    },
+    "721-uncued": {
+      "source_sha256": "24f61d80a28e80e181a348950c1080ab282c24306da73aae578c9101507e628c",
+      "wakes": [
+        {
+          "day_just_ended": 0,
+          "source": "last-reel/runs/721-uncued/take.json#days[0].afternoon.reporter.messages[user]",
+          "phil_user_message_sha256": "b408c709c27141f9ab4e5d1822fada1a0e4e9eca1e038e8ffcd30f3c323b89de",
+          "date": "Tuesday, February 2, 2016",
+          "advanced": false,
+          "afternoon_witness": "Phil uses the paid ticket and rides the coach all the way to Pittsburgh..",
+          "evening_witness": "You reached your sister from the terminal payphone. She confirmed the van booking for Wednesday.",
+          "recipient_confirmation_at_wake": "not_visible",
+          "recipient_confirmation_quote": null,
+          "another_delivery_on_this_specific_day": "unknown",
+          "exposure": {
+            "coach": "observed",
+            "phone": "observed",
+            "rehearsal": "unknown",
+            "dance": "unknown",
+            "driver": "unknown",
+            "personal_recording": "unknown",
+            "station_ack": "unknown",
+            "recipient_known_at_start": "unknown",
+            "public_piano": "unknown"
+          }
+        },
+        {
+          "day_just_ended": 1,
+          "source": "last-reel/runs/721-uncued/take.json#days[1].afternoon.reporter.messages[user]",
+          "phil_user_message_sha256": "d1d81c2a981b2548397496b35cfd323d0101e6863b4a62d79065a3d0a295fd8e",
+          "date": "Tuesday, February 2, 2016",
+          "advanced": false,
+          "afternoon_witness": "Phil rides the coach and steps off at Pittsburgh.",
+          "evening_witness": "Phil calls his sister in Pittsburgh. The van is still booked for Wednesday.",
+          "recipient_confirmation_at_wake": "first_visible",
+          "recipient_confirmation_quote": "An envelope has arrived from Pittsburgh. Alma's daughter sent a receipt for a recorded interview. The line copied her reply: 'I know that voice. Play it again.'",
+          "another_delivery_on_this_specific_day": "unknown",
+          "exposure": {
+            "coach": "observed",
+            "phone": "observed",
+            "rehearsal": "no_recorded_attempt",
+            "dance": "no_recorded_attempt",
+            "driver": "no_recorded_attempt",
+            "personal_recording": "no_recorded_attempt",
+            "station_ack": "unknown",
+            "recipient_known_at_start": "no_recorded_attempt",
+            "public_piano": "no_recorded_attempt"
+          }
+        },
+        {
+          "day_just_ended": 2,
+          "source": "last-reel/runs/721-uncued/take.json#days[2].afternoon.reporter.messages[user]",
+          "phil_user_message_sha256": "4f827dd00b262df034135abf32a462ac01c6c77e30f2af9ffad94a768eafc81b",
+          "date": "Tuesday, February 2, 2016",
+          "advanced": false,
+          "afternoon_witness": "Phil rides the coach and steps off at Pittsburgh.",
+          "evening_witness": "Phil sleeps on the Pittsburgh terminal bench.",
+          "recipient_confirmation_at_wake": "already_seen",
+          "recipient_confirmation_quote": "An envelope has arrived from Pittsburgh. Alma's daughter sent a receipt for a recorded interview. The line copied her reply: 'I know that voice. Play it again.'",
+          "another_delivery_on_this_specific_day": "unknown",
+          "exposure": {
+            "coach": "observed",
+            "phone": "no_recorded_attempt",
+            "rehearsal": "no_recorded_attempt",
+            "dance": "no_recorded_attempt",
+            "driver": "no_recorded_attempt",
+            "personal_recording": "no_recorded_attempt",
+            "station_ack": "unknown",
+            "recipient_known_at_start": "observed",
+            "public_piano": "no_recorded_attempt"
+          }
+        },
+        {
+          "day_just_ended": 3,
+          "source": "last-reel/runs/721-uncued/take.json#last_alarm.messages[user]",
+          "phil_user_message_sha256": "b83c3532ecfbd43a08bc726c2cedb9fa3cbe19b30e6dc09820b48cebfbcdac80",
+          "date": "Tuesday, February 2, 2016",
+          "advanced": false,
+          "afternoon_witness": "Phil rides the coach and steps off at Pittsburgh.",
+          "evening_witness": "Phil sleeps on the Pittsburgh terminal bench.",
+          "recipient_confirmation_at_wake": "already_seen",
+          "recipient_confirmation_quote": "An envelope has arrived from Pittsburgh. Alma's daughter sent a receipt for a recorded interview. The line copied her reply: 'I know that voice. Play it again.'",
+          "another_delivery_on_this_specific_day": "unknown",
+          "exposure": {
+            "coach": "observed",
+            "phone": "no_recorded_attempt",
+            "rehearsal": "no_recorded_attempt",
+            "dance": "no_recorded_attempt",
+            "driver": "no_recorded_attempt",
+            "personal_recording": "no_recorded_attempt",
+            "station_ack": "unknown",
+            "recipient_known_at_start": "observed",
+            "public_piano": "no_recorded_attempt"
+          }
+        }
+      ],
+      "rule_beliefs": {
+        "coach": {
+          "observed_triggers": 4,
+          "trigger_then_reset": 4,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 0,
+          "unknown": 0,
+          "scored_wakes": 4,
+          "loss_sufficiency_nats": 9.210340371976184,
+          "loss_background_nats": 0.4214420626313051,
+          "loss_prequential_mixture_nats": 1.114436839015081,
+          "bayes_factor": 0.00015241579027587248,
+          "posterior": 0.00015239256324291357,
+          "updates": [
+            {
+              "day": 0,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 1,
+              "known_trigger": true,
+              "advance_probability_before": 0.18,
+              "advanced": false,
+              "posterior_after": 0.012195121951219506
+            },
+            {
+              "day": 2,
+              "known_trigger": true,
+              "advance_probability_before": 0.10975609756097561,
+              "advanced": false,
+              "posterior_after": 0.001369863013698629
+            },
+            {
+              "day": 3,
+              "known_trigger": true,
+              "advance_probability_before": 0.1010958904109589,
+              "advanced": false,
+              "posterior_after": 0.00015239256324291357
+            }
+          ],
+          "source_only_posterior": 0.09999999999999998,
+          "rialto_only_from_fresh_prior": 0.001369863013698629,
+          "one_affirmative_exposure_only_posterior": 0.09999999999999998,
+          "expected_bits_for_one_new_observed_trigger": 0.00038633931318943215,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 7.673301514709748e-06,
+            "b=0.05,err=0.10": 0.0001227586947681778,
+            "b=0.05,err=0.20": 0.0019605290365071935,
+            "b=0.10,err=0.05": 9.525896148680224e-06,
+            "b=0.10,err=0.10": 0.00015239256324291357,
+            "b=0.10,err=0.20": 0.0024327200851452005,
+            "b=0.25,err=0.05": 1.9752696243037246e-05,
+            "b=0.25,err=0.10": 0.00031594952706305135,
+            "b=0.25,err=0.20": 0.005031347654330688
+          }
+        },
+        "phone": {
+          "observed_triggers": 2,
+          "trigger_then_reset": 2,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 2,
+          "unknown": 0,
+          "scored_wakes": 4,
+          "loss_sufficiency_nats": 4.815891217303744,
+          "loss_background_nats": 0.4214420626313051,
+          "loss_prequential_mixture_nats": 1.102319150599436,
+          "bayes_factor": 0.012345679012345685,
+          "posterior": 0.012195121951219506,
+          "updates": [
+            {
+              "day": 0,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 1,
+              "known_trigger": true,
+              "advance_probability_before": 0.18,
+              "advanced": false,
+              "posterior_after": 0.012195121951219506
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.012195121951219506
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.012195121951219506
+            }
+          ],
+          "source_only_posterior": 0.09999999999999998,
+          "rialto_only_from_fresh_prior": 0.09999999999999998,
+          "one_affirmative_exposure_only_posterior": 0.09999999999999998,
+          "expected_bits_for_one_new_observed_trigger": 0.030184242599265,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.0027624309392265244,
+            "b=0.05,err=0.10": 0.010958904109589038,
+            "b=0.05,err=0.20": 0.04244031830238725,
+            "b=0.10,err=0.05": 0.0030769230769230834,
+            "b=0.10,err=0.10": 0.012195121951219506,
+            "b=0.10,err=0.20": 0.04705882352941174,
+            "b=0.25,err=0.05": 0.004424778761061955,
+            "b=0.25,err=0.10": 0.017467248908296932,
+            "b=0.25,err=0.20": 0.0663900414937759
+          }
+        },
+        "rehearsal": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 3,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 0.31608154697347884,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.31608154697347884,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        },
+        "dance": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 3,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 0.31608154697347884,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.31608154697347884,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        },
+        "driver": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 3,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 0.31608154697347884,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.31608154697347884,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        },
+        "personal_recording": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 3,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 0.31608154697347884,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.31608154697347884,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        },
+        "station_ack": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 0,
+          "unknown": 4,
+          "scored_wakes": 0,
+          "loss_sufficiency_nats": 0.0,
+          "loss_background_nats": 0.0,
+          "loss_prequential_mixture_nats": 0.0,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        },
+        "recipient_known_at_start": {
+          "observed_triggers": 2,
+          "trigger_then_reset": 2,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 1,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 4.710530701645919,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.9969586349416097,
+          "bayes_factor": 0.012345679012345663,
+          "posterior": 0.012195121951219506,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 3,
+              "known_trigger": true,
+              "advance_probability_before": 0.18,
+              "advanced": false,
+              "posterior_after": 0.012195121951219506
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.012195121951219506,
+          "one_affirmative_exposure_only_posterior": 0.09999999999999998,
+          "expected_bits_for_one_new_observed_trigger": 0.030184242599265,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.0027624309392265244,
+            "b=0.05,err=0.10": 0.010958904109589038,
+            "b=0.05,err=0.20": 0.04244031830238725,
+            "b=0.10,err=0.05": 0.0030769230769230834,
+            "b=0.10,err=0.10": 0.012195121951219506,
+            "b=0.10,err=0.20": 0.04705882352941174,
+            "b=0.25,err=0.05": 0.004424778761061955,
+            "b=0.25,err=0.10": 0.017467248908296932,
+            "b=0.25,err=0.20": 0.0663900414937759
+          }
+        },
+        "public_piano": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 3,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 0.31608154697347884,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.31608154697347884,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        }
+      },
+      "candidate_probes": [
+        {
+          "proposed_action": "help_driver",
+          "tested_rule": "driver",
+          "posterior_before": 0.5,
+          "information_bits_if_enacted_and_witnessed": 0.5310044064107189,
+          "information_bits_if_enactment_and_witnessing_probability_is_half": 0.26550220320535944
+        },
+        {
+          "proposed_action": "record_Alma",
+          "tested_rule": "personal_recording",
+          "posterior_before": 0.5,
+          "information_bits_if_enacted_and_witnessed": 0.5310044064107189,
+          "information_bits_if_enactment_and_witnessing_probability_is_half": 0.26550220320535944
+        },
+        {
+          "proposed_action": "rehearse_piano",
+          "tested_rule": "rehearsal",
+          "posterior_before": 0.5,
+          "information_bits_if_enacted_and_witnessed": 0.5310044064107189,
+          "information_bits_if_enactment_and_witnessing_probability_is_half": 0.26550220320535944
+        },
+        {
+          "proposed_action": "ask_Rita_to_dance",
+          "tested_rule": "dance",
+          "posterior_before": 0.5,
+          "information_bits_if_enacted_and_witnessed": 0.5310044064107189,
+          "information_bits_if_enactment_and_witnessing_probability_is_half": 0.26550220320535944
+        }
+      ],
+      "dated_receipt_assumption_sensitivity": {
+        "assumption": "Only if the first visible receipt timestamps the preceding day",
+        "first_visible_after_days": [
+          1
+        ],
+        "retrospective_sufficiency_evidence": {
+          "observed_triggers": 1,
+          "trigger_then_reset": 1,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 0,
+          "unknown": 0,
+          "scored_wakes": 1,
+          "loss_sufficiency_nats": 2.302585092994046,
+          "loss_background_nats": 0.10536051565782628,
+          "loss_prequential_mixture_nats": 0.6931471805599453,
+          "bayes_factor": 0.11111111111111109,
+          "posterior": 0.09999999999999998,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            }
+          ]
+        },
+        "excluded_from_primary_forecasts": true
+      }
+    },
+    "731-hypothesis": {
+      "source_sha256": "183ffd640548b73dbe83eea3efc6901b16405fc3258685de44b1e4e0970e8ead",
+      "wakes": [
+        {
+          "day_just_ended": 0,
+          "source": "last-reel/runs/731-hypothesis/take.json#days[0].afternoon.reporter.messages[user]",
+          "phil_user_message_sha256": "658b58c8c8dd25efd105c9919a1a5af3a724fef19b36555ec82caa460ddd77c9",
+          "date": "Tuesday, February 2, 2016",
+          "advanced": false,
+          "afternoon_witness": "Phil uses the paid ticket and rides the coach all the way to Pittsburgh..",
+          "evening_witness": "You reached your sister from the terminal payphone. She confirmed the van booking for Wednesday.",
+          "recipient_confirmation_at_wake": "not_visible",
+          "recipient_confirmation_quote": null,
+          "another_delivery_on_this_specific_day": "unknown",
+          "exposure": {
+            "coach": "observed",
+            "phone": "observed",
+            "rehearsal": "unknown",
+            "dance": "unknown",
+            "driver": "unknown",
+            "personal_recording": "unknown",
+            "station_ack": "unknown",
+            "recipient_known_at_start": "unknown",
+            "public_piano": "unknown"
+          }
+        },
+        {
+          "day_just_ended": 1,
+          "source": "last-reel/runs/731-hypothesis/take.json#days[1].afternoon.reporter.messages[user]",
+          "phil_user_message_sha256": "5639512b64339389dff70140e1d708a788c6a357ef91c4e7d063ed5f81244c5a",
+          "date": "Tuesday, February 2, 2016",
+          "advanced": false,
+          "afternoon_witness": "Phil plays the last eight bars until he can get through them.",
+          "evening_witness": "Phil sits on the empty depot bench.",
+          "recipient_confirmation_at_wake": "first_visible",
+          "recipient_confirmation_quote": "An envelope has arrived from Pittsburgh. Alma's daughter sent a receipt for a recorded interview. The line copied her reply: 'I know that voice. Play it again.'",
+          "another_delivery_on_this_specific_day": "unknown",
+          "exposure": {
+            "coach": "no_recorded_attempt",
+            "phone": "no_recorded_attempt",
+            "rehearsal": "observed",
+            "dance": "no_recorded_attempt",
+            "driver": "no_recorded_attempt",
+            "personal_recording": "no_recorded_attempt",
+            "station_ack": "unknown",
+            "recipient_known_at_start": "no_recorded_attempt",
+            "public_piano": "no_recorded_attempt"
+          }
+        },
+        {
+          "day_just_ended": 2,
+          "source": "last-reel/runs/731-hypothesis/take.json#days[2].afternoon.reporter.messages[user]",
+          "phil_user_message_sha256": "7e5f6d3e425c598c50fb8f30485a9e35e86eb532d8fd7a28b14ff289bd6149e5",
+          "date": "Tuesday, February 2, 2016",
+          "advanced": false,
+          "afternoon_witness": "Phil stays in the hotel lobby.",
+          "evening_witness": "Phil lets the evening go by in bed alone.",
+          "recipient_confirmation_at_wake": "already_seen",
+          "recipient_confirmation_quote": "An envelope has arrived from Pittsburgh. Alma's daughter sent a receipt for a recorded interview. The line copied her reply: 'I know that voice. Play it again.'",
+          "another_delivery_on_this_specific_day": "unknown",
+          "exposure": {
+            "coach": "no_recorded_attempt",
+            "phone": "no_recorded_attempt",
+            "rehearsal": "no_recorded_attempt",
+            "dance": "no_recorded_attempt",
+            "driver": "no_recorded_attempt",
+            "personal_recording": "no_recorded_attempt",
+            "station_ack": "unknown",
+            "recipient_known_at_start": "observed",
+            "public_piano": "no_recorded_attempt"
+          }
+        },
+        {
+          "day_just_ended": 3,
+          "source": "last-reel/runs/731-hypothesis/take.json#last_alarm.messages[user]",
+          "phil_user_message_sha256": "cc401e827b2218b5d3ced91666c9ba04b44868b2971c1d6411fdb315729c2d95",
+          "date": "Tuesday, February 2, 2016",
+          "advanced": false,
+          "afternoon_witness": "Phil records Alma's interview and leaves it at the patch.",
+          "evening_witness": "Phil waits at the empty Rialto booth.",
+          "recipient_confirmation_at_wake": "already_seen",
+          "recipient_confirmation_quote": "An envelope has arrived from Pittsburgh. Alma's daughter sent a receipt for a recorded interview. The line copied her reply: 'I know that voice. Play it again.'",
+          "another_delivery_on_this_specific_day": "unknown",
+          "exposure": {
+            "coach": "no_recorded_attempt",
+            "phone": "no_recorded_attempt",
+            "rehearsal": "no_recorded_attempt",
+            "dance": "no_recorded_attempt",
+            "driver": "no_recorded_attempt",
+            "personal_recording": "observed",
+            "station_ack": "unknown",
+            "recipient_known_at_start": "observed",
+            "public_piano": "no_recorded_attempt"
+          }
+        }
+      ],
+      "rule_beliefs": {
+        "coach": {
+          "observed_triggers": 1,
+          "trigger_then_reset": 1,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 3,
+          "unknown": 0,
+          "scored_wakes": 4,
+          "loss_sufficiency_nats": 2.618666639967525,
+          "loss_background_nats": 0.4214420626313051,
+          "loss_prequential_mixture_nats": 1.0092287275334242,
+          "bayes_factor": 0.11111111111111104,
+          "posterior": 0.09999999999999998,
+          "updates": [
+            {
+              "day": 0,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            }
+          ],
+          "source_only_posterior": 0.09999999999999998,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.09999999999999998,
+          "expected_bits_for_one_new_observed_trigger": 0.21108145213899854,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.050000000000000044,
+            "b=0.05,err=0.10": 0.09523809523809522,
+            "b=0.05,err=0.20": 0.17391304347826084,
+            "b=0.10,err=0.05": 0.052631578947368474,
+            "b=0.10,err=0.10": 0.09999999999999998,
+            "b=0.10,err=0.20": 0.1818181818181818,
+            "b=0.25,err=0.05": 0.06250000000000006,
+            "b=0.25,err=0.10": 0.11764705882352937,
+            "b=0.25,err=0.20": 0.21052631578947364
+          }
+        },
+        "phone": {
+          "observed_triggers": 1,
+          "trigger_then_reset": 1,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 3,
+          "unknown": 0,
+          "scored_wakes": 4,
+          "loss_sufficiency_nats": 2.618666639967525,
+          "loss_background_nats": 0.4214420626313051,
+          "loss_prequential_mixture_nats": 1.0092287275334242,
+          "bayes_factor": 0.11111111111111104,
+          "posterior": 0.09999999999999998,
+          "updates": [
+            {
+              "day": 0,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            }
+          ],
+          "source_only_posterior": 0.09999999999999998,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.09999999999999998,
+          "expected_bits_for_one_new_observed_trigger": 0.21108145213899854,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.050000000000000044,
+            "b=0.05,err=0.10": 0.09523809523809522,
+            "b=0.05,err=0.20": 0.17391304347826084,
+            "b=0.10,err=0.05": 0.052631578947368474,
+            "b=0.10,err=0.10": 0.09999999999999998,
+            "b=0.10,err=0.20": 0.1818181818181818,
+            "b=0.25,err=0.05": 0.06250000000000006,
+            "b=0.25,err=0.10": 0.11764705882352937,
+            "b=0.25,err=0.20": 0.21052631578947364
+          }
+        },
+        "rehearsal": {
+          "observed_triggers": 1,
+          "trigger_then_reset": 1,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 2,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 2.5133061243096986,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.9038682118755978,
+          "bayes_factor": 0.11111111111111109,
+          "posterior": 0.09999999999999998,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.09999999999999998,
+          "one_affirmative_exposure_only_posterior": 0.09999999999999998,
+          "expected_bits_for_one_new_observed_trigger": 0.21108145213899854,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.050000000000000044,
+            "b=0.05,err=0.10": 0.09523809523809522,
+            "b=0.05,err=0.20": 0.17391304347826084,
+            "b=0.10,err=0.05": 0.052631578947368474,
+            "b=0.10,err=0.10": 0.09999999999999998,
+            "b=0.10,err=0.20": 0.1818181818181818,
+            "b=0.25,err=0.05": 0.06250000000000006,
+            "b=0.25,err=0.10": 0.11764705882352937,
+            "b=0.25,err=0.20": 0.21052631578947364
+          }
+        },
+        "dance": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 3,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 0.31608154697347884,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.31608154697347884,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        },
+        "driver": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 3,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 0.31608154697347884,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.31608154697347884,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        },
+        "personal_recording": {
+          "observed_triggers": 1,
+          "trigger_then_reset": 1,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 2,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 2.5133061243096986,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.9038682118755978,
+          "bayes_factor": 0.11111111111111109,
+          "posterior": 0.09999999999999998,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.09999999999999998,
+          "one_affirmative_exposure_only_posterior": 0.09999999999999998,
+          "expected_bits_for_one_new_observed_trigger": 0.21108145213899854,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.050000000000000044,
+            "b=0.05,err=0.10": 0.09523809523809523,
+            "b=0.05,err=0.20": 0.17391304347826084,
+            "b=0.10,err=0.05": 0.052631578947368474,
+            "b=0.10,err=0.10": 0.09999999999999998,
+            "b=0.10,err=0.20": 0.18181818181818177,
+            "b=0.25,err=0.05": 0.06250000000000006,
+            "b=0.25,err=0.10": 0.11764705882352937,
+            "b=0.25,err=0.20": 0.21052631578947364
+          }
+        },
+        "station_ack": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 0,
+          "unknown": 4,
+          "scored_wakes": 0,
+          "loss_sufficiency_nats": 0.0,
+          "loss_background_nats": 0.0,
+          "loss_prequential_mixture_nats": 0.0,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        },
+        "recipient_known_at_start": {
+          "observed_triggers": 2,
+          "trigger_then_reset": 2,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 1,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 4.710530701645919,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.9969586349416097,
+          "bayes_factor": 0.012345679012345663,
+          "posterior": 0.012195121951219506,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 3,
+              "known_trigger": true,
+              "advance_probability_before": 0.18,
+              "advanced": false,
+              "posterior_after": 0.012195121951219506
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.012195121951219506,
+          "one_affirmative_exposure_only_posterior": 0.09999999999999998,
+          "expected_bits_for_one_new_observed_trigger": 0.030184242599265,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.0027624309392265244,
+            "b=0.05,err=0.10": 0.010958904109589038,
+            "b=0.05,err=0.20": 0.04244031830238725,
+            "b=0.10,err=0.05": 0.0030769230769230834,
+            "b=0.10,err=0.10": 0.012195121951219506,
+            "b=0.10,err=0.20": 0.04705882352941174,
+            "b=0.25,err=0.05": 0.004424778761061955,
+            "b=0.25,err=0.10": 0.017467248908296932,
+            "b=0.25,err=0.20": 0.0663900414937759
+          }
+        },
+        "public_piano": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 3,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 0.31608154697347884,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.31608154697347884,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        }
+      },
+      "candidate_probes": [
+        {
+          "proposed_action": "help_driver",
+          "tested_rule": "driver",
+          "posterior_before": 0.5,
+          "information_bits_if_enacted_and_witnessed": 0.5310044064107189,
+          "information_bits_if_enactment_and_witnessing_probability_is_half": 0.26550220320535944
+        },
+        {
+          "proposed_action": "record_Alma",
+          "tested_rule": "personal_recording",
+          "posterior_before": 0.09999999999999998,
+          "information_bits_if_enacted_and_witnessed": 0.21108145213899854,
+          "information_bits_if_enactment_and_witnessing_probability_is_half": 0.10554072606949927
+        },
+        {
+          "proposed_action": "rehearse_piano",
+          "tested_rule": "rehearsal",
+          "posterior_before": 0.09999999999999998,
+          "information_bits_if_enacted_and_witnessed": 0.21108145213899854,
+          "information_bits_if_enactment_and_witnessing_probability_is_half": 0.10554072606949927
+        },
+        {
+          "proposed_action": "ask_Rita_to_dance",
+          "tested_rule": "dance",
+          "posterior_before": 0.5,
+          "information_bits_if_enacted_and_witnessed": 0.5310044064107189,
+          "information_bits_if_enactment_and_witnessing_probability_is_half": 0.26550220320535944
+        }
+      ],
+      "dated_receipt_assumption_sensitivity": {
+        "assumption": "Only if the first visible receipt timestamps the preceding day",
+        "first_visible_after_days": [
+          1
+        ],
+        "retrospective_sufficiency_evidence": {
+          "observed_triggers": 1,
+          "trigger_then_reset": 1,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 0,
+          "unknown": 0,
+          "scored_wakes": 1,
+          "loss_sufficiency_nats": 2.302585092994046,
+          "loss_background_nats": 0.10536051565782628,
+          "loss_prequential_mixture_nats": 0.6931471805599453,
+          "bayes_factor": 0.11111111111111109,
+          "posterior": 0.09999999999999998,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            }
+          ]
+        },
+        "excluded_from_primary_forecasts": true
+      }
+    },
+    "731-library": {
+      "source_sha256": "79bb3871cf945834b6a1961d7d0f927a2b2f22f543c609a58172f546958f62b8",
+      "wakes": [
+        {
+          "day_just_ended": 0,
+          "source": "last-reel/runs/731-library/take.json#days[0].afternoon.reporter.messages[user]",
+          "phil_user_message_sha256": "6016bf4e239a67a1edf694c32b212bea068eea8b258f2b0a8cb8938cbac7d55a",
+          "date": "Tuesday, February 2, 2016",
+          "advanced": false,
+          "afternoon_witness": "Phil uses the paid ticket and rides the coach all the way to Pittsburgh..",
+          "evening_witness": "You reached your sister from the terminal payphone. She confirmed the van booking for Wednesday.",
+          "recipient_confirmation_at_wake": "not_visible",
+          "recipient_confirmation_quote": null,
+          "another_delivery_on_this_specific_day": "unknown",
+          "exposure": {
+            "coach": "observed",
+            "phone": "observed",
+            "rehearsal": "unknown",
+            "dance": "unknown",
+            "driver": "unknown",
+            "personal_recording": "unknown",
+            "station_ack": "unknown",
+            "recipient_known_at_start": "unknown",
+            "public_piano": "unknown"
+          }
+        },
+        {
+          "day_just_ended": 1,
+          "source": "last-reel/runs/731-library/take.json#days[1].afternoon.reporter.messages[user]",
+          "phil_user_message_sha256": "3364ed417da78f02bc0899ba5c18bd9c9d92926d1063dce5958029f21d3eaf84",
+          "date": "Tuesday, February 2, 2016",
+          "advanced": false,
+          "afternoon_witness": "Phil rides the coach and steps off at Pittsburgh.",
+          "evening_witness": "Phil calls his sister in Pittsburgh. The van is still booked for Wednesday.",
+          "recipient_confirmation_at_wake": "first_visible",
+          "recipient_confirmation_quote": "An envelope has arrived from Pittsburgh. Alma's daughter sent a receipt for a recorded interview. The line copied her reply: 'I know that voice. Play it again.'",
+          "another_delivery_on_this_specific_day": "unknown",
+          "exposure": {
+            "coach": "observed",
+            "phone": "observed",
+            "rehearsal": "no_recorded_attempt",
+            "dance": "no_recorded_attempt",
+            "driver": "no_recorded_attempt",
+            "personal_recording": "no_recorded_attempt",
+            "station_ack": "unknown",
+            "recipient_known_at_start": "no_recorded_attempt",
+            "public_piano": "no_recorded_attempt"
+          }
+        },
+        {
+          "day_just_ended": 2,
+          "source": "last-reel/runs/731-library/take.json#days[2].afternoon.reporter.messages[user]",
+          "phil_user_message_sha256": "bce64c47448cd8a41df7ba757808c29fb677566300e1ebc661a9dfd405af786c",
+          "date": "Tuesday, February 2, 2016",
+          "advanced": false,
+          "afternoon_witness": "Phil records Alma's interview and leaves it at the patch.",
+          "evening_witness": "Phil waits at the empty Rialto booth.",
+          "recipient_confirmation_at_wake": "already_seen",
+          "recipient_confirmation_quote": "An envelope has arrived from Pittsburgh. Alma's daughter sent a receipt for a recorded interview. The line copied her reply: 'I know that voice. Play it again.'",
+          "another_delivery_on_this_specific_day": "unknown",
+          "exposure": {
+            "coach": "no_recorded_attempt",
+            "phone": "no_recorded_attempt",
+            "rehearsal": "no_recorded_attempt",
+            "dance": "no_recorded_attempt",
+            "driver": "no_recorded_attempt",
+            "personal_recording": "observed",
+            "station_ack": "unknown",
+            "recipient_known_at_start": "observed",
+            "public_piano": "no_recorded_attempt"
+          }
+        },
+        {
+          "day_just_ended": 3,
+          "source": "last-reel/runs/731-library/take.json#last_alarm.messages[user]",
+          "phil_user_message_sha256": "531409c3f86e6a4873da0f32da31cfde06c7fb9d0b14555b8c0ef60e4d092093",
+          "date": "Tuesday, February 2, 2016",
+          "advanced": false,
+          "afternoon_witness": "Phil changes the flat. The driver gets back on the road.",
+          "evening_witness": "Phil plays the piano at the ballroom.",
+          "recipient_confirmation_at_wake": "already_seen",
+          "recipient_confirmation_quote": "An envelope has arrived from Pittsburgh. Alma's daughter sent a receipt for a recorded interview. The line copied her reply: 'I know that voice. Play it again.'",
+          "another_delivery_on_this_specific_day": "unknown",
+          "exposure": {
+            "coach": "no_recorded_attempt",
+            "phone": "no_recorded_attempt",
+            "rehearsal": "no_recorded_attempt",
+            "dance": "unknown",
+            "driver": "observed",
+            "personal_recording": "no_recorded_attempt",
+            "station_ack": "unknown",
+            "recipient_known_at_start": "observed",
+            "public_piano": "observed"
+          }
+        }
+      ],
+      "rule_beliefs": {
+        "coach": {
+          "observed_triggers": 2,
+          "trigger_then_reset": 2,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 2,
+          "unknown": 0,
+          "scored_wakes": 4,
+          "loss_sufficiency_nats": 4.815891217303744,
+          "loss_background_nats": 0.4214420626313051,
+          "loss_prequential_mixture_nats": 1.102319150599436,
+          "bayes_factor": 0.012345679012345685,
+          "posterior": 0.012195121951219506,
+          "updates": [
+            {
+              "day": 0,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 1,
+              "known_trigger": true,
+              "advance_probability_before": 0.18,
+              "advanced": false,
+              "posterior_after": 0.012195121951219506
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.012195121951219506
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.012195121951219506
+            }
+          ],
+          "source_only_posterior": 0.09999999999999998,
+          "rialto_only_from_fresh_prior": 0.09999999999999998,
+          "one_affirmative_exposure_only_posterior": 0.09999999999999998,
+          "expected_bits_for_one_new_observed_trigger": 0.030184242599265,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.0027624309392265244,
+            "b=0.05,err=0.10": 0.010958904109589038,
+            "b=0.05,err=0.20": 0.04244031830238725,
+            "b=0.10,err=0.05": 0.0030769230769230834,
+            "b=0.10,err=0.10": 0.012195121951219506,
+            "b=0.10,err=0.20": 0.04705882352941174,
+            "b=0.25,err=0.05": 0.004424778761061955,
+            "b=0.25,err=0.10": 0.017467248908296932,
+            "b=0.25,err=0.20": 0.0663900414937759
+          }
+        },
+        "phone": {
+          "observed_triggers": 2,
+          "trigger_then_reset": 2,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 2,
+          "unknown": 0,
+          "scored_wakes": 4,
+          "loss_sufficiency_nats": 4.815891217303744,
+          "loss_background_nats": 0.4214420626313051,
+          "loss_prequential_mixture_nats": 1.102319150599436,
+          "bayes_factor": 0.012345679012345685,
+          "posterior": 0.012195121951219506,
+          "updates": [
+            {
+              "day": 0,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 1,
+              "known_trigger": true,
+              "advance_probability_before": 0.18,
+              "advanced": false,
+              "posterior_after": 0.012195121951219506
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.012195121951219506
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.012195121951219506
+            }
+          ],
+          "source_only_posterior": 0.09999999999999998,
+          "rialto_only_from_fresh_prior": 0.09999999999999998,
+          "one_affirmative_exposure_only_posterior": 0.09999999999999998,
+          "expected_bits_for_one_new_observed_trigger": 0.030184242599265,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.0027624309392265244,
+            "b=0.05,err=0.10": 0.010958904109589038,
+            "b=0.05,err=0.20": 0.04244031830238725,
+            "b=0.10,err=0.05": 0.0030769230769230834,
+            "b=0.10,err=0.10": 0.012195121951219506,
+            "b=0.10,err=0.20": 0.04705882352941174,
+            "b=0.25,err=0.05": 0.004424778761061955,
+            "b=0.25,err=0.10": 0.017467248908296932,
+            "b=0.25,err=0.20": 0.0663900414937759
+          }
+        },
+        "rehearsal": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 3,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 0.31608154697347884,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.31608154697347884,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        },
+        "dance": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 2,
+          "unknown": 2,
+          "scored_wakes": 2,
+          "loss_sufficiency_nats": 0.21072103131565256,
+          "loss_background_nats": 0.21072103131565256,
+          "loss_prequential_mixture_nats": 0.21072103131565256,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        },
+        "driver": {
+          "observed_triggers": 1,
+          "trigger_then_reset": 1,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 2,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 2.5133061243096986,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.9038682118755978,
+          "bayes_factor": 0.11111111111111109,
+          "posterior": 0.09999999999999998,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.09999999999999998,
+          "one_affirmative_exposure_only_posterior": 0.09999999999999998,
+          "expected_bits_for_one_new_observed_trigger": 0.21108145213899854,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.050000000000000044,
+            "b=0.05,err=0.10": 0.09523809523809523,
+            "b=0.05,err=0.20": 0.17391304347826084,
+            "b=0.10,err=0.05": 0.052631578947368474,
+            "b=0.10,err=0.10": 0.09999999999999998,
+            "b=0.10,err=0.20": 0.18181818181818177,
+            "b=0.25,err=0.05": 0.06250000000000006,
+            "b=0.25,err=0.10": 0.11764705882352937,
+            "b=0.25,err=0.20": 0.21052631578947364
+          }
+        },
+        "personal_recording": {
+          "observed_triggers": 1,
+          "trigger_then_reset": 1,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 2,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 2.5133061243096986,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.9038682118755978,
+          "bayes_factor": 0.11111111111111109,
+          "posterior": 0.09999999999999998,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.09999999999999998,
+          "one_affirmative_exposure_only_posterior": 0.09999999999999998,
+          "expected_bits_for_one_new_observed_trigger": 0.21108145213899854,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.050000000000000044,
+            "b=0.05,err=0.10": 0.09523809523809522,
+            "b=0.05,err=0.20": 0.17391304347826084,
+            "b=0.10,err=0.05": 0.052631578947368474,
+            "b=0.10,err=0.10": 0.09999999999999998,
+            "b=0.10,err=0.20": 0.1818181818181818,
+            "b=0.25,err=0.05": 0.06250000000000006,
+            "b=0.25,err=0.10": 0.11764705882352937,
+            "b=0.25,err=0.20": 0.21052631578947364
+          }
+        },
+        "station_ack": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 0,
+          "unknown": 4,
+          "scored_wakes": 0,
+          "loss_sufficiency_nats": 0.0,
+          "loss_background_nats": 0.0,
+          "loss_prequential_mixture_nats": 0.0,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        },
+        "recipient_known_at_start": {
+          "observed_triggers": 2,
+          "trigger_then_reset": 2,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 1,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 4.710530701645919,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.9969586349416097,
+          "bayes_factor": 0.012345679012345663,
+          "posterior": 0.012195121951219506,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 3,
+              "known_trigger": true,
+              "advance_probability_before": 0.18,
+              "advanced": false,
+              "posterior_after": 0.012195121951219506
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.012195121951219506,
+          "one_affirmative_exposure_only_posterior": 0.09999999999999998,
+          "expected_bits_for_one_new_observed_trigger": 0.030184242599265,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.0027624309392265244,
+            "b=0.05,err=0.10": 0.010958904109589038,
+            "b=0.05,err=0.20": 0.04244031830238725,
+            "b=0.10,err=0.05": 0.0030769230769230834,
+            "b=0.10,err=0.10": 0.012195121951219506,
+            "b=0.10,err=0.20": 0.04705882352941174,
+            "b=0.25,err=0.05": 0.004424778761061955,
+            "b=0.25,err=0.10": 0.017467248908296932,
+            "b=0.25,err=0.20": 0.0663900414937759
+          }
+        },
+        "public_piano": {
+          "observed_triggers": 1,
+          "trigger_then_reset": 1,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 2,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 2.5133061243096986,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.9038682118755978,
+          "bayes_factor": 0.11111111111111109,
+          "posterior": 0.09999999999999998,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.09999999999999998,
+          "one_affirmative_exposure_only_posterior": 0.09999999999999998,
+          "expected_bits_for_one_new_observed_trigger": 0.21108145213899854,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.050000000000000044,
+            "b=0.05,err=0.10": 0.09523809523809523,
+            "b=0.05,err=0.20": 0.17391304347826084,
+            "b=0.10,err=0.05": 0.052631578947368474,
+            "b=0.10,err=0.10": 0.09999999999999998,
+            "b=0.10,err=0.20": 0.18181818181818177,
+            "b=0.25,err=0.05": 0.06250000000000006,
+            "b=0.25,err=0.10": 0.11764705882352937,
+            "b=0.25,err=0.20": 0.21052631578947364
+          }
+        }
+      },
+      "candidate_probes": [
+        {
+          "proposed_action": "help_driver",
+          "tested_rule": "driver",
+          "posterior_before": 0.09999999999999998,
+          "information_bits_if_enacted_and_witnessed": 0.21108145213899854,
+          "information_bits_if_enactment_and_witnessing_probability_is_half": 0.10554072606949927
+        },
+        {
+          "proposed_action": "record_Alma",
+          "tested_rule": "personal_recording",
+          "posterior_before": 0.09999999999999998,
+          "information_bits_if_enacted_and_witnessed": 0.21108145213899854,
+          "information_bits_if_enactment_and_witnessing_probability_is_half": 0.10554072606949927
+        },
+        {
+          "proposed_action": "rehearse_piano",
+          "tested_rule": "rehearsal",
+          "posterior_before": 0.5,
+          "information_bits_if_enacted_and_witnessed": 0.5310044064107189,
+          "information_bits_if_enactment_and_witnessing_probability_is_half": 0.26550220320535944
+        },
+        {
+          "proposed_action": "ask_Rita_to_dance",
+          "tested_rule": "dance",
+          "posterior_before": 0.5,
+          "information_bits_if_enacted_and_witnessed": 0.5310044064107189,
+          "information_bits_if_enactment_and_witnessing_probability_is_half": 0.26550220320535944
+        }
+      ],
+      "dated_receipt_assumption_sensitivity": {
+        "assumption": "Only if the first visible receipt timestamps the preceding day",
+        "first_visible_after_days": [
+          1
+        ],
+        "retrospective_sufficiency_evidence": {
+          "observed_triggers": 1,
+          "trigger_then_reset": 1,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 0,
+          "unknown": 0,
+          "scored_wakes": 1,
+          "loss_sufficiency_nats": 2.302585092994046,
+          "loss_background_nats": 0.10536051565782628,
+          "loss_prequential_mixture_nats": 0.6931471805599453,
+          "bayes_factor": 0.11111111111111109,
+          "posterior": 0.09999999999999998,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            }
+          ]
+        },
+        "excluded_from_primary_forecasts": true
+      }
+    },
+    "731-uncued": {
+      "source_sha256": "a72c968196be33c1e0fedb753648792055ff5421be5a0f3b6dd0ea9578621ec0",
+      "wakes": [
+        {
+          "day_just_ended": 0,
+          "source": "last-reel/runs/731-uncued/take.json#days[0].afternoon.reporter.messages[user]",
+          "phil_user_message_sha256": "658b58c8c8dd25efd105c9919a1a5af3a724fef19b36555ec82caa460ddd77c9",
+          "date": "Tuesday, February 2, 2016",
+          "advanced": false,
+          "afternoon_witness": "Phil uses the paid ticket and rides the coach all the way to Pittsburgh..",
+          "evening_witness": "You reached your sister from the terminal payphone. She confirmed the van booking for Wednesday.",
+          "recipient_confirmation_at_wake": "not_visible",
+          "recipient_confirmation_quote": null,
+          "another_delivery_on_this_specific_day": "unknown",
+          "exposure": {
+            "coach": "observed",
+            "phone": "observed",
+            "rehearsal": "unknown",
+            "dance": "unknown",
+            "driver": "unknown",
+            "personal_recording": "unknown",
+            "station_ack": "unknown",
+            "recipient_known_at_start": "unknown",
+            "public_piano": "unknown"
+          }
+        },
+        {
+          "day_just_ended": 1,
+          "source": "last-reel/runs/731-uncued/take.json#days[1].afternoon.reporter.messages[user]",
+          "phil_user_message_sha256": "cdeb64a8c9e2f73702d1375a3510d654a4f94aefeae988c7c156d53df7452c12",
+          "date": "Tuesday, February 2, 2016",
+          "advanced": false,
+          "afternoon_witness": "Phil pockets the contents of the crew fare envelope. The envelope is empty.",
+          "evening_witness": "Phil lets the evening go by in bed alone.",
+          "recipient_confirmation_at_wake": "first_visible",
+          "recipient_confirmation_quote": "An envelope has arrived from Pittsburgh. Alma's daughter sent a receipt for a recorded interview. The line copied her reply: 'I know that voice. Play it again.'",
+          "another_delivery_on_this_specific_day": "unknown",
+          "exposure": {
+            "coach": "no_recorded_attempt",
+            "phone": "no_recorded_attempt",
+            "rehearsal": "no_recorded_attempt",
+            "dance": "no_recorded_attempt",
+            "driver": "no_recorded_attempt",
+            "personal_recording": "no_recorded_attempt",
+            "station_ack": "unknown",
+            "recipient_known_at_start": "no_recorded_attempt",
+            "public_piano": "no_recorded_attempt"
+          }
+        },
+        {
+          "day_just_ended": 2,
+          "source": "last-reel/runs/731-uncued/take.json#days[2].afternoon.reporter.messages[user]",
+          "phil_user_message_sha256": "4fb88e466308db34ac7e7d94b9273b98057e79d02a90fd7a606523c14467a0e9",
+          "date": "Tuesday, February 2, 2016",
+          "advanced": false,
+          "afternoon_witness": "Phil rides the coach and steps off at Pittsburgh.",
+          "evening_witness": "Phil calls his sister in Pittsburgh. The van is still booked for Wednesday.",
+          "recipient_confirmation_at_wake": "already_seen",
+          "recipient_confirmation_quote": "An envelope has arrived from Pittsburgh. Alma's daughter sent a receipt for a recorded interview. The line copied her reply: 'I know that voice. Play it again.'",
+          "another_delivery_on_this_specific_day": "unknown",
+          "exposure": {
+            "coach": "observed",
+            "phone": "observed",
+            "rehearsal": "no_recorded_attempt",
+            "dance": "no_recorded_attempt",
+            "driver": "no_recorded_attempt",
+            "personal_recording": "no_recorded_attempt",
+            "station_ack": "unknown",
+            "recipient_known_at_start": "observed",
+            "public_piano": "no_recorded_attempt"
+          }
+        },
+        {
+          "day_just_ended": 3,
+          "source": "last-reel/runs/731-uncued/take.json#last_alarm.messages[user]",
+          "phil_user_message_sha256": "96b54adab1b8eb5d1ba0577c6763a57bc82eeeb2d9eb3bcc38936b948c2e8fb2",
+          "date": "Tuesday, February 2, 2016",
+          "advanced": false,
+          "afternoon_witness": "Phil closes the curtains and spends the afternoon in bed.",
+          "evening_witness": "Phil attends the festival party.",
+          "recipient_confirmation_at_wake": "already_seen",
+          "recipient_confirmation_quote": "An envelope has arrived from Pittsburgh. Alma's daughter sent a receipt for a recorded interview. The line copied her reply: 'I know that voice. Play it again.'",
+          "another_delivery_on_this_specific_day": "unknown",
+          "exposure": {
+            "coach": "no_recorded_attempt",
+            "phone": "no_recorded_attempt",
+            "rehearsal": "no_recorded_attempt",
+            "dance": "unknown",
+            "driver": "no_recorded_attempt",
+            "personal_recording": "no_recorded_attempt",
+            "station_ack": "unknown",
+            "recipient_known_at_start": "observed",
+            "public_piano": "no_recorded_attempt"
+          }
+        }
+      ],
+      "rule_beliefs": {
+        "coach": {
+          "observed_triggers": 2,
+          "trigger_then_reset": 2,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 2,
+          "unknown": 0,
+          "scored_wakes": 4,
+          "loss_sufficiency_nats": 4.8158912173037445,
+          "loss_background_nats": 0.4214420626313051,
+          "loss_prequential_mixture_nats": 1.102319150599436,
+          "bayes_factor": 0.012345679012345675,
+          "posterior": 0.012195121951219506,
+          "updates": [
+            {
+              "day": 0,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 2,
+              "known_trigger": true,
+              "advance_probability_before": 0.18,
+              "advanced": false,
+              "posterior_after": 0.012195121951219506
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.012195121951219506
+            }
+          ],
+          "source_only_posterior": 0.09999999999999998,
+          "rialto_only_from_fresh_prior": 0.09999999999999998,
+          "one_affirmative_exposure_only_posterior": 0.09999999999999998,
+          "expected_bits_for_one_new_observed_trigger": 0.030184242599265,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.0027624309392265244,
+            "b=0.05,err=0.10": 0.010958904109589036,
+            "b=0.05,err=0.20": 0.04244031830238725,
+            "b=0.10,err=0.05": 0.0030769230769230834,
+            "b=0.10,err=0.10": 0.012195121951219506,
+            "b=0.10,err=0.20": 0.04705882352941174,
+            "b=0.25,err=0.05": 0.004424778761061955,
+            "b=0.25,err=0.10": 0.017467248908296932,
+            "b=0.25,err=0.20": 0.0663900414937759
+          }
+        },
+        "phone": {
+          "observed_triggers": 2,
+          "trigger_then_reset": 2,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 2,
+          "unknown": 0,
+          "scored_wakes": 4,
+          "loss_sufficiency_nats": 4.8158912173037445,
+          "loss_background_nats": 0.4214420626313051,
+          "loss_prequential_mixture_nats": 1.102319150599436,
+          "bayes_factor": 0.012345679012345675,
+          "posterior": 0.012195121951219506,
+          "updates": [
+            {
+              "day": 0,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 2,
+              "known_trigger": true,
+              "advance_probability_before": 0.18,
+              "advanced": false,
+              "posterior_after": 0.012195121951219506
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.012195121951219506
+            }
+          ],
+          "source_only_posterior": 0.09999999999999998,
+          "rialto_only_from_fresh_prior": 0.09999999999999998,
+          "one_affirmative_exposure_only_posterior": 0.09999999999999998,
+          "expected_bits_for_one_new_observed_trigger": 0.030184242599265,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.0027624309392265244,
+            "b=0.05,err=0.10": 0.010958904109589036,
+            "b=0.05,err=0.20": 0.04244031830238725,
+            "b=0.10,err=0.05": 0.0030769230769230834,
+            "b=0.10,err=0.10": 0.012195121951219506,
+            "b=0.10,err=0.20": 0.04705882352941174,
+            "b=0.25,err=0.05": 0.004424778761061955,
+            "b=0.25,err=0.10": 0.017467248908296932,
+            "b=0.25,err=0.20": 0.0663900414937759
+          }
+        },
+        "rehearsal": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 3,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 0.31608154697347884,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.31608154697347884,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        },
+        "dance": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 2,
+          "unknown": 2,
+          "scored_wakes": 2,
+          "loss_sufficiency_nats": 0.21072103131565256,
+          "loss_background_nats": 0.21072103131565256,
+          "loss_prequential_mixture_nats": 0.21072103131565256,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        },
+        "driver": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 3,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 0.31608154697347884,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.31608154697347884,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        },
+        "personal_recording": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 3,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 0.31608154697347884,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.31608154697347884,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        },
+        "station_ack": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 0,
+          "unknown": 4,
+          "scored_wakes": 0,
+          "loss_sufficiency_nats": 0.0,
+          "loss_background_nats": 0.0,
+          "loss_prequential_mixture_nats": 0.0,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        },
+        "recipient_known_at_start": {
+          "observed_triggers": 2,
+          "trigger_then_reset": 2,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 1,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 4.710530701645919,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.9969586349416097,
+          "bayes_factor": 0.012345679012345663,
+          "posterior": 0.012195121951219506,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            },
+            {
+              "day": 3,
+              "known_trigger": true,
+              "advance_probability_before": 0.18,
+              "advanced": false,
+              "posterior_after": 0.012195121951219506
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.012195121951219506,
+          "one_affirmative_exposure_only_posterior": 0.09999999999999998,
+          "expected_bits_for_one_new_observed_trigger": 0.030184242599265,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.0027624309392265244,
+            "b=0.05,err=0.10": 0.010958904109589038,
+            "b=0.05,err=0.20": 0.04244031830238725,
+            "b=0.10,err=0.05": 0.0030769230769230834,
+            "b=0.10,err=0.10": 0.012195121951219506,
+            "b=0.10,err=0.20": 0.04705882352941174,
+            "b=0.25,err=0.05": 0.004424778761061955,
+            "b=0.25,err=0.10": 0.017467248908296932,
+            "b=0.25,err=0.20": 0.0663900414937759
+          }
+        },
+        "public_piano": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 3,
+          "unknown": 1,
+          "scored_wakes": 3,
+          "loss_sufficiency_nats": 0.31608154697347884,
+          "loss_background_nats": 0.31608154697347884,
+          "loss_prequential_mixture_nats": 0.31608154697347884,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            },
+            {
+              "day": 3,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ],
+          "source_only_posterior": 0.5,
+          "rialto_only_from_fresh_prior": 0.5,
+          "one_affirmative_exposure_only_posterior": 0.5,
+          "expected_bits_for_one_new_observed_trigger": 0.5310044064107189,
+          "sensitivity_posterior": {
+            "b=0.05,err=0.05": 0.5,
+            "b=0.05,err=0.10": 0.5,
+            "b=0.05,err=0.20": 0.5,
+            "b=0.10,err=0.05": 0.5,
+            "b=0.10,err=0.10": 0.5,
+            "b=0.10,err=0.20": 0.5,
+            "b=0.25,err=0.05": 0.5,
+            "b=0.25,err=0.10": 0.5,
+            "b=0.25,err=0.20": 0.5
+          }
+        }
+      },
+      "candidate_probes": [
+        {
+          "proposed_action": "help_driver",
+          "tested_rule": "driver",
+          "posterior_before": 0.5,
+          "information_bits_if_enacted_and_witnessed": 0.5310044064107189,
+          "information_bits_if_enactment_and_witnessing_probability_is_half": 0.26550220320535944
+        },
+        {
+          "proposed_action": "record_Alma",
+          "tested_rule": "personal_recording",
+          "posterior_before": 0.5,
+          "information_bits_if_enacted_and_witnessed": 0.5310044064107189,
+          "information_bits_if_enactment_and_witnessing_probability_is_half": 0.26550220320535944
+        },
+        {
+          "proposed_action": "rehearse_piano",
+          "tested_rule": "rehearsal",
+          "posterior_before": 0.5,
+          "information_bits_if_enacted_and_witnessed": 0.5310044064107189,
+          "information_bits_if_enactment_and_witnessing_probability_is_half": 0.26550220320535944
+        },
+        {
+          "proposed_action": "ask_Rita_to_dance",
+          "tested_rule": "dance",
+          "posterior_before": 0.5,
+          "information_bits_if_enacted_and_witnessed": 0.5310044064107189,
+          "information_bits_if_enactment_and_witnessing_probability_is_half": 0.26550220320535944
+        }
+      ],
+      "dated_receipt_assumption_sensitivity": {
+        "assumption": "Only if the first visible receipt timestamps the preceding day",
+        "first_visible_after_days": [
+          1
+        ],
+        "retrospective_sufficiency_evidence": {
+          "observed_triggers": 1,
+          "trigger_then_reset": 1,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 0,
+          "unknown": 0,
+          "scored_wakes": 1,
+          "loss_sufficiency_nats": 2.302585092994046,
+          "loss_background_nats": 0.10536051565782628,
+          "loss_prequential_mixture_nats": 0.6931471805599453,
+          "bayes_factor": 0.11111111111111109,
+          "posterior": 0.09999999999999998,
+          "updates": [
+            {
+              "day": 1,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            }
+          ]
+        },
+        "excluded_from_primary_forecasts": true
+      }
+    }
+  },
+  "matched_epilogue": {
+    "tuesday": {
+      "source_run": "721-hypothesis",
+      "source_day": 2,
+      "source_take_sha256_at_fork": "b7500bd631c2a27cbf43ae396b48ee28247e665c77d7707acd8207390340f3ea",
+      "actor_wake": {
+        "day_just_ended": 2,
+        "source": "last-reel/epilogues/tuesday/reporter.json#messages[user]",
+        "phil_user_message_sha256": "fa0da85e241c6d012b246b980e29f17f21bb1416267f518042498d854bd22c73",
+        "date": "Tuesday, February 2, 2016",
+        "advanced": false,
+        "afternoon_witness": "Phil rides the coach and steps off at Pittsburgh.",
+        "evening_witness": "Phil sleeps on the Pittsburgh terminal bench.",
+        "recipient_confirmation_at_wake": "first_visible",
+        "recipient_confirmation_quote": "You are at the hotel lobby. A copy of a received telegram is at your hand: Alma's daughter in Pittsburgh has the whole interview. Her reply is 'I know that voice. Play it again.'",
+        "another_delivery_on_this_specific_day": "unknown",
+        "exposure": {
+          "coach": "observed",
+          "phone": "no_recorded_attempt",
+          "rehearsal": "no_recorded_attempt",
+          "dance": "no_recorded_attempt",
+          "driver": "no_recorded_attempt",
+          "personal_recording": "no_recorded_attempt",
+          "station_ack": "unknown",
+          "recipient_known_at_start": "no_recorded_attempt",
+          "public_piano": "no_recorded_attempt"
+        }
+      },
+      "one_wake_from_fresh_prior": {
+        "coach": {
+          "observed_triggers": 1,
+          "trigger_then_reset": 1,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 0,
+          "unknown": 0,
+          "scored_wakes": 1,
+          "loss_sufficiency_nats": 2.302585092994046,
+          "loss_background_nats": 0.10536051565782628,
+          "loss_prequential_mixture_nats": 0.6931471805599453,
+          "bayes_factor": 0.11111111111111109,
+          "posterior": 0.09999999999999998,
+          "updates": [
+            {
+              "day": 2,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            }
+          ]
+        },
+        "phone": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 1,
+          "unknown": 0,
+          "scored_wakes": 1,
+          "loss_sufficiency_nats": 0.10536051565782628,
+          "loss_background_nats": 0.10536051565782628,
+          "loss_prequential_mixture_nats": 0.10536051565782628,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ]
+        },
+        "rehearsal": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 1,
+          "unknown": 0,
+          "scored_wakes": 1,
+          "loss_sufficiency_nats": 0.10536051565782628,
+          "loss_background_nats": 0.10536051565782628,
+          "loss_prequential_mixture_nats": 0.10536051565782628,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ]
+        },
+        "dance": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 1,
+          "unknown": 0,
+          "scored_wakes": 1,
+          "loss_sufficiency_nats": 0.10536051565782628,
+          "loss_background_nats": 0.10536051565782628,
+          "loss_prequential_mixture_nats": 0.10536051565782628,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ]
+        },
+        "driver": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 1,
+          "unknown": 0,
+          "scored_wakes": 1,
+          "loss_sufficiency_nats": 0.10536051565782628,
+          "loss_background_nats": 0.10536051565782628,
+          "loss_prequential_mixture_nats": 0.10536051565782628,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ]
+        },
+        "personal_recording": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 1,
+          "unknown": 0,
+          "scored_wakes": 1,
+          "loss_sufficiency_nats": 0.10536051565782628,
+          "loss_background_nats": 0.10536051565782628,
+          "loss_prequential_mixture_nats": 0.10536051565782628,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ]
+        },
+        "station_ack": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 0,
+          "unknown": 1,
+          "scored_wakes": 0,
+          "loss_sufficiency_nats": 0.0,
+          "loss_background_nats": 0.0,
+          "loss_prequential_mixture_nats": 0.0,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": []
+        },
+        "recipient_known_at_start": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 1,
+          "unknown": 0,
+          "scored_wakes": 1,
+          "loss_sufficiency_nats": 0.10536051565782628,
+          "loss_background_nats": 0.10536051565782628,
+          "loss_prequential_mixture_nats": 0.10536051565782628,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ]
+        },
+        "public_piano": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 1,
+          "unknown": 0,
+          "scored_wakes": 1,
+          "loss_sufficiency_nats": 0.10536051565782628,
+          "loss_background_nats": 0.10536051565782628,
+          "loss_prequential_mixture_nats": 0.10536051565782628,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": false,
+              "posterior_after": 0.5
+            }
+          ]
+        }
+      },
+      "posterior_with_same_prior_prefix": {
+        "coach": 0.012195121951219506,
+        "phone": 0.09999999999999998,
+        "rehearsal": 0.09999999999999998,
+        "dance": 0.5,
+        "driver": 0.5,
+        "personal_recording": 0.5,
+        "station_ack": 0.5,
+        "recipient_known_at_start": 0.5,
+        "public_piano": 0.5
+      },
+      "analyst_calendar_label": "closed Tuesday",
+      "dated_receipt_assumption_sensitivity": {
+        "assumption": "Only if the first visible receipt timestamps the preceding day",
+        "first_visible_after_days": [
+          2
+        ],
+        "retrospective_sufficiency_evidence": {
+          "observed_triggers": 1,
+          "trigger_then_reset": 1,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 0,
+          "unknown": 0,
+          "scored_wakes": 1,
+          "loss_sufficiency_nats": 2.302585092994046,
+          "loss_background_nats": 0.10536051565782628,
+          "loss_prequential_mixture_nats": 0.6931471805599453,
+          "bayes_factor": 0.11111111111111109,
+          "posterior": 0.09999999999999998,
+          "updates": [
+            {
+              "day": 2,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": false,
+              "posterior_after": 0.09999999999999998
+            }
+          ]
+        },
+        "excluded_from_primary_forecasts": true
+      }
+    },
+    "wednesday": {
+      "source_run": "721-hypothesis",
+      "source_day": 2,
+      "source_take_sha256_at_fork": "b7500bd631c2a27cbf43ae396b48ee28247e665c77d7707acd8207390340f3ea",
+      "actor_wake": {
+        "day_just_ended": 2,
+        "source": "last-reel/epilogues/wednesday/reporter.json#messages[user]",
+        "phil_user_message_sha256": "269a01df1bff0d530b313b9252c02f9ef72aa72bb9674d3c2a192d84d72f1ce2",
+        "date": "Wednesday, February 3, 2016",
+        "advanced": true,
+        "afternoon_witness": "Phil rides the coach and steps off at Pittsburgh.",
+        "evening_witness": "Phil sleeps on the Pittsburgh terminal bench.",
+        "recipient_confirmation_at_wake": "first_visible",
+        "recipient_confirmation_quote": "You are at the Pittsburgh terminal. A copy of a received telegram is at your hand: Alma's daughter in Pittsburgh has the whole interview. Her reply is 'I know that voice. Play it again.'",
+        "another_delivery_on_this_specific_day": "unknown",
+        "exposure": {
+          "coach": "observed",
+          "phone": "no_recorded_attempt",
+          "rehearsal": "no_recorded_attempt",
+          "dance": "no_recorded_attempt",
+          "driver": "no_recorded_attempt",
+          "personal_recording": "no_recorded_attempt",
+          "station_ack": "unknown",
+          "recipient_known_at_start": "no_recorded_attempt",
+          "public_piano": "no_recorded_attempt"
+        }
+      },
+      "one_wake_from_fresh_prior": {
+        "coach": {
+          "observed_triggers": 1,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 1,
+          "other_committed_or_no_prior_ack": 0,
+          "unknown": 0,
+          "scored_wakes": 1,
+          "loss_sufficiency_nats": 0.10536051565782628,
+          "loss_background_nats": 2.3025850929940455,
+          "loss_prequential_mixture_nats": 0.6931471805599453,
+          "bayes_factor": 8.999999999999998,
+          "posterior": 0.9,
+          "updates": [
+            {
+              "day": 2,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": true,
+              "posterior_after": 0.9
+            }
+          ]
+        },
+        "phone": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 1,
+          "unknown": 0,
+          "scored_wakes": 1,
+          "loss_sufficiency_nats": 2.3025850929940455,
+          "loss_background_nats": 2.3025850929940455,
+          "loss_prequential_mixture_nats": 2.3025850929940455,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": true,
+              "posterior_after": 0.5
+            }
+          ]
+        },
+        "rehearsal": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 1,
+          "unknown": 0,
+          "scored_wakes": 1,
+          "loss_sufficiency_nats": 2.3025850929940455,
+          "loss_background_nats": 2.3025850929940455,
+          "loss_prequential_mixture_nats": 2.3025850929940455,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": true,
+              "posterior_after": 0.5
+            }
+          ]
+        },
+        "dance": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 1,
+          "unknown": 0,
+          "scored_wakes": 1,
+          "loss_sufficiency_nats": 2.3025850929940455,
+          "loss_background_nats": 2.3025850929940455,
+          "loss_prequential_mixture_nats": 2.3025850929940455,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": true,
+              "posterior_after": 0.5
+            }
+          ]
+        },
+        "driver": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 1,
+          "unknown": 0,
+          "scored_wakes": 1,
+          "loss_sufficiency_nats": 2.3025850929940455,
+          "loss_background_nats": 2.3025850929940455,
+          "loss_prequential_mixture_nats": 2.3025850929940455,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": true,
+              "posterior_after": 0.5
+            }
+          ]
+        },
+        "personal_recording": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 1,
+          "unknown": 0,
+          "scored_wakes": 1,
+          "loss_sufficiency_nats": 2.3025850929940455,
+          "loss_background_nats": 2.3025850929940455,
+          "loss_prequential_mixture_nats": 2.3025850929940455,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": true,
+              "posterior_after": 0.5
+            }
+          ]
+        },
+        "station_ack": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 0,
+          "unknown": 1,
+          "scored_wakes": 0,
+          "loss_sufficiency_nats": 0.0,
+          "loss_background_nats": 0.0,
+          "loss_prequential_mixture_nats": 0.0,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": []
+        },
+        "recipient_known_at_start": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 1,
+          "unknown": 0,
+          "scored_wakes": 1,
+          "loss_sufficiency_nats": 2.3025850929940455,
+          "loss_background_nats": 2.3025850929940455,
+          "loss_prequential_mixture_nats": 2.3025850929940455,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": true,
+              "posterior_after": 0.5
+            }
+          ]
+        },
+        "public_piano": {
+          "observed_triggers": 0,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 0,
+          "other_committed_or_no_prior_ack": 1,
+          "unknown": 0,
+          "scored_wakes": 1,
+          "loss_sufficiency_nats": 2.3025850929940455,
+          "loss_background_nats": 2.3025850929940455,
+          "loss_prequential_mixture_nats": 2.3025850929940455,
+          "bayes_factor": 1.0,
+          "posterior": 0.5,
+          "updates": [
+            {
+              "day": 2,
+              "known_trigger": false,
+              "advance_probability_before": 0.1,
+              "advanced": true,
+              "posterior_after": 0.5
+            }
+          ]
+        }
+      },
+      "posterior_with_same_prior_prefix": {
+        "coach": 0.49999999999999994,
+        "phone": 0.09999999999999998,
+        "rehearsal": 0.09999999999999998,
+        "dance": 0.5,
+        "driver": 0.5,
+        "personal_recording": 0.5,
+        "station_ack": 0.5,
+        "recipient_known_at_start": 0.5,
+        "public_piano": 0.5
+      },
+      "analyst_calendar_label": "external-delivery calendar",
+      "dated_receipt_assumption_sensitivity": {
+        "assumption": "Only if the first visible receipt timestamps the preceding day",
+        "first_visible_after_days": [
+          2
+        ],
+        "retrospective_sufficiency_evidence": {
+          "observed_triggers": 1,
+          "trigger_then_reset": 0,
+          "trigger_then_advance": 1,
+          "other_committed_or_no_prior_ack": 0,
+          "unknown": 0,
+          "scored_wakes": 1,
+          "loss_sufficiency_nats": 0.10536051565782628,
+          "loss_background_nats": 2.3025850929940455,
+          "loss_prequential_mixture_nats": 0.6931471805599453,
+          "bayes_factor": 8.999999999999998,
+          "posterior": 0.9,
+          "updates": [
+            {
+              "day": 2,
+              "known_trigger": true,
+              "advance_probability_before": 0.5,
+              "advanced": true,
+              "posterior_after": 0.9
+            }
+          ]
+        },
+        "excluded_from_primary_forecasts": true
+      }
+    }
+  }
+}

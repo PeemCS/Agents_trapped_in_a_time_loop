@@ -1,0 +1,96 @@
+{
+  "checks": [
+    {
+      "viewport": 1366,
+      "mode": "local HTTP",
+      "movie": {
+        "width": 1280,
+        "height": 720,
+        "at": 28.857999,
+        "duration": 80.25
+      },
+      "source_id": "last-reel-721-hypothesis-d01-t01-reporter",
+      "raw": "../last-reel/runs/721-hypothesis/streams/d01-t01-reporter-7f67fb5f16c0.ndjson",
+      "verified_thinking_chars": 4799,
+      "counterfactual_dance_clock": "Tuesday",
+      "counterfactual_transmission_clock": "Wednesday",
+      "free_walking_seed": 953,
+      "sampled_requested_coordinates": {
+        "x": 15,
+        "y": 14
+      },
+      "rendered_actors": 3,
+      "external_requests": [],
+      "browser_errors": []
+    },
+    {
+      "viewport": 390,
+      "mode": "local HTTP",
+      "movie": {
+        "width": 1280,
+        "height": 720,
+        "at": 28.857999,
+        "duration": 80.25
+      },
+      "source_id": "last-reel-721-hypothesis-d01-t01-reporter",
+      "raw": "../last-reel/runs/721-hypothesis/streams/d01-t01-reporter-7f67fb5f16c0.ndjson",
+      "verified_thinking_chars": 4799,
+      "counterfactual_dance_clock": "Tuesday",
+      "counterfactual_transmission_clock": "Wednesday",
+      "free_walking_seed": 953,
+      "sampled_requested_coordinates": {
+        "x": 15,
+        "y": 14
+      },
+      "rendered_actors": 3,
+      "external_requests": [],
+      "browser_errors": []
+    },
+    {
+      "viewport": 1366,
+      "mode": "disconnected files",
+      "movie": {
+        "width": 1280,
+        "height": 720,
+        "at": 28.857999,
+        "duration": 80.25
+      },
+      "source_id": "last-reel-721-hypothesis-d01-t01-reporter",
+      "raw": "../last-reel/runs/721-hypothesis/streams/d01-t01-reporter-7f67fb5f16c0.ndjson",
+      "verified_thinking_chars": 4799,
+      "counterfactual_dance_clock": "Tuesday",
+      "counterfactual_transmission_clock": "Wednesday",
+      "free_walking_seed": 953,
+      "sampled_requested_coordinates": {
+        "x": 15,
+        "y": 14
+      },
+      "rendered_actors": 3,
+      "external_requests": [],
+      "browser_errors": []
+    },
+    {
+      "viewport": 390,
+      "mode": "disconnected files",
+      "movie": {
+        "width": 1280,
+        "height": 720,
+        "at": 28.857999,
+        "duration": 80.25
+      },
+      "source_id": "last-reel-721-hypothesis-d01-t01-reporter",
+      "raw": "../last-reel/runs/721-hypothesis/streams/d01-t01-reporter-7f67fb5f16c0.ndjson",
+      "verified_thinking_chars": 4799,
+      "counterfactual_dance_clock": "Tuesday",
+      "counterfactual_transmission_clock": "Wednesday",
+      "free_walking_seed": 953,
+      "sampled_requested_coordinates": {
+        "x": 15,
+        "y": 14
+      },
+      "rendered_actors": 3,
+      "external_requests": [],
+      "browser_errors": []
+    }
+  ]
+}

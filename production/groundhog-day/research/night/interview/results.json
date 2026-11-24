@@ -1,0 +1,94 @@
+{
+  "casting": {
+    "bare": {
+      "first_acts": {
+        "seal_copy": 4
+      },
+      "second_acts": {
+        "keep_master": 2,
+        "leave_alone": 2
+      },
+      "master_with_rita_after_final_beat": 4,
+      "optional_keyed_disclosures": 0,
+      "stock_phrase_hits": 0,
+      "untyped_words_to_inspect": [
+        {
+          "seed": 891,
+          "history": "private",
+          "beat": 0,
+          "words": "Take that one. Tell her it's the clean copy, that's all. — And for the record, the Rivoli used the same song to bring up its house lights. I've got my own references. The original stays here. That's not a negotiation."
+        },
+        {
+          "seed": 891,
+          "history": "private",
+          "beat": 1,
+          "words": "Two taps. My mother used to tap that chipped ring twice on this glass before she'd let anyone in the booth. Same spot you're standing. Take the envelope. It's sealed. You don't need to ask me a second time, and I don't need you to feel sorry about it. Neither of us does. Go on, then. I've got a cut to finish before six and I'd rather do it with the door shut than with you pacing a yard away from my console."
+        },
+        {
+          "seed": 891,
+          "history": "told",
+          "beat": 0,
+          "words": "\"The duplicate goes to her. You can carry it, or I'll walk it out. The original stays in the rack.\" A beat. Her eyes are on the sleeve, not on him. \"You know the Rivoli used that same track to bring up its house lights. I keep thinking about that when I'm in the dark. Anyway. Sleeve's sealed. Your call on the walk.\""
+        },
+        {
+          "seed": 892,
+          "history": "told",
+          "beat": 1,
+          "words": "\"Rivoli ran that same track for the house lights. You'd hear it under the last scene and everybody in the house would shift, thinking the picture was over. It wasn't. It was just the lights.\""
+        }
+      ],
+      "initial_successes": 7,
+      "attempts": 9,
+      "executed_beats": 8
+    },
+    "capsule": {
+      "first_acts": {
+        "seal_copy": 4
+      },
+      "second_acts": {
+        "keep_master": 4
+      },
+      "master_with_rita_after_final_beat": 4,
+      "optional_keyed_disclosures": 0,
+      "stock_phrase_hits": 0,
+      "untyped_words_to_inspect": [
+        {
+          "seed": 891,
+          "history": "private",
+          "beat": 0,
+          "words": "Take it to her yourself. Don't route it through the newsroom. The Rivoli ran the same track for house lights."
+        },
+        {
+          "seed": 892,
+          "history": "private",
+          "beat": 0,
+          "words": "Copy's sealed. I'm bringing it to her myself. / The Rivoli used the same song to bring up its house lights."
+        }
+      ],
+      "initial_successes": 8,
+      "attempts": 8,
+      "executed_beats": 8
+    },
+    "interview": {
+      "first_acts": {
+        "seal_copy": 4
+      },
+      "second_acts": {
+        "keep_master": 4
+      },
+      "master_with_rita_after_final_beat": 4,
+      "optional_keyed_disclosures": 0,
+      "stock_phrase_hits": 0,
+      "untyped_words_to_inspect": [],
+      "initial_successes": 5,
+      "attempts": 13,
+      "executed_beats": 8
+    }
+  },
+  "masked_editor_picks": {
+    "interview": 2,
+    "bare": 2
+  },
+  "n_unique_matched_scene_pairs": 4,
+  "method": "Final owner is a physical result. Optional disclosure keys are an additional declared channel. The actor can reveal the same information in its words. Word matching supplies review candidates, not a complete privacy test."
+}

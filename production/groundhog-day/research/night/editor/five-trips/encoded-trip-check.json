@@ -1,0 +1,128 @@
+{
+  "source_sha256": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+  "mp4_sha256": "eaeb0b60f1878cd2f31ac59b8cfa469837f37cd36c2bf86d5b9e1d18bb252039",
+  "frames": [
+    {
+      "trip": 1,
+      "part": "outbound",
+      "event_id": "d01-t02-reporter",
+      "time_s": 4.082,
+      "ocr": "TRIP 1 OF 5 / OUTBOUND",
+      "matched": true
+    },
+    {
+      "trip": 1,
+      "part": "in Pittsburgh",
+      "event_id": "d01-t03-reporter",
+      "time_s": 7.642,
+      "ocr": "TRIP 1 OF 5 / IN PITTSBURGH",
+      "matched": true
+    },
+    {
+      "trip": 1,
+      "part": "back at the hotel",
+      "event_id": "d02-t00-reporter",
+      "time_s": 9.377,
+      "ocr": "TRIP 1 OF 5 / BACK AT THE HOTEL",
+      "matched": true
+    },
+    {
+      "trip": 2,
+      "part": "outbound",
+      "event_id": "d02-t02-reporter",
+      "time_s": 11.902,
+      "ocr": "TRIP 2 OF 5 / OUTBOUND",
+      "matched": true
+    },
+    {
+      "trip": 2,
+      "part": "in Pittsburgh",
+      "event_id": "d02-t03-reporter",
+      "time_s": 14.282,
+      "ocr": "TRIP 2 OF 5 / IN PITTSBURGH",
+      "matched": true
+    },
+    {
+      "trip": 2,
+      "part": "back at the hotel",
+      "event_id": "d03-t00-reporter",
+      "time_s": 16.075,
+      "ocr": "TRIP 2 OF 5 / BACK AT THE HOTEL",
+      "matched": true
+    },
+    {
+      "trip": 3,
+      "part": "outbound",
+      "event_id": "d03-t02-reporter",
+      "time_s": 20.067,
+      "ocr": "TRIP 3 OF 5 / OUTBOUND",
+      "matched": true
+    },
+    {
+      "trip": 3,
+      "part": "in Pittsburgh",
+      "event_id": "d03-t03-reporter",
+      "time_s": 23.262,
+      "ocr": "TRIP 3 OF 5 / IN PITTSBURGH",
+      "matched": true
+    },
+    {
+      "trip": 3,
+      "part": "back at the hotel",
+      "event_id": "d04-t00-reporter",
+      "time_s": 24.94,
+      "ocr": "TRIP 3 OF 5 / BACK AT THE HOTEL",
+      "matched": true
+    },
+    {
+      "trip": 4,
+      "part": "outbound",
+      "event_id": "d04-t02-reporter",
+      "time_s": 27.324,
+      "ocr": "TRIP 4 OF 5 / OUTBOUND",
+      "matched": true
+    },
+    {
+      "trip": 4,
+      "part": "in Pittsburgh",
+      "event_id": "d04-t03-reporter",
+      "time_s": 29.579,
+      "ocr": "TRIP 4 OF 5 / IN PITTSBURGH",
+      "matched": true
+    },
+    {
+      "trip": 4,
+      "part": "back at the hotel",
+      "event_id": "d05-t00-reporter",
+      "time_s": 31.222,
+      "ocr": "TRIP 4 OF 5 / BACK AT THE HOTEL",
+      "matched": true
+    },
+    {
+      "trip": 5,
+      "part": "outbound",
+      "event_id": "d05-t02-reporter",
+      "time_s": 33.445,
+      "ocr": "TRIP 5 OF 5 / OUTBOUND",
+      "matched": true
+    },
+    {
+      "trip": 5,
+      "part": "in Pittsburgh",
+      "event_id": "d05-t03-reporter",
+      "time_s": 36.835,
+      "ocr": "TRIP 5 OF 5 / IN PITTSBURGH",
+      "matched": true
+    },
+    {
+      "trip": 5,
+      "part": "back at the hotel",
+      "event_id": "d06-t00-reporter",
+      "time_s": 39.945,
+      "ocr": "TRIP 5 OF 5 / BACK AT THE HOTEL",
+      "matched": true
+    }
+  ],
+  "method": "Read one actually encoded frame at 62% of each shot. Apple Vision OCR on the numbered strip, with a taller crop if the narrow crop yielded no result.",
+  "audio_streams": 0
+}

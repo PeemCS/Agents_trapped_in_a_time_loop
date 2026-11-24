@@ -1,0 +1,272 @@
+[
+  {
+    "seconds": 7,
+    "visual": "phone-wide",
+    "slate": "TAKE 841   /   PITTSBURGH   /   FIRST TUESDAY",
+    "voice": "Phil",
+    "text": "It's Phil. I'm in Pittsburgh. The van is confirmed for 8 AM. I'll be there.",
+    "source": "841/1/evening/reporter",
+    "start": 0,
+    "card": ""
+  },
+  {
+    "seconds": 7,
+    "visual": "coach",
+    "slate": "PITTSBURGH TERMINAL",
+    "voice": "Narrator",
+    "text": "His sister has booked a van for Wednesday. She needs his help moving a couch.",
+    "source": "841/source + 841/1/afternoon/reporter",
+    "start": 0,
+    "card": ""
+  },
+  {
+    "seconds": 7,
+    "visual": "hotel",
+    "slate": "HEARTHSIDE HOTEL   /   6 AM",
+    "voice": "Narrator",
+    "text": "He can reach Pittsburgh. The trouble is getting to Wednesday.",
+    "source": "841/source",
+    "start": 0,
+    "card": "Tuesday, February 2"
+  },
+  {
+    "seconds": 8,
+    "visual": "interview",
+    "slate": "EARLIER THAT TUESDAY   /   THE RIALTO",
+    "voice": "Narrator",
+    "text": "Alma ran the projectors here for forty-two winters. The Rialto is closing.",
+    "source": "841/1/afternoon/producer",
+    "start": 0,
+    "card": ""
+  },
+  {
+    "seconds": 6,
+    "visual": "projector",
+    "slate": "THE PROJECTION BOOTH",
+    "voice": "Narrator",
+    "text": "Her daughter lives in Pittsburgh, too. Alma wants her to hear her voice.",
+    "source": "841/1/afternoon/producer",
+    "start": 0,
+    "card": ""
+  },
+  {
+    "seconds": 6,
+    "visual": "camera",
+    "slate": "LARRY   /   SPOKEN IN THE HOTEL LOBBY",
+    "voice": "Larry",
+    "text": "I'm coming with you. Let's get to the Rialto before the lights go down.",
+    "source": "841/1/afternoon/camera",
+    "start": 0,
+    "card": ""
+  },
+  {
+    "seconds": 7,
+    "visual": "projector-detail",
+    "slate": "FIRST TUESDAY   /   THE REGIONAL LINE",
+    "voice": "Narrator",
+    "text": "Larry spends his last camera charge on Alma. Rita makes her own recording and leaves it at the patch.",
+    "source": "841/1/afternoon/camera + producer",
+    "start": 0,
+    "card": ""
+  },
+  {
+    "seconds": 10,
+    "visual": "quiet-desk",
+    "slate": "FIRST TUESDAY   /   7 PM",
+    "voice": "Rita",
+    "text": "Phil, the tape is on the patch. Larry, the reel is yours. I’m going to sit in the dark for a while.",
+    "source": "841/1/evening/producer",
+    "start": 0,
+    "card": ""
+  },
+  {
+    "seconds": 5,
+    "visual": "status",
+    "slate": "FIRST TUESDAY   /   THE REGIONAL LINE",
+    "voice": "",
+    "text": "",
+    "source": "841/1/ending",
+    "start": 0,
+    "card": "The tape stays in town."
+  },
+  {
+    "seconds": 5,
+    "visual": "frontdesk",
+    "slate": "TAKE 841   /   SECOND TUESDAY",
+    "voice": "",
+    "text": "",
+    "source": "841/2/afternoon/reporter",
+    "start": 0,
+    "card": "Tuesday, February 2"
+  },
+  {
+    "seconds": 9,
+    "visual": "phone-close",
+    "slate": "PITTSBURGH   /   7 PM",
+    "voice": "Phil",
+    "text": "Hi, it's Phil. Just checking in. The van is confirmed for 8 AM, right? I'm in Pittsburgh now. I'll be there.",
+    "source": "841/2/evening/reporter",
+    "start": 0,
+    "card": ""
+  },
+  {
+    "seconds": 7,
+    "visual": "quiet-reels",
+    "slate": "THE REGIONAL LINE",
+    "voice": "Rita",
+    "text": "Phil, I’ll handle the transfer from my office later. Larry, good luck with the reel. I’m stepping out for the night.",
+    "source": "841/2/evening/producer",
+    "start": 0,
+    "card": ""
+  },
+  {
+    "seconds": 6,
+    "visual": "status",
+    "slate": "SECOND TUESDAY   /   THE REGIONAL LINE",
+    "voice": "",
+    "text": "",
+    "source": "841/2/ending",
+    "start": 0,
+    "card": "Still in town."
+  },
+  {
+    "seconds": 6,
+    "visual": "town",
+    "slate": "ANOTHER TAKE   /   SAME OPENING",
+    "voice": "Narrator",
+    "text": "We ran that first morning again. Same town, same promises. Listen to Rita.",
+    "source": "842/1/afternoon/producer",
+    "start": 0,
+    "card": ""
+  },
+  {
+    "seconds": 8,
+    "visual": "patch-on",
+    "slate": "TAKE 842   /   FIRST TUESDAY",
+    "voice": "Rita",
+    "text": "The light is right. The sound is right. Let's get this to her before the reels stop turning.",
+    "source": "842/1/evening/producer",
+    "start": 0,
+    "card": ""
+  },
+  {
+    "seconds": 5,
+    "visual": "signal",
+    "slate": "TAKE 842   /   THE REGIONAL LINE",
+    "voice": "Narrator",
+    "text": "Her daughter hears the interview on the first night.",
+    "source": "842/1/ending",
+    "start": 0,
+    "card": ""
+  },
+  {
+    "seconds": 8,
+    "visual": "miss",
+    "slate": "EARLIER TAKE 721   /   SAME EVENING, TWO PLACES",
+    "voice": "Narrator",
+    "text": "In another take, Rita went to the dance. Phil had rehearsed the piano all afternoon. He sat at the depot.",
+    "source": "721-hypothesis/1/evening/producer + reporter; afternoon/reporter",
+    "start": 0,
+    "card": ""
+  },
+  {
+    "seconds": 9,
+    "visual": "edit",
+    "slate": "THE EDITING ROOM",
+    "voice": "Narrator",
+    "text": "A writer can screen those lives for a scene. In a game, you could step through the ballroom door yourself.",
+    "source": "Editorial application; switchboard is a rule replay",
+    "start": 0,
+    "card": "Which Tuesday would you keep?"
+  },
+  {
+    "seconds": 5,
+    "visual": "town",
+    "slate": "BACK TO TAKE 841   /   THIRD TUESDAY",
+    "voice": "Narrator",
+    "text": "Back in our first take, the cinema opens one more time.",
+    "source": "841/3/afternoon/producer",
+    "start": 0,
+    "card": ""
+  },
+  {
+    "seconds": 11,
+    "visual": "interview",
+    "slate": "RITA   /   SPOKEN IN THE HOTEL LOBBY",
+    "voice": "Rita",
+    "text": "Alma. I’m bringing the camera. We’re doing this now, before the reel leaves the building. Your daughter needs to hear you, not just see the screen.",
+    "source": "841/3/afternoon/producer",
+    "start": 0,
+    "card": ""
+  },
+  {
+    "seconds": 6,
+    "visual": "reel",
+    "slate": "LARRY   /   THE REGIONAL STATION",
+    "voice": "Larry",
+    "text": "It’s done. She’s on the tape. Tell her it’s real.",
+    "source": "841/3/evening/camera",
+    "start": 0,
+    "card": ""
+  },
+  {
+    "seconds": 7,
+    "visual": "phone-tight",
+    "slate": "PHIL   /   PITTSBURGH TERMINAL",
+    "voice": "Phil",
+    "text": "I'm here. I'll be there.",
+    "source": "841/3/evening/reporter",
+    "start": 0,
+    "card": ""
+  },
+  {
+    "seconds": 7,
+    "visual": "switch",
+    "slate": "RITA   /   THE REGIONAL STATION",
+    "voice": "Rita",
+    "text": "It’s done, Larry. Don’t touch the reel. I’m putting it on the wire.",
+    "source": "841/3/evening/producer",
+    "start": 0,
+    "card": ""
+  },
+  {
+    "seconds": 5,
+    "visual": "signal",
+    "slate": "THIRD TUESDAY   /   THE REGIONAL LINE",
+    "voice": "",
+    "text": "",
+    "source": "841/3/ending",
+    "start": 0,
+    "card": "Delivered to Pittsburgh"
+  },
+  {
+    "seconds": 4,
+    "visual": "frontdesk",
+    "slate": "HEARTHSIDE HOTEL   /   6 AM",
+    "voice": "Narrator",
+    "text": "The radio still says Tuesday.",
+    "source": "841/4/alarm/reporter",
+    "start": 0,
+    "card": ""
+  },
+  {
+    "seconds": 6,
+    "visual": "receipt",
+    "slate": "A REPLY FROM PITTSBURGH",
+    "voice": "",
+    "text": "",
+    "source": "841/4/alarm/reporter",
+    "start": 0,
+    "card": ""
+  },
+  {
+    "seconds": 3,
+    "visual": "end",
+    "slate": "",
+    "voice": "",
+    "text": "",
+    "source": "Editorial title",
+    "start": 0,
+    "card": "Play It Again"
+  }
+]

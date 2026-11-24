@@ -1,0 +1,76 @@
+[
+  {
+    "id": "S05-SIGN",
+    "title": "Signing the policy",
+    "file": "S05-signature.jpg",
+    "scene": "S05",
+    "time": "01:22.5–01:24",
+    "beat": "Phil signs the white sheet over the blue carbon",
+    "lens": "35mm",
+    "reference": "S05-B.jpg, S05-D1.jpg",
+    "job_id": "3befd875-b1f7-484f-b149-cd89b47c3588",
+    "qa": "Blue carbon hangs below book rather than lying flush under the white sheet; facial identity is approximate."
+  },
+  {
+    "id": "S05-HANDOFF",
+    "title": "Camera stays with Ned",
+    "file": "S05-handoff.jpg",
+    "scene": "S05",
+    "time": "01:24–01:27",
+    "beat": "Phil exits left with white copy as Ned carries blue carbon toward hotel",
+    "lens": "35mm",
+    "reference": "S05-D1.jpg, S05-D3.jpg",
+    "job_id": "ac0a295a-8370-4368-a1ee-ecd043a26329",
+    "qa": "White copy and blue sheet read clearly; character faces and scale vary from the anchors."
+  },
+  {
+    "id": "S05-CLOCK",
+    "title": "Rita considers the clock",
+    "file": "S05-clock.jpg",
+    "scene": "S05",
+    "time": "01:33–01:34",
+    "beat": "Ned holds blue copy; Rita looks down toward clock",
+    "lens": "35mm",
+    "reference": "S05-E.jpg, L-MASTER.jpg",
+    "job_id": "0b8256c1-4a8b-42cc-864c-b744d19c4c8b",
+    "qa": "Study: clock lies behind Rita’s sightline; the intended glance is not readable.",
+    "status": "study"
+  },
+  {
+    "id": "S06-WIRE",
+    "title": "Rita connects the patch",
+    "file": "S06-wire.jpg",
+    "scene": "S06",
+    "time": "01:34–01:37",
+    "beat": "Rita connects the regional line at the switcher",
+    "lens": "35mm",
+    "reference": "S06-A.jpg, S04-D2-LARRY.jpg",
+    "job_id": "939ddb85-2dfe-4434-a14a-c9b92f6981f5",
+    "qa": "Cable at console is visible, but jack-to-socket connection and cassette are ambiguous; Rita face differs somewhat from lobby anchor."
+  },
+  {
+    "id": "S06-HELD-BARS",
+    "title": "The held bars",
+    "file": "S06-held-bars.jpg",
+    "scene": "S06",
+    "time": "01:41–01:43",
+    "beat": "Phil and Rita share the pause after her line",
+    "lens": "35mm",
+    "reference": "S06-B2-ALT.jpg",
+    "job_id": "22de7346-6465-4e9a-b4a4-453e0dbf1645",
+    "qa": "Both are seated and exchange glances; one hand still touches the keys while the other rests on his knee, rather than both lifting. Camera and character faces drift somewhat from the selected anchor; room appears bright rather than warm evening."
+  },
+  {
+    "id": "S05-CLOCK-CORRECTION",
+    "title": "Ned peels the carbon copy",
+    "file": "S05-clock-correction.jpg",
+    "scene": "S05",
+    "time": "01:32.7–01:34.0",
+    "beat": "Ned separates the blue sheet. Rita listens across the desk. The clock sits between them.",
+    "lens": "35mm",
+    "reference": "S05-clock.jpg",
+    "job_id": "4929d824-14af-44d2-b79e-e91eaf781981",
+    "status": "study",
+    "qa": "Clock moved between Rita and Ned, but remains below eye level; Rita appears to look toward Ned rather than down at clock. Blue sheet peel is clear; face identity and opaque vestibule continuity remain approximate."
+  }
+]

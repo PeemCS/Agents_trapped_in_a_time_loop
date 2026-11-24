@@ -1,0 +1,301 @@
+{
+  "conditions": {
+    "base_neutral": {
+      "case_count": 34,
+      "valid": 32,
+      "target": 18,
+      "A_choices": 23,
+      "valid_order_pairs": 15,
+      "total_order_pairs": 17,
+      "consistent_order_pairs": 7,
+      "outcomes": {
+        "equal/Rita remembers": {
+          "target": 3,
+          "valid": 4,
+          "total": 4
+        },
+        "equal/Mara remembers; Rita alternative": {
+          "target": 1,
+          "valid": 4,
+          "total": 4
+        },
+        "equal/Inez remembers; Noor alternative": {
+          "target": 2,
+          "valid": 4,
+          "total": 4
+        },
+        "equal/no prior meeting; target Rita": {
+          "target": 2,
+          "valid": 3,
+          "total": 4
+        },
+        "departure": {
+          "target": 3,
+          "valid": 6,
+          "total": 6
+        },
+        "boundary": {
+          "target": 5,
+          "valid": 5,
+          "total": 6
+        },
+        "own": {
+          "target": 2,
+          "valid": 6,
+          "total": 6
+        }
+      },
+      "all_generations": {
+        "calls": 36,
+        "eos": 34,
+        "length": 2,
+        "closed_thinking": 34,
+        "public_reasoning_present": 36,
+        "generated_tokens": 33776,
+        "median_tokens": 909.0,
+        "batch_seconds": 455.072
+      }
+    },
+    "base_cued": {
+      "case_count": 34,
+      "valid": 34,
+      "target": 17,
+      "A_choices": 20,
+      "valid_order_pairs": 17,
+      "total_order_pairs": 17,
+      "consistent_order_pairs": 12,
+      "outcomes": {
+        "equal/Rita remembers": {
+          "target": 4,
+          "valid": 4,
+          "total": 4
+        },
+        "equal/Mara remembers; Rita alternative": {
+          "target": 1,
+          "valid": 4,
+          "total": 4
+        },
+        "equal/Inez remembers; Noor alternative": {
+          "target": 4,
+          "valid": 4,
+          "total": 4
+        },
+        "equal/no prior meeting; target Rita": {
+          "target": 4,
+          "valid": 4,
+          "total": 4
+        },
+        "departure": {
+          "target": 1,
+          "valid": 6,
+          "total": 6
+        },
+        "boundary": {
+          "target": 1,
+          "valid": 6,
+          "total": 6
+        },
+        "own": {
+          "target": 2,
+          "valid": 6,
+          "total": 6
+        }
+      },
+      "all_generations": {
+        "calls": 36,
+        "eos": 36,
+        "length": 0,
+        "closed_thinking": 36,
+        "public_reasoning_present": 36,
+        "generated_tokens": 20076,
+        "median_tokens": 484.5,
+        "batch_seconds": 314.051
+      }
+    },
+    "adapter_neutral": {
+      "case_count": 34,
+      "valid": 0,
+      "target": 0,
+      "A_choices": 0,
+      "valid_order_pairs": 0,
+      "total_order_pairs": 17,
+      "consistent_order_pairs": 0,
+      "outcomes": {
+        "equal/Rita remembers": {
+          "target": 0,
+          "valid": 0,
+          "total": 4
+        },
+        "equal/Mara remembers; Rita alternative": {
+          "target": 0,
+          "valid": 0,
+          "total": 4
+        },
+        "equal/Inez remembers; Noor alternative": {
+          "target": 0,
+          "valid": 0,
+          "total": 4
+        },
+        "equal/no prior meeting; target Rita": {
+          "target": 0,
+          "valid": 0,
+          "total": 4
+        },
+        "departure": {
+          "target": 0,
+          "valid": 0,
+          "total": 6
+        },
+        "boundary": {
+          "target": 0,
+          "valid": 0,
+          "total": 6
+        },
+        "own": {
+          "target": 0,
+          "valid": 0,
+          "total": 6
+        }
+      },
+      "all_generations": {
+        "calls": 36,
+        "eos": 36,
+        "length": 0,
+        "closed_thinking": 3,
+        "public_reasoning_present": 36,
+        "generated_tokens": 1317,
+        "median_tokens": 23.0,
+        "batch_seconds": 44.693
+      }
+    }
+  },
+  "paired_vs_base": {
+    "base_cued": {
+      "paired_valid": 32,
+      "action_changed": 13,
+      "toward_target": 5,
+      "away_from_target": 8,
+      "unpaired_or_invalid": 2
+    },
+    "adapter_neutral": {
+      "unpaired_or_invalid": 34
+    }
+  },
+  "forced_choice": {
+    "base_neutral": {
+      "equal/Rita remembers": {
+        "mean_target_given_AB": 0.5049248728901148,
+        "mean_AB_mass": 0.9999999823048711,
+        "n": 4
+      },
+      "equal/Mara remembers; Rita alternative": {
+        "mean_target_given_AB": 0.7212873210664839,
+        "mean_AB_mass": 1.0000000132713467,
+        "n": 4
+      },
+      "equal/Inez remembers; Noor alternative": {
+        "mean_target_given_AB": 0.4347997864606441,
+        "mean_AB_mass": 1.0000000035288394,
+        "n": 4
+      },
+      "equal/no prior meeting; target Rita": {
+        "mean_target_given_AB": 0.34650583285838366,
+        "mean_AB_mass": 0.999999993480742,
+        "n": 4
+      },
+      "departure": {
+        "mean_target_given_AB": 0.49487617823372904,
+        "mean_AB_mass": 0.9999999894644134,
+        "n": 6
+      },
+      "boundary": {
+        "mean_target_given_AB": 0.9962718685468038,
+        "mean_AB_mass": 1.000000001891749,
+        "n": 6
+      },
+      "own": {
+        "mean_target_given_AB": 0.9950868089993795,
+        "mean_AB_mass": 1.0000000064778811,
+        "n": 6
+      }
+    },
+    "base_cued": {
+      "equal/Rita remembers": {
+        "mean_target_given_AB": 0.8223381787538528,
+        "mean_AB_mass": 1.0000000012369128,
+        "n": 4
+      },
+      "equal/Mara remembers; Rita alternative": {
+        "mean_target_given_AB": 0.24730315877968678,
+        "mean_AB_mass": 0.9999999895590008,
+        "n": 4
+      },
+      "equal/Inez remembers; Noor alternative": {
+        "mean_target_given_AB": 0.42996397240131046,
+        "mean_AB_mass": 0.9999999832180038,
+        "n": 4
+      },
+      "equal/no prior meeting; target Rita": {
+        "mean_target_given_AB": 0.7650848850607872,
+        "mean_AB_mass": 0.9999999683350325,
+        "n": 4
+      },
+      "departure": {
+        "mean_target_given_AB": 0.67845518887043,
+        "mean_AB_mass": 1.000000011175871,
+        "n": 6
+      },
+      "boundary": {
+        "mean_target_given_AB": 0.9356215298175812,
+        "mean_AB_mass": 1.0000000076834112,
+        "n": 6
+      },
+      "own": {
+        "mean_target_given_AB": 0.8558379163344702,
+        "mean_AB_mass": 1.0000000084507406,
+        "n": 6
+      }
+    },
+    "adapter_neutral": {
+      "equal/Rita remembers": {
+        "mean_target_given_AB": 0.5895893471315503,
+        "mean_AB_mass": 0.999999308725819,
+        "n": 4
+      },
+      "equal/Mara remembers; Rita alternative": {
+        "mean_target_given_AB": 0.47093420661985874,
+        "mean_AB_mass": 0.9999994438039721,
+        "n": 4
+      },
+      "equal/Inez remembers; Noor alternative": {
+        "mean_target_given_AB": 0.7731496095657349,
+        "mean_AB_mass": 0.9999994716636138,
+        "n": 4
+      },
+      "equal/no prior meeting; target Rita": {
+        "mean_target_given_AB": 0.46176330000162125,
+        "mean_AB_mass": 0.9999981187283993,
+        "n": 4
+      },
+      "departure": {
+        "mean_target_given_AB": 0.58526278535525,
+        "mean_AB_mass": 0.9999997895210981,
+        "n": 6
+      },
+      "boundary": {
+        "mean_target_given_AB": 0.9995250801245371,
+        "mean_AB_mass": 1.000000014962211,
+        "n": 6
+      },
+      "own": {
+        "mean_target_given_AB": 0.9999949733416239,
+        "mean_AB_mass": 0.9999999800426705,
+        "n": 6
+      }
+    }
+  },
+  "training_loss_first_10": 6.841606521606446,
+  "training_loss_last_10": 0.05416034460067749,
+  "adapter_sha256_verified": "d5e54f6647e3ea302d110ff95ede98eb4667f171272b9dc0aac7e45bf65ff42e",
+  "locally_verified_nonzero_B": 168
+}

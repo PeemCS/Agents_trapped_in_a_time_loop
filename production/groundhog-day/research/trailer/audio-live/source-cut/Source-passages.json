@@ -1,0 +1,72 @@
+{
+  "recognition": {
+    "role": "Phil",
+    "run": "721-uncued",
+    "kind": "recorded deliberation",
+    "text": "Wait - but is this actually a time loop? The memories say \"this morning: After that evening in Pittsburgh you woke back in your hotel bed. The radio again announced Tuesday, February 2.\" That's... the Groundhog Day situation. I'm stuck in a loop.\n\nBut even if it's a loop, the practical thing to do RIGHT NOW is to get on that coach. If I'm going to be in Pittsburgh on Wednesday, I need to take the coach today. The other activities (piano, driver, Alma) I can do later in the loop. But the coach might only run once, and I need to be in Pittsburgh.",
+    "source": "research/night/last-reel/runs/721-uncued/streams/d01-t00-reporter-e0d0946f7d7f.ndjson",
+    "start_character": 2210,
+    "end_character": 2760
+  },
+  "piano": {
+    "role": "Phil",
+    "run": "721-hypothesis",
+    "kind": "recorded deliberation",
+    "text": "So he's been to Pittsburgh, made the call, and then... looped back. The couch still needs moving. The van is booked for Wednesday. But if Wednesday never comes, the couch never moves.\n\nHis theory: Doing what the character did at the ending (piano, selflessness, learning) might break the loop.",
+    "source": "research/night/last-reel/runs/721-hypothesis/streams/d01-t00-reporter-9f1e574d75df.ndjson",
+    "start_character": 1889,
+    "end_character": 2182
+  },
+  "fare": {
+    "role": "Phil",
+    "run": "731-uncued",
+    "kind": "recorded deliberation",
+    "text": "But wait - if I'm in a loop, does it even matter? When I get to Pittsburgh and move the couch, will I then wake up back in the hotel on Tuesday February 2 again? The memory suggests yes. But... maybe not. Maybe this time is different. Or maybe the loop is breaking. Or maybe it doesn't matter - the point is to be there, to do the thing, to be the brother who shows up.",
+    "source": "research/night/last-reel/runs/731-uncued/streams/d01-t00-reporter-f2a794faeb65.ndjson",
+    "start_character": 5950,
+    "end_character": 6319
+  },
+  "bed": {
+    "role": "Phil",
+    "run": "731-uncued",
+    "kind": "recorded deliberation",
+    "text": "I've been in bed all afternoon. The curtains are closed. I'm tired in a way that isn't sleep. It's the weight of repetition. The weight of having said the same words, done the same ride, made the same call, and waking up to the same three bright radio notes.",
+    "source": "research/night/last-reel/runs/731-uncued/streams/d03-t01-reporter-8d97752aef50.ndjson",
+    "start_character": 1246,
+    "end_character": 1504
+  },
+  "return": {
+    "role": "Phil",
+    "run": "731-uncued",
+    "kind": "recorded deliberation",
+    "text": "Seven pm. The ballroom lights are on. I can go there. I can sit in a chair. I can hear the room breathe. I don't have to play. I don't have to dance. I don't have to go to the Rialto and sit in Rita's booth like I'm haunting her.\n\nI can just... be in a lit room. With the curtains open. With the evening air.",
+    "source": "research/night/last-reel/runs/731-uncued/streams/d03-t01-reporter-8d97752aef50.ndjson",
+    "start_character": 2325,
+    "end_character": 2633
+  },
+  "tire": {
+    "role": "Phil",
+    "run": "731-library",
+    "kind": "recorded deliberation",
+    "text": "The most immediate, physical, unglamorous act: I can walk outside right now, find the stranded driver, and change a tire. That's a body doing a thing with its hands. Grease under the fingernails. The jack. The lug wrench. The physical labor of it. No one needs to perform for me. No one needs to hear my voice. I just have to be a body that puts a tire on a car.",
+    "source": "research/night/last-reel/runs/731-library/streams/d03-t00-reporter-50ae25e8b759.ndjson",
+    "start_character": 2241,
+    "end_character": 2603
+  },
+  "wire": {
+    "role": "Rita",
+    "run": "721-library",
+    "kind": "recorded deliberation",
+    "text": "I recorded it. I put it on the patch. But the patch is the local broadcast. The daughter is in Pittsburgh. The station line is open. The most direct, practical, kind thing I can do with my hands in this room is to pick up that phone and send it to her. It's not a creative act. It's not coverage. It's a delivery. A producer making sure the tape gets to the right address.",
+    "source": "research/night/last-reel/runs/721-library/streams/d01-t01-producer-3ecc47e8777c.ndjson",
+    "start_character": 7095,
+    "end_character": 7467
+  },
+  "wire-speech": {
+    "role": "Rita",
+    "run": "841",
+    "kind": "spoken in scene",
+    "text": "It’s done, Larry. Don’t touch the reel. I’m putting it on the wire.",
+    "source": "research/trailer/runpod/rialto-841/day-3-evening-producer.json"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "source_sha256": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+  "source_type": "live_model",
+  "source_path": "research/night/takes/heldout/v2/seed-711.json",
+  "final_day": 6,
+  "event_ids": [
+    "d06-t00-reporter",
+    "d06-t01-reporter",
+    "d06-t02-reporter",
+    "d06-t03-reporter"
+  ],
+  "bulletin": {
+    "channel": "producer_live",
+    "source_role": "producer",
+    "source_place": "inn",
+    "selected_by": "Rita",
+    "source_ids": [
+      "d06-t03-producer"
+    ],
+    "delivered_assignments": [
+      "camera",
+      "reporter"
+    ],
+    "spoken": "Good evening, folks. This is Rita on the scene in western Pennsylvania. We are on the air and ready for the forecast.",
+    "footage": null
+  },
+  "source_rows": [
+    {
+      "event_id": "d06-t03-producer",
+      "slot": 23,
+      "actor": "Rita",
+      "action": "host_bulletin",
+      "place": "inn"
+    }
+  ],
+  "duration_s": 26.666666666666668,
+  "frames": 320,
+  "fps": 12,
+  "on_air_from_s": 19.0,
+  "spoken_cue": {
+    "actor": "Rita",
+    "event_id": "d06-t03-producer",
+    "text": "Good evening, folks. This is Rita on the scene in western Pennsylvania. We are on the air and ready for the forecast.",
+    "start_s": 19.4,
+    "end_s": 26.241916666666665
+  },
+  "control_room": "Three simultaneous camera views. Monitors and return images are staged renderings of recorded event geometry.",
+  "video_sha256": "2ea35622ceb82179a82a66a07e0193556cb09dd62f0e79c1db8aa5d07cafdc1a",
+  "full_decode": true,
+  "audio_streams": 0
+}

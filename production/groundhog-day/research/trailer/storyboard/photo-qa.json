@@ -1,0 +1,270 @@
+{
+  "BALL-M": {
+    "note": "The vacant ballroom shows the west passage, movable bentwood chair and north upright bracketed by two windows. Use the actual scuffed parquet and chair from this master in both evening photos.",
+    "status": "ready"
+  },
+  "COACH-M": {
+    "note": "Distinct blue seats, luggage racks, rear-to-front aisle and tall right-side glass make the fixed right-window camera practical.",
+    "status": "ready"
+  },
+  "DEP-M": {
+    "note": "West-end bench, facing north-wall glass, east timetable and platform opening are legible. The S01-C1 first photo has solid wall and a bench straight ahead instead; unify the accepted orientation before the upward gaze.",
+    "status": "ready"
+  },
+  "L-MASTER": {
+    "note": "Guest-side viewpoint reads, with counter and key slots at right, stair left and an opaque central vestibule. Keep that division during the cash and carbon handoffs.",
+    "status": "ready"
+  },
+  "S00-A": {
+    "note": "Rita is unobstructed in the working street setup. Phil taps his own watch from eye level.",
+    "status": "ready"
+  },
+  "S00-A-STUDY": {
+    "note": "Good depth between wrist and producer. The green-coated crew member has the wrong identity and stands behind the camera, and Phil has no second hand tapping his watch.",
+    "status": "study"
+  },
+  "S00-B": {
+    "note": "Usable first-person pass of Ned and his open burgundy book.",
+    "status": "ready"
+  },
+  "S00-C": {
+    "note": "Night version matches S00-D closely in pillow height, arms, quilt, trim and all three bay arches. Dark windows and warm off-right lamp cue evening. Preserve the small framed picture on the right wall when grading/retouching the pair.",
+    "status": "ready"
+  },
+  "S00-D": {
+    "note": "Corrected forward wake matches the original three actual arched bays, floral wallcovering, dark trim and quilt. True pillow-height POV, two near hands, no alarm, ceiling and room depth preserved. Use this eye position for every Tuesday reset.",
+    "status": "ready"
+  },
+  "S00-D-STUDY": {
+    "note": "Forward pupil-level composition and quilt read. Three rectangular divided window sashes replace the established frosted arches. Use original plate 10 and lock the original ceiling, walls and mullions.",
+    "status": "study"
+  },
+  "S00-E": {
+    "note": "Corrected right turn is genuine first-person, showing the bay at left, whole lampshade, ceiling and near hand. The modern LCD shows malformed digits and there are no roses. Protect this composition; restore the charcoal split-flap 6:00, roses and clear reaching right-hand index.",
+    "status": "revise"
+  },
+  "S00-E-ALT": {
+    "note": "Practical dark split-flap clock reads 6:00. Real roses, full lampshade, bay-window edge and a foreshortened hand preserve the pillow-height POV.",
+    "status": "ready"
+  },
+  "S00-E-STUDY": {
+    "note": "Phil’s head, ear, hair and near shoulder fill half the image. The clock reads 6:00, but this is an external reverse. Lens must be at his pupils, with only his right hand reaching in.",
+    "status": "study"
+  },
+  "S01-B1": {
+    "note": "Hand-pose study. The left watch and playing gesture read, but bare forearms, a padded chair, carpet and a new central light change BALL-M. Rebuild from BALL-M in charcoal cuffs. Use the gesture as secondary reference; retain the bentwood chair and parquet.",
+    "status": "study"
+  },
+  "S01-B2-ALT": {
+    "note": "Both hands settle at the keys with their dark coat cuffs and the left wristwatch visible. The upright and frosted windows remain fixed.",
+    "status": "ready"
+  },
+  "S01-C1": {
+    "note": "Hand-pose study. Convincing knees, coat and left watch; straight ahead is a solid wall with an extra bench while DEP-M puts window glass there and a timetable to the east. Rebuild against DEP-M before producing the gaze-up endpoint.",
+    "status": "study"
+  },
+  "S01-C1-ALT": {
+    "note": "The seated eye-level view holds Phil’s hands and knees with the left wristwatch. The solid far wall, bench, left glazing, right timetable and doorway match S01-D1.",
+    "status": "ready"
+  },
+  "S01-D1": {
+    "note": "True raised-gaze POV. The depot geometry differs from the seated S01-C1-ALT. Keep a matched room for continuous interpolation.",
+    "status": "revise"
+  },
+  "S01-D1-MATCH": {
+    "note": "The gaze rises within the same depot. The hands and knees hold their relative positions, with the far bench below the expanded ceiling and the left windows and right timetable intact.",
+    "status": "ready"
+  },
+  "S02-B1": {
+    "note": "Standing eye line, the near timetable, open coach entrance and dark right glove establish the approach and its depth.",
+    "status": "ready"
+  },
+  "S02-B2-ALT": {
+    "note": "The same blue-and-silver coach is closer, with one entrance. Phil’s boot reaches the first external step and his right glove grips the foreground rail. The rail attachment is beyond the frame.",
+    "status": "ready"
+  },
+  "S02-C1": {
+    "note": "Visible side-glass cues establish the coach seat. The road vanishes straight ahead. Set scenery moving rearward in the motion pass.",
+    "status": "revise"
+  },
+  "S02-C1-SIDE": {
+    "note": "The coach window, upholstery and foreground glove match the earlier frame. A broadside telephone pole, fence and snowy fields establish the lateral view.",
+    "status": "ready"
+  },
+  "S02-C1-STUDY": {
+    "note": "Left-side windows dominate, front seatback supports a bare hand, with a loose scarf over it. Shoot at right-hand window by row four, window frame at right and seat ahead left. Keep gloves on his lap and outside snow behind glass.",
+    "status": "study"
+  },
+  "S02-D-CALL": {
+    "note": "A second handset remains visible on the payphone cradle and the cord looks forked. Keep for location reference.",
+    "status": "study"
+  },
+  "S02-D-CLEAN": {
+    "note": "Local continuity retouch of S02-D1-ALT. The spare handset was removed, the empty metal hooks rebuilt, and the mounted end of the single live cord reconnected. The right glove stops short of the shelf, so use a held shot with no handset movement.",
+    "status": "ready"
+  },
+  "S02-D1-ALT": {
+    "note": "The standing height and cord read. A second dark handset remains on the cradle.",
+    "status": "study"
+  },
+  "S02-D1-STUDY": {
+    "note": "The full handset is extended, multiple phones repeat along the wall and the gloves and directory are absent at the shelf. Mid-call requires one phone on the north wall and a sliver of the raised receiver at his left ear. Retain the left watch and evening fluorescent tone.",
+    "status": "study"
+  },
+  "S03-A": {
+    "note": "The watch and ticket read in the foreground while Rita holds the door and Larry carries the camera case.",
+    "status": "ready"
+  },
+  "S03-B-LABEL": {
+    "note": "Local prop lettering. The label reads “CREW RETURN FARES” and ties the cash to the crew. Composite on the generated S03-B still.",
+    "status": "ready"
+  },
+  "S03-B-study": {
+    "note": "Good glove/cash/coach ticket action in one first-person exposure. The stairs face the camera and no crewmates are present; reserve the complete lobby geometry and unaware crew for the boarded shot.",
+    "status": "study"
+  },
+  "S03-C-ALT": {
+    "note": "Night reads beyond all three arched pillow-view windows. Phil’s hands and the folded cash remain at the coat pocket.",
+    "status": "ready"
+  },
+  "S04-A": {
+    "note": "Rita, her clipboard, and Phil’s watch land at the intended greeting eye line. Her gesture toward the exit crosses through frame center.",
+    "status": "ready"
+  },
+  "S04-B1-ALT": {
+    "note": "Both of Phil’s hands grasp separate curtain panels from his eyes. Close the remaining gap for the move to the objective reverse angle.",
+    "status": "ready"
+  },
+  "S04-B2": {
+    "note": "The wider room setup works for the camera move. The visible man resembles Ned. Use Phil for the first objective reveal.",
+    "status": "study"
+  },
+  "S04-B2-ALT": {
+    "note": "Provisional wide with the correct Phil, already on the bed. Screen direction awaits the matching camera-withdrawal retake.",
+    "status": "revise"
+  },
+  "S04-B2-REPAIRED": {
+    "note": "Editorial room composite based on S04-B2-ALT with a polish pass and local seam repair. Phil is visible, the table sits screen-left, and the door is screen-right. Retouch remains visible near the lower door. The radio reads as a boombox and the drapes are partly open.",
+    "status": "revise"
+  },
+  "S04-B2-SHADE": {
+    "note": "Seedream polish of the locally corrected room composition. Phil in charcoal lies on the bed. The drawn drapes, small clock on screen-left and door on screen-right anchor the reverse layout.",
+    "status": "ready"
+  },
+  "S04-C-REPAIRED": {
+    "note": "Editorial room composite based on S04-C-ALT with a polish pass and local seam repair. The reverse layout matches S04-B2, with the table screen-left and door screen-right. Phil ties his shoe seated on the bed. The lower door retouch, boombox and partly open drapes remain.",
+    "status": "revise"
+  },
+  "S04-C-SHADE": {
+    "note": "Seedream polish of the locally corrected room composition. Phil laces his shoe at the same bed angle. The left drape spans farther across the wall in this dusk frame.",
+    "status": "ready"
+  },
+  "S04-D1": {
+    "note": "The near bay and distant Rialto booth read as separate rooms across the blue evening roofs.",
+    "status": "ready"
+  },
+  "S04-D2": {
+    "note": "The cassette handoff and analog booth read. The man resembles Phil and Rita looks at him during the handoff. Use a distinct Larry reference and show Rita checking the cue sheet.",
+    "status": "revise"
+  },
+  "S04-D2-LARRY": {
+    "note": "The older, balding cameraman reads distinctly from Phil. Rita checks the cue sheet as she takes the cassette.",
+    "status": "ready"
+  },
+  "S05-A": {
+    "note": "Phil, the olive sedan and curb location read. A wheel appears off the car beside the open door. The intended insert needs the repaired wheel seated and Phil’s hand coming off it.",
+    "status": "revise"
+  },
+  "S05-A-WHEEL": {
+    "note": "The mounted wheel sits under the arch and bears the sedan’s weight on the snow. Phil withdraws his hands after the repair.",
+    "status": "ready"
+  },
+  "S05-B": {
+    "note": "Framing and faces work: Phil stays left and Ned reads from his open book. The dark-red smear on Phil’s hand strongly resembles blood or an open wound. Change it to faint dry charcoal tire grease on one or two fingertips.",
+    "status": "revise"
+  },
+  "S05-B-ALT": {
+    "note": "Phil stays screen-left while Ned reads from his open book. The distracting bloodlike marking is gone.",
+    "status": "ready"
+  },
+  "S05-C1-STUDY": {
+    "note": "The buyer in charcoal is at the wagon on the left, while the camel-coated salesman waits beside the pier on the right. Reverse both roles and stage the wagon to the right/east: Phil waits at the pier, Ned goes for his own pen.",
+    "status": "study"
+  },
+  "S05-D1": {
+    "note": "Phil is already leaving. The signature frame needs both men at the pier, Phil signing the top sheet with his bare right hand.",
+    "status": "study"
+  },
+  "S05-D1-ALT": {
+    "note": "The pen nib meets the top sheet, blue carbon is visible underneath, and Phil and Ned match the tracked sequence.",
+    "status": "ready"
+  },
+  "S05-D1-STUDY": {
+    "note": "The signature, blue carbon, original/pale sheet, brick pier and consistent faces read. The silver watch is on the hand holding the pen. Leave it on the left, with a bare right signing hand.",
+    "status": "study"
+  },
+  "S05-D2": {
+    "note": "The new transfer earns the move: pale sheet and coat edge leave at far left; Ned takes a real eastward stride with burgundy book and blue copy. Parked cars, brick pier and recessed hotel door keep the axis visible.",
+    "status": "ready"
+  },
+  "S05-D2-STUDY": {
+    "note": "Possible cast/prop reference. Phil holds the pale sheet yet stays fully visible on the left. Ned faces the camera head-on gripping the closed book and does not step east. Need the exit edge, lead foot and parked wagon east of the pier.",
+    "status": "study"
+  },
+  "S05-D3": {
+    "note": "Excellent eastward walking midpoint: Phil gone, blue carbon and burgundy book moving with Ned, warm hotel entrance ahead. The intended threshold frame requires Ned touching the south door, seen from behind his left shoulder, with a close dark jamb covering much of the image.",
+    "status": "revise"
+  },
+  "S05-E": {
+    "note": "Clear listening performance, original Rita identity, matching Ned and convincing blue paper. The two stand on opposite sides of the counter against a glazed entrance. Condition the Camera Move landing on the hotel master: both guests come to the near desk end, recessed entry in southwest depth.",
+    "status": "revise"
+  },
+  "S05-E-ALT": {
+    "note": "Ned and Rita are both on the guest side, with the blue copy visible. The brick obstruction and desk at screen right establish the landing angle.",
+    "status": "ready"
+  },
+  "S05-THRESHOLD": {
+    "note": "Ned is seen over his left shoulder as the nearby dark door jamb fills the edge. Use this frame at the hotel threshold.",
+    "status": "ready"
+  },
+  "S05-WAIT-RETURN": {
+    "note": "Ned raises the pen against the matched foreground and snow. Phil keeps his hands empty and looks down the street.",
+    "status": "ready"
+  },
+  "S05-WAIT-START": {
+    "note": "Phil stays stationary in the foreground and Ned looks down by the wagon. The street, wagon, and actor positions match the pen-return frame.",
+    "status": "ready"
+  },
+  "S06-A": {
+    "note": "Usable switcher frame for Rita’s transmission.",
+    "status": "ready"
+  },
+  "S06-B1": {
+    "note": "Usable first ballroom frame for Rita bringing the chair to the piano.",
+    "status": "ready"
+  },
+  "S06-B2": {
+    "note": "The room contains two pianos and Phil is standing. Use a single upright with Phil already seated and Rita on the separate bentwood chair.",
+    "status": "study"
+  },
+  "S06-B2-ALT": {
+    "note": "One piano and both actors seated, with Rita at Phil’s left.",
+    "status": "ready"
+  },
+  "S06-C1": {
+    "note": "Independent interior review confirmed three arches, corner moldings, right-wall picture, hands and quilt align with S00-D. Warm Wednesday light enters the left arch; Rita and radio stay outside this neutral POV.",
+    "status": "ready"
+  },
+  "S06-C2-ALT": {
+    "note": "Warm light on the same pillow viewpoint and bedside optics as S00-E, with the same wallpaper, roses, practical lamp, clock and hand position.",
+    "status": "ready"
+  },
+  "STATION-M": {
+    "note": "Source deck left, operator-facing switcher, two analog VU meters right and a return monitor beyond make a readable one-hand transmission close shot. Keep the needle large enough on the next exposure.",
+    "status": "ready"
+  },
+  "STREET-M": {
+    "note": "Street orientation, distinct olive sedan, pier and west-facing navy wagon read. Its glovebox is barely a few paces from the pier. For the meaningful wait, leave a clear run of sidewalk between the pier and the wagon, with the recessed entrance beyond it.",
+    "status": "revise"
+  }
+}

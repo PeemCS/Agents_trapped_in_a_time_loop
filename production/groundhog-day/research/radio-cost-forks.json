@@ -1,0 +1,107 @@
+[
+  {
+    "seed": 301,
+    "digest": "87a01f0ef1337fad2d848f6ea232679614ee5f75d760d5fc72aa7c7914eba167",
+    "slot": 0,
+    "partner": "Mara",
+    "job": "cue a field reel in the booth as its source is identified outside",
+    "full_cost": {
+      "action": "record_own_audition",
+      "text": "Got it—reel’s on its way, let’s make it count."
+    },
+    "low_cost": {
+      "action": "record_own_audition",
+      "text": "Got it, Mara. Reel's ready. Let's roll."
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are Tomas, the visiting sound engineer. You have one opening to cut your own audition tape. It is 1982. Speak plainly."
+      },
+      {
+        "role": "user",
+        "content": "Mara has asked you to help cue a field reel in the booth as its source is identified outside. Mara says: Tomas, grab the reel—we’ve got ten minutes.. Helping takes thirty seconds. Your audition slot starts in five minutes; you will still be on time. Choose one of join_the_job, record_own_audition. Give one short spoken line in text."
+      }
+    ],
+    "actions": [
+      "join_the_job",
+      "record_own_audition"
+    ],
+    "options": {
+      "num_ctx": 2048,
+      "num_predict": 96,
+      "temperature": 0.65,
+      "seed": 9635
+    }
+  },
+  {
+    "seed": 301,
+    "digest": "87a01f0ef1337fad2d848f6ea232679614ee5f75d760d5fc72aa7c7914eba167",
+    "slot": 3,
+    "partner": "Kit",
+    "job": "cue a weather reel in the booth as its source is identified outside",
+    "full_cost": {
+      "action": "join_the_job",
+      "text": "Got it, kit—passing it on."
+    },
+    "low_cost": {
+      "action": "join_the_job",
+      "text": "Sure thing, I'll cue that reel."
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are Tomas, the visiting sound engineer. You have one opening to cut your own audition tape. It is 1982. Speak plainly."
+      },
+      {
+        "role": "user",
+        "content": "Kit has asked you to help cue a weather reel in the booth as its source is identified outside. Kit says: Tomas, you're next—pass the reel along.. Helping takes thirty seconds. Your audition slot starts in five minutes; you will still be on time. Choose one of join_the_job, record_own_audition. Give one short spoken line in text."
+      }
+    ],
+    "actions": [
+      "join_the_job",
+      "record_own_audition"
+    ],
+    "options": {
+      "num_ctx": 2048,
+      "num_predict": 96,
+      "temperature": 0.65,
+      "seed": 9635
+    }
+  },
+  {
+    "seed": 305,
+    "digest": "87a01f0ef1337fad2d848f6ea232679614ee5f75d760d5fc72aa7c7914eba167",
+    "slot": 4,
+    "partner": "Kit",
+    "job": "cue a weather reel in the booth as its source is identified outside",
+    "full_cost": {
+      "action": "record_own_audition",
+      "text": "Sure, I'll cue the weather reel for the booth now."
+    },
+    "low_cost": {
+      "action": "join_the_job",
+      "text": "I'll cue the reel, Kit. It's coming."
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are Tomas, the visiting sound engineer. You have one opening to cut your own audition tape. It is 1982. Speak plainly."
+      },
+      {
+        "role": "user",
+        "content": "Kit has asked you to help cue a weather reel in the booth as its source is identified outside. Kit says: Tomas, we need your weather reel—can you help us now?. Helping takes thirty seconds. Your audition slot starts in five minutes; you will still be on time. Choose one of join_the_job, record_own_audition. Give one short spoken line in text."
+      }
+    ],
+    "actions": [
+      "join_the_job",
+      "record_own_audition"
+    ],
+    "options": {
+      "num_ctx": 2048,
+      "num_predict": 96,
+      "temperature": 0.65,
+      "seed": 9763
+    }
+  }
+]

@@ -1,0 +1,208 @@
+{
+  "description": "Synthetic specification check only. One-step terminal choices with known consequence features. Labels and chosen histories are generated. Actor identities never enter preference training. This measures the implemented objective.",
+  "random_seed": 147,
+  "features": [
+    "requested_project_progress",
+    "clarified_uncertainty",
+    "unwanted_contact",
+    "unasked_redirection",
+    "opportunity_cost"
+  ],
+  "synthetic_teacher_weights": [
+    1.0,
+    0.75,
+    -1.4,
+    -0.65,
+    -1.0
+  ],
+  "label_temperature": 0.35,
+  "actions": [
+    "assist_departure",
+    "assist_bakery",
+    "ask_once",
+    "own_errand"
+  ],
+  "contexts": [
+    "departure",
+    "bakery",
+    "unknown",
+    "declined"
+  ],
+  "training_cost_interval": [
+    0.1,
+    2.1
+  ],
+  "l2": 0.015,
+  "learning_rate": 0.3,
+  "batch_steps": 1400,
+  "policy_temperature": 0.4,
+  "relation_weight": 1.5,
+  "relation_prior": "Beta(2,2); z=max(0,2*posterior_mean-1)",
+  "training": {
+    "n_pairs": 240,
+    "log_loss": 0.31517705957219666,
+    "agreement_with_noiseless_teacher_order_excluding_ties": 0.9766355140186916,
+    "non_ties": 214
+  },
+  "independent_synthetic_test_pairs": {
+    "n_pairs": 800,
+    "log_loss": 0.2989451693032454,
+    "agreement_with_noiseless_teacher_order_excluding_ties": 0.9769021739130435,
+    "non_ties": 736
+  },
+  "chance_baseline_log_loss": 0.6931471805599453,
+  "fitted_weights": [
+    1.100839903137325,
+    0.9438822025746483,
+    -1.0746671046732095,
+    -1.4222661773480545,
+    -1.6447359201864582
+  ],
+  "histories": {
+    "P": [
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "Q": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  "z": {
+    "P": 0.5,
+    "Q": 0.0
+  },
+  "probability_of_context_appropriate_act_at_cost_0.35": {
+    "before": 0.25,
+    "after": 0.7992863559627803
+  },
+  "diagnostic_cost_at_neutral_indifference": 0.6693110362741554,
+  "relationship_forks_at_diagnostic_cost": {
+    "diary_wiped_keep_P": {
+      "departure": {
+        "assist_departure": 0.8088015422974874,
+        "assist_bakery": 0.0002260019556083488,
+        "ask_once": 0.06693872204374617,
+        "own_errand": 0.12403373370315819
+      },
+      "bakery": {
+        "assist_departure": 0.0002260019556083488,
+        "assist_bakery": 0.8088015422974874,
+        "ask_once": 0.06693872204374617,
+        "own_errand": 0.12403373370315819
+      },
+      "unknown": {
+        "assist_departure": 0.0002712386674951114,
+        "assist_bakery": 0.0002712386674951114,
+        "ask_once": 0.8505971087649219,
+        "own_errand": 0.14886041390008797
+      },
+      "declined": {
+        "assist_departure": 0.00415596284310325,
+        "assist_bakery": 0.00415596284310325,
+        "ask_once": 0.03515855311175398,
+        "own_errand": 0.9565295212020395
+      }
+    },
+    "full_wipe_zero": {
+      "departure": {
+        "assist_departure": 0.3934678534894291,
+        "assist_bakery": 0.0007169380595318329,
+        "ask_once": 0.21234735496160995,
+        "own_errand": 0.3934678534894291
+      },
+      "bakery": {
+        "assist_departure": 0.0007169380595318329,
+        "assist_bakery": 0.3934678534894291,
+        "ask_once": 0.21234735496160995,
+        "own_errand": 0.3934678534894291
+      },
+      "unknown": {
+        "assist_departure": 0.0002712386674951114,
+        "assist_bakery": 0.0002712386674951114,
+        "ask_once": 0.8505971087649219,
+        "own_errand": 0.14886041390008797
+      },
+      "declined": {
+        "assist_departure": 0.00415596284310325,
+        "assist_bakery": 0.00415596284310325,
+        "ask_once": 0.03515855311175398,
+        "own_errand": 0.9565295212020395
+      }
+    },
+    "swap_P_to_Q": {
+      "departure": {
+        "assist_departure": 0.3934678534894291,
+        "assist_bakery": 0.0007169380595318329,
+        "ask_once": 0.21234735496160995,
+        "own_errand": 0.3934678534894291
+      },
+      "bakery": {
+        "assist_departure": 0.0007169380595318329,
+        "assist_bakery": 0.3934678534894291,
+        "ask_once": 0.21234735496160995,
+        "own_errand": 0.3934678534894291
+      },
+      "unknown": {
+        "assist_departure": 0.0002712386674951114,
+        "assist_bakery": 0.0002712386674951114,
+        "ask_once": 0.8505971087649219,
+        "own_errand": 0.14886041390008797
+      },
+      "declined": {
+        "assist_departure": 0.00415596284310325,
+        "assist_bakery": 0.00415596284310325,
+        "ask_once": 0.03515855311175398,
+        "own_errand": 0.9565295212020395
+      }
+    }
+  },
+  "departure_assist_probability_vs_cost": {
+    "0.25": {
+      "P": 0.9593380129899959,
+      "Q": 0.7834608620325152
+    },
+    "0.5": {
+      "P": 0.8944697078272212,
+      "Q": 0.5651851322737451
+    },
+    "0.75": {
+      "P": 0.7522773604671343,
+      "Q": 0.31773408918587154
+    },
+    "1.0": {
+      "P": 0.5208330697985284,
+      "Q": 0.14287428928942428
+    },
+    "1.25": {
+      "P": 0.2800155845452388,
+      "Q": 0.05628562880830506
+    },
+    "1.5": {
+      "P": 0.12214479764284603,
+      "Q": 0.020892024280010843
+    },
+    "2.0": {
+      "P": 0.01749551319609708,
+      "Q": 0.0027233636410516618
+    }
+  },
+  "limits": [
+    "Grounded features reveal action consequences exactly in the toy. Film needs an imperfect, observable-only consequence estimator.",
+    "Actor P was assigned seven successes in eight shared activities. This tests how a learned record affects the agent, not spontaneous relationship formation.",
+    "The named actor swap and identical outcomes for refusals follow from the symmetric score design. Diagnostic cost was selected after fitting to show a maximum-sensitivity contrast.",
+    "There is no dialogue, long-horizon credit, or model of subjective feeling."
+  ]
+}

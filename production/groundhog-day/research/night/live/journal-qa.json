@@ -1,0 +1,17 @@
+{
+  "fixture": "Synthetic load stream with copied real presentation-frame shape. Unique IDs; no new model calls.",
+  "slots": 20000,
+  "actor_records": 60000,
+  "journal_bytes": 37087496,
+  "bytes_accepted_by_reader": 37087496,
+  "ingest_batch_slots": 24,
+  "batches": 834,
+  "median_batch_parse_ms": 0.729,
+  "p95_batch_parse_ms": 0.835,
+  "incomplete_line_held": true,
+  "modified_text_rejected": true,
+  "atomic_replacement_recovered": true,
+  "sealed": true,
+  "max_response_events": 128,
+  "scope": "Local CPython, one reader, buffered file writes, hash verification and event decoding. Excludes generator serialization, browser painting, GPU inference and broadcast fan-out."
+}

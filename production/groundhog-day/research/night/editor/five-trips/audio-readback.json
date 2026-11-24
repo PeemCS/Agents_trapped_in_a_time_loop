@@ -1,0 +1,37 @@
+{
+  "scope": "Historical speech-recognition measurements of the original production mix. The public video is silent.",
+  "mp4_sha256": "eb354888191b853b8008446291d2e2e675f6509bdbaa81ed1e55645a78637b4e",
+  "model_bin_sha256": "2a166925539a16005f14ff328359f9b9adb9dc4fb631bb3b227526862e93e2ef",
+  "method": "Local faster-whisper base.en, CPU int8. First blind continuous pass, then isolated spoken cue time windows with 160ms padding. No text prompts, vocabulary hints, VAD or prior-text conditioning. Exact lexical check normalizes punctuation and capitalization only.",
+  "continuous_asr": "I'm heading out to catch the one o'clock coach. See you later, everyone. I'm heading out to Pittsburgh, Rita. Catch you later. Getting the wide shot now. Just a quick look around this terminal.",
+  "cues": [
+    {
+      "start_s": 0.42,
+      "end_s": 5.945,
+      "caption": "I'm heading out to catch the one o'clock coach. See you later, everyone.",
+      "asr": "I'm heading out to catch the one o'clock coach. See you later, everyone.",
+      "exact_lexical_after_punctuation_case": true
+    },
+    {
+      "start_s": 17.128,
+      "end_s": 21.486,
+      "caption": "I'm heading out to Pittsburgh, Rita. Catch you later.",
+      "asr": "I'm heading out to Pittsburgh, Rita. Catch you later.",
+      "exact_lexical_after_punctuation_case": true
+    },
+    {
+      "start_s": 25.962,
+      "end_s": 27.729,
+      "caption": "Getting the wide shot now.",
+      "asr": "Getting the wide shot now.",
+      "exact_lexical_after_punctuation_case": true
+    },
+    {
+      "start_s": 34.878,
+      "end_s": 37.66,
+      "caption": "Just a quick look around this terminal.",
+      "asr": "Just a quick look around this terminal.",
+      "exact_lexical_after_punctuation_case": true
+    }
+  ]
+}

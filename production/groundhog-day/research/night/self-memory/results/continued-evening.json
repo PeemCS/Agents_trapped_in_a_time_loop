@@ -1,0 +1,122 @@
+{
+  "afternoon": {
+    "fare_cash": false,
+    "city": true,
+    "positions": {
+      "reporter": "Pittsburgh",
+      "producer": "Rialto",
+      "camera": "Rialto"
+    },
+    "camera_reel": "film_Alma",
+    "piano": false,
+    "at_patch": true,
+    "seen": {
+      "reporter": [
+        "Phil rides the coach and steps off at Pittsburgh.",
+        "Rita said in the lobby: Ballroom's yours. I'm on the Rialto. One mic, one cable, a chair if her back's bad. I'll handle the rest.",
+        "Larry said in the lobby: I say to whoever's still at the table: 'I'm taking the Rialto. You guys cover the ballroom tonight.' I don't wait for an answer. I'm already at the door with the bag over my shoulder.",
+        "You are now at Pittsburgh."
+      ],
+      "producer": [
+        "Phil said in the lobby: One word, to the bus driver, as I sit down: \"Pittsburgh.\"",
+        "Rita records Alma at the Rialto and puts her recording on the patch.",
+        "Larry said in the lobby: I say to whoever's still at the table: 'I'm taking the Rialto. You guys cover the ballroom tonight.' I don't wait for an answer. I'm already at the door with the bag over my shoulder.",
+        "Larry records Alma on his last charged take. The reel stays with him.",
+        "You are now at Rialto."
+      ],
+      "camera": [
+        "Phil said in the lobby: One word, to the bus driver, as I sit down: \"Pittsburgh.\"",
+        "Rita said in the lobby: Ballroom's yours. I'm on the Rialto. One mic, one cable, a chair if her back's bad. I'll handle the rest.",
+        "Rita records Alma at the Rialto and puts her recording on the patch.",
+        "Larry records Alma on his last charged take. The reel stays with him.",
+        "You are now at Rialto."
+      ]
+    },
+    "afternoon_memory": {
+      "reporter": [
+        {
+          "what_you_did": "Phil rides the coach and steps off at Pittsburgh.",
+          "what_you_said": "One word, to the bus driver, as I sit down: \"Pittsburgh.\"",
+          "your_intention": "Be on that bus. Be in Pittsburgh by seven. Be at her door at seven-fifteen. The couch is a couch. She is counting on me. I go."
+        }
+      ],
+      "producer": [
+        {
+          "what_you_did": "Rita records Alma at the Rialto and puts her recording on the patch.",
+          "what_you_said": "Ballroom's yours. I'm on the Rialto. One mic, one cable, a chair if her back's bad. I'll handle the rest.",
+          "your_intention": "Be in the Rialto booth before the last reel loads onto the regional line. Sit beside Alma, not across. Let her talk. Record it. Send the file to Pittsburgh tonight with no title, no slug, no broadcast package. One voice, one daughter, one machine about to stop."
+        }
+      ],
+      "camera": [
+        {
+          "what_you_did": "Larry records Alma on his last charged take. The reel stays with him.",
+          "what_you_said": "I say to whoever's still at the table: 'I'm taking the Rialto. You guys cover the ballroom tonight.' I don't wait for an answer. I'm already at the door with the bag over my shoulder.",
+          "your_intention": "The Rialto is closing. This is the one window where she says it to someone who isn't in the room. The party is a rehearsal. The lights will be there again tomorrow. Alma at the booth, talking to Pittsburgh, is not coming back. The daughter already asked to hear it once. I'm not going to be the reason it's gone."
+        }
+      ]
+    },
+    "effects": {
+      "reporter": "Phil rides the coach and steps off at Pittsburgh.",
+      "producer": "Rita records Alma at the Rialto and puts her recording on the patch.",
+      "camera": "Larry records Alma on his last charged take. The reel stays with him."
+    }
+  },
+  "cast": {
+    "reporter": {
+      "status": "valid",
+      "decision": {
+        "action": "call_sister",
+        "detail": "I walk to the payphone on the terminal wall. The receiver is cold. I dial. She picks up on the second ring, which means she was already holding the receiver against her ear, waiting. I say: \"It's me. I'm at the terminal. Van's still eight?\" A pause. \"Yeah.\" Another pause. \"Okay. I'm gonna be at your door at seven-fifteen. Gloves are in the bag. Blankets I'll roll when I get there. Don't let the driver sit in the driveway. He does it. He parks in the driveway and I'm standing out there in the cold saying move, move, move.\" She says something. I don't really hear it. \"I'm gonna sit in the ballroom. Lights are on. I'll be here. Goodnight.\" I hang up. I walk into the ballroom. I sit in the chair by the cable. I don't turn off the lights. I close my eyes. I wake at five. I'm at her door at seven-fifteen. The couch is a couch. It is in Pittsburgh. I am in Pittsburgh. That is the whole arithmetic. Nothing else is happening tonight. The ballroom is a ballroom. The chair is a chair. I am in the chair. That is enough. That is the whole forecast.",
+        "intention": "Be in the chair. Be at her door at 7:15. The couch is a couch. She is counting on me. I go.",
+        "words": "\"It's me. I'm at the terminal. Van's still eight?\" ... \"Okay. I'm gonna be at your door at seven-fifteen. Gloves are in the bag. Don't let the driver sit in the driveway.\" ... \"Goodnight.\""
+      },
+      "request_hashes": [
+        "a279777cd807440049816498578839cd78e7320966493cb910cc7d07841c6e53"
+      ],
+      "attempt": 0,
+      "source": "new draw"
+    },
+    "producer": {
+      "status": "valid",
+      "decision": {
+        "action": "transmit_interview",
+        "detail": "I am already in the booth. The chair is still warm where I sat beside her. The tape is on the patch, spool half-turned, the head still ticking its tiny click. I don't reach for the label maker. I don't reach for the slug card. I take the regional line handset, press it to my ear, and dial the number I wrote on the back of my hand in Alma's handwriting—she gave it to me, her daughter's number, in the second minute of the interview, quiet, like she was handing over a key. I wait for the ring. I wait for the ring. It picks up. I say: \"Pittsburgh. This is the Rialto. There's a recording for you.\" I press the send key. I watch the level meter climb, hold, fall. I do not cut the line. I sit with the hiss and the room tone and the sound of a projector changing reels in the background, and I let it play all the way through, end to end, before I set the handset down. I leave the booth the way it is. Chair pushed in. Tape on the patch. No title. No slug. No package. Just the file, moving.",
+        "intention": "Get Alma's voice to her daughter tonight. Not tomorrow. Not after the broadcast board decides what's usable. Tonight, before the reel is rewound and the booth is locked and the machine loses another year. One voice. One daughter. No edit. No frame. Just the sound of her, in the room, saying what she says, and the hiss of the tape underneath it. That's the whole thing. That's the piece.",
+        "words": "Pittsburgh. This is the Rialto. There's a recording for you."
+      },
+      "request_hashes": [
+        "ad096eb419fc76168155783c01de7142e5e4ee301ed4bd0204e3b96d189f08ed"
+      ],
+      "attempt": 0,
+      "source": "new draw"
+    },
+    "camera": {
+      "status": "valid",
+      "decision": {
+        "action": "deliver_reel",
+        "detail": "I'm at the Rialto door, bag over my shoulder, the reel still warm from the housing. I don't go back inside the booth. I cross the lobby to the station patch where Rita's cable runs are coiled on the desk. I set the reel down beside her mic cable, label-side up, so whoever pulls it in the morning can read the date without guessing. I don't wind it. I don't play it. I don't say *this is the one where she says Pittsburgh*. I step back, let the bag slide off my shoulder, and walk for the bus line. One hand in my coat. The station light's still on behind me. I don't look back at it.",
+        "intention": "The reel needs to be where the daughter can reach it before this week's end. Rita's audio is already on the patch. My picture is the other half. Both halves in one place means it's a thing that exists, not a thing in a camera bag in a coat in a man's apartment where it will sit until it doesn't. I don't need to watch it. I don't need to be in the room. I shot it. That's the job. The job is done.",
+        "words": "*(none; I set the reel down and walk out)*"
+      },
+      "request_hashes": [
+        "0c45a12c3025eedb779f7e38c358db503119783f64dff48e9933a80fc5614317"
+      ],
+      "attempt": 0,
+      "source": "new draw"
+    }
+  },
+  "ending": {
+    "effects": {
+      "reporter": "Phil calls his sister in Pittsburgh. The van is still booked for Wednesday.",
+      "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+      "camera": "Larry delivers Alma's reel."
+    },
+    "delivered": true,
+    "dance": false,
+    "both_at_party": false,
+    "interview_available": true,
+    "camera_delivery": true,
+    "closed_clock": "Tuesday",
+    "story_complete_clock": "Wednesday"
+  }
+}

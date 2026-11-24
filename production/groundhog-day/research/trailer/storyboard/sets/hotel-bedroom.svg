@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="740" viewBox="0 0 1040 740" role="img" aria-labelledby="t d">
+  <title id="t">Hearthside Hotel, bedroom blocking</title>
+  <desc id="d">Based on the supplied Cherry Tree Inn drawing. Headboard south, three bay windows north, nightstand ninety-five degrees to Phil's right when lying down, hall door west, reverse wide camera northwest. Window seams stay fixed from Tuesday to Wednesday.</desc>
+  <defs>
+    <marker id="eye" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 7 3.5 0 7z" fill="#75dae7"/></marker>
+    <marker id="rev" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 7 3.5 0 7z" fill="#eb9cc7"/></marker>
+    <marker id="turn" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 7 3.5 0 7z" fill="#f5c37e"/></marker>
+    <style>text{font-family:Arial,Helvetica,sans-serif;fill:#f3f0e9}.h{font-size:31px;font-weight:700}.s{font-size:15px;fill:#c3c9c4}.lab{font-size:15px;font-weight:700}.sm{font-size:13px}.wall{stroke:#9baeb1;stroke-width:5;fill:none}.window{stroke:#b8ddef;stroke-width:9;stroke-linecap:round}.f{fill:#81d4ed;fill-opacity:.08;stroke:#70cada;stroke-dasharray:5 5}.pv{stroke:#75dae7;stroke-width:2;marker-end:url(#eye)}.rev{stroke:#eb9cc7;stroke-width:2;stroke-dasharray:5 5;fill:none;marker-end:url(#rev)}.walk{fill:none;stroke:#f5c37e;stroke-width:2;stroke-dasharray:6 5;marker-end:url(#turn)}</style>
+  </defs>
+  <rect width="1040" height="740" fill="#101a20"/>
+  <text x="34" y="48" class="h">Hearthside Hotel bedroom</text>
+  <text x="34" y="74" class="s">Bedroom shared by S00, S02, S03, S04 and S06 · overhead · north is the direction of Phil’s feet</text>
+  <path d="M65 637V225L179 116H504L613 225V637Z" fill="#1b282d"/>
+  <path class="wall" d="M65 547v90h548V225L504 116H179L65 225v238"/>
+  <path d="M65 547h75m0 0q0-74-75-84" fill="none" stroke="#789197" stroke-dasharray="4 4" stroke-width="2"/>
+  <path class="window" d="m79 209 84-79m68-14h214m76 15 76 78"/>
+  <text x="95" y="157" class="sm" transform="rotate(-44 95 157)">Bay 1</text><text x="306" y="103" class="sm">Bay 2</text><text x="548" y="141" class="sm" transform="rotate(44 548 141)">Bay 3</text>
+  <path d="M79 225l109-97h312l100 97" fill="none" stroke="#bea685" stroke-dasharray="5 4" stroke-width="2"/>
+  <text x="432" y="155" class="sm">Curtain track</text>
+  <rect x="223" y="383" width="207" height="232" rx="7" fill="#363e56" stroke="#c9b8b0" stroke-width="2"/>
+  <path d="M230 395h193v149H230z" fill="#4a4765" stroke="#aa8c9b" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="254" y="415" class="sm">Patchwork quilt</text>
+  <rect x="234" y="556" width="88" height="49" rx="7" fill="#694958"/><rect x="330" y="556" width="88" height="49" rx="7" fill="#694958"/>
+  <rect x="214" y="613" width="227" height="18" rx="3" fill="#675041" stroke="#d0a479" stroke-width="2"/>
+  <text x="327" y="663" class="lab" text-anchor="middle">SOUTH · mahogany Eastlake headboard</text>
+  <path class="f" d="M328 555L124 194H533z"/><line class="pv" x1="328" y1="555" x2="328" y2="225"/>
+  <text x="345" y="262" class="sm">0° · neutral wake</text><circle cx="328" cy="555" r="10" fill="#19353b" stroke="#75dae7" stroke-width="3"/>
+  <text x="241" y="590" class="sm">Phil’s eyes</text>
+  <rect x="472" y="530" width="97" height="82" rx="5" fill="#6b4935" stroke="#f1c187" stroke-width="2"/>
+  <circle cx="550" cy="545" r="8" fill="#b16a78"/><circle cx="548" cy="587" r="13" fill="#bd945a"/>
+  <rect x="480" y="558" width="42" height="21" rx="3" fill="#302f33" stroke="#e9e6d8"/><text x="482" y="573" font-size="10">6:00</text>
+  <line x1="340" y1="555" x2="473" y2="567" stroke="#f5c37e" stroke-width="2" marker-end="url(#turn)"/>
+  <text x="437" y="517" class="sm">95° RIGHT</text>
+  <rect x="515" y="250" width="69" height="53" rx="8" fill="#526663" stroke="#a2ada0"/><text x="549" y="272" text-anchor="middle" class="sm">Rocking</text><text x="549" y="288" text-anchor="middle" class="sm">chair</text>
+  <circle cx="105" cy="606" r="13" fill="#665a47" stroke="#c6af8e"/><text x="128" y="611" class="sm">Floor lamp</text>
+  <text x="40" y="489" text-anchor="end" class="sm" transform="rotate(-90 40 489)">WEST · hall door</text>
+  <circle cx="117" cy="249" r="10" fill="#7b385c" stroke="#ef9dcc" stroke-width="3"/><text x="130" y="245" class="sm">Reverse wide</text>
+  <path class="rev" d="M127 259Q183 335 309 504"/>
+  <circle cx="305" cy="157" r="8" fill="#2b4344" stroke="#75dae7" stroke-width="2"/>
+  <path class="walk" d="M300 171Q238 194 193 273Q163 357 185 467Q185 509 213 546"/>
+  <text x="79" y="388" class="sm">Phil returns</text><text x="79" y="406" class="sm">to the bed</text>
+  <line x1="649" y1="104" x2="649" y2="638" stroke="#42545a"/>
+  <text x="680" y="132" class="lab">Fixed geography</text><text x="680" y="158" class="s">Face the three frosted arches from the bed.</text><text x="680" y="182" class="s">The west hall door is on Phil’s left.</text><text x="680" y="206" class="s">The clock, lamp and roses are on his right.</text>
+  <text x="680" y="261" class="lab">S00 / S02 / S06 · returning to bed</text><text x="680" y="287" class="s">Cyan mark = eye line, pillow height.</text><text x="680" y="311" class="s">Forward: quilt and bay arches in view.</text><text x="680" y="335" class="s">Turn ~95° right to reveal the RC-6025.</text>
+  <text x="680" y="390" class="lab">S04 · refusing the day</text><text x="680" y="416" class="s">At Bay 2, pull the drapes shut at 1 p.m.</text><text x="680" y="440" class="s">Peel away to the pink NW camera mark.</text><text x="680" y="464" class="s">Sightline runs diagonally toward the pillow.</text><text x="680" y="488" class="s">The nightstand reads frame left in reverse.</text>
+  <text x="680" y="543" class="lab">Light and time</text><text x="680" y="569" class="s">Tuesday has cold daylight at the bay.</text><text x="680" y="593" class="s">Wednesday warms the same openings.</text><text x="680" y="617" class="s">The pattern of mullions stays fixed.</text>
+  <text x="34" y="713" class="sm">Drawing follows the supplied right-hand screenshot. Room geography is independent of the older left-hand reference image.</text>
+</svg>

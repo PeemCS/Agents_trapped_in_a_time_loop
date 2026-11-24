@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Another Tuesday · Screening room</title>
+<link rel="stylesheet" href="screen.css"><script defer src="catalog.js"></script><script defer src="screen.js"></script>
+</head><body><main>
+<header><div><p class="kicker">A private rehearsal</p><h1>Another Tuesday</h1></div><nav aria-label="Explore the rehearsal"><a href="../visual/index.html">Walk the town <span aria-hidden="true">↗</span></a><a href="../thinking/index.html">Read the actors’ thinking <span aria-hidden="true">↗</span></a><a href="../stage3d/viewer/index.html">Enter the 3D set <span aria-hidden="true">↗</span></a></nav></header>
+<div class="chooser" id="chooser" aria-label="Select a performance"></div>
+<div class="layout"><div><video id="film" controls playsinline preload="metadata"></video><div class="under"><span id="film-label"></span><a id="companion" href="../editor/two-takes-demo.mp4">Compare the first two takes ↗</a></div></div>
+<aside><p id="moment" class="kicker"></p><h2 id="focus"></h2><p id="fact"></p><blockquote id="quote"></blockquote><div id="others"></div>
+<label for="shot">Jump to a shot</label><select id="shot"></select><code id="event"></code><a id="source-thinking" hidden>Read the full generation ↗</a></aside></div>
+<section class="short-films" aria-labelledby="short-films-title">
+  <h2 id="short-films-title">More short films</h2>
+  <div class="short-list">
+    <article>
+      <h3><a href="../editor/fare-envelope/film.mp4">The return fares</a></h3>
+      <p class="short-meta">28.67 s · Take 731-uncued</p>
+      <p>Phil tells the crew he’s heading to Pittsburgh. Watch what he does with their fares.</p>
+      <div class="short-links">
+        <a href="../editor/fare-envelope/captions.srt" aria-label="Captions for The return fares">Captions</a>
+        <a href="../editor/fare-envelope/shot-evidence.json" aria-label="Shot ledger for The return fares">Shot ledger</a>
+      </div>
+    </article>
+    <article>
+      <h3><a href="../stage3d/viewer/rialto/evidence/eight-bars-3d.mp4">Eight Bars in 3D</a></h3>
+      <p class="short-meta">26.5 s · Silent · Take 721-hypothesis</p>
+      <p>The same evening in <i>Eight Bars</i>, seen side by side. Phil sits at the depot while Rita goes dancing.</p>
+      <div class="short-links">
+        <a href="../stage3d/viewer/rialto/index.html?shot=d01-evening-reporter&amp;view=split&amp;at=.70">Explore the split-screen stage</a>
+        <a href="../stage3d/viewer/rialto/evidence/shot-ledger.json" aria-label="Shots and captions for Eight Bars in 3D">Shots and captions</a>
+      </div>
+    </article>
+  </div>
+</section>
+<p class="under"><a href="../projection/audience/index.html">Open the private audience card for Eight Bars</a></p>
+<details><summary>About the performance</summary><p>Phil reports the weather, Rita produces the segment and Larry chooses what to film with his last charged battery. All three make independent decisions. The coach reaches Pittsburgh. At six, the same Tuesday starts again.</p><p>Wednesday’s Couch and The Afternoon Coach use the same cast, model and world settings. Eight Bars follows one take in which Phil begins with the theory that recreating the movie ending can get him out. Their random seeds differ. The seven o’clock film adds a live broadcast that Rita controls. The public cuts play silently. The panel shows dialogue from the source events, and each short stays within its own recording. The monitored performance includes silent excerpts from Qwen’s own thinking. A link beside each shot opens its full generation. The panel shows the committed action for the shot’s source event.</p><p><a href="../branches/index.html">Replay the one o’clock fork</a> · <a href="../editor/five-trips/index.html">Watch five escapes and five dawns</a> · <a href="../persona/viewer.html">Compare the trained actors</a></p></details>
+</main></body></html>

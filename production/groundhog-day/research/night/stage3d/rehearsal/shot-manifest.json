@@ -1,0 +1,162 @@
+{
+  "source_sha256": "9695d76c0cf799ac32810b53e3da5c26814e227ba6d710e675f0d5c4c798646d",
+  "shots": [
+    {
+      "id": "d02-t00-reporter",
+      "day": 2,
+      "clock": "6:00 am",
+      "actor": "Phil",
+      "action": "talk_to_Rita",
+      "origin": "inn",
+      "place": "inn",
+      "cast": [
+        {
+          "actor": "Rita",
+          "id": "d02-t00-producer",
+          "action": "look_around",
+          "origin": "inn",
+          "place": "inn"
+        },
+        {
+          "actor": "Larry",
+          "id": "d02-t00-camera",
+          "action": "look_around",
+          "origin": "square",
+          "place": "square"
+        }
+      ]
+    },
+    {
+      "id": "d02-t01-reporter",
+      "day": 2,
+      "clock": "9:30 am",
+      "actor": "Phil",
+      "action": "talk_to_Rita",
+      "origin": "inn",
+      "place": "inn",
+      "cast": [
+        {
+          "actor": "Rita",
+          "id": "d02-t01-producer",
+          "action": "talk_to_Phil",
+          "origin": "inn",
+          "place": "inn"
+        },
+        {
+          "actor": "Larry",
+          "id": "d02-t01-camera",
+          "action": "film_festival",
+          "origin": "square",
+          "place": "square"
+        }
+      ]
+    },
+    {
+      "id": "d02-t02-reporter",
+      "day": 2,
+      "clock": "1:00 pm",
+      "actor": "Phil",
+      "action": "take_coach_to_Pittsburgh",
+      "origin": "inn",
+      "place": "Pittsburgh",
+      "cast": [
+        {
+          "actor": "Rita",
+          "id": "d02-t02-producer",
+          "action": "talk_to_Phil",
+          "origin": "inn",
+          "place": "inn"
+        },
+        {
+          "actor": "Larry",
+          "id": "d02-t02-camera",
+          "action": "listen_to_band",
+          "origin": "square",
+          "place": "square"
+        }
+      ]
+    },
+    {
+      "id": "d02-t03-reporter",
+      "day": 2,
+      "clock": "7:00 pm",
+      "actor": "Phil",
+      "action": "call_sister",
+      "origin": "Pittsburgh",
+      "place": "Pittsburgh",
+      "cast": [
+        {
+          "actor": "Rita",
+          "id": "d02-t03-producer",
+          "action": "spend_time_here",
+          "origin": "inn",
+          "place": "inn"
+        },
+        {
+          "actor": "Larry",
+          "id": "d02-t03-camera",
+          "action": "listen_to_band",
+          "origin": "square",
+          "place": "square"
+        }
+      ]
+    },
+    {
+      "id": "d03-t00-reporter",
+      "day": 3,
+      "clock": "6:00 am",
+      "actor": "Phil",
+      "action": "spend_time_here",
+      "origin": "inn",
+      "place": "inn",
+      "cast": [
+        {
+          "actor": "Rita",
+          "id": "d03-t00-producer",
+          "action": "look_around",
+          "origin": "inn",
+          "place": "inn"
+        },
+        {
+          "actor": "Larry",
+          "id": "d03-t00-camera",
+          "action": "look_around",
+          "origin": "square",
+          "place": "square"
+        }
+      ]
+    },
+    {
+      "id": "d03-t01-reporter",
+      "day": 3,
+      "clock": "9:30 am",
+      "actor": "Phil",
+      "action": "try_something",
+      "origin": "inn",
+      "place": "inn",
+      "cast": [
+        {
+          "actor": "Rita",
+          "id": "d03-t01-producer",
+          "action": "talk_to_Phil",
+          "origin": "inn",
+          "place": "inn"
+        },
+        {
+          "actor": "Larry",
+          "id": "d03-t01-camera",
+          "action": "film_festival",
+          "origin": "square",
+          "place": "square"
+        }
+      ]
+    }
+  ],
+  "frames": 576,
+  "fps": 24,
+  "city_offset_metres": 42,
+  "stage_file": "another-tuesday.usda",
+  "camera": "/Stage/ReporterCamera",
+  "moving_rigs": 3,
+  "geometry": "original replaceable proxy meshes and props"
+}

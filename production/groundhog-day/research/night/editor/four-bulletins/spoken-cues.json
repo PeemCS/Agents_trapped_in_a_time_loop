@@ -1,0 +1,74 @@
+[
+  {
+    "actor": "Phil",
+    "text": "Rita, I'm grabbing some coffee and a bagel at the diner. Be ready to roll in about forty minutes.",
+    "start_s": 3.42,
+    "end_s": 10.3443,
+    "event_id": "d01-t00-reporter",
+    "track": "local dialogue",
+    "seed": 711
+  },
+  {
+    "actor": "Phil",
+    "text": "I'm heading out to catch the one o'clock coach. See you later, everyone.",
+    "start_s": 11.42,
+    "end_s": 16.9454,
+    "event_id": "d01-t02-reporter",
+    "track": "local dialogue",
+    "seed": 711
+  },
+  {
+    "actor": "Phil",
+    "text": "Well, I'm settled in for the night.",
+    "start_s": 18.045,
+    "end_s": 20.7258,
+    "event_id": "d01-t03-reporter",
+    "track": "local dialogue",
+    "seed": 711
+  },
+  {
+    "actor": "Phil",
+    "text": "Rita, I'm heading to the diner to grab a coffee and set up the switcher. Let's get that 7 AM bulletin live.",
+    "start_s": 27.045,
+    "end_s": 35.0215,
+    "event_id": "d02-t00-reporter",
+    "track": "local dialogue",
+    "seed": 711
+  },
+  {
+    "actor": "Larry",
+    "text": "I'm rolling on the festival now to secure the B-roll before the ceremony ends. Covering for me on the switcher, Rita?",
+    "start_s": 36.1075,
+    "end_s": 43.1928,
+    "event_id": "d02-t02-camera",
+    "track": "local dialogue",
+    "seed": 711
+  },
+  {
+    "actor": "Phil",
+    "text": "Hey, it's Phil. I'm at the terminal now. Let's confirm the van is booked for 8 AM tomorrow? I'll be ready to roll.",
+    "start_s": 44.295,
+    "end_s": 53.3354,
+    "event_id": "d02-t03-reporter",
+    "track": "local dialogue",
+    "seed": 711
+  },
+  {
+    "actor": "Rita",
+    "text": "Larry, are you live? Put me on air.",
+    "start_s": 54.42,
+    "end_s": 56.8388,
+    "event_id": "d03-t03-producer",
+    "track": "local dialogue",
+    "seed": 711
+  },
+  {
+    "actor": "Rita",
+    "event_id": "d06-t03-producer",
+    "text": "Good evening, folks. This is Rita on the scene in western Pennsylvania. We are on the air and ready for the forecast.",
+    "start_s": 78.4,
+    "end_s": 85.24191666666667,
+    "track": "on-air program",
+    "seed": 711
+  }
+]

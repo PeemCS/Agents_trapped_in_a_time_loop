@@ -1,0 +1,88 @@
+{
+  "source_sha256": "9695d76c0cf799ac32810b53e3da5c26814e227ba6d710e675f0d5c4c798646d",
+  "checked_shots": 5,
+  "observations": [
+    {
+      "event_id": "d01-t00-reporter",
+      "view": "action",
+      "camera_actor": "Rita",
+      "at": "inn",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 1
+      }
+    },
+    {
+      "event_id": "d02-t02-reporter",
+      "view": "action",
+      "camera_actor": "Phil",
+      "at": "Pittsburgh",
+      "framing": "street",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 0,
+        "camera_footage": "the festival"
+      }
+    },
+    {
+      "event_id": "d02-t03-reporter",
+      "view": "action",
+      "camera_actor": "Phil",
+      "at": "Pittsburgh",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": true,
+        "dishes": 2,
+        "camera_battery": 0,
+        "camera_footage": "the festival"
+      }
+    },
+    {
+      "event_id": "d03-t00-reporter",
+      "view": "morning",
+      "camera_actor": "Phil",
+      "at": "inn",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 1
+      }
+    },
+    {
+      "event_id": "d03-t00-reporter",
+      "view": "action",
+      "camera_actor": "Rita",
+      "at": "inn",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 1
+      }
+    }
+  ]
+}

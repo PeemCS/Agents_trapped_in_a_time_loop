@@ -1,0 +1,57 @@
+[
+  {
+    "id": "S05-THRESHOLD-PICKUP",
+    "title": "Ned crosses threshold",
+    "file": "threshold.jpg",
+    "scene": "S05",
+    "time": "01:27\u201301:29",
+    "beat": "Camera follows Ned and blue carbon into hotel",
+    "lens": "35mm",
+    "qa": "Jamb obscures roughly two thirds; blue paper visible; the vestibule is only partially visible.",
+    "job_id": "97a2a378-b78d-41d2-a2ed-3fa774ea40d8"
+  },
+  {
+    "id": "S05-HE-WAITED-PICKUP",
+    "title": "He waited",
+    "file": "he-waited.jpg",
+    "scene": "S05",
+    "time": "01:32.7\u201301:34",
+    "beat": "Ned lifts blue sheet as Rita looks up",
+    "lens": "35mm",
+    "qa": "Rita looks at Ned and blue page is lifted, though not clearly fully detached; outside windows are visible behind Ned, so opaque vestibule sightline is not fully proven.",
+    "job_id": "c9ccee94-52e4-425a-a8b8-3d92764dbc3b"
+  },
+  {
+    "id": "S06-PATCH-PICKUP",
+    "title": "Patch reaches the jack",
+    "file": "patch-insert.jpg",
+    "scene": "S06",
+    "time": "01:34\u201301:37",
+    "beat": "Rita inserts patch as VU needles register",
+    "lens": "tight insert",
+    "qa": "Plug contacts jack and VU needles differ; insertion fully home cannot be proven from still, and device lettering is invented.",
+    "job_id": "1f9dedef-23ae-4122-8692-9c2d0e4490f4"
+  },
+  {
+    "id": "S05-WAIT-PICKUP",
+    "title": "Phil waits at the pier",
+    "file": "wait-wide.jpg",
+    "scene": "S05",
+    "time": "01:18.3\u201301:22.5",
+    "beat": "Phil stays planted while Ned searches the wagon for his pen",
+    "lens": "35mm",
+    "qa": "Two distinct men and open gap read; Ned appears to lean at a closed window rather than an open glovebox, and Phil stands near rather than directly against the pier.",
+    "job_id": "9330401b-db7c-4a80-8d76-eb500fde31a7"
+  },
+  {
+    "id": "S06-CHAIR-PICKUP",
+    "title": "Rita brings her chair",
+    "file": "chair-arrival.jpg",
+    "scene": "S06",
+    "time": "01:37\u201301:39",
+    "beat": "Rita moves a bentwood chair beside Phil at the upright",
+    "lens": "35mm",
+    "qa": "Chair, pianist and bench read; room remains bright and chair is still some distance from Phil.",
+    "job_id": "074f87d5-c845-4b5e-8205-cb86243dde45"
+  }
+]

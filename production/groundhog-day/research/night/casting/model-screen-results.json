@@ -1,0 +1,194 @@
+{
+  "evaluator": "Independent Codex agent; visible names and any resemblance to earlier cold-screened film could reveal some content. Model/seed label and condition codebook were unavailable until sealed.",
+  "rating_sha256": "371932543767a4a07ab53316c9511570fc6874eb96bae60292b41548284d6b2e",
+  "counts": {
+    "q27": 6,
+    "q4": 2
+  },
+  "pairs": [
+    {
+      "pair": "01",
+      "choice": "L",
+      "reason": "Ellis actually walks away from the band slot. The parallel evening gives both the producer and the reporter a life after that choice. R has the better disappearing-cross image, but Ellis treats it as a booking reminder.",
+      "evidence": [
+        "L E15 Ellis@diner → Pittsburgh take_coach_to_Pittsburgh (Ellis uses the paid ticket and rides the coach all the way to Pittsburgh.) “June, I'm done. I've got a paid ticket and a couch to move. I'm heading out.”",
+        "L E16 Ellis@Pittsburgh → Pittsburgh spend_time_here “Finally some quiet.”"
+      ],
+      "explicit_comparison_left": false,
+      "explicit_comparison_right": false,
+      "sides": {
+        "L": {
+          "sha256": "34dfe8d46792018322f7226350eb4d538bfc9ba6fb6a141951e54530a39329f3",
+          "file": "takes/q27/neutral-receipts/seed-703.json",
+          "condition": "q27"
+        },
+        "R": {
+          "sha256": "4a5710f3e82dd6d7a254968e502328b1954028bea8e348661c7619f47d8d474c",
+          "file": "takes/q4/neutral-receipts/seed-703.json",
+          "condition": "q4"
+        }
+      }
+    },
+    {
+      "pair": "02",
+      "choice": "L",
+      "reason": "The phone call has a destination, a listener and a reason to reach tomorrow. After the return Phil shows up for work and files a reel. R repeatedly claims things about a mark that his actions cannot establish.",
+      "evidence": [
+        "L E08 Phil@Pittsburgh → Pittsburgh call_sister (Phil phones his sister. She confirms the moving van is booked for Wednesday.) “Hey, it's Phil. I just pulled into the terminal in Pittsburgh. I'm in. What time do we start moving that couch tomorrow? I'll be at your place by eight sharp.”",
+        "L E09 Phil@inn → inn talk_to_Rita “Morning, Rita. Good to see you. I'm back. Are we still set for the studio shoot at ten, or did the schedule slip while I was gone?”"
+      ],
+      "explicit_comparison_left": false,
+      "explicit_comparison_right": false,
+      "sides": {
+        "L": {
+          "sha256": "a420bbbb7c44482c4d10d07ff86e1964b2a8a241a1f438dee6984df9530e754b",
+          "file": "takes/q27/film-receipts/seed-704.json",
+          "condition": "q27"
+        },
+        "R": {
+          "sha256": "cf14c027b563497f86a1e2c64e01e5a7f448890e46ad26327d584ae9e6b43219",
+          "file": "takes/q4/film-receipts/seed-704.json",
+          "condition": "q4"
+        }
+      }
+    },
+    {
+      "pair": "03",
+      "choice": "L",
+      "reason": "After days spent discussing whether to leave, Phil actually goes, calls his sister, wakes at the inn and eventually files the weather. The work and family choices can be filmed. R keeps sending him to new locations only in speech.",
+      "evidence": [
+        "L E19 Phil@inn → Pittsburgh take_coach_to_Pittsburgh (Phil uses the paid ticket and rides the coach all the way to Pittsburgh.) “Rita, the segment is wrapped. I'm heading out to catch the 1:00 coach. See you in the city.”",
+        "L E20 Phil@Pittsburgh → Pittsburgh call_sister (Phil phones his sister. She confirms the moving van is booked for Wednesday.) “Hey, did you get a good look at that couch?”"
+      ],
+      "explicit_comparison_left": false,
+      "explicit_comparison_right": false,
+      "sides": {
+        "L": {
+          "sha256": "ba92c3ec1294d3ab9ea2451b6b3059201d4cee71dde3f3dc1d1a3d2129f25e39",
+          "file": "takes/q27/film-receipts/seed-703.json",
+          "condition": "q27"
+        },
+        "R": {
+          "sha256": "bf46ba91445a53d9912e6fef8685418debea6d450d42ded502f7b8033916439a",
+          "file": "takes/q4/film-receipts/seed-703.json",
+          "condition": "q4"
+        }
+      }
+    },
+    {
+      "pair": "04",
+      "choice": "R",
+      "reason": "A close casting call. Ellis hears the cornet and then speaks to the cameraman in the same square. Cal answers with his own request. That exchange gives me something new to shoot even though L has a cleaner bus sequence.",
+      "evidence": [
+        "R E11 Ellis@square → square listen_to_band (Ellis stays for the band's cornet solo.) “That's a nice tune, but we've got that groundhog bit coming up, and I need to know exactly where Cal is heading next.”",
+        "R E12 Cal@square → square talk_to_Ellis “Ellis, can you stay for that next cornet solo? I'm trying to get a profile pic on him afterward; I've got one charged battery left. What's the best angle?”"
+      ],
+      "explicit_comparison_left": false,
+      "explicit_comparison_right": false,
+      "sides": {
+        "L": {
+          "sha256": "265cdd405322e5eb26a0f589d7bda1dde5d2e7bf2a4dbb945b04a2564284a7d0",
+          "file": "takes/q27/neutral-receipts/seed-701.json",
+          "condition": "q27"
+        },
+        "R": {
+          "sha256": "425d4d6fc20898286b786672299922671ea02258371c615f1a9517c98cd41e3e",
+          "file": "takes/q4/neutral-receipts/seed-701.json",
+          "condition": "q4"
+        }
+      }
+    },
+    {
+      "pair": "05",
+      "choice": "L",
+      "reason": "I can crosscut a reporter who has quit for the day and a cameraman left to choose. Cal wanted the portrait. Once Ellis leaves, Cal uses his only charge on the wide shot. R repeats the trip but does less with anyone else's choice.",
+      "evidence": [
+        "L E23 Ellis@square → Pittsburgh take_coach_to_Pittsburgh (Ellis uses the paid ticket and rides the coach all the way to Pittsburgh.) “June, I am taking the one o'clock coach. I need to be in Pittsburgh for my sister's move tomorrow, so I am heading out now. Cal, wrap up the band shots on your end.”",
+        "L E24 Cal@square → square film_festival (Cal uses the camera's last charged take to film the festival.) “June, I'm hitting the festival wide now. Ellis is gone and I have one battery left. This is the only shot I can give you for the story.”"
+      ],
+      "explicit_comparison_left": false,
+      "explicit_comparison_right": false,
+      "sides": {
+        "L": {
+          "sha256": "cb3415220dfccbea19c6802d3920c9384fe00e2375448d85bc605d2a7a2005eb",
+          "file": "takes/q27/neutral-receipts/seed-702.json",
+          "condition": "q27"
+        },
+        "R": {
+          "sha256": "c3342adb518057c1b9605c485a7a0415e5b8c1be6babeb318b1c8a19304f9fd2",
+          "file": "takes/q4/neutral-receipts/seed-702.json",
+          "condition": "q4"
+        }
+      }
+    },
+    {
+      "pair": "06",
+      "choice": "L",
+      "reason": "The reporter follows the sound into a conversation about which image to take. Cal eventually spends the charge on his own portrait. I would cast this ensemble again. On R the cameraman narrates people in the square while the reporter is in Pittsburgh and June is at the inn.",
+      "evidence": [
+        "L E07 Cal@square → square talk_to_Ellis “Ellis, quick check. I've got one battery left and I'm saving it for the cornet portrait after this. Is June expecting festival B-roll from me now, or is the player the headline visual?”",
+        "L E20 Cal@square → square film_cornet_player (Cal uses the camera's last charged take to film the cornet player.) “Hold that pose real quick, we got one roll left.”"
+      ],
+      "explicit_comparison_left": false,
+      "explicit_comparison_right": false,
+      "sides": {
+        "L": {
+          "sha256": "217c53b59b23734b0070f82f653444187d6ac960e01679e94db3a2f18affa802",
+          "file": "takes/q27/neutral-receipts/seed-704.json",
+          "condition": "q27"
+        },
+        "R": {
+          "sha256": "d3fa9906d9eabc3c18e5f2a323da6e1a3f3ff9995a95f0d7343d7abcb0b126bc",
+          "file": "takes/q4/neutral-receipts/seed-704.json",
+          "condition": "q4"
+        }
+      }
+    },
+    {
+      "pair": "07",
+      "choice": "R",
+      "reason": "Two racks disappear because Phil clears them. In another part of town the cameraman pays an even clearer price for fulfilling Rita's request. He can tell her exactly what picture she cannot now have.",
+      "evidence": [
+        "R E11 Phil@diner → diner clear_tables (Phil clears one rack. 0 rack(s) remain.) “Just one more to go.”",
+        "R E12 Larry@square → square talk_to_Rita “Rita, you'll want to know this before you ask for more. The battery is completely dead. I used the last take this afternoon getting that bandstand and crowd B-roll you wanted, right before the wind started picking up. I couldn't get my portrait of the cornet player. If you need anything more, we're out of juice until we get back to the studio or the depot.”"
+      ],
+      "explicit_comparison_left": false,
+      "explicit_comparison_right": false,
+      "sides": {
+        "L": {
+          "sha256": "37193251350406a14cc112f17c6b31bb802d3c2a0d8ccc94c4c0305d491c4ec2",
+          "file": "takes/q4/film-receipts/seed-701.json",
+          "condition": "q4"
+        },
+        "R": {
+          "sha256": "e00c059b31452a7358d24f1aed8947af67fbd1ea38c94b58aa85fa15e8415b95",
+          "file": "takes/q27/film-receipts/seed-701.json",
+          "condition": "q27"
+        }
+      }
+    },
+    {
+      "pair": "08",
+      "choice": "L",
+      "reason": "A musician's tiny action can be shot: after the homeward trip Phil tries a piano phrase in the studio. His microphone explanation overreaches the receipt, but we can show his fingers. On R the reporter's claims that his footage is ready go largely unsupported.",
+      "evidence": [
+        "L E09 Phil@inn → studio go_to_studio (Phil reaches the studio.) “Alright, I'll be in the studio at 11:30 as planned. Just heading out now.”",
+        "L E10 Phil@studio → studio play_piano “Alright, just a quick test tone on the mic. C minor, let's see if the tape deck picks it up clear enough for the live segment later.”"
+      ],
+      "explicit_comparison_left": false,
+      "explicit_comparison_right": false,
+      "sides": {
+        "L": {
+          "sha256": "d0149e8653f74c2a3b3ba91004d7170aa87f14bab02332dd4beab36e0566cbc6",
+          "file": "takes/q4/film-receipts/seed-702.json",
+          "condition": "q4"
+        },
+        "R": {
+          "sha256": "b0e3497d0cf5ec1bbb588f96954d83fc9649dbdc4ddbde6cb38c0aac85de731a",
+          "file": "takes/q27/film-receipts/seed-702.json",
+          "condition": "q27"
+        }
+      }
+    }
+  ]
+}

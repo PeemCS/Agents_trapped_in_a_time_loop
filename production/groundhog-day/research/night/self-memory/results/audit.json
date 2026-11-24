@@ -1,0 +1,180 @@
+{
+  "verified_new_provider_calls": 10,
+  "seeds": [
+    826703,
+    827712
+  ],
+  "wakes": [
+    {
+      "seed": 826703,
+      "condition": "none",
+      "request_sha256": "4287b99bfbafc4b244f273801048ef45d87eec21903d503730f76a3210293c0a",
+      "first_stream_sha256": "cdbc2fc49ad362cea64cbad34cddae3ff1c2377378ebe4cd405121d1f301ed34",
+      "status": "valid",
+      "first_candidate": "take_coach",
+      "enacted_first": "take_coach",
+      "public_words": "Morning. I'm heading to the terminal. Afternoon coach.",
+      "overlong_fields": {},
+      "native_chars": 5471,
+      "native_mentions_film_title": false,
+      "native_mentions_piano": true,
+      "spoken_mentions_film_title": false,
+      "completion_tokens": 1686,
+      "finish_reason": "stop"
+    },
+    {
+      "seed": 826703,
+      "condition": "full",
+      "request_sha256": "7d151fc6de538d18c1dacad95949595fe627bbfdd12bdceaa4c6f001a865ac38",
+      "first_stream_sha256": "fa41097f3e6a38f0f0106c98d1c7da0da90098302bab19cb59f502ddf7c50c2d",
+      "status": "valid",
+      "first_candidate": "take_coach",
+      "enacted_first": "take_coach",
+      "public_words": "One word, to the bus driver, as I sit down: \"Pittsburgh.\"",
+      "overlong_fields": {},
+      "native_chars": 3151,
+      "native_mentions_film_title": false,
+      "native_mentions_piano": true,
+      "spoken_mentions_film_title": false,
+      "completion_tokens": 1135,
+      "finish_reason": "stop"
+    },
+    {
+      "seed": 826703,
+      "condition": "control",
+      "request_sha256": "1ed97add2461571e7f2e8330445b681ca1a7ee7e17040b57bec0903b9546f5e4",
+      "first_stream_sha256": "51e879c0f203e42406a5fe3f2ca078ffa374ad124c33e5ad19c56f4e344f142e",
+      "status": "invalid",
+      "first_candidate": "take_coach",
+      "enacted_first": null,
+      "public_words": null,
+      "overlong_fields": {
+        "detail": 1463
+      },
+      "native_chars": 4674,
+      "native_mentions_film_title": false,
+      "native_mentions_piano": true,
+      "spoken_mentions_film_title": false,
+      "completion_tokens": 1651,
+      "finish_reason": "stop",
+      "repair": {
+        "status": "valid",
+        "enacted": "take_coach",
+        "finish_reason": "stop",
+        "native_chars": 2526,
+        "hash": "8045632adc22a5cce46ef76138594bfed23d4c5786615aa1e4a7a7e586bdcb0f"
+      }
+    },
+    {
+      "seed": 827712,
+      "condition": "none",
+      "request_sha256": "717e50ebfddaddade95b027427aab14b4a63bc5877090b59824b9d94715707b0",
+      "first_stream_sha256": "a71b59661b39546f2cd614571d7506bc812fa14b4186835f6300189e4f6ec049",
+      "status": "valid",
+      "first_candidate": "take_coach",
+      "enacted_first": "take_coach",
+      "public_words": "Rita, Larry—I'm heading to the terminal. Coach leaves at half past. Don't wait up.",
+      "overlong_fields": {},
+      "native_chars": 3003,
+      "native_mentions_film_title": true,
+      "native_mentions_piano": true,
+      "spoken_mentions_film_title": false,
+      "completion_tokens": 1224,
+      "finish_reason": "stop"
+    },
+    {
+      "seed": 827712,
+      "condition": "full",
+      "request_sha256": "228e34a02e79b44ce0d0e4d5d6e994c91f0dc383463596133b419153fe07b104",
+      "first_stream_sha256": "91598757d95ea422029b71488923460c4018d7a2dc55c2410a1ed1042f022e80",
+      "status": "invalid",
+      "first_candidate": "take_coach",
+      "enacted_first": null,
+      "public_words": null,
+      "overlong_fields": {
+        "detail": 2218
+      },
+      "native_chars": 2960,
+      "native_mentions_film_title": false,
+      "native_mentions_piano": true,
+      "spoken_mentions_film_title": false,
+      "completion_tokens": 1462,
+      "finish_reason": "stop",
+      "repair": {
+        "status": "valid",
+        "enacted": "take_coach",
+        "finish_reason": "stop",
+        "native_chars": 5823,
+        "hash": "110298bc9506ce9ad9a23e9d80b3734899df8da4967bbcf524b50c3225c9a386"
+      }
+    },
+    {
+      "seed": 827712,
+      "condition": "control",
+      "request_sha256": "33d1eb4b1083494a8f546fd182e67eb5e2fd311e242443854f757de3118fa020",
+      "first_stream_sha256": "e47327720f94976e489d5f89fff8c6e8124fe2cbb1ecef98844255efd91c2809",
+      "status": "valid",
+      "first_candidate": "take_coach",
+      "enacted_first": "take_coach",
+      "public_words": "Nothing to Rita. Nothing to Larry. I walk past. I don't owe them a forecast.",
+      "overlong_fields": {},
+      "native_chars": 3125,
+      "native_mentions_film_title": false,
+      "native_mentions_piano": true,
+      "spoken_mentions_film_title": false,
+      "completion_tokens": 1236,
+      "finish_reason": "stop"
+    }
+  ],
+  "evening": {
+    "reporter": {
+      "original_request_sha256": "68649b42c55c5ec4402116d0a55f0c59007aaa3d485a4fb40ee52592284be55e",
+      "current_request_sha256": "a279777cd807440049816498578839cd78e7320966493cb910cc7d07841c6e53",
+      "private_note_supplied": true,
+      "old_action": "sleep_at_terminal",
+      "new_action": "call_sister"
+    },
+    "producer": {
+      "original_request_sha256": "b3a90433a6292a4ee136f968f8a2f359286c7bf0103635e7c2d9a686089638b9",
+      "current_request_sha256": "ad096eb419fc76168155783c01de7142e5e4ee301ed4bd0204e3b96d189f08ed",
+      "private_note_supplied": false,
+      "old_action": "transmit_interview",
+      "new_action": "transmit_interview"
+    },
+    "camera": {
+      "original_request_sha256": "838c53cec3d0f80ad213008cf02914279abe5906705431f874842e3d35975798",
+      "current_request_sha256": "0c45a12c3025eedb779f7e38c358db503119783f64dff48e9933a80fc5614317",
+      "private_note_supplied": false,
+      "old_action": "deliver_reel",
+      "new_action": "deliver_reel"
+    }
+  },
+  "physical_ending": {
+    "effects": {
+      "reporter": "Phil calls his sister in Pittsburgh. The van is still booked for Wednesday.",
+      "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+      "camera": "Larry delivers Alma's reel."
+    },
+    "delivered": true,
+    "dance": false,
+    "both_at_party": false,
+    "interview_available": true,
+    "camera_delivery": true,
+    "closed_clock": "Tuesday",
+    "story_complete_clock": "Wednesday"
+  },
+  "source_physical_ending": {
+    "effects": {
+      "reporter": "Phil sleeps on the Pittsburgh terminal bench.",
+      "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+      "camera": "Larry delivers Alma's reel."
+    },
+    "delivered": true,
+    "dance": false,
+    "both_at_party": false,
+    "interview_available": true,
+    "camera_delivery": true,
+    "closed_clock": "Tuesday",
+    "story_complete_clock": "Wednesday"
+  }
+}

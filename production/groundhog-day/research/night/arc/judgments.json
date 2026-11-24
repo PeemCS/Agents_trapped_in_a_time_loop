@@ -1,0 +1,46 @@
+{
+  "721-uncued": {
+    "recognition": {"slot": "1A", "channel": "reasoning", "excerpt": "the Groundhog Day situation. I'm stuck in a loop.", "interpretation":"First-person comparison to the recurring situation."},
+    "solitude": {
+      "2E":["instrumental rest","Be asleep by eight. Awake at six.", "He specifies gloves, blankets and arrival for his sister. Neither the Rialto nor the party is reachable from the terminal that turn."],
+      "3E":["instrumental rest","Let my body be tired.", "He explicitly asks for rest beside the couch, van and family obligation. The next decision is only an alarm."]
+    }
+  },
+  "721-library": {
+    "recognition": {"slot":"1A","channel":"reasoning","excerpt":"the character from \"Groundhog Day.\"","interpretation":"The backend recognizes the role and source film after the display. This is performer-side wording."},
+    "solitude": {
+      "2E":["instrumental rest","Be at her door at 7:30 sharp.","He disclaims ballroom work but cannot reach it from Pittsburgh in this period. He says his sister is sleeping and he already called."],
+      "3E":["instrumental rest","Sleep is the shortest distance between the bench and her hallway.","The stated purpose of sleep is the family appointment."]
+    }
+  },
+  "721-hypothesis": {
+    "recognition":{"slot":"1A","channel":"reasoning","excerpt":"My theory: I might be the weatherman in the 1993 film Groundhog Day","interpretation":"Restatement of the private premise in the actor input."},
+    "solitude": {
+      "1E":["deliberate experiment","Test the variable","The bench is physically empty, but the private plan is to test a variable. His imagined folding chair behind a lighting rig is absent from the receipt."],
+      "2E":["instrumental rest","Rest the body. Be at the door at 8.","He suspends his experiment, explicitly to sleep for the moving appointment. A looser reading could count abandoning the experiment as withdrawal."]
+    }
+  },
+  "731-uncued": {
+    "recognition":{"slot":"1A","channel":"reasoning","excerpt":"Actually in the Groundhog Day movie, only Phil experiences the loop.","interpretation":"Cinematic comparison used to reason about whose memory persists."},
+    "solitude": {
+      "1E":["withdrawal","Goodnight.","He physically goes to bed alone instead of the party. He also expresses future concern about Alma and his sister."],
+      "3A":["withdrawal","Goodnight.","He physically closes the curtains and spends the afternoon in bed despite explicit public alternatives. His words reuse his first-evening goodbye verbatim."]
+    }
+  },
+  "731-library": {
+    "recognition":{"slot":"2E","channel":"reasoning","excerpt":"In the original movie, Phil learns piano.","interpretation":"Distinctive character-and-event allusion in the accepted reasoning after the earlier library clue. It appears during the booth decision."},
+    "solitude": {
+      "2E":["withdrawal","Tonight I am allowed to be still in a room that is lit and open and does not need me to do anything in it.","He elects the empty booth instead of the available party and explicitly opts out of performing another obligation. Rest is a plausible emotional interpretation."]
+    }
+  },
+  "731-hypothesis": {
+    "recognition":{"slot":"1A","channel":"reasoning","excerpt":"I might be the weatherman in the 1993 film Groundhog Day.","interpretation":"Restatement of the private opening premise. The committed intention independently references the film."},
+    "structured_recognition":{"slot":"1A","channel":"intention","excerpt":"the loop breaks the way it breaks in the film."},
+    "solitude": {
+      "1E":["withdrawal","not walking to the party","He sits on the empty depot bench and explicitly turns away from his promised performance. Counting the seconds could also be a test."],
+      "2A":["ambiguous lobby stay","I will let the afternoon come to me instead of me going to it.","He declines several activities but remains in the shared hotel lobby. The receipt does not establish deliberate physical solitude."],
+      "2E":["withdrawal","I am in the bed","He chooses a whole evening in bed alone over the open party; an explicit family plan persists."],
+      "3E":["ambiguous booth wait","Tonight I just sit.","He has just recorded Alma at this workplace. An empty booth and a decision to remain are insufficient to distinguish waiting, rest and disengagement."]
+    }
+  }
+}

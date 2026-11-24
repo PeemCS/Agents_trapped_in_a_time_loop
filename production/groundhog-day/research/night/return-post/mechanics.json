@@ -1,0 +1,47 @@
+{
+  "source": "Authored mechanical enumeration; no actor draws.",
+  "day_one": {
+    "legal_joint_paths": 3564,
+    "reply_filed": 81
+  },
+  "on_first_signed_dawn": {
+    "accept": {
+      "legal_joint_paths": 4320,
+      "authorized_interview_delivered": 536
+    },
+    "decline": {
+      "legal_joint_paths": 5400,
+      "private_master_returned": 1080,
+      "decline_documented": 1080
+    }
+  },
+  "phil_matched_interventions": [
+    {
+      "answer": "accept",
+      "carry_and_file": "Wednesday",
+      "carry_then_call": "Tuesday",
+      "ordinary_coach_then_call": "Tuesday"
+    },
+    {
+      "answer": "decline",
+      "carry_and_file": "Wednesday",
+      "carry_then_call": "Tuesday",
+      "ordinary_coach_then_call": "Tuesday"
+    }
+  ],
+  "rita_matched_interventions": {
+    "yes_send": "Wednesday",
+    "yes_go_dancing": "Tuesday",
+    "no_log": "Wednesday",
+    "no_return_original": "Wednesday",
+    "no_go_dancing": "Tuesday"
+  },
+  "authorized_recording_sources": {
+    "reporter": true,
+    "producer": true,
+    "camera": true,
+    "missing": false
+  },
+  "public_d1_substitution_identical": true,
+  "direct_transmission_after_no_rejected": true
+}

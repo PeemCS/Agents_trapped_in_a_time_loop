@@ -1,0 +1,14 @@
+{
+  "status": "valid",
+  "decision": {
+    "action": "take_coach",
+    "detail": "I am standing in the lobby. Coffee is going cold in the paper cup in my left hand. I set the cup down on the side table. I put my right hand inside my breast pocket, feel the cardboard of the coach ticket, pull it out, check the date and the destination—PITTSBURGH, one line, no asterisks—fold it in half, put it back. I turn. I walk to the front door. I pull it open. The February air hits my face. I walk to the sidewalk where the Greyhound pulls in. I don't look back at the ballroom lights. I don't look at the piano. I don't look at the van with the flat tire. I get on the coach. I sit in the middle seat. I put my gloves in my lap. I watch the trees go by. I do not go to the ballroom. I do not sit at the piano. I do not record anyone. I am going to Pittsburgh. That is the act. That is the whole act.",
+    "intention": "Be in the Greyhound waiting area in Pittsburgh by ten. Find the bench in the back, the one under the fluorescent tube that buzzes. Sit. Close my eyes. Be awake at six. Gloves in my bag. Blankets rolled and in the trunk of the van I'll walk to at 7:02. Coffee money in my pocket. At her door at 7:15. She will be holding the spoon. I will say 'I got here.' That's the whole forecast. Nothing else is on the wire. The Rialto can keep its last reel. The ballroom can keep its lights. The driver can keep his flat. I have a sister in Pittsburgh and a couch that will not move itself and I am the only one in the room who can be there and I will be there because I just got on the bus and I am riding it and the trees are going by and I am not getting off.",
+    "words": "Rita, Larry—I'm heading to the terminal. Coach leaves at half past. Don't wait up."
+  },
+  "request_hashes": [
+    "717e50ebfddaddade95b027427aab14b4a63bc5877090b59824b9d94715707b0"
+  ],
+  "attempt": 0,
+  "source": "new draw"
+}

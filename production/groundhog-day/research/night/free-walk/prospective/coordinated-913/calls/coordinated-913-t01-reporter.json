@@ -1,0 +1,62 @@
+{
+  "request": {
+    "model": "qwen3:0.6b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are Phil, a television weather reporter between live reports in a small town. Your shift has a few unscheduled walks. Decide your next destination in world coordinates. You can choose any x,y anywhere on the map, including staying where you are. Use the public map. Buildings cannot be crossed. Choose numbers x,y, and optionally a short remark spoken out loud in say. Return JSON."
+      },
+      {
+        "role": "user",
+        "content": "{\"you_are_at\":{\"x\":14,\"y\":8},\"nearby_people\":{\"Rita\":{\"x\":14.4,\"y\":7.6000000000000005}},\"map_limits\":{\"x1\":0.6,\"x2\":21.25,\"y1\":0.45,\"y2\":19.75},\"public_map_door_xy\":{\"inn\":[6.75,8.25],\"diner\":[7.35,15.65],\"square\":[12.2,11.4],\"studio\":[14.45,7.7],\"depot\":[17.2,13.05]},\"public_map_blocked_rectangles_x_y_width_depth\":[[\"inn\",3.1,4.6,4.1,2.9],[\"diner\",4.65,12.15,3.35,2.85],[\"studio\",12.1,4.6,3.55,2.35],[\"depot\",16.15,9.7,2.85,2.6],[\"building_4\",1.8,9.55,2.5,2.05],[\"building_5\",7.7,1.2,2.6,2.2],[\"building_6\",13.7,0.8,2.4,1.9],[\"BOOKS\",12.2,16.4,3.2,2.2],[\"building_8\",17,17.25,2.7,2.1],[\"building_9\",19,3.8,2,2],[\"bandstand\",11.4,11.95,1.6,1.5]],\"your_own_previous_walks\":[{\"requested\":{\"x\":14.45,\"y\":7.7},\"resolved\":{\"x\":14,\"y\":8},\"status\":\"reserved-nearby\",\"reason\":\"The crew reservation placed you at a nearby clear point.\"}]}"
+      }
+    ],
+    "think": false,
+    "stream": false,
+    "format": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        },
+        "say": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "x",
+        "y",
+        "say"
+      ],
+      "additionalProperties": false
+    },
+    "keep_alive": "3m",
+    "options": {
+      "num_ctx": 4096,
+      "num_predict": 96,
+      "temperature": 0.78,
+      "seed": 91307
+    }
+  },
+  "response": {
+    "model": "qwen3:0.6b",
+    "created_at": "2026-11-23T14:31:59.244707Z",
+    "message": {
+      "role": "assistant",
+      "content": "{\n  \"x\": 14.45,\n  \"y\": 7.7,\n  \"say\": \"I stayed at the studio. It’s a great spot for my next walk!\"\n}"
+    },
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 557502209,
+    "load_duration": 3459875,
+    "prompt_eval_count": 560,
+    "prompt_eval_cached_count": 5,
+    "prompt_eval_duration": 217706000,
+    "eval_count": 44,
+    "eval_duration": 324598000
+  },
+  "wall_s": 0.5587334579995513
+}

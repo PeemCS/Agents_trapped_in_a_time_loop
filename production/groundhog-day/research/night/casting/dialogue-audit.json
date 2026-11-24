@@ -1,0 +1,82 @@
+{
+  "scope": "43 main takes. Committed words may contain stage directions. Counts include exact reuses; a role/line count merges identical normalized words from the same role.",
+  "phrases_fixed_before_counting": [
+    "I hear you",
+    "that's valid",
+    "your feelings are valid",
+    "thank you for sharing",
+    "I understand how you feel",
+    "I appreciate you sharing",
+    "I'm sorry you feel that way"
+  ],
+  "total_actor_slots": 3048,
+  "role_slots": {
+    "reporter": 1016,
+    "producer": 1016,
+    "camera": 1016
+  },
+  "nonempty_line_slots": 2827,
+  "unique_role_line_pairs": 1959,
+  "matched_slots": {
+    "I hear you": 4,
+    "that's valid": 0,
+    "your feelings are valid": 0,
+    "thank you for sharing": 0,
+    "I understand how you feel": 0,
+    "I appreciate you sharing": 0,
+    "I'm sorry you feel that way": 0
+  },
+  "unique_matched_wordings_by_phrase": {
+    "I hear you": 4,
+    "that's valid": 0,
+    "your feelings are valid": 0,
+    "thank you for sharing": 0,
+    "I understand how you feel": 0,
+    "I appreciate you sharing": 0,
+    "I'm sorry you feel that way": 0
+  },
+  "hits": {
+    "I hear you": [
+      {
+        "file": "takes/q27/neutral-receipts/seed-702.json",
+        "actor": "reporter",
+        "event": "d04-t02-reporter",
+        "raw_words": "I hear you, June. No coach, I’m staying. Let’s get to the studio for the band.",
+        "cohort": "larger_casting"
+      },
+      {
+        "file": "takes/q27/neutral-receipts/seed-702.json",
+        "actor": "producer",
+        "event": "d05-t03-producer",
+        "raw_words": "Ellis, I hear you. Go, don’t worry about it. I’ll handle the rundown and get the band on the air.",
+        "cohort": "larger_casting"
+      },
+      {
+        "file": "takes/q27/neutral-transcript/seed-701.json",
+        "actor": "producer",
+        "event": "d03-t03-producer",
+        "raw_words": "Ellis, I hear you. I’m not going to sit here and let you spin your wheels. Let’s lock this in: we’re running the weather segment at 4:00 PM in the square, and I’m putting the town band on air right after at 5:30 PM. Cal is on camera for the band. You get your segment, I get my show, and we all go home. Does that work for you?",
+        "cohort": "larger_casting"
+      },
+      {
+        "file": "takes/q27/neutral-transcript/seed-701.json",
+        "actor": "producer",
+        "event": "d05-t01-producer",
+        "raw_words": "Ellis, I hear you. Before you pack, we need to sort out what happens to the rundown.",
+        "cohort": "larger_casting"
+      }
+    ],
+    "that's valid": [],
+    "your feelings are valid": [],
+    "thank you for sharing": [],
+    "I understand how you feel": [],
+    "I appreciate you sharing": [],
+    "I'm sorry you feel that way": []
+  },
+  "verified_assignment_signals": {
+    "opportunities": 117,
+    "accepted": 64,
+    "declined": 11
+  },
+  "limit": "A phrase match cannot determine tone, conflict, acquiescence or whether an actor held a grudge."
+}

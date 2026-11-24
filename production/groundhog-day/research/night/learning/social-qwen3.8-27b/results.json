@@ -1,0 +1,173 @@
+{
+  "model": "qwen3.8:27b",
+  "digest": "aaee06c39dcf2437cde036998d960e1fc1494b8191be7cc9657d01e509097813",
+  "generic_head_source_sha256": "9e3c5ffeb0f7651efd865c46369846771277c45a269d3dc73f4a30be485c33a7",
+  "sidecar_is_visible_to_actors": false,
+  "roots": [
+    {
+      "root": 831,
+      "people": {
+        "Rita": {
+          "invited": 4,
+          "joined": 3,
+          "successful": 2,
+          "z": 0.1428571428571428,
+          "jobs": 6,
+          "one_appointment_cost": {
+            "erased_diary_erased_record": 0.20428255541746912,
+            "erased_diary_retained_record": 0.30490977228763966,
+            "retained_diary_erased_record": 0.20428255541746912,
+            "retained_diary_retained_record": 0.30490977228763966
+          },
+          "same_state_swapped_partner_record": 0.20428255541746912,
+          "same_state_new_display_name": 0.30490977228763966,
+          "press_after_refusal_with_retained_record": 0.0011141958119961278,
+          "press_after_refusal_with_erased_record": 0.0011141958119961278,
+          "cost_sweep": {
+            "0": 0.9640083865791027,
+            "0.25": 0.9054971462630675,
+            "0.5": 0.7741499216992496,
+            "1": 0.30490977228763966,
+            "1.5": 0.05315387132822553,
+            "2": 0.007132994736861908
+          }
+        },
+        "Larry": {
+          "invited": 2,
+          "joined": 1,
+          "successful": 0,
+          "z": 0,
+          "jobs": 6,
+          "one_appointment_cost": {
+            "erased_diary_erased_record": 0.20428255541746912,
+            "erased_diary_retained_record": 0.20428255541746912,
+            "retained_diary_erased_record": 0.20428255541746912,
+            "retained_diary_retained_record": 0.20428255541746912
+          },
+          "same_state_swapped_partner_record": 0.30490977228763966,
+          "same_state_new_display_name": 0.20428255541746912,
+          "press_after_refusal_with_retained_record": 0.0011141958119961278,
+          "press_after_refusal_with_erased_record": 0.0011141958119961278,
+          "cost_sweep": {
+            "0": 0.9400318267815888,
+            "0.25": 0.8486613015723029,
+            "0.5": 0.6673402539217081,
+            "1": 0.20428255541746912,
+            "1.5": 0.0318096211972921,
+            "2": 0.004186979814928268
+          }
+        }
+      }
+    },
+    {
+      "root": 832,
+      "people": {
+        "Rita": {
+          "invited": 2,
+          "joined": 2,
+          "successful": 2,
+          "z": 0.33333333333333326,
+          "jobs": 6,
+          "one_appointment_cost": {
+            "erased_diary_erased_record": 0.20428255541746912,
+            "erased_diary_retained_record": 0.47259248926508207,
+            "retained_diary_erased_record": 0.20428255541746912,
+            "retained_diary_retained_record": 0.47259248926508207
+          },
+          "same_state_swapped_partner_record": 0.47259248926508207,
+          "same_state_new_display_name": 0.47259248926508207,
+          "press_after_refusal_with_retained_record": 0.0011141958119961278,
+          "press_after_refusal_with_erased_record": 0.0011141958119961278,
+          "cost_sweep": {
+            "0": 0.9820508399315506,
+            "0.25": 0.9513920813378708,
+            "0.5": 0.8750294963897305,
+            "1": 0.47259248926508207,
+            "1.5": 0.10287690158495728,
+            "2": 0.014463187625694866
+          }
+        },
+        "Larry": {
+          "invited": 2,
+          "joined": 2,
+          "successful": 2,
+          "z": 0.33333333333333326,
+          "jobs": 6,
+          "one_appointment_cost": {
+            "erased_diary_erased_record": 0.20428255541746912,
+            "erased_diary_retained_record": 0.47259248926508207,
+            "retained_diary_erased_record": 0.20428255541746912,
+            "retained_diary_retained_record": 0.47259248926508207
+          },
+          "same_state_swapped_partner_record": 0.47259248926508207,
+          "same_state_new_display_name": 0.47259248926508207,
+          "press_after_refusal_with_retained_record": 0.0011141958119961278,
+          "press_after_refusal_with_erased_record": 0.0011141958119961278,
+          "cost_sweep": {
+            "0": 0.9820508399315506,
+            "0.25": 0.9513920813378708,
+            "0.5": 0.8750294963897305,
+            "1": 0.47259248926508207,
+            "1.5": 0.10287690158495728,
+            "2": 0.014463187625694866
+          }
+        }
+      }
+    },
+    {
+      "root": 833,
+      "people": {
+        "Rita": {
+          "invited": 4,
+          "joined": 4,
+          "successful": 4,
+          "z": 0.5,
+          "jobs": 6,
+          "one_appointment_cost": {
+            "erased_diary_erased_record": 0.20428255541746912,
+            "erased_diary_retained_record": 0.6260387194844741,
+            "retained_diary_erased_record": 0.20428255541746912,
+            "retained_diary_retained_record": 0.6260387194844741
+          },
+          "same_state_swapped_partner_record": 0.5615371421332293,
+          "same_state_new_display_name": 0.6260387194844741,
+          "press_after_refusal_with_retained_record": 0.0011141958119961278,
+          "press_after_refusal_with_erased_record": 0.0011141958119961278,
+          "cost_sweep": {
+            "0": 0.9903116902875395,
+            "0.25": 0.9733807273237726,
+            "0.5": 0.928983574179893,
+            "1": 0.6260387194844741,
+            "1.5": 0.17643935898742732,
+            "2": 0.026685683561645666
+          }
+        },
+        "Larry": {
+          "invited": 3,
+          "joined": 3,
+          "successful": 3,
+          "z": 0.4285714285714286,
+          "jobs": 6,
+          "one_appointment_cost": {
+            "erased_diary_erased_record": 0.20428255541746912,
+            "erased_diary_retained_record": 0.5615371421332293,
+            "retained_diary_erased_record": 0.20428255541746912,
+            "retained_diary_retained_record": 0.5615371421332293
+          },
+          "same_state_swapped_partner_record": 0.6260387194844741,
+          "same_state_new_display_name": 0.5615371421332293,
+          "press_after_refusal_with_retained_record": 0.0011141958119961278,
+          "press_after_refusal_with_erased_record": 0.0011141958119961278,
+          "cost_sweep": {
+            "0": 0.9873734003586301,
+            "0.25": 0.9654865365657914,
+            "0.5": 0.9091518511745613,
+            "1": 0.5615371421332293,
+            "1.5": 0.14081744486300227,
+            "2": 0.020543826993122526
+          }
+        }
+      }
+    }
+  ]
+}

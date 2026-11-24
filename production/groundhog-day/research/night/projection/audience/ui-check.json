@@ -1,0 +1,75 @@
+{
+  "kind": "Automated UI QA with synthetic temporary exports. No audience responses.",
+  "film_sha256": "423114d7370078a35fbb61ebdb1b4ab806ce03207977377677fef20bc0fbe243",
+  "chrome": "157.0.8103.79",
+  "checks": [
+    {
+      "transport": "file",
+      "viewport": [
+        1280,
+        810
+      ],
+      "emulated_touch": false,
+      "duration_s": 80.25,
+      "seek_landed_s": 30.2,
+      "video_frames_advanced": 13,
+      "native_ended_opened_questions": true,
+      "local_json_downloads_parsed": 2,
+      "reset_and_reload_clear_answers": true,
+      "requests_carrying_answers": 0,
+      "external_requests": [],
+      "page_errors": []
+    },
+    {
+      "transport": "file",
+      "viewport": [
+        390,
+        844
+      ],
+      "emulated_touch": true,
+      "duration_s": 80.25,
+      "seek_landed_s": 30.2,
+      "video_frames_advanced": 13,
+      "native_ended_opened_questions": true,
+      "local_json_downloads_parsed": 2,
+      "reset_and_reload_clear_answers": true,
+      "requests_carrying_answers": 0,
+      "external_requests": [],
+      "page_errors": []
+    },
+    {
+      "transport": "loopback",
+      "viewport": [
+        1280,
+        810
+      ],
+      "emulated_touch": false,
+      "duration_s": 80.25,
+      "seek_landed_s": 30.2,
+      "video_frames_advanced": 13,
+      "native_ended_opened_questions": true,
+      "local_json_downloads_parsed": 2,
+      "reset_and_reload_clear_answers": true,
+      "requests_carrying_answers": 0,
+      "external_requests": [],
+      "page_errors": []
+    },
+    {
+      "transport": "loopback",
+      "viewport": [
+        390,
+        844
+      ],
+      "emulated_touch": true,
+      "duration_s": 80.25,
+      "seek_landed_s": 30.2,
+      "video_frames_advanced": 12,
+      "native_ended_opened_questions": true,
+      "local_json_downloads_parsed": 2,
+      "reset_and_reload_clear_answers": true,
+      "requests_carrying_answers": 0,
+      "external_requests": [],
+      "page_errors": []
+    }
+  ]
+}

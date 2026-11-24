@@ -1,0 +1,111 @@
+{
+  "browser": "157.0.8103.79",
+  "webgl": {
+    "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "driver": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)"
+  },
+  "checks": {
+    "Desktop created a real WebGL scene": true,
+    "An offline witness link opens the exact recorded coach frame": true,
+    "A native local USDZ and the primary town are linked": true,
+    "Starting subject is the directly controlled Phil": true,
+    "All three real 3D character roots start on the correct canonical anchors": true,
+    "Only the town stage is visible on arrival": true,
+    "WASD moves a rig across the depth plane": true,
+    "Dragging orbits the physical camera without teleporting the actor": true,
+    "Scroll changes optical distance": true,
+    "Aerial camera changes both height and viewing angle": true,
+    "Original USD blocking can be isolated": true,
+    "Clicking physical building geometry routes to its entrance": true,
+    "Manual bus hides Phil inside the moving physical coach": true,
+    "Pittsburgh occupies a separate stage and town actors remain in town": true,
+    "Next dawn resets location, time and the pencil mark": true,
+    "Expanded coach hull clears every building in the dressed set at 2,001 samples": true,
+    "Direct navigation reaches the corrected Pittsburgh street without intersecting the moved cafe": true,
+    "Continuous swept coach envelope clears buildings, lamps, benches, conifers and the payphone on every travel leg": true,
+    "All 75 dressed town anchor routes clear both buildings and practical props": true,
+    "Playback input matches the performance hash embedded in the native export": true,
+    "The active runtime geometry fingerprints the actual shipped USDA": true,
+    "All 2,304 actor and vehicle native transform samples match within USD text precision": true,
+    "Recorded coach origin uses the town set": true,
+    "Recorded coach arrival uses the Pittsburgh set": true,
+    "The on-screen payphone take retains the model's own words": true,
+    "The previous evening remains in Pittsburgh at the beginning of the reset": true,
+    "Dawn resolves to the hotel after the set change": true,
+    "Actual Three.js mesh roots at nine witness frames match their rendered receipt positions": true,
+    "The entire moving vehicle stays framed at seven town and Pittsburgh witness positions": true,
+    "Coach tracking holds a stable lens for each continuous straight road leg": true,
+    "Dressed evening composition releases the unobserved parked coach": true,
+    "The native blocking toggle restores the original parked coach transform": true,
+    "Larry's independent camera shows the town while Phil is physically in Pittsburgh": true,
+    "Local JSON import preserves neutral identities": true,
+    "Invalid JSON preserves the prior performance": true,
+    "Legacy playback retains Ellis, Lou and Bea": true,
+    "Badge validation uses a real completed 27B model trace": true,
+    "The named Punxsutawney recording shows Rita's real portable switcher channel": true,
+    "Cinematic frames fill the viewport with switchable captions": true,
+    "A repeated stationary camera seek yields identical pixels": true,
+    "The real GLB loader replaces the reporter on the identical USD role transform": true,
+    "A source movement switches the replacement GLB to its embedded Walk animation": true,
+    "The baseline proxy is available while a custom performer is installed": true,
+    "Uploaded Phil wardrobe does not relabel or reskin neutral Ellis": true,
+    "Returning to Phil recovers only his bound asset": true,
+    "An external-resource GLB is rejected before loading and preserves the installed cast": true,
+    "A slower earlier GLB upload cannot overwrite a newer performer": true,
+    "Reset mesh recovers the native rig without rewinding the take": true,
+    "Recorded moving 3D playback advances under real browser rendering": true,
+    "Mobile created a real WebGL scene": true,
+    "390px layout has no horizontal overflow": true,
+    "Portrait directional pad moves Phil": true,
+    "Portrait fullscreen fills the device": true,
+    "A browser with WebGL disabled presents the local native render": true,
+    "The offline fallback video actually decodes and advances": true,
+    "Interactive pages issued zero external network requests": true,
+    "Interactive pages produced zero uncaught or shader errors": true
+  },
+  "native_stage_parity": {
+    "native_frames": 576,
+    "position_samples": 2304,
+    "max_component_difference_metres": 4.96e-06,
+    "usd_sha256": "8fc5c89ee3171a579f735c3e3cd5c589e3479d8f7fd60a4801314127a733fef4",
+    "take_sha256": "9695d76c0cf799ac32810b53e3da5c26814e227ba6d710e675f0d5c4c798646d"
+  },
+  "geometry_clearance": {
+    "native_proxy_overlaps": [
+      "town/house8",
+      "city/shop5"
+    ],
+    "dressed_proxy_overlaps": [],
+    "coach_hull_samples": 2001,
+    "continuous_native_all": [
+      {
+        "obstacle": "town/house8",
+        "leg": 1
+      },
+      {
+        "obstacle": "city/shop5",
+        "leg": 0
+      },
+      {
+        "obstacle": "city/Payphone",
+        "leg": 1
+      }
+    ],
+    "continuous_dressed_all": [],
+    "tested_dressed_obstacles": 61,
+    "corrected_street_walk": true
+  },
+  "headless_playback": {
+    "duration_ms": 2112,
+    "display_callbacks": 127,
+    "playhead_updates": 64,
+    "updates_per_second": 30.31,
+    "p95_update_gap_ms": 33.4,
+    "width": 1365,
+    "height": 596,
+    "draw_calls": 62,
+    "triangles": 36566
+  },
+  "external_http_requests": [],
+  "errors": []
+}

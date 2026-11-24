@@ -1,0 +1,144 @@
+{
+  "source_sha256": "f3173d2fb56b419d9f0588ed2db879ea3d97076db47eeb425fda9160dd0cd576",
+  "source_path": "research/night/thinking/runs/standard/seed-731.json",
+  "take": "standard",
+  "notes": [
+    {
+      "before_shot": 0,
+      "slot_index": 0,
+      "witnessed_calendar": "Tuesday, February 2, 2016. The local radio plays three bright notes and announces a groundhog forecast in the town square. A delivery van backfires twice.",
+      "wake_id": "d01-t00-reporter",
+      "actor": "Larry",
+      "role": "camera",
+      "event_id": "d01-t00-camera",
+      "quote": "I want to make a portrait of the cornet player after the ceremony.",
+      "channel": "Ollama message.thinking, external model output; unspoken",
+      "codepoint_start": 914,
+      "codepoint_end": 980,
+      "stream_path": "streams/d01-t00-camera-22c9c93b734c.ndjson",
+      "stream_sha256": "29416dbe497100306481bab054525d4a7b14536132138c35d4a76213cb0dbc2b",
+      "request_id": "6a66fb8330c6d2392310b94a36088a02c75f5bc9d3c480329af3c11a01d49fcb",
+      "provider_chunk_first": 226,
+      "provider_chunk_last": 240,
+      "provider_first_final_chunk": 1017,
+      "provider_receipt_elapsed_s": {
+        "excerpt_start": 6.09291,
+        "excerpt_end": 6.16206,
+        "first_final": 30.57051
+      },
+      "formatted_retry": false,
+      "recorded_attempt_count": 1,
+      "provider_usage": {
+        "prompt_tokens": 558,
+        "completion_tokens": 1154
+      },
+      "provider_done_reason": "stop",
+      "full_thinking_chars": 4311,
+      "selected_attempt_is_cache_hit": false,
+      "validated_entire_thinking_and_final_object": true
+    },
+    {
+      "before_shot": 2,
+      "slot_index": 6,
+      "witnessed_calendar": "Tuesday, February 2, 2016. The local radio plays three bright notes and announces a groundhog forecast in the town square. A delivery van backfires twice.",
+      "wake_id": "d02-t00-reporter",
+      "actor": "Phil",
+      "role": "reporter",
+      "event_id": "d02-t02-reporter",
+      "quote": "The couch move is Wednesday, I have time.",
+      "channel": "Ollama message.thinking, external model output; unspoken",
+      "codepoint_start": 1419,
+      "codepoint_end": 1460,
+      "stream_path": "streams/d02-t02-reporter-081eec82cee2.ndjson",
+      "stream_sha256": "cbd9dcd9935b656eb8f29028f3c542908a63dbef263a790c02c7b4bec534630a",
+      "request_id": "b3dd0662a0ec78fc2f6ea6346cc8cf0e86af77d2647ec6ff3d22dd1ff5b8a21f",
+      "provider_chunk_first": 367,
+      "provider_chunk_last": 376,
+      "provider_first_final_chunk": 468,
+      "provider_receipt_elapsed_s": {
+        "excerpt_start": 17.13953,
+        "excerpt_end": 17.33524,
+        "first_final": 19.9113
+      },
+      "formatted_retry": false,
+      "recorded_attempt_count": 1,
+      "provider_usage": {
+        "prompt_tokens": 1101,
+        "completion_tokens": 591
+      },
+      "provider_done_reason": "stop",
+      "full_thinking_chars": 1849,
+      "selected_attempt_is_cache_hit": false,
+      "validated_entire_thinking_and_final_object": true
+    },
+    {
+      "before_shot": 5,
+      "slot_index": 8,
+      "witnessed_calendar": "Tuesday, February 2, 2016. The local radio plays three bright notes and announces a groundhog forecast in the town square. A delivery van backfires twice.",
+      "wake_id": "d03-t00-reporter",
+      "actor": "Phil",
+      "role": "reporter",
+      "event_id": "d03-t00-reporter",
+      "quote": "It's Wednesday, February 3, 2016, 6:00 am.",
+      "channel": "Ollama message.thinking, external model output; unspoken",
+      "codepoint_start": 41,
+      "codepoint_end": 83,
+      "stream_path": "streams/d03-t00-reporter-1a5bb3543ccc.ndjson",
+      "stream_sha256": "0d5ad35c5ccdc1d31241c0f3269ae12bbf2d4fc7efa4feb782e55c4cd353d42a",
+      "request_id": "03577960ba3050e787f22527caab959c41fa84ee4b74bdf3895e7c40fe16f86b",
+      "provider_chunk_first": 7,
+      "provider_chunk_last": 24,
+      "provider_first_final_chunk": 1261,
+      "provider_receipt_elapsed_s": {
+        "excerpt_start": 3.80941,
+        "excerpt_end": 4.69525,
+        "first_final": 87.84151
+      },
+      "formatted_retry": false,
+      "recorded_attempt_count": 1,
+      "provider_usage": {
+        "prompt_tokens": 1341,
+        "completion_tokens": 1447
+      },
+      "provider_done_reason": "stop",
+      "full_thinking_chars": 5054,
+      "selected_attempt_is_cache_hit": false,
+      "validated_entire_thinking_and_final_object": true
+    },
+    {
+      "before_shot": 6,
+      "slot_index": 10,
+      "witnessed_calendar": "Tuesday, February 2, 2016. The local radio plays three bright notes and announces a groundhog forecast in the town square. A delivery van backfires twice.",
+      "wake_id": "d03-t00-reporter",
+      "actor": "Phil",
+      "role": "reporter",
+      "event_id": "d03-t02-reporter",
+      "quote": "Wait, but looking at the remembered experiences, there are multiple \"runs\" or scenarios.",
+      "channel": "Ollama message.thinking, external model output; unspoken",
+      "codepoint_start": 557,
+      "codepoint_end": 645,
+      "stream_path": "streams/d03-t02-reporter-ca6f86d99534.ndjson",
+      "stream_sha256": "3cd9c5d826de35e72dc0a41c431a0e9117b6b5f7133d5a6850197fd175a7ceb0",
+      "request_id": "04779aacf978bc607a0be032e49e0e90cf4ae3f430d330146a957ef83e2f4ef8",
+      "provider_chunk_first": 135,
+      "provider_chunk_last": 152,
+      "provider_first_final_chunk": 829,
+      "provider_receipt_elapsed_s": {
+        "excerpt_start": 9.74439,
+        "excerpt_end": 10.8078,
+        "first_final": 44.85532
+      },
+      "formatted_retry": false,
+      "recorded_attempt_count": 1,
+      "provider_usage": {
+        "prompt_tokens": 1540,
+        "completion_tokens": 943
+      },
+      "provider_done_reason": "stop",
+      "full_thinking_chars": 3419,
+      "selected_attempt_is_cache_hit": false,
+      "validated_entire_thinking_and_final_object": true
+    }
+  ],
+  "title": "Couch-hauling season"
+}

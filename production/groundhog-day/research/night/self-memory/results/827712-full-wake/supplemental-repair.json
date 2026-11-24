@@ -1,0 +1,13 @@
+{
+  "status": "valid",
+  "source": "supplemental canonical format repair",
+  "primary_status": "invalid",
+  "request_sha256": "110298bc9506ce9ad9a23e9d80b3734899df8da4967bbcf524b50c3225c9a386",
+  "stream_sha256": "fc7c5bf060143915f3a0f8db73d435f8752391882704b93f576d90743c435834",
+  "decision": {
+    "action": "take_coach",
+    "detail": "I stand up. Boots on, left then right. Coat over the shoulders, no tie. I walk out of the room. Rita and Larry are at the lobby table, coffee steam between them. I don't stop. I don't nod. I walk past the front desk, out the double doors, down the three steps, to the curb where the Greyhound is idling with its side mirror catching the flat February light. The driver has the door open. I board. Second row, window seat. I drop my bag on the seat next to me. The gloves are in it. The blankets are in it. The coffee money is in the breast pocket. I don't look at Rita or Larry when they pass me on the street. I watch the road. The highway opens up. The miles go. Pittsburgh comes out of the fog like it always does, flat and grey and mine for the next nine hours. I step off at the terminal. I walk to the bench in the waiting area. I sit. I put my boots on the bench in front of me. I close my eyes. I am not sleeping. I am counting. The clock ticks. I wait for six.",
+    "intention": "Be at the terminal. Be on the bench. Wake at six. Be at her door at 7:15 with the gloves, the rolled blankets, and the coffee money in my pocket. The couch is in Pittsburgh. I am in Pittsburgh. That is the whole forecast. Nothing else is happening tonight. The ballroom is for someone else. The station line is for someone else. I have a ticket in my breast pocket and a floor with no elevator and a sister who is going to be standing in her kitchen holding a spoon. That is enough. That is the whole arithmetic.",
+    "words": ""
+  }
+}

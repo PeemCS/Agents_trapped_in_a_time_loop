@@ -1,0 +1,52 @@
+{
+  "title": "Couch-hauling season",
+  "cluster": {
+    "arrival": 6,
+    "hold": 7,
+    "wake": 8
+  },
+  "shots": [
+    {
+      "index": 0,
+      "actor": "Larry",
+      "quote": "I want to make a portrait of the cornet player after the ceremony.",
+      "seconds": 4.0
+    },
+    {
+      "index": 3,
+      "actor": "Rita",
+      "seconds": 4.2
+    },
+    {
+      "index": 6,
+      "actor": "Phil",
+      "quote": "The couch move is Wednesday, I have time.",
+      "framing": "street",
+      "seconds": 6.0
+    },
+    {
+      "index": 7,
+      "actor": "Phil",
+      "seconds": 5.5
+    },
+    {
+      "index": 8,
+      "actor": "Phil",
+      "view": "morning",
+      "seconds": 3.5
+    },
+    {
+      "index": 8,
+      "actor": "Phil",
+      "quote": "It's Wednesday, February 3, 2016, 6:00 am.",
+      "seconds": 4.0
+    },
+    {
+      "index": 10,
+      "actor": "Phil",
+      "quote": "Wait, but looking at the remembered experiences, there are multiple \"runs\" or scenarios.",
+      "framing": "street",
+      "seconds": 6.0
+    }
+  ]
+}

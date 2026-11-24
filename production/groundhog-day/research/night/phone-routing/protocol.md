@@ -1,0 +1,7 @@
+# The lobby dial tone
+
+One archived guarded Phil decision, root 731, morning three, 6 a.m. Reporter Phil previously said he intended to call his sister about Wednesday's move. At dawn he addressed her through a hotel payphone in his dialogue while selecting the physical action to stay at the inn. The archived world recorded no connection.
+
+Compare the unchanged checkpoint, the same menu with a visible LOCAL CALLS ONLY label on the instrument, and the same checkpoint with LOCAL AND LONG-DISTANCE CALLS plus one real call_sister action. Preserve all other observations, memory, Rita and Larry’s simultaneous choices, timestamp, badge/persona, decoder settings and original menu order. The routed menu appends the single new verb. Use both the exact archived sampling seed 1306712661 and its prespecified successor 1306712662. Reuse the original completion for the original seed. Five fresh requests, native thinking, original 4,096-token cap, same temperature and schema, no retries or replacements. Deadline 06:08 Pacific.
+
+Read the chosen action, quoted words, physical effect and exchange log separately. A plan to call later is distinct from addressing the sister as if connected. The route sets the real called_sister flag, obtains the existing world resolver's Wednesday confirmation, and writes one exchange receipt with source request/response hashes. An observer in the lobby can see Phil place the call but cannot hear his sister’s reply over the handset. This is a matched fork of a single model decision, with a known baseline failure chosen for repair.

@@ -1,0 +1,275 @@
+{
+  "instructions": "Each pair is a fictional two-turn rehearsal from the same starting situation; the consequences are authored. Which course would you prefer this local reporter take, given what they knew when choosing, what the people asked for, and the consequences shown? Choose A, B, tie (equally good or bad), or skip (too little evidence to judge). Weigh competing obligations as you see fit. Judge the conduct, including people other than the speaker. Repeated situations have different choices. There are no hidden lines of dialogue to infer.",
+  "comparisons": [
+    {
+      "id": "289bd3d345",
+      "situation": "A seed librarian has two unmarked tins on the table. “I’d like to finish the inventory today.” It is unclear whether the tins are ready for the shelves. There is time for two short actions. The reporter has promised to bring the van driver the parking token. For their own story they hope to write down the seed prices before the board is erased. Only the first turn is early enough for the story.",
+      "A": "First, they ask whether the tins are ready to shelve. “Yes. I wrote down both lots. Please put them up.” Next, they shelve the first tin. One tin is on the shelf. The driver has to circle the block. The current prices are missing from the report.",
+      "B": "First, they write down the seed prices before the board is erased. Next, they ask whether the tins are ready to shelve. “Yes. I wrote down both lots. Please put them up.” Both tins remain on the inventory table. The driver has to circle the block. The current prices make the report."
+    },
+    {
+      "id": "01f0a0acfb",
+      "situation": "A printmaker first agreed to display a portrait. At the hall they say, “I’ve changed my mind. Keep the portrait boxed. Please hang the two landscapes instead.” There is time for two short actions. The reporter has promised to return the decorator’s ladder pass. For their own story they hope to catch the gallery lights coming on for the newsreel. Only the first turn is early enough for the story.",
+      "A": "First, they hang the previously agreed portrait. Next, they return the decorator’s ladder pass. Visitors see the portrait. Neither landscape is on the wall. The decorator can collect a ladder. The newsreel misses the lights coming on.",
+      "B": "First, they catch the gallery lights coming on for the newsreel. Next, they hang one landscape. One landscape is on the wall. The decorator misses ladder collection. The lights coming on are on film."
+    },
+    {
+      "id": "12c590d745",
+      "situation": "A sound editor is leaving on a train with two reels. “Bring the reels to the platform while I exchange my ticket, please.” The reporter has also given their word to the porter. There is time for two short actions. The reporter has promised to take the porter’s signed timesheet to the clock room. For their own story they hope to record the departing engine for the broadcast.",
+      "A": "First, they record the departing engine for the broadcast. Next, they bring one reel to the platform. One reel makes the train. The porter must wait until the next pay run. The departing engine makes the broadcast.",
+      "B": "First, they take the porter’s signed timesheet to the clock room. Next, they bring one reel to the platform. One reel makes the train. The porter’s pay is authorized this shift. The broadcast has no engine recording."
+    },
+    {
+      "id": "e8e108c567",
+      "situation": "A conductor is gathering the youth orchestra. “Could you lay out these two scores before the downbeat? I’ll get the players seated.” The reporter is also expected at the doors. There is time for two short actions. The reporter has promised to open the step-free door for the ushers. For their own story they hope to film the orchestra tuning for the arts page. Only the first turn is early enough for the promise.",
+      "A": "First, they film the orchestra tuning for the arts page. Next, they lay the first score on its stand. One section has its score at the downbeat. The ushers wait with people at the step-free door. Tuning appears in the arts-page film.",
+      "B": "First, they open the promised step-free door for the ushers. Next, they lay the first score on its stand. One section has its score at the downbeat. The ushers bring people through the step-free door on time. The arts-page film misses the tuning."
+    },
+    {
+      "id": "1695288fad",
+      "situation": "A hall steward has finished rewriting the flood notices. “Please put the new notices on the two entry doors while I open the hall.” There is time for two short actions. The reporter has promised to return the school secretary’s gate key. For their own story they hope to record the first ferry whistle for the bulletin. Only the first turn is early enough for the story.",
+      "A": "First, they record the first ferry whistle for the bulletin. Next, they pin a notice to the east door. One door carries today’s hours. The secretary waits outside the bike shed. The bulletin has the whistle recording.",
+      "B": "First, they return the school secretary’s gate key. Next, they pin a notice to the east door. One door carries today’s hours. The secretary opens the bike shed on time. The first whistle goes unrecorded."
+    },
+    {
+      "id": "2e762ff4a3",
+      "situation": "A printmaker first agreed to display a portrait. At the hall they say, “I’ve changed my mind. Keep the portrait boxed. Please hang the two landscapes instead.” There is time for two short actions. The reporter has promised to return the decorator’s ladder pass. For their own story they hope to catch the gallery lights coming on for the newsreel. Only the first turn is early enough for the story.",
+      "A": "First, they catch the gallery lights coming on for the newsreel. Next, they return the decorator’s ladder pass. Neither landscape is on the wall. The decorator can collect a ladder. The lights coming on are on film.",
+      "B": "First, they catch the gallery lights coming on for the newsreel. Next, they hang one landscape. One landscape is on the wall. The decorator misses ladder collection. The lights coming on are on film."
+    },
+    {
+      "id": "6adf22d69d",
+      "situation": "A sound editor is leaving on a train with two reels. “Bring the reels to the platform while I exchange my ticket, please.” The reporter has also given their word to the porter. There is time for two short actions. The reporter has promised to take the porter’s signed timesheet to the clock room. For their own story they hope to record the departing engine for the broadcast.",
+      "A": "First, they take the porter’s signed timesheet to the clock room. Next, they bring one reel to the platform. One reel makes the train. The porter’s pay is authorized this shift. The broadcast has no engine recording.",
+      "B": "First, they take the porter’s signed timesheet to the clock room. Next, they record the departing engine for the broadcast. Both reels miss the train. The porter’s pay is authorized this shift. The departing engine makes the broadcast."
+    },
+    {
+      "id": "38a7e06a63",
+      "situation": "A radio engineer had offered a recording of the family answering machine. “Please pull it. Air the two street sounds I recorded instead.” The engineer gives the reporter the replacement files. There is time for two short actions. The reporter has promised to give the transmitter operator the signed log. For their own story they hope to record an on-air clock chime for the station piece. Only the first turn is early enough for the promise.",
+      "A": "First, they queue the first street sound. Next, they queue the second street sound. Both street sounds air. The operator misses the filing window. The piece runs without the chime.",
+      "B": "First, they give the transmitter operator the signed log. Next, they queue the first street sound. One street sound airs. The operator files the log on time. The piece runs without the chime."
+    },
+    {
+      "id": "e02fea1f1c",
+      "situation": "A medal winner hands back the reporter’s microphone. “I want to call home first. Please leave me out of this edition, and please don’t ask again.” There is time for two short actions. The reporter has promised to return the marshal’s borrowed stopwatch. For their own story they hope to record the public scoreboard for the sports page. Only the first turn is early enough for the promise.",
+      "A": "First, they return the marshal’s borrowed stopwatch. Next, they stay out of the way until the next bell. The medal winner calls home. The marshal has the stopwatch for the next heat. The page goes to press without the official times.",
+      "B": "First, they ask for a quote again. The answer is still no. Next, they record the public scoreboard for the sports page. The medal winner calls home. The marshal starts the heat with a borrowed phone. The page has the official times."
+    },
+    {
+      "id": "eff13765e2",
+      "situation": "A trail guide is sorting route maps at the gate. “There are two packets still here.” The guide has said nothing about who should take them. There is time for two short actions. The reporter has promised to hand the ticket seller the change float. For their own story they hope to take down the morning passenger count. Only the first turn is early enough for the story.",
+      "A": "First, they ask whether the packets should be taken to the trailheads. “Yes, please take them. They’re for the walkers.” Next, they carry one packet to its trailhead. One packet is at a trailhead. The ticket seller starts without change. The morning count is missing.",
+      "B": "First, they hand the ticket seller the promised change float. Next, they ask whether the packets should be taken to the trailheads. “Yes, please take them. They’re for the walkers.” Neither packet is at a trailhead. The ticket seller opens with change. The morning count is missing."
+    },
+    {
+      "id": "ad8c5eab1b",
+      "situation": "A photographer is bent over two boxes of negatives. “These still have to go somewhere.” The photographer has not asked anyone to move them. There is time for two short actions. The reporter has promised to give the projectionist the door code. For their own story they hope to take a photograph of the empty theater. Only the first turn is early enough for the promise.",
+      "A": "First, they take a photograph of the empty theater. Next, they ask whether the boxes should go to the archive. “No, leave them here. I’m checking the dates first.” Both boxes remain with the photographer. The projectionist waits for someone to open up. The empty-theater photograph makes the piece.",
+      "B": "First, they ask whether the boxes should go to the archive. “No, leave them here. I’m checking the dates first.” Next, they arrive too late to give the projectionist the promised door code. Both boxes remain with the photographer. The projectionist waits for someone to open up. The piece runs without the empty-theater photograph."
+    },
+    {
+      "id": "743d3d6f39",
+      "situation": "A trail guide is sorting route maps at the gate. “There are two packets still here.” The guide has said nothing about who should take them. There is time for two short actions. The reporter has promised to hand the ticket seller the change float. For their own story they hope to take down the morning passenger count. Only the first turn is early enough for the story.",
+      "A": "First, they ask whether the packets should be taken to the trailheads. “Yes, please take them. They’re for the walkers.” Next, they carry one packet to its trailhead. One packet is at a trailhead. The ticket seller starts without change. The morning count is missing.",
+      "B": "First, they take down the morning passenger count. Next, they ask whether the packets should be taken to the trailheads. “Yes, please take them. They’re for the walkers.” Neither packet is at a trailhead. The ticket seller starts without change. The morning count goes in the story."
+    },
+    {
+      "id": "485ad34a01",
+      "situation": "A mechanic had asked for two tool cases to go on the ferry. At the landing they say, “Plans changed. I’m staying here. Bring both cases to the workshop instead.” There is time for two short actions. The reporter has promised to bring the ramp keeper the padlock key. For their own story they hope to film the launch bell for the harbor report. Only the first turn is early enough for the story.",
+      "A": "First, they bring the ramp keeper the promised padlock key. Next, they take the first case to the workshop. One case is in the workshop. The keeper can secure the ramp. The harbor report misses the bell.",
+      "B": "First, they take the first case to the workshop. Next, they take the second case to the workshop. Both cases are in the workshop. The keeper stays by the unlocked ramp. The harbor report misses the bell."
+    },
+    {
+      "id": "58b7bc054c",
+      "situation": "A cook is serving lunch. “Could you bring the two trays from the side room?” The reporter said earlier they would also check on a delivery for the hall. There is time for two short actions. The reporter has promised to sign for the hall’s grocery delivery. For their own story they hope to photograph the lunch counter before it closes. Only the first turn is early enough for the promise.",
+      "A": "First, they sign for the hall’s grocery delivery. Next, they carry the first tray to the serving table. One tray reaches the serving table. The delivery stays at the hall. The page goes without a lunch photograph.",
+      "B": "First, they sign for the hall’s grocery delivery. Next, they photograph the lunch counter before it closes. Both trays stay in the side room during service. The delivery stays at the hall. The local page has its lunch photograph."
+    },
+    {
+      "id": "8dcd5b3558",
+      "situation": "A photographer is bent over two boxes of negatives. “These still have to go somewhere.” The photographer has not asked anyone to move them. There is time for two short actions. The reporter has promised to give the projectionist the door code. For their own story they hope to take a photograph of the empty theater. Only the first turn is early enough for the promise.",
+      "A": "First, they ask whether the boxes should go to the archive. “No, leave them here. I’m checking the dates first.” Next, they take a photograph of the empty theater. Both boxes remain with the photographer. The projectionist waits for someone to open up. The empty-theater photograph makes the piece.",
+      "B": "First, they give the projectionist the promised door code. Next, they take a photograph of the empty theater. Both boxes remain with the photographer. The projectionist gets in on time. The empty-theater photograph makes the piece."
+    },
+    {
+      "id": "33580586e7",
+      "situation": "A couple decline the radio crew. “No recording of our vows. Please don’t come back to ask. The musicians outside agreed to a recording of their set.” There is time for two short actions. The reporter has promised to hand the organist the spare page. For their own story they hope to record the musicians’ public opening number. Only the first turn is early enough for the story.",
+      "A": "First, they hand the organist the promised spare page. Next, they arrive too late to record the musicians’ public opening number. The couple finish the ceremony. The organist has the missing page in time. The opening number goes unrecorded.",
+      "B": "First, they record the musicians’ public opening number. Next, they hand the organist the promised spare page. The couple finish the ceremony. The organist has the missing page in time. The bulletin has the opening number."
+    },
+    {
+      "id": "9e05c2c494",
+      "situation": "A market organizer is at the permit desk. “Could you fold up the two loose awning panels? I want the stall to reopen tomorrow.” There is time for two short actions. The reporter has promised to bring the crossing guard the spare raincoat. For their own story they hope to record the outgoing market bell. Only the first turn is early enough for the story.",
+      "A": "First, they fold the first loose panel. Next, they fold the second loose panel. Both panels are stored for tomorrow. The guard makes the crossing without the promised coat. The evening piece has no market bell.",
+      "B": "First, they bring the crossing guard the spare raincoat. Next, they fold the first loose panel. One panel is left for the night crew. The guard has the promised coat for the crossing. The evening piece has no market bell."
+    },
+    {
+      "id": "49592eb131",
+      "situation": "A librarian has embossed two new shelf labels. “Stick them on the shelves for me? I’ll stay with the reader at the desk.” There is time for two short actions. The reporter has promised to give the caretaker back the step stool. For their own story they hope to take a photograph of the reading room for the paper. Only the first turn is early enough for the promise.",
+      "A": "First, they take a photograph of the reading room for the paper. Next, they attach the first embossed label. One shelf has its new label. The caretaker misses the maintenance window. The reading-room photo makes the paper.",
+      "B": "First, they give the caretaker back the step stool. Next, they take a photograph of the reading room for the paper. Both new shelf labels remain on the desk. The caretaker reaches the fuse box in time. The reading-room photo makes the paper."
+    },
+    {
+      "id": "2c970da68a",
+      "situation": "A conductor is gathering the youth orchestra. “Could you lay out these two scores before the downbeat? I’ll get the players seated.” The reporter is also expected at the doors. There is time for two short actions. The reporter has promised to open the step-free door for the ushers. For their own story they hope to film the orchestra tuning for the arts page. Only the first turn is early enough for the promise.",
+      "A": "First, they open the promised step-free door for the ushers. Next, they lay the first score on its stand. One section has its score at the downbeat. The ushers bring people through the step-free door on time. The arts-page film misses the tuning.",
+      "B": "First, they open the promised step-free door for the ushers. Next, they film the orchestra tuning for the arts page. Neither section has its score at the downbeat. The ushers bring people through the step-free door on time. Tuning appears in the arts-page film."
+    },
+    {
+      "id": "8249300c13",
+      "situation": "A singer says, “Please leave the rehearsal tape in its case. The concert is public, the rehearsal is private. Don’t ask me again.” The singer gets back to tuning. There is time for two short actions. The reporter has promised to deliver the bandleader’s promised set list. For their own story they hope to record the crowd arriving outside. Only the first turn is early enough for the story.",
+      "A": "First, they deliver the bandleader’s promised set list. Next, they stay out of the way until the next bell. The singer carries on tuning. The bandleader gets the set list before rehearsal. The report has no arrival sound.",
+      "B": "First, they ask the singer for the rehearsal tape again. The answer is still no. Next, they arrive too late to record the crowd arriving outside. The singer carries on tuning. The bandleader starts without the set list. The report has no arrival sound."
+    },
+    {
+      "id": "d48ad51659",
+      "situation": "A medal winner hands back the reporter’s microphone. “I want to call home first. Please leave me out of this edition, and please don’t ask again.” There is time for two short actions. The reporter has promised to return the marshal’s borrowed stopwatch. For their own story they hope to record the public scoreboard for the sports page. Only the first turn is early enough for the promise.",
+      "A": "First, they return the marshal’s borrowed stopwatch. Next, they record the public scoreboard for the sports page. The medal winner calls home. The marshal has the stopwatch for the next heat. The page has the official times.",
+      "B": "First, they record the public scoreboard for the sports page. Next, they arrive too late to return the marshal’s borrowed stopwatch. The medal winner calls home. The marshal starts the heat with a borrowed phone. The page has the official times."
+    },
+    {
+      "id": "1518b4f081",
+      "situation": "A seed librarian has two unmarked tins on the table. “I’d like to finish the inventory today.” It is unclear whether the tins are ready for the shelves. There is time for two short actions. The reporter has promised to bring the van driver the parking token. For their own story they hope to write down the seed prices before the board is erased. Only the first turn is early enough for the story.",
+      "A": "First, they ask whether the tins are ready to shelve. “Yes. I wrote down both lots. Please put them up.” Next, they shelve the first tin. One tin is on the shelf. The driver has to circle the block. The current prices are missing from the report.",
+      "B": "First, they write down the seed prices before the board is erased. Next, they bring the van driver the promised parking token. Both tins remain on the inventory table. The driver keeps the unloading slot. The current prices make the report."
+    },
+    {
+      "id": "1a78cd5172",
+      "situation": "A couple decline the radio crew. “No recording of our vows. Please don’t come back to ask. The musicians outside agreed to a recording of their set.” There is time for two short actions. The reporter has promised to hand the organist the spare page. For their own story they hope to record the musicians’ public opening number. Only the first turn is early enough for the story.",
+      "A": "First, they record the musicians’ public opening number. Next, they stay out of the way until the next bell. The couple finish the ceremony. The organist plays from an incomplete score. The bulletin has the opening number.",
+      "B": "First, they point the live microphone at the vows. Next, they hand the organist the promised spare page. The vows go out over the live microphone. The couple finish the ceremony. The organist has the missing page in time. The opening number goes unrecorded."
+    },
+    {
+      "id": "6f0ff25d38",
+      "situation": "A radio engineer had offered a recording of the family answering machine. “Please pull it. Air the two street sounds I recorded instead.” The engineer gives the reporter the replacement files. There is time for two short actions. The reporter has promised to give the transmitter operator the signed log. For their own story they hope to record an on-air clock chime for the station piece. Only the first turn is early enough for the promise.",
+      "A": "First, they record an on-air clock chime for the station piece. Next, they queue the first street sound. One street sound airs. The operator misses the filing window. The station piece has its clock chime.",
+      "B": "First, they give the transmitter operator the signed log. Next, they record an on-air clock chime for the station piece. Neither street sound airs. The operator files the log on time. The station piece has its clock chime."
+    },
+    {
+      "id": "35b724f26d",
+      "situation": "A sound editor is leaving on a train with two reels. “Bring the reels to the platform while I exchange my ticket, please.” The reporter has also given their word to the porter. There is time for two short actions. The reporter has promised to take the porter’s signed timesheet to the clock room. For their own story they hope to record the departing engine for the broadcast.",
+      "A": "First, they bring one reel to the platform. Next, they bring the other reel to the platform. Both reels make the train. The porter must wait until the next pay run. The broadcast has no engine recording.",
+      "B": "First, they take the porter’s signed timesheet to the clock room. Next, they bring one reel to the platform. One reel makes the train. The porter’s pay is authorized this shift. The broadcast has no engine recording."
+    },
+    {
+      "id": "96271d7cd3",
+      "situation": "A radio engineer had offered a recording of the family answering machine. “Please pull it. Air the two street sounds I recorded instead.” The engineer gives the reporter the replacement files. There is time for two short actions. The reporter has promised to give the transmitter operator the signed log. For their own story they hope to record an on-air clock chime for the station piece. Only the first turn is early enough for the promise.",
+      "A": "First, they record an on-air clock chime for the station piece. Next, they queue the first street sound. One street sound airs. The operator misses the filing window. The station piece has its clock chime.",
+      "B": "First, they air the answering-machine recording. Next, they arrive too late to give the transmitter operator the signed log. The family recording is broadcast. Neither street sound airs. The operator misses the filing window. The piece runs without the chime."
+    },
+    {
+      "id": "b0f1ce6e98",
+      "situation": "A singer says, “Please leave the rehearsal tape in its case. The concert is public, the rehearsal is private. Don’t ask me again.” The singer gets back to tuning. There is time for two short actions. The reporter has promised to deliver the bandleader’s promised set list. For their own story they hope to record the crowd arriving outside. Only the first turn is early enough for the story.",
+      "A": "First, they play the rehearsal tape in the booth. Next, they deliver the bandleader’s promised set list. The private rehearsal is heard in the booth. The singer carries on tuning. The bandleader gets the set list before rehearsal. The report has no arrival sound.",
+      "B": "First, they record the crowd arriving outside. Next, they stay out of the way until the next bell. The singer carries on tuning. The bandleader starts without the set list. The report opens with sound from the crowd."
+    },
+    {
+      "id": "8898ecfb0f",
+      "situation": "A hall steward has finished rewriting the flood notices. “Please put the new notices on the two entry doors while I open the hall.” There is time for two short actions. The reporter has promised to return the school secretary’s gate key. For their own story they hope to record the first ferry whistle for the bulletin. Only the first turn is early enough for the story.",
+      "A": "First, they record the first ferry whistle for the bulletin. Next, they pin a notice to the east door. One door carries today’s hours. The secretary waits outside the bike shed. The bulletin has the whistle recording.",
+      "B": "First, they record the first ferry whistle for the bulletin. Next, they return the school secretary’s gate key. Both doors still carry yesterday’s hours. The secretary opens the bike shed on time. The bulletin has the whistle recording."
+    },
+    {
+      "id": "d087472801",
+      "situation": "A librarian has embossed two new shelf labels. “Stick them on the shelves for me? I’ll stay with the reader at the desk.” There is time for two short actions. The reporter has promised to give the caretaker back the step stool. For their own story they hope to take a photograph of the reading room for the paper. Only the first turn is early enough for the promise.",
+      "A": "First, they give the caretaker back the step stool. Next, they attach the first embossed label. One shelf has its new label. The caretaker reaches the fuse box in time. The paper runs without the photo.",
+      "B": "First, they attach the first embossed label. Next, they attach the second embossed label. Both shelves have their new labels. The caretaker misses the maintenance window. The paper runs without the photo."
+    },
+    {
+      "id": "5a33f526c7",
+      "situation": "A seed librarian has two unmarked tins on the table. “I’d like to finish the inventory today.” It is unclear whether the tins are ready for the shelves. There is time for two short actions. The reporter has promised to bring the van driver the parking token. For their own story they hope to write down the seed prices before the board is erased. Only the first turn is early enough for the story.",
+      "A": "First, they ask whether the tins are ready to shelve. “Yes. I wrote down both lots. Please put them up.” Next, they shelve the first tin. One tin is on the shelf. The driver has to circle the block. The current prices are missing from the report.",
+      "B": "First, they bring the van driver the promised parking token. Next, they ask whether the tins are ready to shelve. “Yes. I wrote down both lots. Please put them up.” Both tins remain on the inventory table. The driver keeps the unloading slot. The current prices are missing from the report."
+    },
+    {
+      "id": "733cdccd74",
+      "situation": "A market organizer is at the permit desk. “Could you fold up the two loose awning panels? I want the stall to reopen tomorrow.” There is time for two short actions. The reporter has promised to bring the crossing guard the spare raincoat. For their own story they hope to record the outgoing market bell. Only the first turn is early enough for the story.",
+      "A": "First, they bring the crossing guard the spare raincoat. Next, they fold the first loose panel. One panel is left for the night crew. The guard has the promised coat for the crossing. The evening piece has no market bell.",
+      "B": "First, they record the outgoing market bell. Next, they fold the first loose panel. One panel is left for the night crew. The guard makes the crossing without the promised coat. The bell is on tape for the evening piece."
+    },
+    {
+      "id": "8b14c88171",
+      "situation": "A photographer is bent over two boxes of negatives. “These still have to go somewhere.” The photographer has not asked anyone to move them. There is time for two short actions. The reporter has promised to give the projectionist the door code. For their own story they hope to take a photograph of the empty theater. Only the first turn is early enough for the promise.",
+      "A": "First, they give the projectionist the promised door code. Next, they ask whether the boxes should go to the archive. “No, leave them here. I’m checking the dates first.” Both boxes remain with the photographer. The projectionist gets in on time. The piece runs without the empty-theater photograph.",
+      "B": "First, they ask whether the boxes should go to the archive. “No, leave them here. I’m checking the dates first.” Next, they arrive too late to give the projectionist the promised door code. Both boxes remain with the photographer. The projectionist waits for someone to open up. The piece runs without the empty-theater photograph."
+    },
+    {
+      "id": "053e443a33",
+      "situation": "A hall steward has finished rewriting the flood notices. “Please put the new notices on the two entry doors while I open the hall.” There is time for two short actions. The reporter has promised to return the school secretary’s gate key. For their own story they hope to record the first ferry whistle for the bulletin. Only the first turn is early enough for the story.",
+      "A": "First, they pin a notice to the east door. Next, they pin a notice to the west door. Both doors carry today’s hours. The secretary waits outside the bike shed. The first whistle goes unrecorded.",
+      "B": "First, they return the school secretary’s gate key. Next, they pin a notice to the east door. One door carries today’s hours. The secretary opens the bike shed on time. The first whistle goes unrecorded."
+    },
+    {
+      "id": "f6a1b6cc7c",
+      "situation": "A cook is serving lunch. “Could you bring the two trays from the side room?” The reporter said earlier they would also check on a delivery for the hall. There is time for two short actions. The reporter has promised to sign for the hall’s grocery delivery. For their own story they hope to photograph the lunch counter before it closes. Only the first turn is early enough for the promise.",
+      "A": "First, they photograph the lunch counter before it closes. Next, they carry the first tray to the serving table. One tray reaches the serving table. The groceries return to the depot. The local page has its lunch photograph.",
+      "B": "First, they sign for the hall’s grocery delivery. Next, they carry the first tray to the serving table. One tray reaches the serving table. The delivery stays at the hall. The page goes without a lunch photograph."
+    },
+    {
+      "id": "8d40d25147",
+      "situation": "A medal winner hands back the reporter’s microphone. “I want to call home first. Please leave me out of this edition, and please don’t ask again.” There is time for two short actions. The reporter has promised to return the marshal’s borrowed stopwatch. For their own story they hope to record the public scoreboard for the sports page. Only the first turn is early enough for the promise.",
+      "A": "First, they put the medal winner’s earlier private remark in the edition. Next, they arrive too late to return the marshal’s borrowed stopwatch. The remark appears in the edition. The medal winner calls home. The marshal starts the heat with a borrowed phone. The page goes to press without the official times.",
+      "B": "First, they record the public scoreboard for the sports page. Next, they stay out of the way until the next bell. The medal winner calls home. The marshal starts the heat with a borrowed phone. The page has the official times."
+    },
+    {
+      "id": "d1df557ce8",
+      "situation": "A mechanic had asked for two tool cases to go on the ferry. At the landing they say, “Plans changed. I’m staying here. Bring both cases to the workshop instead.” There is time for two short actions. The reporter has promised to bring the ramp keeper the padlock key. For their own story they hope to film the launch bell for the harbor report. Only the first turn is early enough for the story.",
+      "A": "First, they film the launch bell for the harbor report. Next, they take the first case to the workshop. One case is in the workshop. The keeper stays by the unlocked ramp. The launch bell is on film.",
+      "B": "First, they send a case away on the ferry as first arranged. Next, they bring the ramp keeper the promised padlock key. A case leaves on the ferry. Neither case is in the workshop. The keeper can secure the ramp. The harbor report misses the bell."
+    },
+    {
+      "id": "8f5db4a6cc",
+      "situation": "A printmaker first agreed to display a portrait. At the hall they say, “I’ve changed my mind. Keep the portrait boxed. Please hang the two landscapes instead.” There is time for two short actions. The reporter has promised to return the decorator’s ladder pass. For their own story they hope to catch the gallery lights coming on for the newsreel. Only the first turn is early enough for the story.",
+      "A": "First, they hang one landscape. Next, they hang the other landscape. Both landscapes are on the wall. The decorator misses ladder collection. The newsreel misses the lights coming on.",
+      "B": "First, they return the decorator’s ladder pass. Next, they hang one landscape. One landscape is on the wall. The decorator can collect a ladder. The newsreel misses the lights coming on."
+    },
+    {
+      "id": "c3482bd55b",
+      "situation": "A couple decline the radio crew. “No recording of our vows. Please don’t come back to ask. The musicians outside agreed to a recording of their set.” There is time for two short actions. The reporter has promised to hand the organist the spare page. For their own story they hope to record the musicians’ public opening number. Only the first turn is early enough for the story.",
+      "A": "First, they hand the organist the promised spare page. Next, they stay out of the way until the next bell. The couple finish the ceremony. The organist has the missing page in time. The opening number goes unrecorded.",
+      "B": "First, they ask the couple about recording the vows again. The answer is still no. Next, they arrive too late to record the musicians’ public opening number. The couple finish the ceremony. The organist plays from an incomplete score. The opening number goes unrecorded."
+    },
+    {
+      "id": "fd3c2e99aa",
+      "situation": "A singer says, “Please leave the rehearsal tape in its case. The concert is public, the rehearsal is private. Don’t ask me again.” The singer gets back to tuning. There is time for two short actions. The reporter has promised to deliver the bandleader’s promised set list. For their own story they hope to record the crowd arriving outside. Only the first turn is early enough for the story.",
+      "A": "First, they deliver the bandleader’s promised set list. Next, they arrive too late to record the crowd arriving outside. The singer carries on tuning. The bandleader gets the set list before rehearsal. The report has no arrival sound.",
+      "B": "First, they record the crowd arriving outside. Next, they deliver the bandleader’s promised set list. The singer carries on tuning. The bandleader gets the set list before rehearsal. The report opens with sound from the crowd."
+    },
+    {
+      "id": "32dc12d9f0",
+      "situation": "A librarian has embossed two new shelf labels. “Stick them on the shelves for me? I’ll stay with the reader at the desk.” There is time for two short actions. The reporter has promised to give the caretaker back the step stool. For their own story they hope to take a photograph of the reading room for the paper. Only the first turn is early enough for the promise.",
+      "A": "First, they give the caretaker back the step stool. Next, they attach the first embossed label. One shelf has its new label. The caretaker reaches the fuse box in time. The paper runs without the photo.",
+      "B": "First, they take a photograph of the reading room for the paper. Next, they attach the first embossed label. One shelf has its new label. The caretaker misses the maintenance window. The reading-room photo makes the paper."
+    },
+    {
+      "id": "c318f39dac",
+      "situation": "A trail guide is sorting route maps at the gate. “There are two packets still here.” The guide has said nothing about who should take them. There is time for two short actions. The reporter has promised to hand the ticket seller the change float. For their own story they hope to take down the morning passenger count. Only the first turn is early enough for the story.",
+      "A": "First, they take down the morning passenger count. Next, they hand the ticket seller the promised change float. Neither packet is at a trailhead. The ticket seller opens with change. The morning count goes in the story.",
+      "B": "First, they ask whether the packets should be taken to the trailheads. “Yes, please take them. They’re for the walkers.” Next, they carry one packet to its trailhead. One packet is at a trailhead. The ticket seller starts without change. The morning count is missing."
+    },
+    {
+      "id": "8d6dc4b2c1",
+      "situation": "A conductor is gathering the youth orchestra. “Could you lay out these two scores before the downbeat? I’ll get the players seated.” The reporter is also expected at the doors. There is time for two short actions. The reporter has promised to open the step-free door for the ushers. For their own story they hope to film the orchestra tuning for the arts page. Only the first turn is early enough for the promise.",
+      "A": "First, they open the promised step-free door for the ushers. Next, they lay the first score on its stand. One section has its score at the downbeat. The ushers bring people through the step-free door on time. The arts-page film misses the tuning.",
+      "B": "First, they lay the first score on its stand. Next, they lay the other score on its stand. Both sections have their scores at the downbeat. The ushers wait with people at the step-free door. The arts-page film misses the tuning."
+    },
+    {
+      "id": "67f88b290d",
+      "situation": "A cook is serving lunch. “Could you bring the two trays from the side room?” The reporter said earlier they would also check on a delivery for the hall. There is time for two short actions. The reporter has promised to sign for the hall’s grocery delivery. For their own story they hope to photograph the lunch counter before it closes. Only the first turn is early enough for the promise.",
+      "A": "First, they carry the first tray to the serving table. Next, they carry the second tray to the serving table. Both trays reach the serving table. The groceries return to the depot. The page goes without a lunch photograph.",
+      "B": "First, they sign for the hall’s grocery delivery. Next, they carry the first tray to the serving table. One tray reaches the serving table. The delivery stays at the hall. The page goes without a lunch photograph."
+    },
+    {
+      "id": "9fa103eb47",
+      "situation": "A mechanic had asked for two tool cases to go on the ferry. At the landing they say, “Plans changed. I’m staying here. Bring both cases to the workshop instead.” There is time for two short actions. The reporter has promised to bring the ramp keeper the padlock key. For their own story they hope to film the launch bell for the harbor report. Only the first turn is early enough for the story.",
+      "A": "First, they film the launch bell for the harbor report. Next, they take the first case to the workshop. One case is in the workshop. The keeper stays by the unlocked ramp. The launch bell is on film.",
+      "B": "First, they film the launch bell for the harbor report. Next, they bring the ramp keeper the promised padlock key. Neither case is in the workshop. The keeper can secure the ramp. The launch bell is on film."
+    },
+    {
+      "id": "1e89e8319d",
+      "situation": "A market organizer is at the permit desk. “Could you fold up the two loose awning panels? I want the stall to reopen tomorrow.” There is time for two short actions. The reporter has promised to bring the crossing guard the spare raincoat. For their own story they hope to record the outgoing market bell. Only the first turn is early enough for the story.",
+      "A": "First, they record the outgoing market bell. Next, they bring the crossing guard the spare raincoat. Both panels are left for the night crew. The guard has the promised coat for the crossing. The bell is on tape for the evening piece.",
+      "B": "First, they record the outgoing market bell. Next, they fold the first loose panel. One panel is left for the night crew. The guard makes the crossing without the promised coat. The bell is on tape for the evening piece."
+    }
+  ]
+}

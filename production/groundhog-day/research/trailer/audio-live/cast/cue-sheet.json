@@ -1,0 +1,182 @@
+[
+  {
+    "cue": 1,
+    "character": "Rita",
+    "in_seconds": 0.3,
+    "out_seconds": 1.854,
+    "text": "Thirty more seconds?",
+    "file": "Rita/01-Rita.wav",
+    "fit_speed": 1
+  },
+  {
+    "cue": 2,
+    "character": "Ned",
+    "in_seconds": 3.33,
+    "out_seconds": 5.287,
+    "text": "Phil? I’ve got a policy that—",
+    "file": "Ned/02-Ned.wav",
+    "fit_speed": 1.28
+  },
+  {
+    "cue": 4,
+    "character": "Phil",
+    "in_seconds": 11.6,
+    "out_seconds": 12.752,
+    "text": "I’m stuck in a loop.",
+    "file": "Phil/04-Phil.wav",
+    "fit_speed": 1
+  },
+  {
+    "cue": 5,
+    "character": "Phil",
+    "in_seconds": 15.24,
+    "out_seconds": 18.787,
+    "text": "Test the theory. Not the coach. Not the couch. The piano.",
+    "file": "Phil/05-Phil.wav",
+    "fit_speed": 1
+  },
+  {
+    "cue": 6,
+    "character": "Phil",
+    "in_seconds": 33.03,
+    "out_seconds": 37.776,
+    "text": "It’s Phil. I’m in Pittsburgh. The van is confirmed for eight A.M. I’ll be there.",
+    "file": "Phil/06-Phil.wav",
+    "fit_speed": 1
+  },
+  {
+    "cue": 8,
+    "character": "Phil",
+    "in_seconds": 40.15,
+    "out_seconds": 41.545,
+    "text": "I was there. She heard me.",
+    "file": "Phil/08-Phil.wav",
+    "fit_speed": 1
+  },
+  {
+    "cue": 9,
+    "character": "Phil",
+    "in_seconds": 42.05,
+    "out_seconds": 45.558,
+    "text": "Rita, Larry—see you at the party. I’m heading to Pittsburgh.",
+    "file": "Phil/09-Phil.wav",
+    "fit_speed": 1
+  },
+  {
+    "cue": 10,
+    "character": "Rita",
+    "in_seconds": 52.32,
+    "out_seconds": 53.484,
+    "text": "Morning, Phil.",
+    "file": "Rita/10-Rita.wav",
+    "fit_speed": 1
+  },
+  {
+    "cue": 11,
+    "character": "Phil",
+    "in_seconds": 53.85,
+    "out_seconds": 54.73,
+    "text": "About last—",
+    "file": "Phil/11-Phil.wav",
+    "fit_speed": 1
+  },
+  {
+    "cue": 12,
+    "character": "Phil",
+    "in_seconds": 55.45,
+    "out_seconds": 56.416,
+    "text": "Snow till noon.",
+    "file": "Phil/12-Phil.wav",
+    "fit_speed": 1
+  },
+  {
+    "cue": 13,
+    "character": "Phil",
+    "in_seconds": 62.36,
+    "out_seconds": 67.89,
+    "text": "The curtains are closed. I’ve spent the afternoon in bed. Again.",
+    "file": "Phil/13-Phil.wav",
+    "fit_speed": 1.01
+  },
+  {
+    "cue": 14,
+    "character": "Ned",
+    "in_seconds": 76.13,
+    "out_seconds": 77.537,
+    "text": "It covers the whole year.",
+    "file": "Ned/14-Ned.wav",
+    "fit_speed": 1.27
+  },
+  {
+    "cue": 15,
+    "character": "Phil",
+    "in_seconds": 77.6,
+    "out_seconds": 78.148,
+    "text": "I’ll take it.",
+    "file": "Phil/15-Phil.wav",
+    "fit_speed": 1
+  },
+  {
+    "cue": 16,
+    "character": "Rita",
+    "in_seconds": 88.84,
+    "out_seconds": 89.8,
+    "text": "You sold one?",
+    "file": "Rita/16-Rita.wav",
+    "fit_speed": 1
+  },
+  {
+    "cue": 17,
+    "character": "Ned",
+    "in_seconds": 90.04,
+    "out_seconds": 92.21,
+    "text": "To Phil. I forgot my pen.",
+    "file": "Ned/17-Ned.wav",
+    "fit_speed": 1.23
+  },
+  {
+    "cue": 18,
+    "character": "Ned",
+    "in_seconds": 92.72,
+    "out_seconds": 93.81,
+    "text": "He waited.",
+    "file": "Ned/18-Ned.wav",
+    "fit_speed": 1
+  },
+  {
+    "cue": 19,
+    "character": "Rita",
+    "in_seconds": 94.16,
+    "out_seconds": 95.803,
+    "text": "I’m putting it on the wire.",
+    "file": "Rita/19-Rita.wav",
+    "fit_speed": 1
+  },
+  {
+    "cue": 20,
+    "character": "Phil",
+    "in_seconds": 99.18,
+    "out_seconds": 100.94,
+    "text": "There are two more bars.",
+    "file": "Phil/20-Phil.wav",
+    "fit_speed": 1.55
+  },
+  {
+    "cue": 21,
+    "character": "Rita",
+    "in_seconds": 101.02,
+    "out_seconds": 102.761,
+    "text": "Save those for the morning.",
+    "file": "Rita/21-Rita.wav",
+    "fit_speed": 1
+  },
+  {
+    "cue": 22,
+    "character": "Rita",
+    "in_seconds": 105.04,
+    "out_seconds": 106.88,
+    "text": "You owe me two bars.",
+    "file": "Rita/22-Rita.wav",
+    "fit_speed": 1
+  }
+]

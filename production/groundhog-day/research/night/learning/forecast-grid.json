@@ -1,0 +1,182 @@
+{
+  "scope": "Prequential paired date/place log loss in bits, computed before seeing each wake with a fresh predictor per run. Each observed location and original-source dawn date comes from the reporter's observations. The real engine always resets to Tuesday. Synthetic controls exercise what would happen in ordinary calendar conditions. This measures world learning, not an actor's emotional state.",
+  "families": {
+    "q27": {
+      "all": {
+        "observations": 80,
+        "learned_mean_bits": 2.9955,
+        "ordinary_fixed_mean_bits": 5.8467
+      },
+      "first_night": {
+        "observations": 16,
+        "learned_mean_bits": 4.7757,
+        "ordinary_fixed_mean_bits": 4.7757
+      },
+      "final_observed_night": {
+        "observations": 16,
+        "learned_mean_bits": 2.7092,
+        "ordinary_fixed_mean_bits": 7.0305
+      },
+      "route": {
+        "Pittsburgh \u2192 inn": {
+          "observations": 19,
+          "learned_mean_bits": 3.9811,
+          "ordinary_fixed_mean_bits": 8.4397
+        },
+        "depot \u2192 inn": {
+          "observations": 4,
+          "learned_mean_bits": 3.6583,
+          "ordinary_fixed_mean_bits": 8.4397
+        },
+        "diner \u2192 inn": {
+          "observations": 2,
+          "learned_mean_bits": 5.5045,
+          "ordinary_fixed_mean_bits": 8.4397
+        },
+        "inn \u2192 inn": {
+          "observations": 46,
+          "learned_mean_bits": 1.865,
+          "ordinary_fixed_mean_bits": 3.9302
+        },
+        "square \u2192 inn": {
+          "observations": 3,
+          "learned_mean_bits": 6.5783,
+          "ordinary_fixed_mean_bits": 8.4397
+        },
+        "studio \u2192 inn": {
+          "observations": 6,
+          "learned_mean_bits": 5.4719,
+          "ordinary_fixed_mean_bits": 8.4397
+        }
+      }
+    },
+    "q4": {
+      "all": {
+        "observations": 40,
+        "learned_mean_bits": 2.3946,
+        "ordinary_fixed_mean_bits": 5.0575
+      },
+      "first_night": {
+        "observations": 8,
+        "learned_mean_bits": 4.4939,
+        "ordinary_fixed_mean_bits": 4.4939
+      },
+      "final_observed_night": {
+        "observations": 8,
+        "learned_mean_bits": 1.33,
+        "ordinary_fixed_mean_bits": 5.0575
+      },
+      "route": {
+        "Pittsburgh \u2192 inn": {
+          "observations": 8,
+          "learned_mean_bits": 3.8689,
+          "ordinary_fixed_mean_bits": 8.4397
+        },
+        "inn \u2192 inn": {
+          "observations": 30,
+          "learned_mean_bits": 1.6903,
+          "ordinary_fixed_mean_bits": 3.9302
+        },
+        "square \u2192 inn": {
+          "observations": 1,
+          "learned_mean_bits": 5.6848,
+          "ordinary_fixed_mean_bits": 8.4397
+        },
+        "studio \u2192 inn": {
+          "observations": 1,
+          "learned_mean_bits": 8.4397,
+          "ordinary_fixed_mean_bits": 8.4397
+        }
+      }
+    }
+  },
+  "technical_controls": [
+    {
+      "fixture": "ordinary seven-day stay",
+      "nights": [
+        {
+          "learned_bits": 0.4066,
+          "fixed_bits": 0.4066
+        },
+        {
+          "learned_bits": 0.2635,
+          "fixed_bits": 0.4066
+        },
+        {
+          "learned_bits": 0.195,
+          "fixed_bits": 0.4066
+        },
+        {
+          "learned_bits": 0.1547,
+          "fixed_bits": 0.4066
+        },
+        {
+          "learned_bits": 0.1283,
+          "fixed_bits": 0.4066
+        },
+        {
+          "learned_bits": 0.1095,
+          "fixed_bits": 0.4066
+        }
+      ]
+    },
+    {
+      "fixture": "repeating calendar, same location",
+      "nights": [
+        {
+          "learned_bits": 3.9302,
+          "fixed_bits": 3.9302
+        },
+        {
+          "learned_bits": 1.5553,
+          "fixed_bits": 3.9302
+        },
+        {
+          "learned_bits": 1.025,
+          "fixed_bits": 3.9302
+        },
+        {
+          "learned_bits": 0.7698,
+          "fixed_bits": 3.9302
+        },
+        {
+          "learned_bits": 0.6176,
+          "fixed_bits": 3.9302
+        },
+        {
+          "learned_bits": 0.5162,
+          "fixed_bits": 3.9302
+        }
+      ]
+    },
+    {
+      "fixture": "repeating calendar, city to hotel",
+      "nights": [
+        {
+          "learned_bits": 8.4397,
+          "fixed_bits": 8.4397
+        },
+        {
+          "learned_bits": 2.8555,
+          "fixed_bits": 8.4397
+        },
+        {
+          "learned_bits": 1.8379,
+          "fixed_bits": 8.4397
+        },
+        {
+          "learned_bits": 1.3648,
+          "fixed_bits": 8.4397
+        },
+        {
+          "learned_bits": 1.0876,
+          "fixed_bits": 8.4397
+        },
+        {
+          "learned_bits": 0.9048,
+          "fixed_bits": 8.4397
+        }
+      ]
+    }
+  ]
+}

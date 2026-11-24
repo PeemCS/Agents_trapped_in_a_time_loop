@@ -1,0 +1,16 @@
+{
+  "replacement_epoch_changed": true,
+  "witnessed_counts": [
+    1,
+    3,
+    4,
+    5,
+    2
+  ],
+  "held_during_malformed_write": true,
+  "played_initial_chunk": true,
+  "browser": "157.0.8103.79",
+  "presentation_projection_excluded_private_fields": true,
+  "page_errors": [],
+  "wall_seconds": 5.02
+}

@@ -1,0 +1,275 @@
+{
+  "source_sha256": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+  "fps": 24,
+  "frames": 983,
+  "seconds": 40.958333333333336,
+  "size": [
+    1280,
+    720
+  ],
+  "voices": {
+    "Phil": "Eddy (English (US))",
+    "Larry": "Daniel (English (UK))"
+  },
+  "stem_peak": 0.6708362698554993,
+  "master_target_lufs": -16,
+  "shots": [
+    {
+      "event_index": 2,
+      "event_id": "d01-t02-reporter",
+      "focus": "Phil",
+      "view": "action",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 3,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "I'm heading out to catch the one o'clock coach. See you later, everyone.",
+          "origin_note": "",
+          "start_s": 0.42,
+          "end_s": 5.9454
+        }
+      ],
+      "montage_index": 1,
+      "montage_part": "outbound",
+      "first_frame": 0,
+      "frames": 158
+    },
+    {
+      "event_index": 3,
+      "event_id": "d01-t03-reporter",
+      "focus": "Phil",
+      "view": "action",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 1.7,
+      "speech": [],
+      "montage_index": 1,
+      "montage_part": "in Pittsburgh",
+      "first_frame": 158,
+      "frames": 41
+    },
+    {
+      "event_index": 4,
+      "event_id": "d02-t00-reporter",
+      "focus": "Phil",
+      "view": "morning",
+      "framing": "close",
+      "start": 0.22,
+      "end": 0.22,
+      "seconds": 1.75,
+      "speech": [],
+      "montage_index": 1,
+      "montage_part": "back at the hotel",
+      "first_frame": 199,
+      "frames": 42
+    },
+    {
+      "event_index": 6,
+      "event_id": "d02-t02-reporter",
+      "focus": "Phil",
+      "view": "action",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 3,
+      "speech": [],
+      "montage_index": 2,
+      "montage_part": "outbound",
+      "first_frame": 241,
+      "frames": 72
+    },
+    {
+      "event_index": 7,
+      "event_id": "d02-t03-reporter",
+      "focus": "Phil",
+      "view": "action",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 2,
+      "speech": [],
+      "montage_index": 2,
+      "montage_part": "in Pittsburgh",
+      "first_frame": 313,
+      "frames": 48
+    },
+    {
+      "event_index": 8,
+      "event_id": "d03-t00-reporter",
+      "focus": "Phil",
+      "view": "morning",
+      "framing": "close",
+      "start": 0.22,
+      "end": 0.22,
+      "seconds": 1.65,
+      "speech": [],
+      "montage_index": 2,
+      "montage_part": "back at the hotel",
+      "first_frame": 361,
+      "frames": 40
+    },
+    {
+      "event_index": 10,
+      "event_id": "d03-t02-reporter",
+      "focus": "Phil",
+      "view": "action",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 3.15,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "I'm heading out to Pittsburgh, Rita. Catch you later.",
+          "origin_note": "",
+          "start_s": 17.1283,
+          "end_s": 21.486
+        }
+      ],
+      "montage_index": 3,
+      "montage_part": "outbound",
+      "first_frame": 401,
+      "frames": 130
+    },
+    {
+      "event_index": 11,
+      "event_id": "d03-t03-reporter",
+      "focus": "Phil",
+      "view": "action",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 1.8,
+      "speech": [],
+      "montage_index": 3,
+      "montage_part": "in Pittsburgh",
+      "first_frame": 531,
+      "frames": 44
+    },
+    {
+      "event_index": 12,
+      "event_id": "d04-t00-reporter",
+      "focus": "Phil",
+      "view": "morning",
+      "framing": "close",
+      "start": 0.22,
+      "end": 0.22,
+      "seconds": 1.55,
+      "speech": [],
+      "montage_index": 3,
+      "montage_part": "back at the hotel",
+      "first_frame": 575,
+      "frames": 38
+    },
+    {
+      "event_index": 14,
+      "event_id": "d04-t02-reporter",
+      "focus": "Phil",
+      "view": "action",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 2.85,
+      "speech": [
+        {
+          "actor": "Larry",
+          "text": "Getting the wide shot now.",
+          "origin_note": "",
+          "start_s": 25.9617,
+          "end_s": 27.7288
+        }
+      ],
+      "montage_index": 4,
+      "montage_part": "outbound",
+      "first_frame": 613,
+      "frames": 69
+    },
+    {
+      "event_index": 15,
+      "event_id": "d04-t03-reporter",
+      "focus": "Phil",
+      "view": "action",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 1.85,
+      "speech": [],
+      "montage_index": 4,
+      "montage_part": "in Pittsburgh",
+      "first_frame": 682,
+      "frames": 45
+    },
+    {
+      "event_index": 16,
+      "event_id": "d05-t00-reporter",
+      "focus": "Phil",
+      "view": "morning",
+      "framing": "close",
+      "start": 0.22,
+      "end": 0.22,
+      "seconds": 1.5,
+      "speech": [],
+      "montage_index": 4,
+      "montage_part": "back at the hotel",
+      "first_frame": 727,
+      "frames": 36
+    },
+    {
+      "event_index": 18,
+      "event_id": "d05-t02-reporter",
+      "focus": "Phil",
+      "view": "action",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 2.65,
+      "speech": [],
+      "montage_index": 5,
+      "montage_part": "outbound",
+      "first_frame": 763,
+      "frames": 64
+    },
+    {
+      "event_index": 19,
+      "event_id": "d05-t03-reporter",
+      "focus": "Phil",
+      "view": "action",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 1.8,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "Just a quick look around this terminal.",
+          "origin_note": "",
+          "start_s": 34.8783,
+          "end_s": 37.66
+        }
+      ],
+      "montage_index": 5,
+      "montage_part": "in Pittsburgh",
+      "first_frame": 827,
+      "frames": 92
+    },
+    {
+      "event_index": 20,
+      "event_id": "d06-t00-reporter",
+      "focus": "Phil",
+      "view": "morning",
+      "framing": "close",
+      "start": 0.22,
+      "end": 0.22,
+      "seconds": 2.65,
+      "speech": [],
+      "montage_index": 5,
+      "montage_part": "back at the hotel",
+      "first_frame": 919,
+      "frames": 64
+    }
+  ]
+}

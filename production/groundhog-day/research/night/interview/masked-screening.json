@@ -1,0 +1,50 @@
+{
+  "ratings_sha256": "76038e37fd453996c3657b4fcd04db95ff7c26375da49fce38beb06871423748",
+  "evaluator": "one masked Codex agent",
+  "pairs": [
+    {
+      "pair": 1,
+      "choice": "A",
+      "reason": "“I didn't tell you that” catches the moment Phil’s familiarity becomes unsettling. After he backs off, Rita gives him a job he can accept: carry the envelope to Alma while she keeps the master.",
+      "cast": {
+        "A": "interview",
+        "B": "bare",
+        "C": "capsule"
+      },
+      "picked": "interview"
+    },
+    {
+      "pair": 2,
+      "choice": "C",
+      "reason": "Rita seals the copy, leaves it alone, and lets Phil hear what the house lights used to sound like. Because she already told him about the ring, another small confidence after his apology feels possible, and the memory sounds like something a projectionist would actually notice.",
+      "cast": {
+        "A": "capsule",
+        "B": "interview",
+        "C": "bare"
+      },
+      "picked": "bare"
+    },
+    {
+      "pair": 3,
+      "choice": "B",
+      "reason": "“Yeah. You could've.” lets the apology land without making Rita grant forgiveness, and “Take it before it starts to look like a decision again” gives Phil his cue to move. The master stays with her while the rhythm of the exchange changes.",
+      "cast": {
+        "A": "capsule",
+        "B": "interview",
+        "C": "bare"
+      },
+      "picked": "interview"
+    },
+    {
+      "pair": 4,
+      "choice": "A",
+      "reason": "Rita catches the ring detail she never gave Phil during this shift, dispatches him with the copy, then says only “Phil.” An actor can play the half-second in which Rita wants his attention again without undoing her decision about the tape.",
+      "cast": {
+        "A": "bare",
+        "B": "capsule",
+        "C": "interview"
+      },
+      "picked": "bare"
+    }
+  ]
+}

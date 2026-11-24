@@ -1,0 +1,247 @@
+{
+  "seeds": [
+    913,
+    927
+  ],
+  "live_calls": 18,
+  "unique_event_ids": 18,
+  "redirected": 2,
+  "later_prompts_receiving_redirect": 2,
+  "smallest_crew_gap_metres": 0.5656854249492379,
+  "events": [
+    {
+      "id": "coordinated-913-t00-reporter",
+      "raw_sha256": "68de8ebd3cafaac4b740a1f22ebbe13452c4d9095ec7f789925d6a7d241d651e",
+      "status": "reserved-nearby",
+      "requested": {
+        "x": 14.45,
+        "y": 7.7
+      },
+      "resolved": {
+        "x": 14,
+        "y": 8
+      }
+    },
+    {
+      "id": "coordinated-913-t00-producer",
+      "raw_sha256": "dd1a58fba8c436bca221ce8795cd53077cf042cea93eb2049e2bbba460688b37",
+      "status": "reached",
+      "requested": {
+        "x": 14.45,
+        "y": 7.7
+      },
+      "resolved": {
+        "x": 14.4,
+        "y": 7.6000000000000005
+      }
+    },
+    {
+      "id": "coordinated-913-t00-camera",
+      "raw_sha256": "2b8ad8ac0edd20a09143b771e68ffed8be432b24044a7a81487d04035ade8baa",
+      "status": "reached",
+      "requested": {
+        "x": 12.2,
+        "y": 11.4
+      },
+      "resolved": {
+        "x": 12,
+        "y": 11.600000000000001
+      }
+    },
+    {
+      "id": "coordinated-913-t01-reporter",
+      "raw_sha256": "c25975f366e679212f951785f6723563422ddbfcb25e96651cba4a3514e51016",
+      "status": "reserved-nearby",
+      "requested": {
+        "x": 14.45,
+        "y": 7.7
+      },
+      "resolved": {
+        "x": 14,
+        "y": 8
+      }
+    },
+    {
+      "id": "coordinated-913-t01-producer",
+      "raw_sha256": "e1037c3134ec52a2fd5ef715a449667e9eeba7236dca1aa926563eb9d05dae2e",
+      "status": "reached",
+      "requested": {
+        "x": 14.45,
+        "y": 7.7
+      },
+      "resolved": {
+        "x": 14.4,
+        "y": 7.6000000000000005
+      }
+    },
+    {
+      "id": "coordinated-913-t01-camera",
+      "raw_sha256": "1e21dc1cb75432ecc5a698584e173e950dd7456156ad588ce6991cad228bbad7",
+      "status": "reached",
+      "requested": {
+        "x": 12.2,
+        "y": 11.4
+      },
+      "resolved": {
+        "x": 12,
+        "y": 11.600000000000001
+      }
+    },
+    {
+      "id": "coordinated-913-t02-reporter",
+      "raw_sha256": "9747b4008b145670478af16f61eaf7c3257cb1020823c66ac567fca4d274ffbe",
+      "status": "reached",
+      "requested": {
+        "x": 14,
+        "y": 8
+      },
+      "resolved": {
+        "x": 14,
+        "y": 8
+      }
+    },
+    {
+      "id": "coordinated-913-t02-producer",
+      "raw_sha256": "654ada2763f369d76d112e83c2a6c91d139a16bc7460536d8d549bda8419453c",
+      "status": "reached",
+      "requested": {
+        "x": 14.4,
+        "y": 7.6
+      },
+      "resolved": {
+        "x": 14.4,
+        "y": 7.6000000000000005
+      }
+    },
+    {
+      "id": "coordinated-913-t02-camera",
+      "raw_sha256": "01227221df819f582a6ce9fa9b8f5add15d02d6b66fd8bed1854c829101a8552",
+      "status": "reached",
+      "requested": {
+        "x": 12.2,
+        "y": 11.4
+      },
+      "resolved": {
+        "x": 12,
+        "y": 11.600000000000001
+      }
+    },
+    {
+      "id": "coordinated-927-t00-reporter",
+      "raw_sha256": "0117025c68c4fa3b433268f8520ab2938dd5a54d7f8d312a5bcb2a5ffe9bcf96",
+      "status": "reached",
+      "requested": {
+        "x": 12.2,
+        "y": 11.4
+      },
+      "resolved": {
+        "x": 12,
+        "y": 11.600000000000001
+      }
+    },
+    {
+      "id": "coordinated-927-t00-producer",
+      "raw_sha256": "e7a24bfb11b21d061687d10323463bd9d59bccb35917c507c0ea86ec45921cb7",
+      "status": "reached",
+      "requested": {
+        "x": 17.2,
+        "y": 13.05
+      },
+      "resolved": {
+        "x": 17.2,
+        "y": 13.200000000000001
+      }
+    },
+    {
+      "id": "coordinated-927-t00-camera",
+      "raw_sha256": "0bfdce476f78499319ecf1b390634dcebfef43cb2c2f3e75daaa4168cdef9a79",
+      "status": "reached",
+      "requested": {
+        "x": 18.45,
+        "y": 14.1
+      },
+      "resolved": {
+        "x": 18.400000000000002,
+        "y": 14
+      }
+    },
+    {
+      "id": "coordinated-927-t01-reporter",
+      "raw_sha256": "312e4acf29295a14000c1da08fb17b6eadc68725cdacc7d901ecf8056855b487",
+      "status": "reached",
+      "requested": {
+        "x": 12.2,
+        "y": 11.4
+      },
+      "resolved": {
+        "x": 12,
+        "y": 11.600000000000001
+      }
+    },
+    {
+      "id": "coordinated-927-t01-producer",
+      "raw_sha256": "3243d616175b6a111d77774604f7d5a052cc2c0fdfbbdf66245616f4309966de",
+      "status": "reached",
+      "requested": {
+        "x": 17.2,
+        "y": 13.05
+      },
+      "resolved": {
+        "x": 17.2,
+        "y": 13.200000000000001
+      }
+    },
+    {
+      "id": "coordinated-927-t01-camera",
+      "raw_sha256": "305ea05bcbbe23ec68b1fad46acdd0f59a49b45da4ffca461269ff985bd0abac",
+      "status": "reached",
+      "requested": {
+        "x": 18.45,
+        "y": 14.1
+      },
+      "resolved": {
+        "x": 18.400000000000002,
+        "y": 14
+      }
+    },
+    {
+      "id": "coordinated-927-t02-reporter",
+      "raw_sha256": "459879791f242d54de02b47f32adad9cdcb2eff67a5fe3a4c55a20831135850f",
+      "status": "reached",
+      "requested": {
+        "x": 12,
+        "y": 11.6
+      },
+      "resolved": {
+        "x": 12,
+        "y": 11.600000000000001
+      }
+    },
+    {
+      "id": "coordinated-927-t02-producer",
+      "raw_sha256": "16bb4ab53ebc48bf23df2bb6471000cfb582ee4317e93f27a5352add10af44eb",
+      "status": "reached",
+      "requested": {
+        "x": 17.2,
+        "y": 13.2
+      },
+      "resolved": {
+        "x": 17.2,
+        "y": 13.200000000000001
+      }
+    },
+    {
+      "id": "coordinated-927-t02-camera",
+      "raw_sha256": "087df1812895745d850f23790c9c621a61c83cd8d962b0af76db15d4a1fc41cd",
+      "status": "reached",
+      "requested": {
+        "x": 18.400000000000002,
+        "y": 14
+      },
+      "resolved": {
+        "x": 18.400000000000002,
+        "y": 14
+      }
+    }
+  ]
+}

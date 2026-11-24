@@ -1,0 +1,100 @@
+{
+  "producer": "offline isometric stage",
+  "real_model": "qwen3:0.6b",
+  "frames": 486,
+  "seconds": 20.25,
+  "fps": 24,
+  "sha256": "1cb35aa977a76b282d283bbd510c1c225a663e2f425d100238f67140f7ddd378",
+  "clips": [
+    {
+      "first_frame": 0,
+      "frames": 114,
+      "title": "Phil chose a point between venues",
+      "event_id": "free-953-t00-reporter",
+      "raw": "runs/free-953/calls/free-953-t00-reporter.json",
+      "source_sha256": "639e2759a7272d84aaa03731852c0b10a74e9736cfb56011bd822b8145f65424",
+      "source_progress": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "first_frame": 114,
+      "frames": 60,
+      "title": "A second off-landmark step",
+      "event_id": "free-953-t02-reporter",
+      "raw": "runs/free-953/calls/free-953-t02-reporter.json",
+      "source_sha256": "0a8f5ba0b550cb0b4cd90078ca9f85e33f511f7f7f866781563044fed359cca9",
+      "source_progress": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "first_frame": 174,
+      "frames": 78,
+      "title": "Calibration requested a point inside the hotel",
+      "event_id": "obstruction-967-t00-reporter",
+      "raw": "runs/obstruction-967/calls/obstruction-967-t00-reporter.json",
+      "source_sha256": "2ac6b07ff86ab057922f322d6105519aa3cd33e9505dcd4f0e135d979379b3bb",
+      "source_progress": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "first_frame": 252,
+      "frames": 78,
+      "title": "Phil receives the correction and chooses again",
+      "event_id": "obstruction-967-t01-reporter",
+      "raw": "runs/obstruction-967/calls/obstruction-967-t01-reporter.json",
+      "source_sha256": "5f48098d14f19108ca4ad5d7c4d2f6d9253f5d2f9afa098302d470f7e8f04b80",
+      "source_progress": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "first_frame": 330,
+      "frames": 60,
+      "title": "Original resolver \u00b7 Two crew members reach one point",
+      "event_id": "free-913-t00-reporter",
+      "raw": "runs/free-913/calls/free-913-t00-reporter.json",
+      "source_sha256": "ca5e66bc6139e31953d5eda00a0de220ed29d84aa30dac417a2afeb86d5c7d74",
+      "source_progress": [
+        0.45,
+        1
+      ]
+    },
+    {
+      "first_frame": 390,
+      "frames": 96,
+      "title": "Fresh model calls \u00b7 Reserved crew positions",
+      "event_id": "coordinated-913-t00-reporter",
+      "raw": "prospective/coordinated-913/calls/coordinated-913-t00-reporter.json",
+      "source_sha256": "68de8ebd3cafaac4b740a1f22ebbe13452c4d9095ec7f789925d6a7d241d651e",
+      "source_progress": [
+        0.25,
+        1
+      ]
+    }
+  ],
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 960,
+        "height": 540,
+        "nb_read_frames": "486",
+        "side_data_list": [
+          {}
+        ]
+      }
+    ],
+    "format": {
+      "duration": "20.250000"
+    }
+  }
+}

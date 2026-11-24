@@ -1,0 +1,7 @@
+{
+  "status": "invalid",
+  "error": "Decision fields must each be under 1201 characters.",
+  "request_hashes": [
+    "228e34a02e79b44ce0d0e4d5d6e994c91f0dc383463596133b419153fe07b104"
+  ]
+}

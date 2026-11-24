@@ -1,0 +1,132 @@
+{
+  "checks": [
+    "The original town recording selector opens a distinct 721 stage",
+    "The browser projection reproduces the source bytes and full request keys",
+    "Nine beats use six venues and contain no model prompts or hidden planning",
+    "Chrome created a working WebGL context",
+    "Every visible action and request key matches the original take; each single shot has one active physical set",
+    "Phil's wrist and physical piano keys animate",
+    "Re-seeking reproduces Phil and the complete physical piano state",
+    "Only Phil occupies the local first-evening depot",
+    "Rita physically dances at the separate ballroom in the same source slot",
+    "The split camera draws disjoint casts sourced from the real simultaneous decisions",
+    "Desktop split appears physically side by side",
+    "The crew strip follows the independently located actor in the same slot",
+    "A moving physical Pittsburgh coach conceals its passenger until the recorded disembark",
+    "The local depot and Pittsburgh terminal occupy distinct stage roots at least 20 metres apart",
+    "The Rialto booth holds both independent crew recordings and world character Alma",
+    "Sleeping Phil stays at the remote Pittsburgh terminal",
+    "Larry delivers a reel and Rita independently transmits at the station",
+    "The physical transmission reels and level meters respond over time",
+    "The physical reel leaves Larry's hand and reaches a neutral intake tray",
+    "Switching between Rita and Larry preserves both performers and the deposited reel at the same slot progress",
+    "The second-evening comparison preserves Pittsburgh and the distinct station",
+    "The third dawn contains a physical envelope and the daughter\u2019s exact world-authored reply",
+    "The daughter is offstage; the Tuesday clock and receiving observer remain correct",
+    "Camera controls change the physical eye without moving the actor or envelope",
+    "The shot selector and previous/next buttons seek correctly",
+    "The timeline jumps to a fractional physical beat",
+    "Real-time playback crosses a source slot view without skipping it",
+    "Keyboard controls reach the coach arrival",
+    "The interactive viewport can enter and leave fullscreen",
+    "A source-ID deep link opens the correct paired scene and fraction",
+    "Portrait stacks both shot cameras and preserves their world positions",
+    "390px viewport fits its controls without horizontal overflow",
+    "320px viewport fits its controls without horizontal overflow",
+    "WebGL-off devices receive the locally packaged illustrated film",
+    "The offline fallback actually decodes and plays",
+    "The interactive browser made zero external HTTP requests and reported zero errors"
+  ],
+  "count": 36,
+  "take_sha256": "b7500bd631c2a27cbf43ae396b48ee28247e665c77d7707acd8207390340f3ea",
+  "shots": [
+    {
+      "id": "d01-afternoon-reporter",
+      "request_key": "3a2ce135cd48daef37de26d1641692a93ca47098a228e753d230d84a648a418d",
+      "set": "ballroom",
+      "rendered": [
+        "Phil"
+      ]
+    },
+    {
+      "id": "d01-evening-reporter",
+      "request_key": "f24758965747275f0f723960852b1af2347901384c52b3ea621abf9f1d90d73a",
+      "set": "depot",
+      "rendered": [
+        "Phil"
+      ]
+    },
+    {
+      "id": "d01-evening-producer",
+      "request_key": "84df954d5d962853e0db5221077daf9efd4be291fa66a4c99f15a9bc7133cab4",
+      "set": "ballroom",
+      "rendered": [
+        "Rita"
+      ]
+    },
+    {
+      "id": "d02-afternoon-reporter",
+      "request_key": "9eb0dec058bea8acacb0441ed9a862d8ac07459e02caa3f1a5a55feb08934b4b",
+      "set": "terminal",
+      "rendered": [
+        "Phil"
+      ]
+    },
+    {
+      "id": "d02-afternoon-producer",
+      "request_key": "d164a220c2f148bb0826be829f33f2ebbe56223a8bcfee2db6c9279acf01cd31",
+      "set": "rialto",
+      "rendered": [
+        "Rita",
+        "Larry",
+        "Alma"
+      ]
+    },
+    {
+      "id": "d02-evening-reporter",
+      "request_key": "7f675fa60640352b48e79b56ded8f28094977cb34f9c6075af47487ef53818e8",
+      "set": "terminal",
+      "rendered": [
+        "Phil"
+      ]
+    },
+    {
+      "id": "d02-evening-camera",
+      "request_key": "9c34936366904480e8a1fd94a22d7d1ed535a8566609147c5dd41b17e3e0525c",
+      "set": "station",
+      "rendered": [
+        "Rita",
+        "Larry"
+      ]
+    },
+    {
+      "id": "d02-evening-producer",
+      "request_key": "4d32a6fd37af3599a366ae47c01c717ed3a48148c12457b3a4aeb32c29b90ed1",
+      "set": "station",
+      "rendered": [
+        "Rita",
+        "Larry"
+      ]
+    },
+    {
+      "id": "d03-afternoon-reporter",
+      "request_key": "dbb0ac9994b650a67653522cc93876a1d6e3329b144b55f533f607927fa580e9",
+      "set": "hotel",
+      "rendered": [
+        "Phil"
+      ]
+    }
+  ],
+  "browser": "157.0.8103.79",
+  "desktop": {
+    "width": 1365,
+    "height": 820
+  },
+  "mobile": "Chromium touch/portrait emulation at 390 and 320 CSS px",
+  "split_desktop_frame_sample": {
+    "elapsed_ms": 1012,
+    "rendered_frames": 61
+  },
+  "network_requests": [],
+  "browser_errors": []
+}

@@ -1,0 +1,170 @@
+{
+  "source_sha256": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+  "checked_shots": 8,
+  "observations": [
+    {
+      "event_id": "d01-t00-reporter",
+      "view": "action",
+      "camera_actor": "Phil",
+      "at": "diner",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 1
+      }
+    },
+    {
+      "event_id": "d01-t02-reporter",
+      "view": "action",
+      "camera_actor": "Phil",
+      "at": "Pittsburgh",
+      "framing": "street",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 0,
+        "camera_footage": "the festival"
+      }
+    },
+    {
+      "event_id": "d01-t03-reporter",
+      "view": "action",
+      "camera_actor": "Phil",
+      "at": "Pittsburgh",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 0,
+        "bulletin": {
+          "channel": "camera_take",
+          "source_role": "camera",
+          "source_place": "square",
+          "selected_by": "Rita",
+          "source_ids": [
+            "d01-t03-producer",
+            "d01-t03-camera",
+            "d01-t02-camera"
+          ]
+        },
+        "camera_footage": "the festival"
+      }
+    },
+    {
+      "event_id": "d02-t00-reporter",
+      "view": "morning",
+      "camera_actor": "Phil",
+      "at": "inn",
+      "framing": "street",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 1
+      }
+    },
+    {
+      "event_id": "d02-t00-reporter",
+      "view": "action",
+      "camera_actor": "Phil",
+      "at": "diner",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 1
+      }
+    },
+    {
+      "event_id": "d02-t02-reporter",
+      "view": "action",
+      "camera_actor": "Larry",
+      "at": "Pittsburgh",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 0,
+        "camera_footage": "the festival"
+      }
+    },
+    {
+      "event_id": "d02-t03-reporter",
+      "view": "action",
+      "camera_actor": "Phil",
+      "at": "Pittsburgh",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": true,
+        "dishes": 2,
+        "camera_battery": 0,
+        "bulletin": {
+          "channel": "station_ident",
+          "source_role": "",
+          "source_place": "",
+          "selected_by": "Rita",
+          "source_ids": [
+            "d02-t03-producer"
+          ]
+        },
+        "camera_footage": "the festival"
+      }
+    },
+    {
+      "event_id": "d03-t03-reporter",
+      "view": "action",
+      "camera_actor": "Rita",
+      "at": "Pittsburgh",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": true,
+        "dishes": 2,
+        "camera_battery": 0,
+        "bulletin": {
+          "channel": "camera_take",
+          "source_role": "camera",
+          "source_place": "square",
+          "selected_by": "Rita",
+          "source_ids": [
+            "d03-t03-producer",
+            "d03-t03-camera",
+            "d03-t02-camera"
+          ]
+        },
+        "camera_footage": "the festival"
+      }
+    }
+  ]
+}

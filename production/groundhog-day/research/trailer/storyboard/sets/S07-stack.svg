@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="540" viewBox="0 0 1260 540" role="img" aria-labelledby="t d">
+<title id="t">Where the story leaves evidence</title><desc id="d">Three demonstrated components: an actor commits an action, the town records an event with witnesses, and Bruin processes recorded decisions into a verifiable sequence. A dotted arrow to an explicitly proposed Ned-to-Rita receipt distinguishes the next performance.</desc>
+<defs><marker id="a" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0 0 6 3 0 6z" fill="#e3d2ae"/></marker><style>text{font-family:Arial,Helvetica,sans-serif;fill:#f5eddf}.h{font-size:45px;font-weight:700}.k{font-size:19px;fill:#b3d5c5;font-weight:700}.t{font-size:29px;font-weight:700}.s{font-size:23px}.m{font-size:20px;fill:#d5b58f}</style></defs>
+<rect width="1260" height="540" fill="#17232a"/><text x="55" y="73" class="h">Where the story leaves evidence</text>
+<text x="56" y="125" class="k">PRESENT IN THE REHEARSAL TOOLS</text>
+<g fill="#293c42" stroke="#76928c" stroke-width="2"><rect x="56" y="152" width="325" height="150" rx="4"/><rect x="466" y="152" width="325" height="150" rx="4"/><rect x="882" y="152" width="320" height="150" rx="4"/></g>
+<text x="80" y="199" class="t">Actor</text><text x="80" y="242" class="s">Chooses from actions</text><text x="80" y="272" class="s">available in the room.</text>
+<text x="490" y="199" class="t">Town ledger</text><text x="490" y="242" class="s">Records what happened</text><text x="490" y="272" class="s">and who witnessed it.</text>
+<text x="906" y="199" class="t">Bruin / DuckDB</text><text x="906" y="242" class="s">Checks the order</text><text x="906" y="272" class="s">of recorded events.</text>
+<path d="M390 226h67m343 0h73" stroke="#e3d2ae" stroke-width="3" fill="none" marker-end="url(#a)"/><path d="M628 302v55" stroke="#d5b58f" stroke-width="2" stroke-dasharray="6 5"/>
+<rect x="56" y="357" width="1146" height="137" rx="5" fill="#282e30" stroke="#d5b58f" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="82" y="400" class="m">NEXT PERFORMANCE · proposed scene</text><text x="82" y="438" class="t">Ned tells Rita who waited.</text><text x="82" y="474" class="s">The optional Band adapter can verify an addressed message in the recipient’s inbox.</text>
+</svg>

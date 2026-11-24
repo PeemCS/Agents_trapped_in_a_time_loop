@@ -1,0 +1,30 @@
+{
+  "scope": "Historical speech-recognition measurements of the original production mix. The public video is silent.",
+  "mp4_sha256": "423114d7370078a35fbb61ebdb1b4ab806ce03207977377677fef20bc0fbe243",
+  "model_bin_sha256": "2a166925539a16005f14ff328359f9b9adb9dc4fb631bb3b227526862e93e2ef",
+  "method": "Local faster-whisper base.en, CPU int8. First blind continuous pass, then isolated spoken cue time windows with 160ms padding. No text prompts, vocabulary hints, VAD or prior-text conditioning. Exact lexical check normalizes punctuation and capitalization only.",
+  "continuous_asr": "Taking the charge, Alma's got a girl in Pittsburgh and the place is going dark. You guys shoot the ballroom tonight, I'll be back. Second take, she talked longer than the first, charge died on the third word of the fourth sentence, you'll hear it. It's going to her, you don't have to say thank you, go home, Alma.",
+  "cues": [
+    {
+      "start_s": 16.233,
+      "end_s": 23.906,
+      "caption": "Taking the charge. Alma's got a girl in Pittsburgh and the place is going dark. You guys shoot the ballroom tonight, I'll be back.",
+      "asr": "Taking the charge, Alma's got a girl in Pittsburgh and the place is going dark, you guys shoot the ballroom tonight. I'll be back",
+      "exact_lexical_after_punctuation_case": true
+    },
+    {
+      "start_s": 57.733,
+      "end_s": 64.853,
+      "caption": "Second take. She talked longer than the first. Charge died on the third word of the fourth sentence. You'll hear it.",
+      "asr": "Second take, she talked longer than the first, charge died on the third word of the fourth sentence, you'll hear it.",
+      "exact_lexical_after_punctuation_case": true
+    },
+    {
+      "start_s": 65.81700000000001,
+      "end_s": 70.144,
+      "caption": "It's going to her. You don't have to say thank you. Go home, Alma.",
+      "asr": "It's going to her, you don't have to say thank you, go home, Alma.",
+      "exact_lexical_after_punctuation_case": true
+    }
+  ]
+}

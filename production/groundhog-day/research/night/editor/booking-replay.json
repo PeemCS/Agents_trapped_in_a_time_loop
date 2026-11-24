@@ -1,0 +1,251 @@
+{
+  "method": "Retrospective first-order mechanism study on 24 completed evenings. Freeze every chosen action, utterance, invitation, prior signed acceptance and completed contribution. Select the earliest accepted assignment that had already been signed before the evening slot and then was actually delivered. Ties use earlier invitation, then role. Standby uses that booking only when the actual switch was otherwise unattended. Binding bookings honor it even when the producer selected another channel. No actor observed or responded to the hypothetical rules.",
+  "actual_and_counterfactual_channels": {
+    "actual": {
+      "camera_take": 5,
+      "station_ident": 9,
+      "producer_live": 7,
+      "filed_forecast": 2,
+      "empty_selected_return": 1
+    },
+    "standby": {
+      "camera_take": 5,
+      "station_ident": 9,
+      "producer_live": 7,
+      "filed_forecast": 2,
+      "empty_selected_return": 1
+    },
+    "binding_booking": {
+      "camera_take": 5,
+      "station_ident": 9,
+      "producer_live": 6,
+      "live_report": 1,
+      "filed_forecast": 2,
+      "empty_selected_return": 1
+    }
+  },
+  "changed_evenings": {
+    "standby": 0,
+    "binding_booking": 1
+  },
+  "rows": [
+    {
+      "source_sha256": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+      "seed": 711,
+      "day": 1,
+      "actual": "camera_take",
+      "booked_and_delivered": [],
+      "standby": "camera_take",
+      "binding_booking": "camera_take"
+    },
+    {
+      "source_sha256": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+      "seed": 711,
+      "day": 2,
+      "actual": "station_ident",
+      "booked_and_delivered": [],
+      "standby": "station_ident",
+      "binding_booking": "station_ident"
+    },
+    {
+      "source_sha256": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+      "seed": 711,
+      "day": 3,
+      "actual": "camera_take",
+      "booked_and_delivered": [],
+      "standby": "camera_take",
+      "binding_booking": "camera_take"
+    },
+    {
+      "source_sha256": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+      "seed": 711,
+      "day": 4,
+      "actual": "producer_live",
+      "booked_and_delivered": [],
+      "standby": "producer_live",
+      "binding_booking": "producer_live"
+    },
+    {
+      "source_sha256": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+      "seed": 711,
+      "day": 5,
+      "actual": "station_ident",
+      "booked_and_delivered": [],
+      "standby": "station_ident",
+      "binding_booking": "station_ident"
+    },
+    {
+      "source_sha256": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+      "seed": 711,
+      "day": 6,
+      "actual": "producer_live",
+      "booked_and_delivered": [
+        "reporter"
+      ],
+      "standby": "producer_live",
+      "binding_booking": "live_report"
+    },
+    {
+      "source_sha256": "b23ac8578f5812b7016eba28439a79c7c3804b1e46647e962781f1d0cf728c21",
+      "seed": 712,
+      "day": 1,
+      "actual": "station_ident",
+      "booked_and_delivered": [],
+      "standby": "station_ident",
+      "binding_booking": "station_ident"
+    },
+    {
+      "source_sha256": "b23ac8578f5812b7016eba28439a79c7c3804b1e46647e962781f1d0cf728c21",
+      "seed": 712,
+      "day": 2,
+      "actual": "producer_live",
+      "booked_and_delivered": [],
+      "standby": "producer_live",
+      "binding_booking": "producer_live"
+    },
+    {
+      "source_sha256": "b23ac8578f5812b7016eba28439a79c7c3804b1e46647e962781f1d0cf728c21",
+      "seed": 712,
+      "day": 3,
+      "actual": "filed_forecast",
+      "booked_and_delivered": [],
+      "standby": "filed_forecast",
+      "binding_booking": "filed_forecast"
+    },
+    {
+      "source_sha256": "b23ac8578f5812b7016eba28439a79c7c3804b1e46647e962781f1d0cf728c21",
+      "seed": 712,
+      "day": 4,
+      "actual": "filed_forecast",
+      "booked_and_delivered": [],
+      "standby": "filed_forecast",
+      "binding_booking": "filed_forecast"
+    },
+    {
+      "source_sha256": "b23ac8578f5812b7016eba28439a79c7c3804b1e46647e962781f1d0cf728c21",
+      "seed": 712,
+      "day": 5,
+      "actual": "producer_live",
+      "booked_and_delivered": [],
+      "standby": "producer_live",
+      "binding_booking": "producer_live"
+    },
+    {
+      "source_sha256": "b23ac8578f5812b7016eba28439a79c7c3804b1e46647e962781f1d0cf728c21",
+      "seed": 712,
+      "day": 6,
+      "actual": "camera_take",
+      "booked_and_delivered": [],
+      "standby": "camera_take",
+      "binding_booking": "camera_take"
+    },
+    {
+      "source_sha256": "c62d990e921757718b0ad35f465ab8c47016fc183f4b01de1d65db124efbff90",
+      "seed": 713,
+      "day": 1,
+      "actual": "station_ident",
+      "booked_and_delivered": [],
+      "standby": "station_ident",
+      "binding_booking": "station_ident"
+    },
+    {
+      "source_sha256": "c62d990e921757718b0ad35f465ab8c47016fc183f4b01de1d65db124efbff90",
+      "seed": 713,
+      "day": 2,
+      "actual": "station_ident",
+      "booked_and_delivered": [],
+      "standby": "station_ident",
+      "binding_booking": "station_ident"
+    },
+    {
+      "source_sha256": "c62d990e921757718b0ad35f465ab8c47016fc183f4b01de1d65db124efbff90",
+      "seed": 713,
+      "day": 3,
+      "actual": "station_ident",
+      "booked_and_delivered": [],
+      "standby": "station_ident",
+      "binding_booking": "station_ident"
+    },
+    {
+      "source_sha256": "c62d990e921757718b0ad35f465ab8c47016fc183f4b01de1d65db124efbff90",
+      "seed": 713,
+      "day": 4,
+      "actual": "producer_live",
+      "booked_and_delivered": [],
+      "standby": "producer_live",
+      "binding_booking": "producer_live"
+    },
+    {
+      "source_sha256": "c62d990e921757718b0ad35f465ab8c47016fc183f4b01de1d65db124efbff90",
+      "seed": 713,
+      "day": 5,
+      "actual": "producer_live",
+      "booked_and_delivered": [],
+      "standby": "producer_live",
+      "binding_booking": "producer_live"
+    },
+    {
+      "source_sha256": "c62d990e921757718b0ad35f465ab8c47016fc183f4b01de1d65db124efbff90",
+      "seed": 713,
+      "day": 6,
+      "actual": "station_ident",
+      "booked_and_delivered": [],
+      "standby": "station_ident",
+      "binding_booking": "station_ident"
+    },
+    {
+      "source_sha256": "2c0ab5dc5ba2faa1ecdebefcfd53ecd8de0e0a4ae49c35a58a021f1bbdece0cd",
+      "seed": 714,
+      "day": 1,
+      "actual": "camera_take",
+      "booked_and_delivered": [],
+      "standby": "camera_take",
+      "binding_booking": "camera_take"
+    },
+    {
+      "source_sha256": "2c0ab5dc5ba2faa1ecdebefcfd53ecd8de0e0a4ae49c35a58a021f1bbdece0cd",
+      "seed": 714,
+      "day": 2,
+      "actual": "station_ident",
+      "booked_and_delivered": [],
+      "standby": "station_ident",
+      "binding_booking": "station_ident"
+    },
+    {
+      "source_sha256": "2c0ab5dc5ba2faa1ecdebefcfd53ecd8de0e0a4ae49c35a58a021f1bbdece0cd",
+      "seed": 714,
+      "day": 3,
+      "actual": "station_ident",
+      "booked_and_delivered": [],
+      "standby": "station_ident",
+      "binding_booking": "station_ident"
+    },
+    {
+      "source_sha256": "2c0ab5dc5ba2faa1ecdebefcfd53ecd8de0e0a4ae49c35a58a021f1bbdece0cd",
+      "seed": 714,
+      "day": 4,
+      "actual": "camera_take",
+      "booked_and_delivered": [],
+      "standby": "camera_take",
+      "binding_booking": "camera_take"
+    },
+    {
+      "source_sha256": "2c0ab5dc5ba2faa1ecdebefcfd53ecd8de0e0a4ae49c35a58a021f1bbdece0cd",
+      "seed": 714,
+      "day": 5,
+      "actual": "empty_selected_return",
+      "booked_and_delivered": [],
+      "standby": "empty_selected_return",
+      "binding_booking": "empty_selected_return"
+    },
+    {
+      "source_sha256": "2c0ab5dc5ba2faa1ecdebefcfd53ecd8de0e0a4ae49c35a58a021f1bbdece0cd",
+      "seed": 714,
+      "day": 6,
+      "actual": "producer_live",
+      "booked_and_delivered": [],
+      "standby": "producer_live",
+      "binding_booking": "producer_live"
+    }
+  ]
+}

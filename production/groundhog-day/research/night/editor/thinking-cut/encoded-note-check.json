@@ -1,0 +1,31 @@
+{
+  "method": "Apple Vision OCR on the body of each actual decoded note card at 1280×720. Normalization removes punctuation, whitespace and case. The adjacent image in the contact sheet comes from the very next committed shot.",
+  "mp4_sha256": "e3796746588d07eb86caa1ef6445c3fcca9a19cfe8d18dc077d3c5466f875453",
+  "cards": [
+    {
+      "event": "d01-t00-camera",
+      "expected": "I want to make a portrait of the cornet player after the ceremony.",
+      "ocr_text": "I want to make a portrait of the cornet player after the ceremony.",
+      "normalized_character_match": true
+    },
+    {
+      "event": "d02-t02-reporter",
+      "expected": "The couch move is Wednesday, I have time.",
+      "ocr_text": "The couch move is Wednesday, I have time.",
+      "normalized_character_match": true
+    },
+    {
+      "event": "d03-t00-reporter",
+      "expected": "It's Wednesday, February 3, 2016, 6:00 am.",
+      "ocr_text": "It's Wednesday, February 3, 2016, 6:00 am.",
+      "normalized_character_match": true
+    },
+    {
+      "event": "d03-t02-reporter",
+      "expected": "Wait, but looking at the remembered experiences, there are multiple \"runs\" or scenarios.",
+      "ocr_text": "Wait, but looking at the remembered experiences, there are multiple \"runs\" or scenarios.",
+      "normalized_character_match": true
+    }
+  ],
+  "audio_streams": 0
+}

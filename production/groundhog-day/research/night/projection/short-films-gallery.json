@@ -1,0 +1,255 @@
+{
+  "launch_from": "screening/index.html#rialto-cut",
+  "media": {
+    "The return fares": {
+      "seconds": 28.666666666666668,
+      "sha256": "512a3533a1bafbeaf1ac51b9c4a8b101f7281d1350a2b2af9bb374a6c836edfa"
+    },
+    "Eight Bars in 3D": {
+      "seconds": 26.5,
+      "sha256": "c005ccdd08bd0da9168a3799a6d915de0977e432caf61ac8054023d4a039cd31"
+    }
+  },
+  "runs": [
+    {
+      "transport": "disk",
+      "viewport": {
+        "width": 1280,
+        "height": 810
+      },
+      "section_layout": "two columns",
+      "verified_links": 6,
+      "seeks": [
+        {
+          "film": "The return fares",
+          "target": 10,
+          "duration": 28.666667,
+          "landed": 10,
+          "advanced": 0.356,
+          "frames_advanced": 8,
+          "width": 1280,
+          "height": 720,
+          "error": null
+        },
+        {
+          "film": "Eight Bars in 3D",
+          "target": 6.5,
+          "duration": 26.5,
+          "landed": 6.5,
+          "advanced": 0.361,
+          "frames_advanced": 8,
+          "width": 960,
+          "height": 540,
+          "error": null
+        }
+      ],
+      "interactive_stage": {
+        "layout": "side by side",
+        "source_sha256": "b7500bd631c2a27cbf43ae396b48ee28247e665c77d7707acd8207390340f3ea",
+        "progress": 0.7,
+        "screens": [
+          {
+            "id": "d01-evening-reporter",
+            "set": "depot",
+            "visible": [
+              "Phil"
+            ]
+          },
+          {
+            "id": "d01-evening-producer",
+            "set": "ballroom",
+            "visible": [
+              "Rita"
+            ]
+          }
+        ]
+      },
+      "page_errors": [],
+      "external_requests": []
+    },
+    {
+      "transport": "disk",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "section_layout": "stacked",
+      "verified_links": 6,
+      "seeks": [
+        {
+          "film": "The return fares",
+          "target": 10,
+          "duration": 28.666667,
+          "landed": 10,
+          "advanced": 0.354,
+          "frames_advanced": 7,
+          "width": 1280,
+          "height": 720,
+          "error": null
+        },
+        {
+          "film": "Eight Bars in 3D",
+          "target": 6.5,
+          "duration": 26.5,
+          "landed": 6.5,
+          "advanced": 0.349,
+          "frames_advanced": 8,
+          "width": 960,
+          "height": 540,
+          "error": null
+        }
+      ],
+      "interactive_stage": {
+        "layout": "stacked",
+        "source_sha256": "b7500bd631c2a27cbf43ae396b48ee28247e665c77d7707acd8207390340f3ea",
+        "progress": 0.7,
+        "screens": [
+          {
+            "id": "d01-evening-reporter",
+            "set": "depot",
+            "visible": [
+              "Phil"
+            ]
+          },
+          {
+            "id": "d01-evening-producer",
+            "set": "ballroom",
+            "visible": [
+              "Rita"
+            ]
+          }
+        ]
+      },
+      "page_errors": [],
+      "external_requests": []
+    },
+    {
+      "transport": "loopback",
+      "viewport": {
+        "width": 1280,
+        "height": 810
+      },
+      "section_layout": "two columns",
+      "verified_links": 6,
+      "seeks": [
+        {
+          "film": "The return fares",
+          "target": 10,
+          "duration": 28.666667,
+          "landed": 10,
+          "advanced": 0.355,
+          "frames_advanced": 9,
+          "width": 1280,
+          "height": 720,
+          "error": null
+        },
+        {
+          "film": "Eight Bars in 3D",
+          "target": 6.5,
+          "duration": 26.5,
+          "landed": 6.5,
+          "advanced": 0.354,
+          "frames_advanced": 8,
+          "width": 960,
+          "height": 540,
+          "error": null
+        }
+      ],
+      "interactive_stage": {
+        "layout": "side by side",
+        "source_sha256": "b7500bd631c2a27cbf43ae396b48ee28247e665c77d7707acd8207390340f3ea",
+        "progress": 0.7,
+        "screens": [
+          {
+            "id": "d01-evening-reporter",
+            "set": "depot",
+            "visible": [
+              "Phil"
+            ]
+          },
+          {
+            "id": "d01-evening-producer",
+            "set": "ballroom",
+            "visible": [
+              "Rita"
+            ]
+          }
+        ]
+      },
+      "page_errors": [],
+      "external_requests": []
+    },
+    {
+      "transport": "loopback",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "section_layout": "stacked",
+      "verified_links": 6,
+      "seeks": [
+        {
+          "film": "The return fares",
+          "target": 10,
+          "duration": 28.666667,
+          "landed": 10,
+          "advanced": 0.356,
+          "frames_advanced": 9,
+          "width": 1280,
+          "height": 720,
+          "error": null
+        },
+        {
+          "film": "Eight Bars in 3D",
+          "target": 6.5,
+          "duration": 26.5,
+          "landed": 6.5,
+          "advanced": 0.353,
+          "frames_advanced": 9,
+          "width": 960,
+          "height": 540,
+          "error": null
+        }
+      ],
+      "interactive_stage": {
+        "layout": "stacked",
+        "source_sha256": "b7500bd631c2a27cbf43ae396b48ee28247e665c77d7707acd8207390340f3ea",
+        "progress": 0.7,
+        "screens": [
+          {
+            "id": "d01-evening-reporter",
+            "set": "depot",
+            "visible": [
+              "Phil"
+            ]
+          },
+          {
+            "id": "d01-evening-producer",
+            "set": "ballroom",
+            "visible": [
+              "Rita"
+            ]
+          }
+        ]
+      },
+      "page_errors": [],
+      "external_requests": []
+    }
+  ],
+  "browser": "Chrome 157.0.8103.79",
+  "rendering": "CPU software video decode, ANGLE SwiftShader WebGL",
+  "picture_checks": [
+    {
+      "film": "The return fares",
+      "seconds": 10,
+      "decoded_caption": "Rita and Larry heard him in the lobby. Both went to the Rialto. Neither saw him empty the envelope.",
+      "reference": "editor/fare-envelope/captions.srt cue 2"
+    },
+    {
+      "film": "Eight Bars in 3D",
+      "seconds": 6.5,
+      "decoded_caption": "Phil sits on the empty depot bench. Rita goes dancing at the ballroom.",
+      "reference": "stage3d/viewer/rialto/evidence/shot-ledger.json, first frame 102"
+    }
+  ]
+}

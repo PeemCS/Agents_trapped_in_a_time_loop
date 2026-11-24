@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="590" viewBox="0 0 1040 590" role="img" aria-labelledby="t d">
+  <title id="t">Hotel to Rialto, evening roofline</title>
+  <desc id="d">Exterior camera from an adjoining roof. The hotel's three-sided bay is foreground left. A dark gap representing a whole block separates it from the rear working window of the Rialto on the right. Cut to a second camera inside the booth.</desc>
+  <defs><marker id="a" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0 0 6 3 0 6z" fill="#79cadc"/></marker><style>text{font-family:Arial,Helvetica,sans-serif;fill:#eeeae0}.h{font-weight:700;font-size:30px}.s{font-size:15px;fill:#bac6c5}.l{font-weight:700;font-size:16px}</style></defs>
+  <rect width="1040" height="590" fill="#111c24"/><text x="35" y="52" class="h">The distance to the Rialto</text>
+  <text x="35" y="82" class="s">S04-D1 · exterior framing study · a single 21:9 view from an adjoining roof at early evening</text>
+  <rect x="36" y="105" width="968" height="415" fill="#263644" stroke="#71848a"/>
+  <path d="m36 300 95-53 67 17 54-18 103 48 44-23 157 48 128-42 126 27 90-25 104 32v209H36z" fill="#3c5059"/>
+  <path d="m36 239 79-54h102l109 54v281H36z" fill="#313640" stroke="#899497" stroke-width="2"/><path d="m36 239 79-54h102l109 54" stroke="#c4d4d6" stroke-width="6" fill="none"/>
+  <path d="m63 277 38-21v93l-38 20zm38-21h91v93h-91zm91 0 38 21v93l-38-21z" fill="#514e53" stroke="#a4a7a1" stroke-width="2"/>
+  <path d="M147 263v80" stroke="#8d8277" stroke-width="2"/><text x="72" y="411" class="l">Hearthside Hotel</text><text x="72" y="433" class="s">Near plane · closed bay</text>
+  <path d="M646 332h45v-53h232v33h81v208H646z" fill="#404147" stroke="#829094" stroke-width="2"/><path d="M646 332h45v-53h232v33h81" stroke="#bbcacf" stroke-width="5" fill="none"/>
+  <rect x="754" y="319" width="75" height="42" fill="#d3a86c" stroke="#716250" stroke-width="4"/><path d="M792 319v42" stroke="#635848" stroke-width="4"/>
+  <text x="715" y="409" class="l">Rialto</text><text x="715" y="433" class="s">Far plane · booth light</text>
+  <path d="M342 373q152-22 366-27" fill="none" stroke="#79cadc" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#a)"/>
+  <text x="390" y="399" class="s">Screen-left → screen-right</text>
+  <text x="35" y="551" class="l">Cut on the lit rectangle.</text><text x="247" y="551" class="s">The next camera is already inside the booth. The street gap keeps the buildings distinct.</text>
+</svg>

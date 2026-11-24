@@ -1,0 +1,87 @@
+{
+  "take": "research/night/takes/q27/film-transcript/seed-701.json",
+  "source_sha256": "9695d76c0cf799ac32810b53e3da5c26814e227ba6d710e675f0d5c4c798646d",
+  "film_sha256": "56e657b9f21a851945f583e1c939f52219232c0d4612c5c95b1a437f126c61a7",
+  "source": "recorded 27B model decisions",
+  "render": "offline browser WebGL, dressed stage",
+  "sound": "silent",
+  "encoded_stream": {
+    "codec_name": "h264",
+    "codec_type": "video",
+    "width": 960,
+    "height": 540,
+    "nb_read_frames": "426",
+    "side_data_list": [
+      {}
+    ]
+  },
+  "frames": 426,
+  "fps": 24,
+  "size": [
+    960,
+    540
+  ],
+  "duration_seconds": 17.75,
+  "shots": [
+    {
+      "source_event_id": "d02-t01-camera",
+      "slot": 5,
+      "actor": "Larry",
+      "camera": "follow",
+      "action": "film_festival",
+      "source_words": "Rita, if the newsroom wants festival footage, this is the one I've got to make count. Rolling now.",
+      "captions": false,
+      "source_progress": [
+        0.69,
+        0.98
+      ],
+      "first_frame": 0,
+      "frames": 52
+    },
+    {
+      "source_event_id": "d02-t02-reporter",
+      "slot": 6,
+      "actor": "Phil",
+      "camera": "follow",
+      "action": "take_coach_to_Pittsburgh",
+      "source_words": "I'm done here. I'm heading to the depot.",
+      "captions": true,
+      "source_progress": [
+        0.04,
+        0.99
+      ],
+      "first_frame": 52,
+      "frames": 155
+    },
+    {
+      "source_event_id": "d02-t03-reporter",
+      "slot": 7,
+      "actor": "Phil",
+      "camera": "follow",
+      "action": "call_sister",
+      "source_words": "Hey, it's Phil. I finally made it to Pittsburgh. I'm safe. I'm just calling to make sure I'm still on for Wednesday. I'm free to help move that couch.",
+      "captions": true,
+      "source_progress": [
+        0.36,
+        0.99
+      ],
+      "first_frame": 207,
+      "frames": 147
+    },
+    {
+      "source_event_id": "d03-t00-reporter",
+      "slot": 8,
+      "actor": "Phil",
+      "camera": "follow",
+      "action": "spend_time_here",
+      "source_words": "",
+      "captions": false,
+      "source_progress": [
+        0.0,
+        0.42
+      ],
+      "first_frame": 354,
+      "frames": 72
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "scope": "Historical speech-recognition measurements of the original production mix. The public video is silent.",
+  "mp4_sha256": "512a3533a1bafbeaf1ac51b9c4a8b101f7281d1350a2b2af9bb374a6c836edfa",
+  "model_bin_sha256": "2a166925539a16005f14ff328359f9b9adb9dc4fb631bb3b227526862e93e2ef",
+  "method": "Local faster-whisper base.en, CPU int8. First blind continuous pass, then isolated spoken cue time windows with 160ms padding. No text prompts, vocabulary hints, VAD or prior-text conditioning. Exact lexical check normalizes punctuation and capitalization only.",
+  "continuous_asr": "Rita, Larry, see you at the party. I'm heading to Pittsburgh.",
+  "cues": [
+    {
+      "start_s": 0.4,
+      "end_s": 5.636,
+      "caption": "Rita, Larry—see you at the party. I'm heading to Pittsburgh.",
+      "asr": "Rita, Larry. See you at the party. I'm heading to Pittsburgh.",
+      "exact_lexical_after_punctuation_case": true
+    }
+  ]
+}

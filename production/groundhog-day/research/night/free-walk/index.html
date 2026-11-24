@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#1b312e"><title>On foot · Coordinate pilot</title><link rel="stylesheet" href="style.css"><script defer src="../visual/world.js"></script><script defer src="../visual/art.js"></script><script defer src="takes.js"></script><script defer src="coordinated.js"></script><script defer src="reserved.js"></script><script defer src="viewer.js"></script></head>
+<body><header><a href="../visual/index.html">← Town</a><h1>On foot</h1><span>Coordinate pilot</span></header><main>
+<section id="stage"><canvas id="town" aria-label="Isometric town with actual model-controlled movement"></canvas><canvas id="marks" aria-hidden="true"></canvas>
+<div class="top"><b>Mill Creek</b><span id="slot"></span></div><div class="camera"><button id="wide" aria-pressed="true">Town</button><button id="follow" aria-pressed="false">Follow</button></div>
+<div class="legend"><i class="cross"></i> Requested <i class="ring"></i> Resolved <i class="line"></i> Walked</div></section>
+<section class="desk"><div class="model">Local Qwen3 0.6B <span id="provenance">Recorded coordinate decisions</span></div>
+<div class="columns"><div class="story"><h2 id="title"></h2><p id="result"></p><p id="quote"></p></div><div class="timing"><button id="back" aria-label="Previous turn">‹</button><button id="play">Play</button><button id="next" aria-label="Next turn">›</button></div></div>
+<div class="inputs"><label>Take<select id="run"></select></label><label>Performer<select id="actor"></select></label><label>Movement<select id="policy"><option value="original">Original routes</option><option value="reserved">Reserved · counterfactual</option></select></label><label class="slider">Timeline<input id="time" type="range" min="0" max="3" step=".001" value="0"></label></div>
+<div class="stats"><span id="asked"></span><span id="grid"></span><span id="ended"></span><span id="distance"></span><a id="receipt" href="#">Raw model call ↗</a></div>
+</section></main></body></html>

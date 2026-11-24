@@ -1,0 +1,14 @@
+{
+  "status": "valid",
+  "decision": {
+    "action": "deliver_reel",
+    "detail": "I'm at the Rialto door, bag over my shoulder, the reel still warm from the housing. I don't go back inside the booth. I cross the lobby to the station patch where Rita's cable runs are coiled on the desk. I set the reel down beside her mic cable, label-side up, so whoever pulls it in the morning can read the date without guessing. I don't wind it. I don't play it. I don't say *this is the one where she says Pittsburgh*. I step back, let the bag slide off my shoulder, and walk for the bus line. One hand in my coat. The station light's still on behind me. I don't look back at it.",
+    "intention": "The reel needs to be where the daughter can reach it before this week's end. Rita's audio is already on the patch. My picture is the other half. Both halves in one place means it's a thing that exists, not a thing in a camera bag in a coat in a man's apartment where it will sit until it doesn't. I don't need to watch it. I don't need to be in the room. I shot it. That's the job. The job is done.",
+    "words": "*(none; I set the reel down and walk out)*"
+  },
+  "request_hashes": [
+    "0c45a12c3025eedb779f7e38c358db503119783f64dff48e9933a80fc5614317"
+  ],
+  "attempt": 0,
+  "source": "new draw"
+}

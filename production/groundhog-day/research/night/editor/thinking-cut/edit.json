@@ -1,0 +1,130 @@
+{
+  "format": "tuesday-edl/1",
+  "source_sha256": "f3173d2fb56b419d9f0588ed2db879ea3d97076db47eeb425fda9160dd0cd576",
+  "actor": "Phil",
+  "selection": "observed-model-notes",
+  "purpose": "One complete thinking-enabled model performance. All separately displayed notes come from the accepted provider stream.",
+  "cluster": {
+    "arrival": 6,
+    "hold": 7,
+    "wake": 8
+  },
+  "rubric_sha256": "46afe4d8f089a4e514edc011b14d24c53c3f87dcd2d1a97d9f9e858f0d966cea",
+  "shots": [
+    {
+      "event_index": 0,
+      "event_id": "d01-t00-reporter",
+      "focus": "Larry",
+      "view": "action",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 4.0,
+      "show_action_with_speech": true,
+      "speech": [
+        {
+          "actor": "Larry",
+          "text": "Rita, I'm rolling on the bandstand—this is all we've got for the seven, so make it count."
+        }
+      ]
+    },
+    {
+      "event_index": 3,
+      "event_id": "d01-t03-reporter",
+      "focus": "Rita",
+      "view": "action",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 4.2,
+      "show_action_with_speech": true,
+      "speech": [
+        {
+          "actor": "Rita",
+          "text": "Phil, you're live—go ahead and hit the groundhog numbers for us."
+        }
+      ]
+    },
+    {
+      "event_index": 6,
+      "event_id": "d02-t02-reporter",
+      "focus": "Phil",
+      "view": "action",
+      "framing": "street",
+      "start": 0,
+      "end": 1,
+      "seconds": 6.0,
+      "show_action_with_speech": true,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "Rita, I'm heading out—coach is going in a minute. I'll sort the van stuff from Pittsburgh. Thanks for the week, love. Bye, Larry, if you're still around."
+        }
+      ]
+    },
+    {
+      "event_index": 7,
+      "event_id": "d02-t03-reporter",
+      "focus": "Phil",
+      "view": "action",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 5.5,
+      "show_action_with_speech": true,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "Hey, it's Phil. I'm in Pittsburgh now, just off the coach. Listen, about tomorrow—van's booked for the couch, right? I want to nail down the pickup time and make sure I know which hallway we're dragging it through. I'll be at your place by noon, tops."
+        }
+      ]
+    },
+    {
+      "event_index": 8,
+      "event_id": "d03-t00-reporter",
+      "focus": "Phil",
+      "view": "morning",
+      "framing": "close",
+      "start": 0.22,
+      "end": 0.22,
+      "seconds": 3.5,
+      "show_action_with_speech": true,
+      "speech": []
+    },
+    {
+      "event_index": 8,
+      "event_id": "d03-t00-reporter",
+      "focus": "Phil",
+      "view": "action",
+      "framing": "close",
+      "start": 0.25,
+      "end": 1,
+      "seconds": 4.0,
+      "show_action_with_speech": true,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "Morning, Rita. I'm out today—couch heave in Pittsburgh, one o'clock coach to get me there. You all locked for the seven, or do you want me to do a quick phone return before I vanish?"
+        }
+      ]
+    },
+    {
+      "event_index": 10,
+      "event_id": "d03-t02-reporter",
+      "focus": "Phil",
+      "view": "action",
+      "framing": "street",
+      "start": 0,
+      "end": 1,
+      "seconds": 6.0,
+      "show_action_with_speech": true,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "Right, couch-hauling season. See you in the city, folks."
+        }
+      ]
+    }
+  ],
+  "title": "Couch-hauling season"
+}

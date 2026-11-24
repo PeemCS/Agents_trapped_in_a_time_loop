@@ -1,0 +1,670 @@
+{
+  "scope": "Complete six-day main worlds and four-day monitored ensembles. An absolute seed repeated across matched treatments is one underlying root. The separate Rialto worlds branch off prior completed histories.",
+  "totals": {
+    "complete_main_worlds": 43,
+    "distinct_seed_values": 12,
+    "lead_ticks": 1016,
+    "cast_decisions": 3048,
+    "exact_cache_reuses": 975
+  },
+  "cohorts": {
+    "larger_casting": [
+      {
+        "file": "takes/q27/film-receipts/seed-701.json",
+        "source_sha256": "e00c059b31452a7358d24f1aed8947af67fbd1ea38c94b58aa85fa15e8415b95",
+        "seed": 701,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 23
+      },
+      {
+        "file": "takes/q27/film-receipts/seed-702.json",
+        "source_sha256": "b0e3497d0cf5ec1bbb588f96954d83fc9649dbdc4ddbde6cb38c0aac85de731a",
+        "seed": 702,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 25
+      },
+      {
+        "file": "takes/q27/film-receipts/seed-703.json",
+        "source_sha256": "ba92c3ec1294d3ab9ea2451b6b3059201d4cee71dde3f3dc1d1a3d2129f25e39",
+        "seed": 703,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 25
+      },
+      {
+        "file": "takes/q27/film-receipts/seed-704.json",
+        "source_sha256": "a420bbbb7c44482c4d10d07ff86e1964b2a8a241a1f438dee6984df9530e754b",
+        "seed": 704,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 23
+      },
+      {
+        "file": "takes/q27/film-transcript/seed-701.json",
+        "source_sha256": "9695d76c0cf799ac32810b53e3da5c26814e227ba6d710e675f0d5c4c798646d",
+        "seed": 701,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 25
+      },
+      {
+        "file": "takes/q27/film-transcript/seed-702.json",
+        "source_sha256": "759c339dcf0af3b648a51cdcbf6603e8b8637a3bd22969bcbefe89ed4cdcb5a2",
+        "seed": 702,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 25
+      },
+      {
+        "file": "takes/q27/film-transcript/seed-703.json",
+        "source_sha256": "9c701182121f556c969d9d02ffb88f14ac5c0364a5f96e47f8392c30e009021a",
+        "seed": 703,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 25
+      },
+      {
+        "file": "takes/q27/film-transcript/seed-704.json",
+        "source_sha256": "5a5772d75eb5e1ddf38815a5ec3a1be28812f3318145c5b61a740e7b32dc9292",
+        "seed": 704,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 25
+      },
+      {
+        "file": "takes/q27/neutral-receipts/seed-701.json",
+        "source_sha256": "265cdd405322e5eb26a0f589d7bda1dde5d2e7bf2a4dbb945b04a2564284a7d0",
+        "seed": 701,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 25
+      },
+      {
+        "file": "takes/q27/neutral-receipts/seed-702.json",
+        "source_sha256": "cb3415220dfccbea19c6802d3920c9384fe00e2375448d85bc605d2a7a2005eb",
+        "seed": 702,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 22
+      },
+      {
+        "file": "takes/q27/neutral-receipts/seed-703.json",
+        "source_sha256": "34dfe8d46792018322f7226350eb4d538bfc9ba6fb6a141951e54530a39329f3",
+        "seed": 703,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 24
+      },
+      {
+        "file": "takes/q27/neutral-receipts/seed-704.json",
+        "source_sha256": "217c53b59b23734b0070f82f653444187d6ac960e01679e94db3a2f18affa802",
+        "seed": 704,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 23
+      },
+      {
+        "file": "takes/q27/neutral-transcript/seed-701.json",
+        "source_sha256": "fda063ac34079ad7bae584dfc70c13a4a724fcd3645e3fb0e18f1cdac8fdd528",
+        "seed": 701,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 25
+      },
+      {
+        "file": "takes/q27/neutral-transcript/seed-702.json",
+        "source_sha256": "f081a3b4a0351de84a4f87c34df9ba851e5f625dd81f66eaba867fbdab2f227b",
+        "seed": 702,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 25
+      },
+      {
+        "file": "takes/q27/neutral-transcript/seed-703.json",
+        "source_sha256": "ade5878c64049db6318b4798edaf254025ec6078bef8ea4935196aa42ea2b682",
+        "seed": 703,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 25
+      },
+      {
+        "file": "takes/q27/neutral-transcript/seed-704.json",
+        "source_sha256": "cd8e08ae1859ccb90cc1588b4f818088528b4ac3140017dbe80e5dc725838e13",
+        "seed": 704,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 25
+      }
+    ],
+    "smaller_casting": [
+      {
+        "file": "takes/q4/film-receipts/seed-701.json",
+        "source_sha256": "37193251350406a14cc112f17c6b31bb802d3c2a0d8ccc94c4c0305d491c4ec2",
+        "seed": 701,
+        "model": "qwen3.5:4b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 25
+      },
+      {
+        "file": "takes/q4/film-receipts/seed-702.json",
+        "source_sha256": "d0149e8653f74c2a3b3ba91004d7170aa87f14bab02332dd4beab36e0566cbc6",
+        "seed": 702,
+        "model": "qwen3.5:4b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 25
+      },
+      {
+        "file": "takes/q4/film-receipts/seed-703.json",
+        "source_sha256": "bf46ba91445a53d9912e6fef8685418debea6d450d42ded502f7b8033916439a",
+        "seed": 703,
+        "model": "qwen3.5:4b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 25
+      },
+      {
+        "file": "takes/q4/film-receipts/seed-704.json",
+        "source_sha256": "cf14c027b563497f86a1e2c64e01e5a7f448890e46ad26327d584ae9e6b43219",
+        "seed": 704,
+        "model": "qwen3.5:4b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 25
+      },
+      {
+        "file": "takes/q4/neutral-receipts/seed-701.json",
+        "source_sha256": "425d4d6fc20898286b786672299922671ea02258371c615f1a9517c98cd41e3e",
+        "seed": 701,
+        "model": "qwen3.5:4b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 23
+      },
+      {
+        "file": "takes/q4/neutral-receipts/seed-702.json",
+        "source_sha256": "c3342adb518057c1b9605c485a7a0415e5b8c1be6babeb318b1c8a19304f9fd2",
+        "seed": 702,
+        "model": "qwen3.5:4b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 25
+      },
+      {
+        "file": "takes/q4/neutral-receipts/seed-703.json",
+        "source_sha256": "4a5710f3e82dd6d7a254968e502328b1954028bea8e348661c7619f47d8d474c",
+        "seed": 703,
+        "model": "qwen3.5:4b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 25
+      },
+      {
+        "file": "takes/q4/neutral-receipts/seed-704.json",
+        "source_sha256": "d3fa9906d9eabc3c18e5f2a323da6e1a3f3ff9995a95f0d7343d7abcb0b126bc",
+        "seed": 704,
+        "model": "qwen3.5:4b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 25
+      }
+    ],
+    "world_comparison": [
+      {
+        "file": "takes/heldout/v1/seed-711.json",
+        "source_sha256": "4904a175371c131b644a271306da2c63d799b0099fbfd906b66ac5812d13e1ec",
+        "seed": 711,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 23
+      },
+      {
+        "file": "takes/heldout/v1/seed-712.json",
+        "source_sha256": "b75f65e015f7f0f94dca7e8f81d957467e36c435d0651819b4dcb32a13cc76f6",
+        "seed": 712,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 23
+      },
+      {
+        "file": "takes/heldout/v1/seed-713.json",
+        "source_sha256": "c995124a95e96b1e2c1640679341bc99ad7bced770c28ad5ad9af9e355cc4d04",
+        "seed": 713,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 24
+      },
+      {
+        "file": "takes/heldout/v1/seed-714.json",
+        "source_sha256": "530881fd12cee84bddd90a4907a5ed04ccc1ad991b81c2e8f87ce615d0f4b761",
+        "seed": 714,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 25
+      },
+      {
+        "file": "takes/heldout/v2/seed-711.json",
+        "source_sha256": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+        "seed": 711,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 23
+      },
+      {
+        "file": "takes/heldout/v2/seed-712.json",
+        "source_sha256": "b23ac8578f5812b7016eba28439a79c7c3804b1e46647e962781f1d0cf728c21",
+        "seed": 712,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 23
+      },
+      {
+        "file": "takes/heldout/v2/seed-713.json",
+        "source_sha256": "c62d990e921757718b0ad35f465ab8c47016fc183f4b01de1d65db124efbff90",
+        "seed": 713,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 25
+      },
+      {
+        "file": "takes/heldout/v2/seed-714.json",
+        "source_sha256": "2c0ab5dc5ba2faa1ecdebefcfd53ecd8de0e0a4ae49c35a58a021f1bbdece0cd",
+        "seed": 714,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 23
+      }
+    ],
+    "credentials": [
+      {
+        "file": "takes/badges/film/seed-721.json",
+        "source_sha256": "7885508ead0d05bf3d5ce700af83b1ce19612e2e8f99400af6002bd715a0f3ae",
+        "seed": 721,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 21
+      },
+      {
+        "file": "takes/badges/film/seed-722.json",
+        "source_sha256": "f7b9303eb061541e4c8364df421d336fc4f42b4ba2b44f5b86ae051ff6892d28",
+        "seed": 722,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 24
+      },
+      {
+        "file": "takes/badges/film/seed-723.json",
+        "source_sha256": "509bc61d4138c5da10e336a0593e21656247802786ea22d4f37ec81d452a7ac5",
+        "seed": 723,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 14
+      },
+      {
+        "file": "takes/badges/neutral/seed-721.json",
+        "source_sha256": "1457dbb6dc3056d503f5a7e05e141791cbd83ed462e3729362938de1386df4ed",
+        "seed": 721,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 19
+      },
+      {
+        "file": "takes/badges/neutral/seed-722.json",
+        "source_sha256": "07e56bcccc8f9b795a8e0d1699b0a509efc55d02eb94de8880fba8f2fc155059",
+        "seed": 722,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 22
+      },
+      {
+        "file": "takes/badges/neutral/seed-723.json",
+        "source_sha256": "bc731e13610c54f4223b20a53a07b442760567211622c91d545daef1d7302ab3",
+        "seed": 723,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 14
+      }
+    ],
+    "surprise_memory": [
+      {
+        "file": "takes/surprise/film/seed-721.json",
+        "source_sha256": "185e2448f4fea4de9f30da49b8420d6eefc4b727758b0cfaa1e77b199b0a8fe2",
+        "seed": 721,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 22
+      },
+      {
+        "file": "takes/surprise/film/seed-722.json",
+        "source_sha256": "97367d95d4f11005eef27deff848f298ab4362b52455b0d9f13ab11beffa8eb3",
+        "seed": 722,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 25
+      },
+      {
+        "file": "takes/surprise/film/seed-723.json",
+        "source_sha256": "4c543732182ac48672f6188b42b9be72ffdbe3dc9ab5b79978d6e6f24f404ebc",
+        "seed": 723,
+        "model": "qwen3.8:27b",
+        "days": 6,
+        "ticks": 24,
+        "decisions": 72,
+        "cached_slots": 14
+      }
+    ],
+    "thinking_ensemble": [
+      {
+        "file": "thinking/runs/guarded/seed-731.json",
+        "source_sha256": "c68f58f7f57563cfa3c3c29a476ab4d1abf9a8724e146673b4c018e54e511e10",
+        "seed": 731,
+        "model": "qwen3.8:27b",
+        "days": 4,
+        "ticks": 16,
+        "decisions": 48,
+        "cached_slots": 11
+      },
+      {
+        "file": "thinking/runs/standard/seed-731.json",
+        "source_sha256": "f3173d2fb56b419d9f0588ed2db879ea3d97076db47eeb425fda9160dd0cd576",
+        "seed": 731,
+        "model": "qwen3.8:27b",
+        "days": 4,
+        "ticks": 16,
+        "decisions": 48,
+        "cached_slots": 12
+      }
+    ]
+  },
+  "media": [
+    {
+      "path": "editor/rialto-cut/film.mp4",
+      "sha256": "423114d7370078a35fbb61ebdb1b4ab806ce03207977377677fef20bc0fbe243",
+      "bytes": 3523175,
+      "duration_s": 80.25,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "nb_frames": "1926"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "nb_frames": "3761"
+        }
+      ]
+    },
+    {
+      "path": "editor/thinking-cut/film.mp4",
+      "sha256": "b51a1d7fcc6e6f0c837c5edaa23092aa039f8b2574e7bfe6be158c774a80b655",
+      "bytes": 5539857,
+      "duration_s": 90.333333,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "nb_frames": "2168"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "nb_frames": "4234"
+        }
+      ]
+    },
+    {
+      "path": "editor/five-trips/film.mp4",
+      "sha256": "eb354888191b853b8008446291d2e2e675f6509bdbaa81ed1e55645a78637b4e",
+      "bytes": 7453591,
+      "duration_s": 40.958333,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "nb_frames": "983"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "nb_frames": "1919"
+        }
+      ]
+    },
+    {
+      "path": "editor/four-bulletins/film.mp4",
+      "sha256": "36eea195a89bb188d34cc0eda32135b1a9219d89c3e4a2c3f762409ebd90d9b7",
+      "bytes": 5581675,
+      "duration_s": 123.666667,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "nb_frames": "2968"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "nb_frames": "5797"
+        }
+      ]
+    },
+    {
+      "path": "editor/wednesday-couch/film.mp4",
+      "sha256": "f9a2ad8fe7660f4b137fbb3b2180e2466c51522995d79eafa718c7d6b8ff14c2",
+      "bytes": 7774850,
+      "duration_s": 93.9375,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "nb_frames": "1503"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "nb_frames": "4402"
+        }
+      ]
+    },
+    {
+      "path": "editor/afternoon-coach/film.mp4",
+      "sha256": "ce7cc54aa0acf821a1c36defae74aa12824b6cb81700649bfd0838a0f29853b1",
+      "bytes": 4365809,
+      "duration_s": 73.8125,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "nb_frames": "1181"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "nb_frames": "3457"
+        }
+      ]
+    },
+    {
+      "path": "editor/seven-oclock/film.mp4",
+      "sha256": "6d849989d1669cef5667699597bf523e79e98e283f9c25d6e2558acf39b47709",
+      "bytes": 5275606,
+      "duration_s": 82.666667,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "nb_frames": "1984"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "nb_frames": "3875"
+        }
+      ]
+    },
+    {
+      "path": "editor/fare-envelope/film.mp4",
+      "sha256": "512a3533a1bafbeaf1ac51b9c4a8b101f7281d1350a2b2af9bb374a6c836edfa",
+      "bytes": 1192504,
+      "duration_s": 28.666667,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "nb_frames": "688"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "nb_frames": "1344"
+        }
+      ]
+    },
+    {
+      "path": "stage3d/viewer/evidence/motion-proof.mp4",
+      "sha256": "56e657b9f21a851945f583e1c939f52219232c0d4612c5c95b1a437f126c61a7",
+      "bytes": 2753225,
+      "duration_s": 17.75,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 960,
+          "height": 540,
+          "nb_frames": "426",
+          "side_data_list": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "path": "stage3d/viewer/rialto/evidence/eight-bars-3d.mp4",
+      "sha256": "c005ccdd08bd0da9168a3799a6d915de0977e432caf61ac8054023d4a039cd31",
+      "bytes": 1573559,
+      "duration_s": 26.5,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 960,
+          "height": 540,
+          "nb_frames": "636",
+          "side_data_list": [
+            {}
+          ]
+        }
+      ]
+    },
+    {
+      "path": "free-walk/evidence/movement-proof.mp4",
+      "sha256": "1cb35aa977a76b282d283bbd510c1c225a663e2f425d100238f67140f7ddd378",
+      "bytes": 2682145,
+      "duration_s": 20.25,
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 960,
+          "height": 540,
+          "nb_frames": "486",
+          "side_data_list": [
+            {}
+          ]
+        }
+      ]
+    }
+  ]
+}

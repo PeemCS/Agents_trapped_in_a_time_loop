@@ -1,0 +1,5 @@
+# Token-limit continuation
+
+The original 1,000-token, no-retry arm remains closed at its first uncommitted model call. Both versions of root 1801 stopped on Phil's fresh-morning decision after 1,000 output tokens of native thinking and no structured action. This extension was fixed before sending any supplemental requests, while the other primary root was still running.
+
+For each **observed length-limited checkpoint**, reconstruct the exact state before the failed call. Keep all previously committed choices, the original user/system messages, legal schema, temperature and seed. Raise only the output cap to 3,072 for the continuation and any subsequent new decisions. Generate at most once at each supplemental checkpoint. Label every extended trajectory and keep the failed raw response alongside the completed lineage. Evaluate original and extended completion rates separately. Maximum charged calls over both protocols together is 20. Stop launching calls by 05:52:45 Pacific. The experiment’s previously fixed roots, cast, prop, sightline and eligibility stay unchanged.

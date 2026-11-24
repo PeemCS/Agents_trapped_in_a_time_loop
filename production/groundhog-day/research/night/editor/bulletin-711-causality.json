@@ -1,0 +1,635 @@
+{
+  "method": "Replay the original last slot and verify the full stored bulletin. Replace one actor’s physical action at a time with every action legal in that exact state. Freeze the other actors, words, prior footage and actual world. Alternative feed signatures are counterfactual mechanics, not samples of model behavior.",
+  "worlds": 1,
+  "evenings": 6,
+  "actual_channels": {
+    "camera_take": 2,
+    "station_ident": 2,
+    "producer_live": 2
+  },
+  "evenings_with_single_actor_power": {
+    "producer": 6,
+    "reporter": 0,
+    "camera": 2
+  },
+  "realized_earlier_work_reaching_air": 2,
+  "per_world": [
+    {
+      "source_sha256": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+      "seed": 711,
+      "source_type": "live_model",
+      "evenings": [
+        {
+          "day": 1,
+          "event": "d01-t03-reporter",
+          "actual": [
+            "camera_take",
+            "camera",
+            "square",
+            "the festival"
+          ],
+          "actual_sources": [
+            "d01-t03-producer",
+            "d01-t03-camera",
+            "d01-t02-camera"
+          ],
+          "selected_earlier_recorded_work": true,
+          "one_actor_at_a_time": {
+            "reporter": {
+              "actual": "spend_time_here",
+              "alternate_channel_count": 0,
+              "changes_feed": false,
+              "other_reachable_channels": [],
+              "edits": {}
+            },
+            "producer": {
+              "actual": "patch_camera_line",
+              "alternate_channel_count": 3,
+              "changes_feed": true,
+              "other_reachable_channels": [
+                "empty_selected_return",
+                "producer_live",
+                "station_ident"
+              ],
+              "edits": {
+                "leave_pencil_mark": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "go_to_depot": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "look_around": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "patch_reporter_line": [
+                  "empty_selected_return",
+                  null,
+                  null,
+                  null
+                ],
+                "spend_time_here": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "go_to_studio": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "go_to_square": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "go_to_diner": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "host_bulletin": [
+                  "producer_live",
+                  "producer",
+                  "inn",
+                  null
+                ]
+              }
+            },
+            "camera": {
+              "actual": "send_camera_take",
+              "alternate_channel_count": 1,
+              "changes_feed": true,
+              "other_reachable_channels": [
+                "empty_selected_return"
+              ],
+              "edits": {
+                "watch_ceremony": [
+                  "empty_selected_return",
+                  null,
+                  null,
+                  null
+                ],
+                "listen_to_band": [
+                  "empty_selected_return",
+                  null,
+                  null,
+                  null
+                ],
+                "go_to_studio": [
+                  "empty_selected_return",
+                  null,
+                  null,
+                  null
+                ],
+                "go_to_depot": [
+                  "empty_selected_return",
+                  null,
+                  null,
+                  null
+                ],
+                "go_to_diner": [
+                  "empty_selected_return",
+                  null,
+                  null,
+                  null
+                ],
+                "spend_time_here": [
+                  "empty_selected_return",
+                  null,
+                  null,
+                  null
+                ],
+                "look_around": [
+                  "empty_selected_return",
+                  null,
+                  null,
+                  null
+                ],
+                "go_to_inn": [
+                  "empty_selected_return",
+                  null,
+                  null,
+                  null
+                ]
+              }
+            }
+          }
+        },
+        {
+          "day": 2,
+          "event": "d02-t03-reporter",
+          "actual": [
+            "station_ident",
+            null,
+            null,
+            null
+          ],
+          "actual_sources": [
+            "d02-t03-producer"
+          ],
+          "selected_earlier_recorded_work": false,
+          "one_actor_at_a_time": {
+            "reporter": {
+              "actual": "call_sister",
+              "alternate_channel_count": 0,
+              "changes_feed": false,
+              "other_reachable_channels": [],
+              "edits": {}
+            },
+            "producer": {
+              "actual": "spend_time_here",
+              "alternate_channel_count": 3,
+              "changes_feed": true,
+              "other_reachable_channels": [
+                "camera_take",
+                "empty_selected_return",
+                "producer_live"
+              ],
+              "edits": {
+                "patch_camera_line": [
+                  "camera_take",
+                  "camera",
+                  "square",
+                  "the festival"
+                ],
+                "patch_reporter_line": [
+                  "empty_selected_return",
+                  null,
+                  null,
+                  null
+                ],
+                "host_bulletin": [
+                  "producer_live",
+                  "producer",
+                  "inn",
+                  null
+                ]
+              }
+            },
+            "camera": {
+              "actual": "send_camera_take",
+              "alternate_channel_count": 0,
+              "changes_feed": false,
+              "other_reachable_channels": [],
+              "edits": {}
+            }
+          }
+        },
+        {
+          "day": 3,
+          "event": "d03-t03-reporter",
+          "actual": [
+            "camera_take",
+            "camera",
+            "square",
+            "the festival"
+          ],
+          "actual_sources": [
+            "d03-t03-producer",
+            "d03-t03-camera",
+            "d03-t02-camera"
+          ],
+          "selected_earlier_recorded_work": true,
+          "one_actor_at_a_time": {
+            "reporter": {
+              "actual": "call_sister",
+              "alternate_channel_count": 0,
+              "changes_feed": false,
+              "other_reachable_channels": [],
+              "edits": {}
+            },
+            "producer": {
+              "actual": "patch_camera_line",
+              "alternate_channel_count": 3,
+              "changes_feed": true,
+              "other_reachable_channels": [
+                "empty_selected_return",
+                "producer_live",
+                "station_ident"
+              ],
+              "edits": {
+                "leave_pencil_mark": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "go_to_depot": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "look_around": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "patch_reporter_line": [
+                  "empty_selected_return",
+                  null,
+                  null,
+                  null
+                ],
+                "spend_time_here": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "go_to_studio": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "go_to_square": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "go_to_diner": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "host_bulletin": [
+                  "producer_live",
+                  "producer",
+                  "inn",
+                  null
+                ]
+              }
+            },
+            "camera": {
+              "actual": "send_camera_take",
+              "alternate_channel_count": 1,
+              "changes_feed": true,
+              "other_reachable_channels": [
+                "empty_selected_return"
+              ],
+              "edits": {
+                "watch_ceremony": [
+                  "empty_selected_return",
+                  null,
+                  null,
+                  null
+                ],
+                "listen_to_band": [
+                  "empty_selected_return",
+                  null,
+                  null,
+                  null
+                ],
+                "go_to_studio": [
+                  "empty_selected_return",
+                  null,
+                  null,
+                  null
+                ],
+                "go_to_depot": [
+                  "empty_selected_return",
+                  null,
+                  null,
+                  null
+                ],
+                "go_to_diner": [
+                  "empty_selected_return",
+                  null,
+                  null,
+                  null
+                ],
+                "spend_time_here": [
+                  "empty_selected_return",
+                  null,
+                  null,
+                  null
+                ],
+                "look_around": [
+                  "empty_selected_return",
+                  null,
+                  null,
+                  null
+                ],
+                "go_to_inn": [
+                  "empty_selected_return",
+                  null,
+                  null,
+                  null
+                ]
+              }
+            }
+          }
+        },
+        {
+          "day": 4,
+          "event": "d04-t03-reporter",
+          "actual": [
+            "producer_live",
+            "producer",
+            "inn",
+            null
+          ],
+          "actual_sources": [
+            "d04-t03-producer"
+          ],
+          "selected_earlier_recorded_work": false,
+          "one_actor_at_a_time": {
+            "reporter": {
+              "actual": "spend_time_here",
+              "alternate_channel_count": 0,
+              "changes_feed": false,
+              "other_reachable_channels": [],
+              "edits": {}
+            },
+            "producer": {
+              "actual": "host_bulletin",
+              "alternate_channel_count": 3,
+              "changes_feed": true,
+              "other_reachable_channels": [
+                "camera_take",
+                "empty_selected_return",
+                "station_ident"
+              ],
+              "edits": {
+                "leave_pencil_mark": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "go_to_depot": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "look_around": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "patch_camera_line": [
+                  "camera_take",
+                  "camera",
+                  "square",
+                  "the festival"
+                ],
+                "patch_reporter_line": [
+                  "empty_selected_return",
+                  null,
+                  null,
+                  null
+                ],
+                "spend_time_here": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "go_to_studio": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "go_to_square": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "go_to_diner": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ]
+              }
+            },
+            "camera": {
+              "actual": "send_camera_take",
+              "alternate_channel_count": 0,
+              "changes_feed": false,
+              "other_reachable_channels": [],
+              "edits": {}
+            }
+          }
+        },
+        {
+          "day": 5,
+          "event": "d05-t03-reporter",
+          "actual": [
+            "station_ident",
+            null,
+            null,
+            null
+          ],
+          "actual_sources": [
+            "d05-t03-producer"
+          ],
+          "selected_earlier_recorded_work": false,
+          "one_actor_at_a_time": {
+            "reporter": {
+              "actual": "look_around",
+              "alternate_channel_count": 0,
+              "changes_feed": false,
+              "other_reachable_channels": [],
+              "edits": {}
+            },
+            "producer": {
+              "actual": "look_around",
+              "alternate_channel_count": 3,
+              "changes_feed": true,
+              "other_reachable_channels": [
+                "camera_take",
+                "empty_selected_return",
+                "producer_live"
+              ],
+              "edits": {
+                "patch_camera_line": [
+                  "camera_take",
+                  "camera",
+                  "square",
+                  "the festival"
+                ],
+                "patch_reporter_line": [
+                  "empty_selected_return",
+                  null,
+                  null,
+                  null
+                ],
+                "host_bulletin": [
+                  "producer_live",
+                  "producer",
+                  "inn",
+                  null
+                ]
+              }
+            },
+            "camera": {
+              "actual": "send_camera_take",
+              "alternate_channel_count": 0,
+              "changes_feed": false,
+              "other_reachable_channels": [],
+              "edits": {}
+            }
+          }
+        },
+        {
+          "day": 6,
+          "event": "d06-t03-reporter",
+          "actual": [
+            "producer_live",
+            "producer",
+            "inn",
+            null
+          ],
+          "actual_sources": [
+            "d06-t03-producer"
+          ],
+          "selected_earlier_recorded_work": false,
+          "one_actor_at_a_time": {
+            "reporter": {
+              "actual": "call_live_report",
+              "alternate_channel_count": 0,
+              "changes_feed": false,
+              "other_reachable_channels": [],
+              "edits": {}
+            },
+            "producer": {
+              "actual": "host_bulletin",
+              "alternate_channel_count": 3,
+              "changes_feed": true,
+              "other_reachable_channels": [
+                "camera_take",
+                "live_report",
+                "station_ident"
+              ],
+              "edits": {
+                "leave_pencil_mark": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "go_to_depot": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "look_around": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "patch_camera_line": [
+                  "camera_take",
+                  "camera",
+                  "square",
+                  "the festival"
+                ],
+                "patch_reporter_line": [
+                  "live_report",
+                  "reporter",
+                  "Pittsburgh",
+                  null
+                ],
+                "spend_time_here": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "go_to_studio": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "go_to_square": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ],
+                "go_to_diner": [
+                  "station_ident",
+                  null,
+                  null,
+                  null
+                ]
+              }
+            },
+            "camera": {
+              "actual": "send_camera_take",
+              "alternate_channel_count": 0,
+              "changes_feed": false,
+              "other_reachable_channels": [],
+              "edits": {}
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

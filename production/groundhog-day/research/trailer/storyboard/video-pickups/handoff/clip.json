@@ -1,0 +1,16 @@
+{
+  "file": "handoff.mp4",
+  "title": "Ned carries the carbon to the hotel",
+  "shot": "S05-D2–D3",
+  "duration": 6.041667,
+  "model": "Seedance 2.5",
+  "provider_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3MWoglBmW0FxDhWYsRkUU6hOp6M/hf_20261124_014922_b3827e28-f073-4b04-8b4a-a378fc04a976.mp4",
+  "job_id": "b3827e28-f073-4b04-8b4a-a378fc04a976",
+  "sources": [
+    "script-photos/ending/S05-handoff.jpg",
+    "script-photos/pickups-ending/threshold.jpg"
+  ],
+  "effect": "Seedance 2.5 omni_reference start/end image; prompted pullback and lateral tracking",
+  "quality_notes": "HEVC 2206×946, 24 fps, 6.04 s. Phil exits left, Ned travels right carrying visible blue page. Camera follows laterally but transition to rear threshold view appears abrupt near the end rather than one seamless move; snow appears inside the lobby. No audio.",
+  "edit_note": "For a continuous exterior track, cut away before the angle changes at 4.54 s."
+}

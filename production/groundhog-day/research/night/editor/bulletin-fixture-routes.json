@@ -1,0 +1,160 @@
+{
+  "fixture_only": true,
+  "method": "Eight hand-selected legal final-tick combinations on a completed deterministic fixture. Each bulletin recomputed by the world reducer and replayed in the browser. These are route tests, not model-generated endings.",
+  "coverage": [
+    {
+      "channel": "live_report",
+      "source_rows": [
+        {
+          "event_id": "d06-t03-producer",
+          "slot": 23,
+          "actor": "Rita",
+          "action": "patch_reporter_line",
+          "place": "studio"
+        },
+        {
+          "event_id": "d06-t03-reporter",
+          "slot": 23,
+          "actor": "Phil",
+          "action": "call_live_report",
+          "place": "Pittsburgh"
+        }
+      ],
+      "served_words": "Words from reporter.",
+      "frame_rendered": true
+    },
+    {
+      "channel": "silent_live_reporter_line",
+      "source_rows": [
+        {
+          "event_id": "d06-t03-producer",
+          "slot": 23,
+          "actor": "Rita",
+          "action": "patch_reporter_line",
+          "place": "studio"
+        },
+        {
+          "event_id": "d06-t03-reporter",
+          "slot": 23,
+          "actor": "Phil",
+          "action": "call_live_report",
+          "place": "Pittsburgh"
+        }
+      ],
+      "served_words": "",
+      "frame_rendered": true
+    },
+    {
+      "channel": "producer_live",
+      "source_rows": [
+        {
+          "event_id": "d06-t03-producer",
+          "slot": 23,
+          "actor": "Rita",
+          "action": "host_bulletin",
+          "place": "studio"
+        }
+      ],
+      "served_words": "Words from producer.",
+      "frame_rendered": true
+    },
+    {
+      "channel": "silent_producer_mic",
+      "source_rows": [
+        {
+          "event_id": "d06-t03-producer",
+          "slot": 23,
+          "actor": "Rita",
+          "action": "host_bulletin",
+          "place": "studio"
+        }
+      ],
+      "served_words": "",
+      "frame_rendered": true
+    },
+    {
+      "channel": "empty_selected_return",
+      "source_rows": [
+        {
+          "event_id": "d06-t03-producer",
+          "slot": 23,
+          "actor": "Rita",
+          "action": "patch_camera_line",
+          "place": "studio"
+        },
+        {
+          "event_id": "d06-t03-camera",
+          "slot": 23,
+          "actor": "Larry",
+          "action": "spend_time_here",
+          "place": "square"
+        }
+      ],
+      "served_words": "",
+      "frame_rendered": true
+    },
+    {
+      "channel": "station_ident",
+      "source_rows": [
+        {
+          "event_id": "d06-t03-producer",
+          "slot": 23,
+          "actor": "Rita",
+          "action": "spend_time_here",
+          "place": "studio"
+        }
+      ],
+      "served_words": "",
+      "frame_rendered": true
+    },
+    {
+      "channel": "camera_take",
+      "source_rows": [
+        {
+          "event_id": "d06-t03-producer",
+          "slot": 23,
+          "actor": "Rita",
+          "action": "patch_camera_line",
+          "place": "studio"
+        },
+        {
+          "event_id": "d06-t03-camera",
+          "slot": 23,
+          "actor": "Larry",
+          "action": "send_camera_take",
+          "place": "square"
+        },
+        {
+          "event_id": "d06-t02-camera",
+          "slot": 22,
+          "actor": "Larry",
+          "action": "film_cornet_player",
+          "place": "square"
+        }
+      ],
+      "served_words": "",
+      "frame_rendered": true
+    },
+    {
+      "channel": "filed_forecast",
+      "source_rows": [
+        {
+          "event_id": "d06-t03-producer",
+          "slot": 23,
+          "actor": "Rita",
+          "action": "play_filed_forecast",
+          "place": "studio"
+        },
+        {
+          "event_id": "d06-t01-producer",
+          "slot": 21,
+          "actor": "Rita",
+          "action": "file_forecast",
+          "place": "studio"
+        }
+      ],
+      "served_words": "",
+      "frame_rendered": true
+    }
+  ]
+}

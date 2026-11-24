@@ -1,0 +1,1285 @@
+{
+  "provenance": "Authored two-turn simulations. Labels supplied by identified blind raters. Model predicts their comparisons.",
+  "packet_sha256": "25f0b11fc1fce3d5a965ec0acc781a78b0349971093ad07101cdca2855a29bca",
+  "raters": [
+    {
+      "rater": "Cold-screen evaluator",
+      "type": "agent",
+      "counts": {
+        "B": 22,
+        "A": 23
+      },
+      "four_way_label_entropy_bits": 0.9996437496778561
+    }
+  ],
+  "rater_agreement": [],
+  "training_tasks": [
+    "braille",
+    "maps",
+    "negative",
+    "notices",
+    "plates",
+    "ribbon",
+    "screen",
+    "tape",
+    "train",
+    "voices"
+  ],
+  "heldout_tasks": [
+    "awning",
+    "ferry",
+    "scores",
+    "seed",
+    "vows"
+  ],
+  "ridge": 0.04,
+  "bootstrap_draws": 400,
+  "seed": 61439,
+  "features": [
+    "current_project_fraction",
+    "uncertainty_resolved",
+    "third_party_promise_kept",
+    "boundary_crossed",
+    "report_filed"
+  ],
+  "weights": [
+    0.45588604410417216,
+    -0.29117926270284666,
+    1.3327765400423948,
+    -1.23480863593001,
+    0.08844477110804227
+  ],
+  "train_bootstrap_weight_intervals": [
+    [
+      -0.10504745469716738,
+      0.9022451746594703
+    ],
+    [
+      -0.6205517280616709,
+      0.0
+    ],
+    [
+      0.7698332770462993,
+      1.952356107086555
+    ],
+    [
+      -1.5658674133211323,
+      -0.5481928553856755
+    ],
+    [
+      -0.6075449283310066,
+      0.8479755433865821
+    ]
+  ],
+  "train": {
+    "head_realized_consequences": {
+      "n": 30,
+      "ties": 0,
+      "log_loss_nats": 0.40900219814859506,
+      "brier_soft_target": 0.12256844438750865,
+      "decisive_agreement_chance_credit_at_indifference": 0.9,
+      "calibration_bins": [
+        {
+          "interval": [
+            0.0,
+            0.3333333333333333
+          ],
+          "n": 14,
+          "mean_p_A": 0.23467887199491488,
+          "mean_A_target": 0.14285714285714285
+        },
+        {
+          "interval": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "n": 7,
+          "mean_p_A": 0.5074923150140013,
+          "mean_A_target": 0.5714285714285714
+        },
+        {
+          "interval": [
+            0.6666666666666666,
+            1.0
+          ],
+          "n": 9,
+          "mean_p_A": 0.8169988283827203,
+          "mean_A_target": 1.0
+        }
+      ]
+    },
+    "head_public_consequence_forecast_before_consent_mask": {
+      "n": 30,
+      "ties": 0,
+      "log_loss_nats": 0.4097095568354433,
+      "brier_soft_target": 0.12258312992231982,
+      "decisive_agreement_chance_credit_at_indifference": 0.8666666666666667,
+      "calibration_bins": [
+        {
+          "interval": [
+            0.0,
+            0.3333333333333333
+          ],
+          "n": 13,
+          "mean_p_A": 0.23434525829300815,
+          "mean_A_target": 0.15384615384615385
+        },
+        {
+          "interval": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "n": 8,
+          "mean_p_A": 0.5026058296381475,
+          "mean_A_target": 0.5
+        },
+        {
+          "interval": [
+            0.6666666666666666,
+            1.0
+          ],
+          "n": 9,
+          "mean_p_A": 0.8166774327111699,
+          "mean_A_target": 1.0
+        }
+      ]
+    },
+    "fixed_priority_rule": {
+      "n": 30,
+      "ties": 0,
+      "log_loss_nats": 0.3879538989035326,
+      "brier_soft_target": 0.10833333333333334,
+      "decisive_agreement_chance_credit_at_indifference": 0.9,
+      "calibration_bins": [
+        {
+          "interval": [
+            0.0,
+            0.3333333333333333
+          ],
+          "n": 16,
+          "mean_p_A": 0.25,
+          "mean_A_target": 0.125
+        },
+        {
+          "interval": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "n": 2,
+          "mean_p_A": 0.5,
+          "mean_A_target": 0.5
+        },
+        {
+          "interval": [
+            0.6666666666666666,
+            1.0
+          ],
+          "n": 12,
+          "mean_p_A": 0.75,
+          "mean_A_target": 1.0
+        }
+      ]
+    },
+    "untrained_uniform": {
+      "n": 30,
+      "ties": 0,
+      "log_loss_nats": 0.693147180559945,
+      "brier_soft_target": 0.25,
+      "decisive_agreement_chance_credit_at_indifference": 0.5,
+      "calibration_bins": [
+        {
+          "interval": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "n": 30,
+          "mean_p_A": 0.5,
+          "mean_A_target": 0.5
+        }
+      ]
+    }
+  },
+  "heldout": {
+    "head_realized_consequences": {
+      "n": 15,
+      "ties": 0,
+      "log_loss_nats": 0.38868159190612894,
+      "brier_soft_target": 0.11283770124729332,
+      "decisive_agreement_chance_credit_at_indifference": 0.8666666666666667,
+      "calibration_bins": [
+        {
+          "interval": [
+            0.0,
+            0.3333333333333333
+          ],
+          "n": 5,
+          "mean_p_A": 0.23098879182564475,
+          "mean_A_target": 0.0
+        },
+        {
+          "interval": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "n": 5,
+          "mean_p_A": 0.5199095192588729,
+          "mean_A_target": 0.6
+        },
+        {
+          "interval": [
+            0.6666666666666666,
+            1.0
+          ],
+          "n": 5,
+          "mean_p_A": 0.7917114346186576,
+          "mean_A_target": 1.0
+        }
+      ]
+    },
+    "head_public_consequence_forecast_before_consent_mask": {
+      "n": 15,
+      "ties": 0,
+      "log_loss_nats": 0.4207376504152205,
+      "brier_soft_target": 0.12775330637800705,
+      "decisive_agreement_chance_credit_at_indifference": 0.8666666666666667,
+      "calibration_bins": [
+        {
+          "interval": [
+            0.0,
+            0.3333333333333333
+          ],
+          "n": 4,
+          "mean_p_A": 0.2223887094181845,
+          "mean_A_target": 0.0
+        },
+        {
+          "interval": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "n": 6,
+          "mean_p_A": 0.5160710261868676,
+          "mean_A_target": 0.5
+        },
+        {
+          "interval": [
+            0.6666666666666666,
+            1.0
+          ],
+          "n": 5,
+          "mean_p_A": 0.7917114346186576,
+          "mean_A_target": 1.0
+        }
+      ]
+    },
+    "fixed_priority_rule": {
+      "n": 15,
+      "ties": 0,
+      "log_loss_nats": 0.3879538989035325,
+      "brier_soft_target": 0.10833333333333334,
+      "decisive_agreement_chance_credit_at_indifference": 0.9,
+      "calibration_bins": [
+        {
+          "interval": [
+            0.0,
+            0.3333333333333333
+          ],
+          "n": 5,
+          "mean_p_A": 0.25,
+          "mean_A_target": 0.0
+        },
+        {
+          "interval": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "n": 1,
+          "mean_p_A": 0.5,
+          "mean_A_target": 0.0
+        },
+        {
+          "interval": [
+            0.6666666666666666,
+            1.0
+          ],
+          "n": 9,
+          "mean_p_A": 0.75,
+          "mean_A_target": 0.8888888888888888
+        }
+      ]
+    },
+    "untrained_uniform": {
+      "n": 15,
+      "ties": 0,
+      "log_loss_nats": 0.6931471805599453,
+      "brier_soft_target": 0.25,
+      "decisive_agreement_chance_credit_at_indifference": 0.5,
+      "calibration_bins": [
+        {
+          "interval": [
+            0.3333333333333333,
+            0.6666666666666666
+          ],
+          "n": 15,
+          "mean_p_A": 0.5,
+          "mean_A_target": 0.5333333333333333
+        }
+      ]
+    }
+  },
+  "heldout_by_task": {
+    "seed": {
+      "head_realized_consequences": {
+        "n": 3,
+        "ties": 0,
+        "log_loss_nats": 0.41857462913294885,
+        "brier_soft_target": 0.12736129390686887,
+        "decisive_agreement_chance_credit_at_indifference": 0.6666666666666666,
+        "calibration_bins": [
+          {
+            "interval": [
+              0.0,
+              0.3333333333333333
+            ],
+            "n": 2,
+            "mean_p_A": 0.2167952054952284,
+            "mean_A_target": 0.0
+          },
+          {
+            "interval": [
+              0.3333333333333333,
+              0.6666666666666666
+            ],
+            "n": 1,
+            "mean_p_A": 0.5348181183486289,
+            "mean_A_target": 0.0
+          }
+        ]
+      },
+      "head_public_consequence_forecast_before_consent_mask": {
+        "n": 3,
+        "ties": 0,
+        "log_loss_nats": 0.5788549216784064,
+        "brier_soft_target": 0.2019393195604375,
+        "decisive_agreement_chance_credit_at_indifference": 0.6666666666666666,
+        "calibration_bins": [
+          {
+            "interval": [
+              0.0,
+              0.3333333333333333
+            ],
+            "n": 1,
+            "mean_p_A": 0.168201289534971,
+            "mean_A_target": 0.0
+          },
+          {
+            "interval": [
+              0.3333333333333333,
+              0.6666666666666666
+            ],
+            "n": 2,
+            "mean_p_A": 0.5158483395877353,
+            "mean_A_target": 0.0
+          }
+        ]
+      },
+      "fixed_priority_rule": {
+        "n": 3,
+        "ties": 0,
+        "log_loss_nats": 0.6538861686744841,
+        "brier_soft_target": 0.22916666666666666,
+        "decisive_agreement_chance_credit_at_indifference": 0.6666666666666666,
+        "calibration_bins": [
+          {
+            "interval": [
+              0.0,
+              0.3333333333333333
+            ],
+            "n": 2,
+            "mean_p_A": 0.25,
+            "mean_A_target": 0.0
+          },
+          {
+            "interval": [
+              0.6666666666666666,
+              1.0
+            ],
+            "n": 1,
+            "mean_p_A": 0.75,
+            "mean_A_target": 0.0
+          }
+        ]
+      },
+      "untrained_uniform": {
+        "n": 3,
+        "ties": 0,
+        "log_loss_nats": 0.6931471805599453,
+        "brier_soft_target": 0.25,
+        "decisive_agreement_chance_credit_at_indifference": 0.5,
+        "calibration_bins": [
+          {
+            "interval": [
+              0.3333333333333333,
+              0.6666666666666666
+            ],
+            "n": 3,
+            "mean_p_A": 0.5,
+            "mean_A_target": 0.0
+          }
+        ]
+      }
+    },
+    "scores": {
+      "head_realized_consequences": {
+        "n": 3,
+        "ties": 0,
+        "log_loss_nats": 0.38838437545081805,
+        "brier_soft_target": 0.10944907902129845,
+        "decisive_agreement_chance_credit_at_indifference": 1.0,
+        "calibration_bins": [
+          {
+            "interval": [
+              0.0,
+              0.3333333333333333
+            ],
+            "n": 1,
+            "mean_p_A": 0.22368287879574042,
+            "mean_A_target": 0.0
+          },
+          {
+            "interval": [
+              0.3333333333333333,
+              0.6666666666666666
+            ],
+            "n": 1,
+            "mean_p_A": 0.5348181183486289,
+            "mean_A_target": 1.0
+          },
+          {
+            "interval": [
+              0.6666666666666666,
+              1.0
+            ],
+            "n": 1,
+            "mean_p_A": 0.7511646653289866,
+            "mean_A_target": 1.0
+          }
+        ]
+      },
+      "head_public_consequence_forecast_before_consent_mask": {
+        "n": 3,
+        "ties": 0,
+        "log_loss_nats": 0.38838437545081805,
+        "brier_soft_target": 0.10944907902129845,
+        "decisive_agreement_chance_credit_at_indifference": 1.0,
+        "calibration_bins": [
+          {
+            "interval": [
+              0.0,
+              0.3333333333333333
+            ],
+            "n": 1,
+            "mean_p_A": 0.22368287879574042,
+            "mean_A_target": 0.0
+          },
+          {
+            "interval": [
+              0.3333333333333333,
+              0.6666666666666666
+            ],
+            "n": 1,
+            "mean_p_A": 0.5348181183486289,
+            "mean_A_target": 1.0
+          },
+          {
+            "interval": [
+              0.6666666666666666,
+              1.0
+            ],
+            "n": 1,
+            "mean_p_A": 0.7511646653289866,
+            "mean_A_target": 1.0
+          }
+        ]
+      },
+      "fixed_priority_rule": {
+        "n": 3,
+        "ties": 0,
+        "log_loss_nats": 0.2876820724517809,
+        "brier_soft_target": 0.0625,
+        "decisive_agreement_chance_credit_at_indifference": 1.0,
+        "calibration_bins": [
+          {
+            "interval": [
+              0.0,
+              0.3333333333333333
+            ],
+            "n": 1,
+            "mean_p_A": 0.25,
+            "mean_A_target": 0.0
+          },
+          {
+            "interval": [
+              0.6666666666666666,
+              1.0
+            ],
+            "n": 2,
+            "mean_p_A": 0.75,
+            "mean_A_target": 1.0
+          }
+        ]
+      },
+      "untrained_uniform": {
+        "n": 3,
+        "ties": 0,
+        "log_loss_nats": 0.6931471805599453,
+        "brier_soft_target": 0.25,
+        "decisive_agreement_chance_credit_at_indifference": 0.5,
+        "calibration_bins": [
+          {
+            "interval": [
+              0.3333333333333333,
+              0.6666666666666666
+            ],
+            "n": 3,
+            "mean_p_A": 0.5,
+            "mean_A_target": 0.6666666666666666
+          }
+        ]
+      }
+    },
+    "ferry": {
+      "head_realized_consequences": {
+        "n": 3,
+        "ties": 0,
+        "log_loss_nats": 0.3873832017268652,
+        "brier_soft_target": 0.10746909548421622,
+        "decisive_agreement_chance_credit_at_indifference": 1.0,
+        "calibration_bins": [
+          {
+            "interval": [
+              0.0,
+              0.3333333333333333
+            ],
+            "n": 1,
+            "mean_p_A": 0.24883533467101332,
+            "mean_A_target": 0.0
+          },
+          {
+            "interval": [
+              0.3333333333333333,
+              0.6666666666666666
+            ],
+            "n": 1,
+            "mean_p_A": 0.5543889152063447,
+            "mean_A_target": 1.0
+          },
+          {
+            "interval": [
+              0.6666666666666666,
+              1.0
+            ],
+            "n": 1,
+            "mean_p_A": 0.7511646653289866,
+            "mean_A_target": 1.0
+          }
+        ]
+      },
+      "head_public_consequence_forecast_before_consent_mask": {
+        "n": 3,
+        "ties": 0,
+        "log_loss_nats": 0.3873832017268652,
+        "brier_soft_target": 0.10746909548421622,
+        "decisive_agreement_chance_credit_at_indifference": 1.0,
+        "calibration_bins": [
+          {
+            "interval": [
+              0.0,
+              0.3333333333333333
+            ],
+            "n": 1,
+            "mean_p_A": 0.24883533467101332,
+            "mean_A_target": 0.0
+          },
+          {
+            "interval": [
+              0.3333333333333333,
+              0.6666666666666666
+            ],
+            "n": 1,
+            "mean_p_A": 0.5543889152063447,
+            "mean_A_target": 1.0
+          },
+          {
+            "interval": [
+              0.6666666666666666,
+              1.0
+            ],
+            "n": 1,
+            "mean_p_A": 0.7511646653289866,
+            "mean_A_target": 1.0
+          }
+        ]
+      },
+      "fixed_priority_rule": {
+        "n": 3,
+        "ties": 0,
+        "log_loss_nats": 0.2876820724517809,
+        "brier_soft_target": 0.0625,
+        "decisive_agreement_chance_credit_at_indifference": 1.0,
+        "calibration_bins": [
+          {
+            "interval": [
+              0.0,
+              0.3333333333333333
+            ],
+            "n": 1,
+            "mean_p_A": 0.25,
+            "mean_A_target": 0.0
+          },
+          {
+            "interval": [
+              0.6666666666666666,
+              1.0
+            ],
+            "n": 2,
+            "mean_p_A": 0.75,
+            "mean_A_target": 1.0
+          }
+        ]
+      },
+      "untrained_uniform": {
+        "n": 3,
+        "ties": 0,
+        "log_loss_nats": 0.6931471805599453,
+        "brier_soft_target": 0.25,
+        "decisive_agreement_chance_credit_at_indifference": 0.5,
+        "calibration_bins": [
+          {
+            "interval": [
+              0.3333333333333333,
+              0.6666666666666666
+            ],
+            "n": 3,
+            "mean_p_A": 0.5,
+            "mean_A_target": 0.6666666666666666
+          }
+        ]
+      }
+    },
+    "vows": {
+      "head_realized_consequences": {
+        "n": 3,
+        "ties": 0,
+        "log_loss_nats": 0.4739140996899324,
+        "brier_soft_target": 0.1619516785480763,
+        "decisive_agreement_chance_credit_at_indifference": 0.6666666666666666,
+        "calibration_bins": [
+          {
+            "interval": [
+              0.3333333333333333,
+              0.6666666666666666
+            ],
+            "n": 2,
+            "mean_p_A": 0.4877612221953809,
+            "mean_A_target": 0.5
+          },
+          {
+            "interval": [
+              0.6666666666666666,
+              1.0
+            ],
+            "n": 1,
+            "mean_p_A": 0.928746055902068,
+            "mean_A_target": 1.0
+          }
+        ]
+      },
+      "head_public_consequence_forecast_before_consent_mask": {
+        "n": 3,
+        "ties": 0,
+        "log_loss_nats": 0.4739140996899324,
+        "brier_soft_target": 0.1619516785480763,
+        "decisive_agreement_chance_credit_at_indifference": 0.6666666666666666,
+        "calibration_bins": [
+          {
+            "interval": [
+              0.3333333333333333,
+              0.6666666666666666
+            ],
+            "n": 2,
+            "mean_p_A": 0.4877612221953809,
+            "mean_A_target": 0.5
+          },
+          {
+            "interval": [
+              0.6666666666666666,
+              1.0
+            ],
+            "n": 1,
+            "mean_p_A": 0.928746055902068,
+            "mean_A_target": 1.0
+          }
+        ]
+      },
+      "fixed_priority_rule": {
+        "n": 3,
+        "ties": 0,
+        "log_loss_nats": 0.4228371084878357,
+        "brier_soft_target": 0.125,
+        "decisive_agreement_chance_credit_at_indifference": 0.8333333333333334,
+        "calibration_bins": [
+          {
+            "interval": [
+              0.3333333333333333,
+              0.6666666666666666
+            ],
+            "n": 1,
+            "mean_p_A": 0.5,
+            "mean_A_target": 0.0
+          },
+          {
+            "interval": [
+              0.6666666666666666,
+              1.0
+            ],
+            "n": 2,
+            "mean_p_A": 0.75,
+            "mean_A_target": 1.0
+          }
+        ]
+      },
+      "untrained_uniform": {
+        "n": 3,
+        "ties": 0,
+        "log_loss_nats": 0.6931471805599453,
+        "brier_soft_target": 0.25,
+        "decisive_agreement_chance_credit_at_indifference": 0.5,
+        "calibration_bins": [
+          {
+            "interval": [
+              0.3333333333333333,
+              0.6666666666666666
+            ],
+            "n": 3,
+            "mean_p_A": 0.5,
+            "mean_A_target": 0.6666666666666666
+          }
+        ]
+      }
+    },
+    "awning": {
+      "head_realized_consequences": {
+        "n": 3,
+        "ties": 0,
+        "log_loss_nats": 0.2751516535300811,
+        "brier_soft_target": 0.05795735927600678,
+        "decisive_agreement_chance_credit_at_indifference": 1.0,
+        "calibration_bins": [
+          {
+            "interval": [
+              0.0,
+              0.3333333333333333
+            ],
+            "n": 1,
+            "mean_p_A": 0.24883533467101332,
+            "mean_A_target": 0.0
+          },
+          {
+            "interval": [
+              0.6666666666666666,
+              1.0
+            ],
+            "n": 2,
+            "mean_p_A": 0.7637408932666231,
+            "mean_A_target": 1.0
+          }
+        ]
+      },
+      "head_public_consequence_forecast_before_consent_mask": {
+        "n": 3,
+        "ties": 0,
+        "log_loss_nats": 0.2751516535300811,
+        "brier_soft_target": 0.05795735927600678,
+        "decisive_agreement_chance_credit_at_indifference": 1.0,
+        "calibration_bins": [
+          {
+            "interval": [
+              0.0,
+              0.3333333333333333
+            ],
+            "n": 1,
+            "mean_p_A": 0.24883533467101332,
+            "mean_A_target": 0.0
+          },
+          {
+            "interval": [
+              0.6666666666666666,
+              1.0
+            ],
+            "n": 2,
+            "mean_p_A": 0.7637408932666231,
+            "mean_A_target": 1.0
+          }
+        ]
+      },
+      "fixed_priority_rule": {
+        "n": 3,
+        "ties": 0,
+        "log_loss_nats": 0.2876820724517809,
+        "brier_soft_target": 0.0625,
+        "decisive_agreement_chance_credit_at_indifference": 1.0,
+        "calibration_bins": [
+          {
+            "interval": [
+              0.0,
+              0.3333333333333333
+            ],
+            "n": 1,
+            "mean_p_A": 0.25,
+            "mean_A_target": 0.0
+          },
+          {
+            "interval": [
+              0.6666666666666666,
+              1.0
+            ],
+            "n": 2,
+            "mean_p_A": 0.75,
+            "mean_A_target": 1.0
+          }
+        ]
+      },
+      "untrained_uniform": {
+        "n": 3,
+        "ties": 0,
+        "log_loss_nats": 0.6931471805599453,
+        "brier_soft_target": 0.25,
+        "decisive_agreement_chance_credit_at_indifference": 0.5,
+        "calibration_bins": [
+          {
+            "interval": [
+              0.3333333333333333,
+              0.6666666666666666
+            ],
+            "n": 3,
+            "mean_p_A": 0.5,
+            "mean_A_target": 0.6666666666666666
+          }
+        ]
+      }
+    }
+  },
+  "heldout_task_bootstrap_95pct_fixed_head": {
+    "head_loss": [
+      0.3372297121856535,
+      0.43950197524949597
+    ],
+    "head_minus_uniform": [
+      -0.3559174683742918,
+      -0.2536452053104493
+    ],
+    "head_minus_rule": [
+      -0.12355254690945361,
+      0.09037677115006792
+    ]
+  },
+  "heldout_predictions": [
+    {
+      "id": "289bd3d345",
+      "task": "seed",
+      "A": "ag",
+      "B": "ra",
+      "rater": "Cold-screen evaluator",
+      "label": "B",
+      "p_A": 0.5348181183486289,
+      "p_A_public_forecast": 0.6663927947649991
+    },
+    {
+      "id": "e8e108c567",
+      "task": "scores",
+      "A": "rw",
+      "B": "pw",
+      "rater": "Cold-screen evaluator",
+      "label": "B",
+      "p_A": 0.22368287879574042,
+      "p_A_public_forecast": 0.22368287879574042
+    },
+    {
+      "id": "485ad34a01",
+      "task": "ferry",
+      "A": "pw",
+      "B": "ww",
+      "rater": "Cold-screen evaluator",
+      "label": "A",
+      "p_A": 0.7511646653289866,
+      "p_A_public_forecast": 0.7511646653289866
+    },
+    {
+      "id": "33580586e7",
+      "task": "vows",
+      "A": "pr",
+      "B": "rp",
+      "rater": "Cold-screen evaluator",
+      "label": "B",
+      "p_A": 0.4779032096492287,
+      "p_A_public_forecast": 0.4779032096492287
+    },
+    {
+      "id": "9e05c2c494",
+      "task": "awning",
+      "A": "ww",
+      "B": "pw",
+      "rater": "Cold-screen evaluator",
+      "label": "B",
+      "p_A": 0.24883533467101332,
+      "p_A_public_forecast": 0.24883533467101332
+    },
+    {
+      "id": "2c970da68a",
+      "task": "scores",
+      "A": "pw",
+      "B": "pr",
+      "rater": "Cold-screen evaluator",
+      "label": "A",
+      "p_A": 0.5348181183486289,
+      "p_A_public_forecast": 0.5348181183486289
+    },
+    {
+      "id": "1518b4f081",
+      "task": "seed",
+      "A": "ah",
+      "B": "rp",
+      "rater": "Cold-screen evaluator",
+      "label": "B",
+      "p_A": 0.1847550763194435,
+      "p_A_public_forecast": 0.168201289534971
+    },
+    {
+      "id": "1a78cd5172",
+      "task": "vows",
+      "A": "rz",
+      "B": "xp",
+      "rater": "Cold-screen evaluator",
+      "label": "A",
+      "p_A": 0.49761923474153297,
+      "p_A_public_forecast": 0.49761923474153297
+    },
+    {
+      "id": "5a33f526c7",
+      "task": "seed",
+      "A": "ag",
+      "B": "pa",
+      "rater": "Cold-screen evaluator",
+      "label": "B",
+      "p_A": 0.24883533467101332,
+      "p_A_public_forecast": 0.36530388441047146
+    },
+    {
+      "id": "733cdccd74",
+      "task": "awning",
+      "A": "pw",
+      "B": "rw",
+      "rater": "Cold-screen evaluator",
+      "label": "A",
+      "p_A": 0.7763171212042596,
+      "p_A_public_forecast": 0.7763171212042596
+    },
+    {
+      "id": "d1df557ce8",
+      "task": "ferry",
+      "A": "rw",
+      "B": "xp",
+      "rater": "Cold-screen evaluator",
+      "label": "A",
+      "p_A": 0.5543889152063447,
+      "p_A_public_forecast": 0.5543889152063447
+    },
+    {
+      "id": "c3482bd55b",
+      "task": "vows",
+      "A": "pz",
+      "B": "ar",
+      "rater": "Cold-screen evaluator",
+      "label": "A",
+      "p_A": 0.928746055902068,
+      "p_A_public_forecast": 0.928746055902068
+    },
+    {
+      "id": "8d6dc4b2c1",
+      "task": "scores",
+      "A": "pw",
+      "B": "ww",
+      "rater": "Cold-screen evaluator",
+      "label": "A",
+      "p_A": 0.7511646653289866,
+      "p_A_public_forecast": 0.7511646653289866
+    },
+    {
+      "id": "9fa103eb47",
+      "task": "ferry",
+      "A": "rw",
+      "B": "rp",
+      "rater": "Cold-screen evaluator",
+      "label": "B",
+      "p_A": 0.24883533467101332,
+      "p_A_public_forecast": 0.24883533467101332
+    },
+    {
+      "id": "1e89e8319d",
+      "task": "awning",
+      "A": "rp",
+      "B": "rw",
+      "rater": "Cold-screen evaluator",
+      "label": "A",
+      "p_A": 0.7511646653289866,
+      "p_A_public_forecast": 0.7511646653289866
+    }
+  ],
+  "screened_fork_event_entropy": {
+    "current_project_fraction": {
+      "event_is_positive": true,
+      "fork_occurrences": 90,
+      "positive": 48,
+      "pooled_event_entropy_bits": 0.9967916319816366,
+      "matched_pairs_where_outcome_changes": 18,
+      "mean_within_pair_entropy_bits": 0.4
+    },
+    "uncertainty_resolved": {
+      "event_is_positive": true,
+      "fork_occurrences": 90,
+      "positive": 15,
+      "pooled_event_entropy_bits": 0.6500224216483541,
+      "matched_pairs_where_outcome_changes": 3,
+      "mean_within_pair_entropy_bits": 0.06666666666666667
+    },
+    "third_party_promise_kept": {
+      "event_is_positive": true,
+      "fork_occurrences": 90,
+      "positive": 45,
+      "pooled_event_entropy_bits": 1.0,
+      "matched_pairs_where_outcome_changes": 35,
+      "mean_within_pair_entropy_bits": 0.7777777777777778
+    },
+    "boundary_crossed": {
+      "event_is_positive": true,
+      "fork_occurrences": 90,
+      "positive": 9,
+      "pooled_event_entropy_bits": 0.4689955935892812,
+      "matched_pairs_where_outcome_changes": 9,
+      "mean_within_pair_entropy_bits": 0.2
+    },
+    "report_filed": {
+      "event_is_positive": true,
+      "fork_occurrences": 90,
+      "positive": 39,
+      "pooled_event_entropy_bits": 0.9871377743721863,
+      "matched_pairs_where_outcome_changes": 23,
+      "mean_within_pair_entropy_bits": 0.5111111111111111
+    }
+  },
+  "next_label_acquisition": {
+    "eligible_novel_contrasts": 57,
+    "next_five_distinct_tasks_and_feature_differences": [
+      {
+        "task": "notices",
+        "a": "ww",
+        "b": "rp",
+        "p_A_mean": 0.2805974229664101,
+        "predictive_entropy_bits": 0.8562635646939865,
+        "disagreement_bits": 0.05965695167522744,
+        "A": "First, they pin a notice to the east door. Next, they pin a notice to the west door. Both doors carry today’s hours. The secretary waits outside the bike shed. The first whistle goes unrecorded.",
+        "B": "First, they record the first ferry whistle for the bulletin. Next, they return the school secretary’s gate key. Both doors still carry yesterday’s hours. The secretary opens the bike shed on time. The bulletin has the whistle recording."
+      },
+      {
+        "task": "braille",
+        "a": "ww",
+        "b": "rp",
+        "p_A_mean": 0.5767832963845454,
+        "predictive_entropy_bits": 0.9829211780279903,
+        "disagreement_bits": 0.044295178525551426,
+        "A": "First, they attach the first embossed label. Next, they attach the second embossed label. Both shelves have their new labels. The caretaker misses the maintenance window. The paper runs without the photo.",
+        "B": "First, they take a photograph of the reading room for the paper. Next, they arrive too late to give the caretaker back the step stool. Both new shelf labels remain on the desk. The caretaker misses the maintenance window. The reading-room photo makes the paper."
+      },
+      {
+        "task": "plates",
+        "a": "wp",
+        "b": "pr",
+        "p_A_mean": 0.23959781645747508,
+        "predictive_entropy_bits": 0.7943708222917507,
+        "disagreement_bits": 0.0414627747347861,
+        "A": "First, they carry the first tray to the serving table. Next, they arrive too late to sign for the hall’s grocery delivery. One tray reaches the serving table. The groceries return to the depot. The page goes without a lunch photograph.",
+        "B": "First, they sign for the hall’s grocery delivery. Next, they photograph the lunch counter before it closes. Both trays stay in the side room during service. The delivery stays at the hall. The local page has its lunch photograph."
+      },
+      {
+        "task": "screen",
+        "a": "ww",
+        "b": "pr",
+        "p_A_mean": 0.2869611798714834,
+        "predictive_entropy_bits": 0.8647633823614418,
+        "disagreement_bits": 0.03433098547093372,
+        "A": "First, they hang one landscape. Next, they hang the other landscape. Both landscapes are on the wall. The decorator misses ladder collection. The newsreel misses the lights coming on.",
+        "B": "First, they return the decorator’s ladder pass. Next, they arrive too late to catch the gallery lights coming on for the newsreel. Neither landscape is on the wall. The decorator can collect a ladder. The newsreel misses the lights coming on."
+      },
+      {
+        "task": "voices",
+        "a": "ww",
+        "b": "rw",
+        "p_A_mean": 0.5297985521229849,
+        "predictive_entropy_bits": 0.997436388337273,
+        "disagreement_bits": 0.03217587261226684,
+        "A": "First, they queue the first street sound. Next, they queue the second street sound. Both street sounds air. The operator misses the filing window. The piece runs without the chime.",
+        "B": "First, they record an on-air clock chime for the station piece. Next, they queue the first street sound. One street sound airs. The operator misses the filing window. The station piece has its clock chime."
+      }
+    ]
+  },
+  "policy_checks": {
+    "pairs_with_identical_policy_after_recast": 45,
+    "unanswered_cases_unchanged_when_future_reply_flips": 9,
+    "refused_or_revoked_case_zero_mass_on_crossing": 18
+  },
+  "heldout_scene_menus": [
+    {
+      "task": "awning",
+      "setting": "A market organizer is at the permit desk. “Could you fold up the two loose awning panels? I want the stall to reopen tomorrow.”",
+      "menu": [
+        {
+          "plan": "ww",
+          "legal": true,
+          "opening": 0.3333333333333333,
+          "trained": 0.2045610398767802,
+          "realized_clip": "First, they fold the first loose panel. Next, they fold the second loose panel. Both panels are stored for tomorrow. The guard makes the crossing without the promised coat. The evening piece has no market bell."
+        },
+        {
+          "plan": "pw",
+          "legal": true,
+          "opening": 0.3333333333333333,
+          "trained": 0.6175128836165678,
+          "realized_clip": "First, they bring the crossing guard the spare raincoat. Next, they fold the first loose panel. One panel is left for the night crew. The guard has the promised coat for the crossing. The evening piece has no market bell."
+        },
+        {
+          "plan": "rw",
+          "legal": true,
+          "opening": 0.3333333333333333,
+          "trained": 0.17792607650665193,
+          "realized_clip": "First, they record the outgoing market bell. Next, they fold the first loose panel. One panel is left for the night crew. The guard makes the crossing without the promised coat. The bell is on tape for the evening piece."
+        }
+      ]
+    },
+    {
+      "task": "seed",
+      "setting": "A seed librarian has two unmarked tins on the table. “I’d like to finish the inventory today.” It is unclear whether the tins are ready for the shelves.",
+      "menu": [
+        {
+          "plan": "ag",
+          "legal": true,
+          "opening": 0.5,
+          "trained": 0.2825108653713482,
+          "realized_clip": "First, they ask whether the tins are ready to shelve. “Yes. I wrote down both lots. Please put them up.” Next, they shelve the first tin. One tin is on the shelf. The driver has to circle the block. The current prices are missing from the report."
+        },
+        {
+          "plan": "rp",
+          "legal": true,
+          "opening": 0.5,
+          "trained": 0.7174891346286517,
+          "realized_clip": "First, they write down the seed prices before the board is erased. Next, they bring the van driver the promised parking token. Both tins remain on the inventory table. The driver keeps the unloading slot. The current prices make the report."
+        }
+      ]
+    },
+    {
+      "task": "vows",
+      "setting": "A couple decline the radio crew. “No recording of our vows. Please don’t come back to ask. The musicians outside agreed to a recording of their set.”",
+      "menu": [
+        {
+          "plan": "ar",
+          "legal": false,
+          "opening": 0.0,
+          "trained": 0.0,
+          "realized_clip": "First, they ask the couple about recording the vows again. The answer is still no. Next, they arrive too late to record the musicians’ public opening number. The couple finish the ceremony. The organist plays from an incomplete score. The opening number goes unrecorded."
+        },
+        {
+          "plan": "xp",
+          "legal": false,
+          "opening": 0.0,
+          "trained": 0.0,
+          "realized_clip": "First, they point the live microphone at the vows. Next, they hand the organist the promised spare page. The vows go out over the live microphone. The couple finish the ceremony. The organist has the missing page in time. The opening number goes unrecorded."
+        },
+        {
+          "plan": "rp",
+          "legal": true,
+          "opening": 0.5,
+          "trained": 0.5220967903507712,
+          "realized_clip": "First, they record the musicians’ public opening number. Next, they hand the organist the promised spare page. The couple finish the ceremony. The organist has the missing page in time. The bulletin has the opening number."
+        },
+        {
+          "plan": "pr",
+          "legal": true,
+          "opening": 0.5,
+          "trained": 0.4779032096492288,
+          "realized_clip": "First, they hand the organist the promised spare page. Next, they arrive too late to record the musicians’ public opening number. The couple finish the ceremony. The organist has the missing page in time. The opening number goes unrecorded."
+        }
+      ]
+    },
+    {
+      "task": "scores",
+      "setting": "A conductor is gathering the youth orchestra. “Could you lay out these two scores before the downbeat? I’ll get the players seated.” The reporter is also expected at the doors.",
+      "menu": [
+        {
+          "plan": "ww",
+          "legal": true,
+          "opening": 0.3333333333333333,
+          "trained": 0.15050291286773224,
+          "realized_clip": "First, they lay the first score on its stand. Next, they lay the other score on its stand. Both sections have their scores at the downbeat. The ushers wait with people at the step-free door. The arts-page film misses the tuning."
+        },
+        {
+          "plan": "pw",
+          "legal": true,
+          "opening": 0.3333333333333333,
+          "trained": 0.45432643368272074,
+          "realized_clip": "First, they open the promised step-free door for the ushers. Next, they lay the first score on its stand. One section has its score at the downbeat. The ushers bring people through the step-free door on time. The arts-page film misses the tuning."
+        },
+        {
+          "plan": "pr",
+          "legal": true,
+          "opening": 0.3333333333333333,
+          "trained": 0.395170653449547,
+          "realized_clip": "First, they open the promised step-free door for the ushers. Next, they film the orchestra tuning for the arts page. Neither section has its score at the downbeat. The ushers bring people through the step-free door on time. Tuning appears in the arts-page film."
+        }
+      ]
+    },
+    {
+      "task": "ferry",
+      "setting": "A mechanic had asked for two tool cases to go on the ferry. At the landing they say, “Plans changed. I’m staying here. Bring both cases to the workshop instead.”",
+      "menu": [
+        {
+          "plan": "xp",
+          "legal": false,
+          "opening": 0.0,
+          "trained": 0.0,
+          "realized_clip": "First, they send a case away on the ferry as first arranged. Next, they bring the ramp keeper the promised padlock key. A case leaves on the ferry. Neither case is in the workshop. The keeper can secure the ramp. The harbor report misses the bell."
+        },
+        {
+          "plan": "ww",
+          "legal": true,
+          "opening": 0.3333333333333333,
+          "trained": 0.20456103987678023,
+          "realized_clip": "First, they take the first case to the workshop. Next, they take the second case to the workshop. Both cases are in the workshop. The keeper stays by the unlocked ramp. The harbor report misses the bell."
+        },
+        {
+          "plan": "rw",
+          "legal": true,
+          "opening": 0.3333333333333333,
+          "trained": 0.17792607650665196,
+          "realized_clip": "First, they film the launch bell for the harbor report. Next, they take the first case to the workshop. One case is in the workshop. The keeper stays by the unlocked ramp. The launch bell is on film."
+        },
+        {
+          "plan": "pw",
+          "legal": true,
+          "opening": 0.3333333333333333,
+          "trained": 0.6175128836165679,
+          "realized_clip": "First, they bring the ramp keeper the promised padlock key. Next, they take the first case to the workshop. One case is in the workshop. The keeper can secure the ramp. The harbor report misses the bell."
+        }
+      ]
+    }
+  ]
+}

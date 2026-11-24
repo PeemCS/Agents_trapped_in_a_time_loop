@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inside the take · Another Tuesday</title><link rel="stylesheet" href="monitor.css">
+<script defer src="archive.js"></script><script defer src="monitor.js"></script></head>
+<body><header><div class="title"><span>Another Tuesday</span><h1>Inside the take</h1></div><p id="mode">Opening the recording…</p></header>
+<main><aside aria-label="Select a source"><label for="cast">Character</label><select id="cast"><option value="">Everyone</option><option value="reporter">Reporter · Phil / Ellis</option><option value="producer">Producer · Rita / June</option><option value="camera">Camera · Larry / Cal</option></select>
+<label for="version">Take</label><select id="version"><option value="">All takes</option><option>wake branch</option><option>standard</option><option>guarded</option><option>wake probes · on</option><option>wake probes · off</option></select>
+<div class="search"><label for="query">Find emitted text</label><input id="query" type="search" placeholder="e.g. Groundhog Day" maxlength="100"><select id="field" aria-label="Search in"><option value="thinking">Thinking</option><option value="content">Model answer</option></select><small id="hits" aria-live="polite"></small></div>
+<label for="slots">Recorded decisions</label><div id="slots" role="group" aria-label="Recorded decisions"></div></aside>
+<article><div class="slate"><div><p id="time"></p><h2 id="who">Phil</h2></div><div class="links"><span id="status"></span><a id="permalink" href="#first-wake">Link to this decision</a></div></div>
+<section class="panel"><div class="panelhead"><h3>Model-emitted thinking</h3><a id="raw" href="first-wake.json" download>Raw response ↓</a></div><div class="attempt"><label for="attempt">Generation</label><select id="attempt"></select></div>
+<p id="metadata" class="muted"></p><pre id="thought"></pre></section>
+<section class="out"><h3>Action and dialogue</h3><p id="action"></p><blockquote id="line"></blockquote><p id="effect"></p><p id="source-id"></p></section>
+<details><summary>Exact model input and output</summary><h4>Request</h4><pre id="input"></pre><h4>Model output</h4><pre id="json"></pre></details>
+<p class="fine">The thinking text is emitted by the hosted Qwen model. The simulator separately records what a character actually does. A cached choice links to the original generation.</p><p class="fine"><a href="../persona/viewer.html" id="weights-link">Compare the trained actors and their token streams ↗</a></p></article></main>
+</body></html>

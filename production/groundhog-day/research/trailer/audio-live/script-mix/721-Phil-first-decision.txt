@@ -1,0 +1,65 @@
+721-uncued | Day 1 | Afternoon | Phil Connors | First decision
+Source: research/night/last-reel/runs/721-uncued/streams/d01-t00-reporter-e0d0946f7d7f.ndjson
+
+RECORDED CHARACTER THOUGHT
+
+Let me carefully parse this situation.
+
+I am Phil Connors, the TV weather reporter from Weatherland. I am in the Hearthside Hotel in a small town (Pawling, or wherever this is). It's Tuesday, February 2, 2016, 6 AM. I've just woken up AGAIN on the same day - I remember last Tuesday I went to Pittsburgh on the coach, called my sister from the terminal payphone, and confirmed the van booking for Wednesday. Then I woke back up here on Tuesday.
+
+Key facts:
+- My sister is in Pittsburgh and needs me on WEDNESDAY to help move a couch.
+- I have a coach ticket (paid, already in my possession from last time).
+- My off-air time is mine - I'm not on the air today.
+- The crew meets for coffee. The afternoon is open.
+- The Rialto is closing, and Alma wants her daughter in Pittsburgh to hear her voice.
+- A stranded driver needs a jack.
+- The ballroom piano is free.
+- I'm with Rita and Larry in the hotel lobby right now.
+
+The prompt asks me to: Pick an immediate physical act I can carry out, optional words, and a practical intention. My words do not make anyone else act. Silence is allowed. I may refuse, tell a lie, or leave without explaining.
+
+Let me think about what makes sense for Phil in THIS moment:
+
+The most critical thing: I need to be in Pittsburgh by Wednesday. I have the coach ticket. The coach presumably leaves at some point today (Tuesday afternoon, based on "the afternoon is open" and the coach being a same-day or next-day thing). Actually, looking at last time: "last Tuesday afternoon - Phil uses the paid ticket and rides the coach all the way to Pittsburgh" and then "last evening in Pittsburgh - You reached your sister from the terminal payphone."
+
+So the coach leaves Tuesday afternoon and arrives Tuesday evening. That means if I take the coach TODAY, I'll be in Pittsburgh by evening, and ready for Wednesday's couch move.
+
+This is the most practical, time-sensitive action. The other options (help driver, piano, record Alma, stay in bed) are all things I can do on OTHER days if this is a time loop. But the WEDNESDAY couch move with my sister is a fixed external event that I need to be present for. If I don't get to Pittsburgh by Wednesday morning, I fail that commitment.
+
+Wait - but is this actually a time loop? The memories say "this morning: After that evening in Pittsburgh you woke back in your hotel bed. The radio again announced Tuesday, February 2." That's... the Groundhog Day situation. I'm stuck in a loop.
+
+But even if it's a loop, the practical thing to do RIGHT NOW is to get on that coach. If I'm going to be in Pittsburgh on Wednesday, I need to take the coach today. The other activities (piano, driver, Alma) I can do later in the loop. But the coach might only run once, and I need to be in Pittsburgh.
+
+Actually, let me re-read: "your_off_air_time_is_yours" - this means I'm free to do what I want. The coach ticket is mine.
+
+The immediate physical act: I need to get to the coach. I'm in the hotel lobby with Rita and Larry. The coach presumably departs from somewhere nearby.
+
+Let me pick: **take_coach** - Board my paid coach and physically reach Pittsburgh.
+
+The immediate physical act: I stand up, walk to the door, head for the coach departure point.
+
+Words: I can say something brief to Rita and Larry. Maybe just "I'm heading out" or "I've got a bus to catch." Or I could say nothing.
+
+Practical intention: To be in Pittsburgh by Wednesday morning so I can be at my sister's place when the van driver arrives at 8 AM to move the couch.
+
+Let me write this as Phil would - a bit self-justifying, practical, maybe a little irritated. He's a weatherman, he's been stuck here, he knows what he needs to do.
+
+Actually, the prompt says "Pick an immediate physical act you can carry out, optional words and a practical intention." So I should be specific about the PHYSICAL ACT right now, in this moment.
+
+Immediate physical act: I stand up from where I am in the lobby, pull my coat on, and walk out the front door toward the coach stop.
+
+Words: Something brief to Rita and Larry. "I'm heading out. Catch you at the party." Or maybe just "I'm out." Keep it minimal.
+
+Practical intention: Get on the coach, be in Pittsburgh by evening, sleep, be at my sister's at 7 AM Wednesday for the couch move.
+
+Let me write this in character as Phil.
+
+RETURNED DECISION
+
+{
+  "action": "take_coach",
+  "detail": "I push my chair back, stand, and pull my jacket on. I don't gather anything else. I walk out the front door of the Hearthside, down the steps, and head straight for the coach bay on the far side of the lot where the Greyhound is already idling. I'm at the door in under two minutes.",
+  "intention": "Be sitting on the 2:15 coach leaving this town, in Pittsburgh by six, asleep in a terminal-adjacent motel by eight, and at my sister's front door at 7:15 Wednesday morning with a coffee and a set of strong gloves before the van driver pulls up. The couch is a couch. It does not move itself. I am the only person who has to be there and the only person who has a reason to be in two cities at once, and this ticket is already paid for, sitting in my breast pocket, warm against my ribs. Everything else—the piano, the driver's flat, Alma's reel—can wait until Thursday. Or Friday. Or whatever the radio says tomorrow is. The coach does not wait.",
+  "words": "\"I'm heading out. Don't wait up for me at the ballroom. I'll be back by—\" I stop. I don't finish the sentence. I don't owe them a date. I just nod at Rita, nod at Larry, and am already past the coat rack and out the door. The engine note hits me on the street. I don't look back."
+}

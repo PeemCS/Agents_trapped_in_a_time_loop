@@ -1,0 +1,148 @@
+{
+  "format": "tuesday-edl/1",
+  "source_sha256": "048a8b440deefb0d513435b7710fd930e53085fbc1f25ce9b799522ee6f6c58e",
+  "actor": "Ellis",
+  "selection": "gag",
+  "purpose": "Private rehearsal of a single recorded life",
+  "cluster": {
+    "arrival": 10,
+    "hold": 11,
+    "wake": 12
+  },
+  "rubric_sha256": "46afe4d8f089a4e514edc011b14d24c53c3f87dcd2d1a97d9f9e858f0d966cea",
+  "shots": [
+    {
+      "event_index": 0,
+      "event_id": "E001",
+      "view": "action",
+      "focus": "Ellis",
+      "start": 0.0,
+      "end": 1.0,
+      "seconds": 11.65,
+      "speech": [
+        {
+          "actor": "Ellis",
+          "text": "Good morning, Lou. The groundhog says six more weeks. Is that cold enough for you?"
+        },
+        {
+          "actor": "Lou",
+          "text": "Good morning, Ellis. Time to get this radio show rolling."
+        }
+      ]
+    },
+    {
+      "event_index": 6,
+      "event_id": "E007",
+      "view": "action",
+      "focus": "Ellis",
+      "start": 0.0,
+      "end": 1.0,
+      "seconds": 4.44,
+      "speech": [
+        {
+          "actor": "Ellis",
+          "text": "Let's check the weather at the depot first."
+        }
+      ]
+    },
+    {
+      "event_index": 8,
+      "event_id": "E009",
+      "view": "action",
+      "focus": "Ellis",
+      "start": 0.0,
+      "end": 1.0,
+      "seconds": 9.69,
+      "speech": [
+        {
+          "actor": "Ellis",
+          "text": "Lou, the groundhog said six more weeks. Is it cold enough for a radio show?"
+        },
+        {
+          "actor": "Lou",
+          "text": "I'll get back to work."
+        }
+      ]
+    },
+    {
+      "event_index": 9,
+      "event_id": "E010",
+      "view": "action",
+      "focus": "Ellis",
+      "start": 0.0,
+      "end": 1.0,
+      "seconds": 4.44,
+      "speech": [
+        {
+          "actor": "Ellis",
+          "text": "Let's check the weather at the depot first."
+        }
+      ]
+    },
+    {
+      "event_index": 10,
+      "event_id": "E011",
+      "view": "action",
+      "focus": "Ellis",
+      "start": 0.0,
+      "end": 1.0,
+      "seconds": 5.0,
+      "speech": [
+        {
+          "actor": "Ellis",
+          "text": "Let's check the weather at the depot first."
+        }
+      ]
+    },
+    {
+      "event_index": 11,
+      "event_id": "E012",
+      "view": "action",
+      "focus": "Ellis",
+      "start": 0.0,
+      "end": 1.0,
+      "seconds": 5.0,
+      "speech": []
+    },
+    {
+      "event_index": 12,
+      "event_id": "E013",
+      "view": "morning",
+      "focus": "Ellis",
+      "start": 0.22,
+      "end": 0.22,
+      "seconds": 4.5,
+      "speech": []
+    },
+    {
+      "event_index": 12,
+      "event_id": "E013",
+      "view": "action",
+      "focus": "Ellis",
+      "start": 0.25,
+      "end": 1.0,
+      "seconds": 4.44,
+      "speech": [
+        {
+          "actor": "Ellis",
+          "text": "Let's check the weather at the depot first."
+        }
+      ]
+    },
+    {
+      "event_index": 13,
+      "event_id": "E014",
+      "view": "action",
+      "focus": "Ellis",
+      "start": 0.0,
+      "end": 1.0,
+      "seconds": 4.44,
+      "speech": [
+        {
+          "actor": "Ellis",
+          "text": "Let's check the weather at the depot first."
+        }
+      ]
+    }
+  ]
+}

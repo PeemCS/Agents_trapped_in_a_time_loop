@@ -1,0 +1,114 @@
+[
+  {
+    "actor": "Phil",
+    "type": "unspoken model note",
+    "text": "In the film, the ending is Phil playing piano. He hasn't tested this theory yet. The ballroom piano is free. This is the most direct test of his hypothesis.",
+    "start": 0.0,
+    "end": 10.333333333333334,
+    "event": "d01-afternoon-reporter"
+  },
+  {
+    "actor": "Town",
+    "type": "stage",
+    "text": "Phil plays the last eight bars until he can get through them.",
+    "start": 10.333333333333334,
+    "end": 15.833333333333334,
+    "event": "d01-afternoon-reporter"
+  },
+  {
+    "actor": "Larry",
+    "type": "spoken",
+    "text": "Taking the charge. Alma's got a girl in Pittsburgh and the place is going dark. You guys shoot the ballroom tonight, I'll be back.",
+    "start": 16.233333333333334,
+    "end": 23.905541666666668,
+    "event": "d01-afternoon-camera"
+  },
+  {
+    "actor": "Phil",
+    "type": "unspoken model note",
+    "text": "At a table. In the ballroom. Among the party.",
+    "start": 24.5,
+    "end": 28.833333333333332,
+    "event": "d01-evening-reporter"
+  },
+  {
+    "actor": "Town",
+    "type": "stage",
+    "text": "Phil sits on the empty depot bench.",
+    "start": 28.833333333333332,
+    "end": 33.95833333333333,
+    "event": "d01-evening-reporter"
+  },
+  {
+    "actor": "Town",
+    "type": "stage",
+    "text": "Rita goes dancing at the ballroom.",
+    "start": 33.958333333333336,
+    "end": 38.958333333333336,
+    "event": "d01-evening-producer"
+  },
+  {
+    "actor": "Town",
+    "type": "stage",
+    "text": "Tuesday, February 2. Six am in the Hearthside Hotel.",
+    "start": 38.958333333333336,
+    "end": 43.083333333333336,
+    "event": "d02-afternoon-reporter"
+  },
+  {
+    "actor": "Town",
+    "type": "stage",
+    "text": "Phil rides the coach and steps off at Pittsburgh.",
+    "start": 43.083333333333336,
+    "end": 48.0,
+    "event": "d02-afternoon-reporter"
+  },
+  {
+    "actor": "Town",
+    "type": "stage",
+    "text": "Rita records Alma at the Rialto and puts her recording on the patch.",
+    "start": 48.0,
+    "end": 52.5,
+    "event": "d02-afternoon-producer"
+  },
+  {
+    "actor": "Town",
+    "type": "stage",
+    "text": "Phil sleeps on the Pittsburgh terminal bench.",
+    "start": 52.5,
+    "end": 57.333333333333336,
+    "event": "d02-evening-reporter"
+  },
+  {
+    "actor": "Larry",
+    "type": "spoken",
+    "text": "Second take. She talked longer than the first. Charge died on the third word of the fourth sentence. You'll hear it.",
+    "start": 57.733333333333334,
+    "end": 64.85320833333333,
+    "event": "d02-evening-camera"
+  },
+  {
+    "actor": "Rita",
+    "type": "spoken",
+    "text": "It's going to her. You don't have to say thank you. Go home, Alma.",
+    "start": 65.81666666666668,
+    "end": 70.14404166666668,
+    "event": "d02-evening-producer"
+  },
+  {
+    "actor": "Town",
+    "type": "stage",
+    "text": "Tuesday, February 2. Six am in the Hearthside Hotel.",
+    "start": 70.70833333333333,
+    "end": 74.54166666666666,
+    "event": "d03-afternoon-reporter"
+  },
+  {
+    "actor": "Town",
+    "type": "stage",
+    "text": "I know that voice. Play it again.",
+    "start": 74.54166666666667,
+    "end": 80.25,
+    "event": "d03-afternoon-reporter"
+  }
+]

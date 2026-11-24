@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><link rel="icon" href="data:,"><title>Play It Again · screening room</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>*{box-sizing:border-box}html,body{margin:0;background:#080a0a;color:#eee;height:100%;font:14px system-ui}body{display:grid;place-content:center}canvas{display:block;width:min(100vw,233vh);height:auto}#message{position:fixed;bottom:4vh;left:5vw;text-shadow:0 1px 4px black}#transport:not([hidden]){display:flex;align-items:center;gap:1rem;padding:.6rem 1rem;background:#12171a}#scrub{flex:1;accent-color:#c5aa88}button{color:#eee8db;background:#242b2f;border:1px solid #596166;border-radius:4px;padding:.4rem 1rem}output{font-variant-numeric:tabular-nums}</style>
+<canvas id="picture"></canvas><div id="message"></div>
+<div id="transport" hidden><button id="play">Play</button><input id="scrub" aria-label="Film position" type="range" min="0" max="107.958" step="any" value="0"><output id="time">0:00</output></div>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+<script type="module" src="projection.js"></script>

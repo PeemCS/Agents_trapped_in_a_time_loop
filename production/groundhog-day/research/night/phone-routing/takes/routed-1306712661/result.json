@@ -1,0 +1,169 @@
+{
+  "variant": "routed",
+  "sampling_seed": 1306712661,
+  "source_take": "../thinking/runs/guarded/seed-731.json",
+  "source_take_sha256": "c68f58f7f57563cfa3c3c29a476ab4d1abf9a8724e146673b4c018e54e511e10",
+  "checkpoint": "d03-t00-reporter",
+  "reused": false,
+  "request": "takes/routed-1306712661/request.json",
+  "request_sha256": "d00f5b3f5ec22dd2abe50e874a77325394077c41e74ae3fe1d62306d58eeb361",
+  "response": "takes/routed-1306712661/response.ndjson",
+  "response_sha256": "a6e3f11f449e18a1807567f3199fa6b17c3fe39bad94ede1858ddf3e6eb73a00",
+  "stop": "stop",
+  "provider_chunks": 557,
+  "thinking_chars": 1986,
+  "output_tokens": 597,
+  "prompt_tokens": 1395,
+  "actual_error": null,
+  "assembled_provider_text": "takes/routed-1306712661/provider-text.json",
+  "decision": {
+    "action": "call_sister",
+    "detail": "",
+    "intention": "After the call, get the chart ready for Rita's seven o'clock rundown, then catch the one o'clock coach.",
+    "words": "Yeah, it's me. Are you set for Wednesday? Van's booked, I'm hauling the couch. Just confirming you'll have it out by eight."
+  },
+  "world_after": {
+    "positions": {
+      "reporter": "inn",
+      "producer": "inn",
+      "camera": "square"
+    },
+    "marked": false,
+    "weather_tape": false,
+    "aired": false,
+    "dishes": 2,
+    "band_recorded": false,
+    "heard_band": [],
+    "called_sister": true,
+    "camera_battery": 1,
+    "camera_footage": null,
+    "assignments": {
+      "reporter": {
+        "target_role": "reporter",
+        "status": "invited",
+        "event_id": "d03-t00-producer",
+        "invite_id": "d03-t00-producer",
+        "text": "Rita invites Phil on the crew radio to contribute to the evening slot."
+      }
+    },
+    "bulletin": null,
+    "weather_reel_event": null,
+    "camera_take_event": null
+  },
+  "actor_events": {
+    "producer": {
+      "id": "d03-t00-producer",
+      "actor": "Rita",
+      "role": "producer",
+      "day": 3,
+      "clock": "6:00 am",
+      "origin": "inn",
+      "place": "inn",
+      "decision": {
+        "action": "spend_time_here",
+        "detail": "invite_reporter",
+        "intention": "Lock the 7:00 rundown with Phil's weather first, then slot the town band into the same bulletin; confirm his live delivery is set before I wheel the switcher to the studio.",
+        "words": "Phil, good morning—I'm locking the seven o'clock rundown right now. You're on after the ident, live weather, groundhog numbers and all. Got your chart ready?"
+      },
+      "effect": "Rita spends the period at the inn.",
+      "observed": [
+        "Tuesday, February 2, 2016. The local radio plays three bright notes and announces a groundhog forecast in the town square. A delivery van backfires twice.",
+        "Rita spends the period at the inn.",
+        "Phil says: Yeah, it's me. Are you set for Wednesday? Van's booked, I'm hauling the couch. Just confirming you'll have it out by eight.",
+        "Phil makes a phone call from the lobby payphone.",
+        "Rita invites Phil on the crew radio to contribute to the evening slot."
+      ],
+      "observation_sources": [
+        "d03-t00-producer",
+        "d03-t00-reporter"
+      ],
+      "radio_heard": [
+        {
+          "target_role": "reporter",
+          "status": "invited",
+          "event_id": "d03-t00-producer",
+          "invite_id": "d03-t00-producer",
+          "text": "Rita invites Phil on the crew radio to contribute to the evening slot."
+        }
+      ],
+      "signal_status": "sent"
+    },
+    "camera": {
+      "id": "d03-t00-camera",
+      "actor": "Larry",
+      "role": "camera",
+      "day": 3,
+      "clock": "6:00 am",
+      "origin": "square",
+      "place": "square",
+      "decision": {
+        "action": "look_around",
+        "detail": "",
+        "intention": "Be positioned here in the afternoon to use the last battery charge filming the band's performance, framing a wide shot that keeps the cornet player in focus so the newsroom gets festival footage and I get my portrait.",
+        "words": "Morning. Let me see how you're laying this out, folks. Where's the cornet chair sitting in the arrangement?"
+      },
+      "effect": "Larry inspects the square. Your camera battery has 1 take(s) left.",
+      "observed": [
+        "Tuesday, February 2, 2016. The local radio plays three bright notes and announces a groundhog forecast in the town square. A delivery van backfires twice.",
+        "Larry inspects the square. Your camera battery has 1 take(s) left."
+      ],
+      "observation_sources": [
+        "d03-t00-camera"
+      ],
+      "radio_heard": [],
+      "signal_status": "none"
+    },
+    "reporter": {
+      "id": "d03-t00-reporter",
+      "actor": "Phil",
+      "role": "reporter",
+      "day": 3,
+      "clock": "6:00 am",
+      "origin": "inn",
+      "place": "inn",
+      "decision": {
+        "action": "call_sister",
+        "detail": "",
+        "intention": "After the call, get the chart ready for Rita's seven o'clock rundown, then catch the one o'clock coach.",
+        "words": "Yeah, it's me. Are you set for Wednesday? Van's booked, I'm hauling the couch. Just confirming you'll have it out by eight."
+      },
+      "effect": "Phil phones his sister. She confirms the moving van is booked for Wednesday.",
+      "observed": [
+        "Tuesday, February 2, 2016. The local radio plays three bright notes and announces a groundhog forecast in the town square. A delivery van backfires twice.",
+        "Phil phones his sister. She confirms the moving van is booked for Wednesday.",
+        "Rita says: Phil, good morning—I'm locking the seven o'clock rundown right now. You're on after the ident, live weather, groundhog numbers and all. Got your chart ready?",
+        "Rita spends the period at the inn.",
+        "Rita invites Phil on the crew radio to contribute to the evening slot."
+      ],
+      "observation_sources": [
+        "d03-t00-reporter",
+        "d03-t00-producer"
+      ],
+      "radio_heard": [
+        {
+          "target_role": "reporter",
+          "status": "invited",
+          "event_id": "d03-t00-producer",
+          "invite_id": "d03-t00-producer",
+          "text": "Rita invites Phil on the crew radio to contribute to the evening slot."
+        }
+      ],
+      "signal_status": "none"
+    }
+  },
+  "exchange_log": [
+    {
+      "event_id": "d03-t00-reporter/payphone",
+      "source_event_id": "d03-t00-reporter",
+      "actor": "Phil",
+      "from": "inn",
+      "instrument": "hotel lobby payphone",
+      "exchange": "Pittsburgh",
+      "connected_to": "reporter's sister",
+      "confirmed": "Moving van booked for Wednesday",
+      "source_request_sha256": "d00f5b3f5ec22dd2abe50e874a77325394077c41e74ae3fe1d62306d58eeb361",
+      "source_response_sha256": "a6e3f11f449e18a1807567f3199fa6b17c3fe39bad94ede1858ddf3e6eb73a00"
+    }
+  ],
+  "confirmed_call": true
+}

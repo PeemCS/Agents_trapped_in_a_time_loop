@@ -1,0 +1,92 @@
+{
+  "main_seed": 711,
+  "contrast_seed": 712,
+  "criterion": "First numeric eligible comparison seed with a different final bulletin channel. Every completed root counted.",
+  "all_final_bulletins": {
+    "711": {
+      "channel": "producer_live",
+      "source_role": "producer",
+      "source_place": "inn",
+      "selected_by": "Rita",
+      "source_ids": [
+        "d06-t03-producer"
+      ],
+      "delivered_assignments": [
+        "camera",
+        "reporter"
+      ],
+      "spoken": "Good evening, folks. This is Rita on the scene in western Pennsylvania. We are on the air and ready for the forecast.",
+      "footage": null
+    },
+    "712": {
+      "channel": "camera_take",
+      "source_role": "camera",
+      "source_place": "square",
+      "selected_by": "Rita",
+      "source_ids": [
+        "d06-t03-producer",
+        "d06-t03-camera",
+        "d06-t02-camera"
+      ],
+      "delivered_assignments": [
+        "camera"
+      ],
+      "spoken": "",
+      "footage": "the festival"
+    },
+    "713": {
+      "channel": "station_ident",
+      "source_role": null,
+      "source_place": null,
+      "selected_by": "Rita",
+      "source_ids": [
+        "d06-t03-producer"
+      ],
+      "delivered_assignments": [],
+      "spoken": "",
+      "footage": null
+    },
+    "714": {
+      "channel": "producer_live",
+      "source_role": "producer",
+      "source_place": "inn",
+      "selected_by": "Rita",
+      "source_ids": [
+        "d06-t03-producer"
+      ],
+      "delivered_assignments": [],
+      "spoken": "Good evening, folks. Here is your 7 PM update from the square. It is dry and cool tonight. We will see you tomorrow.",
+      "footage": null
+    }
+  },
+  "sources_sha256": {
+    "711": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+    "712": "b23ac8578f5812b7016eba28439a79c7c3804b1e46647e962781f1d0cf728c21",
+    "713": "c62d990e921757718b0ad35f465ab8c47016fc183f4b01de1d65db124efbff90",
+    "714": "2c0ab5dc5ba2faa1ecdebefcfd53ecd8de0e0a4ae49c35a58a021f1bbdece0cd"
+  },
+  "bruin_sha256": "6db13b39651186f28c40b215557251832565b54926be57939b15471a6bcdd5e0",
+  "main_film_sha256": "93b1205eeac9e4bf289c55ad375dd170ed8471f14e337fe4622b70251efb2181",
+  "comparison_board_sha256": "55e38a2eed85c3cf0d9835abff9c1cc608b3da3a1b2a3838bbdac621455f3616",
+  "full_decode": true,
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1280,
+        "height": 720,
+        "nb_frames": "2968"
+      }
+    ],
+    "format": {
+      "duration": "123.666667",
+      "size": "4558838"
+    }
+  },
+  "mp4_sha256": "765ba570619c577b1116d233a2e4e1509cfef090672f3ca9173f063a0de3f204",
+  "cues": 8,
+  "audio_streams": 0
+}

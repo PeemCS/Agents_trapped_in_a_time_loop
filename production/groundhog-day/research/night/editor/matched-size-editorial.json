@@ -1,0 +1,198 @@
+{
+  "q4": [
+    {
+      "cast": "film",
+      "seed": 701,
+      "sha256": "37193251350406a14cc112f17c6b31bb802d3c2a0d8ccc94c4c0305d491c4ec2",
+      "trips": 0,
+      "complete_payoffs": 0,
+      "different_reporter_actions": 7,
+      "stationary_talk_slots": 15,
+      "last_place": "studio",
+      "final_forecast_aired": false,
+      "called_sister_any_day": 0
+    },
+    {
+      "cast": "film",
+      "seed": 702,
+      "sha256": "d0149e8653f74c2a3b3ba91004d7170aa87f14bab02332dd4beab36e0566cbc6",
+      "trips": 4,
+      "complete_payoffs": 3,
+      "different_reporter_actions": 7,
+      "stationary_talk_slots": 11,
+      "last_place": "Pittsburgh",
+      "final_forecast_aired": false,
+      "called_sister_any_day": 1
+    },
+    {
+      "cast": "film",
+      "seed": 703,
+      "sha256": "bf46ba91445a53d9912e6fef8685418debea6d450d42ded502f7b8033916439a",
+      "trips": 0,
+      "complete_payoffs": 0,
+      "different_reporter_actions": 4,
+      "stationary_talk_slots": 16,
+      "last_place": "inn",
+      "final_forecast_aired": false,
+      "called_sister_any_day": 0
+    },
+    {
+      "cast": "film",
+      "seed": 704,
+      "sha256": "cf14c027b563497f86a1e2c64e01e5a7f448890e46ad26327d584ae9e6b43219",
+      "trips": 1,
+      "complete_payoffs": 1,
+      "different_reporter_actions": 7,
+      "stationary_talk_slots": 10,
+      "last_place": "inn",
+      "final_forecast_aired": false,
+      "called_sister_any_day": 0
+    },
+    {
+      "cast": "neutral",
+      "seed": 701,
+      "sha256": "425d4d6fc20898286b786672299922671ea02258371c615f1a9517c98cd41e3e",
+      "trips": 0,
+      "complete_payoffs": 0,
+      "different_reporter_actions": 7,
+      "stationary_talk_slots": 13,
+      "last_place": "inn",
+      "final_forecast_aired": false,
+      "called_sister_any_day": 0
+    },
+    {
+      "cast": "neutral",
+      "seed": 702,
+      "sha256": "c3342adb518057c1b9605c485a7a0415e5b8c1be6babeb318b1c8a19304f9fd2",
+      "trips": 3,
+      "complete_payoffs": 3,
+      "different_reporter_actions": 6,
+      "stationary_talk_slots": 10,
+      "last_place": "inn",
+      "final_forecast_aired": false,
+      "called_sister_any_day": 1
+    },
+    {
+      "cast": "neutral",
+      "seed": 703,
+      "sha256": "4a5710f3e82dd6d7a254968e502328b1954028bea8e348661c7619f47d8d474c",
+      "trips": 0,
+      "complete_payoffs": 0,
+      "different_reporter_actions": 5,
+      "stationary_talk_slots": 14,
+      "last_place": "inn",
+      "final_forecast_aired": false,
+      "called_sister_any_day": 0
+    },
+    {
+      "cast": "neutral",
+      "seed": 704,
+      "sha256": "d3fa9906d9eabc3c18e5f2a323da6e1a3f3ff9995a95f0d7343d7abcb0b126bc",
+      "trips": 1,
+      "complete_payoffs": 1,
+      "different_reporter_actions": 7,
+      "stationary_talk_slots": 15,
+      "last_place": "inn",
+      "final_forecast_aired": false,
+      "called_sister_any_day": 1
+    }
+  ],
+  "q27": [
+    {
+      "cast": "film",
+      "seed": 701,
+      "sha256": "e00c059b31452a7358d24f1aed8947af67fbd1ea38c94b58aa85fa15e8415b95",
+      "trips": 0,
+      "complete_payoffs": 0,
+      "different_reporter_actions": 5,
+      "stationary_talk_slots": 16,
+      "last_place": "inn",
+      "final_forecast_aired": false,
+      "called_sister_any_day": 0
+    },
+    {
+      "cast": "film",
+      "seed": 702,
+      "sha256": "b0e3497d0cf5ec1bbb588f96954d83fc9649dbdc4ddbde6cb38c0aac85de731a",
+      "trips": 1,
+      "complete_payoffs": 0,
+      "different_reporter_actions": 5,
+      "stationary_talk_slots": 17,
+      "last_place": "Pittsburgh",
+      "final_forecast_aired": false,
+      "called_sister_any_day": 0
+    },
+    {
+      "cast": "film",
+      "seed": 703,
+      "sha256": "ba92c3ec1294d3ab9ea2451b6b3059201d4cee71dde3f3dc1d1a3d2129f25e39",
+      "trips": 1,
+      "complete_payoffs": 1,
+      "different_reporter_actions": 6,
+      "stationary_talk_slots": 17,
+      "last_place": "studio",
+      "final_forecast_aired": false,
+      "called_sister_any_day": 1
+    },
+    {
+      "cast": "film",
+      "seed": 704,
+      "sha256": "a420bbbb7c44482c4d10d07ff86e1964b2a8a241a1f438dee6984df9530e754b",
+      "trips": 2,
+      "complete_payoffs": 2,
+      "different_reporter_actions": 8,
+      "stationary_talk_slots": 12,
+      "last_place": "inn",
+      "final_forecast_aired": false,
+      "called_sister_any_day": 1
+    },
+    {
+      "cast": "neutral",
+      "seed": 701,
+      "sha256": "265cdd405322e5eb26a0f589d7bda1dde5d2e7bf2a4dbb945b04a2564284a7d0",
+      "trips": 2,
+      "complete_payoffs": 1,
+      "different_reporter_actions": 5,
+      "stationary_talk_slots": 18,
+      "last_place": "Pittsburgh",
+      "final_forecast_aired": false,
+      "called_sister_any_day": 1
+    },
+    {
+      "cast": "neutral",
+      "seed": 702,
+      "sha256": "cb3415220dfccbea19c6802d3920c9384fe00e2375448d85bc605d2a7a2005eb",
+      "trips": 2,
+      "complete_payoffs": 1,
+      "different_reporter_actions": 7,
+      "stationary_talk_slots": 16,
+      "last_place": "Pittsburgh",
+      "final_forecast_aired": false,
+      "called_sister_any_day": 1
+    },
+    {
+      "cast": "neutral",
+      "seed": 703,
+      "sha256": "34dfe8d46792018322f7226350eb4d538bfc9ba6fb6a141951e54530a39329f3",
+      "trips": 4,
+      "complete_payoffs": 3,
+      "different_reporter_actions": 7,
+      "stationary_talk_slots": 13,
+      "last_place": "Pittsburgh",
+      "final_forecast_aired": false,
+      "called_sister_any_day": 1
+    },
+    {
+      "cast": "neutral",
+      "seed": 704,
+      "sha256": "217c53b59b23734b0070f82f653444187d6ac960e01679e94db3a2f18affa802",
+      "trips": 0,
+      "complete_payoffs": 0,
+      "different_reporter_actions": 7,
+      "stationary_talk_slots": 15,
+      "last_place": "inn",
+      "final_forecast_aired": false,
+      "called_sister_any_day": 0
+    }
+  ]
+}

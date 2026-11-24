@@ -1,0 +1,22 @@
+# Extended-thinking ensemble
+
+At the user’s request, make the model’s exposed reasoning directly inspectable. The first sample is a new draw at the existing seed-701 Pittsburgh-to-hotel boundary. The full town experiment uses Qwen3.8:27b, seed 731, four days, all three roles, the full film names on the call sheet, and the seven o’clock bulletin. The standard take gets the ordinary role cards. A matched persona take changes only Phil’s private role card by adding a dry, guarded disposition and interest in unnoticed work. It names no love interest or movie and requests no emotional arc. Both use the published Ollama thinking channel, an 8,192-token context, up to 4,096 generated tokens per initial decision and a larger 6,144-token cap for a format retry. A stop reason of length is exposed; first attempts remain in the record. Effective room for an answer also depends on the prompt length.
+
+Archive every streamed provider NDJSON object and its original request. Record the complete emitted reasoning and final output as separate fields, generation latencies, decode seeds, token counts, streamed chunks, stop reason and validation outcome. Show cache hits as links to their original response. Actors see the same witnessed events and memory scheme in these two arms. Their next-turn input does not include other actors’ reasoning transcripts. Log inspection is an observer feature. Do not add summaries in place of the original text.
+
+Rate explicit film comparisons in separate channels for emitted thinking, spoken words and experiments physically attempted. Detect holiday references separately. Preserve false theories and product-like deliberation, including traces that read like a model selecting from a menu. A model may perform a role or rationalize its choice. Causal claims about what drove its behavior still require an intervention. These two four-day takes are a case study from one seed.
+
+The full cultural-cue and no-thinking control cohorts were already frozen. The first live post-trip thinking probe ran during the last original holdout pair; report that overlap for timing comparability. New held-out thinking films and parameter-efficient training are additional treatments.
+
+## Find an actor's actual output
+
+| Rehearsal | What was saved | Where to read it |
+| --- | --- | --- |
+| Standard and guarded four-day casts | Every native provider stream, original input, decoding seed, final JSON, finish status, exact cache origin, physical effect | [Actor monitor](index.html) |
+| Rialto, free gestures, two-channel gestures and matched wake probes | Complete model-emitted thinking for thinking-on calls. Free gestures and wake probes used the native synchronous response. Rialto actors and its epilogues used the stream journal. The 1,536-token probe cap can leave a visible trace with an unusable final action. | [Monitor with source selection](index.html) |
+| Lost and retained movie theory | Original no-note wake, the actor's exact prior note and a matched edit that removes the explicit title. All sampled attempts and physical branch outcomes. | [Own-note intervention](../self-memory/results.md) |
+| Rita’s life interview and private cassette | Independent booth choices, full inputs and emitted answers. The cassette player switches between individual actors’ observation rights. | [Interview results](../interview/findings.md) · [Cassette exhibit](../secrets/exhibit.html) |
+| Two independently trained 1.7B adapters | 264 generated responses and associated training/serving receipts. The offline comparison loads 144 original scenes across four casting choices. Additional recovery, costly-seat and branching scenes are linked from the report. | [Token-level viewer](../persona/viewer.html) · [Weight-study index](../persona/findings.md) |
+| Original casting grids and 48 voice memos | The native think switch was off. Actor-visible inputs, generated words, final decisions and physical effects remain inspectable. | [Casting data](../casting/protocol.md) · [Private memo experiment](../audition/protocol.md) |
+
+To run the live monitor from the project root, use `python3 -B research/night/thinking/monitor.py --port 18767`. Opening `index.html` directly loads the last portable recording. The provider's native output fields are the authority for what was emitted. An action is executable only after it passes the game schema. A note can name the movie, misread the clock or imagine a ballroom while the actual actor walks to the depot. [Ollama thinking API](https://docs.ollama.com/capabilities/thinking)

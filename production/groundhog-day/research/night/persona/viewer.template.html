@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Phil’s audition · Persona monitor</title>
+<style>
+:root{font:16px/1.5 "Inter",system-ui,sans-serif;color:#e8e7df;background:#151717;--panel:#1e2020;--rule:#414644;--muted:#b4b9b3;--good:#9cdeba;--bad:#f5b6a6}
+*{box-sizing:border-box}body{margin:0}main{max-width:1040px;margin:auto;padding:26px clamp(16px,4vw,48px) 60px}h1,h2,h3,p{margin:0}h1{font-family:"Instrument Serif",Georgia,serif;font-size:clamp(32px,5vw,49px);font-weight:500;line-height:1.05}h2{font:600 19px/1.3 "Inter",system-ui,sans-serif}h3{font-size:14px;color:var(--muted)}header{display:flex;align-items:end;justify-content:space-between;gap:20px;padding-bottom:20px;border-bottom:1px solid var(--rule)}a{color:#a7d6ff;text-underline-offset:3px}nav{padding:18px 0;display:flex;gap:8px;align-items:center;flex-wrap:wrap}label,button,select{font:inherit}button,select{color:#f3f1e8;background:#272b2a;border:1px solid #515957;border-radius:5px;padding:7px 11px}button{cursor:pointer}button:disabled{opacity:.45;cursor:default}button:focus-visible,select:focus-visible,summary:focus-visible,a:focus-visible{outline:2px solid #a4d8fb;outline-offset:3px}select{flex:1;min-width:140px;max-width:390px}nav label{color:var(--muted)}.glance{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin:0 0 14px}.glance button{text-align:left;border-radius:3px;background:var(--panel);font-size:12px}.glance strong{display:block;font-size:13px}@media(max-width:680px){.glance{grid-template-columns:1fr 1fr}}.case{border-top:2px solid #9faf9d;background:var(--panel);padding:16px 18px}.case pre{font:inherit;max-height:unset}.case h2{margin-bottom:8px}.case-status{color:var(--muted);font-size:13px}.cast{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}.actor{padding:14px 16px;border:1px solid var(--rule);background:var(--panel);min-width:0}.actor h2{font-size:20px;margin-bottom:4px}.eligible,.abstain,.open{font-weight:600}.eligible{color:var(--good)}.abstain{color:var(--bad)}.open{color:#c5d6ed}.meta{font:12px/1.6 "IBM Plex Mono",ui-monospace,monospace;color:var(--muted);margin:6px 0 8px}.chosen{font-size:15px;margin:4px 0 12px}.final{background:#171a19;padding:8px 10px;margin:4px 0 11px}pre{white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word;font:13px/1.5 "IBM Plex Mono",ui-monospace,monospace;margin:0;max-height:28rem;overflow:auto}details{border-top:1px solid var(--rule);padding:5px 0}details pre{margin:6px 0 8px}summary{cursor:pointer;font-size:13px;color:#d2dbd2}footer{margin-top:20px;color:var(--muted);font-size:13px}.source{margin-top:8px;font-size:12px}.muted{color:var(--muted)}@media(max-width:680px){.cast{grid-template-columns:1fr}header{display:block}header a{display:inline-block;margin-top:8px}main{padding-top:18px}nav{gap:6px}nav label{width:100%}nav select{min-width:130px}.case{padding:12px}.actor{padding:12px}}
+</style>
+</head>
+<body>
+<main>
+<header><h1>Phil’s audition</h1><a href="story-takes.md">Read the branching film</a></header>
+<nav aria-label="Case navigation"><label for="pick">Held-out scene</label><select id="pick"></select><button id="prev" type="button" aria-label="Previous scene">Previous</button><button id="next" type="button" aria-label="Next scene">Next</button></nav>
+<div id="glance" class="glance" aria-label="Jump to actor output"></div>
+<section class="case" aria-labelledby="case-title"><p id="counter" class="case-status"></p><h2 id="case-title"></h2><details id="case-details" open><summary>Scene and available actions</summary><pre id="prompt"></pre></details></section>
+<section id="cast" class="cast" aria-label="Actor outputs"></section>
+<footer>All four actors used the native thinking template. A menu action requires an EOS-complete visible decision after the thinking separator. The token stream retains every emitted ID through EOS or the length limit. Each source link opens the full local JSONL archive. <a href="original-findings.md">Original findings</a></footer>
+</main>
+<script type="application/json" id="observations"><!--AUDIT_DATA--></script>
+<script>
+'use strict';
+const cases=JSON.parse(document.getElementById('observations').textContent);
+const pick=document.getElementById('pick'),cast=document.getElementById('cast');
+function node(tag,text,cls){const item=document.createElement(tag);if(text!==undefined)item.textContent=text;if(cls)item.className=cls;return item;}
+function detail(label,text){const wrap=node('details');wrap.append(node('summary',label),node('pre',text));return wrap;}
+for(const [index,c] of cases.entries()){const opt=node('option',c.id);opt.value=String(index);pick.append(opt);}
+function render(){
+  const hash=location.hash.slice(1);
+  let i=cases.findIndex(c=>c.id===hash);
+  if(i<0)i=cases.findIndex(c=>c.id==='greenhouse-0-0');
+  const c=cases[i];pick.value=String(i);
+  document.getElementById('counter').textContent='Scene '+(i+1)+' of '+cases.length;
+  document.getElementById('case-title').textContent=c.id;
+  document.getElementById('prev').disabled=i===0;document.getElementById('next').disabled=i===cases.length-1;
+  document.getElementById('prompt').textContent=c.prompt;cast.replaceChildren();
+  const glance=document.getElementById('glance');glance.replaceChildren();
+  for(const a of c.actors){
+    const card=node('article',undefined,'actor');card.append(node('h2',a.actor));
+    let state,cls;
+    if(c.kind==='stage'){state='Open dialogue';cls='open';}
+    else if(a.label){state='Executable decision · '+a.label;cls='eligible';}
+    else{state='Abstention · no action';cls='abstain';}
+    const jump=node('button',a.actor);jump.type='button';jump.append(node('strong',c.kind==='stage'?'Open dialogue':a.label?'Decision '+a.label:'Abstained',cls));
+    jump.addEventListener('click',()=>card.scrollIntoView({block:'start'}));glance.append(jump);
+    card.append(node('p',state,cls));
+    card.append(node('p',[(a.status==='eos'?'EOS reached':'Length limit reached'),(a.separator?'thinking separator emitted':'thinking separator missing'),a.tokens.length+' / '+a.limit+' tokens'].join(' · '),'meta'));
+    if(a.label)card.append(node('p',c.menu[a.label==='A'?0:1],'chosen'));
+    card.append(node('h3','Visible final text'));
+    const final=node('pre',a.visible||'No visible final text was emitted.','final');if(!a.visible)final.classList.add('muted');card.append(final);
+    card.append(detail('Emitted thinking text',a.reasoning===null?'No thinking field was observed.':a.reasoning));
+    card.append(detail('Complete decoded output',a.raw),detail('Exact token IDs ('+a.tokens.length+')',JSON.stringify(a.tokens)),
+                detail('System role card',a.card));
+    const src=node('p',undefined,'source');const link=node('a','Source JSONL');link.href=a.source;src.append(link,document.createTextNode(' · line '+a.line+' · seed '+a.seed));card.append(src);
+    cast.append(card);
+  }
+}
+function change(i){if(i>=0&&i<cases.length)location.hash=cases[i].id;}
+pick.addEventListener('change',()=>change(Number(pick.value)));
+document.getElementById('prev').addEventListener('click',()=>change(Number(pick.value)-1));
+document.getElementById('next').addEventListener('click',()=>change(Number(pick.value)+1));
+window.addEventListener('hashchange',render);render();
+</script>
+</body></html>

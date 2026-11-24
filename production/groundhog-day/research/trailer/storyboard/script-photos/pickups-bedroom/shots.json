@@ -1,0 +1,26 @@
+[
+  {
+    "file": "S04-afternoon-wide.jpg",
+    "id": "S04-BED-HOLD",
+    "title": "The afternoon passes",
+    "time": "00:59.3–01:02.0",
+    "beat": "Phil curls onto the quilt in his day clothes. Daylight threads through the drawn curtains. Both feet stay on the mattress.",
+    "lens": "28 mm locked corner",
+    "qa": "Use for the held afternoon. The generated clock face is unreliable for time inserts.",
+    "scene": "S04",
+    "job_id": "5a964711-fd72-4052-a779-f8de0097ef01",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3MWoglBmW0FxDhWYsRkUU6hOp6M/hf_20261124_013932_5a964711-fd72-4052-a779-f8de0097ef01.png"
+  },
+  {
+    "file": "S04-hand-on-quilt.jpg",
+    "id": "S04-COTTON-INSERT",
+    "title": "The feel of the sheets",
+    "time": "01:04.98–01:08.0",
+    "beat": "Phil’s cheek stays on the pillow. His fingers brush a patch seam while his gaze settles past his hand.",
+    "lens": "50 mm objective detail",
+    "qa": "An optional cutaway under the recorded line. Keep the corner wide for the uninterrupted version of the scene.",
+    "scene": "S04",
+    "job_id": "35a2b03c-f9bc-41ec-9c06-ecc21aa1919c",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3MWoglBmW0FxDhWYsRkUU6hOp6M/hf_20261124_013931_35a2b03c-f9bc-41ec-9c06-ecc21aa1919c.png"
+  }
+]

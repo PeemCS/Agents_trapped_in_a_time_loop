@@ -1,0 +1,14 @@
+{
+  "runs": 13,
+  "proposals": 110,
+  "originalTargetsReached": 76,
+  "nearbyTargets": 34,
+  "held": 0,
+  "exactStartRequestsPreserved": 32,
+  "continuousSegments": 144,
+  "maxEndDeviationFromRecorded": 0.5656854249492386,
+  "minimumCrewSeparation": 0.5219432412453604,
+  "staticViolations": 0,
+  "pairViolations": 0,
+  "changedEndpoints": 34
+}

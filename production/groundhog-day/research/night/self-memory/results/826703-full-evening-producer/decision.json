@@ -1,0 +1,14 @@
+{
+  "status": "valid",
+  "decision": {
+    "action": "transmit_interview",
+    "detail": "I am already in the booth. The chair is still warm where I sat beside her. The tape is on the patch, spool half-turned, the head still ticking its tiny click. I don't reach for the label maker. I don't reach for the slug card. I take the regional line handset, press it to my ear, and dial the number I wrote on the back of my hand in Alma's handwriting—she gave it to me, her daughter's number, in the second minute of the interview, quiet, like she was handing over a key. I wait for the ring. I wait for the ring. It picks up. I say: \"Pittsburgh. This is the Rialto. There's a recording for you.\" I press the send key. I watch the level meter climb, hold, fall. I do not cut the line. I sit with the hiss and the room tone and the sound of a projector changing reels in the background, and I let it play all the way through, end to end, before I set the handset down. I leave the booth the way it is. Chair pushed in. Tape on the patch. No title. No slug. No package. Just the file, moving.",
+    "intention": "Get Alma's voice to her daughter tonight. Not tomorrow. Not after the broadcast board decides what's usable. Tonight, before the reel is rewound and the booth is locked and the machine loses another year. One voice. One daughter. No edit. No frame. Just the sound of her, in the room, saying what she says, and the hiss of the tape underneath it. That's the whole thing. That's the piece.",
+    "words": "Pittsburgh. This is the Rialto. There's a recording for you."
+  },
+  "request_hashes": [
+    "ad096eb419fc76168155783c01de7142e5e4ee301ed4bd0204e3b96d189f08ed"
+  ],
+  "attempt": 0,
+  "source": "new draw"
+}

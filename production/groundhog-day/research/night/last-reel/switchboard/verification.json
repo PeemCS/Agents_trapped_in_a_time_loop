@@ -1,0 +1,42 @@
+[
+  {
+    "width": 1366,
+    "transport": "local files",
+    "checkpoints": 18,
+    "verified_ensemble_actions": 54,
+    "movie_dance_unlocks": false,
+    "rita_line_changes_unlock_at_first_checkpoint": true,
+    "errors": [],
+    "external_requests": []
+  },
+  {
+    "width": 390,
+    "transport": "local files",
+    "checkpoints": 18,
+    "verified_ensemble_actions": 54,
+    "movie_dance_unlocks": false,
+    "rita_line_changes_unlock_at_first_checkpoint": true,
+    "errors": [],
+    "external_requests": []
+  },
+  {
+    "width": 1366,
+    "transport": "localhost",
+    "checkpoints": 18,
+    "verified_ensemble_actions": 54,
+    "movie_dance_unlocks": false,
+    "rita_line_changes_unlock_at_first_checkpoint": true,
+    "errors": [],
+    "external_requests": []
+  },
+  {
+    "width": 390,
+    "transport": "localhost",
+    "checkpoints": 18,
+    "verified_ensemble_actions": 54,
+    "movie_dance_unlocks": false,
+    "rita_line_changes_unlock_at_first_checkpoint": true,
+    "errors": [],
+    "external_requests": []
+  }
+]

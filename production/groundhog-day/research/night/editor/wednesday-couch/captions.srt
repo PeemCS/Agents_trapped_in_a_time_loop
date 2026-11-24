@@ -1,0 +1,40 @@
+1
+00:00:00,420 --> 00:00:03,663
+Rita: Morning, Phil. Give me a sec to get my bearings.
+
+2
+00:00:04,732 --> 00:00:11,225
+Larry: Rita, if the newsroom wants festival footage, this is the one I've got to make count. Rolling now.
+
+3
+00:00:12,295 --> 00:00:22,064
+Phil: Rita, it's Tuesday again. I need a straight answer: are we wrapped, or is the camera still rolling? I've got a coach to catch.
+
+4
+00:00:23,108 --> 00:00:26,297
+Phil: I'm done here. I'm heading to the depot.
+
+5
+00:00:28,920 --> 00:00:40,920
+Phil: Hey, it's Phil. I finally made it to Pittsburgh. I'm safe. I'm just calling to make sure I'm still on for Wednesday. I'm free to help move that couch.
+
+6
+00:00:45,482 --> 00:00:48,726
+Rita: Morning, Phil. Give me a sec to get my bearings.
+
+7
+00:00:53,295 --> 00:00:59,664
+Phil: Rita, I'm going to mark the window with a pencil so I can tell this Tuesday from the last one.
+
+8
+00:01:16,795 --> 00:01:22,864
+Phil: Rita, I'm not going back to that room. I'm grabbing a plate and clearing this spot.
+
+9
+00:01:23,920 --> 00:01:27,456
+Phil: Rita, I'm out. See you in Pittsburgh.
+
+10
+00:01:28,545 --> 00:01:33,273
+Phil: Finally. Pittsburgh. I can smell the river from here.
+

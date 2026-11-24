@@ -1,0 +1,139 @@
+{
+  "format": "tuesday-edl/1",
+  "source_sha256": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+  "actor": "Phil",
+  "selection": "predeclared-bulletin",
+  "purpose": "Private held-out root, prior-day chronology followed by the last day in three synchronized monitors.",
+  "cluster": {
+    "arrival": 2,
+    "hold": 3,
+    "wake": 4
+  },
+  "rubric_sha256": "46afe4d8f089a4e514edc011b14d24c53c3f87dcd2d1a97d9f9e858f0d966cea",
+  "shots": [
+    {
+      "event_index": 0,
+      "event_id": "d01-t00-reporter",
+      "view": "action",
+      "focus": "Phil",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 5.0,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "Rita, I'm grabbing some coffee and a bagel at the diner. Be ready to roll in about forty minutes."
+        }
+      ]
+    },
+    {
+      "event_index": 2,
+      "event_id": "d01-t02-reporter",
+      "view": "action",
+      "focus": "Phil",
+      "framing": "street",
+      "start": 0,
+      "end": 1,
+      "seconds": 5.8,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "I'm heading out to catch the one o'clock coach. See you later, everyone."
+        }
+      ]
+    },
+    {
+      "event_index": 3,
+      "event_id": "d01-t03-reporter",
+      "view": "action",
+      "focus": "Phil",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 5.5,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "Well, I'm settled in for the night."
+        }
+      ]
+    },
+    {
+      "event_index": 4,
+      "event_id": "d02-t00-reporter",
+      "view": "morning",
+      "focus": "Phil",
+      "framing": "close",
+      "start": 0.22,
+      "end": 0.22,
+      "seconds": 3.5,
+      "speech": []
+    },
+    {
+      "event_index": 4,
+      "event_id": "d02-t00-reporter",
+      "view": "action",
+      "focus": "Phil",
+      "framing": "close",
+      "start": 0.25,
+      "end": 1,
+      "seconds": 5.0,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "Rita, I'm heading to the diner to grab a coffee and set up the switcher. Let's get that 7 AM bulletin live."
+        }
+      ]
+    },
+    {
+      "event_index": 6,
+      "event_id": "d02-t02-reporter",
+      "view": "action",
+      "focus": "Larry",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 5.0,
+      "speech": [
+        {
+          "actor": "Larry",
+          "text": "I'm rolling on the festival now to secure the B-roll before the ceremony ends. Covering for me on the switcher, Rita?"
+        }
+      ]
+    },
+    {
+      "event_index": 7,
+      "event_id": "d02-t03-reporter",
+      "view": "action",
+      "focus": "Phil",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 5.0,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "Hey, it's Phil. I'm at the terminal now. Let's confirm the van is booked for 8 AM tomorrow? I'll be ready to roll."
+        }
+      ]
+    },
+    {
+      "event_index": 11,
+      "event_id": "d03-t03-reporter",
+      "view": "action",
+      "focus": "Rita",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 5.0,
+      "speech": [
+        {
+          "actor": "Rita",
+          "text": "Larry, are you live? Put me on air."
+        }
+      ]
+    }
+  ],
+  "title": "The Seven O’clock Bulletin"
+}

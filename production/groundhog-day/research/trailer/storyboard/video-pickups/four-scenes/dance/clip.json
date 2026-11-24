@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "file": "clip.mp4",
+  "title": "Phil dances with Rita",
+  "model": "Seedance 2.5",
+  "duration": 5.041667,
+  "job_id": "0590e298-f4af-472c-927e-0aff2d421590",
+  "provider_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3MWoglBmW0FxDhWYsRkUU6hOp6M/hf_20261124_015558_0590e298-f4af-472c-927e-0aff2d421590.mp4",
+  "source_file": "start.jpg",
+  "source_job_id": "e753a3e6-28bd-47a3-8eaa-430de7df7590",
+  "reference_job_id": "1e290831-668f-4d49-96c0-8c367a620d0d",
+  "qa": "H.264 1470\u00d7630, 24 fps. Rita faces Phil and subtle swaying occurs; right hands remain connected but his left hand stays free, so conventional joined dance hold and clear side step are not fully established. Bright room rather than evening."
+}

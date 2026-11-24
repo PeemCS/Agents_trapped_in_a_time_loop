@@ -1,0 +1,42 @@
+[
+  {
+    "actor": "Phil",
+    "type": "spoken",
+    "text": "Rita, Larry—see you at the party. I'm heading to Pittsburgh.",
+    "start": 0.4,
+    "end": 5.636166666666667,
+    "event": "d01-afternoon-reporter"
+  },
+  {
+    "actor": "Town",
+    "type": "stage",
+    "text": "Rita and Larry heard him in the lobby. Both went to the Rialto. Neither saw him empty the envelope.",
+    "start": 7.125,
+    "end": 13.125,
+    "event": "d01-afternoon-producer"
+  },
+  {
+    "actor": "Town",
+    "type": "stage",
+    "text": "Phil lets the evening go by in bed alone.",
+    "start": 13.125,
+    "end": 17.75,
+    "event": "d01-evening-reporter"
+  },
+  {
+    "actor": "Town",
+    "type": "stage",
+    "text": "Tuesday, February 2. Six am in the Hearthside Hotel.",
+    "start": 17.75,
+    "end": 22.166666666666668,
+    "event": "d02-afternoon-reporter"
+  },
+  {
+    "actor": "Town",
+    "type": "stage",
+    "text": "Phil rides the coach and steps off at Pittsburgh.",
+    "start": 22.166666666666668,
+    "end": 28.666666666666668,
+    "event": "d02-afternoon-reporter"
+  }
+]

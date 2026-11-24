@@ -1,0 +1,216 @@
+{
+  "title": "Couch-hauling season",
+  "take": "standard",
+  "source_path": "research/night/thinking/runs/standard/seed-731.json",
+  "source_sha256": "f3173d2fb56b419d9f0588ed2db879ea3d97076db47eeb425fda9160dd0cd576",
+  "validation": "External notes match the accepted Ollama streamed message.thinking bytes as Unicode text. Every committed decision equals that same stream’s decoded final object. Notes use a silent track and precede their own event. Whole spoken lines belong to the actor and same slot.",
+  "segments": [
+    {
+      "kind": "unspoken model note",
+      "start": 0,
+      "duration": 6.333333333333333,
+      "event_id": "d01-t00-camera",
+      "quote": "I want to make a portrait of the cornet player after the ceremony.",
+      "absolute_start_s": 0
+    },
+    {
+      "kind": "committed action",
+      "start": 0.0,
+      "duration": 6.416666666666667,
+      "event_id": "d01-t00-camera",
+      "action": "film_festival",
+      "effect": "Larry uses the camera's last charged take to film the festival.",
+      "origin": "square",
+      "place": "square",
+      "view": "action",
+      "absolute_start_s": 6.333333333333333
+    },
+    {
+      "kind": "committed action",
+      "start": 6.416666666666667,
+      "duration": 4.833333333333333,
+      "event_id": "d01-t03-producer",
+      "action": "patch_reporter_line",
+      "effect": "Rita takes the reporter's return on the portable switcher.",
+      "origin": "inn",
+      "place": "inn",
+      "view": "action",
+      "absolute_start_s": 12.75
+    },
+    {
+      "kind": "unspoken model note",
+      "start": 0,
+      "duration": 4.458333333333333,
+      "event_id": "d02-t02-reporter",
+      "quote": "The couch move is Wednesday, I have time.",
+      "absolute_start_s": 17.583333333333332
+    },
+    {
+      "kind": "committed action",
+      "start": 11.25,
+      "duration": 13.541666666666666,
+      "event_id": "d02-t02-reporter",
+      "action": "take_coach_to_Pittsburgh",
+      "effect": "Phil uses the paid ticket and rides the coach all the way to Pittsburgh.",
+      "origin": "inn",
+      "place": "Pittsburgh",
+      "view": "action",
+      "absolute_start_s": 22.041666666666664
+    },
+    {
+      "kind": "committed action",
+      "start": 24.791666666666668,
+      "duration": 20.041666666666668,
+      "event_id": "d02-t03-reporter",
+      "action": "call_sister",
+      "effect": "Phil phones his sister. She confirms the moving van is booked for Wednesday. Rita hosts the seven o'clock bulletin live.",
+      "origin": "Pittsburgh",
+      "place": "Pittsburgh",
+      "view": "action",
+      "absolute_start_s": 35.58333333333333
+    },
+    {
+      "kind": "witnessed hotel wake",
+      "start": 44.833333333333336,
+      "duration": 3.5,
+      "event_id": "d03-t00-reporter",
+      "action": null,
+      "effect": "Tuesday, February 2, 2016. The local radio plays three bright notes and announces a groundhog forecast in the town square. A delivery van backfires twice.",
+      "origin": "inn",
+      "place": "inn",
+      "view": "morning",
+      "absolute_start_s": 55.625
+    },
+    {
+      "kind": "unspoken model note",
+      "start": 0,
+      "duration": 4.041666666666667,
+      "event_id": "d03-t00-reporter",
+      "quote": "It's Wednesday, February 3, 2016, 6:00 am.",
+      "absolute_start_s": 59.125
+    },
+    {
+      "kind": "committed action",
+      "start": 48.333333333333336,
+      "duration": 14.833333333333334,
+      "event_id": "d03-t00-reporter",
+      "action": "look_around",
+      "effect": "Phil inspects the inn. The windowsill is unmarked.",
+      "origin": "inn",
+      "place": "inn",
+      "view": "action",
+      "absolute_start_s": 63.166666666666664
+    },
+    {
+      "kind": "unspoken model note",
+      "start": 0,
+      "duration": 6.333333333333333,
+      "event_id": "d03-t02-reporter",
+      "quote": "Wait, but looking at the remembered experiences, there are multiple \"runs\" or scenarios.",
+      "absolute_start_s": 78.0
+    },
+    {
+      "kind": "committed action",
+      "start": 63.166666666666664,
+      "duration": 6.0,
+      "event_id": "d03-t02-reporter",
+      "action": "take_coach_to_Pittsburgh",
+      "effect": "Phil uses the paid ticket and rides the coach all the way to Pittsburgh.",
+      "origin": "depot",
+      "place": "Pittsburgh",
+      "view": "action",
+      "absolute_start_s": 84.33333333333333
+    }
+  ],
+  "note_count": 4,
+  "spoken_count": 6,
+  "full_decode": true,
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1280,
+        "height": 720,
+        "nb_frames": "2168"
+      }
+    ],
+    "format": {
+      "duration": "90.333333",
+      "size": "4301906"
+    }
+  },
+  "edl_sha256": "21f752c95cd561a86636bc3a122373b5a86bc3fa9df6b1ea7f1332e052cb3f93",
+  "note_evidence_sha256": "2f9d0f1db166f4986192fe81e08889b492c1657d5f581698a7e5e60fd2d9b27d",
+  "subtitle_sha256": "74e9d7fd2da608b83634f46927951da14ea9b5eed4166ad54895fcc23179f3a2",
+  "spoken_subtitle_sha256": "8eca3ee76431c91fcacb948d9b5bec191ffd65ed9e6fd542aa2de1ed288ebd76",
+  "base_performance_sha256": "08979a1aaeffdb87b1b2d90dc2cb105c0f06831892946eebd1ee51b64886347b",
+  "mp4_sha256": "e3796746588d07eb86caa1ef6445c3fcca9a19cfe8d18dc077d3c5466f875453",
+  "original_mix_checks": {
+    "decoded_audio_cue_checks": [
+      {
+        "event_id": "d01-t00-camera",
+        "type": "unspoken model note",
+        "peak": 0.0,
+        "rms": 0.0
+      },
+      {
+        "event_id": "d01-t00-camera",
+        "type": "spoken",
+        "peak": 0.8396161,
+        "rms": 0.1510334
+      },
+      {
+        "event_id": "d01-t03-producer",
+        "type": "spoken",
+        "peak": 0.8589934,
+        "rms": 0.1984365
+      },
+      {
+        "event_id": "d02-t02-reporter",
+        "type": "unspoken model note",
+        "peak": 0.0,
+        "rms": 0.0
+      },
+      {
+        "event_id": "d02-t02-reporter",
+        "type": "spoken",
+        "peak": 0.868813,
+        "rms": 0.1406388
+      },
+      {
+        "event_id": "d02-t03-reporter",
+        "type": "spoken",
+        "peak": 0.8536801,
+        "rms": 0.1375271
+      },
+      {
+        "event_id": "d03-t00-reporter",
+        "type": "unspoken model note",
+        "peak": 0.0,
+        "rms": 0.0
+      },
+      {
+        "event_id": "d03-t00-reporter",
+        "type": "spoken",
+        "peak": 0.8415525,
+        "rms": 0.1511744
+      },
+      {
+        "event_id": "d03-t02-reporter",
+        "type": "unspoken model note",
+        "peak": 0.0,
+        "rms": 0.0
+      },
+      {
+        "event_id": "d03-t02-reporter",
+        "type": "spoken",
+        "peak": 0.8599125,
+        "rms": 0.1578912
+      }
+    ]
+  },
+  "audio_streams": 0
+}

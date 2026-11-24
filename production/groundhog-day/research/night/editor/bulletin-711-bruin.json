@@ -1,0 +1,325 @@
+{
+  "run_log": "Analyzed the pipeline 'town-projection' with 4 assets.\n\nPipeline: town-projection (..)\n  No issues found\n\n✓ Successfully validated 4 assets across 1 pipeline, all good.\n\nInterval: 2026-11-22T00:00:00Z - 2026-11-22T23:59:59Z\n\nStarting the pipeline execution...\n\n[04:31:17] Running:  town.air_refs\n[04:31:17] [town.air_refs] >> \n[04:31:17] [town.air_refs] >> \n[04:31:17] [town.air_refs] >> Initiated the pipeline with the following:\n[04:31:17] [town.air_refs] >> Source: csv / seed.raw\n[04:31:17] [town.air_refs] >> Destination: duckdb / town.air_refs\n[04:31:17] [town.air_refs] >> Incremental Strategy: replace\n[04:31:17] [town.air_refs] >> Incremental Key: None\n[04:31:17] [town.air_refs] >> Primary Key: None\n[04:31:17] [town.air_refs] >> \n[04:31:17] [town.air_refs] >> \n[04:31:17] [town.air_refs] >> \n[04:31:17] [town.air_refs] >> Starting data ingestion...\n[04:31:17] [town.air_refs] >> [STRATEGY] 04:31:17 | Using staging table: town.air_refs_staging_ee0c1e37bccb481cbe953a5b81e13298\n[04:31:17] [town.air_refs] >> [PROGRESS] 04:31:17 | Rows: 10 | Batches: 1 | Rate: 2966 rows/s | CPU: 115.0% | Mem: 152 MB\n[04:31:17] [town.air_refs] >> \n[04:31:17] [town.air_refs] >> ┌────────────────┬──────────────┐\n[04:31:17] [town.air_refs] >> │     METRIC     │    VALUE     │\n[04:31:17] [town.air_refs] >> ├────────────────┼──────────────┤\n[04:31:17] [town.air_refs] >> │ Total Rows     │           10 │\n[04:31:17] [town.air_refs] >> │ Total Batches  │            1 │\n[04:31:17] [town.air_refs] >> │ Duration       │         0.0s │\n[04:31:17] [town.air_refs] >> │ Avg Throughput │ 2,915 rows/s │\n[04:31:17] [town.air_refs] >> │ Peak Memory    │       152 MB │\n[04:31:17] [town.air_refs] >> └────────────────┴──────────────┘\n[04:31:17] [town.air_refs] >> Ingestion completed successfully!\n[04:31:18] Finished: town.air_refs (128ms)\n[04:31:18] Running:  town.decisions\n[04:31:18] [town.decisions] >> \n[04:31:18] [town.decisions] >> \n[04:31:18] [town.decisions] >> Initiated the pipeline with the following:\n[04:31:18] [town.decisions] >> Source: csv / seed.raw\n[04:31:18] [town.decisions] >> Destination: duckdb / town.decisions\n[04:31:18] [town.decisions] >> Incremental Strategy: replace\n[04:31:18] [town.decisions] >> Incremental Key: None\n[04:31:18] [town.decisions] >> Primary Key: None\n[04:31:18] [town.decisions] >> \n[04:31:18] [town.decisions] >> \n[04:31:18] [town.decisions] >> \n[04:31:18] [town.decisions] >> Starting data ingestion...\n[04:31:18] [town.decisions] >> [STRATEGY] 04:31:18 | Using staging table: town.decisions_staging_2d1b3da5b749413ea34d99ac7a5b9ce4\n[04:31:18] [town.decisions] >> [PROGRESS] 04:31:18 | Rows: 72 | Batches: 1 | Rate: 15325 rows/s | CPU: 118.1% | Mem: 151 MB\n[04:31:18] [town.decisions] >> \n[04:31:18] [town.decisions] >> ┌────────────────┬───────────────┐\n[04:31:18] [town.decisions] >> │     METRIC     │     VALUE     │\n[04:31:18] [town.decisions] >> ├────────────────┼───────────────┤\n[04:31:18] [town.decisions] >> │ Total Rows     │            72 │\n[04:31:18] [town.decisions] >> │ Total Batches  │             1 │\n[04:31:18] [town.decisions] >> │ Duration       │          0.0s │\n[04:31:18] [town.decisions] >> │ Avg Throughput │ 15,113 rows/s │\n[04:31:18] [town.decisions] >> │ Peak Memory    │        151 MB │\n[04:31:18] [town.decisions] >> └────────────────┴───────────────┘\n[04:31:18] [town.decisions] >> Ingestion completed successfully!\n[04:31:18] Finished: town.decisions (134ms)\n[04:31:18] Running:  town.air_refs:custom-check:one_reference_per_ordered_slot\n[04:31:18] Finished: town.air_refs:custom-check:one_reference_per_ordered_slot (7ms)\n[04:31:18] Running:  town.decisions:custom-check:unique_committed_actor_slots\n[04:31:18] Finished: town.decisions:custom-check:unique_committed_actor_slots (0s)\n[04:31:18] Running:  town.decisions:custom-check:every_decision_links_to_an_event\n[04:31:18] Finished: town.decisions:custom-check:every_decision_links_to_an_event (0s)\n[04:31:18] Running:  town.air_sources\n[04:31:18] Finished: town.air_sources (1ms)\n[04:31:18] Running:  town.coach_payoffs\n[04:31:18] Finished: town.coach_payoffs (3ms)\n[04:31:18] Running:  town.air_sources:custom-check:every_reference_resolves_on_this_date_at_or_before_airtime\n[04:31:18] Finished: town.air_sources:custom-check:every_reference_resolves_on_this_date_at_or_before_airtime (0s)\n[04:31:18] Running:  town.air_sources:custom-check:producer_selects_the_bulletin_in_the_evening\n[04:31:18] Finished: town.air_sources:custom-check:producer_selects_the_bulletin_in_the_evening (0s)\n[04:31:18] Running:  town.air_sources:custom-check:every_selected_recording_has_a_prior_physical_capture\n[04:31:18] Finished: town.air_sources:custom-check:every_selected_recording_has_a_prior_physical_capture (0s)\n[04:31:18] Running:  town.coach_payoffs:custom-check:ready_payoff_has_three_ordered_anchors\n[04:31:18] Finished: town.coach_payoffs:custom-check:ready_payoff_has_three_ordered_anchors (0s)\n\n==================================================\n\nPASS town.air_refs .\nPASS town.decisions ..\nPASS town.air_sources ...\nPASS town.coach_payoffs .\n\n\nbruin run completed successfully in 280ms\n\n ✓ Assets executed      4 succeeded\n ✓ Quality checks       7 succeeded\n",
+  "ledger": {
+    "columns": [
+      {
+        "name": "world",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "decisions",
+        "type": "BIGINT"
+      },
+      {
+        "name": "slots",
+        "type": "BIGINT"
+      },
+      {
+        "name": "actors",
+        "type": "BIGINT"
+      }
+    ],
+    "rows": [
+      [
+        "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+        72,
+        24,
+        3
+      ]
+    ],
+    "connectionName": "town-local",
+    "query": "SELECT world, count(*) AS decisions, count(*) FILTER(WHERE cast(is_lead AS BOOLEAN)) AS slots, count(DISTINCT actor) AS actors FROM town.decisions GROUP BY world ORDER BY world"
+  },
+  "coach": {
+    "columns": [
+      {
+        "name": "world",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "arrival_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "arrival_slot",
+        "type": "INTEGER"
+      },
+      {
+        "name": "city_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "city_slot",
+        "type": "INTEGER"
+      },
+      {
+        "name": "wake_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "wake_slot",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ready",
+        "type": "BOOLEAN"
+      }
+    ],
+    "rows": [
+      [
+        "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+        "d01-t02-reporter",
+        2,
+        "d01-t03-reporter",
+        3,
+        "d02-t00-reporter",
+        4,
+        true
+      ],
+      [
+        "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+        "d02-t02-reporter",
+        6,
+        "d02-t03-reporter",
+        7,
+        "d03-t00-reporter",
+        8,
+        true
+      ],
+      [
+        "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+        "d03-t02-reporter",
+        10,
+        "d03-t03-reporter",
+        11,
+        "d04-t00-reporter",
+        12,
+        true
+      ],
+      [
+        "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+        "d04-t02-reporter",
+        14,
+        "d04-t03-reporter",
+        15,
+        "d05-t00-reporter",
+        16,
+        true
+      ],
+      [
+        "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+        "d05-t02-reporter",
+        18,
+        "d05-t03-reporter",
+        19,
+        "d06-t00-reporter",
+        20,
+        true
+      ],
+      [
+        "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+        "d06-t02-reporter",
+        22,
+        "d06-t03-reporter",
+        23,
+        null,
+        null,
+        false
+      ]
+    ],
+    "connectionName": "town-local",
+    "query": "SELECT world, arrival_id, arrival_slot, city_id, city_slot, wake_id, wake_slot, ready FROM town.coach_payoffs ORDER BY world, arrival_slot"
+  },
+  "air_sources": {
+    "columns": [
+      {
+        "name": "world",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "bulletin_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "ordinal",
+        "type": "INTEGER"
+      },
+      {
+        "name": "source_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "source_slot",
+        "type": "INTEGER"
+      },
+      {
+        "name": "source_actor",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "source_action",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "source_place",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "channel",
+        "type": "VARCHAR"
+      }
+    ],
+    "rows": [
+      [
+        "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+        "d01-t03-reporter",
+        0,
+        "d01-t03-producer",
+        3,
+        "Rita",
+        "patch_camera_line",
+        "inn",
+        "camera_take"
+      ],
+      [
+        "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+        "d01-t03-reporter",
+        1,
+        "d01-t03-camera",
+        3,
+        "Larry",
+        "send_camera_take",
+        "square",
+        "camera_take"
+      ],
+      [
+        "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+        "d01-t03-reporter",
+        2,
+        "d01-t02-camera",
+        2,
+        "Larry",
+        "film_festival",
+        "square",
+        "camera_take"
+      ],
+      [
+        "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+        "d02-t03-reporter",
+        0,
+        "d02-t03-producer",
+        7,
+        "Rita",
+        "spend_time_here",
+        "inn",
+        "station_ident"
+      ],
+      [
+        "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+        "d03-t03-reporter",
+        0,
+        "d03-t03-producer",
+        11,
+        "Rita",
+        "patch_camera_line",
+        "inn",
+        "camera_take"
+      ],
+      [
+        "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+        "d03-t03-reporter",
+        1,
+        "d03-t03-camera",
+        11,
+        "Larry",
+        "send_camera_take",
+        "square",
+        "camera_take"
+      ],
+      [
+        "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+        "d03-t03-reporter",
+        2,
+        "d03-t02-camera",
+        10,
+        "Larry",
+        "film_festival",
+        "square",
+        "camera_take"
+      ],
+      [
+        "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+        "d04-t03-reporter",
+        0,
+        "d04-t03-producer",
+        15,
+        "Rita",
+        "host_bulletin",
+        "inn",
+        "producer_live"
+      ],
+      [
+        "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+        "d05-t03-reporter",
+        0,
+        "d05-t03-producer",
+        19,
+        "Rita",
+        "look_around",
+        "inn",
+        "station_ident"
+      ],
+      [
+        "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+        "d06-t03-reporter",
+        0,
+        "d06-t03-producer",
+        23,
+        "Rita",
+        "host_bulletin",
+        "inn",
+        "producer_live"
+      ]
+    ],
+    "connectionName": "town-local",
+    "query": "SELECT world, bulletin_id, ordinal, source_id, source_slot, source_actor, source_action, source_place, channel FROM town.air_sources ORDER BY world, air_slot, ordinal"
+  },
+  "verified_air_source_count": 10,
+  "input_hashes": [
+    "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f"
+  ],
+  "baseline_python_anchors": [
+    {
+      "world": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+      "anchors": [
+        {
+          "arrival": 2,
+          "hold": 3,
+          "wake": 4
+        },
+        {
+          "arrival": 6,
+          "hold": 7,
+          "wake": 8
+        },
+        {
+          "arrival": 10,
+          "hold": 11,
+          "wake": 12
+        },
+        {
+          "arrival": 14,
+          "hold": 15,
+          "wake": 16
+        },
+        {
+          "arrival": 18,
+          "hold": 19,
+          "wake": 20
+        }
+      ]
+    }
+  ],
+  "verified_payoff_count": 5,
+  "bruin_version": "Current: v0.11.831 (9c6a294a34281e1d6470a292723d793b1209dccc)"
+}

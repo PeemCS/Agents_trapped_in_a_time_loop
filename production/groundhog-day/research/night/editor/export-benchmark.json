@@ -1,0 +1,34 @@
+{
+  "source_sha256": "9695d76c0cf799ac32810b53e3da5c26814e227ba6d710e675f0d5c4c798646d",
+  "hardware": "Apple M4",
+  "os": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+  "method": "Headless Chrome seek, JPEG snapshot, Pillow caption, RGB conversion and local x264 pipe. Four actual scenes, 10 timed frames per scene, two rounds per resolution in ABBA order. First frame per scene, TTS, startup, final encoder flush and disk transfer excluded. Other rehearsal jobs may be active. Extrapolations apply only to this mix.",
+  "results": {
+    "1280x720": {
+      "timed_frames": 80,
+      "median_ms": 16.96,
+      "p95_ms": 34.06,
+      "mean_ms": 20.25,
+      "implied_seconds_for_90s_at_24fps": 43.7,
+      "mean_by_action_ms": {
+        "call_sister": 20.26,
+        "film_festival": 16.71,
+        "take_coach_to_Pittsburgh": 27.35,
+        "clear_tables": 16.66
+      }
+    },
+    "1920x1080": {
+      "timed_frames": 80,
+      "median_ms": 33.31,
+      "p95_ms": 37.27,
+      "mean_ms": 33.5,
+      "implied_seconds_for_90s_at_24fps": 72.4,
+      "mean_by_action_ms": {
+        "call_sister": 33.3,
+        "clear_tables": 33.38,
+        "film_festival": 33.03,
+        "take_coach_to_Pittsburgh": 34.28
+      }
+    }
+  }
+}

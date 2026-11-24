@@ -1,0 +1,108 @@
+[
+  {
+    "viewport": [
+      1280,
+      810
+    ],
+    "steps": [
+      {
+        "step": 0,
+        "places": [
+          "Pittsburgh Terminal",
+          "Hearthside Hotel"
+        ],
+        "outcomes": [
+          "Phil uses the paid ticket and rides the coach all the way to Pittsburgh.",
+          "Phil addresses Rita."
+        ]
+      },
+      {
+        "step": 1,
+        "places": [
+          "Pittsburgh Terminal",
+          "Hearthside Hotel"
+        ],
+        "outcomes": [
+          "Phil phones his sister. She confirms the moving van is booked for Wednesday.",
+          "Phil inspects the inn. The windowsill is unmarked."
+        ]
+      },
+      {
+        "step": 2,
+        "places": [
+          "Hearthside Hotel",
+          "Hearthside Hotel"
+        ],
+        "outcomes": [
+          "Phil spends the period at the inn.",
+          "Phil addresses Rita."
+        ]
+      },
+      {
+        "step": 3,
+        "places": [
+          "Hearthside Hotel",
+          "Hearthside Hotel"
+        ],
+        "outcomes": [
+          "Phil spends this period on a personal attempt at the inn. Its proposed result is unverified.",
+          "Phil spends this period on a personal attempt at the inn. Its proposed result is unverified."
+        ]
+      }
+    ],
+    "page_errors": []
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "steps": [
+      {
+        "step": 0,
+        "places": [
+          "Pittsburgh Terminal",
+          "Hearthside Hotel"
+        ],
+        "outcomes": [
+          "Phil uses the paid ticket and rides the coach all the way to Pittsburgh.",
+          "Phil addresses Rita."
+        ]
+      },
+      {
+        "step": 1,
+        "places": [
+          "Pittsburgh Terminal",
+          "Hearthside Hotel"
+        ],
+        "outcomes": [
+          "Phil phones his sister. She confirms the moving van is booked for Wednesday.",
+          "Phil inspects the inn. The windowsill is unmarked."
+        ]
+      },
+      {
+        "step": 2,
+        "places": [
+          "Hearthside Hotel",
+          "Hearthside Hotel"
+        ],
+        "outcomes": [
+          "Phil spends the period at the inn.",
+          "Phil addresses Rita."
+        ]
+      },
+      {
+        "step": 3,
+        "places": [
+          "Hearthside Hotel",
+          "Hearthside Hotel"
+        ],
+        "outcomes": [
+          "Phil spends this period on a personal attempt at the inn. Its proposed result is unverified.",
+          "Phil spends this period on a personal attempt at the inn. Its proposed result is unverified."
+        ]
+      }
+    ],
+    "page_errors": []
+  }
+]

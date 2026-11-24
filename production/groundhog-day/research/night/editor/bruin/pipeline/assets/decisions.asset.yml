@@ -1,0 +1,12 @@
+name: town.decisions
+type: duckdb.seed
+description: Committed actions and spoken lines by individual actors, with stable source fingerprints.
+parameters:
+  path: decisions.csv
+custom_checks:
+  - name: unique committed actor slots
+    query: SELECT count(*) FROM (SELECT world, slot, actor FROM town.decisions GROUP BY ALL HAVING count(*) <> 1)
+    value: 0
+  - name: every decision links to an event
+    query: SELECT count(*) FROM town.decisions WHERE event_id IS NULL OR length(trim(event_id)) = 0
+    value: 0

@@ -1,0 +1,28 @@
+1
+00:00:00,420 --> 00:00:15,242
+Phil: Morning, Rita. You hear about the groundhog in the square? Let's keep it quick. I need to be at the depot by noon for my one o'clock coach back to Pittsburgh. Where do you want me for the first segment?
+
+2
+00:00:19,795 --> 00:00:27,529
+Phil: Rita, it's 1:00. Where are we at? Did we catch the square, or are we still in the lobby?
+
+3
+00:00:28,608 --> 00:00:33,753
+Larry: Well, that's the last of the battery. I guess I'm just a listener for the rest of the night.
+
+4
+00:00:35,358 --> 00:00:43,927
+Rita: Phil, hold up. I need to confirm the town band is locked in for the afternoon slot before you head out. What time is that coach leaving the depot again?
+
+5
+00:00:44,982 --> 00:00:51,953
+Phil: Rita, I have to go. I'm heading to the depot for the one o'clock. See you in Pittsburgh.
+
+6
+00:00:53,045 --> 00:00:56,628
+Phil: Afternoon coach, right there. Good.
+
+7
+00:01:02,045 --> 00:01:07,651
+Phil: Rita, I'm heading to the depot now for my coach. See you in Pittsburgh.
+

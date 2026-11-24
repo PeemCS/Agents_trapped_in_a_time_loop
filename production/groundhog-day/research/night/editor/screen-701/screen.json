@@ -1,0 +1,2614 @@
+[
+  {
+    "take": "Take 01",
+    "events": [
+      {
+        "event_index": 0,
+        "event_id": "d01-t00-reporter",
+        "day": 1,
+        "clock": "6:00 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "talk_to_Rita",
+        "words": "Morning, Rita. Is the forecast package ready to roll, or do we need to tweak the loop?",
+        "stated_intention": "Confirm the weather package is loaded before heading to the studio.",
+        "effect": "Phil addresses Rita.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Phil, you up? We need to get moving if we want that groundhog segment locked in by noon.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "look_around",
+            "words": "Morning, everyone. Let's see what we're working with.",
+            "effect": "Larry inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 1,
+        "event_id": "d01-t01-reporter",
+        "day": 1,
+        "clock": "9:30 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "talk_to_Rita",
+        "words": "Morning, Rita. Weather package is loaded and good to go. Let's head to the square and get that groundhog segment locked in before lunch.",
+        "stated_intention": "Confirm we are ready to roll and head to the square for the groundhog segment.",
+        "effect": "Phil addresses Rita.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Morning, Phil. How’s the forecast package looking? I’m trying to squeeze the town band into the rundown this afternoon, so I need to know if we’re solid on the weather loop.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "look_around",
+            "words": "",
+            "effect": "Larry inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 2,
+        "event_id": "d01-t02-reporter",
+        "day": 1,
+        "clock": "1:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "talk_to_Rita",
+        "words": "Morning, Rita. We're solid on the weather loop. If we're done with the groundhog bit, I'm heading to the depot to lock in that one o'clock coach.",
+        "stated_intention": "Confirm the groundhog segment is wrapped up and check if the afternoon is clear.",
+        "effect": "Phil addresses Rita.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Phil, weather package loaded, good to go. Let’s roll. I want us on the square in ten, and I need the band cues mapped so we’re not scrambling at 2:30.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "film_festival",
+            "words": "Got it, this is the one. Hold steady.",
+            "effect": "Larry uses the camera's last charged take to film the festival."
+          }
+        ]
+      },
+      {
+        "event_index": 3,
+        "event_id": "d01-t03-reporter",
+        "day": 1,
+        "clock": "7:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "talk_to_Rita",
+        "words": "Rita, is the square shoot wrapped up? I want to make sure we're done for the night before I head to the diner.",
+        "stated_intention": "Confirm the groundhog shoot is wrapped and ask if we are done for the day.",
+        "effect": "Phil addresses Rita.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Phil, you're locked in for the depot? Good. I'm moving the town band up to the five o'clock slot tonight. I'll need you back at the studio by four-fifteen to do the handoff.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "listen_to_band",
+            "words": "Rita, my battery is dead. I can't get the portrait of the cornet player.",
+            "effect": "Larry stays for the band's cornet solo."
+          }
+        ]
+      },
+      {
+        "event_index": 4,
+        "event_id": "d02-t00-reporter",
+        "day": 2,
+        "clock": "6:00 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "talk_to_Rita",
+        "words": "Morning. Is the square shoot wrapped? If we're done for the day, I'm heading back to my room to get some rest before that move on Wednesday.",
+        "stated_intention": "Confirm the groundhog shoot is wrapped and ask if we are done for the day.",
+        "effect": "Phil addresses Rita.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Phil, you up? We need to get moving if we want that groundhog segment locked in by noon.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "look_around",
+            "words": "Morning, everyone. Let's see what we're working with.",
+            "effect": "Larry inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 5,
+        "event_id": "d02-t01-reporter",
+        "day": 2,
+        "clock": "9:30 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "talk_to_Rita",
+        "words": "Morning, Rita. The weather loop is solid. Are we all set for the morning?",
+        "stated_intention": "Confirm the schedule for the morning and ask Rita if we are done for now.",
+        "effect": "Phil addresses Rita.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Morning, Phil. I’m locking in the weather segment for this afternoon. Let’s keep the square shoot light today and head to the studio by two to get the town band on camera. Are you good with that turnaround?",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "look_around",
+            "words": "",
+            "effect": "Larry inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 6,
+        "event_id": "d02-t02-reporter",
+        "day": 2,
+        "clock": "1:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "talk_to_Rita",
+        "words": "Rita, the package is loaded and we're solid, right? Since it's one o'clock and I have a ticket on the coach, I'm going to head to the depot to catch the ride back to Pittsburgh. Is there anything else you need from me before I go?",
+        "stated_intention": "Confirm we are done for the day so I can head to the depot for my 1:00 PM coach.",
+        "effect": "Phil addresses Rita.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Phil, are we ready for the afternoon slot? I need to lock in the weather loop and get the camera rolling for the town band.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "film_festival",
+            "words": "Got it, this is the one. Hold steady.",
+            "effect": "Larry uses the camera's last charged take to film the festival."
+          }
+        ]
+      },
+      {
+        "event_index": 7,
+        "event_id": "d02-t03-reporter",
+        "day": 2,
+        "clock": "7:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "talk_to_Rita",
+        "words": "Rita, is the band segment cut and in the can? I need to confirm we're done for the night so I can head to the depot and catch my coach.",
+        "stated_intention": "Confirm the day is wrapped up and the station is closed for the night.",
+        "effect": "Phil addresses Rita.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Phil, good to see you're still around. I need to know if that weather loop is actually locked in for the afternoon broadcast. I want to get the town band on the air today, so I need to slot them in right after your segment. Can you confirm you're locked and tell me the exact start time for your piece?",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "listen_to_band",
+            "words": "Rita, my battery is dead. I can't get the portrait of the cornet player.",
+            "effect": "Larry stays for the band's cornet solo."
+          }
+        ]
+      },
+      {
+        "event_index": 8,
+        "event_id": "d03-t00-reporter",
+        "day": 3,
+        "clock": "6:00 am",
+        "origin": "inn",
+        "place": "diner",
+        "actor": "Phil",
+        "action": "go_to_diner",
+        "words": "Morning, Rita. I'm grabbing a quick bite before we head out. See you at the square.",
+        "stated_intention": "Get some breakfast before heading to the town square for the groundhog segment.",
+        "effect": "Phil reaches the diner.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Phil, you up? We need to get moving if we want that groundhog segment locked in by noon.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "look_around",
+            "words": "Morning, everyone. Let's see what we're working with.",
+            "effect": "Larry inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 9,
+        "event_id": "d03-t01-reporter",
+        "day": 3,
+        "clock": "9:30 am",
+        "origin": "diner",
+        "place": "diner",
+        "actor": "Phil",
+        "action": "clear_tables",
+        "words": "Just grabbing a coffee before the square run.",
+        "stated_intention": "Get some coffee while I clear a few tables.",
+        "effect": "Phil clears one rack. 1 rack(s) remain.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "go_to_square",
+            "words": "I'll meet you at the square, Phil.",
+            "effect": "Rita reaches the square."
+          },
+          {
+            "actor": "Larry",
+            "action": "look_around",
+            "words": "",
+            "effect": "Larry inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 10,
+        "event_id": "d03-t02-reporter",
+        "day": 3,
+        "clock": "1:00 pm",
+        "origin": "diner",
+        "place": "diner",
+        "actor": "Phil",
+        "action": "clear_tables",
+        "words": "Just one more to go.",
+        "stated_intention": "Get this out of the way before heading to the studio.",
+        "effect": "Phil clears one rack. 0 rack(s) remain.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Larry",
+            "words": "Larry, get the lens ready. I want that band captured before the wind picks up. Is the audio hot?",
+            "effect": "Rita addresses Larry."
+          },
+          {
+            "actor": "Larry",
+            "action": "film_festival",
+            "words": "Rita, the light is actually decent right now. I'm going to take my last shot on the band and the square for your package.",
+            "effect": "Larry uses the camera's last charged take to film the festival."
+          }
+        ]
+      },
+      {
+        "event_index": 11,
+        "event_id": "d03-t03-reporter",
+        "day": 3,
+        "clock": "7:00 pm",
+        "origin": "diner",
+        "place": "studio",
+        "actor": "Phil",
+        "action": "go_to_studio",
+        "words": "Right. Time to head to the studio and wrap this up.",
+        "stated_intention": "Get to the studio to finish up for the day and get back to Pittsburgh.",
+        "effect": "Phil reaches the studio.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Larry",
+            "words": "Larry, did you get the band before they wrapped? I want to make sure we have a usable clip for the package.",
+            "effect": "Rita addresses Larry."
+          },
+          {
+            "actor": "Larry",
+            "action": "talk_to_Rita",
+            "words": "Rita, you'll want to know this before you ask for more. The battery is completely dead. I used the last take this afternoon getting that bandstand and crowd B-roll you wanted, right before the wind started picking up. I couldn't get my portrait of the cornet player. If you need anything more, we're out of juice until we get back to the studio or the depot.",
+            "effect": "Larry addresses Rita."
+          }
+        ]
+      },
+      {
+        "event_index": 12,
+        "event_id": "d04-t00-reporter",
+        "day": 4,
+        "clock": "6:00 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "look_around",
+        "words": "Morning, Rita. Just checking the lay of the land before we head to the studio.",
+        "stated_intention": "Check the lobby and confirm where I am before moving to the studio.",
+        "effect": "Phil inspects the inn. The windowsill is unmarked.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Phil, you up? We need to get moving if we want that groundhog segment locked in by noon.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "look_around",
+            "words": "Morning, everyone. Let's see what we're working with.",
+            "effect": "Larry inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 13,
+        "event_id": "d04-t01-reporter",
+        "day": 4,
+        "clock": "9:30 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "talk_to_Rita",
+        "words": "Morning. I'm here. Is that groundhog loop finally locked in, or do I still need to re-run the numbers?",
+        "stated_intention": "Confirm the groundhog segment status before heading out to the square.",
+        "effect": "Phil addresses Rita.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Morning, Phil. Grab your forecast notes. I need the weather board ready by ten so we can shoot the intro before the light goes flat. Also, I'm putting the town band on air at two. Check with the studio if the mixer is free to run their tracks live during the segment.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "look_around",
+            "words": "",
+            "effect": "Larry inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 14,
+        "event_id": "d04-t02-reporter",
+        "day": 4,
+        "clock": "1:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "talk_to_Rita",
+        "words": "Rita, quick check—is the groundhog segment locked in? If we're done, I need to pop over to the depot for my one o'clock coach back to Pittsburgh.",
+        "stated_intention": "Confirm the groundhog segment is done so I can head to the depot for my one o'clock coach.",
+        "effect": "Phil addresses Rita.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Phil, let’s lock in the 2:00 band segment. Are the weather graphics finalized? If so, I want to move to the studio now to set up the band’s audio feed before we lose the afternoon light.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "film_festival",
+            "words": "Got it, this is the one. Hold steady.",
+            "effect": "Larry uses the camera's last charged take to film the festival."
+          }
+        ]
+      },
+      {
+        "event_index": 15,
+        "event_id": "d04-t03-reporter",
+        "day": 4,
+        "clock": "7:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "talk_to_Rita",
+        "words": "Rita, is the groundhog segment locked in? I need to know if we're done so I can get to the depot for my coach.",
+        "stated_intention": "Confirm the groundhog segment is done so I can head to the depot for my one o'clock coach.",
+        "effect": "Phil addresses Rita.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Phil, is the groundhog loop still in the can, or did you get a chance to re-run those numbers before your coach? We're still looking at the band set tonight, so I need to know where you stand.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "listen_to_band",
+            "words": "Rita, my battery is dead. I can't get the portrait of the cornet player.",
+            "effect": "Larry stays for the band's cornet solo."
+          }
+        ]
+      },
+      {
+        "event_index": 16,
+        "event_id": "d05-t00-reporter",
+        "day": 5,
+        "clock": "6:00 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "talk_to_Rita",
+        "words": "Morning, Rita. Is the groundhog segment officially in the can? I need to clear out and catch that one o'clock coach before the van shows up.",
+        "stated_intention": "Confirm the broadcast is wrapped so I can catch my 1:00 PM coach.",
+        "effect": "Phil addresses Rita.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Phil, you up? We need to get moving if we want that groundhog segment locked in by noon.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "look_around",
+            "words": "Morning, everyone. Let's see what we're working with.",
+            "effect": "Larry inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 17,
+        "event_id": "d05-t01-reporter",
+        "day": 5,
+        "clock": "9:30 am",
+        "origin": "inn",
+        "place": "diner",
+        "actor": "Phil",
+        "action": "go_to_diner",
+        "words": "Morning, Rita. I'm grabbing a bite first, then I'll be over at the station.",
+        "stated_intention": "Break fast before checking the station status, then head to the station.",
+        "effect": "Phil reaches the diner.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Morning, Phil. Is the groundhog segment officially in the can? I need to clear out and catch that one o'clock coach before the van shows up.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "look_around",
+            "words": "",
+            "effect": "Larry inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 18,
+        "event_id": "d05-t02-reporter",
+        "day": 5,
+        "clock": "1:00 pm",
+        "origin": "diner",
+        "place": "diner",
+        "actor": "Phil",
+        "action": "clear_tables",
+        "words": "Sorry, just clearing these off the counter for a sec.",
+        "stated_intention": "Clear the counter so I can finish my coffee and head to the studio.",
+        "effect": "Phil clears one rack. 1 rack(s) remain.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "go_to_studio",
+            "words": "I'm heading to the studio to find Larry.",
+            "effect": "Rita reaches the studio."
+          },
+          {
+            "actor": "Larry",
+            "action": "film_festival",
+            "words": "Got it, this is the one. Hold steady.",
+            "effect": "Larry uses the camera's last charged take to film the festival."
+          }
+        ]
+      },
+      {
+        "event_index": 19,
+        "event_id": "d05-t03-reporter",
+        "day": 5,
+        "clock": "7:00 pm",
+        "origin": "diner",
+        "place": "diner",
+        "actor": "Phil",
+        "action": "clear_tables",
+        "words": "One more rack and I'm out of here.",
+        "stated_intention": "Finish clearing the counter and get to the studio.",
+        "effect": "Phil clears one rack. 0 rack(s) remain.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "look_around",
+            "words": "",
+            "effect": "Rita inspects the studio. The forecast has yet to air."
+          },
+          {
+            "actor": "Larry",
+            "action": "listen_to_band",
+            "words": "Rita, my battery is dead. I can't get the portrait of the cornet player.",
+            "effect": "Larry stays for the band's cornet solo."
+          }
+        ]
+      },
+      {
+        "event_index": 20,
+        "event_id": "d06-t00-reporter",
+        "day": 6,
+        "clock": "6:00 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "talk_to_Rita",
+        "words": "Morning, Rita. I’m heading out to get some coffee before I catch that one o’clock coach. Just want to confirm I’m clear from here on out, right?",
+        "stated_intention": "Confirm she is free for the Wednesday couch move and that I am out of the picture.",
+        "effect": "Phil addresses Rita.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Phil, you up? We need to get moving if we want that groundhog segment locked in by noon.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "look_around",
+            "words": "Morning, everyone. Let's see what we're working with.",
+            "effect": "Larry inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 21,
+        "event_id": "d06-t01-reporter",
+        "day": 6,
+        "clock": "9:30 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "talk_to_Rita",
+        "words": "Morning, Rita. Quick one before you head out: is the groundhog loop fully in the can, or do we need to touch it up before I catch that one o'clock coach?",
+        "stated_intention": "Confirm the groundhog segment is done and lock in Wednesday couch plans.",
+        "effect": "Phil addresses Rita.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "You’re clear until I say otherwise. Coffee’s good, but come back and pull the forecast data. I want the numbers on the desk by ten.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "look_around",
+            "words": "",
+            "effect": "Larry inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 22,
+        "event_id": "d06-t02-reporter",
+        "day": 6,
+        "clock": "1:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "talk_to_Rita",
+        "words": "Rita, is that groundhog segment officially in the can? I need to clear my head before I lock in my plans for Wednesday.",
+        "stated_intention": "Confirm the groundhog segment is done and lock in Wednesday couch plans.",
+        "effect": "Phil addresses Rita.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Phil, quick hit before you run out to that coach: is that groundhog loop actually in the can, or are we looking at a re-shoot? And has the town band confirmed they're ready to play for us this afternoon, or do I need to chase them down first?",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "film_festival",
+            "words": "Got it, this is the one. Hold steady.",
+            "effect": "Larry uses the camera's last charged take to film the festival."
+          }
+        ]
+      },
+      {
+        "event_index": 23,
+        "event_id": "d06-t03-reporter",
+        "day": 6,
+        "clock": "7:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "talk_to_Rita",
+        "words": "Hey Rita, I need a quick check: is that groundhog loop actually in the can, or are we looking at a re-shoot? And has the town band confirmed they're ready to play for us this afternoon, or do I need to chase them down first? I want to make sure my Wednesday is clear to help my sister with that couch move.",
+        "stated_intention": "Confirm the groundhog segment is done and lock in Wednesday couch plans.",
+        "effect": "Phil addresses Rita.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Phil, I just need a straight answer. Is the groundhog loop fully in the can? If it’s done, I’m sending you to the diner to meet the town band and get their sound check wrapped before they load out. If it’s not done, we have a problem for this afternoon.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "listen_to_band",
+            "words": "Rita, my battery is dead. I can't get the portrait of the cornet player.",
+            "effect": "Larry stays for the band's cornet solo."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "take": "Take 02",
+    "events": [
+      {
+        "event_index": 0,
+        "event_id": "d01-t00-reporter",
+        "day": 1,
+        "clock": "6:00 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "Morning, June. You see the radio? Groundhog day already. Let's get this forecast out before I'm late for the van.",
+        "stated_intention": "Confirm the broadcast window and ensure June is ready to roll.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Morning, Ellis. Are you up and ready to hit the square for that groundhog forecast? We need to nail the weather segment before we move to the band.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "look_around",
+            "words": "Morning. Let's see what angles we've got here.",
+            "effect": "Cal inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 1,
+        "event_id": "d01-t01-reporter",
+        "day": 1,
+        "clock": "9:30 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "Morning, June. Yeah, I'm ready. Let's head to the square and get this groundhog forecast locked in before we worry about the band.",
+        "stated_intention": "Confirm we are heading to the square for the groundhog segment before the band.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Morning, Ellis. You see the radio? Groundhog day already. Let's get this forecast out before I'm late for the van.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "look_around",
+            "words": "",
+            "effect": "Cal inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 2,
+        "event_id": "d01-t02-reporter",
+        "day": 1,
+        "clock": "1:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "June, I'm ready. Let's head to the square to get that groundhog forecast shot before we move to the band.",
+        "stated_intention": "Confirm we are heading to the square for the groundhog segment before the band.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Ellis, good. Here is the rundown: I am putting the town band on air at 2:30. Cal needs thirty minutes to set up the mics and the camera, so I need you to have the weather segment wrapped by 2:15. Can you give me that by 2:15?",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "film_festival",
+            "words": "Okay June, I'm spending my last take on the festival crowd and the band right now. The cornet guy I'll catch in a still after the ceremony.",
+            "effect": "Cal uses the camera's last charged take to film the festival."
+          }
+        ]
+      },
+      {
+        "event_index": 3,
+        "event_id": "d01-t03-reporter",
+        "day": 1,
+        "clock": "7:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "June, I'm booked on the 1:00 pm coach tomorrow to get back to Pittsburgh, so I need to wrap the weather segment early. Can we lock in a 10:30 am slot to keep the schedule tight?",
+        "stated_intention": "Confirm the weather segment timing and the 1:00 pm coach departure for tomorrow.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Ellis, we need to lock in the 2:30 pm band slot and confirm the afternoon rundown.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "listen_to_band",
+            "words": "One take, then I'm done for the night.",
+            "effect": "Cal stays for the band's cornet solo."
+          }
+        ]
+      },
+      {
+        "event_index": 4,
+        "event_id": "d02-t00-reporter",
+        "day": 2,
+        "clock": "6:00 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "Morning. I just want to make sure I’m still on track for the 1:00 pm coach tomorrow. I have to be out of here by then to catch it.",
+        "stated_intention": "Confirm the 1:00 pm coach departure time and lock in the plan to leave tomorrow.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Morning, Ellis. Are you up and ready to hit the square for that groundhog forecast? We need to nail the weather segment before we move to the band.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "look_around",
+            "words": "Morning. Let's see what angles we've got here.",
+            "effect": "Cal inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 5,
+        "event_id": "d02-t01-reporter",
+        "day": 2,
+        "clock": "9:30 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "June, I'm booked on the one o'clock coach, so I have to wrap this up by noon. Can I get the rundown now so I can go get ready?",
+        "stated_intention": "Confirm the schedule and leave to get ready before the 1:00 pm coach.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Ellis, before you head out for that coach tomorrow, let’s get this weather segment sorted out. Are you ready to discuss the morning forecast?",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "look_around",
+            "words": "",
+            "effect": "Cal inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 6,
+        "event_id": "d02-t02-reporter",
+        "day": 2,
+        "clock": "1:00 pm",
+        "origin": "inn",
+        "place": "Pittsburgh",
+        "actor": "Ellis",
+        "action": "take_coach_to_Pittsburgh",
+        "words": "June, I’m heading to the depot now to catch the 1:00 coach back to Pittsburgh. I’ll sort out the rest of the rundown once I land.",
+        "stated_intention": "Catch the 1:00 pm coach to get back to Pittsburgh and be ready to help my sister move the couch on Wednesday.",
+        "effect": "Ellis uses the paid ticket and rides the coach all the way to Pittsburgh.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Ellis, I need your rundown right now. Let's get this segment nailed down so you can prep for that coach.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "film_festival",
+            "words": "Okay June, I'm spending my last take on the festival crowd and the band right now. The cornet guy I'll catch in a still after the ceremony.",
+            "effect": "Cal uses the camera's last charged take to film the festival."
+          }
+        ]
+      },
+      {
+        "event_index": 7,
+        "event_id": "d02-t03-reporter",
+        "day": 2,
+        "clock": "7:00 pm",
+        "origin": "Pittsburgh",
+        "place": "Pittsburgh",
+        "actor": "Ellis",
+        "action": "look_around",
+        "words": "June, did we make it to Pittsburgh? I need to check my ticket.",
+        "stated_intention": "Figure out where I am and check if I have time to catch the 1:00 pm coach tomorrow.",
+        "effect": "Ellis inspects the Pittsburgh. You are in Pittsburgh. At the bus terminal there is a payphone and a bench.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "go_to_studio",
+            "words": "Cal, I'm heading to the studio, meet me there.",
+            "effect": "June reaches the studio."
+          },
+          {
+            "actor": "Cal",
+            "action": "listen_to_band",
+            "words": "One take, then I'm done for the night.",
+            "effect": "Cal stays for the band's cornet solo."
+          }
+        ]
+      },
+      {
+        "event_index": 8,
+        "event_id": "d03-t00-reporter",
+        "day": 3,
+        "clock": "6:00 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "Morning, June. I'm up. Quick check: I've got that one o'clock coach booked for tomorrow. Do I need to be here all morning, or can I wrap this up and grab some coffee before I head out?",
+        "stated_intention": "Confirm the 1:00 pm coach ticket is valid and ask if I can head out early after the morning segment.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Morning, Ellis. Are you up and ready to hit the square for that groundhog forecast? We need to nail the weather segment before we move to the band.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "look_around",
+            "words": "Morning. Let's see what angles we've got here.",
+            "effect": "Cal inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 9,
+        "event_id": "d03-t01-reporter",
+        "day": 3,
+        "clock": "9:30 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "Morning, June. Yes, I'm ready. Let's run through the morning forecast now so I can get this locked in before we hit the square.",
+        "stated_intention": "Get the rundown sorted so I can head to the square for the segment.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Ellis, are you ready to go? What do you need from me?",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "look_around",
+            "words": "",
+            "effect": "Cal inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 10,
+        "event_id": "d03-t02-reporter",
+        "day": 3,
+        "clock": "1:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "June, I'm ready to finalize the rundown. Let's nail it down so I can head to the square.",
+        "stated_intention": "Finish the rundown so I can head to the square.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Ellis, are we all set with that morning forecast run, or do you still need me to hold the square for you? I’m looking to get the town band on the schedule for this afternoon, so I need to know where you stand on your next block.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "film_festival",
+            "words": "Okay June, I'm spending my last take on the festival crowd and the band right now. The cornet guy I'll catch in a still after the ceremony.",
+            "effect": "Cal uses the camera's last charged take to film the festival."
+          }
+        ]
+      },
+      {
+        "event_index": 11,
+        "event_id": "d03-t03-reporter",
+        "day": 3,
+        "clock": "7:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "Okay, June, I've got the numbers. I'm ready to roll.",
+        "stated_intention": "Confirm the rundown is locked and I'm free to head to the square.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Ellis, it's 7:00. Are we done for the day, or do you need me to stay a bit longer? I'm trying to figure out if we're wrapping up or if I need to prep for tomorrow.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "listen_to_band",
+            "words": "One take, then I'm done for the night.",
+            "effect": "Cal stays for the band's cornet solo."
+          }
+        ]
+      },
+      {
+        "event_index": 12,
+        "event_id": "d04-t00-reporter",
+        "day": 4,
+        "clock": "6:00 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "Morning, June. Sorry, I must have dozed off on the bench at the depot. I'm ready to nail that forecast rundown. What do you need from me?",
+        "stated_intention": "Confirm the rundown is locked and I'm free to head to the square.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Morning, Ellis. Are you up and ready to hit the square for that groundhog forecast? We need to nail the weather segment before we move to the band.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "look_around",
+            "words": "Morning. Let's see what angles we've got here.",
+            "effect": "Cal inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 13,
+        "event_id": "d04-t01-reporter",
+        "day": 4,
+        "clock": "9:30 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "Morning, June. I'm ready to hit the square. Let's lock the rundown so I can get that segment done.",
+        "stated_intention": "Confirm the rundown is locked so I can hit the square for the forecast.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Good. Let's keep the forecast tight, thirty seconds, then we move to the band interview at noon. Are you ready to roll?",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "look_around",
+            "words": "",
+            "effect": "Cal inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 14,
+        "event_id": "d04-t02-reporter",
+        "day": 4,
+        "clock": "1:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "June, let's lock in that rundown. I need to hit the square for the groundhog forecast right now, then I’ll be ready for the coach.",
+        "stated_intention": "Confirm the rundown is locked so I can hit the square for the forecast.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Ellis, we've got the weather at four, but I'm still waiting on a green light for the band. If that slips, I'm moving the weather to two-thirty. Can you be ready by then?",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "film_festival",
+            "words": "Okay June, I'm spending my last take on the festival crowd and the band right now. The cornet guy I'll catch in a still after the ceremony.",
+            "effect": "Cal uses the camera's last charged take to film the festival."
+          }
+        ]
+      },
+      {
+        "event_index": 15,
+        "event_id": "d04-t03-reporter",
+        "day": 4,
+        "clock": "7:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "spend_time_here",
+        "words": "I'm done for the day, June. Thanks for holding things together.",
+        "stated_intention": "Finish my book and rest before heading out.",
+        "effect": "Ellis spends the period at the inn.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Ellis, where are we on that square segment? I need to confirm if the band interview is still on for this afternoon.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "listen_to_band",
+            "words": "One take, then I'm done for the night.",
+            "effect": "Cal stays for the band's cornet solo."
+          }
+        ]
+      },
+      {
+        "event_index": 16,
+        "event_id": "d05-t00-reporter",
+        "day": 5,
+        "clock": "6:00 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "Morning, June. We got the segment in the bag yesterday, so I’m done for the day. I’ve got the couch move booked for tomorrow, so I’m heading back up to rest up.",
+        "stated_intention": "Confirm Tuesday's wrap-up so I can rest before my Wednesday move.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Morning, Ellis. Are you up and ready to hit the square for that groundhog forecast? We need to nail the weather segment before we move to the band.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "look_around",
+            "words": "Morning. Let's see what angles we've got here.",
+            "effect": "Cal inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 17,
+        "event_id": "d05-t01-reporter",
+        "day": 5,
+        "clock": "9:30 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "spend_time_here",
+        "words": "Just stretching my legs out, June. I'm good here for a bit.",
+        "stated_intention": "Get some rest so I'm sharp for the Wednesday move and the 1:00 coach.",
+        "effect": "Ellis spends the period at the inn.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Morning. I need you at the studio at two. I want to get the band on air before we wrap, so I’m keeping the schedule tight.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "look_around",
+            "words": "",
+            "effect": "Cal inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 18,
+        "event_id": "d05-t02-reporter",
+        "day": 5,
+        "clock": "1:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "I'm here, June. I'm ready for the 2:30 slot. What do you need from me to confirm it?",
+        "stated_intention": "Give June my rundown so we can lock the 2:30 slot and I can get to the station on time.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Ellis, hold on a sec. I know you wanted to head up to the couch, but I need to know if you've got bandwidth to cover the town band segment this afternoon. I'm trying to lock the rundown.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "film_festival",
+            "words": "Okay June, I'm spending my last take on the festival crowd and the band right now. The cornet guy I'll catch in a still after the ceremony.",
+            "effect": "Cal uses the camera's last charged take to film the festival."
+          }
+        ]
+      },
+      {
+        "event_index": 19,
+        "event_id": "d05-t03-reporter",
+        "day": 5,
+        "clock": "7:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "June, I'm here. Can we lock this down? If it's 2:30, I'm ready to roll.",
+        "stated_intention": "Get a final answer on the 2:30 slot from June so I can head to the studio and wrap this up before I go home.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Ellis, you mentioned you were ready for the 2:30 slot. Since the weather is done, are you free to handle the town band segment for me this afternoon?",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "listen_to_band",
+            "words": "One take, then I'm done for the night.",
+            "effect": "Cal stays for the band's cornet solo."
+          }
+        ]
+      },
+      {
+        "event_index": 20,
+        "event_id": "d06-t00-reporter",
+        "day": 6,
+        "clock": "6:00 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "Morning, June. I'm ready for the 2:30 slot. Let's nail it down so I can get to the studio and handle the band segment before I head back to Pittsburgh.",
+        "stated_intention": "Get the final word on the 2:30 slot so I can head to the studio and wrap this up before I go home.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Morning, Ellis. Are you up and ready to hit the square for that groundhog forecast? We need to nail the weather segment before we move to the band.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "look_around",
+            "words": "Morning. Let's see what angles we've got here.",
+            "effect": "Cal inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 21,
+        "event_id": "d06-t01-reporter",
+        "day": 6,
+        "clock": "9:30 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "June, I'm free. I'll be at the studio for that two o'clock slot. What do you need from me before we go live?",
+        "stated_intention": "Confirm I'm free for the band segment so I can get to the studio by two.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Morning. You said you're ready for 2:30, but we need to fit the band in before you head to Pittsburgh. What's the plan?",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "look_around",
+            "words": "",
+            "effect": "Cal inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 22,
+        "event_id": "d06-t02-reporter",
+        "day": 6,
+        "clock": "1:00 pm",
+        "origin": "inn",
+        "place": "Pittsburgh",
+        "actor": "Ellis",
+        "action": "take_coach_to_Pittsburgh",
+        "words": "June, I've got to go. My coach leaves in ten and I can't miss it.",
+        "stated_intention": "Board the 1:00 pm coach now to head to Pittsburgh.",
+        "effect": "Ellis uses the paid ticket and rides the coach all the way to Pittsburgh.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Ellis, good. Let's nail that 2:30 slot down. What time does the band actually go on? I need the exact minute so I can build the rundown.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "film_festival",
+            "words": "Okay June, I'm spending my last take on the festival crowd and the band right now. The cornet guy I'll catch in a still after the ceremony.",
+            "effect": "Cal uses the camera's last charged take to film the festival."
+          }
+        ]
+      },
+      {
+        "event_index": 23,
+        "event_id": "d06-t03-reporter",
+        "day": 6,
+        "clock": "7:00 pm",
+        "origin": "Pittsburgh",
+        "place": "Pittsburgh",
+        "actor": "Ellis",
+        "action": "call_sister",
+        "words": "Hi, it's Ellis. Just checking, what time is the van coming by tomorrow?",
+        "stated_intention": "Confirm the van's Wednesday time so the couch move lines up.",
+        "effect": "Ellis phones his sister. She confirms the moving van is booked for Wednesday.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "go_to_studio",
+            "words": "I'm heading to the studio to finalize the rundown.",
+            "effect": "June reaches the studio."
+          },
+          {
+            "actor": "Cal",
+            "action": "listen_to_band",
+            "words": "One take, then I'm done for the night.",
+            "effect": "Cal stays for the band's cornet solo."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "take": "Take 03",
+    "events": [
+      {
+        "event_index": 0,
+        "event_id": "d01-t00-reporter",
+        "day": 1,
+        "clock": "6:00 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "Morning, June. You up? I just got down. Let me know if we're still doing the early forecast or if you want me to grab some coffee first.",
+        "stated_intention": "Get up and start my morning. Check in with June about today's schedule and confirm the weather shoot is still on for the morning before I have to be back in Pittsburgh.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Morning, Ellis. Are you up and ready to hit the square for that groundhog forecast? We need to nail the weather segment before we move to the band.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "look_around",
+            "words": "Morning. Just checking the angles for the bandstand. Looks good from this side.",
+            "effect": "Cal inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 1,
+        "event_id": "d01-t01-reporter",
+        "day": 1,
+        "clock": "9:30 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "Morning, June. I'm just finishing my coffee. Are we still heading to the square for the groundhog thing, or is there a change?",
+        "stated_intention": "Confirm if we are still heading to the square for the groundhog forecast or if I can take a few minutes for coffee first.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Morning. Coffee first, then we hit the studio at 10:30 for the early forecast. I need you to prep the station's local camera by noon so we can cut to the band's rehearsal.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "look_around",
+            "words": "Clearing my throat, I raise my binoculars to my eyes. \"Ellis, June, you two see that bandstand? That's where our cornet man will be standing. Let's figure out our angles before the place fills up.\"",
+            "effect": "Cal inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 2,
+        "event_id": "d01-t02-reporter",
+        "day": 1,
+        "clock": "1:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "Hey June, I'm heading to the depot to catch that one o'clock coach. Do I still need to stop by the studio to prep the local camera, or can I just grab my coat and go?",
+        "stated_intention": "Confirm that the studio prep is still needed before I head to the depot.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Alright, Ellis, we are shooting today. The station wants the town band at two sharp, and I want your weather segment to follow at three. You have until then to prep the local camera and get your notes ready. Let's get the gear out to the studio.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "film_festival",
+            "words": "Alright, rolling for the festival wide.",
+            "effect": "Cal uses the camera's last charged take to film the festival."
+          }
+        ]
+      },
+      {
+        "event_index": 3,
+        "event_id": "d01-t03-reporter",
+        "day": 1,
+        "clock": "7:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "June, just checking in. I'm heading to the depot now to catch my one o'clock coach back to Pittsburgh. Do I still need to stop by the studio to prep that local camera, or am I good to go?",
+        "stated_intention": "Confirm the schedule and tell June I am leaving for the depot to catch my 1:00 PM coach.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Ellis, forget the depot. We're not shooting the band or the weather. I'm canceling the rest of the rundown. Are you heading back to your room, or do you want to head down to the diner for a drink?",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "listen_to_band",
+            "words": "Last one's spent. Gonna just sit and listen to the rest of the set.",
+            "effect": "Cal stays for the band's cornet solo."
+          }
+        ]
+      },
+      {
+        "event_index": 4,
+        "event_id": "d02-t00-reporter",
+        "day": 2,
+        "clock": "6:00 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "Morning. I just wanted to make sure you got my message last night. I'm heading out, but if there's anything you need from me before I catch the coach, now's the time.",
+        "stated_intention": "Confirm the cancellation and check if I need to do anything else before I head out.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Morning, Ellis. Are you up and ready to hit the square for that groundhog forecast? We need to nail the weather segment before we move to the band.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "look_around",
+            "words": "Morning. Just checking the angles for the bandstand. Looks good from this side.",
+            "effect": "Cal inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 5,
+        "event_id": "d02-t01-reporter",
+        "day": 2,
+        "clock": "9:30 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "Morning. June just told me the rundown is cancelled. I’m heading to the depot for the one o’clock coach to Pittsburgh. I’m clear to go?",
+        "stated_intention": "Confirm the show is off so I can catch my coach and get home before Wednesday.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Ellis, how's the forecast shaping up for the morning segment?",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "look_around",
+            "words": "Clearing my throat, I raise my binoculars to my eyes. \"Ellis, June, you two see that bandstand? That's where our cornet man will be standing. Let's figure out our angles before the place fills up.\"",
+            "effect": "Cal inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 6,
+        "event_id": "d02-t02-reporter",
+        "day": 2,
+        "clock": "1:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "June, just making sure we're square here. The rundown is off, right? I’m heading to the depot for my one o’clock coach back to Pittsburgh. Do I need to stop by the studio to hand off the local camera, or am I good to go?",
+        "stated_intention": "Confirm the show is cancelled so I can grab my coat and head to the depot for the 1:00 PM coach.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Ellis, before you head out. I've locked in the weather segment for three. Do you have your notes ready to go?",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "film_festival",
+            "words": "Alright, rolling for the festival wide.",
+            "effect": "Cal uses the camera's last charged take to film the festival."
+          }
+        ]
+      },
+      {
+        "event_index": 7,
+        "event_id": "d02-t03-reporter",
+        "day": 2,
+        "clock": "7:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "June, I'm heading out. Just want to make sure the rundown is officially off so I can catch my one o'clock coach back to Pittsburgh. Do I need to stop by the studio to hand off the local camera, or am I good to go?",
+        "stated_intention": "Confirm the show is still cancelled and tell June I'm heading to the depot for the 1:00 PM coach.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Ellis, I need to correct the record. The rundown is not cancelled. The weather segment is locked in for three o'clock this afternoon. Do you have your notes ready?",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "listen_to_band",
+            "words": "Last one's spent. Gonna just sit and listen to the rest of the set.",
+            "effect": "Cal stays for the band's cornet solo."
+          }
+        ]
+      },
+      {
+        "event_index": 8,
+        "event_id": "d03-t00-reporter",
+        "day": 3,
+        "clock": "6:00 am",
+        "origin": "inn",
+        "place": "diner",
+        "actor": "Ellis",
+        "action": "go_to_diner",
+        "words": "Morning, June. I'm heading down to the diner for coffee. I'm not going back to the room to sleep. I'm going to sit there and wait until you can give me a straight answer about the rundown.",
+        "stated_intention": "Grab a real coffee and a piece of toast. I need to be awake and fed before I face June again, because she keeps changing the schedule and I am not missing that one o'clock coach.",
+        "effect": "Ellis reaches the diner.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Morning, Ellis. Are you up and ready to hit the square for that groundhog forecast? We need to nail the weather segment before we move to the band.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "look_around",
+            "words": "Morning. Just checking the angles for the bandstand. Looks good from this side.",
+            "effect": "Cal inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 9,
+        "event_id": "d03-t01-reporter",
+        "day": 3,
+        "clock": "9:30 am",
+        "origin": "diner",
+        "place": "diner",
+        "actor": "Ellis",
+        "action": "clear_tables",
+        "words": "",
+        "stated_intention": "Clear these last two racks to stay out of the square and avoid another schedule debate with June until I can focus on getting to that coach.",
+        "effect": "Ellis clears one rack. 1 rack(s) remain.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "go_to_diner",
+            "words": "Hold your spot, Ellis. I'm coming.",
+            "effect": "June reaches the diner."
+          },
+          {
+            "actor": "Cal",
+            "action": "look_around",
+            "words": "Clearing my throat, I raise my binoculars to my eyes. \"Ellis, June, you two see that bandstand? That's where our cornet man will be standing. Let's figure out our angles before the place fills up.\"",
+            "effect": "Cal inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 10,
+        "event_id": "d03-t02-reporter",
+        "day": 3,
+        "clock": "1:00 pm",
+        "origin": "diner",
+        "place": "diner",
+        "actor": "Ellis",
+        "action": "clear_tables",
+        "words": "",
+        "stated_intention": "Finish the last rack of dishes to buy time while I figure out the schedule.",
+        "effect": "Ellis clears one rack. 0 rack(s) remain.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Ellis. Before you order that coffee, let's settle this. I know you've been sitting there all morning. Here is the rundown. We are not moving the weather segment. You are on air at 2:15 sharp. I need that groundhog piece to be tight, but I want you to lean into that local flavor. We have the band interview at 2:45. Cal is coming in at 2:30 to set up the mics, so I need you out of the way by then. Can you work with that?",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "film_festival",
+            "words": "Alright, rolling for the festival wide.",
+            "effect": "Cal uses the camera's last charged take to film the festival."
+          }
+        ]
+      },
+      {
+        "event_index": 11,
+        "event_id": "d03-t03-reporter",
+        "day": 3,
+        "clock": "7:00 pm",
+        "origin": "diner",
+        "place": "diner",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "June, listen to me. I have a hard ticket in my pocket for the 1:00 PM coach to Pittsburgh. If you are telling me I am on air at 2:15, that is impossible. I cannot do both. Do I shoot the groundhog segment now so I can be gone by noon, or are you officially letting me go?",
+        "stated_intention": "Hear June's specific demands about the 2:15 slot and the groundhog piece. I have my 1:00 PM ticket, so I need to know if I am locked in or free to leave before I commit to anything.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Ellis, I hear you. I’m not going to sit here and let you spin your wheels. Let’s lock this in: we’re running the weather segment at 4:00 PM in the square, and I’m putting the town band on air right after at 5:30 PM. Cal is on camera for the band. You get your segment, I get my show, and we all go home. Does that work for you?",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "listen_to_band",
+            "words": "Last one's spent. Gonna just sit and listen to the rest of the set.",
+            "effect": "Cal stays for the band's cornet solo."
+          }
+        ]
+      },
+      {
+        "event_index": 12,
+        "event_id": "d04-t00-reporter",
+        "day": 4,
+        "clock": "6:00 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "Morning, June. I’m back. I need a straight answer on whether I’m on air or not. I have a hard ticket for the one o’clock coach to Pittsburgh. If I’m shooting, I need to know exactly when so I can be gone before I miss that bus.",
+        "stated_intention": "Listen to June's final word on the schedule. I have a 1:00 PM ticket to Pittsburgh, so I need to know if I'm locked in for this segment or if I can leave.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Morning, Ellis. Are you up and ready to hit the square for that groundhog forecast? We need to nail the weather segment before we move to the band.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "look_around",
+            "words": "Morning. Just checking the angles for the bandstand. Looks good from this side.",
+            "effect": "Cal inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 13,
+        "event_id": "d04-t01-reporter",
+        "day": 4,
+        "clock": "9:30 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "June, I’m back. I need a straight answer on whether I’m on air or not. I have a hard ticket for the one o’clock coach to Pittsburgh. If I’m shooting, I need to know exactly when so I can be gone before I miss that bus.",
+        "stated_intention": "Ask June directly if the weather segment is locked in for today. I have a hard ticket for the 1:00 PM coach to Pittsburgh, so I need to know if I'm on air or if I'm free to leave.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Morning, Ellis. You're on. I need you in the studio by ten-fifteen for the weather segment. Are you ready to prep?",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "look_around",
+            "words": "Clearing my throat, I raise my binoculars to my eyes. \"Ellis, June, you two see that bandstand? That's where our cornet man will be standing. Let's figure out our angles before the place fills up.\"",
+            "effect": "Cal inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 14,
+        "event_id": "d04-t02-reporter",
+        "day": 4,
+        "clock": "1:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "June, you have changed the slot four times today. I have a paid ticket for the one o'clock coach. Is the 4:00 PM slot in the square final, or should I be at the depot right now?",
+        "stated_intention": "June keeps moving the goalposts. I need to know if the 4:00 PM slot is final so I can decide whether to stay or go to the depot.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Ellis, you're on at 2:30. We'll shoot the town band first, so you're free to catch that 1:00 PM coach. Are you ready to prep now?",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "film_festival",
+            "words": "Alright, rolling for the festival wide.",
+            "effect": "Cal uses the camera's last charged take to film the festival."
+          }
+        ]
+      },
+      {
+        "event_index": 15,
+        "event_id": "d04-t03-reporter",
+        "day": 4,
+        "clock": "7:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "look_around",
+        "words": "",
+        "stated_intention": "It's 7:00 PM, so the 1:00 PM coach is long gone. I need to figure out my next move to get home before Wednesday.",
+        "effect": "Ellis inspects the inn. The windowsill is unmarked.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Ellis, I'm sorry for the mess today. The 4:00 PM slot is final. You are on air at four in the square. You can go to the depot now to catch your coach.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "listen_to_band",
+            "words": "Last one's spent. Gonna just sit and listen to the rest of the set.",
+            "effect": "Cal stays for the band's cornet solo."
+          }
+        ]
+      },
+      {
+        "event_index": 16,
+        "event_id": "d05-t00-reporter",
+        "day": 5,
+        "clock": "6:00 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "June, I'm sorry. I'm going to my room to pack. I'm not doing a segment today. I'm leaving first thing tomorrow.",
+        "stated_intention": "Apologize for the confusion. I am going to my room to pack so I can leave first thing tomorrow morning. Tell her I am not working today.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Morning, Ellis. Are you up and ready to hit the square for that groundhog forecast? We need to nail the weather segment before we move to the band.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "look_around",
+            "words": "Morning. Just checking the angles for the bandstand. Looks good from this side.",
+            "effect": "Cal inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 17,
+        "event_id": "d05-t01-reporter",
+        "day": 5,
+        "clock": "9:30 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "spend_time_here",
+        "words": "June, I'm sorry for the confusion today. I'm going to my room to pack. I'm not doing a segment today. I'm leaving first thing tomorrow.",
+        "stated_intention": "Get settled in my room and pack. I am not doing the 4:00 segment. I am leaving tomorrow to get home for the couch move.",
+        "effect": "Ellis spends the period at the inn.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Ellis, I hear you. Before you pack, we need to sort out what happens to the rundown.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "look_around",
+            "words": "Clearing my throat, I raise my binoculars to my eyes. \"Ellis, June, you two see that bandstand? That's where our cornet man will be standing. Let's figure out our angles before the place fills up.\"",
+            "effect": "Cal inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 18,
+        "event_id": "d05-t02-reporter",
+        "day": 5,
+        "clock": "1:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "June, I'm sorry for the confusion today. I'm going to my room to pack. I'm not doing a segment today. I'm leaving first thing tomorrow.",
+        "stated_intention": "I am staying in my room. I am leaving tomorrow morning to get home for the couch move.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Ellis, I can see you're packed, and I respect that. But the town band is booked at 2:00, and if I don't have a weather segment, the station is going to pull the whole afternoon slot. Can you do a three-minute voiceover from your room? I'll bring the mic to you.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "film_festival",
+            "words": "Alright, rolling for the festival wide.",
+            "effect": "Cal uses the camera's last charged take to film the festival."
+          }
+        ]
+      },
+      {
+        "event_index": 19,
+        "event_id": "d05-t03-reporter",
+        "day": 5,
+        "clock": "7:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "June, before I get back to packing, I have one last question. Can I borrow your car for a few hours tomorrow morning? I need to get to the depot early enough to catch a coach back to Pittsburgh before the van gets here for the couch move.",
+        "stated_intention": "Ask June if I can borrow her car for a few hours tomorrow so I can get to the depot and catch a morning coach home before the van arrives for the couch move.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Ellis, I know you're done for tomorrow, but I need something on air before the band plays at eight. Can you do a quick five-minute segment or just a voiceover right now? I can have it cut in if you want.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "listen_to_band",
+            "words": "Last one's spent. Gonna just sit and listen to the rest of the set.",
+            "effect": "Cal stays for the band's cornet solo."
+          }
+        ]
+      },
+      {
+        "event_index": 20,
+        "event_id": "d06-t00-reporter",
+        "day": 6,
+        "clock": "6:00 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "June, it's six a.m. I asked last night if I could borrow your car for a few hours tomorrow. I need to be at the depot early enough to catch a coach back to Pittsburgh before the van gets here for the couch move. Can I use the keys?",
+        "stated_intention": "Get June's straight answer on the car so I can plan my departure for tomorrow morning.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Morning, Ellis. Are you up and ready to hit the square for that groundhog forecast? We need to nail the weather segment before we move to the band.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "look_around",
+            "words": "Morning. Just checking the angles for the bandstand. Looks good from this side.",
+            "effect": "Cal inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 21,
+        "event_id": "d06-t01-reporter",
+        "day": 6,
+        "clock": "9:30 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "June, I asked last night if I could borrow your car for a few hours tomorrow. I need to be at the depot early enough to catch a coach back to Pittsburgh before the van gets here for the couch move. Can I use the keys?",
+        "stated_intention": "Get a clear yes or no on the car so I can plan my morning departure for the couch move.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Good morning. You wanted to borrow my car for a few hours tomorrow, right? I can do that, just make sure you're back by noon. Are you ready to start on the weather segment?",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "look_around",
+            "words": "Clearing my throat, I raise my binoculars to my eyes. \"Ellis, June, you two see that bandstand? That's where our cornet man will be standing. Let's figure out our angles before the place fills up.\"",
+            "effect": "Cal inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 22,
+        "event_id": "d06-t02-reporter",
+        "day": 6,
+        "clock": "1:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "talk_to_June",
+        "words": "June, I'm not doing the segment. I just need a straight yes on those car keys so I can be at the depot early and catch a coach to Pittsburgh this morning.",
+        "stated_intention": "Get a definitive yes on the car keys so I can leave first thing in the morning and make it home for the couch move.",
+        "effect": "Ellis addresses June.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Here are the keys, Ellis. Make sure the segment's ready before we hit the square.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "film_festival",
+            "words": "Alright, rolling for the festival wide.",
+            "effect": "Cal uses the camera's last charged take to film the festival."
+          }
+        ]
+      },
+      {
+        "event_index": 23,
+        "event_id": "d06-t03-reporter",
+        "day": 6,
+        "clock": "7:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Ellis",
+        "action": "spend_time_here",
+        "words": "June, I appreciate the keys, but I am not doing a segment today. I am staying in my room. I’ll see you when I’m checking out.",
+        "stated_intention": "Get settled in the room and keep June at bay until I can figure out how to get home before the couch move.",
+        "effect": "Ellis spends the period at the inn.",
+        "cast": [
+          {
+            "actor": "June",
+            "action": "talk_to_Ellis",
+            "words": "Keys are in the dish by the door, Ellis. You're good to go. I'm heading to the square now to lock down the band's slot. We go on in an hour, so don't be late.",
+            "effect": "June addresses Ellis."
+          },
+          {
+            "actor": "Cal",
+            "action": "listen_to_band",
+            "words": "Last one's spent. Gonna just sit and listen to the rest of the set.",
+            "effect": "Cal stays for the band's cornet solo."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "take": "Take 04",
+    "events": [
+      {
+        "event_index": 0,
+        "event_id": "d01-t00-reporter",
+        "day": 1,
+        "clock": "6:00 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "talk_to_Rita",
+        "words": "Rita, morning. I'm up and at 'em. What's the game plan for the shot? I want to be out of here by nine at the latest, but I need to nail the copy first.",
+        "stated_intention": "Get the rundown for the morning shot and confirm the timeline before I head out.",
+        "effect": "Phil addresses Rita.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "look_around",
+            "words": "Morning, Phil. Give me a sec to get my bearings.",
+            "effect": "Rita inspects the inn. The windowsill is unmarked."
+          },
+          {
+            "actor": "Larry",
+            "action": "look_around",
+            "words": "Morning, Rita. I'm at the bandstand. Let's get the festival set up on tape before the crowds get here.",
+            "effect": "Larry inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 1,
+        "event_id": "d01-t01-reporter",
+        "day": 1,
+        "clock": "9:30 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "talk_to_Rita",
+        "words": "Morning, Rita. You said you needed a sec to get your bearings. Are we ready to roll, or do I need to wait?",
+        "stated_intention": "Confirm if the rundown is ready and if we are on track to leave by 9:00.",
+        "effect": "Phil addresses Rita.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Morning, Phil. I heard you want to be out of here by nine. That’s too early for the weather copy. I need the band on air by two, so let’s lock the rundown now. You’ve got until eleven for your script, then we roll. Deal?",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "film_festival",
+            "words": "Rita, if the newsroom wants festival footage, this is the one I've got to make count. Rolling now.",
+            "effect": "Larry uses the camera's last charged take to film the festival."
+          }
+        ]
+      },
+      {
+        "event_index": 2,
+        "event_id": "d01-t02-reporter",
+        "day": 1,
+        "clock": "1:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "talk_to_Rita",
+        "words": "Rita, it's one. Did we get the band on air? I need to be at the depot by two for my coach to Pittsburgh.",
+        "stated_intention": "Confirm the shoot is wrapped so I can grab my coat and head to the depot for the one o'clock coach.",
+        "effect": "Phil addresses Rita.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Phil, I've got the rundown finalized. We're shooting the weather segment at 10:00 AM sharp, and I'm putting the town band in the same block right after you. I need your copy locked in by 9:30 so Larry can set up the lighting. Do you have it ready, or do you need a few more minutes?",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "listen_to_band",
+            "words": "Good set, folks.",
+            "effect": "Larry stays for the band's cornet solo."
+          }
+        ]
+      },
+      {
+        "event_index": 3,
+        "event_id": "d01-t03-reporter",
+        "day": 1,
+        "clock": "7:00 pm",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "talk_to_Rita",
+        "words": "Rita, it's seven. Did we actually get the band on air? I need to be at the depot by two for my coach to Pittsburgh.",
+        "stated_intention": "Confirm the shoot is over and get a ride to the depot.",
+        "effect": "Phil addresses Rita.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Phil, I know you’ve been waiting on my word all day. The weather segment is locked in for 10:00 AM, and the town band slot is confirmed for that same block. It’s on the rundown, it’s done. You can go to the depot for your coach in peace now.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "listen_to_band",
+            "words": "This is the cornet player I want to frame. I have no battery left, so I have to watch them perform and remember the exact angle and light for the portrait shot I need to get after the set. The newsroom can have the footage I already shot; my duty is to ensure this one perfect portrait is possible. I can't risk the battery now, I have to be ready with the composition in my head.",
+            "effect": "Larry stays for the band's cornet solo."
+          }
+        ]
+      },
+      {
+        "event_index": 4,
+        "event_id": "d02-t00-reporter",
+        "day": 2,
+        "clock": "6:00 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "talk_to_Rita",
+        "words": "Rita, it's six a.m. The radio says the groundhog's out in the square. I'm not wasting another hour. Did we wrap, or not? I've got a coach to catch.",
+        "stated_intention": "Confirm the shoot is done and I'm free to go.",
+        "effect": "Phil addresses Rita.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "look_around",
+            "words": "Morning, Phil. Give me a sec to get my bearings.",
+            "effect": "Rita inspects the inn. The windowsill is unmarked."
+          },
+          {
+            "actor": "Larry",
+            "action": "look_around",
+            "words": "Morning, Rita. I'm at the bandstand. Let's get the festival set up on tape before the crowds get here.",
+            "effect": "Larry inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 5,
+        "event_id": "d02-t01-reporter",
+        "day": 2,
+        "clock": "9:30 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "talk_to_Rita",
+        "words": "Rita, it's Tuesday again. I need a straight answer: are we wrapped, or is the camera still rolling? I've got a coach to catch.",
+        "stated_intention": "Get a direct answer on the shoot status and my departure time.",
+        "effect": "Phil addresses Rita.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Morning, Phil. Stop chasing that coach. We have the weather slot booked for nine, and I am putting the town band on air at one. I need you in the studio by ten to prep the forecast.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "film_festival",
+            "words": "Rita, if the newsroom wants festival footage, this is the one I've got to make count. Rolling now.",
+            "effect": "Larry uses the camera's last charged take to film the festival."
+          }
+        ]
+      },
+      {
+        "event_index": 6,
+        "event_id": "d02-t02-reporter",
+        "day": 2,
+        "clock": "1:00 pm",
+        "origin": "inn",
+        "place": "Pittsburgh",
+        "actor": "Phil",
+        "action": "take_coach_to_Pittsburgh",
+        "words": "I'm done here. I'm heading to the depot.",
+        "stated_intention": "Get to the depot before 1:00 pm to board the coach to Pittsburgh.",
+        "effect": "Phil uses the paid ticket and rides the coach all the way to Pittsburgh.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Phil, it's one p.m. We're not wrapped. I need your weather package ready by three for the two o'clock newscast, and I'm putting the town band on the back end. Let's get to the studio.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "listen_to_band",
+            "words": "Good set, folks.",
+            "effect": "Larry stays for the band's cornet solo."
+          }
+        ]
+      },
+      {
+        "event_index": 7,
+        "event_id": "d02-t03-reporter",
+        "day": 2,
+        "clock": "7:00 pm",
+        "origin": "Pittsburgh",
+        "place": "Pittsburgh",
+        "actor": "Phil",
+        "action": "call_sister",
+        "words": "Hey, it's Phil. I finally made it to Pittsburgh. I'm safe. I'm just calling to make sure I'm still on for Wednesday. I'm free to help move that couch.",
+        "stated_intention": "Confirm my sister knows I'm in Pittsburgh and will be ready to help move the couch on Wednesday.",
+        "effect": "Phil phones his sister. She confirms the moving van is booked for Wednesday.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "spend_time_here",
+            "words": "Okay, band's on at five. Weather's last. Let's roll.",
+            "effect": "Rita spends the period at the inn."
+          },
+          {
+            "actor": "Larry",
+            "action": "listen_to_band",
+            "words": "This is the cornet player I want to frame. I have no battery left, so I have to watch them perform and remember the exact angle and light for the portrait shot I need to get after the set. The newsroom can have the footage I already shot; my duty is to ensure this one perfect portrait is possible. I can't risk the battery now, I have to be ready with the composition in my head.",
+            "effect": "Larry stays for the band's cornet solo."
+          }
+        ]
+      },
+      {
+        "event_index": 8,
+        "event_id": "d03-t00-reporter",
+        "day": 3,
+        "clock": "6:00 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "spend_time_here",
+        "words": "",
+        "stated_intention": "Wait until 8:00 AM to leave for the depot.",
+        "effect": "Phil spends the period at the inn.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "look_around",
+            "words": "Morning, Phil. Give me a sec to get my bearings.",
+            "effect": "Rita inspects the inn. The windowsill is unmarked."
+          },
+          {
+            "actor": "Larry",
+            "action": "look_around",
+            "words": "Morning, Rita. I'm at the bandstand. Let's get the festival set up on tape before the crowds get here.",
+            "effect": "Larry inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 9,
+        "event_id": "d03-t01-reporter",
+        "day": 3,
+        "clock": "9:30 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "try_something",
+        "words": "Rita, I'm done here. I'm grabbing my coat and heading to the depot.",
+        "stated_intention": "Grab my coat and head straight for the depot. I've got a coach to catch and no more time for this.",
+        "effect": "Phil spends this period on a personal attempt at the inn. Its proposed result is unverified.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Morning, Phil. Grab a coffee? I need to run the rundown with you before the square gets busy.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "film_festival",
+            "words": "Rita, if the newsroom wants festival footage, this is the one I've got to make count. Rolling now.",
+            "effect": "Larry uses the camera's last charged take to film the festival."
+          }
+        ]
+      },
+      {
+        "event_index": 10,
+        "event_id": "d03-t02-reporter",
+        "day": 3,
+        "clock": "1:00 pm",
+        "origin": "inn",
+        "place": "Pittsburgh",
+        "actor": "Phil",
+        "action": "take_coach_to_Pittsburgh",
+        "words": "Rita, I'm taking the coach now. I'll see you in Pittsburgh.",
+        "stated_intention": "Board the 1:00 coach and get to Pittsburgh.",
+        "effect": "Phil uses the paid ticket and rides the coach all the way to Pittsburgh.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Phil, before you head off, do we have our rundown locked? I want the weather segment and the town band slot confirmed so I know exactly what time we're rolling.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "listen_to_band",
+            "words": "Good set, folks.",
+            "effect": "Larry stays for the band's cornet solo."
+          }
+        ]
+      },
+      {
+        "event_index": 11,
+        "event_id": "d03-t03-reporter",
+        "day": 3,
+        "clock": "7:00 pm",
+        "origin": "Pittsburgh",
+        "place": "Pittsburgh",
+        "actor": "Phil",
+        "action": "spend_time_here",
+        "words": "",
+        "stated_intention": "Rest up before Wednesday's couch move.",
+        "effect": "Phil spends the period at the Pittsburgh.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "go_to_studio",
+            "words": "I'm heading to the studio now.",
+            "effect": "Rita reaches the studio."
+          },
+          {
+            "actor": "Larry",
+            "action": "listen_to_band",
+            "words": "This is the cornet player I want to frame. I have no battery left, so I have to watch them perform and remember the exact angle and light for the portrait shot I need to get after the set. The newsroom can have the footage I already shot; my duty is to ensure this one perfect portrait is possible. I can't risk the battery now, I have to be ready with the composition in my head.",
+            "effect": "Larry stays for the band's cornet solo."
+          }
+        ]
+      },
+      {
+        "event_index": 12,
+        "event_id": "d04-t00-reporter",
+        "day": 4,
+        "clock": "6:00 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "try_something",
+        "words": "Rita, I'm going to mark the window with a pencil so I can tell this Tuesday from the last one.",
+        "stated_intention": "Find the pencil to mark the window.",
+        "effect": "Phil spends this period on a personal attempt at the inn. Its proposed result is unverified.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "look_around",
+            "words": "Morning, Phil. Give me a sec to get my bearings.",
+            "effect": "Rita inspects the inn. The windowsill is unmarked."
+          },
+          {
+            "actor": "Larry",
+            "action": "look_around",
+            "words": "Morning, Rita. I'm at the bandstand. Let's get the festival set up on tape before the crowds get here.",
+            "effect": "Larry inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 13,
+        "event_id": "d04-t01-reporter",
+        "day": 4,
+        "clock": "9:30 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "leave_pencil_mark",
+        "words": "Rita, I'm done. I'm leaving a mark so I don't lose my mind, and then I'm going to the depot. Don't wait up.",
+        "stated_intention": "Mark the window to ground myself, then get to the depot for the 1:00 coach.",
+        "effect": "Phil pencils a cross on the hotel windowsill.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Morning, Phil. Did you finish that pencil mark? I want to get a head start on the rundown before the sun comes up.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "film_festival",
+            "words": "Rita, if the newsroom wants festival footage, this is the one I've got to make count. Rolling now.",
+            "effect": "Larry uses the camera's last charged take to film the festival."
+          }
+        ]
+      },
+      {
+        "event_index": 14,
+        "event_id": "d04-t02-reporter",
+        "day": 4,
+        "clock": "1:00 pm",
+        "origin": "inn",
+        "place": "Pittsburgh",
+        "actor": "Phil",
+        "action": "take_coach_to_Pittsburgh",
+        "words": "Rita, I'm taking the coach. I'm done here. See you later.",
+        "stated_intention": "Board the 1:00 coach to get to Pittsburgh and help my sister move the couch on Wednesday.",
+        "effect": "Phil uses the paid ticket and rides the coach all the way to Pittsburgh.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Phil, are you ready to start? It's 1:00 pm and I need to get this weather segment done before we go to the town band this afternoon.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "listen_to_band",
+            "words": "Good set, folks.",
+            "effect": "Larry stays for the band's cornet solo."
+          }
+        ]
+      },
+      {
+        "event_index": 15,
+        "event_id": "d04-t03-reporter",
+        "day": 4,
+        "clock": "7:00 pm",
+        "origin": "Pittsburgh",
+        "place": "Pittsburgh",
+        "actor": "Phil",
+        "action": "call_sister",
+        "words": "Hey, it's Phil. Just a quick check-in. I'm in Pittsburgh and I'm good for Wednesday. Is the van still set for nine?",
+        "stated_intention": "Confirm I'm still good to help with the couch move tomorrow morning.",
+        "effect": "Phil phones his sister. She confirms the moving van is booked for Wednesday.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "spend_time_here",
+            "words": "",
+            "effect": "Rita spends the period at the inn."
+          },
+          {
+            "actor": "Larry",
+            "action": "listen_to_band",
+            "words": "This is the cornet player I want to frame. I have no battery left, so I have to watch them perform and remember the exact angle and light for the portrait shot I need to get after the set. The newsroom can have the footage I already shot; my duty is to ensure this one perfect portrait is possible. I can't risk the battery now, I have to be ready with the composition in my head.",
+            "effect": "Larry stays for the band's cornet solo."
+          }
+        ]
+      },
+      {
+        "event_index": 16,
+        "event_id": "d05-t00-reporter",
+        "day": 5,
+        "clock": "6:00 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "leave_pencil_mark",
+        "words": "Rita, I'm marking the sill. One more cross and I'm out the door for the depot. I'm not staying for another rundown.",
+        "stated_intention": "Mark the windowsill to confirm this is a new day, then head to the depot immediately.",
+        "effect": "Phil pencils a cross on the hotel windowsill.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "look_around",
+            "words": "Morning, Phil. Give me a sec to get my bearings.",
+            "effect": "Rita inspects the inn. The windowsill is unmarked."
+          },
+          {
+            "actor": "Larry",
+            "action": "look_around",
+            "words": "Morning, Rita. I'm at the bandstand. Let's get the festival set up on tape before the crowds get here.",
+            "effect": "Larry inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 17,
+        "event_id": "d05-t01-reporter",
+        "day": 5,
+        "clock": "9:30 am",
+        "origin": "inn",
+        "place": "inn",
+        "actor": "Phil",
+        "action": "look_around",
+        "words": "Morning, Rita. I'll grab my coat and head out. See you at the studio later.",
+        "stated_intention": "Check the time on the room clock and verify my coat and ticket are ready before I head out.",
+        "effect": "Phil inspects the inn. The sill has a pencil cross.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Phil, I saw the cross. One more and I’m done too. We’ve got the town band to tape by two, and you’re on the weather at ten. Let’s get this done and go home.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "film_festival",
+            "words": "Rita, if the newsroom wants festival footage, this is the one I've got to make count. Rolling now.",
+            "effect": "Larry uses the camera's last charged take to film the festival."
+          }
+        ]
+      },
+      {
+        "event_index": 18,
+        "event_id": "d05-t02-reporter",
+        "day": 5,
+        "clock": "1:00 pm",
+        "origin": "inn",
+        "place": "Pittsburgh",
+        "actor": "Phil",
+        "action": "take_coach_to_Pittsburgh",
+        "words": "Rita, I'm heading out. See you in Pittsburgh.",
+        "stated_intention": "Board the one o'clock coach immediately to get to Pittsburgh for the couch move tomorrow.",
+        "effect": "Phil uses the paid ticket and rides the coach all the way to Pittsburgh.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Phil, hold the coat. I've got a weather segment that needs your eyes this afternoon, and I want the town band on air. We're not going to the depot, we're going to the studio. I need you here.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "listen_to_band",
+            "words": "Good set, folks.",
+            "effect": "Larry stays for the band's cornet solo."
+          }
+        ]
+      },
+      {
+        "event_index": 19,
+        "event_id": "d05-t03-reporter",
+        "day": 5,
+        "clock": "7:00 pm",
+        "origin": "Pittsburgh",
+        "place": "Pittsburgh",
+        "actor": "Phil",
+        "action": "spend_time_here",
+        "words": "",
+        "stated_intention": "Rest up at the terminal so I'm fresh enough to help my sister move that couch on Wednesday.",
+        "effect": "Phil spends the period at the Pittsburgh.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "leave_pencil_mark",
+            "words": "We're still on, Phil. I'm not letting you walk out on the town band. Be at the studio by four.",
+            "effect": "Rita pencils a cross on the hotel windowsill."
+          },
+          {
+            "actor": "Larry",
+            "action": "listen_to_band",
+            "words": "This is the cornet player I want to frame. I have no battery left, so I have to watch them perform and remember the exact angle and light for the portrait shot I need to get after the set. The newsroom can have the footage I already shot; my duty is to ensure this one perfect portrait is possible. I can't risk the battery now, I have to be ready with the composition in my head.",
+            "effect": "Larry stays for the band's cornet solo."
+          }
+        ]
+      },
+      {
+        "event_index": 20,
+        "event_id": "d06-t00-reporter",
+        "day": 6,
+        "clock": "6:00 am",
+        "origin": "inn",
+        "place": "diner",
+        "actor": "Phil",
+        "action": "go_to_diner",
+        "words": "Rita, I'm out. I'm going to the diner to get some coffee. I'm not doing another rundown in this room.",
+        "stated_intention": "Get a real coffee and eat something before I head to the depot.",
+        "effect": "Phil reaches the diner.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "look_around",
+            "words": "Morning, Phil. Give me a sec to get my bearings.",
+            "effect": "Rita inspects the inn. The windowsill is unmarked."
+          },
+          {
+            "actor": "Larry",
+            "action": "look_around",
+            "words": "Morning, Rita. I'm at the bandstand. Let's get the festival set up on tape before the crowds get here.",
+            "effect": "Larry inspects the square. Your camera battery has 1 take(s) left."
+          }
+        ]
+      },
+      {
+        "event_index": 21,
+        "event_id": "d06-t01-reporter",
+        "day": 6,
+        "clock": "9:30 am",
+        "origin": "diner",
+        "place": "diner",
+        "actor": "Phil",
+        "action": "clear_tables",
+        "words": "Rita, I'm not going back to that room. I'm grabbing a plate and clearing this spot.",
+        "stated_intention": "Clear the tables to buy a few minutes and keep my hands busy while I figure out the next step.",
+        "effect": "Phil clears one rack. 1 rack(s) remain.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "go_to_diner",
+            "words": "",
+            "effect": "Rita reaches the diner."
+          },
+          {
+            "actor": "Larry",
+            "action": "film_festival",
+            "words": "Rita, if the newsroom wants festival footage, this is the one I've got to make count. Rolling now.",
+            "effect": "Larry uses the camera's last charged take to film the festival."
+          }
+        ]
+      },
+      {
+        "event_index": 22,
+        "event_id": "d06-t02-reporter",
+        "day": 6,
+        "clock": "1:00 pm",
+        "origin": "diner",
+        "place": "Pittsburgh",
+        "actor": "Phil",
+        "action": "take_coach_to_Pittsburgh",
+        "words": "Rita, I'm out. See you in Pittsburgh.",
+        "stated_intention": "Board the 1:00 pm coach now to reach Pittsburgh and be ready for the couch move on Wednesday.",
+        "effect": "Phil uses the paid ticket and rides the coach all the way to Pittsburgh.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "talk_to_Phil",
+            "words": "Phil, coffee first or rundown first? Pick your poison. We've got the band at three, so we need to nail down the weather segment and the square shoot time right now.",
+            "effect": "Rita addresses Phil."
+          },
+          {
+            "actor": "Larry",
+            "action": "listen_to_band",
+            "words": "Good set, folks.",
+            "effect": "Larry stays for the band's cornet solo."
+          }
+        ]
+      },
+      {
+        "event_index": 23,
+        "event_id": "d06-t03-reporter",
+        "day": 6,
+        "clock": "7:00 pm",
+        "origin": "Pittsburgh",
+        "place": "Pittsburgh",
+        "actor": "Phil",
+        "action": "try_something",
+        "words": "Finally. Pittsburgh. I can smell the river from here.",
+        "stated_intention": "Stay calm and present. I am in Pittsburgh. It is Tuesday night. Wednesday is the couch.",
+        "effect": "Phil spends this period on a personal attempt at the Pittsburgh. Its proposed result is unverified.",
+        "cast": [
+          {
+            "actor": "Rita",
+            "action": "spend_time_here",
+            "words": "",
+            "effect": "Rita spends the period at the diner."
+          },
+          {
+            "actor": "Larry",
+            "action": "listen_to_band",
+            "words": "This is the cornet player I want to frame. I have no battery left, so I have to watch them perform and remember the exact angle and light for the portrait shot I need to get after the set. The newsroom can have the footage I already shot; my duty is to ensure this one perfect portrait is possible. I can't risk the battery now, I have to be ready with the composition in my head.",
+            "effect": "Larry stays for the band's cornet solo."
+          }
+        ]
+      }
+    ]
+  }
+]

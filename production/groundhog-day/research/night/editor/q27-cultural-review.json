@@ -1,0 +1,56 @@
+{
+  "fields": [
+    "words",
+    "intention",
+    "detail"
+  ],
+  "scope": "16 complete 27B v1 roots; all 1152 actor decisions. Phrase scan only.",
+  "movie_signifier_terms": [
+    "movie",
+    "cinematic",
+    "cinema",
+    "screenplay",
+    "Bill Murray",
+    "Andie MacDowell",
+    "Harold Ramis",
+    "Ned Ryerson",
+    "Phil Connors",
+    "Punxsutawney",
+    "I Got You Babe",
+    "déjà vu",
+    "deja vu"
+  ],
+  "loop_claim_terms": [
+    "time loop",
+    "time-loop",
+    "Tuesday again",
+    "same Tuesday",
+    "another Tuesday",
+    "last Tuesday",
+    "day repeating",
+    "repeating day",
+    "looping day",
+    "same day",
+    "this Tuesday from the last one",
+    "reliving"
+  ],
+  "matches": {
+    "movie_signifier": [],
+    "loop_claim": [
+      {
+        "root": "film-transcript/seed-701.json",
+        "id": "d02-t01-reporter",
+        "actor": "Phil",
+        "field": "words",
+        "text": "Rita, it's Tuesday again. I need a straight answer: are we wrapped, or is the camera still rolling? I've got a coach to catch."
+      },
+      {
+        "root": "film-transcript/seed-701.json",
+        "id": "d04-t00-reporter",
+        "actor": "Phil",
+        "field": "words",
+        "text": "Rita, I'm going to mark the window with a pencil so I can tell this Tuesday from the last one."
+      }
+    ]
+  }
+}

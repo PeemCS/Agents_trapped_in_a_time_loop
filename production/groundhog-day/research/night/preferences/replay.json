@@ -1,0 +1,78 @@
+{
+  "kind": "Seeded policy replay in five authored two-turn simulations",
+  "seed": 61439,
+  "task_count": 5,
+  "changed_count": 0,
+  "scenes": [
+    {
+      "task": "awning",
+      "setting": "A market organizer is at the permit desk. “Could you fold up the two loose awning panels? I want the stall to reopen tomorrow.”",
+      "shared_uniform_draw": 0.04023563298008259,
+      "opening": {
+        "plan": "ww",
+        "clip": "First, they fold the first loose panel. Next, they fold the second loose panel. Both panels are stored for tomorrow. The guard makes the crossing without the promised coat. The evening piece has no market bell."
+      },
+      "trained": {
+        "plan": "ww",
+        "clip": "First, they fold the first loose panel. Next, they fold the second loose panel. Both panels are stored for tomorrow. The guard makes the crossing without the promised coat. The evening piece has no market bell."
+      },
+      "changed": false
+    },
+    {
+      "task": "seed",
+      "setting": "A seed librarian has two unmarked tins on the table. “I’d like to finish the inventory today.” It is unclear whether the tins are ready for the shelves.",
+      "shared_uniform_draw": 0.019752803376125727,
+      "opening": {
+        "plan": "ag",
+        "clip": "First, they ask whether the tins are ready to shelve. “Yes. I wrote down both lots. Please put them up.” Next, they shelve the first tin. One tin is on the shelf. The driver has to circle the block. The current prices are missing from the report."
+      },
+      "trained": {
+        "plan": "ag",
+        "clip": "First, they ask whether the tins are ready to shelve. “Yes. I wrote down both lots. Please put them up.” Next, they shelve the first tin. One tin is on the shelf. The driver has to circle the block. The current prices are missing from the report."
+      },
+      "changed": false
+    },
+    {
+      "task": "vows",
+      "setting": "A couple decline the radio crew. “No recording of our vows. Please don’t come back to ask. The musicians outside agreed to a recording of their set.”",
+      "shared_uniform_draw": 0.597366038953708,
+      "opening": {
+        "plan": "pr",
+        "clip": "First, they hand the organist the promised spare page. Next, they arrive too late to record the musicians’ public opening number. The couple finish the ceremony. The organist has the missing page in time. The opening number goes unrecorded."
+      },
+      "trained": {
+        "plan": "pr",
+        "clip": "First, they hand the organist the promised spare page. Next, they arrive too late to record the musicians’ public opening number. The couple finish the ceremony. The organist has the missing page in time. The opening number goes unrecorded."
+      },
+      "changed": false
+    },
+    {
+      "task": "scores",
+      "setting": "A conductor is gathering the youth orchestra. “Could you lay out these two scores before the downbeat? I’ll get the players seated.” The reporter is also expected at the doors.",
+      "shared_uniform_draw": 0.5899260981578391,
+      "opening": {
+        "plan": "pw",
+        "clip": "First, they open the promised step-free door for the ushers. Next, they lay the first score on its stand. One section has its score at the downbeat. The ushers bring people through the step-free door on time. The arts-page film misses the tuning."
+      },
+      "trained": {
+        "plan": "pw",
+        "clip": "First, they open the promised step-free door for the ushers. Next, they lay the first score on its stand. One section has its score at the downbeat. The ushers bring people through the step-free door on time. The arts-page film misses the tuning."
+      },
+      "changed": false
+    },
+    {
+      "task": "ferry",
+      "setting": "A mechanic had asked for two tool cases to go on the ferry. At the landing they say, “Plans changed. I’m staying here. Bring both cases to the workshop instead.”",
+      "shared_uniform_draw": 0.0885058231956396,
+      "opening": {
+        "plan": "ww",
+        "clip": "First, they take the first case to the workshop. Next, they take the second case to the workshop. Both cases are in the workshop. The keeper stays by the unlocked ramp. The harbor report misses the bell."
+      },
+      "trained": {
+        "plan": "ww",
+        "clip": "First, they take the first case to the workshop. Next, they take the second case to the workshop. Both cases are in the workshop. The keeper stays by the unlocked ramp. The harbor report misses the bell."
+      },
+      "changed": false
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+[
+  {
+    "id": "S03-B-EMPTY",
+    "title": "The empty crew envelope",
+    "scene": "S03",
+    "time": "00:48.0–00:49.0",
+    "beat": "The emptied envelope settles flat on the ledger as Phil's right glove takes the folded cash toward his coat.",
+    "lens": "14mm first-person POV",
+    "reference": "S03-B-LABEL.jpg",
+    "file": "S03-B-EMPTY.jpg",
+    "job_id": "c0fc573d-719d-4c6c-b38b-ad512ab881b4",
+    "qa": "The label and cash occupy separate areas of the frame. The receipt can be read at full size."
+  },
+  {
+    "id": "S04-A-TURN",
+    "title": "Rita heads for the doors",
+    "scene": "S04",
+    "time": "00:54.7–00:57.0",
+    "beat": "Phil catches himself mid-sentence and lowers his hand as Rita turns toward the doors with her call sheet.",
+    "lens": "14mm first-person POV",
+    "reference": "S04-A.jpg",
+    "file": "S04-A-TURN.jpg",
+    "job_id": "e2bae5a6-9207-4007-a895-bd61cab5b5a1",
+    "qa": "Rita’s turn reads in profile. Snow has tracked farther into the lobby than in the master."
+  },
+  {
+    "id": "S04-C-COTTON",
+    "title": "The cotton barely registers",
+    "scene": "S04",
+    "time": "00:59.3–01:02.0",
+    "beat": "Fully dressed on the bed, Phil lets his hand rest on the sheet. From the far corner, he looks small against the quilt.",
+    "lens": "28mm locked northwest reverse",
+    "reference": "S04-B2-SHADE.jpg",
+    "file": "S04-C-COTTON.jpg",
+    "job_id": "6dc4a926-487b-4d62-8f79-a44b48c0fd08",
+    "qa": "Use during the afternoon hold. The line about the sheets continues into the existing dusk shot, when Phil sits up to tie his shoe."
+  },
+  {
+    "id": "S04-D2-CUE",
+    "title": "Rita seats Alma’s cassette",
+    "scene": "S04",
+    "time": "01:12.5–01:14.0",
+    "beat": "After receiving the cassette, Rita cues it at the Rialto deck while Larry checks the handwritten cue sheet.",
+    "lens": "35mm objective, chest-height",
+    "reference": "S04-D2-LARRY.jpg",
+    "file": "S04-D2-CUE.jpg",
+    "job_id": "a54b82b7-abb3-4233-b35b-00778c912075",
+    "qa": "Larry watches the cue sheet while Rita works the deck. Cool window light is stronger than in the scripted evening."
+  },
+  {
+    "id": "S03-B-EMPTY-FIRST",
+    "title": "Crew fares, first take",
+    "file": "S03-B-EMPTY-FIRST.jpg",
+    "scene": "S03",
+    "time": "00:48.0–00:49.0",
+    "beat": "Phil lifts the folded bills away from the ledger.",
+    "lens": "14 mm eye POV",
+    "qa": "An extra glove appears near the props. Use the corrected envelope still for the cut.",
+    "job_id": "5b88676f-be6e-4001-a0a3-4855ae85d393"
+  }
+]

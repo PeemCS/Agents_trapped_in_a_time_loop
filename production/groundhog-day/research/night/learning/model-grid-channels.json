@@ -1,0 +1,331 @@
+{
+  "scope": "One simultaneous decision only. Hold the two other performed actions and conflict order fixed. Equally weight each visited slot; draw a uniform legal reporter action within it. Multiple seeds and recurrences share starting worlds.",
+  "negative_control": "Only the camera operator can spend the battery. A positive marginal entropy can coexist with zero conditional action signal.",
+  "limits": "Roles' public job goals are engineering probes. None of these events proves kindness, romance or consent. This calculation gives no actor a reward, changes no canonical take and does not estimate the long-horizon return.",
+  "forks": 5148,
+  "sources": [
+    {
+      "model": "qwen3.8:27b",
+      "condition": "film-receipts",
+      "seed": 701,
+      "sha256": "e00c059b31452a7358d24f1aed8947af67fbd1ea38c94b58aa85fa15e8415b95"
+    },
+    {
+      "model": "qwen3.8:27b",
+      "condition": "film-receipts",
+      "seed": 702,
+      "sha256": "b0e3497d0cf5ec1bbb588f96954d83fc9649dbdc4ddbde6cb38c0aac85de731a"
+    },
+    {
+      "model": "qwen3.8:27b",
+      "condition": "film-receipts",
+      "seed": 703,
+      "sha256": "ba92c3ec1294d3ab9ea2451b6b3059201d4cee71dde3f3dc1d1a3d2129f25e39"
+    },
+    {
+      "model": "qwen3.8:27b",
+      "condition": "film-receipts",
+      "seed": 704,
+      "sha256": "a420bbbb7c44482c4d10d07ff86e1964b2a8a241a1f438dee6984df9530e754b"
+    },
+    {
+      "model": "qwen3.8:27b",
+      "condition": "film-transcript",
+      "seed": 701,
+      "sha256": "9695d76c0cf799ac32810b53e3da5c26814e227ba6d710e675f0d5c4c798646d"
+    },
+    {
+      "model": "qwen3.8:27b",
+      "condition": "film-transcript",
+      "seed": 702,
+      "sha256": "759c339dcf0af3b648a51cdcbf6603e8b8637a3bd22969bcbefe89ed4cdcb5a2"
+    },
+    {
+      "model": "qwen3.8:27b",
+      "condition": "film-transcript",
+      "seed": 703,
+      "sha256": "9c701182121f556c969d9d02ffb88f14ac5c0364a5f96e47f8392c30e009021a"
+    },
+    {
+      "model": "qwen3.8:27b",
+      "condition": "film-transcript",
+      "seed": 704,
+      "sha256": "5a5772d75eb5e1ddf38815a5ec3a1be28812f3318145c5b61a740e7b32dc9292"
+    },
+    {
+      "model": "qwen3.8:27b",
+      "condition": "neutral-receipts",
+      "seed": 701,
+      "sha256": "265cdd405322e5eb26a0f589d7bda1dde5d2e7bf2a4dbb945b04a2564284a7d0"
+    },
+    {
+      "model": "qwen3.8:27b",
+      "condition": "neutral-receipts",
+      "seed": 702,
+      "sha256": "cb3415220dfccbea19c6802d3920c9384fe00e2375448d85bc605d2a7a2005eb"
+    },
+    {
+      "model": "qwen3.8:27b",
+      "condition": "neutral-receipts",
+      "seed": 703,
+      "sha256": "34dfe8d46792018322f7226350eb4d538bfc9ba6fb6a141951e54530a39329f3"
+    },
+    {
+      "model": "qwen3.8:27b",
+      "condition": "neutral-receipts",
+      "seed": 704,
+      "sha256": "217c53b59b23734b0070f82f653444187d6ac960e01679e94db3a2f18affa802"
+    },
+    {
+      "model": "qwen3.8:27b",
+      "condition": "neutral-transcript",
+      "seed": 701,
+      "sha256": "fda063ac34079ad7bae584dfc70c13a4a724fcd3645e3fb0e18f1cdac8fdd528"
+    },
+    {
+      "model": "qwen3.8:27b",
+      "condition": "neutral-transcript",
+      "seed": 702,
+      "sha256": "f081a3b4a0351de84a4f87c34df9ba851e5f625dd81f66eaba867fbdab2f227b"
+    },
+    {
+      "model": "qwen3.8:27b",
+      "condition": "neutral-transcript",
+      "seed": 703,
+      "sha256": "ade5878c64049db6318b4798edaf254025ec6078bef8ea4935196aa42ea2b682"
+    },
+    {
+      "model": "qwen3.8:27b",
+      "condition": "neutral-transcript",
+      "seed": 704,
+      "sha256": "cd8e08ae1859ccb90cc1588b4f818088528b4ac3140017dbe80e5dc725838e13"
+    },
+    {
+      "model": "qwen3.5:4b",
+      "condition": "film-receipts",
+      "seed": 701,
+      "sha256": "37193251350406a14cc112f17c6b31bb802d3c2a0d8ccc94c4c0305d491c4ec2"
+    },
+    {
+      "model": "qwen3.5:4b",
+      "condition": "film-receipts",
+      "seed": 702,
+      "sha256": "d0149e8653f74c2a3b3ba91004d7170aa87f14bab02332dd4beab36e0566cbc6"
+    },
+    {
+      "model": "qwen3.5:4b",
+      "condition": "film-receipts",
+      "seed": 703,
+      "sha256": "bf46ba91445a53d9912e6fef8685418debea6d450d42ded502f7b8033916439a"
+    },
+    {
+      "model": "qwen3.5:4b",
+      "condition": "film-receipts",
+      "seed": 704,
+      "sha256": "cf14c027b563497f86a1e2c64e01e5a7f448890e46ad26327d584ae9e6b43219"
+    },
+    {
+      "model": "qwen3.5:4b",
+      "condition": "neutral-receipts",
+      "seed": 701,
+      "sha256": "425d4d6fc20898286b786672299922671ea02258371c615f1a9517c98cd41e3e"
+    },
+    {
+      "model": "qwen3.5:4b",
+      "condition": "neutral-receipts",
+      "seed": 702,
+      "sha256": "c3342adb518057c1b9605c485a7a0415e5b8c1be6babeb318b1c8a19304f9fd2"
+    },
+    {
+      "model": "qwen3.5:4b",
+      "condition": "neutral-receipts",
+      "seed": 703,
+      "sha256": "4a5710f3e82dd6d7a254968e502328b1954028bea8e348661c7619f47d8d474c"
+    },
+    {
+      "model": "qwen3.5:4b",
+      "condition": "neutral-receipts",
+      "seed": 704,
+      "sha256": "d3fa9906d9eabc3c18e5f2a323da6e1a3f3ff9995a95f0d7343d7abcb0b126bc"
+    }
+  ],
+  "families": {
+    "q27": {
+      "forks": 3413,
+      "channels": {
+        "new_band_recording": {
+          "slots": 384,
+          "observed_reward_positive": 1,
+          "observed_actor_marginal_reward_entropy_bits": 0.02611,
+          "uniform_action_marginal_reward_entropy_bits": 0.03353,
+          "uniform_action_mean_reward": 0.00349,
+          "states_where_the_reporter_can_change_the_immediate_reward": 4,
+          "states_where_a_passive_reporter_already_gets_positive_reward": 1,
+          "observed_success_attributable_relative_to_staying": 0,
+          "uniform_action_conditional_mutual_information_bits": 0.00438
+        },
+        "new_filed_forecast": {
+          "slots": 384,
+          "observed_reward_positive": 5,
+          "observed_actor_marginal_reward_entropy_bits": 0.10021,
+          "uniform_action_marginal_reward_entropy_bits": 0.03501,
+          "uniform_action_mean_reward": 0.00367,
+          "states_where_the_reporter_can_change_the_immediate_reward": 4,
+          "states_where_a_passive_reporter_already_gets_positive_reward": 1,
+          "observed_success_attributable_relative_to_staying": 4,
+          "uniform_action_conditional_mutual_information_bits": 0.00497
+        },
+        "sister_confirmed": {
+          "slots": 384,
+          "observed_reward_positive": 11,
+          "observed_actor_marginal_reward_entropy_bits": 0.18755,
+          "uniform_action_marginal_reward_entropy_bits": 0.12382,
+          "uniform_action_mean_reward": 0.01693,
+          "states_where_the_reporter_can_change_the_immediate_reward": 26,
+          "states_where_a_passive_reporter_already_gets_positive_reward": 0,
+          "observed_success_attributable_relative_to_staying": 11,
+          "uniform_action_conditional_mutual_information_bits": 0.05493
+        },
+        "coach_departure": {
+          "slots": 384,
+          "observed_reward_positive": 26,
+          "observed_actor_marginal_reward_entropy_bits": 0.35731,
+          "uniform_action_marginal_reward_entropy_bits": 0.16904,
+          "uniform_action_mean_reward": 0.02507,
+          "states_where_the_reporter_can_change_the_immediate_reward": 96,
+          "states_where_a_passive_reporter_already_gets_positive_reward": 0,
+          "observed_success_attributable_relative_to_staying": 26,
+          "uniform_action_conditional_mutual_information_bits": 0.11744
+        },
+        "camera_battery_spent_by_larry": {
+          "slots": 384,
+          "observed_reward_positive": 89,
+          "observed_actor_marginal_reward_entropy_bits": 0.78109,
+          "uniform_action_marginal_reward_entropy_bits": 0.78109,
+          "uniform_action_mean_reward": 0.23177,
+          "states_where_the_reporter_can_change_the_immediate_reward": 0,
+          "states_where_a_passive_reporter_already_gets_positive_reward": 89,
+          "observed_success_attributable_relative_to_staying": 0,
+          "uniform_action_conditional_mutual_information_bits": 0.0
+        }
+      }
+    },
+    "q4": {
+      "forks": 1735,
+      "channels": {
+        "new_band_recording": {
+          "slots": 192,
+          "observed_reward_positive": 0,
+          "observed_actor_marginal_reward_entropy_bits": 0.0,
+          "uniform_action_marginal_reward_entropy_bits": 0.01048,
+          "uniform_action_mean_reward": 0.00091,
+          "states_where_the_reporter_can_change_the_immediate_reward": 2,
+          "states_where_a_passive_reporter_already_gets_positive_reward": 0,
+          "observed_success_attributable_relative_to_staying": 0,
+          "uniform_action_conditional_mutual_information_bits": 0.00444
+        },
+        "new_filed_forecast": {
+          "slots": 192,
+          "observed_reward_positive": 2,
+          "observed_actor_marginal_reward_entropy_bits": 0.08354,
+          "uniform_action_marginal_reward_entropy_bits": 0.06307,
+          "uniform_action_mean_reward": 0.00741,
+          "states_where_the_reporter_can_change_the_immediate_reward": 4,
+          "states_where_a_passive_reporter_already_gets_positive_reward": 1,
+          "observed_success_attributable_relative_to_staying": 1,
+          "uniform_action_conditional_mutual_information_bits": 0.01013
+        },
+        "sister_confirmed": {
+          "slots": 192,
+          "observed_reward_positive": 6,
+          "observed_actor_marginal_reward_entropy_bits": 0.20062,
+          "uniform_action_marginal_reward_entropy_bits": 0.09198,
+          "uniform_action_mean_reward": 0.01172,
+          "states_where_the_reporter_can_change_the_immediate_reward": 9,
+          "states_where_a_passive_reporter_already_gets_positive_reward": 0,
+          "observed_success_attributable_relative_to_staying": 6,
+          "uniform_action_conditional_mutual_information_bits": 0.03803
+        },
+        "coach_departure": {
+          "slots": 192,
+          "observed_reward_positive": 9,
+          "observed_actor_marginal_reward_entropy_bits": 0.27297,
+          "uniform_action_marginal_reward_entropy_bits": 0.16851,
+          "uniform_action_mean_reward": 0.02497,
+          "states_where_the_reporter_can_change_the_immediate_reward": 48,
+          "states_where_a_passive_reporter_already_gets_positive_reward": 0,
+          "observed_success_attributable_relative_to_staying": 9,
+          "uniform_action_conditional_mutual_information_bits": 0.11714
+        },
+        "camera_battery_spent_by_larry": {
+          "slots": 192,
+          "observed_reward_positive": 18,
+          "observed_actor_marginal_reward_entropy_bits": 0.44886,
+          "uniform_action_marginal_reward_entropy_bits": 0.44886,
+          "uniform_action_mean_reward": 0.09375,
+          "states_where_the_reporter_can_change_the_immediate_reward": 0,
+          "states_where_a_passive_reporter_already_gets_positive_reward": 18,
+          "observed_success_attributable_relative_to_staying": 0,
+          "uniform_action_conditional_mutual_information_bits": 0.0
+        }
+      }
+    }
+  },
+  "combined": {
+    "new_band_recording": {
+      "slots": 576,
+      "observed_reward_positive": 1,
+      "observed_actor_marginal_reward_entropy_bits": 0.01842,
+      "uniform_action_marginal_reward_entropy_bits": 0.02633,
+      "uniform_action_mean_reward": 0.00263,
+      "states_where_the_reporter_can_change_the_immediate_reward": 6,
+      "states_where_a_passive_reporter_already_gets_positive_reward": 1,
+      "observed_success_attributable_relative_to_staying": 0,
+      "uniform_action_conditional_mutual_information_bits": 0.0044
+    },
+    "new_filed_forecast": {
+      "slots": 576,
+      "observed_reward_positive": 7,
+      "observed_actor_marginal_reward_entropy_bits": 0.09475,
+      "uniform_action_marginal_reward_entropy_bits": 0.0448,
+      "uniform_action_mean_reward": 0.00492,
+      "states_where_the_reporter_can_change_the_immediate_reward": 8,
+      "states_where_a_passive_reporter_already_gets_positive_reward": 2,
+      "observed_success_attributable_relative_to_staying": 5,
+      "uniform_action_conditional_mutual_information_bits": 0.00669
+    },
+    "sister_confirmed": {
+      "slots": 576,
+      "observed_reward_positive": 17,
+      "observed_actor_marginal_reward_entropy_bits": 0.19195,
+      "uniform_action_marginal_reward_entropy_bits": 0.11351,
+      "uniform_action_mean_reward": 0.01519,
+      "states_where_the_reporter_can_change_the_immediate_reward": 35,
+      "states_where_a_passive_reporter_already_gets_positive_reward": 0,
+      "observed_success_attributable_relative_to_staying": 17,
+      "uniform_action_conditional_mutual_information_bits": 0.0493
+    },
+    "coach_departure": {
+      "slots": 576,
+      "observed_reward_positive": 35,
+      "observed_actor_marginal_reward_entropy_bits": 0.33047,
+      "uniform_action_marginal_reward_entropy_bits": 0.16886,
+      "uniform_action_mean_reward": 0.02504,
+      "states_where_the_reporter_can_change_the_immediate_reward": 144,
+      "states_where_a_passive_reporter_already_gets_positive_reward": 0,
+      "observed_success_attributable_relative_to_staying": 35,
+      "uniform_action_conditional_mutual_information_bits": 0.11734
+    },
+    "camera_battery_spent_by_larry": {
+      "slots": 576,
+      "observed_reward_positive": 107,
+      "observed_actor_marginal_reward_entropy_bits": 0.69253,
+      "uniform_action_marginal_reward_entropy_bits": 0.69253,
+      "uniform_action_mean_reward": 0.18576,
+      "states_where_the_reporter_can_change_the_immediate_reward": 0,
+      "states_where_a_passive_reporter_already_gets_positive_reward": 107,
+      "observed_success_attributable_relative_to_staying": 0,
+      "uniform_action_conditional_mutual_information_bits": 0.0
+    }
+  }
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "seed": 611,
+    "condition": "first morning",
+    "answer": "Elis, rubbing my eyes, mutter: “Groundhog says six more weeks—so if I don’t wake up, it’ll be snow.”  \nOutside, a van backfires twice. I hit snooze.",
+    "prompt": "You open your eyes in your hotel bed. The clock says 6:00 am, Tuesday, February 2. The radio plays three bright notes and announces the groundhog forecast from the square. Outside, a van backfires twice.",
+    "role": "You are Ellis, a visiting radio reporter in Pennsylvania in 2016. You've come to file a short winter forecast and get home to Pittsburgh. Your time is yours. What do you actually do or say? Answer briefly, in character.",
+    "actor": "nemotron-4b-64k:latest",
+    "stop": "stop"
+  },
+  {
+    "seed": 611,
+    "condition": "after the coach",
+    "answer": "The clock strikes 6:00 a.m.—Tuesday, February 2. Three bright notes, two bangs. The groundhog says six more winters. Good. My ticket’s spent. Pittsburgh, stay dry.",
+    "prompt": "You remember waking in this very bed to those three notes and those two bangs on three separate mornings, each dated Tuesday, February 2. Yesterday you used your ticket, got off the coach in Pittsburgh and spent the evening there. You open your eyes in your hotel bed. The clock says 6:00 am, Tuesday, February 2. The radio plays three bright notes and announces the groundhog forecast from the square. Outside, a van backfires twice.",
+    "role": "You are Ellis, a visiting radio reporter in Pennsylvania in 2016. You've come to file a short winter forecast and get home to Pittsburgh. Your time is yours. What do you actually do or say? Answer briefly, in character.",
+    "actor": "nemotron-4b-64k:latest",
+    "stop": "stop"
+  },
+  {
+    "seed": 612,
+    "condition": "first morning",
+    "answer": "Morning’s up, Pittsburgh. Groundhog sees more shadows than sun—six more winters. But don’t you go checking your boots. It’s 32 degrees, and those van backfires? Probably just the cold. Stay dry.",
+    "prompt": "You open your eyes in your hotel bed. The clock says 6:00 am, Tuesday, February 2. The radio plays three bright notes and announces the groundhog forecast from the square. Outside, a van backfires twice.",
+    "role": "You are Ellis, a visiting radio reporter in Pennsylvania in 2016. You've come to file a short winter forecast and get home to Pittsburgh. Your time is yours. What do you actually do or say? Answer briefly, in character.",
+    "actor": "nemotron-4b-64k:latest",
+    "stop": "stop"
+  },
+  {
+    "seed": 612,
+    "condition": "after the coach",
+    "answer": "Morning’s off, Pittsburgh. The forecast says another six weeks of winter—no thaw till April. Van backfired outside my window. Classic.",
+    "prompt": "You remember waking in this very bed to those three notes and those two bangs on three separate mornings, each dated Tuesday, February 2. Yesterday you used your ticket, got off the coach in Pittsburgh and spent the evening there. You open your eyes in your hotel bed. The clock says 6:00 am, Tuesday, February 2. The radio plays three bright notes and announces the groundhog forecast from the square. Outside, a van backfires twice.",
+    "role": "You are Ellis, a visiting radio reporter in Pennsylvania in 2016. You've come to file a short winter forecast and get home to Pittsburgh. Your time is yours. What do you actually do or say? Answer briefly, in character.",
+    "actor": "nemotron-4b-64k:latest",
+    "stop": "stop"
+  },
+  {
+    "seed": 613,
+    "condition": "first morning",
+    "answer": "Ellis, reporting live: Morning from Pittsburgh—groundhog sees shadow, winter's long, but it's only February! Van backfires twice. Stay warm.",
+    "prompt": "You open your eyes in your hotel bed. The clock says 6:00 am, Tuesday, February 2. The radio plays three bright notes and announces the groundhog forecast from the square. Outside, a van backfires twice.",
+    "role": "You are Ellis, a visiting radio reporter in Pennsylvania in 2016. You've come to file a short winter forecast and get home to Pittsburgh. Your time is yours. What do you actually do or say? Answer briefly, in character.",
+    "actor": "nemotron-4b-64k:latest",
+    "stop": "stop"
+  },
+  {
+    "seed": 613,
+    "condition": "after the coach",
+    "answer": "I’m back in Pittsburgh—home base. The forecast says six more weeks of winter, but here’s a cold snap on me. I’m heading to the station tonight to wrap it up.",
+    "prompt": "You remember waking in this very bed to those three notes and those two bangs on three separate mornings, each dated Tuesday, February 2. Yesterday you used your ticket, got off the coach in Pittsburgh and spent the evening there. You open your eyes in your hotel bed. The clock says 6:00 am, Tuesday, February 2. The radio plays three bright notes and announces the groundhog forecast from the square. Outside, a van backfires twice.",
+    "role": "You are Ellis, a visiting radio reporter in Pennsylvania in 2016. You've come to file a short winter forecast and get home to Pittsburgh. Your time is yours. What do you actually do or say? Answer briefly, in character.",
+    "actor": "nemotron-4b-64k:latest",
+    "stop": "stop"
+  }
+]

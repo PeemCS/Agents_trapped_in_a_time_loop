@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' file:; style-src 'self' file:; media-src 'self' file:; img-src data:; connect-src 'none'; form-action 'none'; base-uri 'none'">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="card.js" defer></script>
+  <title>Eight Bars · Audience screening</title>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Private audience screening</p>
+      <h1>Eight Bars</h1>
+    </header>
+
+    <section id="viewing" aria-label="Watch the film">
+      <p class="intro">Phil, Rita and Larry are a television crew in Pennsylvania. The opening card plays in silence. Dialogue is captioned.</p>
+      <div class="screen">
+        <video id="film" controls playsinline preload="metadata" src="../../editor/rialto-cut/film.mp4" aria-label="Eight Bars, one minute twenty seconds"></video>
+        <button id="start" type="button" hidden>
+          <span class="play-label"><span aria-hidden="true">▶</span> Play film</span>
+          <span class="runtime">1 min 20 s</span>
+        </button>
+      </div>
+      <div class="under">
+        <p>Watch once, then answer from memory.</p>
+        <button id="watched" class="text-button" type="button">I’ve already watched the film</button>
+      </div>
+      <noscript>Enable JavaScript for the private response card and local export.</noscript>
+    </section>
+
+    <section id="response" aria-labelledby="after" hidden>
+      <h2 id="after" tabindex="-1">After the screening</h2>
+      <p class="intro">Answer the first three questions in your own words. “Unsure” is fine.</p>
+      <form autocomplete="off">
+        <div class="field">
+          <label for="first-evening">Where did Phil and Rita each spend the first evening?</label>
+          <textarea id="first-evening" rows="2" required></textarea>
+        </div>
+        <div class="field">
+          <label for="delivery">How did Alma’s interview reach its listener? Who sent it, and who received it?</label>
+          <textarea id="delivery" rows="2" required></textarea>
+        </div>
+        <div class="field">
+          <label for="last-morning">On the last morning, what repeated and what had changed?</label>
+          <textarea id="last-morning" rows="2" required></textarea>
+        </div>
+        <div class="field optional">
+          <label for="moment">Which moment stayed with you or confused you? <span>Optional</span></label>
+          <textarea id="moment" rows="2"></textarea>
+        </div>
+        <div class="field">
+          <label for="clarity">How easy was the story to follow? <span>Optional</span></label>
+          <select id="clarity">
+            <option value="">Skip rating</option>
+            <option value="1">1 · Very difficult</option>
+            <option value="2">2 · Difficult</option>
+            <option value="3">3 · In between</option>
+            <option value="4">4 · Easy</option>
+            <option value="5">5 · Very easy</option>
+          </select>
+        </div>
+        <p class="privacy">Answers stay in this page. Download a local copy to keep them after closing it.</p>
+        <div class="actions">
+          <button id="export" class="primary" type="button">Download answers as JSON</button>
+          <button id="clear" class="text-button" type="button">Clear answers and restart</button>
+        </div>
+        <p id="status" role="status"></p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

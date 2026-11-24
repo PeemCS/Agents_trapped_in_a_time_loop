@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#132c2d">
+  <title>Another Tuesday · Walkable town</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="world.js"></script><script defer src="replay.js"></script>
+  <script defer src="art.js"></script><script defer src="interiors.js"></script><script defer src="traces.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+  <header class="mast">
+    <div class="brand"><span class="brand-mark" aria-hidden="true"><i></i></span><h1>Another Tuesday</h1></div>
+    <nav aria-label="Rehearsal mode"><button id="walk-mode" class="mode active" aria-pressed="true">Walk town</button><button id="replay-mode" class="mode" aria-pressed="false">Recorded runs</button></nav>
+    <button id="open-file" class="open">Open trace <span aria-hidden="true">↗</span></button><input id="file" type="file" accept=".json,application/json" hidden>
+  </header>
+  <main>
+    <section class="screen-column" aria-label="Town">
+      <div id="stage" class="stage">
+        <canvas id="town" tabindex="0" aria-label="Walkable town. Use arrow keys or WASD to walk and E to interact. Select a destination to walk there."></canvas>
+        <div class="hud clock"><div class="calendar" aria-hidden="true">FEB<strong>02</strong></div><div><strong id="hud-time">6:00 AM</strong><small id="hud-day">TUESDAY · DAY 01</small></div></div>
+        <div class="hud scene"><span id="scene-name">Mill Creek, PA</span></div>
+        <div class="view-tools"><button id="close-shot" aria-pressed="false" title="Toggle street and interior framing">Close-up</button><button id="overview" aria-pressed="false" title="Toggle view" aria-label="Toggle overview and follow camera">Overview</button><button id="expand" aria-label="Enter fullscreen" title="Fullscreen">⛶</button></div>
+        <div id="dawn" class="dawn" aria-hidden="true"></div>
+        <div id="alarm" class="alarm" aria-hidden="true"></div>
+        <div id="film-caption" class="film-caption" hidden><b id="film-speaker"></b><span id="film-line"></span></div>
+        <div class="touch-pad" aria-label="Directional controls"><button data-dir="up" aria-label="Walk up">↑</button><button data-dir="left" aria-label="Walk left">←</button><button data-dir="down" aria-label="Walk down">↓</button><button data-dir="right" aria-label="Walk right">→</button></div>
+      </div>
+      <div id="manual-controls" class="transport walkbar"><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> or tap to walk</span><span><kbd>E</kbd> interact</span><button id="sound" aria-pressed="false">Sound off</button></div>
+      <div id="replay-controls" class="transport playback" hidden>
+        <button id="prev" aria-label="Previous decision" title="Previous decision">‹</button>
+        <button id="play" aria-label="Play recording">Play</button>
+        <button id="next" aria-label="Next decision" title="Next decision">›</button>
+        <input id="scrub" type="range" min="0" max="15" value="0" step="0.001" aria-label="Recording position">
+        <span id="position" class="mono">1 / 16</span>
+        <button id="speed" aria-label="Playback speed">1×</button>
+      </div>
+      <p id="error" role="status" class="error" hidden></p>
+    </section>
+    <aside class="sidebar" aria-label="Actor and decisions">
+      <div class="panel actor-panel">
+        <small class="kicker" id="mode-label">FREE WALK</small>
+        <div class="actor-row"><span class="coat-dot"></span><h2 id="actor-name">Phil</h2></div>
+        <div id="place-name" class="place">Hearthside Hotel</div>
+        <div id="walk-content">
+          <div id="actions" class="action-list"></div>
+          <div id="walk-destinations" class="destinations"><label for="destination">Walk to</label><div><select id="destination"></select><button id="go">Go</button></div></div>
+          <button id="wait" class="subtle"></button>
+        </div>
+        <div id="replay-content" hidden>
+          <label for="source">Recording</label><select id="source"></select>
+          <div id="run-meta" class="run-meta"></div>
+          <label for="camera-actor">Follow</label><select id="camera-actor"></select>
+        </div>
+      </div>
+      <div class="panel ledger">
+        <div class="ledger-head"><h3>Decision log</h3><span id="event-count" class="mono"></span></div>
+        <div id="events" class="events"></div>
+      </div>
+    </aside>
+  </main>
+  <footer><span>Agent Groundhog Day</span><span>Local dress rehearsal</span></footer>
+</body>
+</html>

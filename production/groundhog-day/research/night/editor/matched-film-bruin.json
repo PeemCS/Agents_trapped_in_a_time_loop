@@ -1,0 +1,166 @@
+{
+  "run_log": "Analyzed the pipeline 'town-projection' with 2 assets.\n\nPipeline: town-projection (..)\n  No issues found\n\n✓ Successfully validated 2 assets across 1 pipeline, all good.\n\nInterval: 2026-11-22T00:00:00Z - 2026-11-22T23:59:59Z\n\nStarting the pipeline execution...\n\n[04:05:36] Running:  town.decisions\n[04:05:36] [town.decisions] >> \n[04:05:36] [town.decisions] >> \n[04:05:36] [town.decisions] >> Initiated the pipeline with the following:\n[04:05:36] [town.decisions] >> Source: csv / seed.raw\n[04:05:36] [town.decisions] >> Destination: duckdb / town.decisions\n[04:05:36] [town.decisions] >> Incremental Strategy: replace\n[04:05:36] [town.decisions] >> Incremental Key: None\n[04:05:36] [town.decisions] >> Primary Key: None\n[04:05:36] [town.decisions] >> \n[04:05:36] [town.decisions] >> \n[04:05:36] [town.decisions] >> \n[04:05:36] [town.decisions] >> Starting data ingestion...\n[04:05:36] [town.decisions] >> [STRATEGY] 04:05:36 | Using staging table: town.decisions_staging_3aadb53094ab40bf92acd7a95a2c69d4\n[04:05:36] [town.decisions] >> [PROGRESS] 04:05:36 | Rows: 144 | Batches: 1 | Rate: 7672 rows/s | CPU: 46.2% | Mem: 153 MB\n[04:05:36] [town.decisions] >> \n[04:05:36] [town.decisions] >> ┌────────────────┬──────────────┐\n[04:05:36] [town.decisions] >> │     METRIC     │    VALUE     │\n[04:05:36] [town.decisions] >> ├────────────────┼──────────────┤\n[04:05:36] [town.decisions] >> │ Total Rows     │          144 │\n[04:05:36] [town.decisions] >> │ Total Batches  │            1 │\n[04:05:36] [town.decisions] >> │ Duration       │         0.0s │\n[04:05:36] [town.decisions] >> │ Avg Throughput │ 7,178 rows/s │\n[04:05:36] [town.decisions] >> │ Peak Memory    │       153 MB │\n[04:05:36] [town.decisions] >> └────────────────┴──────────────┘\n[04:05:36] [town.decisions] >> Ingestion completed successfully!\n[04:05:36] Finished: town.decisions (578ms)\n[04:05:36] Running:  town.decisions:custom-check:unique_committed_actor_slots\n[04:05:36] Finished: town.decisions:custom-check:unique_committed_actor_slots (9ms)\n[04:05:36] Running:  town.decisions:custom-check:every_decision_links_to_an_event\n[04:05:36] Finished: town.decisions:custom-check:every_decision_links_to_an_event (0s)\n[04:05:36] Running:  town.coach_payoffs\n[04:05:36] Finished: town.coach_payoffs (5ms)\n[04:05:36] Running:  town.coach_payoffs:custom-check:ready_payoff_has_three_ordered_anchors\n[04:05:36] Finished: town.coach_payoffs:custom-check:ready_payoff_has_three_ordered_anchors (0s)\n\n==================================================\n\nPASS town.decisions ..\nPASS town.coach_payoffs .\n\n\nbruin run completed successfully in 596ms\n\n ✓ Assets executed      2 succeeded\n ✓ Quality checks       3 succeeded\n",
+  "ledger": {
+    "columns": [
+      {
+        "name": "world",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "decisions",
+        "type": "BIGINT"
+      },
+      {
+        "name": "slots",
+        "type": "BIGINT"
+      },
+      {
+        "name": "actors",
+        "type": "BIGINT"
+      }
+    ],
+    "rows": [
+      [
+        "759c339dcf0af3b648a51cdcbf6603e8b8637a3bd22969bcbefe89ed4cdcb5a2",
+        72,
+        24,
+        3
+      ],
+      [
+        "9695d76c0cf799ac32810b53e3da5c26814e227ba6d710e675f0d5c4c798646d",
+        72,
+        24,
+        3
+      ]
+    ],
+    "connectionName": "town-local",
+    "query": "SELECT world, count(*) AS decisions, count(*) FILTER(WHERE cast(is_lead AS BOOLEAN)) AS slots, count(DISTINCT actor) AS actors FROM town.decisions GROUP BY world ORDER BY world"
+  },
+  "coach": {
+    "columns": [
+      {
+        "name": "world",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "arrival_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "arrival_slot",
+        "type": "INTEGER"
+      },
+      {
+        "name": "city_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "city_slot",
+        "type": "INTEGER"
+      },
+      {
+        "name": "wake_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "wake_slot",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ready",
+        "type": "BOOLEAN"
+      }
+    ],
+    "rows": [
+      [
+        "9695d76c0cf799ac32810b53e3da5c26814e227ba6d710e675f0d5c4c798646d",
+        "d02-t02-reporter",
+        6,
+        "d02-t03-reporter",
+        7,
+        "d03-t00-reporter",
+        8,
+        true
+      ],
+      [
+        "9695d76c0cf799ac32810b53e3da5c26814e227ba6d710e675f0d5c4c798646d",
+        "d03-t02-reporter",
+        10,
+        "d03-t03-reporter",
+        11,
+        "d04-t00-reporter",
+        12,
+        true
+      ],
+      [
+        "9695d76c0cf799ac32810b53e3da5c26814e227ba6d710e675f0d5c4c798646d",
+        "d04-t02-reporter",
+        14,
+        "d04-t03-reporter",
+        15,
+        "d05-t00-reporter",
+        16,
+        true
+      ],
+      [
+        "9695d76c0cf799ac32810b53e3da5c26814e227ba6d710e675f0d5c4c798646d",
+        "d05-t02-reporter",
+        18,
+        "d05-t03-reporter",
+        19,
+        "d06-t00-reporter",
+        20,
+        true
+      ],
+      [
+        "9695d76c0cf799ac32810b53e3da5c26814e227ba6d710e675f0d5c4c798646d",
+        "d06-t02-reporter",
+        22,
+        "d06-t03-reporter",
+        23,
+        null,
+        null,
+        false
+      ]
+    ],
+    "connectionName": "town-local",
+    "query": "SELECT world, arrival_id, arrival_slot, city_id, city_slot, wake_id, wake_slot, ready FROM town.coach_payoffs ORDER BY world, arrival_slot"
+  },
+  "input_hashes": [
+    "9695d76c0cf799ac32810b53e3da5c26814e227ba6d710e675f0d5c4c798646d",
+    "759c339dcf0af3b648a51cdcbf6603e8b8637a3bd22969bcbefe89ed4cdcb5a2"
+  ],
+  "baseline_python_anchors": [
+    {
+      "world": "9695d76c0cf799ac32810b53e3da5c26814e227ba6d710e675f0d5c4c798646d",
+      "anchors": [
+        {
+          "arrival": 6,
+          "hold": 7,
+          "wake": 8
+        },
+        {
+          "arrival": 10,
+          "hold": 11,
+          "wake": 12
+        },
+        {
+          "arrival": 14,
+          "hold": 15,
+          "wake": 16
+        },
+        {
+          "arrival": 18,
+          "hold": 19,
+          "wake": 20
+        }
+      ]
+    },
+    {
+      "world": "759c339dcf0af3b648a51cdcbf6603e8b8637a3bd22969bcbefe89ed4cdcb5a2",
+      "anchors": []
+    }
+  ],
+  "verified_payoff_count": 4,
+  "bruin_version": "Current: v0.11.831 (9c6a294a34281e1d6470a292723d793b1209dccc)"
+}

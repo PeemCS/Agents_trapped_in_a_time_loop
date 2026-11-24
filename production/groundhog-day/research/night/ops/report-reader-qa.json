@@ -1,0 +1,18 @@
+[
+  {
+    "viewport": 1350,
+    "source": "relocatable HTML file",
+    "sections": 10,
+    "frame_at_s": 30.2,
+    "requests_to_external_sites": [],
+    "errors": []
+  },
+  {
+    "viewport": 390,
+    "source": "relocatable HTML file",
+    "sections": 10,
+    "frame_at_s": 30.2,
+    "requests_to_external_sites": [],
+    "errors": []
+  }
+]

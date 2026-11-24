@@ -1,0 +1,9 @@
+# Choosing the Rialto festival cut
+
+The editor saw the uncued 721 take and the first two days of the private-hypothesis 721 take before the library take completed. These are informed editorial choices. Consider all three completed 721 takes separately.
+
+Prefer a physically committed attempt connected by the actor’s own words or its emitted note to a movie-ending theory, followed by a witnessed Tuesday. An independently chosen counter-scene for Rita or Larry strengthens the cut. If they all contain a comparable attempt, prefer an explicitly articulated theory arising from weaker cues, then an exact observable consequence. If nobody completes a recognizably film-inspired attempt, show the best actual test and name its limits. Each selected action comes from one completed source take. Source memory of a prior real episode is identified separately.
+
+The actual primary world stays Tuesday after all evenings. A surviving external receipt for Alma’s recorded interview is an event in the closed world. The separate clock policy would release the story on the first delivered interview. It is simulated only up to that divergence. An ending from the alternative rule cannot be inserted into the observed film.
+
+Preserve every selected actor’s entire words field alongside the musical and physical staging. An unambiguous spoken field can be voiced whole. In a mixed field, a hand-selected substring must be the unique, complete content of a matched quote pair. Stage directions, narrated movement, silence and ambiguous dialogue remain unvoiced. Along with the editor’s decision for each selected field, report the number of whole lines, exact quoted excerpts and silent selections. Distinct simultaneous performers may be intercut but another actor’s thoughts cannot be inserted into their knowledge.

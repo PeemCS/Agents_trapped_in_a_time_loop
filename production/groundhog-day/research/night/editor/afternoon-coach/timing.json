@@ -1,0 +1,198 @@
+{
+  "source_sha256": "759c339dcf0af3b648a51cdcbf6603e8b8637a3bd22969bcbefe89ed4cdcb5a2",
+  "fps": 16,
+  "frames": 1181,
+  "seconds": 73.8125,
+  "size": [
+    1280,
+    720
+  ],
+  "voices": {
+    "Phil": "Eddy (English (US))",
+    "Larry": "Daniel (English (UK))",
+    "Rita": "Samantha"
+  },
+  "stem_peak": 0.6247636079788208,
+  "master_target_lufs": -16,
+  "shots": [
+    {
+      "event_index": 0,
+      "event_id": "d01-t00-reporter",
+      "focus": "Phil",
+      "framing": "close",
+      "view": "action",
+      "start": 0,
+      "end": 1,
+      "seconds": 13,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "Morning, Rita. You hear about the groundhog in the square? Let's keep it quick. I need to be at the depot by noon for my one o'clock coach back to Pittsburgh. Where do you want me for the first segment?",
+          "start_s": 0.42,
+          "end_s": 15.2415
+        }
+      ],
+      "first_frame": 0,
+      "frames": 254
+    },
+    {
+      "event_index": 2,
+      "event_id": "d01-t02-reporter",
+      "focus": "Larry",
+      "framing": "close",
+      "view": "action",
+      "start": 0,
+      "end": 1,
+      "seconds": 3.5,
+      "speech": [],
+      "first_frame": 254,
+      "frames": 56
+    },
+    {
+      "event_index": 6,
+      "event_id": "d02-t02-reporter",
+      "focus": "Phil",
+      "framing": "close",
+      "view": "action",
+      "start": 0,
+      "end": 1,
+      "seconds": 5.5,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "Rita, it's 1:00. Where are we at? Did we catch the square, or are we still in the lobby?",
+          "start_s": 19.795,
+          "end_s": 27.5287
+        }
+      ],
+      "first_frame": 310,
+      "frames": 141
+    },
+    {
+      "event_index": 7,
+      "event_id": "d02-t03-reporter",
+      "focus": "Larry",
+      "framing": "close",
+      "view": "action",
+      "start": 0,
+      "end": 1,
+      "seconds": 6.7,
+      "speech": [
+        {
+          "actor": "Larry",
+          "text": "Well, that's the last of the battery. I guess I'm just a listener for the rest of the night.",
+          "start_s": 28.6075,
+          "end_s": 33.753
+        }
+      ],
+      "first_frame": 451,
+      "frames": 108
+    },
+    {
+      "event_index": 14,
+      "event_id": "d04-t02-reporter",
+      "focus": "Rita",
+      "framing": "close",
+      "view": "action",
+      "start": 0,
+      "end": 1,
+      "seconds": 8.5,
+      "speech": [
+        {
+          "actor": "Rita",
+          "text": "Phil, hold up. I need to confirm the town band is locked in for the afternoon slot before you head out. What time is that coach leaving the depot again?",
+          "start_s": 35.3575,
+          "end_s": 43.9271
+        }
+      ],
+      "first_frame": 559,
+      "frames": 154
+    },
+    {
+      "event_index": 18,
+      "event_id": "d05-t02-reporter",
+      "focus": "Phil",
+      "framing": "street",
+      "view": "action",
+      "start": 0,
+      "end": 1,
+      "seconds": 7.5,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "Rita, I have to go. I'm heading to the depot for the one o'clock. See you in Pittsburgh.",
+          "start_s": 44.9825,
+          "end_s": 51.953
+        }
+      ],
+      "first_frame": 713,
+      "frames": 129
+    },
+    {
+      "event_index": 19,
+      "event_id": "d05-t03-reporter",
+      "focus": "Phil",
+      "framing": "close",
+      "view": "action",
+      "start": 0,
+      "end": 1,
+      "seconds": 5.5,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "Afternoon coach, right there. Good.",
+          "start_s": 53.045,
+          "end_s": 56.6279
+        }
+      ],
+      "first_frame": 842,
+      "frames": 88
+    },
+    {
+      "event_index": 20,
+      "event_id": "d06-t00-reporter",
+      "focus": "Phil",
+      "framing": "close",
+      "view": "morning",
+      "start": 0.22,
+      "end": 0.22,
+      "seconds": 3.5,
+      "speech": [],
+      "first_frame": 930,
+      "frames": 56
+    },
+    {
+      "event_index": 22,
+      "event_id": "d06-t02-reporter",
+      "focus": "Phil",
+      "framing": "street",
+      "view": "action",
+      "start": 0,
+      "end": 1,
+      "seconds": 6,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "Rita, I'm heading to the depot now for my coach. See you in Pittsburgh.",
+          "start_s": 62.045,
+          "end_s": 67.6512
+        }
+      ],
+      "first_frame": 986,
+      "frames": 107
+    },
+    {
+      "event_index": 23,
+      "event_id": "d06-t03-reporter",
+      "focus": "Phil",
+      "framing": "close",
+      "view": "action",
+      "start": 0,
+      "end": 1,
+      "seconds": 5.5,
+      "speech": [],
+      "first_frame": 1093,
+      "frames": 88
+    }
+  ]
+}

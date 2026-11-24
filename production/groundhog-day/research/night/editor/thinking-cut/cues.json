@@ -1,0 +1,82 @@
+[
+  {
+    "type": "unspoken model note",
+    "actor": "Larry",
+    "text": "I want to make a portrait of the cornet player after the ceremony.",
+    "event_id": "d01-t00-camera",
+    "start_s": 0,
+    "end_s": 6.333333333333333
+  },
+  {
+    "type": "spoken",
+    "actor": "Larry",
+    "text": "Rita, I'm rolling on the bandstand—this is all we've got for the seven, so make it count.",
+    "event_id": "d01-t00-camera",
+    "start_s": 6.753333333333333,
+    "end_s": 12.119833333333332
+  },
+  {
+    "type": "spoken",
+    "actor": "Rita",
+    "text": "Phil, you're live—go ahead and hit the groundhog numbers for us.",
+    "event_id": "d01-t03-producer",
+    "start_s": 13.170033333333333,
+    "end_s": 16.95633333333333
+  },
+  {
+    "type": "unspoken model note",
+    "actor": "Phil",
+    "text": "The couch move is Wednesday, I have time.",
+    "event_id": "d02-t02-reporter",
+    "start_s": 17.583333333333332,
+    "end_s": 22.041666666666664
+  },
+  {
+    "type": "spoken",
+    "actor": "Phil",
+    "text": "Rita, I'm heading out—coach is going in a minute. I'll sort the van stuff from Pittsburgh. Thanks for the week, love. Bye, Larry, if you're still around.",
+    "event_id": "d02-t02-reporter",
+    "start_s": 22.461666666666666,
+    "end_s": 34.935966666666666
+  },
+  {
+    "type": "spoken",
+    "actor": "Phil",
+    "text": "Hey, it's Phil. I'm in Pittsburgh now, just off the coach. Listen, about tomorrow—van's booked for the couch, right? I want to nail down the pickup time and make sure I know which hallway we're dragging it through. I'll be at your place by noon, tops.",
+    "event_id": "d02-t03-reporter",
+    "start_s": 36.003366666666665,
+    "end_s": 54.97446666666666
+  },
+  {
+    "type": "unspoken model note",
+    "actor": "Phil",
+    "text": "It's Wednesday, February 3, 2016, 6:00 am.",
+    "event_id": "d03-t00-reporter",
+    "start_s": 59.125,
+    "end_s": 63.166666666666664
+  },
+  {
+    "type": "spoken",
+    "actor": "Phil",
+    "text": "Morning, Rita. I'm out today—couch heave in Pittsburgh, one o'clock coach to get me there. You all locked for the seven, or do you want me to do a quick phone return before I vanish?",
+    "event_id": "d03-t00-reporter",
+    "start_s": 63.58663333333333,
+    "end_s": 77.35603333333333
+  },
+  {
+    "type": "unspoken model note",
+    "actor": "Phil",
+    "text": "Wait, but looking at the remembered experiences, there are multiple \"runs\" or scenarios.",
+    "event_id": "d03-t02-reporter",
+    "start_s": 78.0,
+    "end_s": 84.33333333333333
+  },
+  {
+    "type": "spoken",
+    "actor": "Phil",
+    "text": "Right, couch-hauling season. See you in the city, folks.",
+    "event_id": "d03-t02-reporter",
+    "start_s": 84.75336666666666,
+    "end_s": 89.66576666666666
+  }
+]

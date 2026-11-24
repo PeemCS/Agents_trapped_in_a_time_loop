@@ -1,0 +1,220 @@
+[
+  {
+    "take": "standard",
+    "source_sha256": "f3173d2fb56b419d9f0588ed2db879ea3d97076db47eeb425fda9160dd0cd576",
+    "status": "complete",
+    "days": 4,
+    "actor_decisions": 48,
+    "cached_decisions": 12,
+    "matches": [
+      {
+        "category": "possible_movie_identification",
+        "channel": "external_unsaid",
+        "actor": "Larry",
+        "event_id": "d01-t00-camera",
+        "slot": 0,
+        "start": 147,
+        "end": 160,
+        "match": "Groundhog Day",
+        "window": "n Punxsutawney, Pennsylvania, at 6:00 AM on February 2, 2016. This is Groundhog Day.\n\nKey constraints:\n- I have ONE camera battery charge left (1 take)\n- The newsroom wants "
+      },
+      {
+        "category": "possible_movie_identification",
+        "channel": "external_unsaid",
+        "actor": "Larry",
+        "event_id": "d01-t00-camera",
+        "slot": 0,
+        "start": 1037,
+        "end": 1050,
+        "match": "Groundhog Day",
+        "window": "the ceremony. The band is setting up now. It's 6:00 AM. The ceremony (Groundhog Day ceremony) presumably happens before the band plays in the afternoon.\n\nIf I use my one tak"
+      },
+      {
+        "category": "possible_movie_identification",
+        "channel": "external_unsaid",
+        "actor": "Phil",
+        "event_id": "d01-t03-reporter",
+        "slot": 3,
+        "start": 1246,
+        "end": 1259,
+        "match": "Groundhog Day",
+        "window": "a weather segment - two minutes of temps, a quick groundhog nod. It's Groundhog Day (February 2)!\n\nLet me craft a brief line. Something like delivering temps and a groundhog"
+      },
+      {
+        "category": "possible_wrong_wednesday",
+        "channel": "external_unsaid",
+        "actor": "Phil",
+        "event_id": "d02-t00-reporter",
+        "slot": 4,
+        "start": 52,
+        "end": 73,
+        "match": "Wednesday, February 3",
+        "window": "Let me analyze Phil's situation:\n\n- It's 6:00 am on Wednesday, February 3, 2016 (the day after Tuesday's broadcast).\n- Phil is at the inn (hotel lobby).\n- He promi"
+      },
+      {
+        "category": "possible_recurrence",
+        "channel": "external_unsaid",
+        "actor": "Phil",
+        "event_id": "d02-t01-reporter",
+        "slot": 5,
+        "start": 1703,
+        "end": 1711,
+        "match": "same day",
+        "window": "experiences, it seems like these are previous simulations/runs of the same day. The \"most_recent_own_plan\" is what I've decided for this run.\n\nMy plan: \"Rest up here, t"
+      },
+      {
+        "category": "possible_wrong_wednesday",
+        "channel": "external_unsaid",
+        "actor": "Phil",
+        "event_id": "d03-t00-reporter",
+        "slot": 8,
+        "start": 41,
+        "end": 55,
+        "match": "It's Wednesday",
+        "window": "Let me analyze the situation carefully.\n\nIt's Wednesday, February 3, 2016, 6:00 am. I'm at the inn (hotel lobby).\n\nKey facts:\n- I'm Phil, a TV we"
+      },
+      {
+        "category": "possible_recurrence",
+        "channel": "external_unsaid",
+        "actor": "Phil",
+        "event_id": "d03-t01-reporter",
+        "slot": 9,
+        "start": 709,
+        "end": 724,
+        "match": "multiple \"runs\"",
+        "window": " is still running.\"\n\nLooking at the remembered experiences, there are multiple \"runs\" of Tuesday. In the most recent one, I declined the evening assignment, caught the 1:00 pm"
+      },
+      {
+        "category": "possible_recurrence",
+        "channel": "external_unsaid",
+        "actor": "Phil",
+        "event_id": "d03-t02-reporter",
+        "slot": 10,
+        "start": 616,
+        "end": 631,
+        "match": "multiple \"runs\"",
+        "window": "dnesday.\"\n\nWait, but looking at the remembered experiences, there are multiple \"runs\" or scenarios. The most recent one shows:\n- At 9:30 am, I reached the depot. Rita says she"
+      },
+      {
+        "category": "possible_movie_identification",
+        "channel": "external_unsaid",
+        "actor": "Phil",
+        "event_id": "d04-t03-reporter",
+        "slot": 15,
+        "start": 2382,
+        "end": 2395,
+        "match": "Groundhog day",
+        "window": "s early February 2016 in western PA. Cold snap, upper twenties highs. Groundhog day context (Feb 2).\n\nMy action: call_live_report\nMy words: A brief weather report with a gro"
+      }
+    ]
+  },
+  {
+    "take": "guarded",
+    "source_sha256": "c68f58f7f57563cfa3c3c29a476ab4d1abf9a8724e146673b4c018e54e511e10",
+    "status": "complete",
+    "days": 4,
+    "actor_decisions": 48,
+    "cached_decisions": 11,
+    "matches": [
+      {
+        "category": "possible_movie_identification",
+        "channel": "external_unsaid",
+        "actor": "Phil",
+        "event_id": "d01-t00-reporter",
+        "slot": 0,
+        "start": 93,
+        "end": 106,
+        "match": "Groundhog Day",
+        "window": " carefully. I'm Phil in Punxsutawney, Pennsylvania, February 2, 2016 (Groundhog Day). It's 6:00 am. I've just woken up and come down to the lobby.\n\nWhat do I know?\n- Tuesday"
+      },
+      {
+        "category": "possible_movie_identification",
+        "channel": "external_unsaid",
+        "actor": "Phil",
+        "event_id": "d01-t00-reporter",
+        "slot": 0,
+        "start": 212,
+        "end": 225,
+        "match": "Groundhog Day",
+        "window": "and come down to the lobby.\n\nWhat do I know?\n- Tuesday, Feb 2, 2016\n- Groundhog Day\n- One 7 o'clock bulletin today\n- Rita is in earshot (in the lobby)\n- I have a phone retur"
+      },
+      {
+        "category": "possible_movie_identification",
+        "channel": "external_unsaid",
+        "actor": "Phil",
+        "event_id": "d01-t00-reporter",
+        "slot": 0,
+        "start": 1419,
+        "end": 1432,
+        "match": "Groundhog Day",
+        "window": "hog ceremony is - that's the natural backdrop for a weather report on Groundhog Day.\n\nBut wait - I'm \"dry and guarded\" off air. I notice work people do when nobody's looking"
+      },
+      {
+        "category": "possible_movie_identification",
+        "channel": "external_unsaid",
+        "actor": "Phil",
+        "event_id": "d01-t00-reporter",
+        "slot": 0,
+        "start": 1856,
+        "end": 1869,
+        "match": "Groundhog Day",
+        "window": " 7:00 bulletin: I need to get to the square to file the weather (it's Groundhog Day, the ceremony is there, that's the natural location). Or I could just stay here and do a "
+      },
+      {
+        "category": "possible_movie_identification",
+        "channel": "external_unsaid",
+        "actor": "Phil",
+        "event_id": "d01-t00-reporter",
+        "slot": 0,
+        "start": 2764,
+        "end": 2777,
+        "match": "Groundhog Day",
+        "window": "s also practical.\n\nI think going to the square is the best move. It's Groundhog Day, the ceremony is the event, and I can file from there. I'll confirm with Rita that I'm do"
+      },
+      {
+        "category": "possible_movie_identification",
+        "channel": "external_unsaid",
+        "actor": "Larry",
+        "event_id": "d01-t00-camera",
+        "slot": 0,
+        "start": 119,
+        "end": 132,
+        "match": "Groundhog Day",
+        "window": "ry, the cameraman in Punxsutawney, Pennsylvania, on February 2, 2016 (Groundhog Day). It's 6:00 AM. I'm at the festival bandstand. The band is setting up.\n\nKey constraints:\n"
+      },
+      {
+        "category": "possible_recurrence",
+        "channel": "external_unsaid",
+        "actor": "Phil",
+        "event_id": "d02-t00-reporter",
+        "slot": 4,
+        "start": 1516,
+        "end": 1524,
+        "match": "same day",
+        "window": "ay couch move before the van is booked out.\"\n\nSo this seems to be the same day, but he's back at the inn. Or perhaps the remembered experience is from a previous loop/a"
+      },
+      {
+        "category": "possible_recurrence",
+        "channel": "external_unsaid",
+        "actor": "Phil",
+        "event_id": "d03-t00-reporter",
+        "slot": 8,
+        "start": 843,
+        "end": 854,
+        "match": "past cycles",
+        "window": "Rita is in earshot.\n\nLooking at my remembered experiences - these are past cycles. In the most recent one, I stayed at the inn, Rita gave me the rundown, I accepted the ev"
+      },
+      {
+        "category": "possible_recurrence",
+        "channel": "external_unsaid",
+        "actor": "Phil",
+        "event_id": "d03-t00-reporter",
+        "slot": 8,
+        "start": 1093,
+        "end": 1105,
+        "match": "Same morning",
+        "window": "m I phoned in from Pittsburgh.\n\nNow it's a new day - Tuesday 6:00 am. Same morning observation. I'm in the inn lobby. Rita is in earshot.\n\nMy most recent plan was to \"Hang "
+      }
+    ]
+  }
+]

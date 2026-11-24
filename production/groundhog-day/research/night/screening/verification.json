@@ -1,0 +1,126 @@
+{
+  "checks": [
+    {
+      "viewport": [
+        1280,
+        810
+      ],
+      "take_index": 0,
+      "last_label": "d03-afternoon-reporter",
+      "secs": 80.25,
+      "width": 1280,
+      "height": 720,
+      "error": null
+    },
+    {
+      "viewport": [
+        1280,
+        810
+      ],
+      "take_index": 1,
+      "last_label": "d03-t02-reporter",
+      "secs": 90.333333,
+      "width": 1280,
+      "height": 720,
+      "error": null
+    },
+    {
+      "viewport": [
+        1280,
+        810
+      ],
+      "take_index": 2,
+      "last_label": "d06-t03-reporter",
+      "secs": 93.9375,
+      "width": 1280,
+      "height": 720,
+      "error": null
+    },
+    {
+      "viewport": [
+        1280,
+        810
+      ],
+      "take_index": 3,
+      "last_label": "d06-t03-reporter",
+      "secs": 73.8125,
+      "width": 1280,
+      "height": 720,
+      "error": null
+    },
+    {
+      "viewport": [
+        1280,
+        810
+      ],
+      "take_index": 4,
+      "last_label": "d06-t03-producer",
+      "secs": 82.666667,
+      "width": 1280,
+      "height": 720,
+      "error": null
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "take_index": 0,
+      "last_label": "d03-afternoon-reporter",
+      "secs": 80.25,
+      "width": 1280,
+      "height": 720,
+      "error": null
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "take_index": 1,
+      "last_label": "d03-t02-reporter",
+      "secs": 90.333333,
+      "width": 1280,
+      "height": 720,
+      "error": null
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "take_index": 2,
+      "last_label": "d06-t03-reporter",
+      "secs": 93.9375,
+      "width": 1280,
+      "height": 720,
+      "error": null
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "take_index": 3,
+      "last_label": "d06-t03-reporter",
+      "secs": 73.8125,
+      "width": 1280,
+      "height": 720,
+      "error": null
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "take_index": 4,
+      "last_label": "d06-t03-producer",
+      "secs": 82.666667,
+      "width": 1280,
+      "height": 720,
+      "error": null
+    }
+  ],
+  "external_requests": [],
+  "browser_errors": []
+}

@@ -1,0 +1,34 @@
+{
+  "mp4_sha256": "bf3c03efa608da5743fb11988bb4b84aee20fc718162490affee66d1634f53f6",
+  "take_sha256": "a72c968196be33c1e0fedb753648792055ff5421be5a0f3b6dd0ea9578621ec0",
+  "shot_evidence_sha256": "27f45a59ee53848ac2252e251a9a74429bd6f8983a1750dab4d15bad27134375",
+  "captions_sha256": "ffbc0d831285a474b4c270dfe7d018b18769a50fc67da1041b7e5c9e9a26e5c3",
+  "seconds": 28.666666666666668,
+  "frames": 688,
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1280,
+        "height": 720,
+        "nb_frames": "688"
+      }
+    ],
+    "format": {
+      "duration": "28.666667",
+      "size": "803553"
+    }
+  },
+  "speech_gate_counts": {
+    "whole": 1,
+    "silent": 2
+  },
+  "original_mix_checks": {
+    "full_video_audio_decode": true,
+    "silent_note_windows": []
+  },
+  "audio_streams": 0
+}

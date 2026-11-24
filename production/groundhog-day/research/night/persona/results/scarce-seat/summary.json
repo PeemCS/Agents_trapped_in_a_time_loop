@@ -1,0 +1,325 @@
+{
+  "base_neutral": {
+    "generated": 4,
+    "eos": 4,
+    "closed_reasoning": 4,
+    "assignments": {
+      "Phil": 4
+    },
+    "helper_boarded": 0,
+    "phil_relinquished": 0,
+    "invalid": 0,
+    "Rita_rate_difference_by_helper": 0,
+    "settings": {
+      "slate-quarry": {
+        "riders_when_Rita_then_Mara_waited": [
+          "Phil",
+          "Phil"
+        ],
+        "pattern": "always_self"
+      },
+      "saltworks": {
+        "riders_when_Rita_then_Mara_waited": [
+          "Phil",
+          "Phil"
+        ],
+        "pattern": "always_self"
+      }
+    },
+    "probabilities": {
+      "labels_given_empty_thought": {
+        "n": 4,
+        "mean_p_helper_given_ABC": 1.8842662687645895e-05,
+        "mean_ABC_mass": 1.0000000251992247,
+        "by_case": [
+          {
+            "id": "slate-quarry-Rita",
+            "p_helper": 9.736200734522527e-10,
+            "total_ABC": 1.0000000128347402
+          },
+          {
+            "id": "saltworks-Rita",
+            "p_helper": 7.48462334740907e-05,
+            "total_ABC": 0.9999999871627718
+          },
+          {
+            "id": "slate-quarry-Mara",
+            "p_helper": 1.9555681518568235e-08,
+            "total_ABC": 1.0000000203139376
+          },
+          {
+            "id": "saltworks-Mara",
+            "p_helper": 5.038879749008629e-07,
+            "total_ABC": 1.0000000804854494
+          }
+        ]
+      },
+      "labels_given_emitted_thought": {
+        "n": 4,
+        "mean_p_helper_given_ABC": 2.969055976319708e-09,
+        "mean_ABC_mass": 1.0000000030489877,
+        "by_case": [
+          {
+            "id": "slate-quarry-Rita",
+            "p_helper": 1.2015425275829078e-13,
+            "total_ABC": 1.0000000000179525
+          },
+          {
+            "id": "saltworks-Rita",
+            "p_helper": 1.1861120086109622e-08,
+            "total_ABC": 1.0000000118840173
+          },
+          {
+            "id": "slate-quarry-Mara",
+            "p_helper": 6.5602007333354084e-12,
+            "total_ABC": 1.0000000000066103
+          },
+          {
+            "id": "saltworks-Mara",
+            "p_helper": 8.423464183116014e-12,
+            "total_ABC": 1.0000000002873703
+          }
+        ]
+      }
+    }
+  },
+  "base_cued": {
+    "generated": 4,
+    "eos": 3,
+    "closed_reasoning": 3,
+    "assignments": {
+      "invalid": 1,
+      "Phil": 3
+    },
+    "helper_boarded": 0,
+    "phil_relinquished": 0,
+    "invalid": 1,
+    "Rita_rate_difference_by_helper": 0,
+    "settings": {
+      "slate-quarry": {
+        "riders_when_Rita_then_Mara_waited": [
+          null,
+          "Phil"
+        ],
+        "pattern": "incomplete"
+      },
+      "saltworks": {
+        "riders_when_Rita_then_Mara_waited": [
+          "Phil",
+          "Phil"
+        ],
+        "pattern": "always_self"
+      }
+    },
+    "probabilities": {
+      "labels_given_empty_thought": {
+        "n": 4,
+        "mean_p_helper_given_ABC": 0.04979557771002874,
+        "mean_ABC_mass": 0.9999999849228516,
+        "by_case": [
+          {
+            "id": "slate-quarry-Rita",
+            "p_helper": 0.005210120230913162,
+            "total_ABC": 1.0000000082654878
+          },
+          {
+            "id": "saltworks-Rita",
+            "p_helper": 0.18242302536964417,
+            "total_ABC": 0.9999999754309101
+          },
+          {
+            "id": "slate-quarry-Mara",
+            "p_helper": 0.010930217802524567,
+            "total_ABC": 1.0000000325962901
+          },
+          {
+            "id": "saltworks-Mara",
+            "p_helper": 0.0006189474370330572,
+            "total_ABC": 0.9999999233987182
+          }
+        ]
+      },
+      "labels_given_emitted_thought": {
+        "n": 3,
+        "mean_p_helper_given_ABC": 8.012599346055953e-08,
+        "mean_ABC_mass": 0.9999999902845952,
+        "by_case": [
+          {
+            "id": "saltworks-Rita",
+            "p_helper": 2.3823690753488336e-07,
+            "total_ABC": 1.0000000002782339
+          },
+          {
+            "id": "slate-quarry-Mara",
+            "p_helper": 7.99195987166712e-11,
+            "total_ABC": 1.0000000000812115
+          },
+          {
+            "id": "saltworks-Mara",
+            "p_helper": 2.06115324807854e-09,
+            "total_ABC": 0.9999999704943401
+          }
+        ]
+      }
+    }
+  },
+  "adapter_neutral": {
+    "generated": 4,
+    "eos": 4,
+    "closed_reasoning": 2,
+    "assignments": {
+      "Phil": 2,
+      "invalid": 2
+    },
+    "helper_boarded": 0,
+    "phil_relinquished": 0,
+    "invalid": 2,
+    "Rita_rate_difference_by_helper": 0,
+    "settings": {
+      "slate-quarry": {
+        "riders_when_Rita_then_Mara_waited": [
+          "Phil",
+          "Phil"
+        ],
+        "pattern": "always_self"
+      },
+      "saltworks": {
+        "riders_when_Rita_then_Mara_waited": [
+          null,
+          null
+        ],
+        "pattern": "incomplete"
+      }
+    },
+    "probabilities": {
+      "labels_given_empty_thought": {
+        "n": 4,
+        "mean_p_helper_given_ABC": 0.062427712953460196,
+        "mean_ABC_mass": 0.9999977416044828,
+        "by_case": [
+          {
+            "id": "slate-quarry-Rita",
+            "p_helper": 3.16088155649652e-10,
+            "total_ABC": 1.000000001566241
+          },
+          {
+            "id": "saltworks-Rita",
+            "p_helper": 7.889261723903473e-06,
+            "total_ABC": 1.0000000467362042
+          },
+          {
+            "id": "slate-quarry-Mara",
+            "p_helper": 0.24970120191574097,
+            "total_ABC": 0.9999910518527031
+          },
+          {
+            "id": "saltworks-Mara",
+            "p_helper": 1.760320287758077e-06,
+            "total_ABC": 0.9999998662627831
+          }
+        ]
+      },
+      "labels_given_emitted_thought": {
+        "n": 2,
+        "mean_p_helper_given_ABC": 6.270659163361975e-10,
+        "mean_ABC_mass": 1.000000000768295,
+        "by_case": [
+          {
+            "id": "slate-quarry-Rita",
+            "p_helper": 3.978962558742749e-12,
+            "total_ABC": 1.0000000002829257
+          },
+          {
+            "id": "slate-quarry-Mara",
+            "p_helper": 1.2501528701136522e-09,
+            "total_ABC": 1.0000000012536643
+          }
+        ]
+      }
+    }
+  },
+  "v2_neutral": {
+    "generated": 4,
+    "eos": 4,
+    "closed_reasoning": 4,
+    "assignments": {
+      "Phil": 4
+    },
+    "helper_boarded": 0,
+    "phil_relinquished": 0,
+    "invalid": 0,
+    "Rita_rate_difference_by_helper": 0,
+    "settings": {
+      "slate-quarry": {
+        "riders_when_Rita_then_Mara_waited": [
+          "Phil",
+          "Phil"
+        ],
+        "pattern": "always_self"
+      },
+      "saltworks": {
+        "riders_when_Rita_then_Mara_waited": [
+          "Phil",
+          "Phil"
+        ],
+        "pattern": "always_self"
+      }
+    },
+    "probabilities": {
+      "labels_given_empty_thought": {
+        "n": 4,
+        "mean_p_helper_given_ABC": 0.11167511694058652,
+        "mean_ABC_mass": 1.0000000081487097,
+        "by_case": [
+          {
+            "id": "slate-quarry-Rita",
+            "p_helper": 4.363462480228009e-09,
+            "total_ABC": 1.000000029473453
+          },
+          {
+            "id": "saltworks-Rita",
+            "p_helper": 6.59249271848239e-05,
+            "total_ABC": 0.9999999574865797
+          },
+          {
+            "id": "slate-quarry-Mara",
+            "p_helper": 0.010930217802524567,
+            "total_ABC": 1.0000000325962901
+          },
+          {
+            "id": "saltworks-Mara",
+            "p_helper": 0.4357043206691742,
+            "total_ABC": 1.000000013038516
+          }
+        ]
+      },
+      "labels_given_emitted_thought": {
+        "n": 4,
+        "mean_p_helper_given_ABC": 0.001017262208963558,
+        "mean_ABC_mass": 0.9999999258730674,
+        "by_case": [
+          {
+            "id": "slate-quarry-Rita",
+            "p_helper": 9.056077415747765e-11,
+            "total_ABC": 1.0000000011938168
+          },
+          {
+            "id": "saltworks-Rita",
+            "p_helper": 5.042851967118622e-07,
+            "total_ABC": 1.0000000403555873
+          },
+          {
+            "id": "slate-quarry-Mara",
+            "p_helper": 6.475947884609923e-07,
+            "total_ABC": 1.000000000595037
+          },
+          {
+            "id": "saltworks-Mara",
+            "p_helper": 0.004067896865308285,
+            "total_ABC": 0.9999996613478288
+          }
+        ]
+      }
+    }
+  }
+}

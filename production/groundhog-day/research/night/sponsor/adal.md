@@ -1,0 +1,11 @@
+# AdaL projection rehearsal
+
+The native Apple Silicon CLI v1.11.15 is installed at `~/.adal/bin/adal`. The installer’s `--no-modify-path` option preserves the current shell startup files. `--version` and `--help` ran. The source was the vendor’s stable release manifest, checked against SHA-256 `733179f1188cd926b5e15d838bbfee14e5f0650ce7e85437160a72554ed33f27`. The local-tarball installer infers the version from the filename; keep the official `adal-1.11.15-darwin-arm64.tar.gz` basename. The plain extracted CLI can show a version but could not locate its packaged backend from an unrelated directory here. Installing in its release layout resolved that.
+
+A headless video-mode readiness probe in an empty directory reached the backend and returned **“Not authenticated. Run `adal` to sign in.”** It reported zero tool calls. No media went to AdaL. Both films and the comparison demo in this workspace were rendered locally. Organizer materials direct teams to use AdaL to produce the demo video, so an authenticated export is still an event-day dependency. [AdaL installation](https://adalagent.ai/install) · [Headless authentication](https://docs.sylph.ai/integration/headless/) · [Event rules](https://luma.com/finch-jd7i)
+
+## First event-day export
+
+1. Have a teammate run `~/.adal/bin/adal` and sign in with the intended account. Open the event-day media workspace. Set up the video producer before the first principal shoot. Check sponsor credit or existing plan in the account if requesting new media.
+2. Record a new 10-second sample using code created during the event. Give AdaL that sample, the event-day title and captions. Ask it to assemble a short local MP4. Play the exported file on a second device and verify caption timing, audio and aspect ratio. This is the first checkpoint for the video owner.
+3. For the actual submission, supply a freshly generated single-lineage short and its timecoded captions. A separate demo segment can show a second independent take and the decision ledger. Ask AdaL to retain recorded speech, preserve the visible alarm cut, and clearly label the other take. Verify the final download with `ffprobe`, watch it once, then submit the event-day public repo and demo through the organizer before 6 pm. [Video producer](https://docs.sylph.ai/)

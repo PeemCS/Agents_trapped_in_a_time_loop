@@ -1,0 +1,52 @@
+[
+  {
+    "id": "S00-B-OFFER",
+    "title": "Ned\u2019s unfinished offer",
+    "file": "ned.jpg",
+    "scene": "S00",
+    "time": "00:03.3\u201300:05.3",
+    "beat": "Ned opens his burgundy book as Phil passes",
+    "lens": "14mm first-person",
+    "qa": "Book and face visible, sidewalk clears left; gaze still faces Ned more than glances past him.",
+    "job_id": "255bbf2a-350a-40c7-bff6-aac501ab92f5",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3MWoglBmW0FxDhWYsRkUU6hOp6M/hf_20261124_013905_255bbf2a-350a-40c7-bff6-aac501ab92f5.png"
+  },
+  {
+    "id": "S01-B-CHORD",
+    "title": "Piano chord",
+    "file": "piano.jpg",
+    "scene": "S01",
+    "time": "00:15\u201300:21.5",
+    "beat": "Hands play a chord",
+    "lens": "14mm first-person",
+    "qa": "Left watch and cuffs visible; camera appears implausibly low near key height rather than looking down from eyes; finger contacts and chord require review.",
+    "job_id": "6c33f26a-4791-4fc1-b5a6-b329e6b471f6",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3MWoglBmW0FxDhWYsRkUU6hOp6M/hf_20261124_013906_6c33f26a-4791-4fc1-b5a6-b329e6b471f6.png",
+    "status": "study"
+  },
+  {
+    "id": "S01-C-BENCH",
+    "title": "Depot hand match",
+    "file": "depot.jpg",
+    "scene": "S01",
+    "time": "00:21.5\u201300:25.5",
+    "beat": "Hands settle on knees",
+    "lens": "14mm first-person",
+    "qa": "Clear left watch, both hands, and bench slats; hand positions differ from piano and pose needs editorial adjustment.",
+    "job_id": "eebfb980-b47d-4851-8808-66b5865adfb2",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3MWoglBmW0FxDhWYsRkUU6hOp6M/hf_20261124_013906_eebfb980-b47d-4851-8808-66b5865adfb2.png"
+  },
+  {
+    "id": "S01-B-CHORD-FIX",
+    "title": "Piano chord, elevated POV",
+    "file": "piano-fix.jpg",
+    "scene": "S01",
+    "time": "00:15\u201300:21.5",
+    "beat": "Hands press the chord from raised seated eye line",
+    "lens": "14mm first-person",
+    "qa": "Downward view, thighs, cuffs and left watch read clearly; slight finger overlap and hand positions are not an exact match to the depot.",
+    "job_id": "eff7b1f8-baf5-4da2-9849-d35a16eea1d2",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3MWoglBmW0FxDhWYsRkUU6hOp6M/hf_20261124_014035_eff7b1f8-baf5-4da2-9849-d35a16eea1d2.png",
+    "status": "preferred piano pickup"
+  }
+]

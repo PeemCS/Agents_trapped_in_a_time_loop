@@ -1,0 +1,19 @@
+{
+ "title":"Eight bars",
+ "shots":[
+  {"day":1,"phase":"afternoon","role":"reporter","kind":"note","quote":"In the film, the ending is Phil playing piano. He hasn't tested this theory yet. The ballroom piano is free. This is the most direct test of his hypothesis.","seconds":7},
+  {"day":1,"phase":"afternoon","role":"reporter","seconds":5.5,"reason":"The whole words field narrates silence and walking. Show only the committed rehearsal."},
+  {"day":1,"phase":"afternoon","role":"camera","speech":"quoted","quote":"Taking the charge. Alma's got a girl in Pittsburgh and the place is going dark. You guys shoot the ballroom tonight, I'll be back.","seconds":5,"reason":"One complete utterance between double quotation marks following the model's stage direction."},
+  {"day":1,"phase":"evening","role":"reporter","kind":"note","quote":"At a table. In the ballroom. Among the party.","seconds":4.3},
+  {"day":1,"phase":"evening","role":"reporter","seconds":5.1,"reason":"The words field is empty. The actual choice places him on the local depot bench."},
+  {"day":1,"phase":"evening","role":"producer","seconds":5,"reason":"Rita actually goes dancing. Her words field is empty; there is no mutual dance."},
+  {"day":2,"phase":"afternoon","role":"reporter","kind":"wake","seconds":4.1},
+  {"day":2,"phase":"afternoon","role":"reporter","seconds":4.9,"reason":"The model mixes commentary and unquoted dialogue after I say. No clean closing boundary."},
+  {"day":2,"phase":"afternoon","role":"producer","seconds":4.5,"reason":"Rita's entire field describes walking out without speaking."},
+  {"day":2,"phase":"evening","role":"reporter","seconds":4.8,"reason":"The words field is empty; the action is sleeping on the Pittsburgh bench."},
+  {"day":2,"phase":"evening","role":"camera","speech":"quoted","quote":"Second take. She talked longer than the first. Charge died on the third word of the fourth sentence. You'll hear it.","seconds":5,"reason":"One complete quoted utterance. Camera battery details are Larry's claim. The committed action delivers his recorded reel."},
+  {"day":2,"phase":"evening","role":"producer","speech":"quoted","quote":"It's going to her. You don't have to say thank you. Go home, Alma.","seconds":5,"reason":"One complete quotation. The model qualifies Alma's presence. The receiver of the recorded interview was her daughter; no reply to Rita's spoken phrase is claimed."},
+  {"day":3,"phase":"afternoon","role":"reporter","kind":"wake","seconds":3.8},
+  {"day":3,"phase":"afternoon","role":"reporter","kind":"receipt","quote":"I know that voice. Play it again.","seconds":5.7}
+ ]
+}

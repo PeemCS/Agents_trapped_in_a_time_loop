@@ -1,0 +1,86 @@
+[
+  {
+    "field": "Good morning, Rita.",
+    "mode": "whole",
+    "quote": null,
+    "expected_accept": true,
+    "observed_accept": true
+  },
+  {
+    "field": "I nod.",
+    "mode": "whole",
+    "quote": null,
+    "expected_accept": false,
+    "observed_accept": false
+  },
+  {
+    "field": "None. I am putting on my socks.",
+    "mode": "whole",
+    "quote": null,
+    "expected_accept": false,
+    "observed_accept": false
+  },
+  {
+    "field": "I don't speak to the crew. I push the door and go.",
+    "mode": "whole",
+    "quote": null,
+    "expected_accept": false,
+    "observed_accept": false
+  },
+  {
+    "field": "*silence*",
+    "mode": "whole",
+    "quote": null,
+    "expected_accept": false,
+    "observed_accept": false
+  },
+  {
+    "field": "—",
+    "mode": "whole",
+    "quote": null,
+    "expected_accept": false,
+    "observed_accept": false
+  },
+  {
+    "field": "I turn to Rita. I say: I am leaving.",
+    "mode": "whole",
+    "quote": null,
+    "expected_accept": false,
+    "observed_accept": false
+  },
+  {
+    "field": "I say: \"Hi, Alma.\" Then I sit.",
+    "mode": "quoted",
+    "quote": "Hi, Alma.",
+    "expected_accept": true,
+    "observed_accept": true
+  },
+  {
+    "field": "I say: \"Hi, Alma.\" Then I sit.",
+    "mode": "quoted",
+    "quote": "Hi",
+    "expected_accept": false,
+    "observed_accept": false
+  },
+  {
+    "field": "I say: \"Go.\" And again: \"Go.\"",
+    "mode": "quoted",
+    "quote": "Go.",
+    "expected_accept": false,
+    "observed_accept": false
+  },
+  {
+    "field": "I nod.",
+    "mode": "silent",
+    "quote": null,
+    "expected_accept": true,
+    "observed_accept": true
+  },
+  {
+    "field": "I nod.",
+    "mode": "silent",
+    "quote": "Hi",
+    "expected_accept": false,
+    "observed_accept": false
+  }
+]

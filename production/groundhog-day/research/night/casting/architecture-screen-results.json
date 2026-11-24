@@ -1,0 +1,102 @@
+{
+  "evaluator": "Independent Codex agent; visible names and any resemblance to earlier cold-screened film could reveal some content. Model/seed label and condition codebook were unavailable until sealed.",
+  "rating_sha256": "74db6d6a9e0170ffc8e2f94e3be79b1b9d2ad9e5d0c23b45a9b51dd05f1565e3",
+  "counts": {
+    "v2": 3,
+    "v1": 1
+  },
+  "pairs": [
+    {
+      "pair": "01",
+      "choice": "R",
+      "reason": "Phil sets up an attempt to keep his family and newsroom commitments, rides the coach, then actually phones in from Pittsburgh. Rita goes live herself at the inn. His report arrives but her voice is what the town hears. The ending belongs to both actors.",
+      "evidence": [
+        "R E23 Phil@inn → Pittsburgh take_coach_to_Pittsburgh (Phil uses the paid ticket and rides the coach all the way to Pittsburgh.) “Rita, I'm heading to the depot to catch the 1:00 pm coach. I can do the weather segment from the phone on the ride if you're ready, but I have to be in Pittsburgh by tomorrow morning for the couch move.”",
+        "R E24 Rita@inn → inn host_bulletin (Rita opens the station microphone.) “Good evening, folks. This is Rita on the scene in western Pennsylvania. We are on the air and ready for the forecast.”"
+      ],
+      "explicit_comparison_left": false,
+      "explicit_comparison_right": false,
+      "sides": {
+        "L": {
+          "sha256": "4904a175371c131b644a271306da2c63d799b0099fbfd906b66ac5812d13e1ec",
+          "file": "takes/heldout/v1/seed-711.json",
+          "condition": "v1"
+        },
+        "R": {
+          "sha256": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+          "file": "takes/heldout/v2/seed-711.json",
+          "condition": "v2"
+        }
+      }
+    },
+    {
+      "pair": "02",
+      "choice": "L",
+      "reason": "Phil files a reel and forfeits that day's coach. In the square, Larry commits his battery to festival footage and Rita selects his feed. Their acts determine which picture airs even though a forecast exists. R has a good portrait, but the final trip adds little to the earlier ones.",
+      "evidence": [
+        "L E23 Larry@square → square film_festival (Larry uses the camera's last charged take to film the festival.) “Rita, I'm rolling on the bandstand right now. This is the footage for the bulletin.”",
+        "L E24 Rita@square → square patch_camera_line (Rita takes the camera return on the portable switcher.) “Larry, you're on screen, roll tape.”"
+      ],
+      "explicit_comparison_left": false,
+      "explicit_comparison_right": false,
+      "sides": {
+        "L": {
+          "sha256": "b23ac8578f5812b7016eba28439a79c7c3804b1e46647e962781f1d0cf728c21",
+          "file": "takes/heldout/v2/seed-712.json",
+          "condition": "v2"
+        },
+        "R": {
+          "sha256": "b75f65e015f7f0f94dca7e8f81d957467e36c435d0651819b4dcb32a13cc76f6",
+          "file": "takes/heldout/v1/seed-712.json",
+          "condition": "v1"
+        }
+      }
+    },
+    {
+      "pair": "03",
+      "choice": "R",
+      "reason": "I would end the cut on day three. Rita frees Phil to take the bus and goes to the square herself. His sister confirms the van as Rita records the band and Larry has to tell her what spending his last charge cost. Three different people have done something specific with their Tuesday. L's final night repeats the unused offer of help.",
+      "evidence": [
+        "R E11 Phil@depot → Pittsburgh take_coach_to_Pittsburgh (Phil uses the paid ticket and rides the coach all the way to Pittsburgh.) “Rita, we're locked in. I'm heading back to Pittsburgh on the coach. Don't miss the 4:00 PM slot.”",
+        "R E12 Larry@square → square talk_to_Rita “Rita, I have to flag something. That battery is completely dead. I got the festival footage, but I can't do the portrait of the cornet player or anything else unless we find a charger.”"
+      ],
+      "explicit_comparison_left": false,
+      "explicit_comparison_right": false,
+      "sides": {
+        "L": {
+          "sha256": "c62d990e921757718b0ad35f465ab8c47016fc183f4b01de1d65db124efbff90",
+          "file": "takes/heldout/v2/seed-713.json",
+          "condition": "v2"
+        },
+        "R": {
+          "sha256": "c995124a95e96b1e2c1640679341bc99ad7bced770c28ad5ad9af9e355cc4d04",
+          "file": "takes/heldout/v1/seed-713.json",
+          "condition": "v1"
+        }
+      }
+    },
+    {
+      "pair": "04",
+      "choice": "R",
+      "reason": "The sister picks up, the station gets an empty line. Phil chose the family call, Larry sent a usable clip and Rita chose Phil's line. On the next evening Rita hosts. I could stage that change without claiming she remembered the preceding day.",
+      "evidence": [
+        "R E19 Phil@inn → Pittsburgh take_coach_to_Pittsburgh (Phil uses the paid ticket and rides the coach all the way to Pittsburgh.) “Rita, I'm heading out on the one o'clock coach. I'll let the station run the ident for the seven slot. See you later.”",
+        "R E20 Rita@inn → inn patch_reporter_line (Rita takes the reporter's return on the portable switcher.) “Phil, you are up for the seven o'clock. Patching you into the feed now.”"
+      ],
+      "explicit_comparison_left": false,
+      "explicit_comparison_right": false,
+      "sides": {
+        "L": {
+          "sha256": "530881fd12cee84bddd90a4907a5ed04ccc1ad991b81c2e8f87ce615d0f4b761",
+          "file": "takes/heldout/v1/seed-714.json",
+          "condition": "v1"
+        },
+        "R": {
+          "sha256": "2c0ab5dc5ba2faa1ecdebefcfd53ecd8de0e0a4ae49c35a58a021f1bbdece0cd",
+          "file": "takes/heldout/v2/seed-714.json",
+          "condition": "v2"
+        }
+      }
+    }
+  ]
+}

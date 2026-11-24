@@ -1,0 +1,324 @@
+{
+  "source_sha256": "6f310d860b93944befc0237018909aa4896cd2573b70ce767dfbdc08d64c8cb1",
+  "fps": 12,
+  "frames": 1139,
+  "seconds": 94.91666666666667,
+  "size": [
+    960,
+    540
+  ],
+  "voices": {
+    "Ellis": "Eddy (English (US))",
+    "Bea": "Samantha",
+    "Lou": "Daniel (English (UK))"
+  },
+  "peak": 0.6110410690307617,
+  "shots": [
+    {
+      "event_index": 0,
+      "event_id": "E001",
+      "view": "action",
+      "focus": "Ellis",
+      "start": 0.0,
+      "end": 1.0,
+      "seconds": 4.44,
+      "speech": [
+        {
+          "actor": "Ellis",
+          "text": "morning's cold, but the sky's still clear. }",
+          "start_s": 0.42,
+          "end_s": 3.7946
+        }
+      ],
+      "first_frame": 0,
+      "frames": 54
+    },
+    {
+      "event_index": 1,
+      "event_id": "E002",
+      "view": "action",
+      "focus": "Ellis",
+      "start": 0.0,
+      "end": 1.0,
+      "seconds": 4.0,
+      "speech": [
+        {
+          "actor": "Ellis",
+          "text": "Radio's playing three bright notes.",
+          "start_s": 4.92,
+          "end_s": 7.6009
+        }
+      ],
+      "first_frame": 54,
+      "frames": 48
+    },
+    {
+      "event_index": 2,
+      "event_id": "E003",
+      "view": "action",
+      "focus": "Ellis",
+      "start": 0.0,
+      "end": 1.0,
+      "seconds": 5.0,
+      "speech": [],
+      "first_frame": 102,
+      "frames": 60
+    },
+    {
+      "event_index": 3,
+      "event_id": "E004",
+      "view": "action",
+      "focus": "Ellis",
+      "start": 0.0,
+      "end": 1.0,
+      "seconds": 5.0,
+      "speech": [],
+      "first_frame": 162,
+      "frames": 60
+    },
+    {
+      "event_index": 4,
+      "event_id": "E005",
+      "view": "morning",
+      "focus": "Ellis",
+      "start": 0.22,
+      "end": 0.22,
+      "seconds": 4.5,
+      "speech": [],
+      "first_frame": 222,
+      "frames": 54
+    },
+    {
+      "event_index": 4,
+      "event_id": "E005",
+      "view": "action",
+      "focus": "Ellis",
+      "start": 0.25,
+      "end": 1.0,
+      "seconds": 4.0,
+      "speech": [
+        {
+          "actor": "Ellis",
+          "text": "Lou, coffee?",
+          "start_s": 23.42,
+          "end_s": 24.9678
+        }
+      ],
+      "first_frame": 276,
+      "frames": 48
+    },
+    {
+      "event_index": 5,
+      "event_id": "E006",
+      "view": "action",
+      "focus": "Ellis",
+      "start": 0.0,
+      "end": 1.0,
+      "seconds": 6.56,
+      "speech": [
+        {
+          "actor": "Ellis",
+          "text": "Hey Bea, you want pie? It’s $3.",
+          "start_s": 27.42,
+          "end_s": 31.1995
+        },
+        {
+          "actor": "Bea",
+          "text": "It's $3, just like always.",
+          "start_s": 31.4395,
+          "end_s": 33.9208
+        }
+      ],
+      "first_frame": 324,
+      "frames": 91
+    },
+    {
+      "event_index": 6,
+      "event_id": "E007",
+      "view": "action",
+      "focus": "Ellis",
+      "start": 0.0,
+      "end": 1.0,
+      "seconds": 6.01,
+      "speech": [
+        {
+          "actor": "Ellis",
+          "text": "Wait, that spoon wasn't on the counter at 9:30. Who dropped it?",
+          "start_s": 35.0033,
+          "end_s": 40.2973
+        }
+      ],
+      "first_frame": 415,
+      "frames": 77
+    },
+    {
+      "event_index": 7,
+      "event_id": "E008",
+      "view": "action",
+      "focus": "Ellis",
+      "start": 0.0,
+      "end": 1.0,
+      "seconds": 4.0,
+      "speech": [],
+      "first_frame": 492,
+      "frames": 48
+    },
+    {
+      "event_index": 8,
+      "event_id": "E009",
+      "view": "action",
+      "focus": "Ellis",
+      "start": 0.0,
+      "end": 1.0,
+      "seconds": 10.09,
+      "speech": [
+        {
+          "actor": "Ellis",
+          "text": "Hey, Lou, the groundhog said six more weeks of winter.",
+          "start_s": 45.42,
+          "end_s": 49.6736
+        },
+        {
+          "actor": "Lou",
+          "text": "Six more weeks, huh? Let's hope the band's ready for spring.",
+          "start_s": 49.9136,
+          "end_s": 54.2471
+        }
+      ],
+      "first_frame": 540,
+      "frames": 122
+    },
+    {
+      "event_index": 9,
+      "event_id": "E010",
+      "view": "action",
+      "focus": "Ellis",
+      "start": 0.0,
+      "end": 1.0,
+      "seconds": 4.0,
+      "speech": [
+        {
+          "actor": "Ellis",
+          "text": "I'll go to the depot.",
+          "start_s": 55.5867,
+          "end_s": 57.3312
+        }
+      ],
+      "first_frame": 662,
+      "frames": 48
+    },
+    {
+      "event_index": 10,
+      "event_id": "E011",
+      "view": "action",
+      "focus": "Ellis",
+      "start": 0.0,
+      "end": 1.0,
+      "seconds": 4.0,
+      "speech": [],
+      "first_frame": 710,
+      "frames": 48
+    },
+    {
+      "event_index": 11,
+      "event_id": "E012",
+      "view": "action",
+      "focus": "Ellis",
+      "start": 0.0,
+      "end": 1.0,
+      "seconds": 5.22,
+      "speech": [
+        {
+          "actor": "Ellis",
+          "text": "Three bright notes. Van backfires. Three bright notes. Van backfires.",
+          "start_s": 63.5867,
+          "end_s": 70.3378
+        }
+      ],
+      "first_frame": 758,
+      "frames": 94
+    },
+    {
+      "event_index": 12,
+      "event_id": "E013",
+      "view": "action",
+      "focus": "Ellis",
+      "start": 0.0,
+      "end": 1.0,
+      "seconds": 10.48,
+      "speech": [
+        {
+          "actor": "Ellis",
+          "text": "Six more weeks, huh? Let's hope the band's ready for spring.",
+          "start_s": 71.42,
+          "end_s": 76.4369
+        },
+        {
+          "actor": "Lou",
+          "text": "Six more weeks, huh? Let's hope the band's ready for spring.",
+          "start_s": 76.6769,
+          "end_s": 81.0104
+        }
+      ],
+      "first_frame": 852,
+      "frames": 128
+    },
+    {
+      "event_index": 13,
+      "event_id": "E014",
+      "view": "action",
+      "focus": "Ellis",
+      "start": 0.0,
+      "end": 1.0,
+      "seconds": 5.22,
+      "speech": [
+        {
+          "actor": "Ellis",
+          "text": "Play the three bright notes, listen to the van backfire.",
+          "start_s": 82.0867,
+          "end_s": 86.1379
+        }
+      ],
+      "first_frame": 980,
+      "frames": 63
+    },
+    {
+      "event_index": 14,
+      "event_id": "E015",
+      "view": "action",
+      "focus": "Ellis",
+      "start": 0.0,
+      "end": 1.0,
+      "seconds": 4.0,
+      "speech": [
+        {
+          "actor": "Ellis",
+          "text": "Two more weeks?",
+          "start_s": 87.3367,
+          "end_s": 88.798
+        }
+      ],
+      "first_frame": 1043,
+      "frames": 48
+    },
+    {
+      "event_index": 15,
+      "event_id": "E016",
+      "view": "action",
+      "focus": "Ellis",
+      "start": 0.0,
+      "end": 1.0,
+      "seconds": 4.0,
+      "speech": [
+        {
+          "actor": "Ellis",
+          "text": "Time to catch that band!",
+          "start_s": 91.3367,
+          "end_s": 93.6652
+        }
+      ],
+      "first_frame": 1091,
+      "frames": 48
+    }
+  ]
+}

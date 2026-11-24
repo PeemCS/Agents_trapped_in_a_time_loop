@@ -1,0 +1,225 @@
+{
+  "title": "The return fares",
+  "format": "short",
+  "take": "731-uncued",
+  "exact_path": "research/night/last-reel/runs/731-uncued/take.json",
+  "source_sha256": "a72c968196be33c1e0fedb753648792055ff5421be5a0f3b6dd0ea9578621ec0",
+  "source_carry_in": {
+    "source": "thinking/runs/standard/seed-731.json",
+    "sha256": "f3173d2fb56b419d9f0588ed2db879ea3d97076db47eeb425fda9160dd0cd576",
+    "events": [
+      "d02-t02-reporter",
+      "d02-t03-reporter",
+      "d03-t00-reporter"
+    ],
+    "digest": "aaee06c39dcf2437cde036998d960e1fc1494b8191be7cc9657d01e509097813",
+    "memory": [
+      {
+        "when": "last Tuesday afternoon",
+        "witnessed": "Phil uses the paid ticket and rides the coach all the way to Pittsburgh.."
+      },
+      {
+        "when": "last evening in Pittsburgh",
+        "witnessed": "You reached your sister from the terminal payphone. She confirmed the van booking for Wednesday.",
+        "your_words": "Hey, it's Phil. I'm in Pittsburgh now, just off the coach. Listen, about tomorrow—van's booked for the couch, right? I want to nail down the pickup time and make sure I know which hallway we're dragging it through. I'll be at your place by noon, tops."
+      },
+      {
+        "when": "this morning",
+        "witnessed": "After that evening in Pittsburgh you woke back in your hotel bed. The radio again announced Tuesday, February 2."
+      }
+    ]
+  },
+  "condition": "uncued",
+  "clock": "Closed Tuesday. An outside receipt may survive. Wednesday is only an alternative reducer rule and is never filmed in this cut.",
+  "shots": [
+    {
+      "event_id": "d01-afternoon-reporter",
+      "day": 1,
+      "phase": "afternoon",
+      "kind": "action",
+      "role": "reporter",
+      "actor": "Phil",
+      "action": "pocket_fare_envelope",
+      "source_effect": "Phil pockets the contents of the crew fare envelope. The envelope is empty.",
+      "full_words_field": "Rita, Larry—see you at the party. I'm heading to Pittsburgh.",
+      "stream": {
+        "stream": "runs/731-uncued/streams/d01-t00-reporter-f2a794faeb65.ndjson",
+        "sha256": "f15a1e132148d96526c9fc0abbd03ec4da8f454f99d3e03065abd088230502fc",
+        "original_emission_take": "731-uncued",
+        "original_emission_day": 1,
+        "original_emission_phase": "afternoon",
+        "cache_hit": false,
+        "model": "qwen3.8:27b"
+      },
+      "scene": "coat_check",
+      "seconds": 7.1,
+      "delivery_by_end_of_this_source_day": true,
+      "reporter_receipt_visible_in_actor_input": false,
+      "dance": false,
+      "speech": {
+        "mode": "whole",
+        "text": "Rita, Larry—see you at the party. I'm heading to Pittsburgh.",
+        "source_start": 0,
+        "source_end": 60
+      },
+      "label": "Phil · Spoken",
+      "text": "Rita, Larry—see you at the party. I'm heading to Pittsburgh.",
+      "sound": "perform",
+      "voice_choice_reason": "The entire field is a direct statement to Rita and Larry in the lobby. It contains no narrated directions.",
+      "first_frame": 0,
+      "frames": 171,
+      "start_s": 0.0,
+      "end_s": 7.125
+    },
+    {
+      "event_id": "d01-afternoon-producer",
+      "day": 1,
+      "phase": "afternoon",
+      "kind": "witnesses",
+      "role": "producer",
+      "actor": "Rita",
+      "action": "interview_Alma",
+      "source_effect": "Rita records Alma at the Rialto and puts her recording on the patch.",
+      "full_words_field": "Alma, your daughter wants your voice. Talk to her.",
+      "stream": {
+        "stream": "runs/731-hypothesis/streams/d01-t00-producer-099f13db159c.ndjson",
+        "sha256": "f6bfe16272c7f92fb6c858584842bf0feaa90772f22456d3f1b5be1715bea5fa",
+        "original_emission_take": "731-hypothesis",
+        "original_emission_day": 1,
+        "original_emission_phase": "afternoon",
+        "cache_hit": true,
+        "model": "qwen3.8:27b"
+      },
+      "scene": "Rialto",
+      "seconds": 6.0,
+      "delivery_by_end_of_this_source_day": true,
+      "reporter_receipt_visible_in_actor_input": false,
+      "dance": false,
+      "text": "Rita and Larry heard him in the lobby. Both went to the Rialto. Neither saw him empty the envelope.",
+      "label": "What Rita and Larry witnessed",
+      "sound": "room",
+      "first_frame": 171,
+      "frames": 144,
+      "start_s": 7.125,
+      "end_s": 13.125
+    },
+    {
+      "event_id": "d01-evening-reporter",
+      "day": 1,
+      "phase": "evening",
+      "kind": "action",
+      "role": "reporter",
+      "actor": "Phil",
+      "action": "go_to_bed",
+      "source_effect": "Phil lets the evening go by in bed alone.",
+      "full_words_field": "Rita. I hear you. About Alma. I'll call her from the terminal tomorrow, after I'm off the coach. I'll ask her what she wants to hear. I'll just... listen. I'll do it from a payphone with a three-minute limit and I'll do it. Goodnight.",
+      "stream": {
+        "stream": "runs/731-uncued/streams/d01-t01-reporter-b3deadc0237a.ndjson",
+        "sha256": "fed2b61599620d9530e68e0e6f1d714b51e40cd5072d6ce4c7515ee1d2dd4952",
+        "original_emission_take": "731-uncued",
+        "original_emission_day": 1,
+        "original_emission_phase": "evening",
+        "cache_hit": false,
+        "model": "qwen3.8:27b"
+      },
+      "scene": "hotel",
+      "seconds": 4.6,
+      "delivery_by_end_of_this_source_day": true,
+      "reporter_receipt_visible_in_actor_input": false,
+      "dance": false,
+      "speech": {
+        "mode": "silent",
+        "text": "",
+        "source_start": null,
+        "source_end": null
+      },
+      "label": "Phil · Action",
+      "text": "Phil lets the evening go by in bed alone.",
+      "sound": "perform",
+      "voice_choice_reason": "Show the chosen physical act of going to bed. The full evening speech remains in the source ledger and is omitted from this short.",
+      "verified_extra_caption": "He could wire the money for his sister’s van. No payment was issued.",
+      "first_frame": 315,
+      "frames": 111,
+      "start_s": 13.125,
+      "end_s": 17.75
+    },
+    {
+      "event_id": "d02-afternoon-reporter",
+      "day": 2,
+      "phase": "afternoon",
+      "kind": "wake",
+      "role": "reporter",
+      "actor": "Phil",
+      "action": "take_coach",
+      "source_effect": "Phil rides the coach and steps off at Pittsburgh.",
+      "full_words_field": "",
+      "stream": {
+        "stream": "runs/731-uncued/streams/d02-t00-reporter-c95021a863fd.ndjson",
+        "sha256": "81ebc182d382a9cac8ad681ccb424400f50e9b0b1ecc6e887a1393ff6c486fe6",
+        "original_emission_take": "731-uncued",
+        "original_emission_day": 2,
+        "original_emission_phase": "afternoon",
+        "cache_hit": false,
+        "model": "qwen3.8:27b"
+      },
+      "scene": "hotel",
+      "seconds": 4.4,
+      "delivery_by_end_of_this_source_day": true,
+      "reporter_receipt_visible_in_actor_input": true,
+      "dance": false,
+      "text": "Tuesday, February 2. Six am in the Hearthside Hotel.",
+      "label": "World clock",
+      "sound": "alarm",
+      "verified_extra_caption": "The coat-check envelope holds the crew’s return fares again.",
+      "first_frame": 426,
+      "frames": 106,
+      "start_s": 17.75,
+      "end_s": 22.166666666666668
+    },
+    {
+      "event_id": "d02-afternoon-reporter",
+      "day": 2,
+      "phase": "afternoon",
+      "kind": "action",
+      "role": "reporter",
+      "actor": "Phil",
+      "action": "take_coach",
+      "source_effect": "Phil rides the coach and steps off at Pittsburgh.",
+      "full_words_field": "",
+      "stream": {
+        "stream": "runs/731-uncued/streams/d02-t00-reporter-c95021a863fd.ndjson",
+        "sha256": "81ebc182d382a9cac8ad681ccb424400f50e9b0b1ecc6e887a1393ff6c486fe6",
+        "original_emission_take": "731-uncued",
+        "original_emission_day": 2,
+        "original_emission_phase": "afternoon",
+        "cache_hit": false,
+        "model": "qwen3.8:27b"
+      },
+      "scene": "town",
+      "seconds": 6.5,
+      "delivery_by_end_of_this_source_day": true,
+      "reporter_receipt_visible_in_actor_input": true,
+      "dance": false,
+      "speech": {
+        "mode": "silent",
+        "text": "",
+        "source_start": null,
+        "source_end": null
+      },
+      "label": "Phil · Action",
+      "text": "Phil rides the coach and steps off at Pittsburgh.",
+      "sound": "perform",
+      "voice_choice_reason": "The reporter's words field is empty. He chooses the coach at the new morning handoff and physically reaches Pittsburgh during the afternoon.",
+      "show_terminal_arrival": true,
+      "first_frame": 532,
+      "frames": 156,
+      "start_s": 22.166666666666668,
+      "end_s": 28.666666666666668
+    }
+  ],
+  "speech_gate_counts": {
+    "whole": 1,
+    "silent": 2
+  },
+  "stage": "New illustrated reconstruction; nonverbal staging and foley are editorial. All committed actions, actual receiver, and the closed clock replayed from the source."
+}

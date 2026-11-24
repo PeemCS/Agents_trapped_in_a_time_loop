@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">
+  <defs>
+    <marker id="arrCyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrAmber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#fbbf24"/>
+    </marker>
+    <marker id="arrRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#f87171"/>
+    </marker>
+  </defs>
+
+  <rect width="1440" height="900" fill="#090e16"/>
+
+  <!-- Header -->
+  <rect x="24" y="18" width="1392" height="72" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="44" y="48" fill="#f8fafc" font-size="22" font-weight="700" letter-spacing="1.2">S02 · II. ESCAPE THE MAP — BOARDING → COACH → PITTSBURGH PAYPHONE (00:28–00:42)</text>
+  <text x="44" y="74" fill="#94a3b8" font-size="13">SYNCED TO DEP-M · COACH-M · TERM-M (coach.svg · terminal.svg · S02-B1/B2 · S02-C1 · S02-D1/D2 → S00-D RESET)</text>
+  <rect x="1215" y="34" width="182" height="38" rx="6" fill="#0c2238" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="1306" y="58" fill="#7dd3fc" font-size="13" font-weight="700" text-anchor="middle">LENS: FIXED 14mm POV</text>
+
+  <!-- PANEL A1: COACH INTERIOR OVERHEAD (TOP LEFT) -->
+  <rect x="24" y="106" width="690" height="378" rx="10" fill="#0d1522" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="44" y="134" fill="#7dd3fc" font-size="14" font-weight="700">A1. INTERCITY COACH CABIN (COACH-M · S02-C1 · FRONT POINTS EAST →)</text>
+
+  <!-- Coach Shell -->
+  <rect x="54" y="176" width="620" height="214" rx="28" fill="#141f30" stroke="#64748b" stroke-width="4"/>
+  <!-- Left-side (North) Windows -->
+  <line x1="100" y1="176" x2="540" y2="176" stroke="#475569" stroke-width="7" stroke-dasharray="60 16"/>
+  <text x="320" y="164" fill="#64748b" font-size="10" text-anchor="middle">NORTH / LEFT WINDOWS (DO NOT LOOK HERE!)</text>
+  <!-- Right-side (South) Windows — ACTIVE! -->
+  <line x1="100" y1="390" x2="540" y2="390" stroke="#bae6fd" stroke-width="9" stroke-dasharray="60 16"/>
+  <text x="320" y="416" fill="#bae6fd" font-size="11" font-weight="700" text-anchor="middle">SOUTH / RIGHT-HAND GLASS (PHIL LOOKS HERE!)</text>
+
+  <!-- Blue Seats (6 rows, North & South banks) -->
+  <g fill="#1e3a5f" stroke="#60a5fa" stroke-width="1.5">
+    <rect x="96" y="196" width="44" height="54" rx="4"/><rect x="166" y="196" width="44" height="54" rx="4"/><rect x="236" y="196" width="44" height="54" rx="4"/>
+    <rect x="306" y="196" width="44" height="54" rx="4"/><rect x="376" y="196" width="44" height="54" rx="4"/><rect x="446" y="196" width="44" height="54" rx="4"/>
+    <rect x="96" y="316" width="44" height="54" rx="4"/><rect x="166" y="316" width="44" height="54" rx="4"/><rect x="236" y="316" width="44" height="54" rx="4"/>
+    <rect x="306" y="316" width="44" height="54" rx="4"/><rect x="376" y="316" width="44" height="54" rx="4"/><rect x="446" y="316" width="44" height="54" rx="4"/>
+  </g>
+  <text x="274" y="288" fill="#475569" font-size="11" text-anchor="middle">CENTER AISLE · BLUE SEATS</text>
+  <!-- Driver & Front Entry Steps -->
+  <rect x="572" y="196" width="54" height="48" rx="4" fill="#334155" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="599" y="224" fill="#cbd5e1" font-size="10" text-anchor="middle">DRIVER</text>
+  <rect x="572" y="324" width="54" height="56" rx="4" fill="#422006" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="599" y="350" fill="#fde68a" font-size="10" text-anchor="middle">STEPS</text>
+  <text x="599" y="364" fill="#fbbf24" font-size="9" text-anchor="middle">S02-B1/B2</text>
+
+  <!-- Phil Row 4 from rear, RIGHT window seat, facing EAST, head angled SE toward RIGHT glass -->
+  <path d="M 326,352 L 386,390 L 502,390 Z" fill="#38bdf8" fill-opacity="0.24" stroke="#38bdf8" stroke-width="2" stroke-dasharray="5 4"/>
+  <line x1="326" y1="352" x2="438" y2="386" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#arrCyan)"/>
+  <circle cx="326" cy="352" r="13" fill="#090e16" stroke="#38bdf8" stroke-width="3"/>
+  <text x="326" y="356" fill="#7dd3fc" font-size="10" font-weight="700" text-anchor="middle">C1</text>
+  <text x="326" y="308" fill="#7dd3fc" font-size="10" font-weight="700" text-anchor="middle">ROW 4 RIGHT SEAT</text>
+
+  <!-- Direction of Travel -->
+  <line x1="120" y1="448" x2="590" y2="448" stroke="#f87171" stroke-width="2.5" stroke-dasharray="8 5" marker-end="url(#arrRed)"/>
+  <text x="355" y="468" fill="#fca5a5" font-size="11" font-weight="700" text-anchor="middle">COACH TRAVELS EAST → (SNOWY POLES MOVE RIGHT-TO-LEFT / TOWARD REAR)</text>
+
+  <!-- PANEL A2: PITTSBURGH TERMINAL OVERHEAD (BOTTOM LEFT) -->
+  <rect x="24" y="500" width="690" height="376" rx="10" fill="#0d1522" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="44" y="528" fill="#fbbf24" font-size="14" font-weight="700">A2. PITTSBURGH BUS TERMINAL (TERM-M · S02-D1/D2 · 7 PM · NORTH ↑)</text>
+
+  <rect x="64" y="564" width="580" height="252" fill="#141f30" stroke="#64748b" stroke-width="4"/>
+  <text x="340" y="798" fill="#475569" font-size="11" text-anchor="middle">DARK WET TERRAZZO · GREENISH FLUORESCENT + BLUE DUSK</text>
+
+  <!-- North High Clerestory Glass -->
+  <line x1="125" y1="564" x2="345" y2="564" stroke="#bae6fd" stroke-width="8"/>
+  <text x="235" y="552" fill="#bae6fd" font-size="10" font-weight="700" text-anchor="middle">HIGH WINDOWS (BLUE DUSK)</text>
+
+  <!-- West Gate Passage -->
+  <line x1="64" y1="654" x2="64" y2="722" stroke="#090e16" stroke-width="9"/>
+  <text x="118" y="692" fill="#94a3b8" font-size="10" text-anchor="middle">← WEST GATES</text>
+
+  <!-- ONE SINGLE WALL-MOUNTED PAYPHONE (NORTH WALL EAST OF GLASS) -->
+  <rect x="436" y="570" width="138" height="36" fill="#334155" stroke="#fbbf24" stroke-width="2.5"/>
+  <rect x="446" y="576" width="32" height="22" fill="#020617" stroke="#f8fafc" stroke-width="1"/>
+  <rect x="486" y="576" width="54" height="18" fill="#cbd5e1" stroke="#0f172a" stroke-width="1"/>
+  <text x="505" y="550" fill="#fbbf24" font-size="11" font-weight="700" text-anchor="middle">EXACTLY ONE PAYPHONE (CRADLE L · KEYPAD R)</text>
+  <text x="462" y="622" fill="#fde68a" font-size="9" text-anchor="middle">Chipped tile</text>
+
+  <!-- South Bench & Trash Bin -->
+  <rect x="190" y="758" width="144" height="24" rx="3" fill="#78350f" stroke="#d97706" stroke-width="1.5"/>
+  <text x="262" y="774" fill="#fde68a" font-size="9" text-anchor="middle">SOUTH BENCH</text>
+  <rect x="580" y="718" width="44" height="72" rx="4" fill="#334155" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="602" y="758" fill="#cbd5e1" font-size="9" text-anchor="middle">BIN</text>
+
+  <!-- Terminal C1 FOV Cone (Standing 1.64m facing North) -->
+  <path d="M 498,668 L 414,576 L 594,576 Z" fill="#fbbf24" fill-opacity="0.18" stroke="#fbbf24" stroke-width="2" stroke-dasharray="5 4"/>
+  <line x1="498" y1="668" x2="504" y2="614" stroke="#fbbf24" stroke-width="2.5" marker-end="url(#arrAmber)"/>
+  <circle cx="498" cy="668" r="13" fill="#090e16" stroke="#fbbf24" stroke-width="3"/>
+  <text x="498" y="672" fill="#fde68a" font-size="10" font-weight="700" text-anchor="middle">C1</text>
+  <text x="444" y="704" fill="#fde68a" font-size="11" font-weight="700" text-anchor="middle">C1 · PHIL AT PHONE (1.64m)</text>
+  <text x="444" y="720" fill="#94a3b8" font-size="10" text-anchor="middle">Left hand holds receiver at LEFT EAR</text>
+
+  <!-- PANEL B: 21:9 CAMERA-FRAME MAPS (TOP RIGHT) -->
+  <rect x="734" y="106" width="682" height="456" rx="10" fill="#0d1522" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="754" y="134" fill="#fbbf24" font-size="14" font-weight="700">B. 21:9 CAMERA-FRAME SCREEN-LEFT / CENTER / SCREEN-RIGHT MAPS</text>
+
+  <!-- Frame 1: S02-C1 Coach Window Seat -->
+  <text x="754" y="162" fill="#7dd3fc" font-size="12" font-weight="700">SHOT S02-C1 · COACH RIDE (ROW 4 RIGHT WINDOW SEAT — 14mm POV)</text>
+  <rect x="754" y="172" width="642" height="156" rx="6" fill="#0b1320" stroke="#38bdf8" stroke-width="2"/>
+  <line x1="995" y1="172" x2="995" y2="328" stroke="#1e293b" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <!-- Left: Blue seatback ahead -->
+  <rect x="762" y="196" width="218" height="130" rx="10" fill="#1e3a5f" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="871" y="250" fill="#bfdbfe" font-size="11" font-weight="700" text-anchor="middle">SCREEN-LEFT:</text>
+  <text x="871" y="268" fill="#e2e8f0" font-size="10" text-anchor="middle">BLUE SEATBACK AHEAD</text>
+  <text x="871" y="284" fill="#94a3b8" font-size="10" text-anchor="middle">(NO bare hand on seat!)</text>
+  <text x="871" y="308" fill="#34d399" font-size="10" font-weight="700" text-anchor="middle">GLOVED HANDS ON LAP</text>
+  <!-- Right: Right-side window frame + snowy highway -->
+  <rect x="1012" y="182" width="374" height="114" rx="6" fill="#0f2942" stroke="#bae6fd" stroke-width="2.5"/>
+  <text x="1199" y="218" fill="#bae6fd" font-size="12" font-weight="700" text-anchor="middle">SCREEN-RIGHT: RIGHT-SIDE GLASS + JAMB</text>
+  <text x="1199" y="238" fill="#e2e8f0" font-size="10" text-anchor="middle">Slush-speckled glass · snowy two-lane road · bare poles</text>
+  <text x="1199" y="258" fill="#fca5a5" font-size="10" font-weight="700" text-anchor="middle">← EXTERIOR MOVES TOWARD REAR OF BUS</text>
+  <text x="1199" y="316" fill="#94a3b8" font-size="10" text-anchor="middle">Window sill &amp; rubber jamb remain locked on right</text>
+
+  <!-- Frame 2: S02-D1/D2 Pittsburgh Payphone -->
+  <text x="754" y="354" fill="#fbbf24" font-size="12" font-weight="700">SHOT S02-D1/D2 · PITTSBURGH PAYPHONE MID-CALL ("I'LL BE THERE." — 14mm POV)</text>
+  <rect x="754" y="364" width="642" height="178" rx="6" fill="#0b1320" stroke="#fbbf24" stroke-width="2"/>
+  <line x1="948" y1="364" x2="948" y2="542" stroke="#1e293b" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="1215" y1="364" x2="1215" y2="542" stroke="#1e293b" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <!-- Far left: sliver of raised black receiver near Phil's left ear + cord -->
+  <rect x="758" y="370" width="52" height="82" rx="12" fill="#020617" stroke="#fbbf24" stroke-width="2"/>
+  <text x="854" y="400" fill="#fde68a" font-size="10" font-weight="700" text-anchor="middle">SLIVER OF RECEIVER</text>
+  <text x="854" y="416" fill="#94a3b8" font-size="9" text-anchor="middle">AT LEFT EAR ONLY!</text>
+  <text x="854" y="432" fill="#34d399" font-size="9" text-anchor="middle">Left wrist + silver watch</text>
+  <path d="M 800,452 Q 860,515 1030,458" fill="none" stroke="#cbd5e1" stroke-width="3" stroke-dasharray="4 2"/>
+  <!-- Center: Single wall-mounted metal payphone -->
+  <rect x="1008" y="388" width="144" height="92" rx="4" fill="#334155" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="1020" y="404" width="26" height="44" fill="#020617"/>
+  <rect x="1058" y="406" width="76" height="42" fill="#94a3b8"/>
+  <text x="1080" y="380" fill="#fde68a" font-size="9" text-anchor="middle">CHIPPED TILE ABOVE CRADLE</text>
+  <text x="1080" y="496" fill="#fbbf24" font-size="10" font-weight="700" text-anchor="middle">1 SINGLE PHONE · EMPTY CRADLE (L)</text>
+  <rect x="1014" y="506" width="132" height="24" fill="#854d0e" stroke="#facc15" stroke-width="1"/>
+  <text x="1080" y="522" fill="#fef08a" font-size="9" font-weight="700" text-anchor="middle">YELLOW DIRECTORY + GLOVES</text>
+  <!-- Right: empty tile wall + blue dusk edge -->
+  <text x="1305" y="444" fill="#94a3b8" font-size="10" text-anchor="middle">EMPTY TILED WALL</text>
+  <text x="1305" y="460" fill="#f87171" font-size="10" font-weight="700" text-anchor="middle">NO ROW OF PHONES!</text>
+
+  <!-- PANEL C: QA LOCKS & FORBIDDEN ERRORS (BOTTOM RIGHT) -->
+  <rect x="734" y="578" width="682" height="298" rx="10" fill="#0d1522" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="754" y="606" fill="#f8fafc" font-size="14" font-weight="700">C. ASTRA PHOTO-GEN SPATIAL LOCKS &amp; FORBIDDEN ERRORS</text>
+  <line x1="754" y1="618" x2="1396" y2="618" stroke="#1e293b" stroke-width="1.5"/>
+
+  <rect x="754" y="632" width="312" height="226" rx="8" fill="#0a241d" stroke="#10b981" stroke-width="1.5"/>
+  <text x="770" y="656" fill="#34d399" font-size="12" font-weight="700">MUST PRESERVE (LOCKED)</text>
+  <text x="770" y="680" fill="#e2e8f0" font-size="11">1. S02-B1/B2 (Boarding): DEP-M east</text>
+  <text x="770" y="696" fill="#94a3b8" font-size="10">   doorway, timetable near right edge,</text>
+  <text x="770" y="710" fill="#94a3b8" font-size="10">   1 step up onto blue-grey coach steps.</text>
+  <text x="770" y="732" fill="#e2e8f0" font-size="11">2. S02-C1 (Coach): RIGHT-SIDE glass</text>
+  <text x="770" y="748" fill="#94a3b8" font-size="10">   on screen-right; blue seatback left;</text>
+  <text x="770" y="762" fill="#94a3b8" font-size="10">   gloved hands resting on lap.</text>
+  <text x="770" y="784" fill="#e2e8f0" font-size="11">3. S02-D1/D2 (Payphone): ONE wall</text>
+  <text x="770" y="800" fill="#94a3b8" font-size="10">   phone, receiver sliver at upper-left</text>
+  <text x="770" y="814" fill="#94a3b8" font-size="10">   ear, gloves &amp; yellow book on shelf.</text>
+  <text x="770" y="838" fill="#34d399" font-size="10" font-weight="700">4. S02-E1 reuses exact S00-D wake.</text>
+
+  <rect x="1084" y="632" width="312" height="226" rx="8" fill="#2a1215" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="1100" y="656" fill="#f87171" font-size="12" font-weight="700">FORBIDDEN ERRORS (FROM QA)</text>
+  <text x="1100" y="680" fill="#fecaca" font-size="11">✗ NO left-side bus windows dominating</text>
+  <text x="1100" y="696" fill="#fca5a5" font-size="10">   (killed S02-C1-STUDY — RIGHT glass!).</text>
+  <text x="1100" y="718" fill="#fecaca" font-size="11">✗ NO bare hand or scarf draped over</text>
+  <text x="1100" y="734" fill="#fca5a5" font-size="10">   front seatback (killed S02-C1-STUDY).</text>
+  <text x="1100" y="756" fill="#fecaca" font-size="11">✗ NO multiple repeating payphones</text>
+  <text x="1100" y="772" fill="#fca5a5" font-size="10">   along wall (killed S02-D1-STUDY!).</text>
+  <text x="1100" y="794" fill="#fecaca" font-size="11">✗ NO full handset held at arm's length</text>
+  <text x="1100" y="810" fill="#fca5a5" font-size="10">   (mid-call = sliver near left ear!).</text>
+  <text x="1100" y="836" fill="#fecaca" font-size="11">✗ NO exterior chase-car / drone shots.</text>
+</svg>

@@ -1,0 +1,159 @@
+{
+  "condition": "obstruction",
+  "seed": 967,
+  "model": "qwen3:0.6b",
+  "revision": "7df6b6e09427a769808717c0a93cadc4ae99ed4eb8bf5ca557c90846becea435",
+  "initial": {
+    "reporter": {
+      "x": 6.75,
+      "y": 8.25
+    }
+  },
+  "ticks": [
+    [
+      {
+        "id": "obstruction-967-t00-reporter",
+        "role": "reporter",
+        "actor": "Phil",
+        "say": "I stand at the precise coordinates for my calibration and have a few unscheduled walks ahead of me.",
+        "raw": "runs/obstruction-967/calls/obstruction-967-t00-reporter.json",
+        "raw_sha256": "2ac6b07ff86ab057922f322d6105519aa3cd33e9505dcd4f0e135d979379b3bb",
+        "seed": 96700,
+        "start": {
+          "x": 6.75,
+          "y": 8.25
+        },
+        "requested": {
+          "x": 5.2,
+          "y": 6
+        },
+        "quantized": {
+          "x": 5.2,
+          "y": 6
+        },
+        "resolved": {
+          "x": 5.2,
+          "y": 4.4
+        },
+        "status": "adjusted",
+        "reason": "Closest reachable point beside inn.",
+        "path": [
+          {
+            "x": 6.75,
+            "y": 8.25
+          },
+          {
+            "x": 7.6000000000000005,
+            "y": 7.6000000000000005
+          },
+          {
+            "x": 7.6000000000000005,
+            "y": 4.4
+          },
+          {
+            "x": 5.2,
+            "y": 4.4
+          }
+        ],
+        "length": 6.670046727951636,
+        "requestedDoorDistance": 2.73221521846285,
+        "resolvedDoorDistance": 4.150301193889426,
+        "nearDoor": "inn",
+        "gridError": 0,
+        "adjustment": 1.5999999999999996,
+        "requestedOffDoor": true,
+        "resolvedOffDoor": true,
+        "yUp": [
+          [
+            6.75,
+            0,
+            8.25
+          ],
+          [
+            7.6000000000000005,
+            0,
+            7.6000000000000005
+          ],
+          [
+            7.6000000000000005,
+            0,
+            4.4
+          ],
+          [
+            5.2,
+            0,
+            4.4
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "id": "obstruction-967-t01-reporter",
+        "role": "reporter",
+        "actor": "Phil",
+        "say": "I'll go to the diner as it's the closest point beside it.",
+        "raw": "runs/obstruction-967/calls/obstruction-967-t01-reporter.json",
+        "raw_sha256": "5f48098d14f19108ca4ad5d7c4d2f6d9253f5d2f9afa098302d470f7e8f04b80",
+        "seed": 96707,
+        "start": {
+          "x": 5.2,
+          "y": 4.4
+        },
+        "requested": {
+          "x": 15.5,
+          "y": 15.35
+        },
+        "quantized": {
+          "x": 15.600000000000001,
+          "y": 15.200000000000001
+        },
+        "resolved": {
+          "x": 15.600000000000001,
+          "y": 15.200000000000001
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 5.2,
+            "y": 4.4
+          },
+          {
+            "x": 7.6000000000000005,
+            "y": 4.4
+          },
+          {
+            "x": 15.600000000000001,
+            "y": 15.200000000000001
+          }
+        ],
+        "length": 15.840238093129155,
+        "requestedDoorDistance": 2.860069929215017,
+        "resolvedDoorDistance": 2.6800186566514785,
+        "nearDoor": "depot",
+        "gridError": 0.18027756377319906,
+        "adjustment": 0,
+        "requestedOffDoor": true,
+        "resolvedOffDoor": true,
+        "yUp": [
+          [
+            5.2,
+            0,
+            4.4
+          ],
+          [
+            7.6000000000000005,
+            0,
+            4.4
+          ],
+          [
+            15.600000000000001,
+            0,
+            15.200000000000001
+          ]
+        ]
+      }
+    ]
+  ]
+}

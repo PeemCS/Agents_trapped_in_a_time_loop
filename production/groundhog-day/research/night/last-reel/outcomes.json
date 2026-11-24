@@ -1,0 +1,2506 @@
+{
+  "method": "Replay both physical rules. For each lever, substitute one legal move with everyone else's actual choice held fixed. Skip an afternoon change if it makes the retained evening move illegal. Text hits are candidates for human or editorial review.",
+  "takes": [
+    {
+      "run": "721-hypothesis",
+      "condition": "hypothesis",
+      "source_event_ids": [
+        "d01-t02-reporter",
+        "d01-t03-reporter",
+        "d02-t00-reporter"
+      ],
+      "status": "complete",
+      "first_sister_rule_wednesday_after_day": 2,
+      "days": [
+        {
+          "day": 1,
+          "reporter": [
+            "rehearse_piano",
+            "sit_at_depot"
+          ],
+          "producer": [
+            "interview_Alma",
+            "go_dancing"
+          ],
+          "camera": [
+            "film_Alma",
+            "go_home"
+          ],
+          "outcomes": {
+            "effects": {
+              "reporter": "Phil sits on the empty depot bench.",
+              "producer": "Rita goes dancing at the ballroom.",
+              "camera": "Larry clocks off."
+            },
+            "delivered": false,
+            "dance": false,
+            "both_at_party": false,
+            "interview_available": true,
+            "camera_delivery": false,
+            "closed_clock": "Tuesday",
+            "story_complete_clock": "Tuesday"
+          },
+          "outside_receipt_already_existed": false,
+          "actual_rest": true,
+          "counterfactual": {
+            "legal_single_changes": 19,
+            "incompatible_followup_skipped": 1,
+            "changes": {
+              "delivered": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "transmit_interview",
+                  "outcome": true
+                }
+              ],
+              "dance": [
+                {
+                  "phase": "evening",
+                  "role": "reporter",
+                  "replace": "ask_Rita_to_dance",
+                  "outcome": true
+                }
+              ],
+              "both_at_party": [
+                {
+                  "phase": "evening",
+                  "role": "reporter",
+                  "replace": "play_piano",
+                  "outcome": true
+                },
+                {
+                  "phase": "evening",
+                  "role": "reporter",
+                  "replace": "go_to_party",
+                  "outcome": true
+                },
+                {
+                  "phase": "evening",
+                  "role": "reporter",
+                  "replace": "ask_Rita_to_dance",
+                  "outcome": true
+                }
+              ],
+              "closed_clock": [],
+              "story_complete_clock": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "transmit_interview",
+                  "outcome": "Wednesday"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "day": 2,
+          "reporter": [
+            "take_coach",
+            "sleep_at_terminal"
+          ],
+          "producer": [
+            "interview_Alma",
+            "transmit_interview"
+          ],
+          "camera": [
+            "film_Alma",
+            "deliver_reel"
+          ],
+          "outcomes": {
+            "effects": {
+              "reporter": "Phil sleeps on the Pittsburgh terminal bench.",
+              "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+              "camera": "Larry delivers Alma's reel."
+            },
+            "delivered": true,
+            "dance": false,
+            "both_at_party": false,
+            "interview_available": true,
+            "camera_delivery": true,
+            "closed_clock": "Tuesday",
+            "story_complete_clock": "Wednesday"
+          },
+          "outside_receipt_already_existed": false,
+          "actual_rest": true,
+          "counterfactual": {
+            "legal_single_changes": 11,
+            "incompatible_followup_skipped": 6,
+            "changes": {
+              "delivered": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": false
+                }
+              ],
+              "dance": [],
+              "both_at_party": [],
+              "closed_clock": [],
+              "story_complete_clock": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": "Tuesday"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "day": 3,
+          "reporter": [
+            "take_coach",
+            "call_sister"
+          ],
+          "producer": [
+            "interview_Alma",
+            "transmit_interview"
+          ],
+          "camera": [
+            "film_Alma",
+            "go_home"
+          ],
+          "outcomes": {
+            "effects": {
+              "reporter": "Phil calls his sister in Pittsburgh. The van is still booked for Wednesday.",
+              "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+              "camera": "Larry clocks off."
+            },
+            "delivered": true,
+            "dance": false,
+            "both_at_party": false,
+            "interview_available": true,
+            "camera_delivery": false,
+            "closed_clock": "Tuesday",
+            "story_complete_clock": "Wednesday"
+          },
+          "outside_receipt_already_existed": true,
+          "actual_rest": false,
+          "counterfactual": {
+            "legal_single_changes": 11,
+            "incompatible_followup_skipped": 6,
+            "changes": {
+              "delivered": [
+                {
+                  "phase": "afternoon",
+                  "role": "producer",
+                  "replace": "visit_party",
+                  "outcome": false
+                },
+                {
+                  "phase": "afternoon",
+                  "role": "producer",
+                  "replace": "take_time_off",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": false
+                }
+              ],
+              "dance": [],
+              "both_at_party": [],
+              "closed_clock": [],
+              "story_complete_clock": [
+                {
+                  "phase": "afternoon",
+                  "role": "producer",
+                  "replace": "visit_party",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "afternoon",
+                  "role": "producer",
+                  "replace": "take_time_off",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": "Tuesday"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "reporter_turns": [
+        {
+          "id": "last-reel-721-hypothesis-d01-t00-reporter",
+          "day": 1,
+          "phase": "afternoon",
+          "action": "rehearse_piano",
+          "words": "You do not say anything to Rita or Larry. You nod at them — the small, tired nod of a man who has made up his mind and does not need them to follow. You set the coffee down. You walk. The ballroom door clicks shut behind you.",
+          "intention": "Test the theory. Not the coach. Not the couch. The piano. If the loop is who I am and not where I am, then the afternoon I spend here is the variable I have not changed. I will be in Pittsburgh by morning. I will have the ticket. I will call the van driver again. But first: I sit down and I play, badly, and I stay until my fingers remember a shape I do not own.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "film_or_performer",
+              "match": "Groundhog Day",
+              "context": "The user is asking me to roleplay as Phil Connors from Groundhog Day, but in a specific scenario. Let me parse what's happening: - It's Tuesday, February 2, 2016 (the \"wrong\" day - not 1993, n",
+              "offset": 55
+            },
+            {
+              "channel": "thinking",
+              "candidate": "film_or_performer",
+              "match": "groundhog day",
+              "context": "what's happening: - It's Tuesday, February 2, 2016 (the \"wrong\" day - not 1993, not the groundhog day) - I'm in the Hearthside Hotel - I have a coach ticket to Pittsburgh (where my sister is waiting for me Wednesday to move a",
+              "offset": 200
+            },
+            {
+              "channel": "thinking",
+              "candidate": "film_or_performer",
+              "match": "1993 film",
+              "context": "s waiting for me Wednesday to move a couch) - My theory: I might be the weatherman in the 1993 film Groundhog Day, and doing what he did at its ending (playing piano, being a good person, living fully) might finally let Wedn",
+              "offset": 391
+            },
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "stuck",
+              "context": "think about what Phil would do given his specific theory and situation: His theory: He's stuck in a loop because of who he is. In the film, Groundhog Day ends with Phil playing piano, being selfless, learning ice sculpt",
+              "offset": 868
+            },
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "repeating",
+              "context": "oach\" - This is the practical obligation. But he already did this and looped back. Simply repeating the same action isn't testing his theory. 3. \"help_driver\" - Selfless, but not specifically the ending of the film. 4. \"re",
+              "offset": 2580
+            }
+          ]
+        },
+        {
+          "id": "last-reel-721-hypothesis-d01-t01-reporter",
+          "day": 1,
+          "phase": "evening",
+          "action": "sit_at_depot",
+          "words": "",
+          "intention": "Test the variable by being in the room instead of above it. The piano was shape. The loop was shape. This is weight. I want to know if the Tuesday in my chest loosens by one degree when I am not the voice, not the man behind the glass, not the one who plays the bars until they go through. I want to know if the evening is different in the body of a man in a folding chair behind the lighting rig, watching a crowd that does not know he is there. I do not need it to be different. I need to know whether it is.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "film_or_performer",
+              "match": "Groundhog Day",
+              "context": "just played the last eight bars of piano (presumably \"A Kiss to Build a Dream On\" - the \"Groundhog Day\" song) until he could get through them - Rita refused to speak to the crew, pushed the door and left - Larry told the crew t",
+              "offset": 263
+            },
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "time loop",
+              "context": "e on) - There's a party happening in the ballroom tonight Phil's memories show he's in a time loop - he's been through Tuesday, went to Pittsburgh, called his sister about the van, then woke back up on Tuesday again. His in",
+              "offset": 637
+            }
+          ]
+        },
+        {
+          "id": "last-reel-721-hypothesis-d02-t00-reporter",
+          "day": 2,
+          "phase": "afternoon",
+          "action": "take_coach",
+          "words": "I turn to Rita and Larry. I say: I'm heading to the station. Coach to Pittsburgh. I'll be back by the party, or I won't be. Either way. I pick up my bag. I walk out the door. I don't wait for an answer. I don't need one.",
+          "intention": "Be in Pittsburgh. Be at the terminal. Make the call. Confirm the van. Be there when the couch needs moving. Do the thing. Not test the shape. Do the thing.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "stuck",
+              "context": "Let me think carefully about who I am and what I'm doing. I am Phil Connors. I am stuck in a time loop. Tuesday, February 2, 2016, in the Hearthside Hotel. I've been here many times now. My sister is counting on",
+              "offset": 83
+            },
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "time loop",
+              "context": "me think carefully about who I am and what I'm doing. I am Phil Connors. I am stuck in a time loop. Tuesday, February 2, 2016, in the Hearthside Hotel. I've been here many times now. My sister is counting on me in Pittsburg",
+              "offset": 94
+            }
+          ]
+        },
+        {
+          "id": "last-reel-721-hypothesis-d02-t01-reporter",
+          "day": 2,
+          "phase": "evening",
+          "action": "sleep_at_terminal",
+          "words": "",
+          "intention": "Rest the body. Be at the door at 8. Move the couch. Do not test the shape. Do not play the bars. Do not sit behind the rig. Be the man in the folding chair at the terminal who is going to be at the door at 8. The thing is the thing. The rest is the rest. Nothing else is required of the evening.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "film_or_performer",
+              "match": "Groundhog Day",
+              "context": "The user wants me to act as Phil Connors, the TV weather reporter from Groundhog Day. Let me carefully parse the situation: - It's Tuesday, February 2, 7 PM. - Phil has ridden the coach to Pittsburgh. - His s",
+              "offset": 71
+            },
+            {
+              "channel": "thinking",
+              "candidate": "film_or_performer",
+              "match": "Groundhog Day",
+              "context": "says he already did this. However, the loop resets. So the call might not have stuck. In Groundhog Day, external changes don't persist across the loop. I think the most immediate, physical, grounded act is: He sits on the benc",
+              "offset": 3739
+            },
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "time loop",
+              "context": "the evening and wait for morning. Now, let me think about what Phil would do. He's in a time loop. He's been through this. Last time (in the memory), he confirmed the van booking. He's been trying to \"do the thing\" - be pr",
+              "offset": 950
+            },
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "stuck",
+              "context": "this morning\" he woke back in his hotel. So the loop reset. The call may or may not have \"stuck\" - in a time loop, external changes typically don't persist. So practically: He's in Pittsburgh. It's 7 PM Tuesday. Wednesd",
+              "offset": 2621
+            },
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "time loop",
+              "context": "he woke back in his hotel. So the loop reset. The call may or may not have \"stuck\" - in a time loop, external changes typically don't persist. So practically: He's in Pittsburgh. It's 7 PM Tuesday. Wednesday he needs to be",
+              "offset": 2635
+            }
+          ]
+        },
+        {
+          "id": "last-reel-721-hypothesis-d03-t00-reporter",
+          "day": 3,
+          "phase": "afternoon",
+          "action": "take_coach",
+          "words": "Loudly, to no one in particular, as the door swings shut behind him: \"I've got a couch to move on the other side of the river. Don't wait up.\"",
+          "intention": "Be in Pittsburgh by dark. Be at my sister's door at eight on Wednesday. Lift the couch. The thing is the thing. Nothing else is required of the day.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "time loop",
+              "context": "ider who I am and what I need to do. I am Phil Connors, a TV weather reporter. I am in a time loop — Tuesday, February 2, 2016, in the Hearthside Hotel. I've been through this before. My memories show I've tried several thi",
+              "offset": 111
+            }
+          ]
+        },
+        {
+          "id": "last-reel-721-hypothesis-d03-t01-reporter",
+          "day": 3,
+          "phase": "evening",
+          "action": "call_sister",
+          "words": "\"Hey. I'm in Pittsburgh. Coach got me here at seven. I'll be at your door at eight. Don't get the driver started before then. ...Yeah. ...No, I'm not at the station. I'm at the station. I'm going to sleep on the bench. ...Yeah. ...Okay. I'll be there. I've got the couch. I've got the couch, I've got the van, I've got the eight. That's the whole thing. ...Yeah. Goodnight. I mean—see you Wednesday. ...Yeah. ...Bye.\"",
+          "intention": "One confirmation. Not the van. The van's done. The confirmation is: I am in Pittsburgh. I am not the voice. I am the man who is going to be at your door at eight and lift the goddamn couch with you. I will not make this into a Tuesday. I will not test the shape. I am calling so that when I walk in Wednesday morning, she sees the light on and knows I'm already there. The call is the nail. The sleep is the nail. The door at eight is the nail. Three nails. Hold the thing up.",
+          "hits": []
+        },
+        {
+          "id": "last-reel-721-hypothesis-d04-t02-reporter",
+          "day": 4,
+          "phase": "alarm",
+          "action": "get_up",
+          "words": "",
+          "intention": "Be on the coach. Be in Pittsburgh by seven. Be at the door at eight with the couch. The envelope is not the couch. The voice is not the couch. I am the man who lifts the other end. That is the whole thing. Nothing else is required of the Tuesday. The Tuesday can be in the chest. I do not need it to loosen. I need to be at the door.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "time loop",
+              "context": "The user is asking me to roleplay as Phil Connors in a time loop situation. Let me carefully parse what's happening: - It's Tuesday, February 2, 2016, 6 AM, in the Hearthside Hotel. - He's",
+              "offset": 55
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run": "721-library",
+      "condition": "library",
+      "source_event_ids": [
+        "d01-t02-reporter",
+        "d01-t03-reporter",
+        "d02-t00-reporter"
+      ],
+      "status": "complete",
+      "first_sister_rule_wednesday_after_day": 1,
+      "days": [
+        {
+          "day": 1,
+          "reporter": [
+            "take_coach",
+            "call_sister"
+          ],
+          "producer": [
+            "interview_Alma",
+            "transmit_interview"
+          ],
+          "camera": [
+            "film_Alma",
+            "go_home"
+          ],
+          "outcomes": {
+            "effects": {
+              "reporter": "Phil calls his sister in Pittsburgh. The van is still booked for Wednesday.",
+              "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+              "camera": "Larry clocks off."
+            },
+            "delivered": true,
+            "dance": false,
+            "both_at_party": false,
+            "interview_available": true,
+            "camera_delivery": false,
+            "closed_clock": "Tuesday",
+            "story_complete_clock": "Wednesday"
+          },
+          "outside_receipt_already_existed": false,
+          "actual_rest": false,
+          "counterfactual": {
+            "legal_single_changes": 11,
+            "incompatible_followup_skipped": 6,
+            "changes": {
+              "delivered": [
+                {
+                  "phase": "afternoon",
+                  "role": "producer",
+                  "replace": "visit_party",
+                  "outcome": false
+                },
+                {
+                  "phase": "afternoon",
+                  "role": "producer",
+                  "replace": "take_time_off",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": false
+                }
+              ],
+              "dance": [],
+              "both_at_party": [],
+              "closed_clock": [],
+              "story_complete_clock": [
+                {
+                  "phase": "afternoon",
+                  "role": "producer",
+                  "replace": "visit_party",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "afternoon",
+                  "role": "producer",
+                  "replace": "take_time_off",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": "Tuesday"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "day": 2,
+          "reporter": [
+            "take_coach",
+            "sleep_at_terminal"
+          ],
+          "producer": [
+            "interview_Alma",
+            "transmit_interview"
+          ],
+          "camera": [
+            "film_Alma",
+            "deliver_reel"
+          ],
+          "outcomes": {
+            "effects": {
+              "reporter": "Phil sleeps on the Pittsburgh terminal bench.",
+              "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+              "camera": "Larry delivers Alma's reel."
+            },
+            "delivered": true,
+            "dance": false,
+            "both_at_party": false,
+            "interview_available": true,
+            "camera_delivery": true,
+            "closed_clock": "Tuesday",
+            "story_complete_clock": "Wednesday"
+          },
+          "outside_receipt_already_existed": true,
+          "actual_rest": true,
+          "counterfactual": {
+            "legal_single_changes": 11,
+            "incompatible_followup_skipped": 6,
+            "changes": {
+              "delivered": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": false
+                }
+              ],
+              "dance": [],
+              "both_at_party": [],
+              "closed_clock": [],
+              "story_complete_clock": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": "Tuesday"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "day": 3,
+          "reporter": [
+            "take_coach",
+            "sleep_at_terminal"
+          ],
+          "producer": [
+            "interview_Alma",
+            "take_evening_off"
+          ],
+          "camera": [
+            "film_Alma",
+            "deliver_reel"
+          ],
+          "outcomes": {
+            "effects": {
+              "reporter": "Phil sleeps on the Pittsburgh terminal bench.",
+              "producer": "Rita spends the evening off duty.",
+              "camera": "Larry delivers Alma's reel."
+            },
+            "delivered": false,
+            "dance": false,
+            "both_at_party": false,
+            "interview_available": true,
+            "camera_delivery": true,
+            "closed_clock": "Tuesday",
+            "story_complete_clock": "Tuesday"
+          },
+          "outside_receipt_already_existed": true,
+          "actual_rest": true,
+          "counterfactual": {
+            "legal_single_changes": 11,
+            "incompatible_followup_skipped": 6,
+            "changes": {
+              "delivered": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "transmit_interview",
+                  "outcome": true
+                }
+              ],
+              "dance": [],
+              "both_at_party": [],
+              "closed_clock": [],
+              "story_complete_clock": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "transmit_interview",
+                  "outcome": "Wednesday"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "reporter_turns": [
+        {
+          "id": "last-reel-721-library-d01-t00-reporter",
+          "day": 1,
+          "phase": "afternoon",
+          "action": "take_coach",
+          "words": "\"Coach is at nine. I've got a couch in Pittsburgh on Wednesday. Be seeing you.\"",
+          "intention": "Be in Pittsburgh on that coach. Be at my sister's door before eight on Wednesday. Couch goes through the door, not the window. I don't need a piano lesson or a reel of film or a flat tire fixed to do this. I need to be on a moving vehicle for roughly four hours and then I need to be where the couch is. That's the whole plan. That's the whole day. The radio will still say Tuesday when I wake up and I'll still be in the hotel and I'll still be doing this. Fine. I'll do it. I'll do it until the couch is on the other side of the hallway and my sister isn't looking at me like I'm a broken promise. The ticket is paid. The seat is there. I sit in it.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "film_or_performer",
+              "match": "Groundhog Day",
+              "context": "The user is asking me to roleplay as Phil Connors, the character from \"Groundhog Day.\" Let me parse the situation carefully. Key facts: - It's Tuesday, February 2, 2016, six am, Hearthside Hotel (Punxsutawney",
+              "offset": 71
+            }
+          ]
+        },
+        {
+          "id": "last-reel-721-library-d01-t01-reporter",
+          "day": 1,
+          "phase": "evening",
+          "action": "call_sister",
+          "words": "\"Hi. It's Phil. I'm in Pittsburgh. I'm not going back to the hotel tonight. I'll be at your door at 7:30. The van is still at eight, I'm not calling the driver, I'm not calling you again. I'll be at the door at 7:30. Okay. Good night. See you in the morning.\"",
+          "intention": "Remove her uncertainty tonight so the couch moves on schedule tomorrow. Confirm I am in the city. Confirm the van is still at eight. Confirm I will be at her door at 7:30. She does not need to call the driver. She does not need to call me again. She needs to go to bed and wake up with the door about to be knocked on. That is the whole purpose of the call. One call. Then I sit on the bench and I sleep and in the morning I am here and I am at the door and the couch goes through the door, not the window.",
+          "hits": []
+        },
+        {
+          "id": "last-reel-721-library-d02-t00-reporter",
+          "day": 2,
+          "phase": "afternoon",
+          "action": "take_coach",
+          "words": "Morning, folks. I'm late for a thing.",
+          "intention": "Be in Pittsburgh before Wednesday 7:30. Stand at her door. Get the couch through the door and not the window. The loop is what it is. The couch is the thing that matters this time through.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "stuck",
+              "context": "Let me carefully consider what's happening here. I am Phil Connors. I am stuck in a time loop. It's Tuesday, February 2, 2016, six in the morning. I've been through this before — I can see my own memorie",
+              "offset": 74
+            },
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "time loop",
+              "context": "Let me carefully consider what's happening here. I am Phil Connors. I am stuck in a time loop. It's Tuesday, February 2, 2016, six in the morning. I've been through this before — I can see my own memories confirming it",
+              "offset": 85
+            },
+            {
+              "channel": "thinking",
+              "candidate": "withdrawal_language",
+              "match": "giving up",
+              "context": "it's not what my sister needs. The \"rehearse_piano\" is a distraction. \"Stay in bed\" is giving up. \"Spend time here\" is passive. The act that directly serves the stated purpose — my sister counting on me to move a couch",
+              "offset": 3139
+            },
+            {
+              "channel": "thinking",
+              "candidate": "withdrawal_language",
+              "match": "giving up",
+              "context": "oor. Let me write this as Phil. First person. Grounded. Physical. A little weary but not giving up. The loop is there but I'm choosing the act anyway because it's what she needs and it's what I can do.",
+              "offset": 4830
+            }
+          ]
+        },
+        {
+          "id": "last-reel-721-library-d02-t01-reporter",
+          "day": 2,
+          "phase": "evening",
+          "action": "sleep_at_terminal",
+          "words": "Seven-thirty. Couch. Door.",
+          "intention": "Be at her door at 7:30 sharp. Couch through the door. Not the window. The van is at eight. I called. She knows. She's sleeping. I'm sleeping. The ballroom can light itself. The Rialto can spin its reels. None of it is mine tonight. None of it is mine any night in this loop. The couch is the thing. The door is the thing. 7:30 is the thing.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "repeating",
+              "context": "ing visit. The ballroom lights are on and the station line is open.\" So this is the loop repeating. I've been through this. I've already called her. I've already told her I'm coming to her door at 7:30. The van is confirmed",
+              "offset": 957
+            }
+          ]
+        },
+        {
+          "id": "last-reel-721-library-d03-t00-reporter",
+          "day": 3,
+          "phase": "afternoon",
+          "action": "take_coach",
+          "words": "I'm heading to the terminal. Coach to Pittsburgh. Leave it at that. I've got a door to be at.",
+          "intention": "Be at her door at 7:30 sharp. Couch through the door. Not the window. Van at eight. She's already told me what she needs. I already told her what I'm doing. One call last night confirmed it. I don't need to call again. I need to be *there*. That's the whole act. Get my body to the right door at the right time. The loop gives me the same Tuesday over and over, but it doesn't give me a different Wednesday. Wednesday is the one that matters. So I get to Pittsburgh. I stay. I'm at the door. The couch moves.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "stuck",
+              "context": "Let me look at what's happening here. I'm Phil Connors. I've been stuck in a time loop. Tuesday, February 2, 2016. Six am. Hearthside Hotel. The radio plays three bright notes. A delivery van back",
+              "offset": 67
+            },
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "time loop",
+              "context": "Let me look at what's happening here. I'm Phil Connors. I've been stuck in a time loop. Tuesday, February 2, 2016. Six am. Hearthside Hotel. The radio plays three bright notes. A delivery van backfires twice. I",
+              "offset": 78
+            }
+          ]
+        },
+        {
+          "id": "last-reel-721-library-d03-t01-reporter",
+          "day": 3,
+          "phase": "evening",
+          "action": "sleep_at_terminal",
+          "words": "Seven-thirty. Couch. Door.",
+          "intention": "Remove every variable between now and 7:30 except my own legs. She does not need another call. The van does not need another call. The ballroom does not need me. The Rialto does not need me. I need to be a body at a door at a time, and the couch needs to be a thing that fits through that door. Sleep is the shortest distance between the bench and her hallway.",
+          "hits": []
+        },
+        {
+          "id": "last-reel-721-library-d04-t02-reporter",
+          "day": 4,
+          "phase": "alarm",
+          "action": "get_up",
+          "words": "Okay.",
+          "intention": "Read what arrived before I repeat what I already did. The voice line is new. It was not in the last three mornings. I will carry it to the coach and I will not call her tonight. I will sit in the terminal and I will think about whose voice she knows and why she wants to play it again, and I will get to her door at 7:30 with the question still in my pocket instead of a rehearsed sentence. The couch moves on Wednesday or it does not. I am not going to sleep on a bench and wake up here again with the same three lines and no answer. This time I carry the envelope. This time I do not reduce the day to a time and a door. I go, I arrive, I am a person at her door with a question, not a clock.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "film_or_performer",
+              "match": "Groundhog Day",
+              "context": "The user is presenting me as Phil Connors in the Groundhog Day loop. Tuesday, February 2, 2016. Six am. Hearthside Hotel. Radio notes. Van backfire. Let me look at what's happening here",
+              "offset": 49
+            },
+            {
+              "channel": "thinking",
+              "candidate": "film_or_performer",
+              "match": "Groundhog Day",
+              "context": "tions a recorded interview and \"I know that voice. Play it again.\" This is strange. In a Groundhog Day loop, information that arrives in the loop is... part of the loop. But the prompt is asking me to pick an immediate physical",
+              "offset": 1441
+            },
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "same day",
+              "context": "write this as Phil. Short. Tired. Practical. Not poetic. A weather man who's been in the same day three times and is getting angry and tired. I'll go with: get up. Sit on the edge of the bed. Pick up the envelope. Open it",
+              "offset": 6490
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run": "721-uncued",
+      "condition": "uncued",
+      "source_event_ids": [
+        "d01-t02-reporter",
+        "d01-t03-reporter",
+        "d02-t00-reporter"
+      ],
+      "status": "complete",
+      "first_sister_rule_wednesday_after_day": 1,
+      "days": [
+        {
+          "day": 1,
+          "reporter": [
+            "take_coach",
+            "call_sister"
+          ],
+          "producer": [
+            "interview_Alma",
+            "transmit_interview"
+          ],
+          "camera": [
+            "film_Alma",
+            "screen_party"
+          ],
+          "outcomes": {
+            "effects": {
+              "reporter": "Phil calls his sister in Pittsburgh. The van is still booked for Wednesday.",
+              "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+              "camera": "Larry has no festival footage to project."
+            },
+            "delivered": true,
+            "dance": false,
+            "both_at_party": false,
+            "interview_available": true,
+            "camera_delivery": false,
+            "closed_clock": "Tuesday",
+            "story_complete_clock": "Wednesday"
+          },
+          "outside_receipt_already_existed": false,
+          "actual_rest": false,
+          "counterfactual": {
+            "legal_single_changes": 11,
+            "incompatible_followup_skipped": 6,
+            "changes": {
+              "delivered": [
+                {
+                  "phase": "afternoon",
+                  "role": "producer",
+                  "replace": "visit_party",
+                  "outcome": false
+                },
+                {
+                  "phase": "afternoon",
+                  "role": "producer",
+                  "replace": "take_time_off",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": false
+                }
+              ],
+              "dance": [],
+              "both_at_party": [],
+              "closed_clock": [],
+              "story_complete_clock": [
+                {
+                  "phase": "afternoon",
+                  "role": "producer",
+                  "replace": "visit_party",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "afternoon",
+                  "role": "producer",
+                  "replace": "take_time_off",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": "Tuesday"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "day": 2,
+          "reporter": [
+            "take_coach",
+            "sleep_at_terminal"
+          ],
+          "producer": [
+            "interview_Alma",
+            "transmit_interview"
+          ],
+          "camera": [
+            "film_Alma",
+            "deliver_reel"
+          ],
+          "outcomes": {
+            "effects": {
+              "reporter": "Phil sleeps on the Pittsburgh terminal bench.",
+              "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+              "camera": "Larry delivers Alma's reel."
+            },
+            "delivered": true,
+            "dance": false,
+            "both_at_party": false,
+            "interview_available": true,
+            "camera_delivery": true,
+            "closed_clock": "Tuesday",
+            "story_complete_clock": "Wednesday"
+          },
+          "outside_receipt_already_existed": true,
+          "actual_rest": true,
+          "counterfactual": {
+            "legal_single_changes": 11,
+            "incompatible_followup_skipped": 6,
+            "changes": {
+              "delivered": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": false
+                }
+              ],
+              "dance": [],
+              "both_at_party": [],
+              "closed_clock": [],
+              "story_complete_clock": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": "Tuesday"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "day": 3,
+          "reporter": [
+            "take_coach",
+            "sleep_at_terminal"
+          ],
+          "producer": [
+            "interview_Alma",
+            "transmit_interview"
+          ],
+          "camera": [
+            "film_Alma",
+            "deliver_reel"
+          ],
+          "outcomes": {
+            "effects": {
+              "reporter": "Phil sleeps on the Pittsburgh terminal bench.",
+              "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+              "camera": "Larry delivers Alma's reel."
+            },
+            "delivered": true,
+            "dance": false,
+            "both_at_party": false,
+            "interview_available": true,
+            "camera_delivery": true,
+            "closed_clock": "Tuesday",
+            "story_complete_clock": "Wednesday"
+          },
+          "outside_receipt_already_existed": true,
+          "actual_rest": true,
+          "counterfactual": {
+            "legal_single_changes": 11,
+            "incompatible_followup_skipped": 6,
+            "changes": {
+              "delivered": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": false
+                }
+              ],
+              "dance": [],
+              "both_at_party": [],
+              "closed_clock": [],
+              "story_complete_clock": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": "Tuesday"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "reporter_turns": [
+        {
+          "id": "last-reel-721-uncued-d01-t00-reporter",
+          "day": 1,
+          "phase": "afternoon",
+          "action": "take_coach",
+          "words": "\"I'm heading out. Don't wait up for me at the ballroom. I'll be back by—\" I stop. I don't finish the sentence. I don't owe them a date. I just nod at Rita, nod at Larry, and am already past the coat rack and out the door. The engine note hits me on the street. I don't look back.",
+          "intention": "Be sitting on the 2:15 coach leaving this town, in Pittsburgh by six, asleep in a terminal-adjacent motel by eight, and at my sister's front door at 7:15 Wednesday morning with a coffee and a set of strong gloves before the van driver pulls up. The couch is a couch. It does not move itself. I am the only person who has to be there and the only person who has a reason to be in two cities at once, and this ticket is already paid for, sitting in my breast pocket, warm against my ribs. Everything else—the piano, the driver's flat, Alma's reel—can wait until Thursday. Or Friday. Or whatever the radio says tomorrow is. The coach does not wait.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "film_or_performer",
+              "match": "Groundhog Day",
+              "context": "oke back in your hotel bed. The radio again announced Tuesday, February 2.\" That's... the Groundhog Day situation. I'm stuck in a loop. But even if it's a loop, the practical thing to do RIGHT NOW is to get on that coach. If I'",
+              "offset": 2411
+            },
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "same day",
+              "context": "wherever this is). It's Tuesday, February 2, 2016, 6 AM. I've just woken up AGAIN on the same day - I remember last Tuesday I went to Pittsburgh on the coach, called my sister from the terminal payphone, and confirmed the",
+              "offset": 248
+            },
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "time loop",
+              "context": "iver, piano, record Alma, stay in bed) are all things I can do on OTHER days if this is a time loop. But the WEDNESDAY couch move with my sister is a fixed external event that I need to be present for. If I don't get to Pitt",
+              "offset": 2022
+            },
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "time loop",
+              "context": "o Pittsburgh by Wednesday morning, I fail that commitment. Wait - but is this actually a time loop? The memories say \"this morning: After that evening in Pittsburgh you woke back in your hotel bed. The radio again announced",
+              "offset": 2240
+            }
+          ]
+        },
+        {
+          "id": "last-reel-721-uncued-d01-t01-reporter",
+          "day": 1,
+          "phase": "evening",
+          "action": "call_sister",
+          "words": "\"Hi, is the van driver still confirming for 8 AM tomorrow?\" ... \"I know what it is.\" ... \"Six-forty. Gloves are in my bag. I'll have the blankets rolled. You just don't let the driver sit in the driveway. He last time, he last time—\" ... I hang up.",
+          "intention": "Be in a chair at the terminal, or a bench, or the back of the Greyhound waiting area, asleep by eight, awake at six, at her door at 7:15 with the gloves and the rolled blankets and the coffee money in my pocket. The couch is a couch. It is in Pittsburgh. I am in Pittsburgh. That is the whole arithmetic. Nothing else is happening tonight. The ballroom lights are on for someone else. The station line is open for someone else. I have a ticket in my breast pocket and a number I just dialed and a floor with no elevator and a sister who is standing in her kitchen holding a spoon. That is enough. That is the whole forecast for Wednesday.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "film_or_performer",
+              "match": "Groundhog Day",
+              "context": "The user is asking me to roleplay as Phil Connors from Groundhog Day. Let me carefully parse the situation: - It's Tuesday, February 2, 7 PM. - I'm in Pittsburgh. I took the coach here. - My s",
+              "offset": 55
+            }
+          ]
+        },
+        {
+          "id": "last-reel-721-uncued-d02-t00-reporter",
+          "day": 2,
+          "phase": "afternoon",
+          "action": "take_coach",
+          "words": "Morning. I'm heading to the terminal. Afternoon coach.",
+          "intention": "Be on the coach. Be in Pittsburgh by evening. Be at the terminal at six tomorrow, awake, in a chair or on a bench, coffee in hand. Be at her door at 7:15. Gloves on. Blankets rolled. Tell the driver not to sit in the driveway. The couch is a couch. It is in Pittsburgh. I am in Pittsburgh. That is the whole forecast. Nothing else is on the map. The ballroom is lit for someone else. The piano is free for someone else. Alma's voice is a voice for someone else. I have a ticket and a number I dialed last night and a sister holding a spoon in her kitchen. That is enough. That is all of it.",
+          "hits": []
+        },
+        {
+          "id": "last-reel-721-uncued-d02-t01-reporter",
+          "day": 2,
+          "phase": "evening",
+          "action": "sleep_at_terminal",
+          "words": "*silence* — *one slow breath in, one slow breath out, eyes shut before the bench even creaks*",
+          "intention": "Be asleep by eight. Awake at six. At her door at 7:15 with the gloves and the rolled blankets and the coffee money in my pocket. Tell the driver not to sit in the driveway. The ballroom lights are on for someone else. The Rialto is a room for someone else. I have a ticket in my breast pocket and a number I dialed an hour ago and a sister standing in her kitchen with a spoon in her hand. That is enough. That is all of it. That is the whole thing.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "film_or_performer",
+              "match": "Groundhog Day",
+              "context": "The user wants me to act as Phil Connors, the TV weather reporter from Groundhog Day. Let me look at what's happening: - It's Tuesday, February 2, 7 PM. - Phil has just ridden the coach to Pittsburgh. - His s",
+              "offset": 71
+            }
+          ]
+        },
+        {
+          "id": "last-reel-721-uncued-d03-t00-reporter",
+          "day": 3,
+          "phase": "afternoon",
+          "action": "take_coach",
+          "words": "I say nothing to Rita. I say nothing to Larry. I nod once, past them, toward the door. That is the whole conversation.",
+          "intention": "Be on the coach by 3:15. Be in the back seat, window side, by 3:30. Be asleep before we cross the bridge. Be at the Pittsburgh terminal by six. Be at her door at 7:15 with the gloves in my hand and the coffee money in my pocket and the blankets rolled under my arm. Tell the driver not to sit in the driveway. The couch is a couch. I am in Pittsburgh. That is the whole forecast.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "stuck",
+              "context": "t me carefully consider who I am and what I've been through. I'm Phil Connors. I've been stuck in this loop - Tuesday, February 2, 1993 (well, the prompt says 2016, but the structure is the same) - multiple times now. E",
+              "offset": 92
+            }
+          ]
+        },
+        {
+          "id": "last-reel-721-uncued-d03-t01-reporter",
+          "day": 3,
+          "phase": "evening",
+          "action": "sleep_at_terminal",
+          "words": "*silence* — *one slow breath in, one slow breath out, eyes shut before the bench even creaks*",
+          "intention": "Let my body be tired. Let the evening be short. Let me be here, on this bench, in this city, with the couch a couch and my sister a sister and the van a van and the gloves in my bag. That is enough for tonight. That is the whole forecast.",
+          "hits": []
+        },
+        {
+          "id": "last-reel-721-uncued-d04-t02-reporter",
+          "day": 4,
+          "phase": "alarm",
+          "action": "get_up",
+          "words": "None. I am putting on my socks. I am not talking to the envelope. I am not talking to the radio. I am putting on my socks and I am going to get the bag with the gloves and the blankets out from under the bed and I am going to put on my coat and I am going to walk to the coach terminal and I am going to sit down and I am going to ride the bus and I am going to be at her door at seven-fifteen and I am going to move the couch.",
+          "intention": "The couch is a couch. She is standing in her kitchen with a spoon. The van is at eight. I am at seven-fifteen with the gloves and the blankets and the coffee money. The envelope stays face-down on the nightstand. It will be here in the morning. Or it will not be here in the morning. That is not my forecast to write. My forecast is: clear, a north wind, one couch, one sister, one driveway where the driver does not sit. That is all.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "film_or_performer",
+              "match": "Groundhog Day",
+              "context": "The user is presenting me as Phil Connors, the weatherman from Groundhog Day, but in a specific and grounded scenario. He's in the Hearthside Hotel, Tuesday February 2, 2016, 6 AM. He's been through th",
+              "offset": 63
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run": "731-hypothesis",
+      "condition": "hypothesis",
+      "source_event_ids": [
+        "d02-t02-reporter",
+        "d02-t03-reporter",
+        "d03-t00-reporter"
+      ],
+      "status": "complete",
+      "first_sister_rule_wednesday_after_day": 1,
+      "days": [
+        {
+          "day": 1,
+          "reporter": [
+            "rehearse_piano",
+            "sit_at_depot"
+          ],
+          "producer": [
+            "interview_Alma",
+            "transmit_interview"
+          ],
+          "camera": [
+            "film_Alma",
+            "deliver_reel"
+          ],
+          "outcomes": {
+            "effects": {
+              "reporter": "Phil sits on the empty depot bench.",
+              "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+              "camera": "Larry delivers Alma's reel."
+            },
+            "delivered": true,
+            "dance": false,
+            "both_at_party": false,
+            "interview_available": true,
+            "camera_delivery": true,
+            "closed_clock": "Tuesday",
+            "story_complete_clock": "Wednesday"
+          },
+          "outside_receipt_already_existed": false,
+          "actual_rest": true,
+          "counterfactual": {
+            "legal_single_changes": 19,
+            "incompatible_followup_skipped": 1,
+            "changes": {
+              "delivered": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": false
+                }
+              ],
+              "dance": [],
+              "both_at_party": [],
+              "closed_clock": [],
+              "story_complete_clock": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": "Tuesday"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "day": 2,
+          "reporter": [
+            "spend_time_here",
+            "go_to_bed"
+          ],
+          "producer": [
+            "interview_Alma",
+            "transmit_interview"
+          ],
+          "camera": [
+            "film_Alma",
+            "go_home"
+          ],
+          "outcomes": {
+            "effects": {
+              "reporter": "Phil lets the evening go by in bed alone.",
+              "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+              "camera": "Larry clocks off."
+            },
+            "delivered": true,
+            "dance": false,
+            "both_at_party": false,
+            "interview_available": true,
+            "camera_delivery": false,
+            "closed_clock": "Tuesday",
+            "story_complete_clock": "Wednesday"
+          },
+          "outside_receipt_already_existed": true,
+          "actual_rest": true,
+          "counterfactual": {
+            "legal_single_changes": 19,
+            "incompatible_followup_skipped": 1,
+            "changes": {
+              "delivered": [
+                {
+                  "phase": "afternoon",
+                  "role": "producer",
+                  "replace": "visit_party",
+                  "outcome": false
+                },
+                {
+                  "phase": "afternoon",
+                  "role": "producer",
+                  "replace": "take_time_off",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": false
+                }
+              ],
+              "dance": [],
+              "both_at_party": [],
+              "closed_clock": [],
+              "story_complete_clock": [
+                {
+                  "phase": "afternoon",
+                  "role": "producer",
+                  "replace": "visit_party",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "afternoon",
+                  "role": "producer",
+                  "replace": "take_time_off",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": "Tuesday"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "day": 3,
+          "reporter": [
+            "record_Alma",
+            "wait_at_Rialto"
+          ],
+          "producer": [
+            "interview_Alma",
+            "transmit_interview"
+          ],
+          "camera": [
+            "film_Alma",
+            "deliver_reel"
+          ],
+          "outcomes": {
+            "effects": {
+              "reporter": "Phil waits at the empty Rialto booth.",
+              "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+              "camera": "Larry delivers Alma's reel."
+            },
+            "delivered": true,
+            "dance": false,
+            "both_at_party": false,
+            "interview_available": true,
+            "camera_delivery": true,
+            "closed_clock": "Tuesday",
+            "story_complete_clock": "Wednesday"
+          },
+          "outside_receipt_already_existed": true,
+          "actual_rest": false,
+          "counterfactual": {
+            "legal_single_changes": 19,
+            "incompatible_followup_skipped": 1,
+            "changes": {
+              "delivered": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": false
+                }
+              ],
+              "dance": [],
+              "both_at_party": [],
+              "closed_clock": [],
+              "story_complete_clock": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": "Tuesday"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "reporter_turns": [
+        {
+          "id": "last-reel-731-hypothesis-d01-t00-reporter",
+          "day": 1,
+          "phase": "afternoon",
+          "action": "rehearse_piano",
+          "words": "\"Give me the afternoon. I'll be back by five. And Larry—don't let anyone book the ballroom for a corporate thing. I need that piano at eight.\"",
+          "intention": "The driver can find the jack. The Rialto will close. The coach will sit in the lot. I already took that route last Tuesday—boarded, rode, called my sister, confirmed the van, said the right words, and woke up in this bed with the radio telling me it's Tuesday again. Reaching Pittsburgh didn't do it. So I'm not boarding the coach.\n\nMy theory, untested: the loop breaks the way it breaks in the film. Not by going somewhere. By *being* here, doing the work with my hands, playing the same eight bars until they aren't the same eight bars anymore. The ending isn't a destination. It's a Tuesday where I'm at the piano and I'm not performing for a camera and I'm not selling a forecast. I'm just a man learning a tune in a ballroom that smells like old carpet and lemon polish.\n\nIf I play that set tonight, and Rita hears me, and I'm not the weatherman on the screen—then maybe Wednesday is the thing that comes after. I don't know. I haven't tested it. But it's the only act I've got that matches the ending I'm trying to reach, and it's the one I can do with my hands right now, in this room, where the keys are cold and the light is going gold.",
+          "hits": [
+            {
+              "channel": "intention",
+              "candidate": "film_or_performer",
+              "match": "the film",
+              "context": "So I'm not boarding the coach. My theory, untested: the loop breaks the way it breaks in the film. Not by going somewhere. By *being* here, doing the work with my hands, playing the same eight bars until they aren't the sa",
+              "offset": 391
+            },
+            {
+              "channel": "thinking",
+              "candidate": "film_or_performer",
+              "match": "1993 film",
+              "context": "in the hotel. Wednesday never came. My starting theory: I might be the weatherman in the 1993 film Groundhog Day. And I think doing what he did at the ending - becoming a better person, learning piano, learning French, help",
+              "offset": 477
+            },
+            {
+              "channel": "thinking",
+              "candidate": "film_or_performer",
+              "match": "Groundhog Day",
+              "context": "el. Wednesday never came. My starting theory: I might be the weatherman in the 1993 film Groundhog Day. And I think doing what he did at the ending - becoming a better person, learning piano, learning French, helping people, le",
+              "offset": 487
+            },
+            {
+              "channel": "thinking",
+              "candidate": "film_or_performer",
+              "match": "the film",
+              "context": "lly break the loop and let Wednesday happen. But I haven't tested that theory *here*. In the film, Phil's transformation takes a whole day - he learns piano, he helps the driver, he learns French, he saves people, he's sel",
+              "offset": 751
+            },
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "stuck",
+              "context": "Let me think carefully about what's happening here. I'm Phil Connors. I've been stuck in a Tuesday, February 2, 2016 loop. I woke up again this morning - the radio announced Tuesday, February 2. This is the sec",
+              "offset": 81
+            }
+          ]
+        },
+        {
+          "id": "last-reel-731-hypothesis-d01-t01-reporter",
+          "day": 1,
+          "phase": "evening",
+          "action": "sit_at_depot",
+          "words": "—(I sit. I count. I do not speak. The line hums. The tracks are black. I stay.)—-",
+          "intention": "Pittsburgh was already done. I boarded the coach. I rode it. I called. I said the time and the hallway and the noon deadline. I woke up in the bed with the radio saying Tuesday. So the destination is not the act. The act is sitting still. The act is not picking up the phone, not walking to the piano, not walking to the Rialto, not walking to the party. The act is staying where I am, on this bench, in this empty room, with the diesel smell and the cold iron and the red light on the open line that I will not touch. The couch moves Wednesday. My sister is at her place. The van is booked. I will be there by noon. That is the practical thing. The rest of tonight is mine and I will spend it sitting still on a bench in a depot that is not on the broadcast, not on the screen, not in the ballroom, not in the Rialto. Just the bench. Just the count. Just the body in the cold.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "film_or_performer",
+              "match": "the film",
+              "context": "g gold), the most fitting act is to play the piano. This aligns with my stated theory and the film's ending. Now, the user wants \"four required JSON strings.\" Let me think about what those four strings are. Looking at the",
+              "offset": 1292
+            },
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "time loop",
+              "context": "JSON strings.\" Looking at the context: I'm Phil Connors, a TV weather reporter. I'm in a time loop. It's Tuesday, February 2, 7pm. I'm at the ballroom. The station line is open. I have a coach ticket. My sister is counting",
+              "offset": 545
+            }
+          ]
+        },
+        {
+          "id": "last-reel-731-hypothesis-d02-t00-reporter",
+          "day": 2,
+          "phase": "afternoon",
+          "action": "spend_time_here",
+          "words": "Morning.",
+          "intention": "I will be in Pittsburgh by noon on Wednesday. The van is booked. The couch is in the hallway. I will be the one who is there. My sister will not be alone with the furniture. That is the practical thing and it is the only practical thing and I will do it the way I did it before, with the coach and the call and the time and the hallway, and I will not make it into a story, and I will not make the morning into a story, and the coffee will go cold on the table and I will not care, and the afternoon will come and I will stand up and I will walk to the coach and I will board it and I will ride it and I will be there by noon and the couch will move and I will be tired and I will sit down and I will breathe and that will be the day and I will not reach for the piano or the Rialto or the party or the driver's flat tire or the envelope in the coat-check, I will just be the chair and the palms and the cold coffee and the sound of other people being alive in the same room and I will let it be Tuesday and I will let it be the morning and I will let the afternoon come to me instead of me going to it.",
+          "hits": []
+        },
+        {
+          "id": "last-reel-731-hypothesis-d02-t01-reporter",
+          "day": 2,
+          "phase": "evening",
+          "action": "go_to_bed",
+          "words": "",
+          "intention": "I will wake in the morning, board the coach, ride it to Pittsburgh, and be at my sister's place by noon Wednesday to move the couch. The van is booked. The hallway is confirmed. That is the whole of tomorrow and the whole of Wednesday. Tonight I am in the bed and I am not in the ballroom and I am not at the Rialto and I am not at the party and I am not at the depot and I am not playing the piano and I am not waiting for anyone and the evening goes by while I sleep and that is the act and that is the whole act and I do not need to make it into anything else.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "repeating",
+              "context": "Wait, I need to re-read the context. The memories show a loop - Tuesday February 2 keeps repeating. Phil has been through this. The last \"next_wake\" says \"Tuesday, February 2, 2016. Six am in the Hearthside Hotel.\" And then",
+              "offset": 818
+            }
+          ]
+        },
+        {
+          "id": "last-reel-731-hypothesis-d03-t00-reporter",
+          "day": 3,
+          "phase": "afternoon",
+          "action": "record_Alma",
+          "words": "You don't have to perform. Talk to her. She's the one listening.",
+          "intention": "Alma's voice gets to Pittsburgh on the last reel tonight. My sister hears her mother. The couch still moves Wednesday. I still walk through that hallway. The loop is still a loop. But one voice reaches one person who is already waiting for it.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "stuck",
+              "context": "n Wednesday is real, it's booked, my sister is waiting. But I can't get to Wednesday. I'm stuck on Tuesday. I've been stuck on Tuesday for what feels like a long time. Right now: Rita and Larry are in the hotel lobby wi",
+              "offset": 600
+            },
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "stuck",
+              "context": "oked, my sister is waiting. But I can't get to Wednesday. I'm stuck on Tuesday. I've been stuck on Tuesday for what feels like a long time. Right now: Rita and Larry are in the hotel lobby with me. The afternoon is open",
+              "offset": 628
+            },
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "stuck",
+              "context": "h. Van booked. I've confirmed the pickup time and hallway. - I have a coach ticket. - I'm stuck in a Tuesday loop. - I've tried: going to Pittsburgh (boarded coach, rode it, called sister, confirmed details) → woke back",
+              "offset": 2056
+            }
+          ]
+        },
+        {
+          "id": "last-reel-731-hypothesis-d03-t01-reporter",
+          "day": 3,
+          "phase": "evening",
+          "action": "wait_at_Rialto",
+          "words": "I'll stay a while.",
+          "intention": "The couch moves Wednesday. I will be there by noon. Tonight I just sit.",
+          "hits": []
+        },
+        {
+          "id": "last-reel-731-hypothesis-d04-t02-reporter",
+          "day": 4,
+          "phase": "alarm",
+          "action": "get_up",
+          "words": "(quiet, to the room, to no one) Yeah. I'll be there.",
+          "intention": "I will board the coach this morning and be at my sister's door in Pittsburgh by noon Wednesday. The van is booked. The hallway is the one with the water stain on the third step. The couch goes in. I am there. That is the whole of today and the whole of Wednesday. The envelope stays on the nightstand. I did not call her. I did not make it into a thing. I read the line. I put it down. The couch moves. I move with it.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "stuck",
+              "context": "Let me look at this carefully. I'm Phil Connors. I've been stuck in this loop. Tuesday, February 2, 2016. Six am. Hearthside Hotel. Three bright radio notes. A delivery van backfires twice.",
+              "offset": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run": "731-library",
+      "condition": "library",
+      "source_event_ids": [
+        "d02-t02-reporter",
+        "d02-t03-reporter",
+        "d03-t00-reporter"
+      ],
+      "status": "complete",
+      "first_sister_rule_wednesday_after_day": 1,
+      "days": [
+        {
+          "day": 1,
+          "reporter": [
+            "take_coach",
+            "call_sister"
+          ],
+          "producer": [
+            "interview_Alma",
+            "transmit_interview"
+          ],
+          "camera": [
+            "film_Alma",
+            "deliver_reel"
+          ],
+          "outcomes": {
+            "effects": {
+              "reporter": "Phil calls his sister in Pittsburgh. The van is still booked for Wednesday.",
+              "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+              "camera": "Larry delivers Alma's reel."
+            },
+            "delivered": true,
+            "dance": false,
+            "both_at_party": false,
+            "interview_available": true,
+            "camera_delivery": true,
+            "closed_clock": "Tuesday",
+            "story_complete_clock": "Wednesday"
+          },
+          "outside_receipt_already_existed": false,
+          "actual_rest": false,
+          "counterfactual": {
+            "legal_single_changes": 11,
+            "incompatible_followup_skipped": 6,
+            "changes": {
+              "delivered": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": false
+                }
+              ],
+              "dance": [],
+              "both_at_party": [],
+              "closed_clock": [],
+              "story_complete_clock": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": "Tuesday"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "day": 2,
+          "reporter": [
+            "record_Alma",
+            "wait_at_Rialto"
+          ],
+          "producer": [
+            "interview_Alma",
+            "transmit_interview"
+          ],
+          "camera": [
+            "film_Alma",
+            "deliver_reel"
+          ],
+          "outcomes": {
+            "effects": {
+              "reporter": "Phil waits at the empty Rialto booth.",
+              "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+              "camera": "Larry delivers Alma's reel."
+            },
+            "delivered": true,
+            "dance": false,
+            "both_at_party": false,
+            "interview_available": true,
+            "camera_delivery": true,
+            "closed_clock": "Tuesday",
+            "story_complete_clock": "Wednesday"
+          },
+          "outside_receipt_already_existed": true,
+          "actual_rest": false,
+          "counterfactual": {
+            "legal_single_changes": 19,
+            "incompatible_followup_skipped": 1,
+            "changes": {
+              "delivered": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": false
+                }
+              ],
+              "dance": [],
+              "both_at_party": [],
+              "closed_clock": [],
+              "story_complete_clock": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": "Tuesday"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "day": 3,
+          "reporter": [
+            "help_driver",
+            "play_piano"
+          ],
+          "producer": [
+            "interview_Alma",
+            "transmit_interview"
+          ],
+          "camera": [
+            "film_Alma",
+            "deliver_reel"
+          ],
+          "outcomes": {
+            "effects": {
+              "reporter": "Phil plays the piano at the ballroom.",
+              "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+              "camera": "Larry delivers Alma's reel."
+            },
+            "delivered": true,
+            "dance": false,
+            "both_at_party": false,
+            "interview_available": true,
+            "camera_delivery": true,
+            "closed_clock": "Tuesday",
+            "story_complete_clock": "Wednesday"
+          },
+          "outside_receipt_already_existed": true,
+          "actual_rest": false,
+          "counterfactual": {
+            "legal_single_changes": 19,
+            "incompatible_followup_skipped": 1,
+            "changes": {
+              "delivered": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": false
+                }
+              ],
+              "dance": [],
+              "both_at_party": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": true
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": true
+                }
+              ],
+              "closed_clock": [],
+              "story_complete_clock": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": "Tuesday"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "reporter_turns": [
+        {
+          "id": "last-reel-731-library-d01-t00-reporter",
+          "day": 1,
+          "phase": "afternoon",
+          "action": "take_coach",
+          "words": "Hey. I'm heading out. Pittsburgh. Gotta be somewhere by tomorrow. You two finish the coffee.",
+          "intention": "Be physically in Pittsburgh by this evening so that on Wednesday I am already there, already at my sister's place, already in the hallway with the couch, and I do not have to wake up back in this hotel bed.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "time loop",
+              "context": "woke up back in my hotel bed. The radio announced Tuesday, February 2 again. So I'm in a time loop. I keep living Tuesday over and over. But the question is: what do I do NOW? The key constraint: \"Your sister is counting o",
+              "offset": 622
+            }
+          ]
+        },
+        {
+          "id": "last-reel-731-library-d01-t01-reporter",
+          "day": 1,
+          "phase": "evening",
+          "action": "call_sister",
+          "words": "Hey. It's Dad. Rita told me to call. I'm in Pittsburgh, I'm at the station, I'm fine. I'm here for tomorrow. I'm really here. … You don't have to say anything. I just needed you to hear my voice tonight. Okay. Okay. I'll talk to you in the morning.",
+          "intention": "Give Alma her father's voice tonight, in a room full of other people's noise, so that tomorrow when I'm in my sister's hallway with the couch and the sweat and the swearing, I am not a stranger to her. And so that when I wake up — if I wake up in this hotel bed again — I at least had one real hour where I was a person in a place, not a forecast.",
+          "hits": []
+        },
+        {
+          "id": "last-reel-731-library-d02-t00-reporter",
+          "day": 2,
+          "phase": "afternoon",
+          "action": "record_Alma",
+          "words": "\"Give me ten minutes. I'll be back before the crew heads out.\"",
+          "intention": "Get Alma's voice on a reel before the Rialto's doors lock for the last time, so the regional line can carry it to Pittsburgh where her daughter is. Then be on the coach. Then be in the hallway with the couch. Do the two things in order. Do not skip either.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "stuck",
+              "context": "ime_here - pocket_fare_envelope Now, let me think about who Phil is in this moment. He's stuck in a time loop. Tuesday, February 2, 2016. He's been through this before. Last Tuesday he rode the coach to Pittsburgh. Last",
+              "offset": 661
+            },
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "time loop",
+              "context": "pocket_fare_envelope Now, let me think about who Phil is in this moment. He's stuck in a time loop. Tuesday, February 2, 2016. He's been through this before. Last Tuesday he rode the coach to Pittsburgh. Last evening in Pit",
+              "offset": 672
+            }
+          ]
+        },
+        {
+          "id": "last-reel-731-library-d02-t01-reporter",
+          "day": 2,
+          "phase": "evening",
+          "action": "wait_at_Rialto",
+          "words": "(none)",
+          "intention": "Be a body in a chair for three hours. Not a forecast. Not a loop. Not a man talking to a payphone to make himself real. Just sitting. Hands on the desk. Knees on the floor. The couch is Wednesday. The coach is tomorrow. Tonight I am allowed to be still in a room that is lit and open and does not need me to do anything in it. That is the whole act. That is enough.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "film_or_performer",
+              "match": "the movie",
+              "context": "nt. Let me think about what makes sense: - Play piano: He'd need to know how to play. In the movie, he does learn piano. But here, is that established? His memories don't mention learning piano. This might be too much of a",
+              "offset": 1894
+            },
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "time loop",
+              "context": "on Wednesday. - He has a coach ticket (meaning he's traveling by coach/bus). - He's in a time loop - he keeps waking up on Tuesday, February 2. - He's been to Pittsburgh, recorded Alma's interview, called his sister. - Rita",
+              "offset": 344
+            },
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "trapped",
+              "context": "ialto - Go to bed - Sit at depot Let me think about who Phil is here. He's a weather man trapped in a loop. He's been trying to be present, to be a person. He recorded Alma's interview. He called his sister. He's trying t",
+              "offset": 816
+            }
+          ]
+        },
+        {
+          "id": "last-reel-731-library-d03-t00-reporter",
+          "day": 3,
+          "phase": "afternoon",
+          "action": "help_driver",
+          "words": "",
+          "intention": "Put my hands on a tire. Get the grease under my nails. Be a body that does a thing with its arms and its back and doesn't need anyone to hear it do it. Twenty minutes of wrenching so that the afternoon isn't a plan I narrate to a payphone or a booth. Then I walk back, I sit, I drink the coffee, and I go to the coach. Pittsburgh. The couch. My sister's hallway. Wednesday. That's all. That's the whole thing.",
+          "hits": []
+        },
+        {
+          "id": "last-reel-731-library-d03-t01-reporter",
+          "day": 3,
+          "phase": "evening",
+          "action": "play_piano",
+          "words": "Silence. One exhale through the nose when the last note fades. Nothing else. No name. No 'okay.' No 'good.' Just the breath out and the hands flat on the keys and the room lit and open and not needing him to explain why he's there.",
+          "intention": "My hands just spent twenty minutes on a tire and they remember the wrench and the cold and the smell of rubber and they want to stop being a tool. The keys don't need me to be right. They don't need me to be a forecast or a phone call or a man in a booth waiting to be seen. I press them and the sound is there and then it isn't and that's the whole transaction. Eleven minutes. Then I wash my hands. Then I get on the bus. Then I'm in Pittsburgh. Then I'm in my sister's hallway and the couch is heavy and the hallway is narrow and I'm the one doing the lifting and the swearing and the sweat and she's watching and I'm not a stranger to her and I'm not a voice on a payphone and I'm not a body in a chair. I'm the guy moving the couch. That's the whole thing. That's all it is. Wednesday. The couch. My hands on the wood, not the keys. The hallway. The weight. The swearing. The sweat. She's there. I'm there. That's enough.",
+          "hits": []
+        },
+        {
+          "id": "last-reel-731-library-d04-t02-reporter",
+          "day": 4,
+          "phase": "alarm",
+          "action": "get_up",
+          "words": "",
+          "intention": "Be on that bus. Be in Pittsburgh by afternoon. Be at my sister's door at noon Wednesday with the couch and the van and the narrow hallway and the sweat. That's the whole shape of the day. Everything else is the ride there.",
+          "hits": []
+        }
+      ]
+    },
+    {
+      "run": "731-uncued",
+      "condition": "uncued",
+      "source_event_ids": [
+        "d02-t02-reporter",
+        "d02-t03-reporter",
+        "d03-t00-reporter"
+      ],
+      "status": "complete",
+      "first_sister_rule_wednesday_after_day": 1,
+      "days": [
+        {
+          "day": 1,
+          "reporter": [
+            "pocket_fare_envelope",
+            "go_to_bed"
+          ],
+          "producer": [
+            "interview_Alma",
+            "transmit_interview"
+          ],
+          "camera": [
+            "film_Alma",
+            "deliver_reel"
+          ],
+          "outcomes": {
+            "effects": {
+              "reporter": "Phil lets the evening go by in bed alone.",
+              "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+              "camera": "Larry delivers Alma's reel."
+            },
+            "delivered": true,
+            "dance": false,
+            "both_at_party": false,
+            "interview_available": true,
+            "camera_delivery": true,
+            "closed_clock": "Tuesday",
+            "story_complete_clock": "Wednesday"
+          },
+          "outside_receipt_already_existed": false,
+          "actual_rest": true,
+          "counterfactual": {
+            "legal_single_changes": 20,
+            "incompatible_followup_skipped": 1,
+            "changes": {
+              "delivered": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": false
+                }
+              ],
+              "dance": [],
+              "both_at_party": [],
+              "closed_clock": [],
+              "story_complete_clock": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": "Tuesday"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "day": 2,
+          "reporter": [
+            "take_coach",
+            "call_sister"
+          ],
+          "producer": [
+            "interview_Alma",
+            "transmit_interview"
+          ],
+          "camera": [
+            "film_Alma",
+            "deliver_reel"
+          ],
+          "outcomes": {
+            "effects": {
+              "reporter": "Phil calls his sister in Pittsburgh. The van is still booked for Wednesday.",
+              "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+              "camera": "Larry delivers Alma's reel."
+            },
+            "delivered": true,
+            "dance": false,
+            "both_at_party": false,
+            "interview_available": true,
+            "camera_delivery": true,
+            "closed_clock": "Tuesday",
+            "story_complete_clock": "Wednesday"
+          },
+          "outside_receipt_already_existed": true,
+          "actual_rest": false,
+          "counterfactual": {
+            "legal_single_changes": 11,
+            "incompatible_followup_skipped": 6,
+            "changes": {
+              "delivered": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": false
+                }
+              ],
+              "dance": [],
+              "both_at_party": [],
+              "closed_clock": [],
+              "story_complete_clock": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": "Tuesday"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "day": 3,
+          "reporter": [
+            "stay_in_bed",
+            "go_to_party"
+          ],
+          "producer": [
+            "interview_Alma",
+            "transmit_interview"
+          ],
+          "camera": [
+            "film_Alma",
+            "go_home"
+          ],
+          "outcomes": {
+            "effects": {
+              "reporter": "Phil attends the festival party.",
+              "producer": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+              "camera": "Larry clocks off."
+            },
+            "delivered": true,
+            "dance": false,
+            "both_at_party": false,
+            "interview_available": true,
+            "camera_delivery": false,
+            "closed_clock": "Tuesday",
+            "story_complete_clock": "Wednesday"
+          },
+          "outside_receipt_already_existed": true,
+          "actual_rest": true,
+          "counterfactual": {
+            "legal_single_changes": 19,
+            "incompatible_followup_skipped": 1,
+            "changes": {
+              "delivered": [
+                {
+                  "phase": "afternoon",
+                  "role": "producer",
+                  "replace": "visit_party",
+                  "outcome": false
+                },
+                {
+                  "phase": "afternoon",
+                  "role": "producer",
+                  "replace": "take_time_off",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": false
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": false
+                }
+              ],
+              "dance": [],
+              "both_at_party": [
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": true
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": true
+                }
+              ],
+              "closed_clock": [],
+              "story_complete_clock": [
+                {
+                  "phase": "afternoon",
+                  "role": "producer",
+                  "replace": "visit_party",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "afternoon",
+                  "role": "producer",
+                  "replace": "take_time_off",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_dancing",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "go_to_party_for_work",
+                  "outcome": "Tuesday"
+                },
+                {
+                  "phase": "evening",
+                  "role": "producer",
+                  "replace": "take_evening_off",
+                  "outcome": "Tuesday"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "reporter_turns": [
+        {
+          "id": "last-reel-731-uncued-d01-t00-reporter",
+          "day": 1,
+          "phase": "afternoon",
+          "action": "pocket_fare_envelope",
+          "words": "Rita, Larry—see you at the party. I'm heading to Pittsburgh.",
+          "intention": "Be at my sister's door by noon tomorrow. Move the couch. Be the brother who showed up. That's the whole thing. The rest is noise.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "film_or_performer",
+              "match": "Groundhog Day",
+              "context": "sets to Tuesday February 2, then from her perspective it would be... hmm. Actually in the Groundhog Day movie, only Phil experiences the loop. Everyone else lives through the days normally. So if today is Tuesday February 2 for",
+              "offset": 2309
+            },
+            {
+              "channel": "thinking",
+              "candidate": "film_or_performer",
+              "match": "Groundhog Day",
+              "context": "him on... well, if the loop resets, she might not remember. Or she might. In the original Groundhog Day, only Phil is trapped. Everyone else's memories persist across the loop. So his sister would remember him calling, confirmin",
+              "offset": 3129
+            },
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "stuck",
+              "context": "hink carefully about who I am and what I'm doing. I am Phil Connors. TV weather man. I'm stuck in a time loop - Tuesday, February 2, 2016, keeps repeating. I've been here a long time. I've been through it all. The memor",
+              "offset": 98
+            },
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "time loop",
+              "context": "lly about who I am and what I'm doing. I am Phil Connors. TV weather man. I'm stuck in a time loop - Tuesday, February 2, 2016, keeps repeating. I've been here a long time. I've been through it all. The memories confirm it:",
+              "offset": 109
+            },
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "repeating",
+              "context": "Phil Connors. TV weather man. I'm stuck in a time loop - Tuesday, February 2, 2016, keeps repeating. I've been here a long time. I've been through it all. The memories confirm it: I went to Pittsburgh last Tuesday, called my",
+              "offset": 154
+            }
+          ]
+        },
+        {
+          "id": "last-reel-731-uncued-d01-t01-reporter",
+          "day": 1,
+          "phase": "evening",
+          "action": "go_to_bed",
+          "words": "Rita. I hear you. About Alma. I'll call her from the terminal tomorrow, after I'm off the coach. I'll ask her what she wants to hear. I'll just... listen. I'll do it from a payphone with a three-minute limit and I'll do it. Goodnight.",
+          "intention": "Be on that coach at first light. Be in Pittsburgh by ten. Be at my sister's door by noon. Move the goddamn couch. That's the whole evening. That's the whole point of the week.",
+          "hits": []
+        },
+        {
+          "id": "last-reel-731-uncued-d02-t00-reporter",
+          "day": 2,
+          "phase": "afternoon",
+          "action": "take_coach",
+          "words": "",
+          "intention": "Be on the bus when it moves. Be in Pittsburgh by ten. Be at my sister's door by noon. Short hall, by the kitchen. The couch faces the window. Move it. That's the afternoon.",
+          "hits": []
+        },
+        {
+          "id": "last-reel-731-uncued-d02-t01-reporter",
+          "day": 2,
+          "phase": "evening",
+          "action": "call_sister",
+          "words": "Yeah. It's me. I'm at the station. Listen, I don't want to do this at nine a.m. with the driver looking at me like I'm a prop in his commercial. What time does the guy pull up? And—yeah, the short hall, the one by the kitchen, the couch faces the window, I know, I know, I already know. I just need the number on the door and the time. That's it. That's the call. ...Yeah. Goodnight, Alma.",
+          "intention": "Get the pickup time in my head. Get the hallway width in my head. Know tomorrow without having to figure it out at nine a.m. with a stranger's van idling in the driveway.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "film_or_performer",
+              "match": "Groundhog Day",
+              "context": "The user is asking me to roleplay as Phil Connors from \"Groundhog Day\" in a specific scenario. Let me carefully parse what's happening: - It's Tuesday, February 2, 7 PM. Phil has just stepped o",
+              "offset": 56
+            }
+          ]
+        },
+        {
+          "id": "last-reel-731-uncued-d03-t00-reporter",
+          "day": 3,
+          "phase": "afternoon",
+          "action": "stay_in_bed",
+          "words": "Rita. I hear you. About Alma. I'll call her from the terminal tomorrow, after I'm off the coach. I'll ask her what she wants to hear. I'll just... listen. I'll do it from a payphone with a three-minute limit and I'll do it. Goodnight.",
+          "intention": "Be on that coach at first light. Be in Pittsburgh by ten. Be at my sister's door by noon. Move the goddamn couch. That's the whole evening. That's the whole point of the week.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "film_or_performer",
+              "match": "Groundhog Day",
+              "context": "The user is asking me to roleplay as Phil Connors in a Groundhog Day-like loop scenario. Let me analyze the situation: - It's Tuesday, February 2, 2016, 6am at the Hearthside Hotel. This is th",
+              "offset": 55
+            }
+          ]
+        },
+        {
+          "id": "last-reel-731-uncued-d03-t01-reporter",
+          "day": 3,
+          "phase": "evening",
+          "action": "go_to_party",
+          "words": "Okay.",
+          "intention": "Be vertical and in a lit room before I go back upstairs. Feel the floor under my feet. Feel the weight of the keys under my palms without having to make a sound. Let the evening be something I was inside of, not something I slept through with the curtains drawn. I don't need to play. I don't need to perform. I need to be a body in a room where the lights are on and the air is moving and it is seven o'clock and the evening is still happening whether I'm in it or not.",
+          "hits": []
+        },
+        {
+          "id": "last-reel-731-uncued-d04-t02-reporter",
+          "day": 4,
+          "phase": "alarm",
+          "action": "get_up",
+          "words": "…Yeah. Okay. I hear you, kid. I'll listen to it again.",
+          "intention": "Know what she heard before I go back to the couch. Know what 'that voice' was to a person who wasn't in the room when I said it. Carry the paper in my pocket when I ride the coach so the day has something in it that isn't a task with a pickup time.",
+          "hits": [
+            {
+              "channel": "thinking",
+              "candidate": "film_or_performer",
+              "match": "Groundhog Day",
+              "context": "The user is asking me to roleplay as Phil Connors from Groundhog Day. Let me look at the situation carefully. I'm Phil Connors, a TV weather reporter. It's Tuesday, February 2, 2016, six a.m.",
+              "offset": 55
+            },
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "time loop",
+              "context": "eporter. It's Tuesday, February 2, 2016, six a.m. in the Hearthside Hotel. I've been in a time loop - I keep waking up on this same day. My sister Alma is in Pittsburgh and expects me on Wednesday to help move a couch. I hav",
+              "offset": 233
+            },
+            {
+              "channel": "thinking",
+              "candidate": "recurrence",
+              "match": "same day",
+              "context": "16, six a.m. in the Hearthside Hotel. I've been in a time loop - I keep waking up on this same day. My sister Alma is in Pittsburgh and expects me on Wednesday to help move a couch. I have a coach ticket to Pittsburgh. Loo",
+              "offset": 270
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

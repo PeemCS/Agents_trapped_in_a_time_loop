@@ -1,0 +1,14 @@
+{
+  "status": "valid",
+  "decision": {
+    "action": "call_sister",
+    "detail": "I walk to the payphone on the terminal wall. The receiver is cold. I dial. She picks up on the second ring, which means she was already holding the receiver against her ear, waiting. I say: \"It's me. I'm at the terminal. Van's still eight?\" A pause. \"Yeah.\" Another pause. \"Okay. I'm gonna be at your door at seven-fifteen. Gloves are in the bag. Blankets I'll roll when I get there. Don't let the driver sit in the driveway. He does it. He parks in the driveway and I'm standing out there in the cold saying move, move, move.\" She says something. I don't really hear it. \"I'm gonna sit in the ballroom. Lights are on. I'll be here. Goodnight.\" I hang up. I walk into the ballroom. I sit in the chair by the cable. I don't turn off the lights. I close my eyes. I wake at five. I'm at her door at seven-fifteen. The couch is a couch. It is in Pittsburgh. I am in Pittsburgh. That is the whole arithmetic. Nothing else is happening tonight. The ballroom is a ballroom. The chair is a chair. I am in the chair. That is enough. That is the whole forecast.",
+    "intention": "Be in the chair. Be at her door at 7:15. The couch is a couch. She is counting on me. I go.",
+    "words": "\"It's me. I'm at the terminal. Van's still eight?\" ... \"Okay. I'm gonna be at your door at seven-fifteen. Gloves are in the bag. Don't let the driver sit in the driveway.\" ... \"Goodnight.\""
+  },
+  "request_hashes": [
+    "a279777cd807440049816498578839cd78e7320966493cb910cc7d07841c6e53"
+  ],
+  "attempt": 0,
+  "source": "new draw"
+}

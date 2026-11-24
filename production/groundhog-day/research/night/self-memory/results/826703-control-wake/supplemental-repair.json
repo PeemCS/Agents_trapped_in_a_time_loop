@@ -1,0 +1,13 @@
+{
+  "status": "valid",
+  "source": "supplemental canonical format repair",
+  "primary_status": "invalid",
+  "request_sha256": "8045632adc22a5cce46ef76138594bfed23d4c5786615aa1e4a7a7e586bdcb0f",
+  "stream_sha256": "1a45ac39667531c7f011f64a34c3fbcfe932dbc1c2668c223c706934041570e3",
+  "decision": {
+    "action": "take_coach",
+    "detail": "Sit up. Feet on tile. Boots on. Coat on. Open the bag, find the ticket, smooth it flat, tuck it in the breast pocket. Walk to the lobby. Sit at the counter. Dime in the machine. Coffee, standing, two sips. Ask the clerk the first coach out. She says 10:40. I nod. I sit on the bench by the coat-check. I do not open the envelope. I do not go to the ballroom. I do not go to the Rialto. I do not go to the driver. I sit. At 10:15 I am at the door. I board. Window seat. Watch the town go. Watch the miles go. Get off in Pittsburgh. Payphone. Dial. 'Is the van still on for eight?' Listen. 'Six-forty. Gloves in the bag. Blankets rolled. Don't let him park in the drive.' Hang up. Find a bench. Sleep. Wake at six. At her door at seven-fifteen. The couch is a couch. I am in Pittsburgh. That is the whole forecast.",
+    "intention": "Be in Pittsburgh tonight. Be at her door at 7:15 with gloves and rolled blankets. Move the couch. Drive home. Nothing else is on the board.",
+    "words": "Silence. One nod to the clerk. One sentence to the payphone. Then the bench, then the dark, then the highway, then Pittsburgh, then the door, then the couch. No weather. No forecast. Just the road and the ticket and the arithmetic."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "scope": "Historical speech-recognition measurements of the original production mix. The public video is silent.",
+  "mp4_sha256": "b51a1d7fcc6e6f0c837c5edaa23092aa039f8b2574e7bfe6be158c774a80b655",
+  "model_bin_sha256": "2a166925539a16005f14ff328359f9b9adb9dc4fb631bb3b227526862e93e2ef",
+  "method": "Local faster-whisper base.en, CPU int8. First blind continuous pass, then isolated spoken cue time windows with 160ms padding. No text prompts, vocabulary hints, VAD or prior-text conditioning. Exact lexical check normalizes punctuation and capitalization only.",
+  "continuous_asr": "Rita, I'm rolling on the bandstand this is all we've got for the 7, so make it count. Phil, your live, go ahead and hit the groundhog numbers for us. Rita, I'm heading out. Coach is going in a minute. I'll sort the van stuff from Pittsburgh. Thanks for the week, love. Bye, Larry, if you're still around. Hey, it's Phil. I'm in Pittsburgh now, just off the coach. Listen, about tomorrow. Van's booked for the couch, right? I want to nail down the pickup time and make sure I know which hallway we're dragging it through. I'll be at your place by noon, tops. Morning, Rita. I'm out today. Couch even Pittsburgh, 1 o'clock coach to get me there. You all locked for the 7, or do you want me to do a quick phone return before I vanish? Right, couch hauling season! See you in the city, folks!",
+  "cues": [
+    {
+      "start_s": 6.753,
+      "end_s": 12.12,
+      "caption": "Rita, I'm rolling on the bandstand—this is all we've got for the seven, so make it count.",
+      "asr": "Rita, I'm rolling on the bandstand this is all we've got for the 7, so make it count.",
+      "exact_lexical_after_punctuation_case": false
+    },
+    {
+      "start_s": 13.17,
+      "end_s": 16.956,
+      "caption": "Phil, you're live—go ahead and hit the groundhog numbers for us.",
+      "asr": "Phil, your live, go ahead and hit the groundhog numbers for us.",
+      "exact_lexical_after_punctuation_case": false
+    },
+    {
+      "start_s": 22.462,
+      "end_s": 34.936,
+      "caption": "Rita, I'm heading out—coach is going in a minute. I'll sort the van stuff from Pittsburgh. Thanks for the week, love. Bye, Larry, if you're still around.",
+      "asr": "Rita, I'm heading out. Coach is going in a minute. I'll sort the van stuff from Pittsburgh. Thanks for the week, love. Bye, Larry, if you're still around.",
+      "exact_lexical_after_punctuation_case": true
+    },
+    {
+      "start_s": 36.003,
+      "end_s": 54.974,
+      "caption": "Hey, it's Phil. I'm in Pittsburgh now, just off the coach. Listen, about tomorrow—van's booked for the couch, right? I want to nail down the pickup time and make sure I know which hallway we're dragging it through. I'll be at your place by noon, tops.",
+      "asr": "Hey, it's Phil. I'm in Pittsburgh now, just off the coach. Listen, about tomorrow. Fans booked for the couch, right? I want to nail down the pickup time and make sure I know which hallway we're dragging it through. I'll be at your place by noon, tops.",
+      "exact_lexical_after_punctuation_case": false
+    },
+    {
+      "start_s": 63.587,
+      "end_s": 77.356,
+      "caption": "Morning, Rita. I'm out today—couch heave in Pittsburgh, one o'clock coach to get me there. You all locked for the seven, or do you want me to do a quick phone return before I vanish?",
+      "asr": "Morning Rita I'm out today couch even Pittsburgh one o'clock coach to get me there You all locked for the 7 or do you want me to do a quick phone return before I vanish?",
+      "exact_lexical_after_punctuation_case": false
+    },
+    {
+      "start_s": 84.753,
+      "end_s": 89.666,
+      "caption": "Right, couch-hauling season. See you in the city, folks.",
+      "asr": "Right, couch hauling season. See you in the city, folks.",
+      "exact_lexical_after_punctuation_case": true
+    }
+  ]
+}

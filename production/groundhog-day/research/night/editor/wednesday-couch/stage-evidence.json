@@ -1,0 +1,288 @@
+{
+  "source_sha256": "9695d76c0cf799ac32810b53e3da5c26814e227ba6d710e675f0d5c4c798646d",
+  "checked_shots": 17,
+  "observations": [
+    {
+      "event_id": "d01-t00-reporter",
+      "view": "action",
+      "camera_actor": "Rita",
+      "at": "inn",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 1
+      }
+    },
+    {
+      "event_id": "d01-t01-reporter",
+      "view": "action",
+      "camera_actor": "Larry",
+      "at": "inn",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 0,
+        "camera_footage": "the festival"
+      }
+    },
+    {
+      "event_id": "d02-t01-reporter",
+      "view": "action",
+      "camera_actor": "Phil",
+      "at": "inn",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 0,
+        "camera_footage": "the festival"
+      }
+    },
+    {
+      "event_id": "d02-t02-reporter",
+      "view": "action",
+      "camera_actor": "Phil",
+      "at": "Pittsburgh",
+      "framing": "street",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 0,
+        "camera_footage": "the festival"
+      }
+    },
+    {
+      "event_id": "d02-t03-reporter",
+      "view": "action",
+      "camera_actor": "Phil",
+      "at": "Pittsburgh",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": true,
+        "dishes": 2,
+        "camera_battery": 0,
+        "camera_footage": "the festival"
+      }
+    },
+    {
+      "event_id": "d03-t00-reporter",
+      "view": "morning",
+      "camera_actor": "Phil",
+      "at": "inn",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 1
+      }
+    },
+    {
+      "event_id": "d03-t00-reporter",
+      "view": "action",
+      "camera_actor": "Rita",
+      "at": "inn",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 1
+      }
+    },
+    {
+      "event_id": "d03-t02-reporter",
+      "view": "action",
+      "camera_actor": "Phil",
+      "at": "Pittsburgh",
+      "framing": "street",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 0,
+        "camera_footage": "the festival"
+      }
+    },
+    {
+      "event_id": "d04-t00-reporter",
+      "view": "action",
+      "camera_actor": "Phil",
+      "at": "inn",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 1
+      }
+    },
+    {
+      "event_id": "d04-t01-reporter",
+      "view": "action",
+      "camera_actor": "Phil",
+      "at": "inn",
+      "framing": "close",
+      "props": {
+        "marked": true,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 0,
+        "camera_footage": "the festival"
+      }
+    },
+    {
+      "event_id": "d04-t03-reporter",
+      "view": "action",
+      "camera_actor": "Phil",
+      "at": "Pittsburgh",
+      "framing": "close",
+      "props": {
+        "marked": true,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": true,
+        "dishes": 2,
+        "camera_battery": 0,
+        "camera_footage": "the festival"
+      }
+    },
+    {
+      "event_id": "d05-t00-reporter",
+      "view": "morning",
+      "camera_actor": "Phil",
+      "at": "inn",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 1
+      }
+    },
+    {
+      "event_id": "d05-t00-reporter",
+      "view": "action",
+      "camera_actor": "Phil",
+      "at": "inn",
+      "framing": "close",
+      "props": {
+        "marked": true,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 1
+      }
+    },
+    {
+      "event_id": "d06-t00-reporter",
+      "view": "action",
+      "camera_actor": "Phil",
+      "at": "diner",
+      "framing": "street",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 1
+      }
+    },
+    {
+      "event_id": "d06-t01-reporter",
+      "view": "action",
+      "camera_actor": "Phil",
+      "at": "diner",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 1,
+        "camera_battery": 0,
+        "camera_footage": "the festival"
+      }
+    },
+    {
+      "event_id": "d06-t02-reporter",
+      "view": "action",
+      "camera_actor": "Phil",
+      "at": "Pittsburgh",
+      "framing": "street",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 1,
+        "camera_battery": 0,
+        "camera_footage": "the festival"
+      }
+    },
+    {
+      "event_id": "d06-t03-reporter",
+      "view": "action",
+      "camera_actor": "Phil",
+      "at": "Pittsburgh",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 1,
+        "camera_battery": 0,
+        "camera_footage": "the festival"
+      }
+    }
+  ]
+}

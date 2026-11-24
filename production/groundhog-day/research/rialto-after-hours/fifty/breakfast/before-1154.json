@@ -1,0 +1,16 @@
+{
+  "condition": "before",
+  "seed": 1154,
+  "prior_turn_ids": [],
+  "response": {
+    "choice": "eat",
+    "line_to_cook": "Nah, keep it here, I’m about to ruin this beautiful disaster with real maple syrup.",
+    "stated_motive": "I’m trying to find a reason to stay in this chair instead of walking back to the empty room.",
+    "cites": "scene"
+  },
+  "action_effect": "Phil opens the syrup and eats the pancake at the counter.",
+  "model": "qwen3.8:27b",
+  "input_sha256": "e49567a367875b54d1c9ad5d67d4d777fb6476a98ab50e50e9b53cd8025a9047",
+  "response_text": "{\n  \"choice\": \"eat\",\n  \"line_to_cook\": \"Nah, keep it here, I’m about to ruin this beautiful disaster with real maple syrup.\",\n  \"stated_motive\": \"I’m trying to find a reason to stay in this chair instead of walking back to the empty room.\",\n  \"cites\": \"scene\"\n}",
+  "num_predict": 260
+}

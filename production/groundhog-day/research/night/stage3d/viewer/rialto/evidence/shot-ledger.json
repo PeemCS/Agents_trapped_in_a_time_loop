@@ -1,0 +1,179 @@
+{
+  "title": "Eight bars · 3D blocking cut",
+  "run": "721-hypothesis",
+  "source": "last-reel/runs/721-hypothesis/take.json",
+  "source_sha256": "b7500bd631c2a27cbf43ae396b48ee28247e665c77d7707acd8207390340f3ea",
+  "file_sha256": "c005ccdd08bd0da9168a3799a6d915de0977e432caf61ac8054023d4a039cd31",
+  "frames": 636,
+  "fps": 24,
+  "seconds": 26.5,
+  "renders": "Single local WebGL stage, two scissored camera viewports for paired source slots",
+  "sound": "silent",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 960,
+        "height": 540,
+        "nb_read_frames": "636",
+        "side_data_list": [
+          {}
+        ]
+      }
+    ],
+    "format": {
+      "duration": "26.500000"
+    }
+  },
+  "shots": [
+    {
+      "first_frame": 0,
+      "frames": 54,
+      "camera": "house",
+      "screens": [
+        {
+          "source_event_id": "d01-afternoon-reporter",
+          "source_request_key": "3a2ce135cd48daef37de26d1641692a93ca47098a228e753d230d84a648a418d",
+          "venue": "ballroom"
+        }
+      ],
+      "source_progress": [
+        0.03,
+        0.51
+      ],
+      "caption": "Phil plays the last eight bars until he can get through them."
+    },
+    {
+      "first_frame": 54,
+      "frames": 48,
+      "camera": "close",
+      "screens": [
+        {
+          "source_event_id": "d01-afternoon-reporter",
+          "source_request_key": "3a2ce135cd48daef37de26d1641692a93ca47098a228e753d230d84a648a418d",
+          "venue": "ballroom"
+        }
+      ],
+      "source_progress": [
+        0.52,
+        0.99
+      ],
+      "caption": "Phil plays the last eight bars until he can get through them."
+    },
+    {
+      "first_frame": 102,
+      "frames": 102,
+      "camera": "house",
+      "screens": [
+        {
+          "source_event_id": "d01-evening-reporter",
+          "source_request_key": "f24758965747275f0f723960852b1af2347901384c52b3ea621abf9f1d90d73a",
+          "venue": "depot"
+        },
+        {
+          "source_event_id": "d01-evening-producer",
+          "source_request_key": "84df954d5d962853e0db5221077daf9efd4be291fa66a4c99f15a9bc7133cab4",
+          "venue": "ballroom"
+        }
+      ],
+      "source_progress": [
+        0.03,
+        0.95
+      ],
+      "caption": "Phil sits on the empty depot bench. Rita goes dancing at the ballroom."
+    },
+    {
+      "first_frame": 204,
+      "frames": 72,
+      "camera": "house",
+      "screens": [
+        {
+          "source_event_id": "d02-afternoon-reporter",
+          "source_request_key": "9eb0dec058bea8acacb0441ed9a862d8ac07459e02caa3f1a5a55feb08934b4b",
+          "venue": "terminal"
+        }
+      ],
+      "source_progress": [
+        0.03,
+        0.99
+      ],
+      "caption": "Phil rides the coach and steps off at Pittsburgh."
+    },
+    {
+      "first_frame": 276,
+      "frames": 72,
+      "camera": "house",
+      "screens": [
+        {
+          "source_event_id": "d02-afternoon-producer",
+          "source_request_key": "d164a220c2f148bb0826be829f33f2ebbe56223a8bcfee2db6c9279acf01cd31",
+          "venue": "rialto"
+        }
+      ],
+      "source_progress": [
+        0.05,
+        0.94
+      ],
+      "caption": "Rita records Alma at the Rialto and puts her recording on the patch."
+    },
+    {
+      "first_frame": 348,
+      "frames": 60,
+      "camera": "close",
+      "screens": [
+        {
+          "source_event_id": "d02-evening-camera",
+          "source_request_key": "9c34936366904480e8a1fd94a22d7d1ed535a8566609147c5dd41b17e3e0525c",
+          "venue": "station"
+        }
+      ],
+      "source_progress": [
+        0.12,
+        0.96
+      ],
+      "caption": "Larry delivers Alma's reel."
+    },
+    {
+      "first_frame": 408,
+      "frames": 96,
+      "camera": "house",
+      "screens": [
+        {
+          "source_event_id": "d02-evening-reporter",
+          "source_request_key": "7f675fa60640352b48e79b56ded8f28094977cb34f9c6075af47487ef53818e8",
+          "venue": "terminal"
+        },
+        {
+          "source_event_id": "d02-evening-producer",
+          "source_request_key": "4d32a6fd37af3599a366ae47c01c717ed3a48148c12457b3a4aeb32c29b90ed1",
+          "venue": "station"
+        }
+      ],
+      "source_progress": [
+        0.04,
+        0.95
+      ],
+      "caption": "Phil sleeps on the Pittsburgh terminal bench. Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh."
+    },
+    {
+      "first_frame": 504,
+      "frames": 132,
+      "camera": "house",
+      "screens": [
+        {
+          "source_event_id": "d03-afternoon-reporter",
+          "source_request_key": "dbb0ac9994b650a67653522cc93876a1d6e3329b144b55f533f607927fa580e9",
+          "venue": "hotel"
+        }
+      ],
+      "source_progress": [
+        0.05,
+        0.99
+      ],
+      "caption": "Tuesday, six am. An envelope has arrived from Pittsburgh."
+    }
+  ]
+}

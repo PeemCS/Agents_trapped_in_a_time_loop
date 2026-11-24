@@ -1,0 +1,541 @@
+{
+  "condition": "free",
+  "seed": 913,
+  "model": "qwen3:0.6b",
+  "revision": "7df6b6e09427a769808717c0a93cadc4ae99ed4eb8bf5ca557c90846becea435",
+  "initial": {
+    "reporter": {
+      "x": 6.75,
+      "y": 8.25
+    },
+    "producer": {
+      "x": 8.22,
+      "y": 8.4
+    },
+    "camera": {
+      "x": 11.0,
+      "y": 7.3
+    }
+  },
+  "ticks": [
+    [
+      {
+        "id": "free-913-t00-reporter",
+        "role": "reporter",
+        "actor": "Phil",
+        "say": "I'm heading to the studio to check on the latest updates. Let me know if there's anything I can help with!",
+        "raw": "runs/free-913/calls/free-913-t00-reporter.json",
+        "raw_sha256": "ca5e66bc6139e31953d5eda00a0de220ed29d84aa30dac417a2afeb86d5c7d74",
+        "seed": 91300,
+        "start": {
+          "x": 6.75,
+          "y": 8.25
+        },
+        "requested": {
+          "x": 14.45,
+          "y": 7.7
+        },
+        "quantized": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "resolved": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 6.75,
+            "y": 8.25
+          },
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          }
+        ],
+        "length": 7.677564718060017,
+        "requestedDoorDistance": 0,
+        "resolvedDoorDistance": 0.11180339887498869,
+        "nearDoor": "studio",
+        "gridError": 0.11180339887498869,
+        "adjustment": 0,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            6.75,
+            0,
+            8.25
+          ],
+          [
+            14.4,
+            0,
+            7.6000000000000005
+          ]
+        ]
+      },
+      {
+        "id": "free-913-t00-producer",
+        "role": "producer",
+        "actor": "Rita",
+        "say": "I chose the studio for my next walk. It's a great place to relax after a long day.",
+        "raw": "runs/free-913/calls/free-913-t00-producer.json",
+        "raw_sha256": "00d2684fc690914030fd07d96dc8869817b0b3e796335bdfefaf329eafe8549e",
+        "seed": 91301,
+        "start": {
+          "x": 8.22,
+          "y": 8.4
+        },
+        "requested": {
+          "x": 14.45,
+          "y": 7.7
+        },
+        "quantized": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "resolved": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 8.22,
+            "y": 8.4
+          },
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          }
+        ],
+        "length": 6.231564811506014,
+        "requestedDoorDistance": 0,
+        "resolvedDoorDistance": 0.11180339887498869,
+        "nearDoor": "studio",
+        "gridError": 0.11180339887498869,
+        "adjustment": 0,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            8.22,
+            0,
+            8.4
+          ],
+          [
+            14.4,
+            0,
+            7.6000000000000005
+          ]
+        ]
+      },
+      {
+        "id": "free-913-t00-camera",
+        "role": "camera",
+        "actor": "Larry",
+        "say": "I'm heading to the square, which is a great place to enjoy some time with my friends.",
+        "raw": "runs/free-913/calls/free-913-t00-camera.json",
+        "raw_sha256": "c585d6b60e212ac559dd60791f62aaa8d6fe598cb5b9c71d97224d5a6c81decc",
+        "seed": 91302,
+        "start": {
+          "x": 11,
+          "y": 7.3
+        },
+        "requested": {
+          "x": 12.2,
+          "y": 11.4
+        },
+        "quantized": {
+          "x": 12,
+          "y": 11.600000000000001
+        },
+        "resolved": {
+          "x": 12,
+          "y": 11.600000000000001
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 11,
+            "y": 7.3
+          },
+          {
+            "x": 12,
+            "y": 11.600000000000001
+          }
+        ],
+        "length": 4.414748010928824,
+        "requestedDoorDistance": 0,
+        "resolvedDoorDistance": 0.28284271247461923,
+        "nearDoor": "square",
+        "gridError": 0.28284271247461923,
+        "adjustment": 0,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            11,
+            0,
+            7.3
+          ],
+          [
+            12,
+            0,
+            11.600000000000001
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "id": "free-913-t01-reporter",
+        "role": "reporter",
+        "actor": "Phil",
+        "say": "I’m heading to the studio for the next walk.",
+        "raw": "runs/free-913/calls/free-913-t01-reporter.json",
+        "raw_sha256": "1f411468def2cc7e584eeb20f4ab68e229525d868c3690f4108db5c9e2a73e2b",
+        "seed": 91307,
+        "start": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "requested": {
+          "x": 14.45,
+          "y": 7.7
+        },
+        "quantized": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "resolved": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          },
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          }
+        ],
+        "length": 0,
+        "requestedDoorDistance": 0,
+        "resolvedDoorDistance": 0.11180339887498869,
+        "nearDoor": "studio",
+        "gridError": 0.11180339887498869,
+        "adjustment": 0,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            14.4,
+            0,
+            7.6000000000000005
+          ],
+          [
+            14.4,
+            0,
+            7.6000000000000005
+          ]
+        ]
+      },
+      {
+        "id": "free-913-t01-producer",
+        "role": "producer",
+        "actor": "Rita",
+        "say": "I'm just finishing my walk. The grid point is already reached.",
+        "raw": "runs/free-913/calls/free-913-t01-producer.json",
+        "raw_sha256": "6fc387e955fa48eedfe483299b120f9e8d58f6c692e5de208f6749bccb5bb624",
+        "seed": 91308,
+        "start": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "requested": {
+          "x": 14.4,
+          "y": 7.6
+        },
+        "quantized": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "resolved": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          },
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          }
+        ],
+        "length": 0,
+        "requestedDoorDistance": 0.11180339887498948,
+        "resolvedDoorDistance": 0.11180339887498869,
+        "nearDoor": "studio",
+        "gridError": 8.881784197001252e-16,
+        "adjustment": 0,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            14.4,
+            0,
+            7.6000000000000005
+          ],
+          [
+            14.4,
+            0,
+            7.6000000000000005
+          ]
+        ]
+      },
+      {
+        "id": "free-913-t01-camera",
+        "role": "camera",
+        "actor": "Larry",
+        "say": "I'm back, I'm at the chosen grid point. The next destination is the studio.",
+        "raw": "runs/free-913/calls/free-913-t01-camera.json",
+        "raw_sha256": "e800e9f9639b63d92d4d5a17c1393ccedc3a3adb95e8b1ce75c6d450630dca63",
+        "seed": 91309,
+        "start": {
+          "x": 12,
+          "y": 11.600000000000001
+        },
+        "requested": {
+          "x": 12.2,
+          "y": 11.4
+        },
+        "quantized": {
+          "x": 12,
+          "y": 11.600000000000001
+        },
+        "resolved": {
+          "x": 12,
+          "y": 11.600000000000001
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 12,
+            "y": 11.600000000000001
+          },
+          {
+            "x": 12,
+            "y": 11.600000000000001
+          }
+        ],
+        "length": 0,
+        "requestedDoorDistance": 0,
+        "resolvedDoorDistance": 0.28284271247461923,
+        "nearDoor": "square",
+        "gridError": 0.28284271247461923,
+        "adjustment": 0,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            12,
+            0,
+            11.600000000000001
+          ],
+          [
+            12,
+            0,
+            11.600000000000001
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "id": "free-913-t02-reporter",
+        "role": "reporter",
+        "actor": "Phil",
+        "say": "I’ve reached the grid point where I began my walk. If you need me to help, feel free to ask.",
+        "raw": "runs/free-913/calls/free-913-t02-reporter.json",
+        "raw_sha256": "3c9205879661b9cefb432f94aa4ad0476f33fe932b47d790a4f756c94becbb3d",
+        "seed": 91314,
+        "start": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "requested": {
+          "x": 14.4,
+          "y": 7.6
+        },
+        "quantized": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "resolved": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          },
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          }
+        ],
+        "length": 0,
+        "requestedDoorDistance": 0.11180339887498948,
+        "resolvedDoorDistance": 0.11180339887498869,
+        "nearDoor": "studio",
+        "gridError": 8.881784197001252e-16,
+        "adjustment": 0,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            14.4,
+            0,
+            7.6000000000000005
+          ],
+          [
+            14.4,
+            0,
+            7.6000000000000005
+          ]
+        ]
+      },
+      {
+        "id": "free-913-t02-producer",
+        "role": "producer",
+        "actor": "Rita",
+        "say": "I've reached the chosen grid point. Let me know if you need any assistance!",
+        "raw": "runs/free-913/calls/free-913-t02-producer.json",
+        "raw_sha256": "8a6067e0bffeabb1083df74c185687f5521de7bf259205bbe98797b30db784a4",
+        "seed": 91315,
+        "start": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "requested": {
+          "x": 14.4,
+          "y": 7.6
+        },
+        "quantized": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "resolved": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          },
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          }
+        ],
+        "length": 0,
+        "requestedDoorDistance": 0.11180339887498948,
+        "resolvedDoorDistance": 0.11180339887498869,
+        "nearDoor": "studio",
+        "gridError": 8.881784197001252e-16,
+        "adjustment": 0,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            14.4,
+            0,
+            7.6000000000000005
+          ],
+          [
+            14.4,
+            0,
+            7.6000000000000005
+          ]
+        ]
+      },
+      {
+        "id": "free-913-t02-camera",
+        "role": "camera",
+        "actor": "Larry",
+        "say": "I've reached the chosen grid point.",
+        "raw": "runs/free-913/calls/free-913-t02-camera.json",
+        "raw_sha256": "8e2799d21683898606d35f176daaa85e62ffadc14f1e7a15ee8820b969217846",
+        "seed": 91316,
+        "start": {
+          "x": 12,
+          "y": 11.600000000000001
+        },
+        "requested": {
+          "x": 12.2,
+          "y": 11.4
+        },
+        "quantized": {
+          "x": 12,
+          "y": 11.600000000000001
+        },
+        "resolved": {
+          "x": 12,
+          "y": 11.600000000000001
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 12,
+            "y": 11.600000000000001
+          },
+          {
+            "x": 12,
+            "y": 11.600000000000001
+          }
+        ],
+        "length": 0,
+        "requestedDoorDistance": 0,
+        "resolvedDoorDistance": 0.28284271247461923,
+        "nearDoor": "square",
+        "gridError": 0.28284271247461923,
+        "adjustment": 0,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            12,
+            0,
+            11.600000000000001
+          ],
+          [
+            12,
+            0,
+            11.600000000000001
+          ]
+        ]
+      }
+    ]
+  ]
+}

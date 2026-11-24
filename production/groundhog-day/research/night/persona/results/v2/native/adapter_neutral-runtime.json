@@ -1,0 +1,9 @@
+{
+  "allocator_cap_GiB": 10.75,
+  "peak_allocated_GiB": 3.48858642578125,
+  "peak_reserved_GiB": 3.5859375,
+  "enabled_native_reasoning": true,
+  "generation_max_tokens": 1536,
+  "case_count": 36,
+  "batch_size": 6
+}

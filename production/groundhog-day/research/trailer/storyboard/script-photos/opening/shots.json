@@ -1,0 +1,71 @@
+[
+  {
+    "id": "S00-A-STREET-PROMPT-ONLY",
+    "title": "Watch versus Rita cue",
+    "file": "S00-A-STREET-PROMPT-ONLY.jpg",
+    "scene": "S00",
+    "time": "00:00–00:03.3",
+    "beat": "Watch tap while Rita signals",
+    "lens": "14 mm",
+    "reference": "prompt-only; no image reference",
+    "job_id": "4a792d51-abdf-4782-863b-4ea97774db5f",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3MWoglBmW0FxDhWYsRkUU6hOp6M/hf_20261124_013014_4a792d51-abdf-4782-863b-4ea97774db5f.png",
+    "selection": "preferred street study",
+    "limitations": "Visible left shoulder compromises strict eye POV; producer identity unanchored. Watch tap and cue are readable."
+  },
+  {
+    "id": "S01-B-PIANO-PROMPT-ONLY",
+    "title": "Final chord study",
+    "file": "S01-B-PIANO-PROMPT-ONLY.jpg",
+    "scene": "S01",
+    "time": "00:15–00:21.5",
+    "beat": "Piano final chord",
+    "lens": "14 mm",
+    "reference": "prompt-only; no image reference",
+    "job_id": "2042a0f4-69e1-4ec7-b3a0-6ac854bad4ee",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3MWoglBmW0FxDhWYsRkUU6hOp6M/hf_20261124_012909_2042a0f4-69e1-4ec7-b3a0-6ac854bad4ee.png",
+    "selection": "performance study",
+    "limitations": "Watch mostly concealed; room and hand positions do not precisely match depot."
+  },
+  {
+    "id": "S01-C-DEPOT",
+    "title": "Hands on depot knees",
+    "file": "S01-C-DEPOT.jpg",
+    "scene": "S01",
+    "time": "00:21.5–00:25.5",
+    "beat": "Hand match to depot",
+    "lens": "14 mm",
+    "reference": "S01-C1.jpg; S01-B2-ALT.jpg; DEP-M.jpg",
+    "job_id": "4a3d118a-6861-4bd1-9311-d0620ab0dd98",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3MWoglBmW0FxDhWYsRkUU6hOp6M/hf_20261124_012901_4a3d118a-6861-4bd1-9311-d0620ab0dd98.png",
+    "selection": "performance study",
+    "limitations": "Chair arm substitutes for bench; view is more forward than specified."
+  },
+  {
+    "id": "S00-A-STREET-REVISION",
+    "title": "Street eyeline revision",
+    "file": "S00-A-STREET-REVISION.jpg",
+    "scene": "S00",
+    "time": "00:00–00:03.3",
+    "beat": "Producer cue",
+    "lens": "14 mm",
+    "reference": "prompt-only; no image reference",
+    "job_id": "24f3c8d3-f356-4063-be7c-0aac819905d2",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3MWoglBmW0FxDhWYsRkUU6hOp6M/hf_20261124_013152_24f3c8d3-f356-4063-be7c-0aac819905d2.png",
+    "selection": "alternate; not preferred",
+    "limitations": "Camera appears behind a snow-covered car roof; bottom shapes read as boots rather than glove tips, watch barely discernible, no watch tap. Producer stands too far away."
+  },
+  {
+    "id": "S00-PIER",
+    "scene": "S00",
+    "time": "00:04.1–00:05.3",
+    "file": "S00-past-the-pier.jpg",
+    "title": "Phil is already walking past",
+    "beat": "The sidewalk opens ahead of Phil. Ned and his burgundy book slip to the right edge before he can finish speaking.",
+    "lens": "14mm standing eye POV",
+    "reference": "S00-B.jpg",
+    "qa": "Keep the viewer at Phil’s eye height. Ned’s lean and the clear sidewalk establish who is leaving without showing Phil.",
+    "job_id": "be65c6cb-8c3d-457b-8f45-1305f93e75c6",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3MWoglBmW0FxDhWYsRkUU6hOp6M/hf_20261124_013340_be65c6cb-8c3d-457b-8f45-1305f93e75c6.png"
+  }
+]

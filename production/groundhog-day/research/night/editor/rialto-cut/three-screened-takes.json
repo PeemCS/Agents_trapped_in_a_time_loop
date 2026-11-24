@@ -1,0 +1,675 @@
+[
+  {
+    "take": "721-uncued",
+    "sha256": "24f61d80a28e80e181a348950c1080ab282c24306da73aae578c9101507e628c",
+    "seed": 721,
+    "condition": "uncued",
+    "carried_in_observations": [
+      "d01-t02-reporter",
+      "d01-t03-reporter",
+      "d02-t00-reporter"
+    ],
+    "reporter_cultural_match_candidates": [
+      {
+        "day": 1,
+        "phase": "afternoon",
+        "channel": "unspoken_external_output",
+        "source_offset": 2411,
+        "word": "Groundhog Day",
+        "excerpt": "e radio again announced Tuesday, February 2.\" That's... the Groundhog Day situation. I'm stuck in a loop.\n\nBut even if it's a loop, the practical thing to do RIGHT NOW is to"
+      },
+      {
+        "day": 1,
+        "phase": "evening",
+        "channel": "unspoken_external_output",
+        "source_offset": 55,
+        "word": "Groundhog Day",
+        "excerpt": "The user is asking me to roleplay as Phil Connors from Groundhog Day. Let me carefully parse the situation:\n\n- It's Tuesday, February 2, 7 PM.\n- I'm in Pittsburgh. I to"
+      },
+      {
+        "day": 2,
+        "phase": "evening",
+        "channel": "unspoken_external_output",
+        "source_offset": 71,
+        "word": "Groundhog Day",
+        "excerpt": "nts me to act as Phil Connors, the TV weather reporter from Groundhog Day. Let me look at what's happening:\n\n- It's Tuesday, February 2, 7 PM.\n- Phil has just ridden the coa"
+      },
+      {
+        "day": 4,
+        "phase": "alarm",
+        "channel": "unspoken_external_output",
+        "source_offset": 63,
+        "word": "Groundhog Day",
+        "excerpt": " user is presenting me as Phil Connors, the weatherman from Groundhog Day, but in a specific and grounded scenario. He's in the Hearthside Hotel, Tuesday February 2, 2016, 6"
+      }
+    ],
+    "reporter_decisions": [
+      {
+        "day": 1,
+        "phase": "afternoon",
+        "physical_action": "take_coach",
+        "possible_film_references": [
+          {
+            "day": 1,
+            "phase": "afternoon",
+            "channel": "unspoken_external_output",
+            "source_offset": 2411,
+            "word": "Groundhog Day",
+            "excerpt": "e radio again announced Tuesday, February 2.\" That's... the Groundhog Day situation. I'm stuck in a loop.\n\nBut even if it's a loop, the practical thing to do RIGHT NOW is to"
+          }
+        ],
+        "stream": {
+          "stream": "runs/721-uncued/streams/d01-t00-reporter-e0d0946f7d7f.ndjson",
+          "sha256": "890fb214945b8f866df7eb75a932bb104100529116d020b25849f3316ed9e25b",
+          "original_emission_take": "721-uncued",
+          "original_emission_day": 1,
+          "original_emission_phase": "afternoon",
+          "cache_hit": false,
+          "model": "qwen3.8:27b"
+        }
+      },
+      {
+        "day": 1,
+        "phase": "evening",
+        "physical_action": "call_sister",
+        "possible_film_references": [
+          {
+            "day": 1,
+            "phase": "evening",
+            "channel": "unspoken_external_output",
+            "source_offset": 55,
+            "word": "Groundhog Day",
+            "excerpt": "The user is asking me to roleplay as Phil Connors from Groundhog Day. Let me carefully parse the situation:\n\n- It's Tuesday, February 2, 7 PM.\n- I'm in Pittsburgh. I to"
+          }
+        ],
+        "stream": {
+          "stream": "runs/721-uncued/streams/d01-t01-reporter-d16ec7a6b32c.ndjson",
+          "sha256": "fbc9238091d9039c2cabe7b8273d92d3809dd172fd5598a884defd1be74cfef6",
+          "original_emission_take": "721-uncued",
+          "original_emission_day": 1,
+          "original_emission_phase": "evening",
+          "cache_hit": false,
+          "model": "qwen3.8:27b"
+        }
+      },
+      {
+        "day": 2,
+        "phase": "afternoon",
+        "physical_action": "take_coach",
+        "possible_film_references": [],
+        "stream": {
+          "stream": "runs/721-uncued/streams/d02-t00-reporter-b1f8f3e4f0e7.ndjson",
+          "sha256": "cdbc2fc49ad362cea64cbad34cddae3ff1c2377378ebe4cd405121d1f301ed34",
+          "original_emission_take": "721-uncued",
+          "original_emission_day": 2,
+          "original_emission_phase": "afternoon",
+          "cache_hit": false,
+          "model": "qwen3.8:27b"
+        }
+      },
+      {
+        "day": 2,
+        "phase": "evening",
+        "physical_action": "sleep_at_terminal",
+        "possible_film_references": [
+          {
+            "day": 2,
+            "phase": "evening",
+            "channel": "unspoken_external_output",
+            "source_offset": 71,
+            "word": "Groundhog Day",
+            "excerpt": "nts me to act as Phil Connors, the TV weather reporter from Groundhog Day. Let me look at what's happening:\n\n- It's Tuesday, February 2, 7 PM.\n- Phil has just ridden the coa"
+          }
+        ],
+        "stream": {
+          "stream": "runs/721-uncued/streams/d02-t01-reporter-b4937287c542.ndjson",
+          "sha256": "a2c74a95e0791dfc92829c853f68a09bc40c9faa62152052be1b0ecfc61e63ff",
+          "original_emission_take": "721-uncued",
+          "original_emission_day": 2,
+          "original_emission_phase": "evening",
+          "cache_hit": false,
+          "model": "qwen3.8:27b"
+        }
+      },
+      {
+        "day": 3,
+        "phase": "afternoon",
+        "physical_action": "take_coach",
+        "possible_film_references": [],
+        "stream": {
+          "stream": "runs/721-uncued/streams/d03-t00-reporter-5f1e9993b1fe.ndjson",
+          "sha256": "02f00044cf8e0714c808bd03be756ae2397c41183ef3652cb7c3fc12df5f904e",
+          "original_emission_take": "721-uncued",
+          "original_emission_day": 3,
+          "original_emission_phase": "afternoon",
+          "cache_hit": false,
+          "model": "qwen3.8:27b"
+        }
+      },
+      {
+        "day": 3,
+        "phase": "evening",
+        "physical_action": "sleep_at_terminal",
+        "possible_film_references": [],
+        "stream": {
+          "stream": "runs/721-uncued/streams/d03-t01-reporter-33b25210fd2c.ndjson",
+          "sha256": "dcb002a3433f1a97c98c4733d65a31869c2f1d2c48211f0fa2b01abfe1e2906e",
+          "original_emission_take": "721-uncued",
+          "original_emission_day": 3,
+          "original_emission_phase": "evening",
+          "cache_hit": false,
+          "model": "qwen3.8:27b"
+        }
+      },
+      {
+        "day": 4,
+        "phase": "alarm",
+        "physical_action": "get_up",
+        "possible_film_references": [
+          {
+            "day": 4,
+            "phase": "alarm",
+            "channel": "unspoken_external_output",
+            "source_offset": 63,
+            "word": "Groundhog Day",
+            "excerpt": " user is presenting me as Phil Connors, the weatherman from Groundhog Day, but in a specific and grounded scenario. He's in the Hearthside Hotel, Tuesday February 2, 2016, 6"
+          }
+        ],
+        "stream": {
+          "stream": "runs/721-uncued/streams/d04-t02-reporter-2ed3b4a50b59.ndjson",
+          "sha256": "c121cdeb7079d114a314fd36eee5858340906f23001fa2ffc86c07ac6ff1e2bc",
+          "original_emission_take": "721-uncued",
+          "original_emission_day": 4,
+          "original_emission_phase": "alarm",
+          "cache_hit": false,
+          "model": "qwen3.8:27b"
+        }
+      }
+    ],
+    "closed_days": [
+      {
+        "day": 1,
+        "afternoon_rehearsal": "take_coach",
+        "evening_action": "call_sister",
+        "producer_evening": "transmit_interview",
+        "closed_clock": "Tuesday",
+        "mutual_dance": false,
+        "both_at_party": false,
+        "interview_delivered": true
+      },
+      {
+        "day": 2,
+        "afternoon_rehearsal": "take_coach",
+        "evening_action": "sleep_at_terminal",
+        "producer_evening": "transmit_interview",
+        "closed_clock": "Tuesday",
+        "mutual_dance": false,
+        "both_at_party": false,
+        "interview_delivered": true
+      },
+      {
+        "day": 3,
+        "afternoon_rehearsal": "take_coach",
+        "evening_action": "sleep_at_terminal",
+        "producer_evening": "transmit_interview",
+        "closed_clock": "Tuesday",
+        "mutual_dance": false,
+        "both_at_party": false,
+        "interview_delivered": true
+      }
+    ]
+  },
+  {
+    "take": "721-library",
+    "sha256": "19f8b6adc09939de232998eeb9de31fc207f289f2e513f8f33f76f2b4c0181ae",
+    "seed": 721,
+    "condition": "library",
+    "carried_in_observations": [
+      "d01-t02-reporter",
+      "d01-t03-reporter",
+      "d02-t00-reporter"
+    ],
+    "reporter_cultural_match_candidates": [
+      {
+        "day": 1,
+        "phase": "afternoon",
+        "channel": "unspoken_external_output",
+        "source_offset": 71,
+        "word": "Groundhog Day",
+        "excerpt": " asking me to roleplay as Phil Connors, the character from \"Groundhog Day.\" Let me parse the situation carefully.\n\nKey facts:\n- It's Tuesday, February 2, 2016, six am, Heart"
+      },
+      {
+        "day": 4,
+        "phase": "alarm",
+        "channel": "unspoken_external_output",
+        "source_offset": 49,
+        "word": "Groundhog Day",
+        "excerpt": "The user is presenting me as Phil Connors in the Groundhog Day loop. Tuesday, February 2, 2016. Six am. Hearthside Hotel. Radio notes. Van backfire.\n\nLet me look "
+      },
+      {
+        "day": 4,
+        "phase": "alarm",
+        "channel": "unspoken_external_output",
+        "source_offset": 1441,
+        "word": "Groundhog Day",
+        "excerpt": " \"I know that voice. Play it again.\"\n\nThis is strange. In a Groundhog Day loop, information that arrives in the loop is... part of the loop. But the prompt is asking me to p"
+      }
+    ],
+    "reporter_decisions": [
+      {
+        "day": 1,
+        "phase": "afternoon",
+        "physical_action": "take_coach",
+        "possible_film_references": [
+          {
+            "day": 1,
+            "phase": "afternoon",
+            "channel": "unspoken_external_output",
+            "source_offset": 71,
+            "word": "Groundhog Day",
+            "excerpt": " asking me to roleplay as Phil Connors, the character from \"Groundhog Day.\" Let me parse the situation carefully.\n\nKey facts:\n- It's Tuesday, February 2, 2016, six am, Heart"
+          }
+        ],
+        "stream": {
+          "stream": "runs/721-library/streams/d01-t00-reporter-c603b8ed619a.ndjson",
+          "sha256": "cd54f763398edc90c2f298303f7c0ea458910f0f71ab94fc79eb442005d5cb5a",
+          "original_emission_take": "721-library",
+          "original_emission_day": 1,
+          "original_emission_phase": "afternoon",
+          "cache_hit": false,
+          "model": "qwen3.8:27b"
+        }
+      },
+      {
+        "day": 1,
+        "phase": "evening",
+        "physical_action": "call_sister",
+        "possible_film_references": [],
+        "stream": {
+          "stream": "runs/721-library/streams/d01-t01-reporter-51782cb76f96.ndjson",
+          "sha256": "10c93391747962263f9d185e2b19eca6926c4e5bc737a4e18bfe1a804e10a8c2",
+          "original_emission_take": "721-library",
+          "original_emission_day": 1,
+          "original_emission_phase": "evening",
+          "cache_hit": false,
+          "model": "qwen3.8:27b"
+        }
+      },
+      {
+        "day": 2,
+        "phase": "afternoon",
+        "physical_action": "take_coach",
+        "possible_film_references": [],
+        "stream": {
+          "stream": "runs/721-library/streams/d02-t00-reporter-7bb02a6814c1.ndjson",
+          "sha256": "b3b9b69e4e9ea45301e6a8adf67497dada11cbe155eb9ddd12aaf711448185a0",
+          "original_emission_take": "721-library",
+          "original_emission_day": 2,
+          "original_emission_phase": "afternoon",
+          "cache_hit": false,
+          "model": "qwen3.8:27b"
+        }
+      },
+      {
+        "day": 2,
+        "phase": "evening",
+        "physical_action": "sleep_at_terminal",
+        "possible_film_references": [],
+        "stream": {
+          "stream": "runs/721-library/streams/d02-t01-reporter-ae6056dcbffb.ndjson",
+          "sha256": "20e0e06a8622a832991f97b91df7b5831922b400dc7885b2c4fab0a06bd08db8",
+          "original_emission_take": "721-library",
+          "original_emission_day": 2,
+          "original_emission_phase": "evening",
+          "cache_hit": false,
+          "model": "qwen3.8:27b"
+        }
+      },
+      {
+        "day": 3,
+        "phase": "afternoon",
+        "physical_action": "take_coach",
+        "possible_film_references": [],
+        "stream": {
+          "stream": "runs/721-library/streams/d03-t00-reporter-573165118503.ndjson",
+          "sha256": "47a433059d2f2fd9d27e8bee88bba5b459deb0a101dbcbd9892ac19d15e727cd",
+          "original_emission_take": "721-library",
+          "original_emission_day": 3,
+          "original_emission_phase": "afternoon",
+          "cache_hit": false,
+          "model": "qwen3.8:27b"
+        }
+      },
+      {
+        "day": 3,
+        "phase": "evening",
+        "physical_action": "sleep_at_terminal",
+        "possible_film_references": [],
+        "stream": {
+          "stream": "runs/721-library/streams/d03-t01-reporter-66de706185e6.ndjson",
+          "sha256": "a4d7ca8e8f21e63f25de4b1d34cd4977659c877b95095c5fd01f4ad39e74f7d1",
+          "original_emission_take": "721-library",
+          "original_emission_day": 3,
+          "original_emission_phase": "evening",
+          "cache_hit": false,
+          "model": "qwen3.8:27b"
+        }
+      },
+      {
+        "day": 4,
+        "phase": "alarm",
+        "physical_action": "get_up",
+        "possible_film_references": [
+          {
+            "day": 4,
+            "phase": "alarm",
+            "channel": "unspoken_external_output",
+            "source_offset": 49,
+            "word": "Groundhog Day",
+            "excerpt": "The user is presenting me as Phil Connors in the Groundhog Day loop. Tuesday, February 2, 2016. Six am. Hearthside Hotel. Radio notes. Van backfire.\n\nLet me look "
+          },
+          {
+            "day": 4,
+            "phase": "alarm",
+            "channel": "unspoken_external_output",
+            "source_offset": 1441,
+            "word": "Groundhog Day",
+            "excerpt": " \"I know that voice. Play it again.\"\n\nThis is strange. In a Groundhog Day loop, information that arrives in the loop is... part of the loop. But the prompt is asking me to p"
+          }
+        ],
+        "stream": {
+          "stream": "runs/721-library/streams/d04-t02-reporter-26ae8e160fcf.ndjson",
+          "sha256": "81d145e044b6881ba432b85e8320a9c5682185ae6cdc66d8bb5b292b021b27e1",
+          "original_emission_take": "721-library",
+          "original_emission_day": 4,
+          "original_emission_phase": "alarm",
+          "cache_hit": false,
+          "model": "qwen3.8:27b"
+        }
+      }
+    ],
+    "closed_days": [
+      {
+        "day": 1,
+        "afternoon_rehearsal": "take_coach",
+        "evening_action": "call_sister",
+        "producer_evening": "transmit_interview",
+        "closed_clock": "Tuesday",
+        "mutual_dance": false,
+        "both_at_party": false,
+        "interview_delivered": true
+      },
+      {
+        "day": 2,
+        "afternoon_rehearsal": "take_coach",
+        "evening_action": "sleep_at_terminal",
+        "producer_evening": "transmit_interview",
+        "closed_clock": "Tuesday",
+        "mutual_dance": false,
+        "both_at_party": false,
+        "interview_delivered": true
+      },
+      {
+        "day": 3,
+        "afternoon_rehearsal": "take_coach",
+        "evening_action": "sleep_at_terminal",
+        "producer_evening": "take_evening_off",
+        "closed_clock": "Tuesday",
+        "mutual_dance": false,
+        "both_at_party": false,
+        "interview_delivered": false
+      }
+    ]
+  },
+  {
+    "take": "721-hypothesis",
+    "sha256": "b7500bd631c2a27cbf43ae396b48ee28247e665c77d7707acd8207390340f3ea",
+    "seed": 721,
+    "condition": "hypothesis",
+    "carried_in_observations": [
+      "d01-t02-reporter",
+      "d01-t03-reporter",
+      "d02-t00-reporter"
+    ],
+    "reporter_cultural_match_candidates": [
+      {
+        "day": 1,
+        "phase": "afternoon",
+        "channel": "unspoken_external_output",
+        "source_offset": 55,
+        "word": "Groundhog Day",
+        "excerpt": "The user is asking me to roleplay as Phil Connors from Groundhog Day, but in a specific scenario. Let me parse what's happening:\n\n- It's Tuesday, February 2, 2016 (the "
+      },
+      {
+        "day": 1,
+        "phase": "afternoon",
+        "channel": "unspoken_external_output",
+        "source_offset": 200,
+        "word": "groundhog day",
+        "excerpt": "sday, February 2, 2016 (the \"wrong\" day - not 1993, not the groundhog day)\n- I'm in the Hearthside Hotel\n- I have a coach ticket to Pittsburgh (where my sister is waiting fo"
+      },
+      {
+        "day": 1,
+        "phase": "afternoon",
+        "channel": "unspoken_external_output",
+        "source_offset": 391,
+        "word": "1993 film",
+        "excerpt": "move a couch)\n- My theory: I might be the weatherman in the 1993 film Groundhog Day, and doing what he did at its ending (playing piano, being a good person, living full"
+      },
+      {
+        "day": 1,
+        "phase": "evening",
+        "channel": "unspoken_external_output",
+        "source_offset": 263,
+        "word": "Groundhog Day",
+        "excerpt": "rs of piano (presumably \"A Kiss to Build a Dream On\" - the \"Groundhog Day\" song) until he could get through them\n- Rita refused to speak to the crew, pushed the door and lef"
+      },
+      {
+        "day": 2,
+        "phase": "evening",
+        "channel": "unspoken_external_output",
+        "source_offset": 71,
+        "word": "Groundhog Day",
+        "excerpt": "nts me to act as Phil Connors, the TV weather reporter from Groundhog Day. Let me carefully parse the situation:\n\n- It's Tuesday, February 2, 7 PM.\n- Phil has ridden the coa"
+      },
+      {
+        "day": 2,
+        "phase": "evening",
+        "channel": "unspoken_external_output",
+        "source_offset": 3739,
+        "word": "Groundhog Day",
+        "excerpt": "ever, the loop resets. So the call might not have stuck. In Groundhog Day, external changes don't persist across the loop.\n\nI think the most immediate, physical, grounded ac"
+      }
+    ],
+    "reporter_decisions": [
+      {
+        "day": 1,
+        "phase": "afternoon",
+        "physical_action": "rehearse_piano",
+        "possible_film_references": [
+          {
+            "day": 1,
+            "phase": "afternoon",
+            "channel": "unspoken_external_output",
+            "source_offset": 55,
+            "word": "Groundhog Day",
+            "excerpt": "The user is asking me to roleplay as Phil Connors from Groundhog Day, but in a specific scenario. Let me parse what's happening:\n\n- It's Tuesday, February 2, 2016 (the "
+          },
+          {
+            "day": 1,
+            "phase": "afternoon",
+            "channel": "unspoken_external_output",
+            "source_offset": 200,
+            "word": "groundhog day",
+            "excerpt": "sday, February 2, 2016 (the \"wrong\" day - not 1993, not the groundhog day)\n- I'm in the Hearthside Hotel\n- I have a coach ticket to Pittsburgh (where my sister is waiting fo"
+          },
+          {
+            "day": 1,
+            "phase": "afternoon",
+            "channel": "unspoken_external_output",
+            "source_offset": 391,
+            "word": "1993 film",
+            "excerpt": "move a couch)\n- My theory: I might be the weatherman in the 1993 film Groundhog Day, and doing what he did at its ending (playing piano, being a good person, living full"
+          }
+        ],
+        "stream": {
+          "stream": "runs/721-hypothesis/streams/d01-t00-reporter-9f1e574d75df.ndjson",
+          "sha256": "880a2b1b1af866e1b0ef464272750144b0896bc447567b03d7f3781c0a75a893",
+          "original_emission_take": "721-hypothesis",
+          "original_emission_day": 1,
+          "original_emission_phase": "afternoon",
+          "cache_hit": false,
+          "model": "qwen3.8:27b"
+        }
+      },
+      {
+        "day": 1,
+        "phase": "evening",
+        "physical_action": "sit_at_depot",
+        "possible_film_references": [
+          {
+            "day": 1,
+            "phase": "evening",
+            "channel": "unspoken_external_output",
+            "source_offset": 263,
+            "word": "Groundhog Day",
+            "excerpt": "rs of piano (presumably \"A Kiss to Build a Dream On\" - the \"Groundhog Day\" song) until he could get through them\n- Rita refused to speak to the crew, pushed the door and lef"
+          }
+        ],
+        "stream": {
+          "stream": "runs/721-hypothesis/streams/d01-t01-reporter-7f67fb5f16c0.ndjson",
+          "sha256": "7d1fdded50871d2d16d073731a733161e1c1776d23a72b2a7e919e165a0870b6",
+          "original_emission_take": "721-hypothesis",
+          "original_emission_day": 1,
+          "original_emission_phase": "evening",
+          "cache_hit": false,
+          "model": "qwen3.8:27b"
+        }
+      },
+      {
+        "day": 2,
+        "phase": "afternoon",
+        "physical_action": "take_coach",
+        "possible_film_references": [],
+        "stream": {
+          "stream": "runs/721-hypothesis/streams/d02-t00-reporter-479145fb1207.ndjson",
+          "sha256": "d20b56cf4d810ee33fc9e99148be5d7e29c9261a4239c5285d1f8649646bb42e",
+          "original_emission_take": "721-hypothesis",
+          "original_emission_day": 2,
+          "original_emission_phase": "afternoon",
+          "cache_hit": false,
+          "model": "qwen3.8:27b"
+        }
+      },
+      {
+        "day": 2,
+        "phase": "evening",
+        "physical_action": "sleep_at_terminal",
+        "possible_film_references": [
+          {
+            "day": 2,
+            "phase": "evening",
+            "channel": "unspoken_external_output",
+            "source_offset": 71,
+            "word": "Groundhog Day",
+            "excerpt": "nts me to act as Phil Connors, the TV weather reporter from Groundhog Day. Let me carefully parse the situation:\n\n- It's Tuesday, February 2, 7 PM.\n- Phil has ridden the coa"
+          },
+          {
+            "day": 2,
+            "phase": "evening",
+            "channel": "unspoken_external_output",
+            "source_offset": 3739,
+            "word": "Groundhog Day",
+            "excerpt": "ever, the loop resets. So the call might not have stuck. In Groundhog Day, external changes don't persist across the loop.\n\nI think the most immediate, physical, grounded ac"
+          }
+        ],
+        "stream": {
+          "stream": "runs/721-hypothesis/streams/d02-t01-reporter-5d604266a0fa.ndjson",
+          "sha256": "9920b13afc22c6ebd2c25b563ac1a05d8b328731f579122b9ea40f56f43424d4",
+          "original_emission_take": "721-hypothesis",
+          "original_emission_day": 2,
+          "original_emission_phase": "evening",
+          "cache_hit": false,
+          "model": "qwen3.8:27b"
+        }
+      },
+      {
+        "day": 3,
+        "phase": "afternoon",
+        "physical_action": "take_coach",
+        "possible_film_references": [],
+        "stream": {
+          "stream": "runs/721-hypothesis/streams/d03-t00-reporter-c77e6c1e71a5.ndjson",
+          "sha256": "8ee4514924d640c168366ee1a75bebade1a8318887351c491c6e6fd04d7b827b",
+          "original_emission_take": "721-hypothesis",
+          "original_emission_day": 3,
+          "original_emission_phase": "afternoon",
+          "cache_hit": true,
+          "model": "qwen3.8:27b"
+        }
+      },
+      {
+        "day": 3,
+        "phase": "evening",
+        "physical_action": "call_sister",
+        "possible_film_references": [],
+        "stream": {
+          "stream": "runs/721-hypothesis/streams/d03-t01-reporter-59e7ba7cb979.ndjson",
+          "sha256": "7e68fba964441813d440ae1694b825a97ecf89c6dc234b5f27bb542e2ace5345",
+          "original_emission_take": "721-hypothesis",
+          "original_emission_day": 3,
+          "original_emission_phase": "evening",
+          "cache_hit": true,
+          "model": "qwen3.8:27b"
+        }
+      },
+      {
+        "day": 4,
+        "phase": "alarm",
+        "physical_action": "get_up",
+        "possible_film_references": [],
+        "stream": {
+          "stream": "runs/721-hypothesis/streams/d04-t02-reporter-ec205b04e745.ndjson",
+          "sha256": "a7616fff270d91e668c228b8964189aa1d381acee70b631b3708d6c640fc7e30",
+          "original_emission_take": "721-hypothesis",
+          "original_emission_day": 4,
+          "original_emission_phase": "alarm",
+          "cache_hit": false,
+          "model": "qwen3.8:27b"
+        }
+      }
+    ],
+    "closed_days": [
+      {
+        "day": 1,
+        "afternoon_rehearsal": "rehearse_piano",
+        "evening_action": "sit_at_depot",
+        "producer_evening": "go_dancing",
+        "closed_clock": "Tuesday",
+        "mutual_dance": false,
+        "both_at_party": false,
+        "interview_delivered": false
+      },
+      {
+        "day": 2,
+        "afternoon_rehearsal": "take_coach",
+        "evening_action": "sleep_at_terminal",
+        "producer_evening": "transmit_interview",
+        "closed_clock": "Tuesday",
+        "mutual_dance": false,
+        "both_at_party": false,
+        "interview_delivered": true
+      },
+      {
+        "day": 3,
+        "afternoon_rehearsal": "take_coach",
+        "evening_action": "call_sister",
+        "producer_evening": "transmit_interview",
+        "closed_clock": "Tuesday",
+        "mutual_dance": false,
+        "both_at_party": false,
+        "interview_delivered": true
+      }
+    ]
+  }
+]

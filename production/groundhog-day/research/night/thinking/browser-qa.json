@@ -1,0 +1,62 @@
+[
+  {
+    "mode": "live",
+    "viewport": [
+      1280,
+      810
+    ],
+    "characters": [
+      "Rita",
+      "Larry",
+      "Phil"
+    ],
+    "wake_characters": 5324,
+    "page_errors": [],
+    "offline_web_requests": null
+  },
+  {
+    "mode": "offline",
+    "viewport": [
+      1280,
+      810
+    ],
+    "characters": [
+      "Rita",
+      "Larry",
+      "Phil"
+    ],
+    "wake_characters": 5324,
+    "page_errors": [],
+    "offline_web_requests": []
+  },
+  {
+    "mode": "live",
+    "viewport": [
+      390,
+      844
+    ],
+    "characters": [
+      "Rita",
+      "Larry",
+      "Phil"
+    ],
+    "wake_characters": 5324,
+    "page_errors": [],
+    "offline_web_requests": null
+  },
+  {
+    "mode": "offline",
+    "viewport": [
+      390,
+      844
+    ],
+    "characters": [
+      "Rita",
+      "Larry",
+      "Phil"
+    ],
+    "wake_characters": 5324,
+    "page_errors": [],
+    "offline_web_requests": []
+  }
+]

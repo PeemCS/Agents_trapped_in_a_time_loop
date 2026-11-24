@@ -1,0 +1,12 @@
+{
+  "take": "free-953",
+  "source_sha256": "d881ad19ea4daab11cce1e112772a96088476fb053c9f3cb4d03c2ddadc8c3aa",
+  "usd_sha256": "7420f0e6f7b21791296e17445c58916449c61d6032aa5554bb2929da66fedfd2",
+  "frame_count": 288,
+  "actors": 3,
+  "translated_samples": 864,
+  "max_error_metres": 4.994768902477631e-06,
+  "units_metres": 1,
+  "up": "Y",
+  "checker": "Validation Result with no explicit variants set\nSuccess!"
+}

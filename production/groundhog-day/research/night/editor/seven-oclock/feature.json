@@ -1,0 +1,45 @@
+{
+  "source_sha256": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+  "seed": 711,
+  "opening_edl": "research/night/editor/bulletin-711-edl.json",
+  "opening_video_sha256": "a0876cbb8a863c74edb8b0a2f4495da28762bea8d0b327812a890ff99b40c209",
+  "board_sha256": "2ea35622ceb82179a82a66a07e0193556cb09dd62f0e79c1db8aa5d07cafdc1a",
+  "crew_monitor_start_s": 56.0,
+  "on_air_at_s": 75.0,
+  "actual_final_bulletin": {
+    "channel": "producer_live",
+    "source_role": "producer",
+    "source_place": "inn",
+    "selected_by": "Rita",
+    "source_ids": [
+      "d06-t03-producer"
+    ],
+    "delivered_assignments": [
+      "camera",
+      "reporter"
+    ],
+    "spoken": "Good evening, folks. This is Rita on the scene in western Pennsylvania. We are on the air and ready for the forecast.",
+    "footage": null
+  },
+  "observed_return_s": 7.666666666666668,
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1280,
+        "height": 720,
+        "nb_frames": "1984"
+      }
+    ],
+    "format": {
+      "duration": "82.666667",
+      "size": "4258368"
+    }
+  },
+  "mp4_sha256": "93b1205eeac9e4bf289c55ad375dd170ed8471f14e337fe4622b70251efb2181",
+  "full_decode": true,
+  "audio_streams": 0
+}

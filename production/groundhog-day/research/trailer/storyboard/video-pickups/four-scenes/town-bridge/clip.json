@@ -1,0 +1,17 @@
+{
+  "file": "clip.mp4",
+  "title": "A single Rialto window across the snow",
+  "shot": "S04-D1-DARK-BAY",
+  "scene": "S04",
+  "source": "script-photos/pickups-town/S04-D1-DARK-BAY.jpg",
+  "source_job_id": "ab606baa-c551-4a36-9ddb-f104d59da92a",
+  "model": "Local photographic plate animation",
+  "duration": 7.0,
+  "width": 1280,
+  "height": 548,
+  "frame_rate": "24/1",
+  "frame_count": 168,
+  "codec": "h264",
+  "audio": false,
+  "qa": "Locked roofline composition with three speeds of sparse snow and a faint change in the single lit booth window. The Hearthside bay stays dark. The animation was composited locally from the selected photograph."
+}

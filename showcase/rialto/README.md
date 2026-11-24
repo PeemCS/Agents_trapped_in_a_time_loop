@@ -1,6 +1,8 @@
 # Play It Again
 
-[Watch the three-minute trailer](Play-It-Again.mp4) · [Captions](Play-It-Again.srt) · [All six takes](results.json) · [Timecoded edit sources](cut.json) · [Demo deck](https://chatgpt.com/space/page_79a5cf2403b4819198a7c8bba5b9093c)
+[Current silent 3:07 trailer](../../production/groundhog-day/research/trailer/audio-live/thought-cut/Groundhog-Day-screen-text.mp4) · [Captions](../../production/groundhog-day/research/trailer/audio-live/thought-cut/Groundhog-Day-screen-text.srt) · [Production files and research](../../production/groundhog-day/)
+
+[Watch the silent three-minute trailer](Play-It-Again.mp4) · [Captions](Play-It-Again.srt) · [All six takes](results.json) · [Timecoded edit sources](cut.json) · [Demo deck](https://chatgpt.com/space/page_79a5cf2403b4819198a7c8bba5b9093c)
 
 Follow the later fifty-Tuesday performance in [the dialogue log and decision traces](after-hours/README.md). The new [paper cut](after-hours/story-selects.md) follows Phil and his sister Jo.
 
@@ -13,8 +15,8 @@ The main story follows **take 841**. On the second Tuesday, Rita puts the transf
 | Time | On screen |
 | --- | --- |
 | 0:00–0:21 | Phil calls his sister. The next hotel alarm establishes what stands between him and his promise. |
-| 0:21–1:03 | Rewind to the first Tuesday. Meet Alma, hear Larry commit his camera charge, then stay with the unsent recording after Rita takes the night off. |
-| 1:03–1:30 | Second Tuesday. Return to the same payphone and the same station. Listen to what changes in the two promises. |
+| 0:21–1:03 | Rewind to the first Tuesday. Meet Alma, see Larry commit his camera charge, then stay with the unsent recording after Rita takes the night off. |
+| 1:03–1:30 | Second Tuesday. Return to the same payphone and the same station. Compare the two promises in the captions. |
 | 1:30–2:06 | Try a different take. In 842 Rita sends the interview on the first evening. A separately labelled earlier Rialto take pairs Rita dancing with Phil at an empty depot. The editing-room beat connects the alternatives to writing and games. |
 | 2:06–2:47 | Return to the third Tuesday of 841. Larry delivers his reel, Phil calls his sister and Rita puts the interview on the wire. |
 | 2:47–3:00 | The hotel clock resets. Read the daughter's reply, then hold the title. |
@@ -27,7 +29,7 @@ Phil called his sister on all 18 evenings. Rita transmitted a deliverable interv
 
 For a closer test, we replayed the first evening of 841 with Larry’s and Phil’s actions fixed and the recorded interview already available. The original Rita took the night off. All six fresh draws of exactly her observation chose transmission and delivered the recording. Changing her action at that moment was enough to change what reached Pittsburgh. Each replay covers that one evening. [Matched replays](runpod/evening-replay.json)
 
-The writers supplied the cast, goals, available actions, clock, and the daughter’s conditional written reply. The performances supplied the character lines and selected actions. The film uses exact excerpts from their dialogue, newly voiced for the trailer, with editorial narration and score. Its pictures restage verified events with the project’s own sets and character graphics. The signal indicators illustrate the delivery state in the log. The evening resolver records delivery when a usable recording is available and Rita transmits. It leaves open which copy played when both were available.
+The writers supplied the cast, goals, available actions, clock, and the daughter’s conditional written reply. The performances supplied the character lines and selected actions. The captions present excerpts from their dialogue alongside editorial narration. Its pictures restage verified events with the project’s own sets and character graphics. The signal indicators illustrate the delivery state in the log. The evening resolver records delivery when a usable recording is available and Rita transmits. It leaves open which copy played when both were available.
 
 [Earlier Rialto take at the depot and ballroom](earlier-721.json) · [First night off](runpod/rialto-841/day-1-evening-producer.json) · [Second night off](runpod/rialto-841/day-2-evening-producer.json) · [Third-night transmission](runpod/rialto-841/day-3-evening-producer.json) · [The reply in Phil’s dawn observation](runpod/rialto-841/day-4-alarm-reporter.json) · [First-night transmission in 842](runpod/rialto-842/day-1-evening-producer.json)
 

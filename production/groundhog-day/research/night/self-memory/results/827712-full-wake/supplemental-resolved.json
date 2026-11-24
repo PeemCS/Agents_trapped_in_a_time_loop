@@ -1,0 +1,60 @@
+{
+  "fare_cash": false,
+  "city": true,
+  "positions": {
+    "reporter": "Pittsburgh",
+    "producer": "Rialto",
+    "camera": "Rialto"
+  },
+  "camera_reel": "film_Alma",
+  "piano": false,
+  "at_patch": true,
+  "seen": {
+    "reporter": [
+      "Phil rides the coach and steps off at Pittsburgh.",
+      "Rita said in the lobby: Ballroom's yours. I'm on the Rialto. One mic, one cable, a chair if her back's bad. I'll handle the rest.",
+      "Larry said in the lobby: I say to whoever's still at the table: 'I'm taking the Rialto. You guys cover the ballroom tonight.' I don't wait for an answer. I'm already at the door with the bag over my shoulder.",
+      "You are now at Pittsburgh."
+    ],
+    "producer": [
+      "Rita records Alma at the Rialto and puts her recording on the patch.",
+      "Larry said in the lobby: I say to whoever's still at the table: 'I'm taking the Rialto. You guys cover the ballroom tonight.' I don't wait for an answer. I'm already at the door with the bag over my shoulder.",
+      "Larry records Alma on his last charged take. The reel stays with him.",
+      "You are now at Rialto."
+    ],
+    "camera": [
+      "Rita said in the lobby: Ballroom's yours. I'm on the Rialto. One mic, one cable, a chair if her back's bad. I'll handle the rest.",
+      "Rita records Alma at the Rialto and puts her recording on the patch.",
+      "Larry records Alma on his last charged take. The reel stays with him.",
+      "You are now at Rialto."
+    ]
+  },
+  "afternoon_memory": {
+    "reporter": [
+      {
+        "what_you_did": "Phil rides the coach and steps off at Pittsburgh.",
+        "what_you_said": "",
+        "your_intention": "Be at the terminal. Be on the bench. Wake at six. Be at her door at 7:15 with the gloves, the rolled blankets, and the coffee money in my pocket. The couch is in Pittsburgh. I am in Pittsburgh. That is the whole forecast. Nothing else is happening tonight. The ballroom is for someone else. The station line is for someone else. I have a ticket in my breast pocket and a floor with no elevator and a sister who is going to be standing in her kitchen holding a spoon. That is enough. That is the whole arithmetic."
+      }
+    ],
+    "producer": [
+      {
+        "what_you_did": "Rita records Alma at the Rialto and puts her recording on the patch.",
+        "what_you_said": "Ballroom's yours. I'm on the Rialto. One mic, one cable, a chair if her back's bad. I'll handle the rest.",
+        "your_intention": "Be in the Rialto booth before the last reel loads onto the regional line. Sit beside Alma, not across. Let her talk. Record it. Send the file to Pittsburgh tonight with no title, no slug, no broadcast package. One voice, one daughter, one machine about to stop."
+      }
+    ],
+    "camera": [
+      {
+        "what_you_did": "Larry records Alma on his last charged take. The reel stays with him.",
+        "what_you_said": "I say to whoever's still at the table: 'I'm taking the Rialto. You guys cover the ballroom tonight.' I don't wait for an answer. I'm already at the door with the bag over my shoulder.",
+        "your_intention": "The Rialto is closing. This is the one window where she says it to someone who isn't in the room. The party is a rehearsal. The lights will be there again tomorrow. Alma at the booth, talking to Pittsburgh, is not coming back. The daughter already asked to hear it once. I'm not going to be the reason it's gone."
+      }
+    ]
+  },
+  "effects": {
+    "reporter": "Phil rides the coach and steps off at Pittsburgh.",
+    "producer": "Rita records Alma at the Rialto and puts her recording on the patch.",
+    "camera": "Larry records Alma on his last charged take. The reel stays with him."
+  }
+}

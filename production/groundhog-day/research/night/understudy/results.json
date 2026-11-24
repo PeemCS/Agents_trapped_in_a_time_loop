@@ -1,0 +1,81 @@
+{
+  "scope": "Local fresh small-model productions following archived opening memories; two complete days and a third alarm per crew.",
+  "runs": [
+    {
+      "seed": 721,
+      "model": "qwen3:0.6b",
+      "digest": "7df6b6e09427a769808717c0a93cadc4ae99ed4eb8bf5ca557c90846becea435",
+      "wall_s": 10.23,
+      "committed_decisions": 13,
+      "native_calls": 13,
+      "generated_tokens": 876,
+      "median_call_seconds": 0.641,
+      "days": [
+        {
+          "afternoon": [
+            "take_coach",
+            "visit_party",
+            "keep_battery"
+          ],
+          "evening": [
+            "sleep_at_terminal",
+            "take_evening_off",
+            "deliver_reel"
+          ],
+          "delivered": false
+        },
+        {
+          "afternoon": [
+            "take_coach",
+            "visit_party",
+            "keep_battery"
+          ],
+          "evening": [
+            "sleep_at_terminal",
+            "go_to_party_for_work",
+            "deliver_reel"
+          ],
+          "delivered": false
+        }
+      ]
+    },
+    {
+      "seed": 731,
+      "model": "qwen3:0.6b",
+      "digest": "7df6b6e09427a769808717c0a93cadc4ae99ed4eb8bf5ca557c90846becea435",
+      "wall_s": 8.99,
+      "committed_decisions": 13,
+      "native_calls": 13,
+      "generated_tokens": 971,
+      "median_call_seconds": 0.629,
+      "days": [
+        {
+          "afternoon": [
+            "take_coach",
+            "take_time_off",
+            "keep_battery"
+          ],
+          "evening": [
+            "call_sister",
+            "take_evening_off",
+            "go_home"
+          ],
+          "delivered": false
+        },
+        {
+          "afternoon": [
+            "take_coach",
+            "take_time_off",
+            "keep_battery"
+          ],
+          "evening": [
+            "call_sister",
+            "take_evening_off",
+            "go_home"
+          ],
+          "delivered": false
+        }
+      ]
+    }
+  ]
+}

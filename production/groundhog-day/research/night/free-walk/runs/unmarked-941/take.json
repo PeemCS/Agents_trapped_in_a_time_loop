@@ -1,0 +1,577 @@
+{
+  "condition": "unmarked",
+  "seed": 941,
+  "model": "qwen3:0.6b",
+  "revision": "7df6b6e09427a769808717c0a93cadc4ae99ed4eb8bf5ca557c90846becea435",
+  "initial": {
+    "reporter": {
+      "x": 6.75,
+      "y": 8.25
+    },
+    "producer": {
+      "x": 8.22,
+      "y": 8.4
+    },
+    "camera": {
+      "x": 11.0,
+      "y": 7.3
+    }
+  },
+  "ticks": [
+    [
+      {
+        "id": "unmarked-941-t00-reporter",
+        "role": "reporter",
+        "actor": "Phil",
+        "say": "I'll continue to the library for a quick browse. The coordinates are close to my current location and available to the public.",
+        "raw": "runs/unmarked-941/calls/unmarked-941-t00-reporter.json",
+        "raw_sha256": "704241eae685310988f90bae93e9c6c29b05689517d2e27d882244c13ca42df6",
+        "seed": 94100,
+        "start": {
+          "x": 6.75,
+          "y": 8.25
+        },
+        "requested": {
+          "x": 6.75,
+          "y": 8.25
+        },
+        "quantized": {
+          "x": 6.800000000000001,
+          "y": 8.4
+        },
+        "resolved": {
+          "x": 6.800000000000001,
+          "y": 8.4
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 6.75,
+            "y": 8.25
+          },
+          {
+            "x": 6.800000000000001,
+            "y": 8.4
+          }
+        ],
+        "length": 0.15811388300841955,
+        "requestedDoorDistance": 0,
+        "resolvedDoorDistance": 0.15811388300841955,
+        "nearDoor": "inn",
+        "gridError": 0.15811388300841955,
+        "adjustment": 0,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            6.75,
+            0,
+            8.25
+          ],
+          [
+            6.800000000000001,
+            0,
+            8.4
+          ]
+        ]
+      },
+      {
+        "id": "unmarked-941-t00-producer",
+        "role": "producer",
+        "actor": "Rita",
+        "say": "I'm currently at coordinates (8.22, 8.4) on the map. Let me check the surrounding area for any potential places to explore.",
+        "raw": "runs/unmarked-941/calls/unmarked-941-t00-producer.json",
+        "raw_sha256": "33d19f0e95e42bfc646f9f47a8643a2be6457f9e7ac1e95cdf6f8f54bf3b9b07",
+        "seed": 94101,
+        "start": {
+          "x": 8.22,
+          "y": 8.4
+        },
+        "requested": {
+          "x": 8.22,
+          "y": 8.4
+        },
+        "quantized": {
+          "x": 8.4,
+          "y": 8.4
+        },
+        "resolved": {
+          "x": 8.4,
+          "y": 8.4
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 8.22,
+            "y": 8.4
+          },
+          {
+            "x": 8.4,
+            "y": 8.4
+          }
+        ],
+        "length": 0.17999999999999972,
+        "requestedDoorDistance": 1.477633242722971,
+        "resolvedDoorDistance": 1.6568041525780897,
+        "nearDoor": "inn",
+        "gridError": 0.17999999999999972,
+        "adjustment": 0,
+        "requestedOffDoor": true,
+        "resolvedOffDoor": true,
+        "yUp": [
+          [
+            8.22,
+            0,
+            8.4
+          ],
+          [
+            8.4,
+            0,
+            8.4
+          ]
+        ]
+      },
+      {
+        "id": "unmarked-941-t00-camera",
+        "role": "camera",
+        "actor": "Larry",
+        "say": "I'll keep heading towards the city center for a quick walk.",
+        "raw": "runs/unmarked-941/calls/unmarked-941-t00-camera.json",
+        "raw_sha256": "f9810de023036e74aa8378327c083c5a58556cf5a189b9c5898149b98b8eaf5a",
+        "seed": 94102,
+        "start": {
+          "x": 11,
+          "y": 7.3
+        },
+        "requested": {
+          "x": 11,
+          "y": 7.3
+        },
+        "quantized": {
+          "x": 11.200000000000001,
+          "y": 7.2
+        },
+        "resolved": {
+          "x": 11.200000000000001,
+          "y": 7.2
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 11,
+            "y": 7.3
+          },
+          {
+            "x": 11.200000000000001,
+            "y": 7.2
+          }
+        ],
+        "length": 0.22360679774997977,
+        "requestedDoorDistance": 3.4731109973624505,
+        "resolvedDoorDistance": 3.288236609491475,
+        "nearDoor": "studio",
+        "gridError": 0.22360679774997977,
+        "adjustment": 0,
+        "requestedOffDoor": true,
+        "resolvedOffDoor": true,
+        "yUp": [
+          [
+            11,
+            0,
+            7.3
+          ],
+          [
+            11.200000000000001,
+            0,
+            7.2
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "id": "unmarked-941-t01-reporter",
+        "role": "reporter",
+        "actor": "Phil",
+        "say": "I'm choosing a new destination for my walk. The coordinates are in the area near the bookstore, which is a convenient spot for both the map and the ambiance.",
+        "raw": "runs/unmarked-941/calls/unmarked-941-t01-reporter.json",
+        "raw_sha256": "8a60c0cab95fc0d44d96bba69c180ff81cdd1db939508bfa81592bf29ed33e8c",
+        "seed": 94107,
+        "start": {
+          "x": 6.800000000000001,
+          "y": 8.4
+        },
+        "requested": {
+          "x": 18.1,
+          "y": 17.25
+        },
+        "quantized": {
+          "x": 18,
+          "y": 17.2
+        },
+        "resolved": {
+          "x": 18,
+          "y": 16.8
+        },
+        "status": "adjusted",
+        "reason": "Closest reachable point beside building_8.",
+        "path": [
+          {
+            "x": 6.800000000000001,
+            "y": 8.4
+          },
+          {
+            "x": 14,
+            "y": 12.4
+          },
+          {
+            "x": 18,
+            "y": 16.8
+          }
+        ],
+        "length": 14.182931611717002,
+        "requestedDoorDistance": 4.295346318982905,
+        "resolvedDoorDistance": 3.8343839140075686,
+        "nearDoor": "depot",
+        "gridError": 0.11180339887499108,
+        "adjustment": 0.3999999999999986,
+        "requestedOffDoor": true,
+        "resolvedOffDoor": true,
+        "yUp": [
+          [
+            6.800000000000001,
+            0,
+            8.4
+          ],
+          [
+            14,
+            0,
+            12.4
+          ],
+          [
+            18,
+            0,
+            16.8
+          ]
+        ]
+      },
+      {
+        "id": "unmarked-941-t01-producer",
+        "role": "producer",
+        "actor": "Rita",
+        "say": "I'm at the chosen grid point, just like my previous walk.",
+        "raw": "runs/unmarked-941/calls/unmarked-941-t01-producer.json",
+        "raw_sha256": "6d22f0ab32fdb98af72e4373d0a76fded7bee61dcf4357c7b4bba06e1cea697f",
+        "seed": 94108,
+        "start": {
+          "x": 8.4,
+          "y": 8.4
+        },
+        "requested": {
+          "x": 8.4,
+          "y": 8.4
+        },
+        "quantized": {
+          "x": 8.4,
+          "y": 8.4
+        },
+        "resolved": {
+          "x": 8.4,
+          "y": 8.4
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 8.4,
+            "y": 8.4
+          },
+          {
+            "x": 8.4,
+            "y": 8.4
+          }
+        ],
+        "length": 0,
+        "requestedDoorDistance": 1.6568041525780897,
+        "resolvedDoorDistance": 1.6568041525780897,
+        "nearDoor": "inn",
+        "gridError": 0,
+        "adjustment": 0,
+        "requestedOffDoor": true,
+        "resolvedOffDoor": true,
+        "yUp": [
+          [
+            8.4,
+            0,
+            8.4
+          ],
+          [
+            8.4,
+            0,
+            8.4
+          ]
+        ]
+      },
+      {
+        "id": "unmarked-941-t01-camera",
+        "role": "camera",
+        "actor": "Larry",
+        "say": "I'm planning a stroll to the central market area.",
+        "raw": "runs/unmarked-941/calls/unmarked-941-t01-camera.json",
+        "raw_sha256": "ed44baeb5750171612525b1a25f8301bbd2ca90a0887487b1ce7002b3c0caa2c",
+        "seed": 94109,
+        "start": {
+          "x": 11.200000000000001,
+          "y": 7.2
+        },
+        "requested": {
+          "x": 18.2,
+          "y": 12.3
+        },
+        "quantized": {
+          "x": 18,
+          "y": 12.4
+        },
+        "resolved": {
+          "x": 18,
+          "y": 12.8
+        },
+        "status": "adjusted",
+        "reason": "Closest reachable point beside depot.",
+        "path": [
+          {
+            "x": 11.200000000000001,
+            "y": 7.2
+          },
+          {
+            "x": 16,
+            "y": 12.8
+          },
+          {
+            "x": 18,
+            "y": 12.8
+          }
+        ],
+        "length": 9.375635565834308,
+        "requestedDoorDistance": 1.25,
+        "resolvedDoorDistance": 0.8381527307120111,
+        "nearDoor": "depot",
+        "gridError": 0.2236067977499782,
+        "adjustment": 0.40000000000000036,
+        "requestedOffDoor": true,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            11.200000000000001,
+            0,
+            7.2
+          ],
+          [
+            16,
+            0,
+            12.8
+          ],
+          [
+            18,
+            0,
+            12.8
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "id": "unmarked-941-t02-reporter",
+        "role": "reporter",
+        "actor": "Phil",
+        "say": "I've just reached the closest reachable point beside building_8. That's where I'll start my next walk.",
+        "raw": "runs/unmarked-941/calls/unmarked-941-t02-reporter.json",
+        "raw_sha256": "d01649cd8160a85312853eef72ff01898b8050911b80a0d24bd70082b9f5a442",
+        "seed": 94114,
+        "start": {
+          "x": 18,
+          "y": 16.8
+        },
+        "requested": {
+          "x": 18,
+          "y": 16.8
+        },
+        "quantized": {
+          "x": 18,
+          "y": 16.8
+        },
+        "resolved": {
+          "x": 18,
+          "y": 16.8
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 18,
+            "y": 16.8
+          },
+          {
+            "x": 18,
+            "y": 16.8
+          }
+        ],
+        "length": 0,
+        "requestedDoorDistance": 3.8343839140075686,
+        "resolvedDoorDistance": 3.8343839140075686,
+        "nearDoor": "depot",
+        "gridError": 0,
+        "adjustment": 0,
+        "requestedOffDoor": true,
+        "resolvedOffDoor": true,
+        "yUp": [
+          [
+            18,
+            0,
+            16.8
+          ],
+          [
+            18,
+            0,
+            16.8
+          ]
+        ]
+      },
+      {
+        "id": "unmarked-941-t02-producer",
+        "role": "producer",
+        "actor": "Rita",
+        "say": "I'll check for any nearby activities. My next destination is at coordinates (17, 17).",
+        "raw": "runs/unmarked-941/calls/unmarked-941-t02-producer.json",
+        "raw_sha256": "0e48e891bb0871a3ea0fe04872c1bbb13a27fbcb6daab4d11fce43d8391bafc8",
+        "seed": 94115,
+        "start": {
+          "x": 8.4,
+          "y": 8.4
+        },
+        "requested": {
+          "x": 17,
+          "y": 17
+        },
+        "quantized": {
+          "x": 17.2,
+          "y": 17.2
+        },
+        "resolved": {
+          "x": 16.8,
+          "y": 17.2
+        },
+        "status": "adjusted",
+        "reason": "Closest reachable point beside building_8.",
+        "path": [
+          {
+            "x": 8.4,
+            "y": 8.4
+          },
+          {
+            "x": 14.8,
+            "y": 13.200000000000001
+          },
+          {
+            "x": 16.8,
+            "y": 17.2
+          }
+        ],
+        "length": 12.472135954999578,
+        "requestedDoorDistance": 3.955060050113018,
+        "resolvedDoorDistance": 4.169232543286592,
+        "nearDoor": "depot",
+        "gridError": 0.282842712474618,
+        "adjustment": 0.3999999999999986,
+        "requestedOffDoor": true,
+        "resolvedOffDoor": true,
+        "yUp": [
+          [
+            8.4,
+            0,
+            8.4
+          ],
+          [
+            14.8,
+            0,
+            13.200000000000001
+          ],
+          [
+            16.8,
+            0,
+            17.2
+          ]
+        ]
+      },
+      {
+        "id": "unmarked-941-t02-camera",
+        "role": "camera",
+        "actor": "Larry",
+        "say": "I'll head to the central area nearby. There's an open space in the middle, so I'll stay there.",
+        "raw": "runs/unmarked-941/calls/unmarked-941-t02-camera.json",
+        "raw_sha256": "f1e656e726121c1fc69ad083e6ec05c73f74369f8c317a9dfbec1e9f46ed2220",
+        "seed": 94116,
+        "start": {
+          "x": 18,
+          "y": 12.8
+        },
+        "requested": {
+          "x": 19,
+          "y": 18
+        },
+        "quantized": {
+          "x": 19.200000000000003,
+          "y": 18
+        },
+        "resolved": {
+          "x": 20,
+          "y": 18
+        },
+        "status": "adjusted",
+        "reason": "Closest reachable point beside building_8.",
+        "path": [
+          {
+            "x": 18,
+            "y": 12.8
+          },
+          {
+            "x": 20,
+            "y": 17.2
+          },
+          {
+            "x": 20,
+            "y": 18
+          }
+        ],
+        "length": 5.633218389437829,
+        "requestedDoorDistance": 5.2671149598238305,
+        "resolvedDoorDistance": 5.687046685231272,
+        "nearDoor": "depot",
+        "gridError": 0.20000000000000284,
+        "adjustment": 0.7999999999999972,
+        "requestedOffDoor": true,
+        "resolvedOffDoor": true,
+        "yUp": [
+          [
+            18,
+            0,
+            12.8
+          ],
+          [
+            20,
+            0,
+            17.2
+          ],
+          [
+            20,
+            0,
+            18
+          ]
+        ]
+      }
+    ]
+  ]
+}

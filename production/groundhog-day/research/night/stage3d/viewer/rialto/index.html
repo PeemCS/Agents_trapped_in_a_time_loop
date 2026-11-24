@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1d2421"><title>Eight bars · A Rialto performance</title><link rel="stylesheet" href="style.css">
+<script defer src="../vendor/three-r153.min.js"></script><script defer src="take.js"></script><script defer src="sets.js"></script><script defer src="rialto.js"></script></head>
+<body>
+<header><a href="../index.html" class="back">← <span>Town stage</span></a><h1>Eight bars</h1><a href="../../../editor/rialto-cut/index.html" class="film">Watch the short ↗</a></header>
+<main>
+<section id="screen" aria-label="Interactive 3D shot stage"><canvas id="view" aria-label="Recorded Rialto performance with a movable camera"></canvas>
+<div class="overlay"><div class="slate"><span class="dot"></span><b id="where">Ballroom</b></div><div id="when">Tuesday · Afternoon</div></div>
+<div id="split-name" hidden></div><div id="split-divider" hidden></div><div id="labels" aria-hidden="true"></div><div id="receipt" hidden><small>From Pittsburgh</small><q>I know that voice. Play it again.</q><b>Alma’s daughter · written reply</b></div>
+<div class="angles" aria-label="Camera view"><button id="parallel" aria-pressed="false" hidden>Split scene</button><button data-angle="house" aria-pressed="true">House</button><button data-angle="close" aria-pressed="false">Close</button><button data-angle="overhead" aria-pressed="false">Overhead</button><button id="full" title="Fullscreen" aria-label="Toggle fullscreen">⛶</button></div>
+<div id="cut-caption" hidden><b></b><span></span></div><div id="fallback" hidden><p>The interactive 3D stage needs WebGL. Watch the illustrated short here.</p><video controls preload="metadata" playsinline src="../../../editor/rialto-cut/film.mp4"></video></div></section>
+<section class="dock" aria-label="Recorded performance controls"><div class="meta"><span>721-HYPOTHESIS</span><span>Recorded decisions · Movie theory supplied · Editorial 3D sets</span></div>
+<div class="top"><div class="decision"><h2 id="heading">The last eight bars</h2><p id="effect"></p></div>
+<div class="transport"><button id="prev" aria-label="Previous shot">‹</button><button class="play" id="play">Play</button><button id="next" aria-label="Next shot">›</button></div></div>
+<div class="track"><span id="count"></span><input id="time" type="range" min="0" max="9" step=".001" value="0" aria-label="Performance position"><label class="shot-select"><span class="sr">Choose shot</span><select id="shots"></select></label></div>
+<div class="crew"><strong id="crew-label">Same slot</strong><div id="other"></div><span id="source"></span></div>
+</section></main>
+</body></html>

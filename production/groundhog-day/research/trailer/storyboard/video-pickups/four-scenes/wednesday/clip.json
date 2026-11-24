@@ -1,0 +1,22 @@
+{
+  "title": "Phil opens his eyes on Wednesday",
+  "file": "clip.mp4",
+  "scene": "S06",
+  "duration": 12.0,
+  "provider": "Higgsfield",
+  "model": "Seedance 2.5",
+  "job_id": "c6590e98-53e2-4699-b4e4-9ea318f0e926",
+  "source_files": [
+    "photos/S06-C1.jpg",
+    "photos/S06-C2-ALT.jpg"
+  ],
+  "source_job_ids": [
+    "631a1d0d-8056-4171-9351-96bbbd373250",
+    "f65b492e-5d94-4a4b-8617-8e7e9f6d2813"
+  ],
+  "source_duration": 5.041667,
+  "width": 1470,
+  "height": 630,
+  "edit": "Soft eyelid opening, slowed continuous POV, held morning light and the on-screen Wednesday subtitle at 10 seconds.",
+  "audio": false
+}

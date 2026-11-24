@@ -1,0 +1,60 @@
+{
+  "source_sha256": "b23ac8578f5812b7016eba28439a79c7c3804b1e46647e962781f1d0cf728c21",
+  "source_type": "live_model",
+  "source_path": "research/night/takes/heldout/v2/seed-712.json",
+  "final_day": 6,
+  "event_ids": [
+    "d06-t00-reporter",
+    "d06-t01-reporter",
+    "d06-t02-reporter",
+    "d06-t03-reporter"
+  ],
+  "bulletin": {
+    "channel": "camera_take",
+    "source_role": "camera",
+    "source_place": "square",
+    "selected_by": "Rita",
+    "source_ids": [
+      "d06-t03-producer",
+      "d06-t03-camera",
+      "d06-t02-camera"
+    ],
+    "delivered_assignments": [
+      "camera"
+    ],
+    "spoken": "",
+    "footage": "the festival"
+  },
+  "source_rows": [
+    {
+      "event_id": "d06-t03-producer",
+      "slot": 23,
+      "actor": "Rita",
+      "action": "patch_camera_line",
+      "place": "square"
+    },
+    {
+      "event_id": "d06-t03-camera",
+      "slot": 23,
+      "actor": "Larry",
+      "action": "send_camera_take",
+      "place": "square"
+    },
+    {
+      "event_id": "d06-t02-camera",
+      "slot": 22,
+      "actor": "Larry",
+      "action": "film_festival",
+      "place": "square"
+    }
+  ],
+  "duration_s": 26.0,
+  "frames": 312,
+  "fps": 12,
+  "on_air_from_s": 19.0,
+  "spoken_cue": null,
+  "control_room": "Three simultaneous camera views. Monitors and return images are staged renderings of recorded event geometry.",
+  "video_sha256": "55e38a2eed85c3cf0d9835abff9c1cc608b3da3a1b2a3838bbdac621455f3616",
+  "full_decode": true,
+  "audio_streams": 0
+}

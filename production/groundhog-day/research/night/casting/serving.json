@@ -1,0 +1,61 @@
+{
+  "scope": "Eight receipt-memory six-day takes per checkpoint; same four seeds and two casts, same rented H100 SXM, Q4_K_M, 3 parallel actor slots and same local-to-SSH transport. Job wall includes cold/loading and program overhead if it occurred in those windows. These slices are part of total rental time and are not extra charges. Output/wall second is useful end-to-end production throughput, not a kernel decoding benchmark. Distinct checkpoint releases and parameter counts move together.",
+  "families": {
+    "q4": {
+      "name": "qwen3.5:4b",
+      "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+      "parameters": "4.2B",
+      "quantization": "Q4_K_M",
+      "backend_family_tag": "qwen35",
+      "runs": 8,
+      "matched_seeds": 4,
+      "committed_lead_slots": 192,
+      "observed_generation_attempts": 378,
+      "reused_decisions": 198,
+      "provider_input_tokens": 266353,
+      "provider_output_tokens": 38262,
+      "client_request_median_s": 4.179,
+      "client_request_p95_s": 6.281,
+      "per_request_server_time_median_s": 3.301,
+      "median_client_minus_provider_wall_s": 0.854,
+      "aggregate_output_tokens_per_wall_second": 44.32,
+      "total_shoot_wall_s": 863.3,
+      "take_median_s": 102.74,
+      "take_range_s": [
+        92.79,
+        149.34
+      ],
+      "rental_estimate_during_these_8_job_windows_usd": 1.053,
+      "confirmed_payoff_worlds": 4,
+      "confirmed_payoff_events": 8
+    },
+    "q27": {
+      "name": "qwen3.8:27b",
+      "digest": "aaee06c39dcf2437cde036998d960e1fc1494b8191be7cc9657d01e509097813",
+      "parameters": "27.3B",
+      "quantization": "Q4_K_M",
+      "backend_family_tag": "qwen35",
+      "runs": 8,
+      "matched_seeds": 4,
+      "committed_lead_slots": 192,
+      "observed_generation_attempts": 386,
+      "reused_decisions": 190,
+      "provider_input_tokens": 262584,
+      "provider_output_tokens": 31291,
+      "client_request_median_s": 4.009,
+      "client_request_p95_s": 5.934,
+      "per_request_server_time_median_s": 3.175,
+      "median_client_minus_provider_wall_s": 0.84,
+      "aggregate_output_tokens_per_wall_second": 33.68,
+      "total_shoot_wall_s": 929.0,
+      "take_median_s": 105.81,
+      "take_range_s": [
+        99.22,
+        191.45
+      ],
+      "rental_estimate_during_these_8_job_windows_usd": 1.133,
+      "confirmed_payoff_worlds": 5,
+      "confirmed_payoff_events": 8
+    }
+  }
+}

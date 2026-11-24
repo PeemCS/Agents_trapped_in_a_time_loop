@@ -1,0 +1,174 @@
+{
+  "source_sha256": "759c339dcf0af3b648a51cdcbf6603e8b8637a3bd22969bcbefe89ed4cdcb5a2",
+  "checked_shots": 10,
+  "observations": [
+    {
+      "event_id": "d01-t00-reporter",
+      "view": "action",
+      "camera_actor": "Phil",
+      "at": "inn",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 1
+      }
+    },
+    {
+      "event_id": "d01-t02-reporter",
+      "view": "action",
+      "camera_actor": "Larry",
+      "at": "inn",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 0,
+        "camera_footage": "the festival"
+      }
+    },
+    {
+      "event_id": "d02-t02-reporter",
+      "view": "action",
+      "camera_actor": "Phil",
+      "at": "inn",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 0,
+        "camera_footage": "the festival"
+      }
+    },
+    {
+      "event_id": "d02-t03-reporter",
+      "view": "action",
+      "camera_actor": "Larry",
+      "at": "inn",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 0,
+        "camera_footage": "the festival"
+      }
+    },
+    {
+      "event_id": "d04-t02-reporter",
+      "view": "action",
+      "camera_actor": "Rita",
+      "at": "inn",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 0,
+        "camera_footage": "the festival"
+      }
+    },
+    {
+      "event_id": "d05-t02-reporter",
+      "view": "action",
+      "camera_actor": "Phil",
+      "at": "depot",
+      "framing": "street",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 0,
+        "camera_footage": "the festival"
+      }
+    },
+    {
+      "event_id": "d05-t03-reporter",
+      "view": "action",
+      "camera_actor": "Phil",
+      "at": "depot",
+      "framing": "close",
+      "props": {
+        "marked": true,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 0,
+        "camera_footage": "the festival"
+      }
+    },
+    {
+      "event_id": "d06-t00-reporter",
+      "view": "morning",
+      "camera_actor": "Phil",
+      "at": "inn",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 1
+      }
+    },
+    {
+      "event_id": "d06-t02-reporter",
+      "view": "action",
+      "camera_actor": "Phil",
+      "at": "depot",
+      "framing": "street",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 0,
+        "camera_footage": "the festival"
+      }
+    },
+    {
+      "event_id": "d06-t03-reporter",
+      "view": "action",
+      "camera_actor": "Phil",
+      "at": "depot",
+      "framing": "close",
+      "props": {
+        "marked": false,
+        "weather_tape": false,
+        "aired": false,
+        "band_recorded": false,
+        "called_sister": false,
+        "dishes": 2,
+        "camera_battery": 0,
+        "camera_footage": "the festival"
+      }
+    }
+  ]
+}

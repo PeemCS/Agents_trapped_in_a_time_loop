@@ -1,0 +1,66 @@
+{
+  "Take 01": {
+    "path": "research/night/takes/q27/film-receipts/seed-704.json",
+    "sha256": "a420bbbb7c44482c4d10d07ff86e1964b2a8a241a1f438dee6984df9530e754b"
+  },
+  "Take 02": {
+    "path": "research/night/takes/q27/film-receipts/seed-702.json",
+    "sha256": "b0e3497d0cf5ec1bbb588f96954d83fc9649dbdc4ddbde6cb38c0aac85de731a"
+  },
+  "Take 03": {
+    "path": "research/night/takes/q27/film-receipts/seed-701.json",
+    "sha256": "e00c059b31452a7358d24f1aed8947af67fbd1ea38c94b58aa85fa15e8415b95"
+  },
+  "Take 04": {
+    "path": "research/night/takes/q27/neutral-receipts/seed-704.json",
+    "sha256": "217c53b59b23734b0070f82f653444187d6ac960e01679e94db3a2f18affa802"
+  },
+  "Take 05": {
+    "path": "research/night/takes/q27/neutral-transcript/seed-701.json",
+    "sha256": "fda063ac34079ad7bae584dfc70c13a4a724fcd3645e3fb0e18f1cdac8fdd528"
+  },
+  "Take 06": {
+    "path": "research/night/takes/q27/film-transcript/seed-702.json",
+    "sha256": "759c339dcf0af3b648a51cdcbf6603e8b8637a3bd22969bcbefe89ed4cdcb5a2"
+  },
+  "Take 07": {
+    "path": "research/night/takes/q27/neutral-transcript/seed-702.json",
+    "sha256": "f081a3b4a0351de84a4f87c34df9ba851e5f625dd81f66eaba867fbdab2f227b"
+  },
+  "Take 08": {
+    "path": "research/night/takes/q27/neutral-receipts/seed-702.json",
+    "sha256": "cb3415220dfccbea19c6802d3920c9384fe00e2375448d85bc605d2a7a2005eb"
+  },
+  "Take 09": {
+    "path": "research/night/takes/q27/film-transcript/seed-704.json",
+    "sha256": "5a5772d75eb5e1ddf38815a5ec3a1be28812f3318145c5b61a740e7b32dc9292"
+  },
+  "Take 10": {
+    "path": "research/night/takes/q27/neutral-transcript/seed-703.json",
+    "sha256": "ade5878c64049db6318b4798edaf254025ec6078bef8ea4935196aa42ea2b682"
+  },
+  "Take 11": {
+    "path": "research/night/takes/q27/neutral-receipts/seed-703.json",
+    "sha256": "34dfe8d46792018322f7226350eb4d538bfc9ba6fb6a141951e54530a39329f3"
+  },
+  "Take 12": {
+    "path": "research/night/takes/q27/film-receipts/seed-703.json",
+    "sha256": "ba92c3ec1294d3ab9ea2451b6b3059201d4cee71dde3f3dc1d1a3d2129f25e39"
+  },
+  "Take 13": {
+    "path": "research/night/takes/q27/film-transcript/seed-701.json",
+    "sha256": "9695d76c0cf799ac32810b53e3da5c26814e227ba6d710e675f0d5c4c798646d"
+  },
+  "Take 14": {
+    "path": "research/night/takes/q27/neutral-transcript/seed-704.json",
+    "sha256": "cd8e08ae1859ccb90cc1588b4f818088528b4ac3140017dbe80e5dc725838e13"
+  },
+  "Take 15": {
+    "path": "research/night/takes/q27/neutral-receipts/seed-701.json",
+    "sha256": "265cdd405322e5eb26a0f589d7bda1dde5d2e7bf2a4dbb945b04a2564284a7d0"
+  },
+  "Take 16": {
+    "path": "research/night/takes/q27/film-transcript/seed-703.json",
+    "sha256": "9c701182121f556c969d9d02ffb88f14ac5c0364a5f96e47f8392c30e009021a"
+  }
+}

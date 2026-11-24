@@ -1,0 +1,433 @@
+{
+  "source_sha256": "9695d76c0cf799ac32810b53e3da5c26814e227ba6d710e675f0d5c4c798646d",
+  "exact_feasible_cut_paths": 30147950800,
+  "constraints": "60 to 82 estimated seconds by default; first and last reporter decision; three distinct focused actors; all selected lines whole and from their speaker; first closed coach trip with hero arrival, city evening and next-morning hotel when present.",
+  "method": "Exact dynamic-programming partition function over legal edit paths. p(cut) is proportional to exp(beta * editor utility). Utility weights source-confirmed movement, finite physical acts, rarity of the role-specific action and short lines, with a time charge. Actor decisions and world rewards are unchanged. Entropy is over independently selectable film edits, not reward outcomes, agent actions, or inferred personality. Real TTS duration is measured separately.",
+  "temperatures": [
+    {
+      "inverse_temperature": 0,
+      "entropy_bits": 34.81134089225438,
+      "expected_editor_utility": -0.008054675692660829,
+      "expected_estimated_seconds": 77.46896647721742,
+      "sample_seconds": 82,
+      "verified_sample_shots": 15,
+      "chosen_actor_events": [
+        [
+          "d01-t00-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d01-t02-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d02-t02-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d02-t03-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d03-t00-reporter",
+          "Phil",
+          "morning"
+        ],
+        [
+          "d03-t01-reporter",
+          "Rita",
+          "action"
+        ],
+        [
+          "d03-t03-reporter",
+          "Larry",
+          "action"
+        ],
+        [
+          "d04-t02-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d04-t03-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d05-t01-reporter",
+          "Rita",
+          "action"
+        ],
+        [
+          "d05-t02-reporter",
+          "Rita",
+          "action"
+        ],
+        [
+          "d05-t03-reporter",
+          "Rita",
+          "action"
+        ],
+        [
+          "d06-t00-reporter",
+          "Rita",
+          "action"
+        ],
+        [
+          "d06-t01-reporter",
+          "Larry",
+          "action"
+        ],
+        [
+          "d06-t03-reporter",
+          "Phil",
+          "action"
+        ]
+      ],
+      "fraction_of_uniform_path_entropy": 1.0
+    },
+    {
+      "inverse_temperature": 0.5,
+      "entropy_bits": 34.09416666943996,
+      "expected_editor_utility": 1.9406349317433755,
+      "expected_estimated_seconds": 77.35959134074555,
+      "sample_seconds": 82,
+      "verified_sample_shots": 15,
+      "chosen_actor_events": [
+        [
+          "d01-t00-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d02-t02-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d02-t03-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d03-t00-reporter",
+          "Phil",
+          "morning"
+        ],
+        [
+          "d03-t01-reporter",
+          "Larry",
+          "action"
+        ],
+        [
+          "d03-t03-reporter",
+          "Larry",
+          "action"
+        ],
+        [
+          "d04-t02-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d04-t03-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d05-t01-reporter",
+          "Rita",
+          "action"
+        ],
+        [
+          "d05-t02-reporter",
+          "Rita",
+          "action"
+        ],
+        [
+          "d05-t03-reporter",
+          "Rita",
+          "action"
+        ],
+        [
+          "d06-t00-reporter",
+          "Rita",
+          "action"
+        ],
+        [
+          "d06-t01-reporter",
+          "Larry",
+          "action"
+        ],
+        [
+          "d06-t02-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d06-t03-reporter",
+          "Phil",
+          "action"
+        ]
+      ],
+      "fraction_of_uniform_path_entropy": 0.9793982591755322
+    },
+    {
+      "inverse_temperature": 1,
+      "entropy_bits": 31.901135793777467,
+      "expected_editor_utility": 3.9719279038486386,
+      "expected_estimated_seconds": 77.46749361479564,
+      "sample_seconds": 82,
+      "verified_sample_shots": 14,
+      "chosen_actor_events": [
+        [
+          "d01-t00-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d02-t02-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d02-t03-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d03-t00-reporter",
+          "Phil",
+          "morning"
+        ],
+        [
+          "d03-t01-reporter",
+          "Larry",
+          "action"
+        ],
+        [
+          "d03-t03-reporter",
+          "Larry",
+          "action"
+        ],
+        [
+          "d04-t02-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d04-t03-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d05-t01-reporter",
+          "Larry",
+          "action"
+        ],
+        [
+          "d05-t02-reporter",
+          "Rita",
+          "action"
+        ],
+        [
+          "d05-t03-reporter",
+          "Rita",
+          "action"
+        ],
+        [
+          "d06-t00-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d06-t01-reporter",
+          "Rita",
+          "action"
+        ],
+        [
+          "d06-t03-reporter",
+          "Phil",
+          "action"
+        ]
+      ],
+      "fraction_of_uniform_path_entropy": 0.9164006607075443
+    },
+    {
+      "inverse_temperature": 2,
+      "entropy_bits": 25.089444031015898,
+      "expected_editor_utility": 7.20470103046887,
+      "expected_estimated_seconds": 78.02006844486532,
+      "sample_seconds": 81,
+      "verified_sample_shots": 15,
+      "chosen_actor_events": [
+        [
+          "d01-t00-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d02-t02-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d02-t03-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d03-t00-reporter",
+          "Phil",
+          "morning"
+        ],
+        [
+          "d03-t01-reporter",
+          "Larry",
+          "action"
+        ],
+        [
+          "d03-t03-reporter",
+          "Rita",
+          "action"
+        ],
+        [
+          "d04-t01-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d04-t02-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d04-t03-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d05-t01-reporter",
+          "Larry",
+          "action"
+        ],
+        [
+          "d05-t02-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d05-t03-reporter",
+          "Rita",
+          "action"
+        ],
+        [
+          "d06-t01-reporter",
+          "Rita",
+          "action"
+        ],
+        [
+          "d06-t02-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d06-t03-reporter",
+          "Phil",
+          "action"
+        ]
+      ],
+      "fraction_of_uniform_path_entropy": 0.7207261595774488
+    },
+    {
+      "inverse_temperature": 5,
+      "entropy_bits": 10.166950022145393,
+      "expected_editor_utility": 10.559287530696226,
+      "expected_estimated_seconds": 79.77873439513398,
+      "sample_seconds": 76,
+      "verified_sample_shots": 15,
+      "chosen_actor_events": [
+        [
+          "d01-t00-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d02-t02-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d02-t03-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d03-t00-reporter",
+          "Phil",
+          "morning"
+        ],
+        [
+          "d03-t01-reporter",
+          "Larry",
+          "action"
+        ],
+        [
+          "d03-t03-reporter",
+          "Rita",
+          "action"
+        ],
+        [
+          "d04-t01-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d04-t02-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d04-t03-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d05-t00-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d05-t02-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d05-t03-reporter",
+          "Rita",
+          "action"
+        ],
+        [
+          "d06-t01-reporter",
+          "Rita",
+          "action"
+        ],
+        [
+          "d06-t02-reporter",
+          "Phil",
+          "action"
+        ],
+        [
+          "d06-t03-reporter",
+          "Phil",
+          "action"
+        ]
+      ],
+      "fraction_of_uniform_path_entropy": 0.29205855797435165
+    }
+  ]
+}

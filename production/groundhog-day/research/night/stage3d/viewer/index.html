@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#142322">
+  <title>Another Tuesday · 3D stage</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="vendor/three-r153.min.js"></script><script defer src="vendor/gltf-loader-r153.min.js"></script>
+  <script defer src="../../visual/world.js"></script><script defer src="../../visual/replay.js"></script>
+  <script defer src="../../visual/traces.js"></script><script defer src="geometry.js"></script>
+  <script defer src="placement.js"></script><script defer src="assets.js"></script><script defer src="dressing.js"></script><script defer src="scene.js"></script><script defer src="viewer.js"></script>
+</head>
+<body>
+<header>
+  <div class="wordmark"><span aria-hidden="true" class="reel-mark"></span><h1>Another Tuesday</h1><span class="stage-word">3D stage</span></div>
+  <nav aria-label="Other rehearsal views"><a href="../../visual/index.html">2D town</a><a href="../rehearsal/another-tuesday.usdz" download>USDZ <span aria-hidden="true">↓</span></a></nav>
+</header>
+<main>
+  <section id="scene" aria-label="Interactive 3D town">
+    <canvas id="view" tabindex="0" aria-label="Perspective town. Use WASD or arrow keys to walk, drag to turn the camera, or click a location to walk there."></canvas>
+    <div id="names" aria-hidden="true"></div><div id="monitor" hidden><i aria-hidden="true"></i><span id="output-label"></span></div>
+    <div class="scene-head"><div class="place-chip"><span class="pin" aria-hidden="true"></span><span id="municipality">Mill Creek, PA</span></div><div class="clock-chip" id="world-clock">DAY 01 · 6:00 AM</div></div>
+    <div class="camera-controls" aria-label="Camera angle">
+      <button data-camera="follow" aria-pressed="true">Follow</button><button data-camera="orbit" aria-pressed="false">Orbit</button><button data-camera="aerial" aria-pressed="false">Aerial</button>
+      <button id="fullscreen" aria-label="Toggle fullscreen" title="Fullscreen">⛶</button>
+    </div>
+    <div id="touch" aria-label="Direction pad"><button data-direction="up" aria-label="Walk forward">↑</button><button data-direction="left" aria-label="Walk left">←</button><button data-direction="down" aria-label="Walk back">↓</button><button data-direction="right" aria-label="Walk right">→</button></div>
+    <div id="fade" aria-hidden="true"></div><div id="alarm" hidden>The alarm rings again.</div>
+    <div id="subtitle" hidden><b></b><span></span></div>
+    <div id="fallback" hidden><div class="fallback-inner"><h2>Watch the 3D rehearsal</h2><p>This device could not open an interactive WebGL context. The original rendered stage is available below.</p>
+      <video controls preload="metadata" playsinline poster="../rehearsal/preview.jpg" src="../rehearsal/3d-blocking.mp4"></video><a href="../../visual/index.html">Walk the 2D town →</a></div></div>
+  </section>
+  <section class="deck" aria-label="Stage controls">
+    <div class="strip"><div class="modes" aria-label="Source"><button id="walk" aria-pressed="true">Free walk</button><button id="recorded" aria-pressed="false">Recorded take</button></div>
+      <div id="source-note" class="source-note">Direct control · Phil, reporter</div>
+      <button id="look" aria-pressed="true" title="Compare the dressed set with its original USD geometry">Dressed set</button>
+      <button id="asset" title="Replace the followed actor with a local GLB mesh">Actor GLB</button><input id="asset-file" type="file" accept=".glb,model/gltf-binary" hidden>
+      <button id="open" title="Import a local recording">Open trace ↗</button><input id="file" type="file" accept=".json,application/json" hidden>
+    </div>
+    <div id="walk-dock" class="controls">
+      <div class="now"><small>At present</small><strong id="location">Hearthside Hotel</strong><span id="feedback">WASD to walk · drag to look</span></div>
+      <div class="group"><label for="dest">Walk to</label><div class="joined"><select id="dest"></select><button id="go" class="gold">Go</button></div></div>
+      <div class="group"><label for="interact">At this location</label><button id="interact">Mark the windowsill</button></div>
+      <div class="group clock-action"><label for="advance">Local time</label><button id="advance">Advance to 9:30 AM</button></div>
+    </div>
+    <div id="replay-dock" class="controls" hidden>
+      <div class="now"><small id="slot">Decision 1</small><strong id="action">Recording loaded</strong><span id="event-id"></span></div>
+      <div class="group"><label for="take">Recording</label><select id="take"></select></div>
+      <div class="group"><label for="cast">Follow</label><select id="cast"></select></div>
+      <div class="group player"><label for="timeline" id="timeline-label">Timeline</label><div class="joined"><button id="play" class="gold" aria-label="Play recording">Play</button><input aria-label="Recording position" id="timeline" type="range" min="0" max="1" step=".001"></div></div>
+    </div>
+    <p id="error" role="status" hidden></p>
+  </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,91 @@
+{
+  "format": "tuesday-edl/1",
+  "source_sha256": "9695d76c0cf799ac32810b53e3da5c26814e227ba6d710e675f0d5c4c798646d",
+  "actor": "Phil",
+  "selection": "phone-gag",
+  "purpose": "Portrait trailer from the same physically verified six-day recording.",
+  "cluster": {
+    "arrival": 6,
+    "hold": 7,
+    "wake": 8
+  },
+  "rubric_sha256": "46afe4d8f089a4e514edc011b14d24c53c3f87dcd2d1a97d9f9e858f0d966cea",
+  "shots": [
+    {
+      "event_index": 0,
+      "event_id": "d01-t00-reporter",
+      "view": "action",
+      "focus": "Rita",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 4,
+      "speech": [
+        {
+          "actor": "Rita",
+          "text": "Morning, Phil. Give me a sec to get my bearings."
+        }
+      ]
+    },
+    {
+      "event_index": 6,
+      "event_id": "d02-t02-reporter",
+      "view": "action",
+      "focus": "Phil",
+      "framing": "street",
+      "start": 0,
+      "end": 1,
+      "seconds": 5.8,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "I'm done here. I'm heading to the depot."
+        }
+      ]
+    },
+    {
+      "event_index": 7,
+      "event_id": "d02-t03-reporter",
+      "view": "action",
+      "focus": "Phil",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 12.5,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "Hey, it's Phil. I finally made it to Pittsburgh. I'm safe. I'm just calling to make sure I'm still on for Wednesday. I'm free to help move that couch."
+        }
+      ]
+    },
+    {
+      "event_index": 8,
+      "event_id": "d03-t00-reporter",
+      "view": "morning",
+      "focus": "Phil",
+      "framing": "close",
+      "start": 0.22,
+      "end": 0.22,
+      "seconds": 3.5,
+      "speech": []
+    },
+    {
+      "event_index": 8,
+      "event_id": "d03-t00-reporter",
+      "view": "action",
+      "focus": "Rita",
+      "framing": "close",
+      "start": 0.25,
+      "end": 1,
+      "seconds": 4,
+      "speech": [
+        {
+          "actor": "Rita",
+          "text": "Morning, Phil. Give me a sec to get my bearings."
+        }
+      ]
+    }
+  ],
+  "title": "The Wednesday Couch"
+}

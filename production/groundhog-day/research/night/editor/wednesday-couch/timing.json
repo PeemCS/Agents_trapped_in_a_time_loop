@@ -1,0 +1,320 @@
+{
+  "source_sha256": "9695d76c0cf799ac32810b53e3da5c26814e227ba6d710e675f0d5c4c798646d",
+  "fps": 16,
+  "frames": 1503,
+  "seconds": 93.9375,
+  "size": [
+    1280,
+    720
+  ],
+  "voices": {
+    "Rita": "Samantha",
+    "Larry": "Daniel (English (UK))",
+    "Phil": "Eddy (English (US))"
+  },
+  "stem_peak": 0.614960253238678,
+  "master_target_lufs": -16,
+  "shots": [
+    {
+      "event_index": 0,
+      "event_id": "d01-t00-reporter",
+      "view": "action",
+      "focus": "Rita",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 4,
+      "speech": [
+        {
+          "actor": "Rita",
+          "text": "Morning, Phil. Give me a sec to get my bearings.",
+          "origin_note": "",
+          "start_s": 0.42,
+          "end_s": 3.6633
+        }
+      ],
+      "first_frame": 0,
+      "frames": 69
+    },
+    {
+      "event_index": 1,
+      "event_id": "d01-t01-reporter",
+      "view": "action",
+      "focus": "Larry",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 6,
+      "speech": [
+        {
+          "actor": "Larry",
+          "text": "Rita, if the newsroom wants festival footage, this is the one I've got to make count. Rolling now.",
+          "origin_note": "Rita is at the inn",
+          "start_s": 4.7325,
+          "end_s": 11.2252
+        }
+      ],
+      "first_frame": 69,
+      "frames": 121
+    },
+    {
+      "event_index": 5,
+      "event_id": "d02-t01-reporter",
+      "view": "action",
+      "focus": "Phil",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 8,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "Rita, it's Tuesday again. I need a straight answer: are we wrapped, or is the camera still rolling? I've got a coach to catch.",
+          "origin_note": "",
+          "start_s": 12.295,
+          "end_s": 22.0637
+        }
+      ],
+      "first_frame": 190,
+      "frames": 173
+    },
+    {
+      "event_index": 6,
+      "event_id": "d02-t02-reporter",
+      "view": "action",
+      "focus": "Phil",
+      "framing": "street",
+      "start": 0,
+      "end": 1,
+      "seconds": 5.8,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "I'm done here. I'm heading to the depot.",
+          "origin_note": "",
+          "start_s": 23.1075,
+          "end_s": 26.2973
+        }
+      ],
+      "first_frame": 363,
+      "frames": 93
+    },
+    {
+      "event_index": 7,
+      "event_id": "d02-t03-reporter",
+      "view": "action",
+      "focus": "Phil",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 12.5,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "Hey, it's Phil. I finally made it to Pittsburgh. I'm safe. I'm just calling to make sure I'm still on for Wednesday. I'm free to help move that couch.",
+          "origin_note": "",
+          "start_s": 28.92,
+          "end_s": 40.9204
+        }
+      ],
+      "first_frame": 456,
+      "frames": 209
+    },
+    {
+      "event_index": 8,
+      "event_id": "d03-t00-reporter",
+      "view": "morning",
+      "focus": "Phil",
+      "framing": "close",
+      "start": 0.22,
+      "end": 0.22,
+      "seconds": 3.5,
+      "speech": [],
+      "first_frame": 665,
+      "frames": 56
+    },
+    {
+      "event_index": 8,
+      "event_id": "d03-t00-reporter",
+      "view": "action",
+      "focus": "Rita",
+      "framing": "close",
+      "start": 0.25,
+      "end": 1,
+      "seconds": 4,
+      "speech": [
+        {
+          "actor": "Rita",
+          "text": "Morning, Phil. Give me a sec to get my bearings.",
+          "origin_note": "",
+          "start_s": 45.4825,
+          "end_s": 48.7258
+        }
+      ],
+      "first_frame": 721,
+      "frames": 69
+    },
+    {
+      "event_index": 10,
+      "event_id": "d03-t02-reporter",
+      "view": "action",
+      "focus": "Phil",
+      "framing": "street",
+      "start": 0,
+      "end": 1,
+      "seconds": 3.5,
+      "speech": [],
+      "first_frame": 790,
+      "frames": 56
+    },
+    {
+      "event_index": 12,
+      "event_id": "d04-t00-reporter",
+      "view": "action",
+      "focus": "Phil",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 8,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "Rita, I'm going to mark the window with a pencil so I can tell this Tuesday from the last one.",
+          "origin_note": "",
+          "start_s": 53.295,
+          "end_s": 59.6643
+        }
+      ],
+      "first_frame": 846,
+      "frames": 128
+    },
+    {
+      "event_index": 13,
+      "event_id": "d04-t01-reporter",
+      "view": "action",
+      "focus": "Phil",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 3.2,
+      "speech": [],
+      "first_frame": 974,
+      "frames": 52
+    },
+    {
+      "event_index": 15,
+      "event_id": "d04-t03-reporter",
+      "view": "action",
+      "focus": "Phil",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 3.0,
+      "speech": [],
+      "first_frame": 1026,
+      "frames": 48
+    },
+    {
+      "event_index": 16,
+      "event_id": "d05-t00-reporter",
+      "view": "morning",
+      "focus": "Phil",
+      "framing": "close",
+      "start": 0.22,
+      "end": 0.22,
+      "seconds": 2.3,
+      "speech": [],
+      "first_frame": 1074,
+      "frames": 37
+    },
+    {
+      "event_index": 16,
+      "event_id": "d05-t00-reporter",
+      "view": "action",
+      "focus": "Phil",
+      "framing": "close",
+      "start": 0.25,
+      "end": 1,
+      "seconds": 2.9,
+      "speech": [],
+      "first_frame": 1111,
+      "frames": 47
+    },
+    {
+      "event_index": 20,
+      "event_id": "d06-t00-reporter",
+      "view": "action",
+      "focus": "Phil",
+      "framing": "street",
+      "start": 0,
+      "end": 1,
+      "seconds": 4.0,
+      "speech": [],
+      "first_frame": 1158,
+      "frames": 64
+    },
+    {
+      "event_index": 21,
+      "event_id": "d06-t01-reporter",
+      "view": "action",
+      "focus": "Phil",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 6,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "Rita, I'm not going back to that room. I'm grabbing a plate and clearing this spot.",
+          "origin_note": "Rita is at the inn",
+          "start_s": 76.795,
+          "end_s": 82.8637
+        }
+      ],
+      "first_frame": 1222,
+      "frames": 114
+    },
+    {
+      "event_index": 22,
+      "event_id": "d06-t02-reporter",
+      "view": "action",
+      "focus": "Phil",
+      "framing": "street",
+      "start": 0,
+      "end": 1,
+      "seconds": 4.4,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "Rita, I'm out. See you in Pittsburgh.",
+          "origin_note": "",
+          "start_s": 83.92,
+          "end_s": 87.4565
+        }
+      ],
+      "first_frame": 1336,
+      "frames": 74
+    },
+    {
+      "event_index": 23,
+      "event_id": "d06-t03-reporter",
+      "view": "action",
+      "focus": "Phil",
+      "framing": "close",
+      "start": 0,
+      "end": 1,
+      "seconds": 5.3,
+      "speech": [
+        {
+          "actor": "Phil",
+          "text": "Finally. Pittsburgh. I can smell the river from here.",
+          "origin_note": "",
+          "start_s": 88.545,
+          "end_s": 93.2728
+        }
+      ],
+      "first_frame": 1410,
+      "frames": 93
+    }
+  ]
+}

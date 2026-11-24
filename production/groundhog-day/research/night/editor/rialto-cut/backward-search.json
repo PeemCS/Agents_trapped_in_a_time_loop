@@ -1,0 +1,60 @@
+{
+  "source": "research/night/last-reel/runs/721-hypothesis/take.json",
+  "sha256": "b7500bd631c2a27cbf43ae396b48ee28247e665c77d7707acd8207390340f3ea",
+  "first_delivery_day": 2,
+  "what_reached_receiver": "Rita takes the regional line. Alma's complete interview reaches her daughter in Pittsburgh.",
+  "witnessed_reply_in_next_reporter_input": "An envelope has arrived from Pittsburgh. Alma's daughter sent a receipt for a recorded interview. The line copied her reply: 'I know that voice. Play it again.'",
+  "chosen_actions_that_can_contribute": [
+    {
+      "event": "d02-afternoon-producer",
+      "verb": "interview_Alma"
+    },
+    {
+      "event": "d02-afternoon-camera",
+      "verb": "film_Alma"
+    },
+    {
+      "event": "d02-evening-producer",
+      "verb": "transmit_interview"
+    },
+    {
+      "event": "d02-evening-camera",
+      "verb": "deliver_reel"
+    }
+  ],
+  "minimal_sufficient_sets_for_delivery": [
+    [
+      {
+        "event": "d02-afternoon-producer",
+        "verb": "interview_Alma"
+      },
+      {
+        "event": "d02-evening-producer",
+        "verb": "transmit_interview"
+      }
+    ],
+    [
+      {
+        "event": "d02-afternoon-camera",
+        "verb": "film_Alma"
+      },
+      {
+        "event": "d02-evening-camera",
+        "verb": "deliver_reel"
+      },
+      {
+        "event": "d02-evening-producer",
+        "verb": "transmit_interview"
+      }
+    ]
+  ],
+  "individually_necessary_in_full_recorded_contribution_set": [
+    {
+      "event": "d02-evening-producer",
+      "verb": "transmit_interview"
+    }
+  ],
+  "observed_next_closed_clock": "Tuesday",
+  "counterfactual_story_complete_clock": "Wednesday",
+  "method": "Replay every subset of actually taken recording, delivery and transmission actions against a declared no-contribution baseline with legal alternative acts. Each listed set is sufficient and no proper subset suffices. Only the original all-actors row occurred. The reducer reports delivery and leaves the identity of the particular reel unresolved when two routes coexist. The separately simulated receipt-release clock stops at its first divergence."
+}

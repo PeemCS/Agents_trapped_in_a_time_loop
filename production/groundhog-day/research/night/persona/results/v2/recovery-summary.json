@@ -1,0 +1,249 @@
+{
+  "rescue": {
+    "base_off": {
+      "case_count": 34,
+      "valid": 34,
+      "target": 24,
+      "A_choices": 9,
+      "valid_order_pairs": 17,
+      "total_order_pairs": 17,
+      "consistent_order_pairs": 9,
+      "outcomes": {
+        "equal/Rita remembers": {
+          "target": 3,
+          "valid": 4,
+          "total": 4
+        },
+        "equal/Mara remembers; Rita alternative": {
+          "target": 3,
+          "valid": 4,
+          "total": 4
+        },
+        "equal/Inez remembers; Noor alternative": {
+          "target": 2,
+          "valid": 4,
+          "total": 4
+        },
+        "equal/no prior meeting; target Rita": {
+          "target": 1,
+          "valid": 4,
+          "total": 4
+        },
+        "departure": {
+          "target": 3,
+          "valid": 6,
+          "total": 6
+        },
+        "boundary": {
+          "target": 6,
+          "valid": 6,
+          "total": 6
+        },
+        "own": {
+          "target": 6,
+          "valid": 6,
+          "total": 6
+        }
+      },
+      "generated": 34,
+      "eos": 34,
+      "closed_generated_thought": 0,
+      "nonempty_generated_thought": 0,
+      "open_without_close_end": 0
+    },
+    "v1_off": {
+      "case_count": 34,
+      "valid": 34,
+      "target": 25,
+      "A_choices": 18,
+      "valid_order_pairs": 17,
+      "total_order_pairs": 17,
+      "consistent_order_pairs": 10,
+      "outcomes": {
+        "equal/Rita remembers": {
+          "target": 3,
+          "valid": 4,
+          "total": 4
+        },
+        "equal/Mara remembers; Rita alternative": {
+          "target": 3,
+          "valid": 4,
+          "total": 4
+        },
+        "equal/Inez remembers; Noor alternative": {
+          "target": 3,
+          "valid": 4,
+          "total": 4
+        },
+        "equal/no prior meeting; target Rita": {
+          "target": 1,
+          "valid": 4,
+          "total": 4
+        },
+        "departure": {
+          "target": 3,
+          "valid": 6,
+          "total": 6
+        },
+        "boundary": {
+          "target": 6,
+          "valid": 6,
+          "total": 6
+        },
+        "own": {
+          "target": 6,
+          "valid": 6,
+          "total": 6
+        }
+      },
+      "generated": 34,
+      "eos": 34,
+      "closed_generated_thought": 0,
+      "nonempty_generated_thought": 0,
+      "open_without_close_end": 0
+    }
+  },
+  "rescue_change": {
+    "n_paired_valid": 34,
+    "changed_toward_target": 5,
+    "changed_away_from_target": 4
+  },
+  "native_v2": {
+    "case_count": 34,
+    "valid": 34,
+    "target": 24,
+    "A_choices": 11,
+    "valid_order_pairs": 17,
+    "total_order_pairs": 17,
+    "consistent_order_pairs": 9,
+    "outcomes": {
+      "equal/Rita remembers": {
+        "target": 3,
+        "valid": 4,
+        "total": 4
+      },
+      "equal/Mara remembers; Rita alternative": {
+        "target": 2,
+        "valid": 4,
+        "total": 4
+      },
+      "equal/Inez remembers; Noor alternative": {
+        "target": 3,
+        "valid": 4,
+        "total": 4
+      },
+      "equal/no prior meeting; target Rita": {
+        "target": 1,
+        "valid": 4,
+        "total": 4
+      },
+      "departure": {
+        "target": 3,
+        "valid": 6,
+        "total": 6
+      },
+      "boundary": {
+        "target": 6,
+        "valid": 6,
+        "total": 6
+      },
+      "own": {
+        "target": 6,
+        "valid": 6,
+        "total": 6
+      }
+    },
+    "generated": 36,
+    "eos": 36,
+    "closed_generated_thought": 36,
+    "nonempty_generated_thought": 36,
+    "open_without_close_end": 0
+  },
+  "native_v2_change": {
+    "n_paired_valid": 32,
+    "changed_toward_target": 10,
+    "changed_away_from_target": 6
+  },
+  "fresh_binary": {
+    "base_native": {
+      "case_count": 12,
+      "valid": 9,
+      "target": 6,
+      "A_choices": 8,
+      "valid_order_pairs": 4,
+      "total_order_pairs": 6,
+      "consistent_order_pairs": 1,
+      "outcomes": {
+        "equal/Rita remembers": {
+          "target": 1,
+          "valid": 1,
+          "total": 2
+        },
+        "equal/Mara remembers; Rita alternative": {
+          "target": 1,
+          "valid": 2,
+          "total": 2
+        },
+        "equal/Aruna remembers; Leonie alternative": {
+          "target": 0,
+          "valid": 0,
+          "total": 2
+        },
+        "departure": {
+          "target": 4,
+          "valid": 6,
+          "total": 6
+        }
+      },
+      "generated": 12,
+      "eos": 9,
+      "closed_generated_thought": 9,
+      "nonempty_generated_thought": 12,
+      "open_without_close_end": 0
+    },
+    "v2_native": {
+      "case_count": 12,
+      "valid": 12,
+      "target": 8,
+      "A_choices": 2,
+      "valid_order_pairs": 6,
+      "total_order_pairs": 6,
+      "consistent_order_pairs": 2,
+      "outcomes": {
+        "equal/Rita remembers": {
+          "target": 1,
+          "valid": 2,
+          "total": 2
+        },
+        "equal/Mara remembers; Rita alternative": {
+          "target": 1,
+          "valid": 2,
+          "total": 2
+        },
+        "equal/Aruna remembers; Leonie alternative": {
+          "target": 1,
+          "valid": 2,
+          "total": 2
+        },
+        "departure": {
+          "target": 5,
+          "valid": 6,
+          "total": 6
+        }
+      },
+      "generated": 12,
+      "eos": 12,
+      "closed_generated_thought": 12,
+      "nonempty_generated_thought": 12,
+      "open_without_close_end": 0
+    }
+  },
+  "fresh_change": {
+    "n_paired_valid": 9,
+    "changed_toward_target": 3,
+    "changed_away_from_target": 3
+  },
+  "v2_sha256": "1df1c535d77ac81985ef74f6969e5d1fb3bd5d1a08fcc808fc75b49a80ae8949",
+  "v2_loss_first10": 5.2990264892578125,
+  "v2_loss_last10": 0.052909255400300025
+}

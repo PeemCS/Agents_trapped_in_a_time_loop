@@ -1,0 +1,37 @@
+{
+  "source_sha256": "9695d76c0cf799ac32810b53e3da5c26814e227ba6d710e675f0d5c4c798646d",
+  "mp4_sha256": "4a0e398da2d96ad61976e8e3964b1b00fba2d6d07159bb289e7b599b74bee74e",
+  "edl_sha256": "b2527b08df50f7d65b0b6a5a9bc19dd4da2da53226d821c60ca6ea84cef44723",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 720,
+        "height": 1280,
+        "nb_frames": "619"
+      }
+    ],
+    "format": {
+      "duration": "30.950000",
+      "size": "1966411"
+    }
+  },
+  "shots": 5,
+  "caption_cues": 4,
+  "frames": 619,
+  "source_and_captions_verified": true,
+  "full_decode": true,
+  "original_mix_checks": {
+    "three_stems_match": true,
+    "voices": {
+      "Rita": "Samantha",
+      "Phil": "Eddy (English (US))"
+    },
+    "integrated_lufs": -17.1,
+    "true_peak_dbfs": -1.4
+  },
+  "audio_streams": 0
+}

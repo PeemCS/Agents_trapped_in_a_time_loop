@@ -1,0 +1,11 @@
+{
+ "title":"The return fares",
+ "format":"short",
+ "shots":[
+  {"day":1,"phase":"afternoon","role":"reporter","seconds":7.1,"speech":"whole","reason":"The entire field is a direct statement to Rita and Larry in the lobby. It contains no narrated directions."},
+  {"day":1,"phase":"afternoon","role":"producer","kind":"witnesses","seconds":6.0},
+  {"day":1,"phase":"evening","role":"reporter","seconds":4.6,"reason":"Show the chosen physical act of going to bed. The full evening speech remains in the source ledger and is omitted from this short."},
+  {"day":2,"phase":"afternoon","role":"reporter","kind":"wake","seconds":4.4},
+  {"day":2,"phase":"afternoon","role":"reporter","seconds":6.5,"reason":"The reporter's words field is empty. He chooses the coach at the new morning handoff and physically reaches Pittsburgh during the afternoon."}
+ ]
+}

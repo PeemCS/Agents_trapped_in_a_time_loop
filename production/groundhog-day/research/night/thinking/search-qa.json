@@ -1,0 +1,14 @@
+[
+  {
+    "mode": "live",
+    "recognized_slots": 22,
+    "phone_width": 390,
+    "errors": []
+  },
+  {
+    "mode": "offline",
+    "recognized_slots": 21,
+    "phone_width": 390,
+    "errors": []
+  }
+]

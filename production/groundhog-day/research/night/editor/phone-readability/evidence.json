@@ -1,0 +1,218 @@
+{
+  "media_sha256": {
+    "wednesday-couch": "47354d1d790d4b57766bf621b3dbc83f16e3f0c42c47a513f8099f94bdcaaf69",
+    "phone-cut": "4a0e398da2d96ad61976e8e3964b1b00fba2d6d07159bb289e7b599b74bee74e"
+  },
+  "method": "Apple Vision accurate English OCR without language correction. Eight real frames per layout, same four lines at 22% and 67% of speech. Resize full frame to target width then crop dialogue band without upsampling. Score ordered matched word tokens against displayed cue. Machine-only screen legibility proxy. Some repeated tokens and redisplay of the same sentence occur.",
+  "summary": {
+    "landscape_projector": {
+      "matching_tokens": 80,
+      "expected_tokens": 128,
+      "recall": 0.625
+    },
+    "landscape_phone": {
+      "matching_tokens": 120,
+      "expected_tokens": 128,
+      "recall": 0.938
+    },
+    "portrait_phone": {
+      "matching_tokens": 88,
+      "expected_tokens": 88,
+      "recall": 1.0
+    }
+  },
+  "frames": [
+    {
+      "layout": "landscape_projector",
+      "event_index": 0,
+      "sample": 0,
+      "expected": "Morning, Phil. Give me a sec to get my bearings.",
+      "ocr": "Morning, Phil. Give me a sec to get my bearings.",
+      "ordered_token_recall": 1.0
+    },
+    {
+      "layout": "landscape_projector",
+      "event_index": 0,
+      "sample": 1,
+      "expected": "Morning, Phil. Give me a sec to get my bearings.",
+      "ocr": "Morning, Phil. Give me a sec to get my bearings.",
+      "ordered_token_recall": 1.0
+    },
+    {
+      "layout": "landscape_projector",
+      "event_index": 6,
+      "sample": 0,
+      "expected": "I'm done here. I'm heading to the depot.",
+      "ocr": "I'm done here. I'm heading to the depot.",
+      "ordered_token_recall": 1.0
+    },
+    {
+      "layout": "landscape_projector",
+      "event_index": 6,
+      "sample": 1,
+      "expected": "I'm done here. I'm heading to the depot.",
+      "ocr": "I'm done here. I'm heading to the depot.",
+      "ordered_token_recall": 1.0
+    },
+    {
+      "layout": "landscape_projector",
+      "event_index": 7,
+      "sample": 0,
+      "expected": "Hey, it's Phil. I finally made it to Pittsburgh. I'm safe. I'm just calling to make sure I'm still on for Wednesday. I'm free to help move that couch.",
+      "ocr": "for Wednesday. I'm free to help move that couch.",
+      "ordered_token_recall": 0.294
+    },
+    {
+      "layout": "landscape_projector",
+      "event_index": 7,
+      "sample": 1,
+      "expected": "Hey, it's Phil. I finally made it to Pittsburgh. I'm safe. I'm just calling to make sure I'm still on for Wednesday. I'm free to help move that couch.",
+      "ocr": "for Wednesday. I'm free to help move that couch.",
+      "ordered_token_recall": 0.294
+    },
+    {
+      "layout": "landscape_projector",
+      "event_index": 8,
+      "sample": 0,
+      "expected": "Morning, Phil. Give me a sec to get my bearings.",
+      "ocr": "Morning, Phil. Give me a sec to get my bearings.",
+      "ordered_token_recall": 1.0
+    },
+    {
+      "layout": "landscape_projector",
+      "event_index": 8,
+      "sample": 1,
+      "expected": "Morning, Phil. Give me a sec to get my bearings.",
+      "ocr": "Morning, Phil. Give me a sec to get my bearings.",
+      "ordered_token_recall": 1.0
+    },
+    {
+      "layout": "landscape_phone",
+      "event_index": 0,
+      "sample": 0,
+      "expected": "Morning, Phil. Give me a sec to get my bearings.",
+      "ocr": "Morning, Phil. Give me a see to get my bearings.",
+      "ordered_token_recall": 0.9
+    },
+    {
+      "layout": "landscape_phone",
+      "event_index": 0,
+      "sample": 1,
+      "expected": "Morning, Phil. Give me a sec to get my bearings.",
+      "ocr": "Morning, Phil. Give me a see to get my bearings.",
+      "ordered_token_recall": 0.9
+    },
+    {
+      "layout": "landscape_phone",
+      "event_index": 6,
+      "sample": 0,
+      "expected": "I'm done here. I'm heading to the depot.",
+      "ocr": "Im done here. I'm heading to the depot.",
+      "ordered_token_recall": 0.8
+    },
+    {
+      "layout": "landscape_phone",
+      "event_index": 6,
+      "sample": 1,
+      "expected": "I'm done here. I'm heading to the depot.",
+      "ocr": "Im done here. I'm heading to the depot.",
+      "ordered_token_recall": 0.8
+    },
+    {
+      "layout": "landscape_phone",
+      "event_index": 7,
+      "sample": 0,
+      "expected": "Hey, it's Phil. I finally made it to Pittsburgh. I'm safe. I'm just calling to make sure I'm still on for Wednesday. I'm free to help move that couch.",
+      "ocr": "Hey, it's Phil. I finally made it to Pittsburgh. I'm safe. I'm just calling to make sure I'm still on for Wednesday. I'm free to help move that couch.",
+      "ordered_token_recall": 1.0
+    },
+    {
+      "layout": "landscape_phone",
+      "event_index": 7,
+      "sample": 1,
+      "expected": "Hey, it's Phil. I finally made it to Pittsburgh. I'm safe. I'm just calling to make sure I'm still on for Wednesday. I'm free to help move that couch.",
+      "ocr": "Hey, it's Phil. I finally made it to Pittsburgh. I'm safe. I'm just calling to make sure I'm still on for Wednesday. I'm free to help move that couch.",
+      "ordered_token_recall": 1.0
+    },
+    {
+      "layout": "landscape_phone",
+      "event_index": 8,
+      "sample": 0,
+      "expected": "Morning, Phil. Give me a sec to get my bearings.",
+      "ocr": "Morning, Phil. Give me a see to get my bearings.",
+      "ordered_token_recall": 0.9
+    },
+    {
+      "layout": "landscape_phone",
+      "event_index": 8,
+      "sample": 1,
+      "expected": "Morning, Phil. Give me a sec to get my bearings.",
+      "ocr": "Morning, Phil. Give me a see to get my bearings.",
+      "ordered_token_recall": 0.9
+    },
+    {
+      "layout": "portrait_phone",
+      "event_index": 0,
+      "sample": 0,
+      "expected": "Morning, Phil. Give me a sec to get my bearings.",
+      "ocr": "Morning, Phil. Give me a sec to get my bearings.",
+      "ordered_token_recall": 1.0
+    },
+    {
+      "layout": "portrait_phone",
+      "event_index": 0,
+      "sample": 1,
+      "expected": "Morning, Phil. Give me a sec to get my bearings.",
+      "ocr": "Morning, Phil. Give me a sec to get my bearings.",
+      "ordered_token_recall": 1.0
+    },
+    {
+      "layout": "portrait_phone",
+      "event_index": 6,
+      "sample": 0,
+      "expected": "I'm done here. I'm heading to the depot.",
+      "ocr": "I'm done here. I'm heading to the depot.",
+      "ordered_token_recall": 1.0
+    },
+    {
+      "layout": "portrait_phone",
+      "event_index": 6,
+      "sample": 1,
+      "expected": "I'm done here. I'm heading to the depot.",
+      "ocr": "I'm done here. I'm heading to the depot.",
+      "ordered_token_recall": 1.0
+    },
+    {
+      "layout": "portrait_phone",
+      "event_index": 7,
+      "sample": 0,
+      "expected": "Hey, it's Phil. I finally made it to Pittsburgh. I'm safe. I'm",
+      "ocr": "Hey, it's Phil. I finally made it to Pittsburgh. I'm safe. I'm",
+      "ordered_token_recall": 1.0
+    },
+    {
+      "layout": "portrait_phone",
+      "event_index": 7,
+      "sample": 1,
+      "expected": "just calling to make sure I'm still on for Wednesday. I'm",
+      "ocr": "just calling to make sure I'm still on for Wednesday. I'm",
+      "ordered_token_recall": 1.0
+    },
+    {
+      "layout": "portrait_phone",
+      "event_index": 8,
+      "sample": 0,
+      "expected": "Morning, Phil. Give me a sec to get my bearings.",
+      "ocr": "Morning, Phil. Give me a sec to get my bearings.",
+      "ordered_token_recall": 1.0
+    },
+    {
+      "layout": "portrait_phone",
+      "event_index": 8,
+      "sample": 1,
+      "expected": "Morning, Phil. Give me a sec to get my bearings.",
+      "ocr": "Morning, Phil. Give me a sec to get my bearings.",
+      "ordered_token_recall": 1.0
+    }
+  ]
+}

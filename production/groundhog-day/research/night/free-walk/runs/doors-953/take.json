@@ -1,0 +1,541 @@
+{
+  "condition": "doors",
+  "seed": 953,
+  "model": "qwen3:0.6b",
+  "revision": "7df6b6e09427a769808717c0a93cadc4ae99ed4eb8bf5ca557c90846becea435",
+  "initial": {
+    "reporter": {
+      "x": 6.75,
+      "y": 8.25
+    },
+    "producer": {
+      "x": 8.22,
+      "y": 8.4
+    },
+    "camera": {
+      "x": 11.0,
+      "y": 7.3
+    }
+  },
+  "ticks": [
+    [
+      {
+        "id": "doors-953-t00-reporter",
+        "role": "reporter",
+        "actor": "Phil",
+        "say": "I found an interesting location for my walk: the studio. It's just next to the cinema, right?",
+        "raw": "runs/doors-953/calls/doors-953-t00-reporter.json",
+        "raw_sha256": "a9ad3d73e9c4f39d496ca437646b82125f24762d7fc0a1e097f78c95a34de10b",
+        "seed": 95300,
+        "start": {
+          "x": 6.75,
+          "y": 8.25
+        },
+        "requested": {
+          "x": 14.45,
+          "y": 7.7
+        },
+        "quantized": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "resolved": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 6.75,
+            "y": 8.25
+          },
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          }
+        ],
+        "length": 7.677564718060017,
+        "requestedDoorDistance": 0,
+        "resolvedDoorDistance": 0.11180339887498869,
+        "nearDoor": "studio",
+        "gridError": 0.11180339887498869,
+        "adjustment": 0,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            6.75,
+            0,
+            8.25
+          ],
+          [
+            14.4,
+            0,
+            7.6000000000000005
+          ]
+        ]
+      },
+      {
+        "id": "doors-953-t00-producer",
+        "role": "producer",
+        "actor": "Rita",
+        "say": "I'm at the square, which is a great place to relax and enjoy a quiet snack. If you're nearby, I'll be here soon.",
+        "raw": "runs/doors-953/calls/doors-953-t00-producer.json",
+        "raw_sha256": "235072b2d10c41b848a65572752833a7560642db573f12010cecdf3a3deead20",
+        "seed": 95301,
+        "start": {
+          "x": 8.22,
+          "y": 8.4
+        },
+        "requested": {
+          "x": 8.22,
+          "y": 8.4
+        },
+        "quantized": {
+          "x": 8.4,
+          "y": 8.4
+        },
+        "resolved": {
+          "x": 8.4,
+          "y": 8.4
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 8.22,
+            "y": 8.4
+          },
+          {
+            "x": 8.4,
+            "y": 8.4
+          }
+        ],
+        "length": 0.17999999999999972,
+        "requestedDoorDistance": 1.477633242722971,
+        "resolvedDoorDistance": 1.6568041525780897,
+        "nearDoor": "inn",
+        "gridError": 0.17999999999999972,
+        "adjustment": 0,
+        "requestedOffDoor": true,
+        "resolvedOffDoor": true,
+        "yUp": [
+          [
+            8.22,
+            0,
+            8.4
+          ],
+          [
+            8.4,
+            0,
+            8.4
+          ]
+        ]
+      },
+      {
+        "id": "doors-953-t00-camera",
+        "role": "camera",
+        "actor": "Larry",
+        "say": "I'm at the studio. Let's explore the creative side.",
+        "raw": "runs/doors-953/calls/doors-953-t00-camera.json",
+        "raw_sha256": "aae7042b33e9b3d2482330c1c46da3abd7dd44cbdf994ab9ded29a643b28a675",
+        "seed": 95302,
+        "start": {
+          "x": 11,
+          "y": 7.3
+        },
+        "requested": {
+          "x": 14.45,
+          "y": 7.7
+        },
+        "quantized": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "resolved": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 11,
+            "y": 7.3
+          },
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          }
+        ],
+        "length": 3.4132096331752027,
+        "requestedDoorDistance": 0,
+        "resolvedDoorDistance": 0.11180339887498869,
+        "nearDoor": "studio",
+        "gridError": 0.11180339887498869,
+        "adjustment": 0,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            11,
+            0,
+            7.3
+          ],
+          [
+            14.4,
+            0,
+            7.6000000000000005
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "id": "doors-953-t01-reporter",
+        "role": "reporter",
+        "actor": "Phil",
+        "say": "I've reached the grid point at coordinates (14.45, 7.7).",
+        "raw": "runs/doors-953/calls/doors-953-t01-reporter.json",
+        "raw_sha256": "74e1b3647b0366b06470a8736c98c1df766c45614356ec774c9fe20757472671",
+        "seed": 95307,
+        "start": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "requested": {
+          "x": 14.45,
+          "y": 7.7
+        },
+        "quantized": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "resolved": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          },
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          }
+        ],
+        "length": 0,
+        "requestedDoorDistance": 0,
+        "resolvedDoorDistance": 0.11180339887498869,
+        "nearDoor": "studio",
+        "gridError": 0.11180339887498869,
+        "adjustment": 0,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            14.4,
+            0,
+            7.6000000000000005
+          ],
+          [
+            14.4,
+            0,
+            7.6000000000000005
+          ]
+        ]
+      },
+      {
+        "id": "doors-953-t01-producer",
+        "role": "producer",
+        "actor": "Rita",
+        "say": "I'll be going to the square, which is located at coordinates (12.2, 11.4).",
+        "raw": "runs/doors-953/calls/doors-953-t01-producer.json",
+        "raw_sha256": "f0d015307f9c04420d05257ca8b7f68131872fe00563ef52141a47b3796191fc",
+        "seed": 95308,
+        "start": {
+          "x": 8.4,
+          "y": 8.4
+        },
+        "requested": {
+          "x": 12.2,
+          "y": 11.4
+        },
+        "quantized": {
+          "x": 12,
+          "y": 11.600000000000001
+        },
+        "resolved": {
+          "x": 12,
+          "y": 11.600000000000001
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 8.4,
+            "y": 8.4
+          },
+          {
+            "x": 12,
+            "y": 11.600000000000001
+          }
+        ],
+        "length": 4.8166378315169185,
+        "requestedDoorDistance": 0,
+        "resolvedDoorDistance": 0.28284271247461923,
+        "nearDoor": "square",
+        "gridError": 0.28284271247461923,
+        "adjustment": 0,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            8.4,
+            0,
+            8.4
+          ],
+          [
+            12,
+            0,
+            11.600000000000001
+          ]
+        ]
+      },
+      {
+        "id": "doors-953-t01-camera",
+        "role": "camera",
+        "actor": "Larry",
+        "say": "I arrived at the studio, a great place for my camera work.",
+        "raw": "runs/doors-953/calls/doors-953-t01-camera.json",
+        "raw_sha256": "53fa2b716ca2bec8a3e5f9c485aca8b6441e0ff5d02b9e1ced85c467ed8f65fd",
+        "seed": 95309,
+        "start": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "requested": {
+          "x": 14.45,
+          "y": 7.7
+        },
+        "quantized": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "resolved": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          },
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          }
+        ],
+        "length": 0,
+        "requestedDoorDistance": 0,
+        "resolvedDoorDistance": 0.11180339887498869,
+        "nearDoor": "studio",
+        "gridError": 0.11180339887498869,
+        "adjustment": 0,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            14.4,
+            0,
+            7.6000000000000005
+          ],
+          [
+            14.4,
+            0,
+            7.6000000000000005
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "id": "doors-953-t02-reporter",
+        "role": "reporter",
+        "actor": "Phil",
+        "say": "I'm heading to the square, which is a great place to relax and enjoy some coffee.",
+        "raw": "runs/doors-953/calls/doors-953-t02-reporter.json",
+        "raw_sha256": "b4b29ab52f7f75861fce4f800f05ffad2ae38d3c09d22656117ac5cf9e3c4dee",
+        "seed": 95314,
+        "start": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "requested": {
+          "x": 12.2,
+          "y": 11.4
+        },
+        "quantized": {
+          "x": 12,
+          "y": 11.600000000000001
+        },
+        "resolved": {
+          "x": 12,
+          "y": 11.600000000000001
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          },
+          {
+            "x": 12,
+            "y": 11.600000000000001
+          }
+        ],
+        "length": 4.664761515876241,
+        "requestedDoorDistance": 0,
+        "resolvedDoorDistance": 0.28284271247461923,
+        "nearDoor": "square",
+        "gridError": 0.28284271247461923,
+        "adjustment": 0,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            14.4,
+            0,
+            7.6000000000000005
+          ],
+          [
+            12,
+            0,
+            11.600000000000001
+          ]
+        ]
+      },
+      {
+        "id": "doors-953-t02-producer",
+        "role": "producer",
+        "actor": "Rita",
+        "say": "I'm at the studio. It's a great location to watch some programming.",
+        "raw": "runs/doors-953/calls/doors-953-t02-producer.json",
+        "raw_sha256": "46111def9be02e18448d49208861d86b7b0dbca28a8e69e3df22218be5c0a6a5",
+        "seed": 95315,
+        "start": {
+          "x": 12,
+          "y": 11.600000000000001
+        },
+        "requested": {
+          "x": 14.45,
+          "y": 7.7
+        },
+        "quantized": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "resolved": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 12,
+            "y": 11.600000000000001
+          },
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          }
+        ],
+        "length": 4.664761515876241,
+        "requestedDoorDistance": 0,
+        "resolvedDoorDistance": 0.11180339887498869,
+        "nearDoor": "studio",
+        "gridError": 0.11180339887498869,
+        "adjustment": 0,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            12,
+            0,
+            11.600000000000001
+          ],
+          [
+            14.4,
+            0,
+            7.6000000000000005
+          ]
+        ]
+      },
+      {
+        "id": "doors-953-t02-camera",
+        "role": "camera",
+        "actor": "Larry",
+        "say": "I just reached the requested grid point for my next walk!",
+        "raw": "runs/doors-953/calls/doors-953-t02-camera.json",
+        "raw_sha256": "88b67fd93022a146b135e9802639ac2254819a340001a4b19e47a4440c4f483c",
+        "seed": 95316,
+        "start": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "requested": {
+          "x": 14.45,
+          "y": 7.7
+        },
+        "quantized": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "resolved": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          },
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          }
+        ],
+        "length": 0,
+        "requestedDoorDistance": 0,
+        "resolvedDoorDistance": 0.11180339887498869,
+        "nearDoor": "studio",
+        "gridError": 0.11180339887498869,
+        "adjustment": 0,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            14.4,
+            0,
+            7.6000000000000005
+          ],
+          [
+            14.4,
+            0,
+            7.6000000000000005
+          ]
+        ]
+      }
+    ]
+  ]
+}

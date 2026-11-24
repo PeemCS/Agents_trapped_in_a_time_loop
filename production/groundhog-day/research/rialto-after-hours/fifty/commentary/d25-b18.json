@@ -1,0 +1,11 @@
+{
+  "kind": "post-take cast commentary",
+  "turn": "d25-b18",
+  "speaker": "Phil",
+  "source": "d24-b18",
+  "comment": "I wanted to stop the bleeding before the static ate the last honest breath I had left.",
+  "request_sha256": "a96a1973215349317730ecc05ca7d06076075f6de0c82b1ebd65a6494900316e",
+  "response_text": "{\n  \"source\": \"d24-b18\",\n  \"comment\": \"I wanted to stop the bleeding before the static ate the last honest breath I had left.\"\n}",
+  "model": "qwen3.8:27b",
+  "num_predict": 180
+}

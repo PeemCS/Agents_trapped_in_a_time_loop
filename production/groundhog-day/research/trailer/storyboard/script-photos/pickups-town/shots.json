@@ -1,0 +1,46 @@
+[
+  {
+    "id": "S03-C-POCKET-END",
+    "title": "The bills disappear into Phil’s coat",
+    "scene": "S03",
+    "time": "00:50.5–00:52.0",
+    "beat": "Match the fold from the empty lobby envelope to the last exposed edge of the cash as Phil pushes it all the way into his inner-left coat pocket at night.",
+    "lens": "14mm first-person POV",
+    "file": "S03-C-POCKET-END.jpg",
+    "qa": "Selected pocket study. Both gloves and the left wristwatch match the fare insert. The raised coat shape can read as fabric held in his lap, and the lit sheers run bright for the night beat.",
+    "job_id": "8fe399b6-dc6f-4b8d-a7dd-41a613a24e89"
+  },
+  {
+    "id": "S03-C-POCKET-END-STUDY",
+    "title": "The bills disappear into Phil’s coat · Earlier study",
+    "scene": "S03",
+    "time": "00:50.5–00:52.0",
+    "beat": "Match the fold from the empty lobby envelope to the last exposed edge of the cash as Phil pushes it all the way into his inner-left coat pocket at night.",
+    "lens": "14mm first-person POV",
+    "file": "S03-C-POCKET-END-STUDY.jpg",
+    "qa": "Earlier study. The bare hand and watch on the opposite wrist break wardrobe continuity; bright sheers and raised coat remain.",
+    "job_id": "f8e28895-26ee-4092-a0fc-7b4bea56c202"
+  },
+  {
+    "id": "S04-D1-DARK-BAY",
+    "title": "A single Rialto window across the snow",
+    "scene": "S04",
+    "time": "01:09.0–01:11.0",
+    "beat": "Bridge from Phil’s dark, curtain-closed hotel bay to one occupied projection booth window across the snowy block.",
+    "lens": "Locked roof-height 35mm wide",
+    "file": "S04-D1-DARK-BAY.jpg",
+    "qa": "Selected roofline. Dark closed Hearthside bay at left, snowy middle distance, one warm upper Rialto booth window at right.",
+    "job_id": "ab606baa-c551-4a36-9ddb-f104d59da92a"
+  },
+  {
+    "id": "S04-D1-DARK-BAY-STUDY",
+    "title": "A single Rialto window across the snow · Earlier study",
+    "scene": "S04",
+    "time": "01:09.0–01:11.0",
+    "beat": "Bridge from Phil’s dark, curtain-closed hotel bay to one occupied projection booth window across the snowy block.",
+    "lens": "Locked roof-height 35mm wide",
+    "file": "S04-D1-DARK-BAY-STUDY.jpg",
+    "qa": "Earlier study. The geography works, but a second lit window at the lower right divides attention.",
+    "job_id": "11f9c1bc-4db1-43f9-8f71-d3a17cd45807"
+  }
+]

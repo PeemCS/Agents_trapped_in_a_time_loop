@@ -1,0 +1,14 @@
+{
+  "status": "valid",
+  "decision": {
+    "action": "take_coach",
+    "detail": "I stand up from the bed. I don't look at the radio. I pull the coat off the back of the chair, slide my arms in, zip it to the chin. The ticket is in the left breast pocket — I can feel the corner of it through the flannel. I walk out of the room. The lobby is warm. Rita is by the coffee pot. Larry is by the coat-check counter. I walk past both of them. I don't stop. I don't say good morning. I go to the door. The street is cold and blue and the delivery van is still backfiring two blocks down. I walk to the Greyhound stand. The coach is there, engine ticking over, driver checking his mirror. I step up. I sit in the aisle seat, second row. I put my bag under the seat in front of me. I don't look out the window at the hotel. I look at the road ahead. The doors hiss shut. The bus pulls out.",
+    "intention": "Be in Pittsburgh by five. Be on a bench or a floor or the back of the Greyhound waiting area, asleep by eight, awake at six-forty, at my sister's door at 7:15 with gloves and rolled blankets and coffee money in my pocket. The couch is in Pittsburgh. I am going to Pittsburgh. That is the whole forecast. Nothing else. The ballroom is for someone else. The piano is for someone else. The Rialto is for someone else. I have a ticket and a number I dialed last night and a sister standing in her kitchen holding a spoon. That is enough. That is the whole weather report for Wednesday. I am going to sit in this bus and I am going to get there.",
+    "words": "Nothing to Rita. Nothing to Larry. I walk past. I don't owe them a forecast."
+  },
+  "request_hashes": [
+    "33d1eb4b1083494a8f546fd182e67eb5e2fd311e242443854f757de3118fa020"
+  ],
+  "attempt": 0,
+  "source": "new draw"
+}

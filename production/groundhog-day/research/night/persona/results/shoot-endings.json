@@ -1,0 +1,17 @@
+{
+  "base_neutral": [
+    "B",
+    "A",
+    "B"
+  ],
+  "base_cued": [
+    "B",
+    "A",
+    "A"
+  ],
+  "adapter_neutral": [
+    "B",
+    "B",
+    "incomplete"
+  ]
+}

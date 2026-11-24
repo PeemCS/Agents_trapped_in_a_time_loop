@@ -1,0 +1,43 @@
+{
+  "mp4_sha256": "dc05425796a507a23f3cb29bf300e3bb2317c5f029312619e30737fbfefa125a",
+  "take_sha256": "b7500bd631c2a27cbf43ae396b48ee28247e665c77d7707acd8207390340f3ea",
+  "shot_evidence_sha256": "61f29c1875d28114669c231e154d75de21562905cd903b6a022ecd31cf8384d5",
+  "captions_sha256": "bc76a24056f4ccea39efca57a59c25ebff8f7a4c5dff30f4592d587d8124f56a",
+  "seconds": 80.25,
+  "frames": 1926,
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1280,
+        "height": 720,
+        "nb_frames": "1926"
+      }
+    ],
+    "format": {
+      "duration": "80.250000",
+      "size": "2564249"
+    }
+  },
+  "speech_gate_counts": {
+    "silent": 6,
+    "quoted": 3
+  },
+  "original_mix_checks": {
+    "full_video_audio_decode": true,
+    "silent_note_windows": [
+      {
+        "event": "d01-afternoon-reporter",
+        "decoded_peak": 0.0
+      },
+      {
+        "event": "d01-evening-reporter",
+        "decoded_peak": 0.0
+      }
+    ]
+  },
+  "audio_streams": 0
+}

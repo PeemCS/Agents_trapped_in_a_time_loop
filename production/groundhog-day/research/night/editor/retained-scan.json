@@ -1,0 +1,86 @@
+[
+  {
+    "source": "research/repeating-town/runs/seed-511.json",
+    "sha256": "048a8b440deefb0d513435b7710fd930e53085fbc1f25ce9b799522ee6f6c58e",
+    "events": 16,
+    "decision_makers": [
+      "Ellis",
+      "Lou"
+    ],
+    "coach_arrivals": 1,
+    "ready_payoffs": [
+      {
+        "arrival": 10,
+        "hold": 11,
+        "wake": 12
+      }
+    ],
+    "cultural_reference_candidates_for_review": []
+  },
+  {
+    "source": "research/repeating-town/runs/seed-512.json",
+    "sha256": "71fc3d65786a6b7877b7298c54c1657532e1b7e6270bacf018fec748a11d1078",
+    "events": 16,
+    "decision_makers": [
+      "Ellis",
+      "Lou"
+    ],
+    "coach_arrivals": 1,
+    "ready_payoffs": [],
+    "cultural_reference_candidates_for_review": []
+  },
+  {
+    "source": "research/repeating-town/runs/seed-513.json",
+    "sha256": "6ccc3b72543a872b9982e1e71666813a0bea661ad9c40e8a67d82d0a20c3664e",
+    "events": 16,
+    "decision_makers": [
+      "Ellis",
+      "Lou"
+    ],
+    "coach_arrivals": 0,
+    "ready_payoffs": [],
+    "cultural_reference_candidates_for_review": []
+  },
+  {
+    "source": "research/repeating-town/event-memory-runs/seed-511.json",
+    "sha256": "6f310d860b93944befc0237018909aa4896cd2573b70ce767dfbdc08d64c8cb1",
+    "events": 16,
+    "decision_makers": [
+      "Bea",
+      "Ellis",
+      "Lou"
+    ],
+    "coach_arrivals": 1,
+    "ready_payoffs": [
+      {
+        "arrival": 2,
+        "hold": 3,
+        "wake": 4
+      }
+    ],
+    "cultural_reference_candidates_for_review": []
+  },
+  {
+    "source": "research/repeating-town/event-memory-runs/seed-512.json",
+    "sha256": "6874d04e7d005dee091fbdc9621a8e71313326918f7ef4942334626bbe4d128c",
+    "events": 16,
+    "decision_makers": [
+      "Ellis"
+    ],
+    "coach_arrivals": 0,
+    "ready_payoffs": [],
+    "cultural_reference_candidates_for_review": []
+  },
+  {
+    "source": "research/repeating-town/event-memory-runs/seed-513.json",
+    "sha256": "b92efe943dd7f2fb2a03e39ed6220ad82146e9ffa0f4ee7572214f377e9476ed",
+    "events": 16,
+    "decision_makers": [
+      "Ellis",
+      "Lou"
+    ],
+    "coach_arrivals": 0,
+    "ready_payoffs": [],
+    "cultural_reference_candidates_for_review": []
+  }
+]

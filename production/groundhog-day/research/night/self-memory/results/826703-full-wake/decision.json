@@ -1,0 +1,14 @@
+{
+  "status": "valid",
+  "decision": {
+    "action": "take_coach",
+    "detail": "I swing my legs over the side of the mattress. Feet hit carpet. Cold. I stand. I don't look at the window. I don't listen to the radio finish its three notes. I pull my shirt over my head, step into the pants that are still in the chair, tie the tie one-handed the way I've done it four hundred mornings. Coat. Gloves in the left pocket. The small paper with the address in the right. I walk down the corridor. I don't stop at the lobby. I don't look at Rita or Larry or the ballroom lights or the piano or the Rialto or the flat tire or the envelope on the coat-check rack. I walk to the coach that's pulling up outside, I put my hand on the back of a seat to steady myself, and I sit. The bus drives. Pittsburgh is two hours. I will be there by seven. I will be at her door at seven-fifteen with the gloves and the coffee money in my pocket. The couch is a couch. It is in Pittsburgh. I am going to Pittsburgh. That is the whole forecast. Nothing else is in the forecast.",
+    "intention": "Be on that bus. Be in Pittsburgh by seven. Be at her door at seven-fifteen. The couch is a couch. She is counting on me. I go.",
+    "words": "One word, to the bus driver, as I sit down: \"Pittsburgh.\""
+  },
+  "request_hashes": [
+    "7d151fc6de538d18c1dacad95949595fe627bbfdd12bdceaa4c6f001a865ac38"
+  ],
+  "attempt": 0,
+  "source": "new draw"
+}

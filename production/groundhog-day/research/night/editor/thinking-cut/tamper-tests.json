@@ -1,0 +1,90 @@
+{
+  "positive_controls_passed": true,
+  "montage_source": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+  "thinking_source": "f3173d2fb56b419d9f0588ed2db879ea3d97076db47eeb425fda9160dd0cd576",
+  "pre_action_observations_from_original_provider_requests": [
+    {
+      "event": "d01-t00-camera",
+      "stream_id": "d01-t00-camera-22c9c93b734c",
+      "inference_cache_key": "6a66fb8330c6d2392310b94a36088a02c75f5bc9d3c480329af3c11a01d49fcb",
+      "request_sha256": "990077896ee807e6b0176e76d592a91e5255b168d0561dbbb59e6d0529c29bdd",
+      "where_before_action": "square",
+      "clock_before_action": "6:00 am",
+      "exact_date_seen_in_inference_request": "Tuesday, February 2, 2016. The local radio plays three bright notes and announces a groundhog forecast in the town square. A delivery van backfires twice."
+    },
+    {
+      "event": "d02-t02-reporter",
+      "stream_id": "d02-t02-reporter-081eec82cee2",
+      "inference_cache_key": "b3dd0662a0ec78fc2f6ea6346cc8cf0e86af77d2647ec6ff3d22dd1ff5b8a21f",
+      "request_sha256": "500cf199d90057652ead9967fe3932397c05943b7112b256b9b078b166ce5763",
+      "where_before_action": "inn",
+      "clock_before_action": "1:00 pm",
+      "exact_date_seen_in_inference_request": "Tuesday, February 2, 2016, 1:00 pm."
+    },
+    {
+      "event": "d03-t00-reporter",
+      "stream_id": "d03-t00-reporter-1a5bb3543ccc",
+      "inference_cache_key": "03577960ba3050e787f22527caab959c41fa84ee4b74bdf3895e7c40fe16f86b",
+      "request_sha256": "3458cc66592ad85d1b69e99affea18f4a1c0b758cb307b339fa523846cf51f4b",
+      "where_before_action": "inn",
+      "clock_before_action": "6:00 am",
+      "exact_date_seen_in_inference_request": "Tuesday, February 2, 2016. The local radio plays three bright notes and announces a groundhog forecast in the town square. A delivery van backfires twice."
+    },
+    {
+      "event": "d03-t02-reporter",
+      "stream_id": "d03-t02-reporter-ca6f86d99534",
+      "inference_cache_key": "04779aacf978bc607a0be032e49e0e90cf4ae3f430d330146a957ef83e2f4ef8",
+      "request_sha256": "1fe9301651b33912dff919dafaf834ed4457aed65fc3d51db0d81017afa3bcef",
+      "where_before_action": "depot",
+      "clock_before_action": "1:00 pm",
+      "exact_date_seen_in_inference_request": "Tuesday, February 2, 2016, 1:00 pm."
+    }
+  ],
+  "tamper_cases": [
+    {
+      "case": "Mark the second Pittsburgh evening as the first.",
+      "rejected": true,
+      "error": "trip number, physical location or source order mismatch"
+    },
+    {
+      "case": "Remove a hotel reset while still claiming five complete trips.",
+      "rejected": true,
+      "error": "five complete trips require fifteen distinct shots"
+    },
+    {
+      "case": "Inject a spoken recognition the reporter never uttered.",
+      "rejected": true,
+      "error": "line lacks exact committed speaker and text in this shot"
+    },
+    {
+      "case": "Give the Pittsburgh terminal a quote heard only at the square.",
+      "rejected": true,
+      "error": "line lacks exact committed speaker and text in this shot"
+    },
+    {
+      "case": "Substitute an invented external model-note quotation.",
+      "rejected": true,
+      "error": "select one unambiguous contiguous provider excerpt of at most 45 words"
+    },
+    {
+      "case": "Label a cached generation as a fresh note.",
+      "rejected": true,
+      "error": "selected note is a reused generation"
+    },
+    {
+      "case": "Append a byte to the NDJSON provider receipt.",
+      "rejected": true,
+      "error": "source receipt equality assertion"
+    },
+    {
+      "case": "Keep the original stream but alter the committed final decision.",
+      "rejected": true,
+      "error": "source receipt equality assertion"
+    },
+    {
+      "case": "Claim an ordinary daytime remark went on air.",
+      "rejected": true,
+      "error": "on-air line lacks a confirmed source role, source list and exact voiced carrier"
+    }
+  ]
+}

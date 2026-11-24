@@ -1,0 +1,598 @@
+[
+  {
+    "source": "research/night/takes/q27/film-receipts/seed-701.json",
+    "sha256": "e00c059b31452a7358d24f1aed8947af67fbd1ea38c94b58aa85fa15e8415b95",
+    "events": 24,
+    "decision_makers": [
+      "Larry",
+      "Phil",
+      "Rita"
+    ],
+    "coach_arrivals": 0,
+    "ready_payoffs": [],
+    "cultural_reference_candidates_for_review": [],
+    "ending": {
+      "lead": "inn",
+      "sister": false,
+      "camera": "the festival",
+      "on_air": false,
+      "reel_filed": false
+    },
+    "lead_actions": {
+      "talk_to_Rita": 16,
+      "go_to_diner": 2,
+      "clear_tables": 4,
+      "go_to_studio": 1,
+      "look_around": 1
+    },
+    "last_utterance": "Hey Rita, I need a quick check: is that groundhog loop actually in the can, or are we looking at a re-shoot? And has the town band confirmed they're ready to play for us this afternoon, or do I need to chase them down first? I want to make sure my Wednesday is clear to help my sister with that couch move."
+  },
+  {
+    "source": "research/night/takes/q27/film-receipts/seed-702.json",
+    "sha256": "b0e3497d0cf5ec1bbb588f96954d83fc9649dbdc4ddbde6cb38c0aac85de731a",
+    "events": 24,
+    "decision_makers": [
+      "Larry",
+      "Phil",
+      "Rita"
+    ],
+    "coach_arrivals": 1,
+    "ready_payoffs": [],
+    "cultural_reference_candidates_for_review": [
+      {
+        "event": "d02-t00-reporter",
+        "actor": "Phil",
+        "words": "Morning, Rita. Groundhog day, huh? I'm heading out to the square to shoot the local flavor bit. Is the weather piece fully locked in for me to leave?"
+      }
+    ],
+    "ending": {
+      "lead": "Pittsburgh",
+      "sister": false,
+      "camera": "the festival",
+      "on_air": false,
+      "reel_filed": false
+    },
+    "lead_actions": {
+      "talk_to_Rita": 17,
+      "look_around": 3,
+      "try_something": 2,
+      "take_coach_to_Pittsburgh": 1,
+      "spend_time_here": 1
+    },
+    "last_utterance": "Finally made it, Rita. Thanks for keeping the schedule tight."
+  },
+  {
+    "source": "research/night/takes/q27/film-receipts/seed-703.json",
+    "sha256": "ba92c3ec1294d3ab9ea2451b6b3059201d4cee71dde3f3dc1d1a3d2129f25e39",
+    "events": 24,
+    "decision_makers": [
+      "Larry",
+      "Phil",
+      "Rita"
+    ],
+    "coach_arrivals": 1,
+    "ready_payoffs": [
+      {
+        "arrival": 18,
+        "hold": 19,
+        "wake": 20
+      }
+    ],
+    "cultural_reference_candidates_for_review": [],
+    "ending": {
+      "lead": "studio",
+      "sister": false,
+      "camera": "the festival",
+      "on_air": false,
+      "reel_filed": true
+    },
+    "lead_actions": {
+      "talk_to_Rita": 17,
+      "try_something": 3,
+      "take_coach_to_Pittsburgh": 1,
+      "call_sister": 1,
+      "go_to_studio": 1,
+      "file_forecast": 1
+    },
+    "last_utterance": "Rita, just to be sure, the reel I cut earlier is queued, right? I want to be certain it’s good to go before I head out."
+  },
+  {
+    "source": "research/night/takes/q27/film-receipts/seed-704.json",
+    "sha256": "a420bbbb7c44482c4d10d07ff86e1964b2a8a241a1f438dee6984df9530e754b",
+    "events": 24,
+    "decision_makers": [
+      "Larry",
+      "Phil",
+      "Rita"
+    ],
+    "coach_arrivals": 2,
+    "ready_payoffs": [
+      {
+        "arrival": 6,
+        "hold": 7,
+        "wake": 8
+      },
+      {
+        "arrival": 18,
+        "hold": 19,
+        "wake": 20
+      }
+    ],
+    "cultural_reference_candidates_for_review": [],
+    "ending": {
+      "lead": "inn",
+      "sister": false,
+      "camera": "the festival",
+      "on_air": false,
+      "reel_filed": false
+    },
+    "lead_actions": {
+      "talk_to_Rita": 12,
+      "look_around": 4,
+      "go_to_studio": 2,
+      "go_to_diner": 1,
+      "take_coach_to_Pittsburgh": 2,
+      "call_sister": 1,
+      "file_forecast": 1,
+      "go_to_square": 1
+    },
+    "last_utterance": "Rita, are we fully wrapped for the night? I want to make sure I'm not missing any breaking updates before I head out."
+  },
+  {
+    "source": "research/night/takes/q27/film-transcript/seed-701.json",
+    "sha256": "9695d76c0cf799ac32810b53e3da5c26814e227ba6d710e675f0d5c4c798646d",
+    "events": 24,
+    "decision_makers": [
+      "Larry",
+      "Phil",
+      "Rita"
+    ],
+    "coach_arrivals": 5,
+    "ready_payoffs": [
+      {
+        "arrival": 6,
+        "hold": 7,
+        "wake": 8
+      },
+      {
+        "arrival": 10,
+        "hold": 11,
+        "wake": 12
+      },
+      {
+        "arrival": 14,
+        "hold": 15,
+        "wake": 16
+      },
+      {
+        "arrival": 18,
+        "hold": 19,
+        "wake": 20
+      }
+    ],
+    "cultural_reference_candidates_for_review": [],
+    "ending": {
+      "lead": "Pittsburgh",
+      "sister": false,
+      "camera": "the festival",
+      "on_air": false,
+      "reel_filed": false
+    },
+    "lead_actions": {
+      "talk_to_Rita": 6,
+      "take_coach_to_Pittsburgh": 5,
+      "call_sister": 2,
+      "spend_time_here": 3,
+      "try_something": 3,
+      "leave_pencil_mark": 2,
+      "look_around": 1,
+      "go_to_diner": 1,
+      "clear_tables": 1
+    },
+    "last_utterance": "Finally. Pittsburgh. I can smell the river from here."
+  },
+  {
+    "source": "research/night/takes/q27/film-transcript/seed-702.json",
+    "sha256": "759c339dcf0af3b648a51cdcbf6603e8b8637a3bd22969bcbefe89ed4cdcb5a2",
+    "events": 24,
+    "decision_makers": [
+      "Larry",
+      "Phil",
+      "Rita"
+    ],
+    "coach_arrivals": 0,
+    "ready_payoffs": [],
+    "cultural_reference_candidates_for_review": [],
+    "ending": {
+      "lead": "depot",
+      "sister": false,
+      "camera": "the festival",
+      "on_air": false,
+      "reel_filed": false
+    },
+    "lead_actions": {
+      "talk_to_Rita": 16,
+      "look_around": 3,
+      "go_to_depot": 2,
+      "check_timetable": 2,
+      "try_something": 1
+    },
+    "last_utterance": ""
+  },
+  {
+    "source": "research/night/takes/q27/film-transcript/seed-703.json",
+    "sha256": "9c701182121f556c969d9d02ffb88f14ac5c0364a5f96e47f8392c30e009021a",
+    "events": 24,
+    "decision_makers": [
+      "Larry",
+      "Phil",
+      "Rita"
+    ],
+    "coach_arrivals": 2,
+    "ready_payoffs": [
+      {
+        "arrival": 6,
+        "hold": 7,
+        "wake": 8
+      },
+      {
+        "arrival": 18,
+        "hold": 19,
+        "wake": 20
+      }
+    ],
+    "cultural_reference_candidates_for_review": [],
+    "ending": {
+      "lead": "inn",
+      "sister": false,
+      "camera": "the festival",
+      "on_air": false,
+      "reel_filed": false
+    },
+    "lead_actions": {
+      "talk_to_Rita": 11,
+      "go_to_depot": 1,
+      "check_timetable": 1,
+      "take_coach_to_Pittsburgh": 2,
+      "call_sister": 1,
+      "look_around": 4,
+      "try_something": 2,
+      "go_to_studio": 1,
+      "leave_pencil_mark": 1
+    },
+    "last_utterance": "Morning, Rita. Did you catch that groundhog announcement on the radio? I'm thinking we lean into it for the open. Are we on at seven?"
+  },
+  {
+    "source": "research/night/takes/q27/film-transcript/seed-704.json",
+    "sha256": "5a5772d75eb5e1ddf38815a5ec3a1be28812f3318145c5b61a740e7b32dc9292",
+    "events": 24,
+    "decision_makers": [
+      "Larry",
+      "Phil",
+      "Rita"
+    ],
+    "coach_arrivals": 1,
+    "ready_payoffs": [
+      {
+        "arrival": 18,
+        "hold": 19,
+        "wake": 20
+      }
+    ],
+    "cultural_reference_candidates_for_review": [],
+    "ending": {
+      "lead": "inn",
+      "sister": false,
+      "camera": null,
+      "on_air": false,
+      "reel_filed": false
+    },
+    "lead_actions": {
+      "talk_to_Rita": 14,
+      "try_something": 5,
+      "spend_time_here": 2,
+      "take_coach_to_Pittsburgh": 1,
+      "call_sister": 1,
+      "look_around": 1
+    },
+    "last_utterance": "Rita, I've got my coat by the door. Just want to double-check we are all set on the rundown before I head to the depot for that one o'clock coach."
+  },
+  {
+    "source": "research/night/takes/q27/neutral-receipts/seed-701.json",
+    "sha256": "265cdd405322e5eb26a0f589d7bda1dde5d2e7bf2a4dbb945b04a2564284a7d0",
+    "events": 24,
+    "decision_makers": [
+      "Cal",
+      "Ellis",
+      "June"
+    ],
+    "coach_arrivals": 2,
+    "ready_payoffs": [
+      {
+        "arrival": 6,
+        "hold": 7,
+        "wake": 8
+      }
+    ],
+    "cultural_reference_candidates_for_review": [
+      {
+        "event": "d01-t00-reporter",
+        "actor": "Ellis",
+        "words": "Morning, June. You see the radio? Groundhog day already. Let's get this forecast out before I'm late for the van."
+      },
+      {
+        "event": "d01-t01-reporter",
+        "actor": "June",
+        "words": "Morning, Ellis. You see the radio? Groundhog day already. Let's get this forecast out before I'm late for the van."
+      }
+    ],
+    "ending": {
+      "lead": "Pittsburgh",
+      "sister": true,
+      "camera": "the festival",
+      "on_air": false,
+      "reel_filed": false
+    },
+    "lead_actions": {
+      "talk_to_June": 18,
+      "take_coach_to_Pittsburgh": 2,
+      "look_around": 1,
+      "spend_time_here": 2,
+      "call_sister": 1
+    },
+    "last_utterance": "Hi, it's Ellis. Just checking, what time is the van coming by tomorrow?"
+  },
+  {
+    "source": "research/night/takes/q27/neutral-receipts/seed-702.json",
+    "sha256": "cb3415220dfccbea19c6802d3920c9384fe00e2375448d85bc605d2a7a2005eb",
+    "events": 24,
+    "decision_makers": [
+      "Cal",
+      "Ellis",
+      "June"
+    ],
+    "coach_arrivals": 2,
+    "ready_payoffs": [
+      {
+        "arrival": 10,
+        "hold": 11,
+        "wake": 12
+      }
+    ],
+    "cultural_reference_candidates_for_review": [],
+    "ending": {
+      "lead": "Pittsburgh",
+      "sister": false,
+      "camera": "the festival",
+      "on_air": false,
+      "reel_filed": false
+    },
+    "lead_actions": {
+      "talk_to_June": 16,
+      "look_around": 2,
+      "take_coach_to_Pittsburgh": 2,
+      "call_sister": 1,
+      "go_to_square": 1,
+      "try_something": 1,
+      "spend_time_here": 1
+    },
+    "last_utterance": ""
+  },
+  {
+    "source": "research/night/takes/q27/neutral-receipts/seed-703.json",
+    "sha256": "34dfe8d46792018322f7226350eb4d538bfc9ba6fb6a141951e54530a39329f3",
+    "events": 24,
+    "decision_makers": [
+      "Cal",
+      "Ellis",
+      "June"
+    ],
+    "coach_arrivals": 4,
+    "ready_payoffs": [
+      {
+        "arrival": 6,
+        "hold": 7,
+        "wake": 8
+      },
+      {
+        "arrival": 10,
+        "hold": 11,
+        "wake": 12
+      },
+      {
+        "arrival": 14,
+        "hold": 15,
+        "wake": 16
+      }
+    ],
+    "cultural_reference_candidates_for_review": [],
+    "ending": {
+      "lead": "Pittsburgh",
+      "sister": true,
+      "camera": "the festival",
+      "on_air": false,
+      "reel_filed": false
+    },
+    "lead_actions": {
+      "talk_to_June": 13,
+      "take_coach_to_Pittsburgh": 4,
+      "look_around": 1,
+      "spend_time_here": 3,
+      "go_to_diner": 1,
+      "go_to_studio": 1,
+      "call_sister": 1
+    },
+    "last_utterance": "Hey, it's Ellis. Did you lock in that van for tomorrow? I'm just touching base from here in the city."
+  },
+  {
+    "source": "research/night/takes/q27/neutral-receipts/seed-704.json",
+    "sha256": "217c53b59b23734b0070f82f653444187d6ac960e01679e94db3a2f18affa802",
+    "events": 24,
+    "decision_makers": [
+      "Cal",
+      "Ellis",
+      "June"
+    ],
+    "coach_arrivals": 0,
+    "ready_payoffs": [],
+    "cultural_reference_candidates_for_review": [],
+    "ending": {
+      "lead": "inn",
+      "sister": false,
+      "camera": "the cornet player",
+      "on_air": false,
+      "reel_filed": false
+    },
+    "lead_actions": {
+      "talk_to_June": 14,
+      "look_around": 3,
+      "go_to_square": 2,
+      "listen_to_band": 1,
+      "talk_to_Cal": 1,
+      "go_to_studio": 1,
+      "file_forecast": 2
+    },
+    "last_utterance": "Hey June, quick check before I head out. Is the band segment finally locked into the rundown? And did we get Cal's camera back before the afternoon crew took it? Just want to make sure everything is wrapped up so I can get to the depot for my coach."
+  },
+  {
+    "source": "research/night/takes/q27/neutral-transcript/seed-701.json",
+    "sha256": "fda063ac34079ad7bae584dfc70c13a4a724fcd3645e3fb0e18f1cdac8fdd528",
+    "events": 24,
+    "decision_makers": [
+      "Cal",
+      "Ellis",
+      "June"
+    ],
+    "coach_arrivals": 0,
+    "ready_payoffs": [],
+    "cultural_reference_candidates_for_review": [],
+    "ending": {
+      "lead": "inn",
+      "sister": false,
+      "camera": "the festival",
+      "on_air": false,
+      "reel_filed": false
+    },
+    "lead_actions": {
+      "talk_to_June": 18,
+      "go_to_diner": 1,
+      "clear_tables": 2,
+      "look_around": 1,
+      "spend_time_here": 2
+    },
+    "last_utterance": "June, I appreciate the keys, but I am not doing a segment today. I am staying in my room. I’ll see you when I’m checking out."
+  },
+  {
+    "source": "research/night/takes/q27/neutral-transcript/seed-702.json",
+    "sha256": "f081a3b4a0351de84a4f87c34df9ba851e5f625dd81f66eaba867fbdab2f227b",
+    "events": 24,
+    "decision_makers": [
+      "Cal",
+      "Ellis",
+      "June"
+    ],
+    "coach_arrivals": 0,
+    "ready_payoffs": [],
+    "cultural_reference_candidates_for_review": [],
+    "ending": {
+      "lead": "studio",
+      "sister": false,
+      "camera": "the festival",
+      "on_air": false,
+      "reel_filed": true
+    },
+    "lead_actions": {
+      "talk_to_June": 12,
+      "try_something": 2,
+      "go_to_depot": 3,
+      "check_timetable": 3,
+      "look_around": 1,
+      "spend_time_here": 1,
+      "go_to_studio": 1,
+      "file_forecast": 1
+    },
+    "last_utterance": "Clear skies, a high of forty-two, and a light breeze out of the northwest. A quiet one, folks. See you tomorrow."
+  },
+  {
+    "source": "research/night/takes/q27/neutral-transcript/seed-703.json",
+    "sha256": "ade5878c64049db6318b4798edaf254025ec6078bef8ea4935196aa42ea2b682",
+    "events": 24,
+    "decision_makers": [
+      "Cal",
+      "Ellis",
+      "June"
+    ],
+    "coach_arrivals": 4,
+    "ready_payoffs": [
+      {
+        "arrival": 6,
+        "hold": 7,
+        "wake": 8
+      },
+      {
+        "arrival": 14,
+        "hold": 15,
+        "wake": 16
+      },
+      {
+        "arrival": 18,
+        "hold": 19,
+        "wake": 20
+      }
+    ],
+    "cultural_reference_candidates_for_review": [],
+    "ending": {
+      "lead": "Pittsburgh",
+      "sister": false,
+      "camera": "the cornet player",
+      "on_air": false,
+      "reel_filed": false
+    },
+    "lead_actions": {
+      "talk_to_June": 12,
+      "look_around": 2,
+      "take_coach_to_Pittsburgh": 4,
+      "spend_time_here": 3,
+      "try_something": 2,
+      "call_sister": 1
+    },
+    "last_utterance": ""
+  },
+  {
+    "source": "research/night/takes/q27/neutral-transcript/seed-704.json",
+    "sha256": "cd8e08ae1859ccb90cc1588b4f818088528b4ac3140017dbe80e5dc725838e13",
+    "events": 24,
+    "decision_makers": [
+      "Cal",
+      "Ellis",
+      "June"
+    ],
+    "coach_arrivals": 2,
+    "ready_payoffs": [
+      {
+        "arrival": 14,
+        "hold": 15,
+        "wake": 16
+      }
+    ],
+    "cultural_reference_candidates_for_review": [],
+    "ending": {
+      "lead": "Pittsburgh",
+      "sister": false,
+      "camera": "the festival",
+      "on_air": false,
+      "reel_filed": false
+    },
+    "lead_actions": {
+      "talk_to_June": 10,
+      "go_to_square": 1,
+      "look_around": 4,
+      "try_something": 2,
+      "leave_pencil_mark": 3,
+      "take_coach_to_Pittsburgh": 2,
+      "call_sister": 1,
+      "go_to_depot": 1
+    },
+    "last_utterance": ""
+  }
+]

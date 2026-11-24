@@ -1,0 +1,226 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 960" width="1440" height="960" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">
+  <defs>
+    <marker id="arrCyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrAmber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#fbbf24"/>
+    </marker>
+    <marker id="arrMint" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#34d399"/>
+    </marker>
+    <marker id="arrPink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#f472b6"/>
+    </marker>
+  </defs>
+
+  <rect width="1440" height="960" fill="#090e16"/>
+
+  <!-- Header -->
+  <rect x="24" y="16" width="1392" height="72" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="44" y="46" fill="#f8fafc" font-size="22" font-weight="700" letter-spacing="1.2">S05 · V. ACCEPTANCE — TIRE → WAIT → SIGNATURE → CONTINUOUS HANDOFF (01:14–01:34)</text>
+  <text x="44" y="72" fill="#94a3b8" font-size="13">SYNCED TO STREET-M &amp; L-MASTER (main-street.svg · hotel-lobby.svg · S05-A/B/C1/C2/D1/D2/D3/THRESHOLD/E)</text>
+  <rect x="1152" y="32" width="245" height="38" rx="6" fill="#2b1e08" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="1274" y="56" fill="#fde68a" font-size="12" font-weight="700" text-anchor="middle">STRICT W→E SCREEN-L→R AXIS</text>
+
+  <!-- PANEL A: FULL WEST-TO-EAST MAIN STREET + CONNECTED HOTEL LOBBY (TOP FULL WIDTH) -->
+  <rect x="24" y="102" width="1392" height="446" rx="10" fill="#0d1522" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="44" y="130" fill="#7dd3fc" font-size="14" font-weight="700">A. OVERHEAD WEST → EAST MASTER BLOCKING (LOOKING NORTH ↑ · WEST = SCREEN-LEFT · EAST = SCREEN-RIGHT)</text>
+
+  <!-- Compass -->
+  <g transform="translate(1366,138)">
+    <circle cx="0" cy="0" r="20" fill="#0f172a" stroke="#475569" stroke-width="1.5"/>
+    <line x1="0" y1="10" x2="0" y2="-11" stroke="#f8fafc" stroke-width="2" marker-end="url(#arrCyan)"/>
+    <text x="0" y="32" fill="#94a3b8" font-size="10" font-weight="700" text-anchor="middle">NORTH</text>
+  </g>
+
+  <!-- Buildings Row (North side) -->
+  <!-- 1. Weather Position (Far West) -->
+  <rect x="52" y="148" width="236" height="106" fill="#1b2636" stroke="#64748b" stroke-width="2.5"/>
+  <text x="170" y="182" fill="#e2e8f0" font-size="13" font-weight="700" text-anchor="middle">WEATHER POSITION</text>
+  <text x="170" y="202" fill="#94a3b8" font-size="10" text-anchor="middle">(S00-A · Iron lamp + board)</text>
+  <text x="170" y="220" fill="#64748b" font-size="10" text-anchor="middle">FAR WEST / SCREEN-LEFT</text>
+
+  <!-- 2. Oxblood Shop Awning + Brick Pier (West-Center) -->
+  <rect x="316" y="148" width="398" height="106" fill="#1b2636" stroke="#64748b" stroke-width="2.5"/>
+  <line x1="316" y1="248" x2="714" y2="248" stroke="#9f1239" stroke-width="12" stroke-dasharray="22 10"/>
+  <text x="515" y="182" fill="#fda4af" font-size="13" font-weight="700" text-anchor="middle">OXBLOOD STRIPED AWNING</text>
+  <text x="515" y="202" fill="#cbd5e1" font-size="11" text-anchor="middle">BRICK PIER (S00-B &amp; S05 WAIT/SIGN MARK)</text>
+  <!-- Brick Pier -->
+  <rect x="444" y="246" width="26" height="32" fill="#9f1239" stroke="#fda4af" stroke-width="2"/>
+  <text x="457" y="236" fill="#fecdd3" font-size="10" font-weight="700" text-anchor="middle">PIER</text>
+
+  <!-- 3. Clear Sidewalk Run Gap Label -->
+  <rect x="726" y="168" width="206" height="72" rx="6" fill="#121e2b" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="829" y="196" fill="#fbbf24" font-size="11" font-weight="700" text-anchor="middle">CLEAR SIDEWALK GAP!</text>
+  <text x="829" y="214" fill="#fde68a" font-size="10" text-anchor="middle">(Fixes STREET-M QA —</text>
+  <text x="829" y="228" fill="#fde68a" font-size="10" text-anchor="middle">makes Ned's walk real!)</text>
+
+  <!-- 4. Connected Hearthside Hotel Lobby (East!) -->
+  <rect x="948" y="148" width="388" height="122" fill="#16282a" stroke="#34d399" stroke-width="3"/>
+  <text x="1142" y="172" fill="#34d399" font-size="13" font-weight="700" text-anchor="middle">HEARTHSIDE HOTEL LOBBY (EAST)</text>
+  <!-- Recessed South Entry + Opaque Vestibule Return Wall -->
+  <rect x="1032" y="242" width="76" height="30" fill="#090e16" stroke="#94a3b8" stroke-width="2"/>
+  <path d="M 1108,270 L 1108,224 L 1172,224" fill="none" stroke="#f472b6" stroke-width="7"/>
+  <text x="1116" y="214" fill="#f472b6" font-size="10" font-weight="700">OPAQUE RETURN WALL</text>
+  <text x="1116" y="238" fill="#fbcfe8" font-size="9">(BLOCKS RITA'S VIEW!)</text>
+  <!-- East Oak Desk & Rita + Ned inside -->
+  <rect x="1282" y="170" width="38" height="86" fill="#422006" stroke="#d97706" stroke-width="2"/>
+  <text x="1301" y="216" fill="#fde68a" font-size="9" font-weight="700" text-anchor="middle" transform="rotate(90 1301 216)">EAST DESK</text>
+  <!-- Rita & Ned Landing E on GUEST SIDE of desk -->
+  <circle cx="1248" cy="240" r="12" fill="#065f46" stroke="#34d399" stroke-width="2"/>
+  <text x="1248" y="244" fill="#ecfdf5" font-size="9" font-weight="700" text-anchor="middle">R</text>
+  <circle cx="1216" cy="244" r="12" fill="#78350f" stroke="#fbbf24" stroke-width="2"/>
+  <text x="1216" y="248" fill="#fef3c7" font-size="9" font-weight="700" text-anchor="middle">N</text>
+  <text x="1232" y="196" fill="#34d399" font-size="9" font-weight="700" text-anchor="middle">S05-E GUEST SIDE</text>
+
+  <!-- North Sidewalk Band -->
+  <rect x="52" y="270" width="1284" height="106" fill="#253240"/>
+  <line x1="52" y1="376" x2="1336" y2="376" stroke="#cbd5e1" stroke-width="3"/>
+  <text x="68" y="290" fill="#94a3b8" font-size="10">NORTH SIDEWALK (SNOWY)</text>
+
+  <!-- Street & Curb -->
+  <rect x="52" y="376" width="1284" height="156" fill="#14202c"/>
+  <line x1="52" y1="456" x2="1336" y2="456" stroke="#475569" stroke-width="2" stroke-dasharray="20 16"/>
+  <text x="68" y="446" fill="#64748b" font-size="11" font-weight="700">← WEST (SCREEN-LEFT)</text>
+  <text x="1152" y="446" fill="#64748b" font-size="11" font-weight="700">EAST (SCREEN-RIGHT) →</text>
+
+  <!-- 1. Olive Sedan (West Curb, Nose EAST →, flat rear curbside tire) -->
+  <g transform="translate(88,384)">
+    <rect x="0" y="0" width="214" height="52" rx="12" fill="#4d523e" stroke="#d6d3d1" stroke-width="2"/>
+    <circle cx="34" cy="2" r="11" fill="#090e16" stroke="#fbbf24" stroke-width="2.5"/>
+    <text x="112" y="31" fill="#f8fafc" font-size="11" font-weight="700" text-anchor="middle">OLIVE SEDAN (NOSE E →)</text>
+  </g>
+  <!-- Cam T: S05-A Low 50mm Wheel Insert -->
+  <polygon points="82,340 74,358 90,358" fill="#38bdf8"/>
+  <line x1="88" y1="354" x2="116" y2="380" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrCyan)"/>
+  <text x="132" y="346" fill="#7dd3fc" font-size="10" font-weight="700">T · S05-A (50mm TIRE)</text>
+
+  <!-- 2. Phil & Ned at Brick Pier -->
+  <!-- PHIL (CHARCOAL COAT) ALWAYS LEFT OF NED AT PIER! -->
+  <circle cx="446" cy="312" r="14" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+  <text x="446" y="316" fill="#7dd3fc" font-size="10" font-weight="700" text-anchor="middle">P</text>
+  <text x="424" y="348" fill="#7dd3fc" font-size="10" font-weight="700" text-anchor="end">PHIL STAYS AT PIER</text>
+  <text x="424" y="362" fill="#cbd5e1" font-size="9" text-anchor="end">(Charcoal + oxblood)</text>
+
+  <!-- Phil exits WEST (Screen-Left) with white customer copy in D2 -->
+  <path d="M 430,312 L 320,312" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#arrCyan)"/>
+  <text x="366" y="302" fill="#7dd3fc" font-size="9" font-weight="700" text-anchor="middle">D2: PHIL EXITS L</text>
+
+  <!-- NED (CAMEL COAT) RIGHT OF PHIL! -->
+  <circle cx="500" cy="312" r="14" fill="#78350f" stroke="#fbbf24" stroke-width="3"/>
+  <text x="500" y="316" fill="#fef3c7" font-size="10" font-weight="700" text-anchor="middle">N</text>
+
+  <!-- 3. Ned's Navy Wagon (FARTHER EAST, Nose WEST ←, pen in curbside glovebox) -->
+  <g transform="translate(812,384)">
+    <rect x="0" y="0" width="236" height="52" rx="12" fill="#1e3a5f" stroke="#93c5fd" stroke-width="2"/>
+    <circle cx="64" cy="2" r="7" fill="#fbbf24" stroke="#fef3c7" stroke-width="1.5"/>
+    <text x="120" y="31" fill="#e0f2fe" font-size="11" font-weight="700" text-anchor="middle">← NAVY WAGON (NOSE W)</text>
+  </g>
+  <text x="930" y="368" fill="#fde68a" font-size="10" font-weight="700" text-anchor="middle">GLOVEBOX PEN (EAST OF PIER!)</text>
+
+  <!-- Ned's Round Trip (C1/C2) + Post-Sale Walk to Hotel (D2->D3->E) -->
+  <path d="M 516,304 C 620,282 745,302 868,376" fill="none" stroke="#fbbf24" stroke-width="2.8" marker-end="url(#arrAmber)"/>
+  <text x="692" y="292" fill="#fbbf24" font-size="10" font-weight="700" text-anchor="middle">C1: NED RUNS EAST FOR PEN →</text>
+  <path d="M 858,382 C 745,346 620,330 518,324" fill="none" stroke="#fbbf24" stroke-width="2.2" stroke-dasharray="6 4" marker-end="url(#arrAmber)"/>
+  <text x="692" y="358" fill="#fde68a" font-size="10" text-anchor="middle">← C2: NED RETURNS WEST (PHIL STILL WAITING!)</text>
+  <path d="M 516,296 C 690,266 910,288 1066,262" fill="none" stroke="#34d399" stroke-width="2.5" stroke-dasharray="3 5" marker-end="url(#arrMint)"/>
+  <text x="964" y="294" fill="#34d399" font-size="10" font-weight="700" text-anchor="middle">D2→D3: NED EAST TO DOOR</text>
+
+  <!-- CAMERA MARKS & CONTINUOUS HANDOFF RAIL -->
+  <!-- Cam X: S05-B (40mm) & S05-C1/C2 (locked 35mm wide) -->
+  <polygon points="596,492 586,512 606,512" fill="#38bdf8"/>
+  <line x1="596" y1="490" x2="596" y2="338" stroke="#38bdf8" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrCyan)"/>
+  <text x="580" y="512" fill="#7dd3fc" font-size="10.5" font-weight="700" text-anchor="end">X · S05-B/C1/C2 MASTER (NORTH ↑)</text>
+
+  <!-- Cam I (D1 signature) -> Pull back to D2 -> Track East to D3/Threshold -> Into Lobby E -->
+  <polygon points="562,402 554,418 570,418" fill="#f472b6"/>
+  <text x="546" y="424" fill="#f9a8d4" font-size="10" font-weight="700" text-anchor="end">I · D1 SIGN</text>
+  <path d="M 564,420 C 570,456 620,478 730,474 C 890,468 1044,412 1068,280 C 1076,246 1152,248 1200,248" fill="none" stroke="#f472b6" stroke-width="3" stroke-dasharray="8 4" marker-end="url(#arrPink)"/>
+  <rect x="854" y="486" width="462" height="28" rx="5" fill="#2a1024" stroke="#f472b6" stroke-width="1.5"/>
+  <text x="1085" y="504" fill="#fce7f3" font-size="11" font-weight="700" text-anchor="middle">HIGGSFIELD CAMERA MOVE: D1 SIGN → D2 PULLBACK → D3 JAMB → E DESK</text>
+
+  <!-- PANEL B: 4-STAGE 21:9 SCREEN-LEFT / SCREEN-RIGHT CONTINUITY STRIP (BOTTOM LEFT) -->
+  <rect x="24" y="564" width="844" height="372" rx="10" fill="#0d1522" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="44" y="592" fill="#fbbf24" font-size="14" font-weight="700">B. 21:9 SCREEN-LEFT / CENTER / SCREEN-RIGHT LOCKS (S05-C1 → D1 → D2 → THRESHOLD → E)</text>
+
+  <!-- Row 1: S05-C1/C2 Wait & S05-D1 Signature -->
+  <g transform="translate(44,610)">
+    <text x="0" y="14" fill="#7dd3fc" font-size="11" font-weight="700">1. S05-B / C1 / C2 · WAIT (SOUTH→NORTH 35mm)</text>
+    <rect x="0" y="22" width="392" height="122" rx="6" fill="#0b1320" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="14" y="34" width="96" height="96" rx="4" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="62" y="70" fill="#7dd3fc" font-size="10" font-weight="700" text-anchor="middle">PHIL (LEFT)</text>
+    <text x="62" y="86" fill="#cbd5e1" font-size="9" text-anchor="middle">AT BRICK PIER</text>
+    <text x="62" y="102" fill="#34d399" font-size="9" text-anchor="middle">NEVER MOVES!</text>
+    <text x="176" y="82" fill="#94a3b8" font-size="9" text-anchor="middle">OPEN SIDEWALK</text>
+    <text x="176" y="96" fill="#fbbf24" font-size="9" font-weight="700" text-anchor="middle">← NED RUNS →</text>
+    <rect x="248" y="44" width="130" height="82" rx="4" fill="#1e3a5f" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="313" y="76" fill="#e0f2fe" font-size="10" font-weight="700" text-anchor="middle">NAVY WAGON (R)</text>
+    <text x="313" y="92" fill="#fde68a" font-size="9" text-anchor="middle">NED GETS PEN</text>
+    <text x="313" y="108" fill="#94a3b8" font-size="9" text-anchor="middle">Hotel door far R</text>
+  </g>
+
+  <g transform="translate(456,610)">
+    <text x="0" y="14" fill="#f472b6" font-size="11" font-weight="700">2. S05-D1 · SIGNATURE (35mm OBLIQUE)</text>
+    <rect x="0" y="22" width="392" height="122" rx="6" fill="#0b1320" stroke="#f472b6" stroke-width="2"/>
+    <text x="196" y="48" fill="#f9a8d4" font-size="11" font-weight="700" text-anchor="middle">PHIL SIGNS WHITE TOP SHEET ON BURGUNDY BOOK</text>
+    <rect x="34" y="64" width="152" height="58" rx="4" fill="#0a241d" stroke="#34d399" stroke-width="1.5"/>
+    <text x="110" y="86" fill="#34d399" font-size="10" font-weight="700" text-anchor="middle">BARE RIGHT HAND</text>
+    <text x="110" y="102" fill="#fecaca" font-size="9" font-weight="700" text-anchor="middle">ZERO WATCH ON RIGHT!</text>
+    <rect x="206" y="64" width="160" height="58" rx="4" fill="#1e3a5f" stroke="#60a5fa" stroke-width="1.5"/>
+    <text x="286" y="86" fill="#93c5fd" font-size="10" font-weight="700" text-anchor="middle">PALE BLUE CARBON</text>
+    <text x="286" y="102" fill="#e2e8f0" font-size="9" text-anchor="middle">CLEARLY VISIBLE UNDER</text>
+  </g>
+
+  <!-- Row 2: S05-D2/THRESHOLD & S05-E Lobby Landing -->
+  <g transform="translate(44,768)">
+    <text x="0" y="14" fill="#fbbf24" font-size="11" font-weight="700">3. S05-D2 (PULLBACK) → S05-THRESHOLD (DOOR WIPE)</text>
+    <rect x="0" y="22" width="392" height="126" rx="6" fill="#0b1320" stroke="#fbbf24" stroke-width="2"/>
+    <rect x="10" y="34" width="122" height="102" rx="4" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="71" y="68" fill="#7dd3fc" font-size="9" font-weight="700" text-anchor="middle">D2: PHIL + WHITE</text>
+    <text x="71" y="84" fill="#7dd3fc" font-size="9" font-weight="700" text-anchor="middle">EXIT FAR LEFT ←</text>
+    <text x="71" y="108" fill="#fde68a" font-size="9" text-anchor="middle">NED + BLUE → R</text>
+    <rect x="148" y="34" width="232" height="102" rx="4" fill="#020617" stroke="#f472b6" stroke-width="1.5"/>
+    <rect x="234" y="36" width="144" height="98" fill="#09090b" stroke="#52525b" stroke-width="1"/>
+    <text x="190" y="74" fill="#fde68a" font-size="9" font-weight="700" text-anchor="middle">NED L</text>
+    <text x="190" y="90" fill="#94a3b8" font-size="8" text-anchor="middle">SHLDR+</text>
+    <text x="190" y="104" fill="#94a3b8" font-size="8" text-anchor="middle">HANDLE</text>
+    <text x="306" y="80" fill="#f472b6" font-size="10" font-weight="700" text-anchor="middle">DARK DOOR JAMB</text>
+    <text x="306" y="96" fill="#f9a8d4" font-size="9" text-anchor="middle">FILLS 65% RIGHT</text>
+    <text x="306" y="112" fill="#94a3b8" font-size="8" text-anchor="middle">(CONCEALS EDIT!)</text>
+  </g>
+
+  <g transform="translate(456,768)">
+    <text x="0" y="14" fill="#34d399" font-size="11" font-weight="700">4. S05-E · LOBBY LANDING ("HE WAITED.")</text>
+    <rect x="0" y="22" width="392" height="126" rx="6" fill="#0b1320" stroke="#34d399" stroke-width="2"/>
+    <text x="80" y="64" fill="#f472b6" font-size="9" font-weight="700" text-anchor="middle">RECESSED ENTRY</text>
+    <text x="80" y="78" fill="#94a3b8" font-size="8" text-anchor="middle">&amp; OPAQUE RETURN</text>
+    <text x="80" y="92" fill="#94a3b8" font-size="8" text-anchor="middle">IN SW DEPTH (L)</text>
+    <rect x="158" y="38" width="220" height="94" rx="4" fill="#16282a" stroke="#34d399" stroke-width="1.5"/>
+    <text x="268" y="64" fill="#34d399" font-size="10" font-weight="700" text-anchor="middle">BOTH ON GUEST SIDE OF DESK!</text>
+    <text x="268" y="84" fill="#fde68a" font-size="8.2" text-anchor="middle">Ned peels BLUE carbon from burgundy book</text>
+    <text x="268" y="102" fill="#e2e8f0" font-size="8.2" text-anchor="middle">Rita listens · clock visible · PHIL GONE</text>
+    <text x="268" y="120" fill="#f87171" font-size="7.8" font-weight="700" text-anchor="middle">NOT across counter / NOT broad glass behind!</text>
+  </g>
+
+  <!-- PANEL C: CRITICAL QA FIXES (BOTTOM RIGHT) -->
+  <rect x="888" y="564" width="528" height="372" rx="10" fill="#0d1522" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="908" y="592" fill="#f87171" font-size="14" font-weight="700">C. CRITICAL S05 QA FIXES (ALL 6 BUGS PREVENTED)</text>
+  <line x1="908" y1="604" x2="1396" y2="604" stroke="#1e293b" stroke-width="1.5"/>
+
+  <rect x="908" y="618" width="488" height="300" rx="8" fill="#2a1215" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="924" y="644" fill="#fecaca" font-size="11" font-weight="700">1. S05-B GREASE (NOT BLOOD!):</text>
+  <text x="924" y="660" fill="#fca5a5" font-size="10">   Faint dry CHARCOAL/GREY tire smudge on 1–2 fingertips ONLY.</text>
+  <text x="924" y="684" fill="#fecaca" font-size="11" font-weight="700">2. S05-C1 ROLE FLIP (DO NOT SWAP!):</text>
+  <text x="924" y="700" fill="#fca5a5" font-size="10">   PHIL (charcoal) waits at LEFT brick pier; NED (camel) goes</text>
+  <text x="924" y="714" fill="#fca5a5" font-size="10">   to RIGHT navy wagon. Never put Phil at the wagon!</text>
+  <text x="924" y="738" fill="#fecaca" font-size="11" font-weight="700">3. STREET-M SIDEWALK DISTANCE:</text>
+  <text x="924" y="754" fill="#fca5a5" font-size="10">   Keep clear run of sidewalk between brick pier &amp; navy wagon.</text>
+  <text x="924" y="778" fill="#fecaca" font-size="11" font-weight="700">4. S05-D1 WATCH WRIST:</text>
+  <text x="924" y="794" fill="#fca5a5" font-size="10">   Bare RIGHT hand signs with ZERO watch; watch stays on LEFT.</text>
+  <text x="924" y="818" fill="#fecaca" font-size="11" font-weight="700">5. S05-D3 THRESHOLD SCALE:</text>
+  <text x="924" y="834" fill="#fca5a5" font-size="10">   Pressed into jamb over Ned's left shoulder; dark jamb = 65% R.</text>
+  <text x="924" y="858" fill="#fecaca" font-size="11" font-weight="700">6. S05-E LOBBY GEOMETRY (MATCH L-MASTER!):</text>
+  <text x="924" y="874" fill="#fca5a5" font-size="10">   Both Ned &amp; Rita stand on GUEST SIDE of near end of East desk</text>
+  <text x="924" y="888" fill="#fca5a5" font-size="10">   with opaque vestibule return in SW depth (NOT across counter!).</text>
+</svg>

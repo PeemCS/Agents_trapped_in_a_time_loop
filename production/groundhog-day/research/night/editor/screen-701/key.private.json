@@ -1,0 +1,18 @@
+{
+  "Take 01": {
+    "path": "research/night/takes/q27/film-receipts/seed-701.json",
+    "sha256": "e00c059b31452a7358d24f1aed8947af67fbd1ea38c94b58aa85fa15e8415b95"
+  },
+  "Take 02": {
+    "path": "research/night/takes/q27/neutral-receipts/seed-701.json",
+    "sha256": "265cdd405322e5eb26a0f589d7bda1dde5d2e7bf2a4dbb945b04a2564284a7d0"
+  },
+  "Take 03": {
+    "path": "research/night/takes/q27/neutral-transcript/seed-701.json",
+    "sha256": "fda063ac34079ad7bae584dfc70c13a4a724fcd3645e3fb0e18f1cdac8fdd528"
+  },
+  "Take 04": {
+    "path": "research/night/takes/q27/film-transcript/seed-701.json",
+    "sha256": "9695d76c0cf799ac32810b53e3da5c26814e227ba6d710e675f0d5c4c798646d"
+  }
+}

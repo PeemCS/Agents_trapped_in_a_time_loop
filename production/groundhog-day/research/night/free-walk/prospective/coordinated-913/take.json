@@ -1,0 +1,667 @@
+{
+  "condition": "coordinated",
+  "seed": 913,
+  "model": "qwen3:0.6b",
+  "revision": "7df6b6e09427a769808717c0a93cadc4ae99ed4eb8bf5ca557c90846becea435",
+  "initial": {
+    "reporter": {
+      "x": 6.75,
+      "y": 8.25
+    },
+    "producer": {
+      "x": 8.22,
+      "y": 8.4
+    },
+    "camera": {
+      "x": 11.0,
+      "y": 7.3
+    }
+  },
+  "ticks": [
+    [
+      {
+        "id": "coordinated-913-t00-reporter",
+        "role": "reporter",
+        "actor": "Phil",
+        "say": "I'm heading to the studio to check on the latest updates. Let me know if there's anything I can help with!",
+        "raw": "prospective/coordinated-913/calls/coordinated-913-t00-reporter.json",
+        "raw_sha256": "68de8ebd3cafaac4b740a1f22ebbe13452c4d9095ec7f789925d6a7d241d651e",
+        "seed": 91300,
+        "start": {
+          "x": 6.75,
+          "y": 8.25
+        },
+        "requested": {
+          "x": 14.45,
+          "y": 7.7
+        },
+        "quantized": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "resolved": {
+          "x": 14,
+          "y": 8
+        },
+        "status": "reserved-nearby",
+        "reason": "The crew reservation placed you at a nearby clear point.",
+        "path": [
+          {
+            "x": 6.75,
+            "y": 8.25
+          },
+          {
+            "x": 14,
+            "y": 8
+          }
+        ],
+        "length": 7.254309064273454,
+        "requestedDoorDistance": 0,
+        "resolvedDoorDistance": 0.5408326913195977,
+        "nearDoor": "studio",
+        "gridError": 0.11180339887498869,
+        "adjustment": 0.5656854249492379,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            6.75,
+            0,
+            8.25
+          ],
+          [
+            14,
+            0,
+            8
+          ]
+        ],
+        "canonicalEndpoint": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "canonicalPath": [
+          {
+            "x": 6.75,
+            "y": 8.25
+          },
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          }
+        ],
+        "from": 0.594745416657285,
+        "to": 1,
+        "slotMinimumGap": 0.5656854249492379
+      },
+      {
+        "id": "coordinated-913-t00-producer",
+        "role": "producer",
+        "actor": "Rita",
+        "say": "I chose the studio for my next walk. It's a great place to relax after a long day.",
+        "raw": "prospective/coordinated-913/calls/coordinated-913-t00-producer.json",
+        "raw_sha256": "dd1a58fba8c436bca221ce8795cd53077cf042cea93eb2049e2bbba460688b37",
+        "seed": 91301,
+        "start": {
+          "x": 8.22,
+          "y": 8.4
+        },
+        "requested": {
+          "x": 14.45,
+          "y": 7.7
+        },
+        "quantized": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "resolved": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 8.22,
+            "y": 8.4
+          },
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          }
+        ],
+        "length": 6.231564811506014,
+        "requestedDoorDistance": 0,
+        "resolvedDoorDistance": 0.11180339887498869,
+        "nearDoor": "studio",
+        "gridError": 0.11180339887498869,
+        "adjustment": 0.0,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            8.22,
+            0,
+            8.4
+          ],
+          [
+            14.4,
+            0,
+            7.6000000000000005
+          ]
+        ],
+        "canonicalEndpoint": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "canonicalPath": [
+          {
+            "x": 8.22,
+            "y": 8.4
+          },
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          }
+        ],
+        "from": 0,
+        "to": 0.34812001789351926,
+        "slotMinimumGap": 0.5656854249492379
+      },
+      {
+        "id": "coordinated-913-t00-camera",
+        "role": "camera",
+        "actor": "Larry",
+        "say": "I'm heading to the square, which is a great place to enjoy some time with my friends.",
+        "raw": "prospective/coordinated-913/calls/coordinated-913-t00-camera.json",
+        "raw_sha256": "2b8ad8ac0edd20a09143b771e68ffed8be432b24044a7a81487d04035ade8baa",
+        "seed": 91302,
+        "start": {
+          "x": 11,
+          "y": 7.3
+        },
+        "requested": {
+          "x": 12.2,
+          "y": 11.4
+        },
+        "quantized": {
+          "x": 12,
+          "y": 11.600000000000001
+        },
+        "resolved": {
+          "x": 12,
+          "y": 11.600000000000001
+        },
+        "status": "reached",
+        "reason": "Reached the chosen grid point.",
+        "path": [
+          {
+            "x": 11,
+            "y": 7.3
+          },
+          {
+            "x": 12,
+            "y": 11.600000000000001
+          }
+        ],
+        "length": 4.414748010928824,
+        "requestedDoorDistance": 0,
+        "resolvedDoorDistance": 0.2828427124746193,
+        "nearDoor": "square",
+        "gridError": 0.28284271247461923,
+        "adjustment": 0.0,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            11,
+            0,
+            7.3
+          ],
+          [
+            12,
+            0,
+            11.600000000000001
+          ]
+        ],
+        "canonicalEndpoint": {
+          "x": 12,
+          "y": 11.600000000000001
+        },
+        "canonicalPath": [
+          {
+            "x": 11,
+            "y": 7.3
+          },
+          {
+            "x": 12,
+            "y": 11.600000000000001
+          }
+        ],
+        "from": 0.34812001789351926,
+        "to": 0.594745416657285,
+        "slotMinimumGap": 0.5656854249492379
+      }
+    ],
+    [
+      {
+        "id": "coordinated-913-t01-reporter",
+        "role": "reporter",
+        "actor": "Phil",
+        "say": "I stayed at the studio. It’s a great spot for my next walk!",
+        "raw": "prospective/coordinated-913/calls/coordinated-913-t01-reporter.json",
+        "raw_sha256": "c25975f366e679212f951785f6723563422ddbfcb25e96651cba4a3514e51016",
+        "seed": 91307,
+        "start": {
+          "x": 14,
+          "y": 8
+        },
+        "requested": {
+          "x": 14.45,
+          "y": 7.7
+        },
+        "quantized": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "resolved": {
+          "x": 14,
+          "y": 8
+        },
+        "status": "reserved-nearby",
+        "reason": "The crew reservation placed you at a nearby clear point.",
+        "path": [
+          {
+            "x": 14,
+            "y": 8
+          }
+        ],
+        "length": 0,
+        "requestedDoorDistance": 0,
+        "resolvedDoorDistance": 0.5408326913195977,
+        "nearDoor": "studio",
+        "gridError": 0.11180339887498869,
+        "adjustment": 0.5656854249492379,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            14,
+            0,
+            8
+          ]
+        ],
+        "canonicalEndpoint": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "canonicalPath": [
+          {
+            "x": 14,
+            "y": 8
+          },
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          }
+        ],
+        "from": 0,
+        "to": 1,
+        "slotMinimumGap": 0.5656854249492379
+      },
+      {
+        "id": "coordinated-913-t01-producer",
+        "role": "producer",
+        "actor": "Rita",
+        "say": "I will go to the studio, which is located at coordinates (14.45, 7.7).",
+        "raw": "prospective/coordinated-913/calls/coordinated-913-t01-producer.json",
+        "raw_sha256": "e1037c3134ec52a2fd5ef715a449667e9eeba7236dca1aa926563eb9d05dae2e",
+        "seed": 91308,
+        "start": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "requested": {
+          "x": 14.45,
+          "y": 7.7
+        },
+        "quantized": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "resolved": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "status": "reached",
+        "reason": "You stayed at the requested position.",
+        "path": [
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          },
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          }
+        ],
+        "length": 0,
+        "requestedDoorDistance": 0,
+        "resolvedDoorDistance": 0.11180339887498869,
+        "nearDoor": "studio",
+        "gridError": 0.11180339887498869,
+        "adjustment": 0.0,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            14.4,
+            0,
+            7.6000000000000005
+          ],
+          [
+            14.4,
+            0,
+            7.6000000000000005
+          ]
+        ],
+        "canonicalEndpoint": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "canonicalPath": [
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          },
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          }
+        ],
+        "from": 0,
+        "to": 1,
+        "slotMinimumGap": 0.5656854249492379
+      },
+      {
+        "id": "coordinated-913-t01-camera",
+        "role": "camera",
+        "actor": "Larry",
+        "say": "I'm back, I'm at the chosen grid point. The next destination is the studio.",
+        "raw": "prospective/coordinated-913/calls/coordinated-913-t01-camera.json",
+        "raw_sha256": "1e21dc1cb75432ecc5a698584e173e950dd7456156ad588ce6991cad228bbad7",
+        "seed": 91309,
+        "start": {
+          "x": 12,
+          "y": 11.600000000000001
+        },
+        "requested": {
+          "x": 12.2,
+          "y": 11.4
+        },
+        "quantized": {
+          "x": 12,
+          "y": 11.600000000000001
+        },
+        "resolved": {
+          "x": 12,
+          "y": 11.600000000000001
+        },
+        "status": "reached",
+        "reason": "You stayed at the requested position.",
+        "path": [
+          {
+            "x": 12,
+            "y": 11.600000000000001
+          },
+          {
+            "x": 12,
+            "y": 11.600000000000001
+          }
+        ],
+        "length": 0,
+        "requestedDoorDistance": 0,
+        "resolvedDoorDistance": 0.2828427124746193,
+        "nearDoor": "square",
+        "gridError": 0.28284271247461923,
+        "adjustment": 0.0,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            12,
+            0,
+            11.600000000000001
+          ],
+          [
+            12,
+            0,
+            11.600000000000001
+          ]
+        ],
+        "canonicalEndpoint": {
+          "x": 12,
+          "y": 11.600000000000001
+        },
+        "canonicalPath": [
+          {
+            "x": 12,
+            "y": 11.600000000000001
+          },
+          {
+            "x": 12,
+            "y": 11.600000000000001
+          }
+        ],
+        "from": 0,
+        "to": 1,
+        "slotMinimumGap": 0.5656854249492379
+      }
+    ],
+    [
+      {
+        "id": "coordinated-913-t02-reporter",
+        "role": "reporter",
+        "actor": "Phil",
+        "say": "I'm ready for the walk. I'll head to the studio for a quiet break.",
+        "raw": "prospective/coordinated-913/calls/coordinated-913-t02-reporter.json",
+        "raw_sha256": "9747b4008b145670478af16f61eaf7c3257cb1020823c66ac567fca4d274ffbe",
+        "seed": 91314,
+        "start": {
+          "x": 14,
+          "y": 8
+        },
+        "requested": {
+          "x": 14,
+          "y": 8
+        },
+        "quantized": {
+          "x": 14,
+          "y": 8
+        },
+        "resolved": {
+          "x": 14,
+          "y": 8
+        },
+        "status": "reached",
+        "reason": "You stayed at the requested position.",
+        "path": [
+          {
+            "x": 14,
+            "y": 8
+          }
+        ],
+        "length": 0,
+        "requestedDoorDistance": 0.5408326913195978,
+        "resolvedDoorDistance": 0.5408326913195977,
+        "nearDoor": "studio",
+        "gridError": 0,
+        "adjustment": 0.0,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            14,
+            0,
+            8
+          ]
+        ],
+        "canonicalEndpoint": {
+          "x": 14,
+          "y": 8
+        },
+        "canonicalPath": [
+          {
+            "x": 14,
+            "y": 8
+          },
+          {
+            "x": 14,
+            "y": 8
+          }
+        ],
+        "from": 0,
+        "to": 1,
+        "slotMinimumGap": 0.5656854249492379
+      },
+      {
+        "id": "coordinated-913-t02-producer",
+        "role": "producer",
+        "actor": "Rita",
+        "say": "I'm at the requested grid point. I'll stay here.",
+        "raw": "prospective/coordinated-913/calls/coordinated-913-t02-producer.json",
+        "raw_sha256": "654ada2763f369d76d112e83c2a6c91d139a16bc7460536d8d549bda8419453c",
+        "seed": 91315,
+        "start": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "requested": {
+          "x": 14.4,
+          "y": 7.6
+        },
+        "quantized": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "resolved": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "status": "reached",
+        "reason": "You stayed at the requested position.",
+        "path": [
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          }
+        ],
+        "length": 0,
+        "requestedDoorDistance": 0.11180339887498948,
+        "resolvedDoorDistance": 0.11180339887498869,
+        "nearDoor": "studio",
+        "gridError": 8.881784197001252e-16,
+        "adjustment": 0.0,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            14.4,
+            0,
+            7.6000000000000005
+          ]
+        ],
+        "canonicalEndpoint": {
+          "x": 14.4,
+          "y": 7.6000000000000005
+        },
+        "canonicalPath": [
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          },
+          {
+            "x": 14.4,
+            "y": 7.6000000000000005
+          }
+        ],
+        "from": 0,
+        "to": 1,
+        "slotMinimumGap": 0.5656854249492379
+      },
+      {
+        "id": "coordinated-913-t02-camera",
+        "role": "camera",
+        "actor": "Larry",
+        "say": "I stayed at the requested position, which is a grid point on the map.",
+        "raw": "prospective/coordinated-913/calls/coordinated-913-t02-camera.json",
+        "raw_sha256": "01227221df819f582a6ce9fa9b8f5add15d02d6b66fd8bed1854c829101a8552",
+        "seed": 91316,
+        "start": {
+          "x": 12,
+          "y": 11.600000000000001
+        },
+        "requested": {
+          "x": 12.2,
+          "y": 11.4
+        },
+        "quantized": {
+          "x": 12,
+          "y": 11.600000000000001
+        },
+        "resolved": {
+          "x": 12,
+          "y": 11.600000000000001
+        },
+        "status": "reached",
+        "reason": "You stayed at the requested position.",
+        "path": [
+          {
+            "x": 12,
+            "y": 11.600000000000001
+          },
+          {
+            "x": 12,
+            "y": 11.600000000000001
+          }
+        ],
+        "length": 0,
+        "requestedDoorDistance": 0,
+        "resolvedDoorDistance": 0.2828427124746193,
+        "nearDoor": "square",
+        "gridError": 0.28284271247461923,
+        "adjustment": 0.0,
+        "requestedOffDoor": false,
+        "resolvedOffDoor": false,
+        "yUp": [
+          [
+            12,
+            0,
+            11.600000000000001
+          ],
+          [
+            12,
+            0,
+            11.600000000000001
+          ]
+        ],
+        "canonicalEndpoint": {
+          "x": 12,
+          "y": 11.600000000000001
+        },
+        "canonicalPath": [
+          {
+            "x": 12,
+            "y": 11.600000000000001
+          },
+          {
+            "x": 12,
+            "y": 11.600000000000001
+          }
+        ],
+        "from": 0,
+        "to": 1,
+        "slotMinimumGap": 0.5656854249492379
+      }
+    ]
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "sha256": "bf3c03efa608da5743fb11988bb4b84aee20fc718162490affee66d1634f53f6",
+  "exact_frames": 5,
+  "sampled_frames": 5,
+  "checks": [
+    {
+      "event": "d01-afternoon-reporter",
+      "kind": "action",
+      "source": "Rita, Larry—see you at the party. I'm heading to Pittsburgh.",
+      "encoded_ocr": "Rita, Larry-see you at the party. I'm heading to Pittsburgh.",
+      "native_size_ocr": "Rita, Larry-see you at the party. I'm heading to Pittsburgh.",
+      "normalized_exact": true
+    },
+    {
+      "event": "d01-afternoon-producer",
+      "kind": "witnesses",
+      "source": "Rita and Larry heard him in the lobby. Both went to the Rialto. Neither saw him empty the envelope.",
+      "encoded_ocr": "Rita and Larry heard him in the lobby. Both went to the Rialto. Neither saw him empty the envelope.",
+      "native_size_ocr": "Rita and Larry heard him in the lobby. Both went to the Rialto. Neither saw him empty the envelope.",
+      "normalized_exact": true
+    },
+    {
+      "event": "d01-evening-reporter",
+      "kind": "action",
+      "source": "Phil lets the evening go by in bed alone.",
+      "encoded_ocr": "Phil lets the evening go by in bed alone.",
+      "native_size_ocr": "Phil lets the evening go by in bed alone.",
+      "normalized_exact": true
+    },
+    {
+      "event": "d02-afternoon-reporter",
+      "kind": "wake",
+      "source": "Tuesday, February 2. Six am in the Hearthside Hotel.",
+      "encoded_ocr": "Tuesday, February 2. Six am in the Hearthside Hotel.",
+      "native_size_ocr": "Tuesday, February 2. Six am in the Hearthside Hotel.",
+      "normalized_exact": true
+    },
+    {
+      "event": "d02-afternoon-reporter",
+      "kind": "action",
+      "source": "Phil rides the coach and steps off at Pittsburgh.",
+      "encoded_ocr": "Phil rides the coach and steps off at Pittsburgh.",
+      "native_size_ocr": "Phil rides the coach and steps off at Pittsburgh.",
+      "normalized_exact": true
+    }
+  ],
+  "method": "From the actual final MP4, decode one midpoint frame per shot and OCR the main subtitle region (or the large model note). Compare after punctuation, whitespace and case normalization."
+}

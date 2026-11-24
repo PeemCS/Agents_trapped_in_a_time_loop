@@ -1,0 +1,98 @@
+{
+  "evidence": "Exact role-visible input reconstructed from witnessed state and identity, raw NDJSON and decoded action identity, every recorded reducer transition, persistent external receipt timing, and role-card and history isolation canaries.",
+  "worlds": [
+    {
+      "run": "721-hypothesis",
+      "status": "complete",
+      "decision_slots": 19,
+      "attempt_references_including_reuses": 23,
+      "exact_cache_reuses": 9,
+      "worlds_replayed": 3,
+      "raw_source_sha256": "b7500bd631c2a27cbf43ae396b48ee28247e665c77d7707acd8207390340f3ea"
+    },
+    {
+      "run": "721-library",
+      "status": "complete",
+      "decision_slots": 19,
+      "attempt_references_including_reuses": 24,
+      "exact_cache_reuses": 6,
+      "worlds_replayed": 3,
+      "raw_source_sha256": "19f8b6adc09939de232998eeb9de31fc207f289f2e513f8f33f76f2b4c0181ae"
+    },
+    {
+      "run": "721-uncued",
+      "status": "complete",
+      "decision_slots": 19,
+      "attempt_references_including_reuses": 22,
+      "exact_cache_reuses": 2,
+      "worlds_replayed": 3,
+      "raw_source_sha256": "24f61d80a28e80e181a348950c1080ab282c24306da73aae578c9101507e628c"
+    },
+    {
+      "run": "731-hypothesis",
+      "status": "complete",
+      "decision_slots": 19,
+      "attempt_references_including_reuses": 27,
+      "exact_cache_reuses": 2,
+      "worlds_replayed": 3,
+      "raw_source_sha256": "183ffd640548b73dbe83eea3efc6901b16405fc3258685de44b1e4e0970e8ead"
+    },
+    {
+      "run": "731-library",
+      "status": "complete",
+      "decision_slots": 19,
+      "attempt_references_including_reuses": 27,
+      "exact_cache_reuses": 8,
+      "worlds_replayed": 3,
+      "raw_source_sha256": "79bb3871cf945834b6a1961d7d0f927a2b2f22f543c609a58172f546958f62b8"
+    },
+    {
+      "run": "731-uncued",
+      "status": "complete",
+      "decision_slots": 19,
+      "attempt_references_including_reuses": 28,
+      "exact_cache_reuses": 6,
+      "worlds_replayed": 3,
+      "raw_source_sha256": "a72c968196be33c1e0fedb753648792055ff5421be5a0f3b6dd0ea9578621ec0"
+    }
+  ],
+  "epilogues": [
+    {
+      "rule": "tuesday",
+      "role": "camera",
+      "chosen": "listen_to_interview",
+      "effect": "Larry hears Alma's recorded voice on the regional return."
+    },
+    {
+      "rule": "tuesday",
+      "role": "producer",
+      "chosen": "listen_to_interview",
+      "effect": "Rita hears Alma's recorded voice on the regional return."
+    },
+    {
+      "rule": "tuesday",
+      "role": "reporter",
+      "chosen": "walk_to_depot",
+      "effect": "Phil walks to the local depot. The one o’clock coach has not yet departed."
+    },
+    {
+      "rule": "wednesday",
+      "role": "camera",
+      "chosen": "go_off_duty",
+      "effect": "Larry clocks off."
+    },
+    {
+      "rule": "wednesday",
+      "role": "producer",
+      "chosen": "listen_to_interview",
+      "effect": "Rita hears Alma's recorded voice on the regional return."
+    },
+    {
+      "rule": "wednesday",
+      "role": "reporter",
+      "chosen": "phone_sister",
+      "effect": "Phil hears his sister answer the return line."
+    }
+  ],
+  "unique_native_streams_checked": 115
+}

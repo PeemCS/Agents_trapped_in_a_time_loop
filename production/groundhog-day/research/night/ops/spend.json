@@ -1,0 +1,22 @@
+{
+  "currency": "USD",
+  "authorized_budget": 40,
+  "priced_resources": "One ephemeral H100 SXM, 65 GB container disk",
+  "created_utc": "2026-11-23T11:35:31.53Z",
+  "termination_accepted_utc": "2026-11-23T14:06:10.624763+00:00",
+  "independently_absent_utc": "2026-11-23T14:08:01.410234+00:00",
+  "provider_get_http": 404,
+  "present_in_provider_list": false,
+  "price_per_gpu_hour": 4.39,
+  "seconds_until_accepted": 9039.09,
+  "estimated_gpu_at_accepted_termination": 11.02267,
+  "estimated_gpu_if_billed_through_first_confirmed_absence": 11.15777,
+  "provider_checked_utc": "2026-11-23T14:59:19.516980+00:00",
+  "scoped_provider_daily_meter": {
+    "gpuAmount": 10.372826,
+    "diskAmount": 0.021817,
+    "cpuAmount": 0,
+    "totalAmount": 10.394643
+  },
+  "interpretation": "The daily meter can lag. The estimate and the posted GPU amount describe the same rental. Disk and CPU are itemized on the provider's meter. Personal resources are excluded."
+}

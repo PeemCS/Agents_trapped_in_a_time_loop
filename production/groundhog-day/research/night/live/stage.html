@@ -1,0 +1,42 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tuesday · Director</title><style>
+*{box-sizing:border-box}html,body{height:100%;margin:0}body{background:#17282b;color:#faf3dc;font:14px system-ui, sans-serif;display:grid;grid-template-rows:auto 1fr}
+header{display:flex;align-items:center;gap:12px;min-height:38px;padding:5px 15px;border-bottom:1px solid #435350}
+strong{font-family:Georgia,serif;font-size:16px;white-space:nowrap}#status{color:#baccc5;font-size:12px}
+button{margin-left:auto;color:inherit;background:transparent;border:1px solid #73867b;border-radius:4px;padding:4px 10px;cursor:pointer;white-space:nowrap}
+iframe{width:100%;height:100%;border:0;min-height:0}
+</style></head><body><header><strong>Director monitor</strong><span id="status" role="status">Connecting to the decision log…</span><button id="toggle">Pause feed</button></header>
+<iframe id="town" title="Walkable winter town" src="/visual/index.html?live=1"></iframe>
+<script>
+const stage=document.getElementById('town'), statusLine=document.getElementById('status'), button=document.getElementById('toggle');
+let epoch=-1,cursor=0,paused=false,connected=false;
+button.onclick=()=>{paused=!paused;button.textContent=paused?'Resume feed':'Pause feed';if(paused)statusLine.textContent='Feed paused';};
+stage.addEventListener('load',()=>{epoch=-1;cursor=0;connected=false;});
+async function sync(){
+ try{
+  if(!paused){
+   const api=stage.contentWindow.TuesdayTown;
+   if(api){
+    const response=await fetch('/api/live?epoch='+epoch+'&after='+cursor,{cache:'no-store'});
+    if(!response.ok)throw Error('Reconnecting');
+    const s=await response.json();
+    if(s.epoch!==epoch||s.from!==cursor){cursor=0;connected=false;}
+    if(s.events.length){
+      if(!connected){
+        await api.loadTrace({...s.header,events:s.events});
+        api.play();
+        connected=true;
+      }else{
+        api.appendEvents(s.events,{offset:s.from,follow:true});
+      }
+      cursor=s.next;
+    }
+    epoch=s.epoch;
+    statusLine.textContent=s.notice||((s.kind==='recorded stream'?'Recorded stream':'Local decision log')+' · '+s.available+' committed turns'+(s.complete?' · complete':''));
+   }
+  }
+ }catch(e){statusLine.textContent='Holding the last visible turn · '+e.message;}
+ setTimeout(sync,550);
+}
+sync();
+</script></body></html>

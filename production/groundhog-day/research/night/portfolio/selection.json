@@ -1,0 +1,917 @@
+{
+  "posthoc": true,
+  "selection_unit": "one evening, with same-world setup and next morning if applicable",
+  "axes": {
+    "channel": 4,
+    "city": 1,
+    "reporter": 2,
+    "had_camera_reel": 1,
+    "after_wake": 2,
+    "earlier_work": 2,
+    "delivered": 1
+  },
+  "scores": "Earlier physical source on air +2; next city-to-hotel reset +2; submitted contribution bypassed by switcher +2; another crew member could change broadcast +1; explicit stock acknowledgement −1 (max). Scores describe edit opportunities.",
+  "quality_only": [
+    {
+      "scene": "711-d01",
+      "score": 5,
+      "nearest_previous_similarity": 0,
+      "channel": "camera_take"
+    },
+    {
+      "scene": "711-d03",
+      "score": 5,
+      "nearest_previous_similarity": 0.8462,
+      "channel": "camera_take"
+    },
+    {
+      "scene": "714-d01",
+      "score": 5,
+      "nearest_previous_similarity": 1.0,
+      "channel": "camera_take"
+    },
+    {
+      "scene": "714-d04",
+      "score": 5,
+      "nearest_previous_similarity": 0.9231,
+      "channel": "camera_take"
+    }
+  ],
+  "variety_plus_quality": [
+    {
+      "scene": "711-d01",
+      "score": 5,
+      "nearest_previous_similarity": 0,
+      "channel": "camera_take"
+    },
+    {
+      "scene": "713-d01",
+      "score": 4,
+      "nearest_previous_similarity": 0.3077,
+      "channel": "station_ident"
+    },
+    {
+      "scene": "712-d03",
+      "score": 4,
+      "nearest_previous_similarity": 0.4615,
+      "channel": "filed_forecast"
+    },
+    {
+      "scene": "711-d04",
+      "score": 4,
+      "nearest_previous_similarity": 0.5385,
+      "channel": "producer_live"
+    }
+  ],
+  "stock_phrase_hits": 0,
+  "scenes": [
+    {
+      "id": "711-d01",
+      "seed": 711,
+      "day": 1,
+      "source_sha256": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+      "event": "d01-t03-reporter",
+      "source_ids": [
+        "d01-t03-producer",
+        "d01-t03-camera",
+        "d01-t02-camera"
+      ],
+      "features": {
+        "channel": "camera_take",
+        "city": true,
+        "reporter": "spend_time_here",
+        "had_camera_reel": true,
+        "after_wake": true,
+        "earlier_work": true,
+        "delivered": [
+          "camera"
+        ]
+      },
+      "power": {
+        "reporter": false,
+        "producer": true,
+        "camera": true
+      },
+      "score_parts": {
+        "earlier_work": 2,
+        "physical_return": 2,
+        "competing_contribution": 0,
+        "second_actor_with_leverage": 1,
+        "spoken_cliche": 0
+      },
+      "score": 5,
+      "stock_matches": [],
+      "line": ""
+    },
+    {
+      "id": "711-d02",
+      "seed": 711,
+      "day": 2,
+      "source_sha256": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+      "event": "d02-t03-reporter",
+      "source_ids": [
+        "d02-t03-producer"
+      ],
+      "features": {
+        "channel": "station_ident",
+        "city": true,
+        "reporter": "call_sister",
+        "had_camera_reel": true,
+        "after_wake": true,
+        "earlier_work": false,
+        "delivered": [
+          "camera"
+        ]
+      },
+      "power": {
+        "reporter": false,
+        "producer": true,
+        "camera": false
+      },
+      "score_parts": {
+        "earlier_work": 0,
+        "physical_return": 2,
+        "competing_contribution": 2,
+        "second_actor_with_leverage": 0,
+        "spoken_cliche": 0
+      },
+      "score": 4,
+      "stock_matches": [],
+      "line": ""
+    },
+    {
+      "id": "711-d03",
+      "seed": 711,
+      "day": 3,
+      "source_sha256": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+      "event": "d03-t03-reporter",
+      "source_ids": [
+        "d03-t03-producer",
+        "d03-t03-camera",
+        "d03-t02-camera"
+      ],
+      "features": {
+        "channel": "camera_take",
+        "city": true,
+        "reporter": "call_sister",
+        "had_camera_reel": true,
+        "after_wake": true,
+        "earlier_work": true,
+        "delivered": [
+          "camera"
+        ]
+      },
+      "power": {
+        "reporter": false,
+        "producer": true,
+        "camera": true
+      },
+      "score_parts": {
+        "earlier_work": 2,
+        "physical_return": 2,
+        "competing_contribution": 0,
+        "second_actor_with_leverage": 1,
+        "spoken_cliche": 0
+      },
+      "score": 5,
+      "stock_matches": [],
+      "line": ""
+    },
+    {
+      "id": "711-d04",
+      "seed": 711,
+      "day": 4,
+      "source_sha256": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+      "event": "d04-t03-reporter",
+      "source_ids": [
+        "d04-t03-producer"
+      ],
+      "features": {
+        "channel": "producer_live",
+        "city": true,
+        "reporter": "spend_time_here",
+        "had_camera_reel": true,
+        "after_wake": true,
+        "earlier_work": false,
+        "delivered": [
+          "camera"
+        ]
+      },
+      "power": {
+        "reporter": false,
+        "producer": true,
+        "camera": false
+      },
+      "score_parts": {
+        "earlier_work": 0,
+        "physical_return": 2,
+        "competing_contribution": 2,
+        "second_actor_with_leverage": 0,
+        "spoken_cliche": 0
+      },
+      "score": 4,
+      "stock_matches": [],
+      "line": "Good evening, folks. You're watching the local bulletin. Tonight we're highlighting our town's band, so keep your eyes on the screen for their performance."
+    },
+    {
+      "id": "711-d05",
+      "seed": 711,
+      "day": 5,
+      "source_sha256": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+      "event": "d05-t03-reporter",
+      "source_ids": [
+        "d05-t03-producer"
+      ],
+      "features": {
+        "channel": "station_ident",
+        "city": true,
+        "reporter": "look_around",
+        "had_camera_reel": true,
+        "after_wake": true,
+        "earlier_work": false,
+        "delivered": [
+          "camera"
+        ]
+      },
+      "power": {
+        "reporter": false,
+        "producer": true,
+        "camera": false
+      },
+      "score_parts": {
+        "earlier_work": 0,
+        "physical_return": 2,
+        "competing_contribution": 2,
+        "second_actor_with_leverage": 0,
+        "spoken_cliche": 0
+      },
+      "score": 4,
+      "stock_matches": [],
+      "line": ""
+    },
+    {
+      "id": "711-d06",
+      "seed": 711,
+      "day": 6,
+      "source_sha256": "5af7b7a07de3de304220d4fd9945d52a6d82e16f4f9434f214d8c2a543ded14f",
+      "event": "d06-t03-reporter",
+      "source_ids": [
+        "d06-t03-producer"
+      ],
+      "features": {
+        "channel": "producer_live",
+        "city": true,
+        "reporter": "call_live_report",
+        "had_camera_reel": true,
+        "after_wake": false,
+        "earlier_work": false,
+        "delivered": [
+          "camera",
+          "reporter"
+        ]
+      },
+      "power": {
+        "reporter": false,
+        "producer": true,
+        "camera": false
+      },
+      "score_parts": {
+        "earlier_work": 0,
+        "physical_return": 0,
+        "competing_contribution": 2,
+        "second_actor_with_leverage": 0,
+        "spoken_cliche": 0
+      },
+      "score": 2,
+      "stock_matches": [],
+      "line": "Good evening, folks. This is Rita on the scene in western Pennsylvania. We are on the air and ready for the forecast."
+    },
+    {
+      "id": "712-d01",
+      "seed": 712,
+      "day": 1,
+      "source_sha256": "b23ac8578f5812b7016eba28439a79c7c3804b1e46647e962781f1d0cf728c21",
+      "event": "d01-t03-reporter",
+      "source_ids": [
+        "d01-t03-producer"
+      ],
+      "features": {
+        "channel": "station_ident",
+        "city": true,
+        "reporter": "call_sister",
+        "had_camera_reel": true,
+        "after_wake": true,
+        "earlier_work": false,
+        "delivered": []
+      },
+      "power": {
+        "reporter": false,
+        "producer": true,
+        "camera": false
+      },
+      "score_parts": {
+        "earlier_work": 0,
+        "physical_return": 2,
+        "competing_contribution": 0,
+        "second_actor_with_leverage": 0,
+        "spoken_cliche": 0
+      },
+      "score": 2,
+      "stock_matches": [],
+      "line": ""
+    },
+    {
+      "id": "712-d02",
+      "seed": 712,
+      "day": 2,
+      "source_sha256": "b23ac8578f5812b7016eba28439a79c7c3804b1e46647e962781f1d0cf728c21",
+      "event": "d02-t03-reporter",
+      "source_ids": [
+        "d02-t03-producer"
+      ],
+      "features": {
+        "channel": "producer_live",
+        "city": false,
+        "reporter": "spend_time_here",
+        "had_camera_reel": true,
+        "after_wake": false,
+        "earlier_work": false,
+        "delivered": []
+      },
+      "power": {
+        "reporter": false,
+        "producer": true,
+        "camera": false
+      },
+      "score_parts": {
+        "earlier_work": 0,
+        "physical_return": 0,
+        "competing_contribution": 0,
+        "second_actor_with_leverage": 0,
+        "spoken_cliche": 0
+      },
+      "score": 0,
+      "stock_matches": [],
+      "line": "Good evening, folks. This is Rita, bringing you the 7:00 bulletin from the town square."
+    },
+    {
+      "id": "712-d03",
+      "seed": 712,
+      "day": 3,
+      "source_sha256": "b23ac8578f5812b7016eba28439a79c7c3804b1e46647e962781f1d0cf728c21",
+      "event": "d03-t03-reporter",
+      "source_ids": [
+        "d03-t03-producer",
+        "d03-t02-producer"
+      ],
+      "features": {
+        "channel": "filed_forecast",
+        "city": true,
+        "reporter": "call_sister",
+        "had_camera_reel": true,
+        "after_wake": true,
+        "earlier_work": true,
+        "delivered": []
+      },
+      "power": {
+        "reporter": false,
+        "producer": true,
+        "camera": false
+      },
+      "score_parts": {
+        "earlier_work": 2,
+        "physical_return": 2,
+        "competing_contribution": 0,
+        "second_actor_with_leverage": 0,
+        "spoken_cliche": 0
+      },
+      "score": 4,
+      "stock_matches": [],
+      "line": ""
+    },
+    {
+      "id": "712-d04",
+      "seed": 712,
+      "day": 4,
+      "source_sha256": "b23ac8578f5812b7016eba28439a79c7c3804b1e46647e962781f1d0cf728c21",
+      "event": "d04-t03-reporter",
+      "source_ids": [
+        "d04-t03-producer",
+        "d04-t02-reporter"
+      ],
+      "features": {
+        "channel": "filed_forecast",
+        "city": false,
+        "reporter": "spend_time_here",
+        "had_camera_reel": true,
+        "after_wake": false,
+        "earlier_work": true,
+        "delivered": []
+      },
+      "power": {
+        "reporter": false,
+        "producer": true,
+        "camera": false
+      },
+      "score_parts": {
+        "earlier_work": 2,
+        "physical_return": 0,
+        "competing_contribution": 0,
+        "second_actor_with_leverage": 0,
+        "spoken_cliche": 0
+      },
+      "score": 2,
+      "stock_matches": [],
+      "line": ""
+    },
+    {
+      "id": "712-d05",
+      "seed": 712,
+      "day": 5,
+      "source_sha256": "b23ac8578f5812b7016eba28439a79c7c3804b1e46647e962781f1d0cf728c21",
+      "event": "d05-t03-reporter",
+      "source_ids": [
+        "d05-t03-producer"
+      ],
+      "features": {
+        "channel": "producer_live",
+        "city": false,
+        "reporter": "spend_time_here",
+        "had_camera_reel": true,
+        "after_wake": false,
+        "earlier_work": false,
+        "delivered": []
+      },
+      "power": {
+        "reporter": false,
+        "producer": true,
+        "camera": false
+      },
+      "score_parts": {
+        "earlier_work": 0,
+        "physical_return": 0,
+        "competing_contribution": 0,
+        "second_actor_with_leverage": 0,
+        "spoken_cliche": 0
+      },
+      "score": 0,
+      "stock_matches": [],
+      "line": "You're listening to the 7:00 PM bulletin. We're just starting to put together the weather segment, so stay with us. The town band is coming on shortly, folks."
+    },
+    {
+      "id": "712-d06",
+      "seed": 712,
+      "day": 6,
+      "source_sha256": "b23ac8578f5812b7016eba28439a79c7c3804b1e46647e962781f1d0cf728c21",
+      "event": "d06-t03-reporter",
+      "source_ids": [
+        "d06-t03-producer",
+        "d06-t03-camera",
+        "d06-t02-camera"
+      ],
+      "features": {
+        "channel": "camera_take",
+        "city": false,
+        "reporter": "spend_time_here",
+        "had_camera_reel": true,
+        "after_wake": false,
+        "earlier_work": true,
+        "delivered": [
+          "camera"
+        ]
+      },
+      "power": {
+        "reporter": false,
+        "producer": true,
+        "camera": true
+      },
+      "score_parts": {
+        "earlier_work": 2,
+        "physical_return": 0,
+        "competing_contribution": 0,
+        "second_actor_with_leverage": 1,
+        "spoken_cliche": 0
+      },
+      "score": 3,
+      "stock_matches": [],
+      "line": ""
+    },
+    {
+      "id": "713-d01",
+      "seed": 713,
+      "day": 1,
+      "source_sha256": "c62d990e921757718b0ad35f465ab8c47016fc183f4b01de1d65db124efbff90",
+      "event": "d01-t03-reporter",
+      "source_ids": [
+        "d01-t03-producer"
+      ],
+      "features": {
+        "channel": "station_ident",
+        "city": true,
+        "reporter": "call_live_report",
+        "had_camera_reel": true,
+        "after_wake": true,
+        "earlier_work": false,
+        "delivered": [
+          "reporter"
+        ]
+      },
+      "power": {
+        "reporter": false,
+        "producer": true,
+        "camera": false
+      },
+      "score_parts": {
+        "earlier_work": 0,
+        "physical_return": 2,
+        "competing_contribution": 2,
+        "second_actor_with_leverage": 0,
+        "spoken_cliche": 0
+      },
+      "score": 4,
+      "stock_matches": [],
+      "line": ""
+    },
+    {
+      "id": "713-d02",
+      "seed": 713,
+      "day": 2,
+      "source_sha256": "c62d990e921757718b0ad35f465ab8c47016fc183f4b01de1d65db124efbff90",
+      "event": "d02-t03-reporter",
+      "source_ids": [
+        "d02-t03-producer"
+      ],
+      "features": {
+        "channel": "station_ident",
+        "city": true,
+        "reporter": "call_sister",
+        "had_camera_reel": true,
+        "after_wake": true,
+        "earlier_work": false,
+        "delivered": []
+      },
+      "power": {
+        "reporter": false,
+        "producer": true,
+        "camera": false
+      },
+      "score_parts": {
+        "earlier_work": 0,
+        "physical_return": 2,
+        "competing_contribution": 0,
+        "second_actor_with_leverage": 0,
+        "spoken_cliche": 0
+      },
+      "score": 2,
+      "stock_matches": [],
+      "line": ""
+    },
+    {
+      "id": "713-d03",
+      "seed": 713,
+      "day": 3,
+      "source_sha256": "c62d990e921757718b0ad35f465ab8c47016fc183f4b01de1d65db124efbff90",
+      "event": "d03-t03-reporter",
+      "source_ids": [
+        "d03-t03-producer"
+      ],
+      "features": {
+        "channel": "station_ident",
+        "city": true,
+        "reporter": "spend_time_here",
+        "had_camera_reel": true,
+        "after_wake": true,
+        "earlier_work": false,
+        "delivered": []
+      },
+      "power": {
+        "reporter": false,
+        "producer": true,
+        "camera": false
+      },
+      "score_parts": {
+        "earlier_work": 0,
+        "physical_return": 2,
+        "competing_contribution": 0,
+        "second_actor_with_leverage": 0,
+        "spoken_cliche": 0
+      },
+      "score": 2,
+      "stock_matches": [],
+      "line": ""
+    },
+    {
+      "id": "713-d04",
+      "seed": 713,
+      "day": 4,
+      "source_sha256": "c62d990e921757718b0ad35f465ab8c47016fc183f4b01de1d65db124efbff90",
+      "event": "d04-t03-reporter",
+      "source_ids": [
+        "d04-t03-producer"
+      ],
+      "features": {
+        "channel": "producer_live",
+        "city": false,
+        "reporter": "spend_time_here",
+        "had_camera_reel": true,
+        "after_wake": false,
+        "earlier_work": false,
+        "delivered": []
+      },
+      "power": {
+        "reporter": false,
+        "producer": true,
+        "camera": false
+      },
+      "score_parts": {
+        "earlier_work": 0,
+        "physical_return": 0,
+        "competing_contribution": 0,
+        "second_actor_with_leverage": 0,
+        "spoken_cliche": 0
+      },
+      "score": 0,
+      "stock_matches": [],
+      "line": "We're live from the diner; it's 7 PM."
+    },
+    {
+      "id": "713-d05",
+      "seed": 713,
+      "day": 5,
+      "source_sha256": "c62d990e921757718b0ad35f465ab8c47016fc183f4b01de1d65db124efbff90",
+      "event": "d05-t03-reporter",
+      "source_ids": [
+        "d05-t03-producer"
+      ],
+      "features": {
+        "channel": "producer_live",
+        "city": true,
+        "reporter": "spend_time_here",
+        "had_camera_reel": true,
+        "after_wake": true,
+        "earlier_work": false,
+        "delivered": []
+      },
+      "power": {
+        "reporter": false,
+        "producer": true,
+        "camera": false
+      },
+      "score_parts": {
+        "earlier_work": 0,
+        "physical_return": 2,
+        "competing_contribution": 0,
+        "second_actor_with_leverage": 0,
+        "spoken_cliche": 0
+      },
+      "score": 2,
+      "stock_matches": [],
+      "line": "Good evening from the square. That is all the news for tonight. Thanks for watching, and I'll see you tomorrow. Goodnight."
+    },
+    {
+      "id": "713-d06",
+      "seed": 713,
+      "day": 6,
+      "source_sha256": "c62d990e921757718b0ad35f465ab8c47016fc183f4b01de1d65db124efbff90",
+      "event": "d06-t03-reporter",
+      "source_ids": [
+        "d06-t03-producer"
+      ],
+      "features": {
+        "channel": "station_ident",
+        "city": false,
+        "reporter": "spend_time_here",
+        "had_camera_reel": true,
+        "after_wake": false,
+        "earlier_work": false,
+        "delivered": []
+      },
+      "power": {
+        "reporter": false,
+        "producer": true,
+        "camera": false
+      },
+      "score_parts": {
+        "earlier_work": 0,
+        "physical_return": 0,
+        "competing_contribution": 0,
+        "second_actor_with_leverage": 0,
+        "spoken_cliche": 0
+      },
+      "score": 0,
+      "stock_matches": [],
+      "line": ""
+    },
+    {
+      "id": "714-d01",
+      "seed": 714,
+      "day": 1,
+      "source_sha256": "2c0ab5dc5ba2faa1ecdebefcfd53ecd8de0e0a4ae49c35a58a021f1bbdece0cd",
+      "event": "d01-t03-reporter",
+      "source_ids": [
+        "d01-t03-producer",
+        "d01-t03-camera",
+        "d01-t02-camera"
+      ],
+      "features": {
+        "channel": "camera_take",
+        "city": true,
+        "reporter": "call_sister",
+        "had_camera_reel": true,
+        "after_wake": true,
+        "earlier_work": true,
+        "delivered": [
+          "camera"
+        ]
+      },
+      "power": {
+        "reporter": false,
+        "producer": true,
+        "camera": true
+      },
+      "score_parts": {
+        "earlier_work": 2,
+        "physical_return": 2,
+        "competing_contribution": 0,
+        "second_actor_with_leverage": 1,
+        "spoken_cliche": 0
+      },
+      "score": 5,
+      "stock_matches": [],
+      "line": ""
+    },
+    {
+      "id": "714-d02",
+      "seed": 714,
+      "day": 2,
+      "source_sha256": "2c0ab5dc5ba2faa1ecdebefcfd53ecd8de0e0a4ae49c35a58a021f1bbdece0cd",
+      "event": "d02-t03-reporter",
+      "source_ids": [
+        "d02-t03-producer"
+      ],
+      "features": {
+        "channel": "station_ident",
+        "city": true,
+        "reporter": "spend_time_here",
+        "had_camera_reel": true,
+        "after_wake": true,
+        "earlier_work": false,
+        "delivered": []
+      },
+      "power": {
+        "reporter": false,
+        "producer": true,
+        "camera": false
+      },
+      "score_parts": {
+        "earlier_work": 0,
+        "physical_return": 2,
+        "competing_contribution": 0,
+        "second_actor_with_leverage": 0,
+        "spoken_cliche": 0
+      },
+      "score": 2,
+      "stock_matches": [],
+      "line": ""
+    },
+    {
+      "id": "714-d03",
+      "seed": 714,
+      "day": 3,
+      "source_sha256": "2c0ab5dc5ba2faa1ecdebefcfd53ecd8de0e0a4ae49c35a58a021f1bbdece0cd",
+      "event": "d03-t03-reporter",
+      "source_ids": [
+        "d03-t03-producer"
+      ],
+      "features": {
+        "channel": "station_ident",
+        "city": false,
+        "reporter": "call_live_report",
+        "had_camera_reel": true,
+        "after_wake": false,
+        "earlier_work": false,
+        "delivered": []
+      },
+      "power": {
+        "reporter": false,
+        "producer": true,
+        "camera": false
+      },
+      "score_parts": {
+        "earlier_work": 0,
+        "physical_return": 0,
+        "competing_contribution": 0,
+        "second_actor_with_leverage": 0,
+        "spoken_cliche": 0
+      },
+      "score": 0,
+      "stock_matches": [],
+      "line": ""
+    },
+    {
+      "id": "714-d04",
+      "seed": 714,
+      "day": 4,
+      "source_sha256": "2c0ab5dc5ba2faa1ecdebefcfd53ecd8de0e0a4ae49c35a58a021f1bbdece0cd",
+      "event": "d04-t03-reporter",
+      "source_ids": [
+        "d04-t03-producer",
+        "d04-t03-camera",
+        "d04-t02-camera"
+      ],
+      "features": {
+        "channel": "camera_take",
+        "city": true,
+        "reporter": "spend_time_here",
+        "had_camera_reel": true,
+        "after_wake": true,
+        "earlier_work": true,
+        "delivered": []
+      },
+      "power": {
+        "reporter": false,
+        "producer": true,
+        "camera": true
+      },
+      "score_parts": {
+        "earlier_work": 2,
+        "physical_return": 2,
+        "competing_contribution": 0,
+        "second_actor_with_leverage": 1,
+        "spoken_cliche": 0
+      },
+      "score": 5,
+      "stock_matches": [],
+      "line": ""
+    },
+    {
+      "id": "714-d05",
+      "seed": 714,
+      "day": 5,
+      "source_sha256": "2c0ab5dc5ba2faa1ecdebefcfd53ecd8de0e0a4ae49c35a58a021f1bbdece0cd",
+      "event": "d05-t03-reporter",
+      "source_ids": [
+        "d05-t03-producer",
+        "d05-t03-reporter"
+      ],
+      "features": {
+        "channel": "empty_selected_return",
+        "city": true,
+        "reporter": "call_sister",
+        "had_camera_reel": true,
+        "after_wake": true,
+        "earlier_work": false,
+        "delivered": []
+      },
+      "power": {
+        "reporter": true,
+        "producer": true,
+        "camera": false
+      },
+      "score_parts": {
+        "earlier_work": 0,
+        "physical_return": 2,
+        "competing_contribution": 0,
+        "second_actor_with_leverage": 1,
+        "spoken_cliche": 0
+      },
+      "score": 3,
+      "stock_matches": [],
+      "line": ""
+    },
+    {
+      "id": "714-d06",
+      "seed": 714,
+      "day": 6,
+      "source_sha256": "2c0ab5dc5ba2faa1ecdebefcfd53ecd8de0e0a4ae49c35a58a021f1bbdece0cd",
+      "event": "d06-t03-reporter",
+      "source_ids": [
+        "d06-t03-producer"
+      ],
+      "features": {
+        "channel": "producer_live",
+        "city": true,
+        "reporter": "spend_time_here",
+        "had_camera_reel": true,
+        "after_wake": false,
+        "earlier_work": false,
+        "delivered": []
+      },
+      "power": {
+        "reporter": false,
+        "producer": true,
+        "camera": false
+      },
+      "score_parts": {
+        "earlier_work": 0,
+        "physical_return": 0,
+        "competing_contribution": 0,
+        "second_actor_with_leverage": 0,
+        "spoken_cliche": 0
+      },
+      "score": 0,
+      "stock_matches": [],
+      "line": "Good evening, folks. Here is your 7 PM update from the square. It is dry and cool tonight. We will see you tomorrow."
+    }
+  ]
+}

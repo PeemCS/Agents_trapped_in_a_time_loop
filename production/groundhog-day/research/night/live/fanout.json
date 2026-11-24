@@ -1,0 +1,15 @@
+{
+  "scope": "Local HTTP on one Apple M4 Mac. Synthetic IDs over recorded three-role presentation frames. Excludes WAN latency, GPU inference, visual frame time and authentication.",
+  "viewers": 12,
+  "slots_per_viewer": 512,
+  "actor_receipts_per_viewer": 1536,
+  "late_joins": 2,
+  "paused_resumptions": 2,
+  "successful_requests": 702,
+  "transport_retries": 0,
+  "p50_http_ms": 1.29,
+  "p95_http_ms": 6.85,
+  "wall_s": 2.381,
+  "source_bytes_read_once": 897289,
+  "identical_all_viewer_sha256": "e6f131b0af865fc42b812fccc559b7d938c4a62f2d51d170ca9d600e723b2a45"
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "S02-LINE",
+    "scene": "S02",
+    "file": "S02-open-line.jpg",
+    "title": "After the promise",
+    "time": "00:37.8–00:38.75",
+    "beat": "The line stays open after Phil promises to help with the move. His fingertips settle on his gloves.",
+    "lens": "14mm eye-level POV",
+    "reference": "TERM-M.jpg",
+    "qa": "Performance study. The light cuff and extra keypad buttons differ from the selected terminal plate. Keep the existing phone frame for a continuous dialogue take.",
+    "job_id": "170129f0-586f-43fb-b5f5-f2eae4037a98",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3MWoglBmW0FxDhWYsRkUU6hOp6M/hf_20261124_013019_170129f0-586f-43fb-b5f5-f2eae4037a98.png"
+  },
+  {
+    "id": "S02-BOARD",
+    "scene": "S02",
+    "time": "00:30.0–00:31.0",
+    "file": "S02-step-aboard.jpg",
+    "title": "One foot on the coach",
+    "beat": "Phil shifts his weight onto the step. His right glove holds the rail while the slushy curb drops behind him.",
+    "lens": "14mm eye POV",
+    "reference": "S02-B2-ALT.jpg",
+    "qa": "The rail, boot and curb establish his position. The angle stops at the vestibule before the cut to the window seat.",
+    "job_id": "5f3ee988-eac0-4ade-9ac8-33417dda6e31",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3MWoglBmW0FxDhWYsRkUU6hOp6M/hf_20261124_013236_5f3ee988-eac0-4ade-9ac8-33417dda6e31.png"
+  }
+]
